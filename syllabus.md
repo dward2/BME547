@@ -66,7 +66,7 @@ BME 271 - Signals and Systems
   + Jupyter Notebooks
   + Matplotlib / Seaborn
   + Pandas (DataFrames)
-  + [scikit-image](https://scikit-image.org/) & [scikit-learn](https://scikit-learn.org/)
+  + [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)
 * Define software specifications and constraints (Requests for Comments, RFC)
 * Servers
   + Design & Implementation of a biomedical web service (Python Flask)
