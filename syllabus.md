@@ -19,8 +19,6 @@ Office Hours: TBD (location)
 Wed/Fri 11:45 am --1:00 pm (tentative)  
 Hudson Hall 222
 
-All lecture content will be outlined in [Lectures](Lectures/).
-
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
 control, feedback and algorithmic processing.  This course focuses on software
