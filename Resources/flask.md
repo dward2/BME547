@@ -16,3 +16,10 @@ This ran my code.
 
 Website I got this info from:
 <http://flask.pocoo.org/docs/1.0/cli/#run-the-development-server>
+
+In another attempt, I ran
+```
+flask run --host 0.0.0.0
+```
+
+And, it allowed for me to access server from another computer.
