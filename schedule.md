@@ -70,7 +70,7 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Wed Feb 13</td>
-<td>PyCharm, Debugging, Property Decorators</td>
+<td>PyCharm, Debugging</td>
 <td>BMI Calculator Assignment?</td>
 </tr>
 
