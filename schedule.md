@@ -76,13 +76,13 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Fri Feb 15</td>
-<td>Functional Decomposition:  Python Data Structures</td>
+<td>Functional Decomposition</td>
 <td></td>
 </tr>
 
 <tr>
 <td>Web Feb 20</td>
-<td>Dictionary Type, Classes, Property Decoratores, Numpy Docs</td>
+<td>Dictionary Type (and other data structures), Classes, Property Decorators, Numpy Docs</td>
 <td></td>
 </tr>
 
