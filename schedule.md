@@ -22,26 +22,26 @@ progress, severe weather days, etc.  Please check back regularly.
 <tr>
 <td>Wed Jan 16</td>
   <td>Git: Repo Setup, Cloning/Forking, Issues, Branching, Pushing/Pulling</a></td>
-  <td></td>
+  <td>Git Fundamentals/Practice</td>
 </tr>
 
 <tr>
 <td>Fri Jan 18</td>
-  <td>Git Workflow</a></td>
-  <td>Git Fundamentals/Practice</td>
+  <td>Python Virtual Environments</a></td>
+  <td></td>
   <!--<td><a href="Assignments/getting_started_git.md">Getting Started with git</a></td>-->
 </tr>
 
 <tr>
 <td>Wed Jan 23</td>
-<td>Python Virtual Environments</a></td>
-<td></td>
+<td>Python Fundamentals</a></td>
+<td>Python Fundamentals</td>
 </tr>
 
 <tr>
 <td>Fri Jan 25</td> 
-<td>Python Fundamentals</a></td>
-<td>Python Fundamentals</td>
+<td>Git Workflow</a></td>
+<td>BMI Calculator?</td>
 </tr>
 
 <tr>
@@ -64,31 +64,31 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Fri Feb 8</td>
-<td> </td>
 <td></td>
+<td>Add docstrings & testing to BMI Calculator?</td>
 </tr>
 
 <tr>
 <td>Wed Feb 13</td>
 <td>PyCharm, Debugging</td>
-<td>BMI Calculator Assignment?</td>
-</tr>
-
-<tr>
-<td>Fri Feb 15</td>
-<td>Functional Decomposition</td>
 <td></td>
 </tr>
 
 <tr>
-<td>Web Feb 20</td>
+<td>Fri Feb 15</td>
 <td>Dictionary Type (and other data structures), Classes, Property Decorators, Numpy Docs</td>
 <td></td>
 </tr>
 
 <tr>
-<td>Fri Feb 22</td>
+<td>Web Feb 20</td>
 <td>Exceptions and Logging</td>
+<td>Add exception checking to BMI calculator?</td>
+</tr>
+
+<tr>
+<td>Fri Feb 22</td>
+<td>Functional Decomposition</td>
 <td>Heart Rate Monitor Assigned</td>
 </tr>
 
