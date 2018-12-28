@@ -17,7 +17,7 @@ Office Hours: TBD (location)
 
 ## Lecture
 Wed/Fri 1:25 pm --2:40 pm  
-Location TBD
+Location Hudson Hall 115A
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
