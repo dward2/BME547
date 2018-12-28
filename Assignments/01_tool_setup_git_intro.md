@@ -25,6 +25,7 @@ so other Windows applications that have `git` hooks will not work.
 
 4. Download and install `python3` at https://www.python.org/. Be sure to
    install Python 3.6 or 3.7, *not* Python 2.7.  
+   
    For Mac users, Python is likely already installed.  Open a Terminal window 
    and enter `python` or `python3`.  If installed, you should see something
    like the following:
