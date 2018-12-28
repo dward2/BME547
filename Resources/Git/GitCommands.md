@@ -1,5 +1,5 @@
 # Miscellaneous Git Commands
-####Convention for this page
+#### Convention for this page
 
 * anything contained in `<>` should be replaced by the
 user with the appropriate information without the `<` or `>`.  For example, 
