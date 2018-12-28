@@ -89,7 +89,9 @@ For a detailed example of using `git clone` can be found at
 [GitBashFolders](GitBashFolders/GitBashFolders.md)
 
 #### Sending local changes to the linked remote repository
-`git push`
+`git push`  
+If the local branch doesn't exist on the remote origin, use:  
+`git push --set-upstream origin <branchname>`
 
 #### Getting changes from linked remote repository and adding to local repository
 `git pull`
