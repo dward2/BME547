@@ -11,8 +11,8 @@ Dr. David Ward
 Office Hours: TBD ()
 
 ## Teaching Assistants
-FirstName LastName  
-<email@duke.edu>   
+Tejank Shah  
+<tejank.shah@duke.edu>   
 Office Hours: TBD (location)
 
 ## Lecture
