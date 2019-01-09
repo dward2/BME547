@@ -130,9 +130,7 @@ preservation of versions during the development process, the ability for
 multiple contributors and reviewers on a project, the ability to tag
 *Releases* of code, and the ability to branch code into different functional
 branches.  We will be using [GitHub](https://github.com) to centrally host our
-git repositories.  When working in teams, we will be creating student teams in the [Duke
-BME Design](https://github.com/Duke-BME-Design) group.  Some guidelines
-for using your git repositories:
+git repositories.  Some guidelines for using your git repositories:
 
 * *All* software additions, modifications, bug-fixes, etc. need to be done in
   your repository.
