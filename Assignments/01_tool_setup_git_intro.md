@@ -2,7 +2,14 @@
 
 ## Getting Setup
 1. Create an account on GitHub (https://github.com).  An understandable and
-professional user name is suggested.
+professional user name is suggested.  Then, in order to communicate your 
+GitHub user name to us, you will open a GitHub issue with that information.  Go 
+into the BME547 (<https://github.com/dward2/BME547>) repository and click on 
+"Issues" in the tab bar at the top of the page.  Then, click on the green 
+"New issue" button.  In the title, enter your name and the GitHub user name 
+you created.  For example, "David Ward - dward2".  In the comment area, please
+include your Duke e-mail address.  Then, click the green 
+"Submit new Issue" button.  
 
 2. Download and install `git` at https://git-scm.com.  We will be using 
 `Git Bash`, *not* a GUI client.  
