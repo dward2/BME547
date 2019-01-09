@@ -13,7 +13,7 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Fri Jan 11</td>
-  <td>Class Introduction, Objectives, and Logistics
+  <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
   <td><a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a></td>
   <!--<td><a href="Lectures/FirstDayClass/lecture01.md">Class Introduction, Objectives and Logistics</a></td>-->
   <!--<td><a href="Assignments/01_tool_setup_git_fundamentals.md">[01] Setup Course Tools & Git Fundamentals</a></td>-->
