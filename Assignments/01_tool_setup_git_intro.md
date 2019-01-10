@@ -94,12 +94,7 @@ easier for you as your projects get more complex.  Options include:
   http://learngitbranching.js.org/
 
 1. Having trouble?  We'll be reviewing some of these tools in lecture on
-  Wednesday.  Also checkout the Duke Co-Lab, which hosts regular office hours
-  and has an online Slack team: https://colab.duke.edu/ .  We have a specific
-  channel on there for this class, including:
-  + `#linux`
-  + `#git`
-  + `#python`
+  Wednesday.  
 
 ## Learning Objectives:
   + Create a git repository on your local computer.
