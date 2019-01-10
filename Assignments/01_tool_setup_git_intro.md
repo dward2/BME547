@@ -2,16 +2,29 @@
 
 ## Getting Setup
 1. Create an account on GitHub (https://github.com).  An understandable and
-professional user name is suggested.  Then, in order to communicate your 
-GitHub user name to us, you will open a GitHub issue with that information.  Go 
-into the BME547 (<https://github.com/dward2/BME547>) repository and click on 
-"Issues" in the tab bar at the top of the page.  Then, click on the green 
-"New issue" button.  In the title, enter your name and the GitHub user name 
-you created.  For example, "David Ward - dward2".  In the comment area, please
-include your Duke e-mail address.  Then, click the green 
-"Submit new Issue" button.  
+professional user name is suggested.      
 
-2. Download and install `git` at https://git-scm.com.  We will be using 
+2. To communicate your GitHub user name to us, you will open a GitHub issue 
+with that information.  
+  a)  Go into the BME547 repository (<https://github.com/dward2/BME547>) and 
+  click on "Issues" in the tab bar at the top of the page.  
+  b) Click on the green "New issue" button.  
+  c) In the title, enter your name and the GitHub user name you created. For 
+  example, "David Ward - dward2".  
+  d) In the comment area, please include your Duke e-mail address.  
+  e) Click the green "Submit new issue" button.  
+
+3.  a) Create a new repository with a name such as "Intro".  Make sure to select
+the "Initialize this repository with a README" check box.  
+  b) With the repository open, click on the README.md file and then click on 
+  the pencil in order to edit the file.  
+  c) With two classmates, exchange URLs for your repositories.  The URL should
+  look something like https://github.com/git_hub_user_name/repo_name.  
+  d) In the README file, add these two URLs.  
+  e) At the bottom of the page, click on the green "Commit changes" button.  
+  You should now active links to two other repositories.
+    
+4. Download and install `git` at https://git-scm.com.  We will be using 
 `Git Bash`, *not* a GUI client.  
   
    For MAC users, `git` is likely already installed.  Open a Terminal window
