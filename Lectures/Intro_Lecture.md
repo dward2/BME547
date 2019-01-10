@@ -3,6 +3,7 @@
 ## Lecture Overview
 * Introductions
 * Syllabus Review
+* GitHub / Tool Set-up
 
 ## Who are we?
 * Dr. Adam Wax
@@ -19,3 +20,7 @@
 
 ## Syllabus Review
 [Syllabus](../syllabus.md)
+
+## GitHub / Tool Set-up
+[Tool Set-up Assignment](../Assignments/01_tool_setup_git_intro.md)
+

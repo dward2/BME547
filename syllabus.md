@@ -24,7 +24,7 @@ Software plays a critical role in almost all medical devices, spanning device
 control, feedback and algorithmic processing.  This course focuses on software
 design skills that are ubiquitous in the medical device industry, including
 software version control, unit testing, fault tolerance, continuous integration
-testing and documentation.  Experience will be gained in Python and and potentially 
+testing and documentation.  Experience will be gained in Python and potentially 
 other languages.
 
 The course will be structured around various software projects related to
@@ -75,7 +75,7 @@ BME 271 - Signals and Systems
 
 ## Attendance
 Lecture attendance and participation is important because you will be working
-in small groups most of the semester.  Participation in these in-class
+in small groups some of the semester.  Participation in these in-class
 activities will count for 15\% of your class grade.  It is very understandable
 that students will have to miss class for job interviews, personal reasons,
 illness, etc.  Absences will be considered **excused** if they are
@@ -158,13 +158,6 @@ git repositories.  Some guidelines for using your git repositories:
 
 We will review working with git repositories in lecture, and feedback on your
 software repository will be provided on a regular basis.
-
-## Online Slack Channels
-We have online help through the [Duke Co-Lab
-Slack](https://dukecolab.slack.com/) team. We have started three specific
-channels for this class: `#linux`, `#git` & `#python`. Please add yourselves to
-these channels to get help from your instructors, your TAs and the Duke
-community!
 
 ## Duke Community Standard & Academic Honor
 Engineering is inherently a collaborative field, and in this class, you are
