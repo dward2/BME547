@@ -22,7 +22,7 @@ progress, severe weather days, etc.  Please check back regularly.
 <tr>
 <td>Wed Jan 16</td>
   <td>Git: Repo Setup, Cloning/Forking, Issues, Branching, Pushing/Pulling</a></td>
-  <td><a href="Assignments/01_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
+  <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
 </tr>
 
 <tr>
