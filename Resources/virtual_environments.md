@@ -94,6 +94,7 @@ Information about a specific package:
 
 
 ## Windows / Conda
+Conda is a Python Package repository for Windows.
 Enter the following commands at the Anaconda Prompt.
 
 #### To create a new virtual environment
