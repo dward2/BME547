@@ -4,7 +4,7 @@
 * anything contained in `<>` should be replaced by the
 user with the appropriate information without the `<` or `>`.  For example, 
 `git add <filename>` should be entered as `git add textfile.txt`
-* anything contained in `[]` should be replaced by the usre just as above.
+* anything contained in `[]` should be replaced by the user just as above.
 However, including this is optional.
 * anything in quotes are generally strings that can be replaced by appropriate
 comments by the user.
@@ -80,7 +80,7 @@ of the commit number.
 `git clone https://github.com/<GitHubName>/<RepoName>.git [LocalFolderName]`
 where `<GitHubName>` is your GitHub username and `<RepoName>` is the name
 of the repository on GitHub.  `[LocalFolderName]` is optional and supplies
-the name of the local folder to be created.  If omited, the `<RepoName>` is
+the name of the local folder to be created.  If omitted, the `<RepoName>` is
 used for the local folder name.  Enter this command in the folder in which
 you want to create a subfolder that will contain the git repository.  This
 is different than `git init` which you edit within the desired git folder.
