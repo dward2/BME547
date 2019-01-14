@@ -146,6 +146,30 @@ Note that this procedure will delete any existing environment.yml.
 Activate the desired environment, then type the following.  
 `conda env export >environment.yml`
 
+ ## Virtual Environments and Git  (`.gitignore`)
+ The creation of virtual environments can place a lot of files into a subfolder
+ of your project.  If you are not careful, it is easy to accidentally commit
+ those files into your git repo, thereby increasing the size of your repo and
+ the time it takes to add/commit/push.  To avoid adding files to your repo
+ that should be excluded, add a file called `.gitignore` to your repository.
+ In this file, list either the specific files or paths that you do not want
+ included in your repository.  For example, creating a virtual environment
+ using the command `python3 -m venv MyVenv` will create a folder called 
+ `MyVenv`.  To exclude this directory from the repo, I would add the following
+ line to `.gitignore`:
+ ```
+ MyVenv
+ ```
+ If there are specific files, or types of files you want to exclude, you can
+ specify them directly.  For example:  
+ `*.txt` will exclude all files with the `txt` extension.  
+ `file1.txt` excludes the specfically named file.  
+ `MySub/file1.txt` excludes the specifically named file in the MySub sub-folder.
+ 
+ Later, when using IDEs or other tools that also generate additional files that
+ you do not want stored in your repo, those files can also be added to 
+ `.gitignore`.
+ 
  ## Links
  <https://docs.python.org/3/tutorial/venv.html> for information on `pip` and
  virtual environments in Linux.
