@@ -162,7 +162,7 @@ or graphically:
 
 
 
-## Other
+## Removing a File Accidentally Added to Staging Area
 
 If I add a file using `git add <filename>`, and then go to remove it using
 `git rm <filename> -f`, the file is removed from the staging area and is also
@@ -172,7 +172,7 @@ On the other hand, `git rm <filename> --cached` removes the file from the
 staging area, but does not delete it from the working directory.  This is the 
 opposite of `git add`.
 
-## Removing a file from Repository
+## Removing a File from Repository
 Let's say that you accidentally added a file to the repository with a commit.
 The safest way to remove it is as follows.
 
@@ -282,11 +282,4 @@ We now see in `git status` that we have a change in the working directory
 And, `HEAD` points 
 
 
-
-
-
-
-but could possibly
-cause real problems.
-For more info, look at <https://stackoverflow.com/questions/5798930/git-rm-cached-x-vs-git-reset-head-x>
  
