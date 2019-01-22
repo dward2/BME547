@@ -21,20 +21,20 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Wed Jan 16</td>
-  <td>Git: Repo Setup, Cloning/Forking, Issues, Branching, Pushing/Pulling</a></td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture1Jan16.md">Git: Repo Setup, Cloning/Forking, Issues, Branching, Pushing/Pulling</a></td>
   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
 </tr>
 
 <tr>
 <td>Fri Jan 18</td>
-  <td>Python Virtual Environments</a></td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture2Jan18.md">Python Fundamentals and Virtual Environments</a></td>
   <td></td>
   <!--<td><a href="Assignments/getting_started_git.md">Getting Started with git</a></td>-->
 </tr>
 
 <tr>
 <td>Wed Jan 23</td>
-<td>Python Fundamentals</a></td>
+<td>Python Fundamentals, cont.</a></td>
 <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
 </tr>
 
