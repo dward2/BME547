@@ -35,7 +35,7 @@ progress, severe weather days, etc.  Please check back regularly.
 <tr>
 <td>Wed Jan 23</td>
 <td>Python Fundamentals, cont.</a></td>
-<td>Python Fundamentals</td>
+<td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
 </tr>
 
 <tr>
