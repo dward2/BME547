@@ -102,7 +102,8 @@ Enter the following commands at the Anaconda Prompt.
 where `<Environment Name>` is the name of the virtual environment to be created.
 
 #### To activate a virtual environment
-`conda activate <Environment Name>`
+`conda activate <Environment Name>` or `activate <Environment Name>`  
+(For running from the Windows command prompt, the second option above is the correct one.)
 
 #### To deactivate a virtual environment
 `deactivate`
