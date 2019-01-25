@@ -1,7 +1,9 @@
 # Assignment: BMI Calculator
 In this assignment, you will be writing a program to calculate BMI from
 inputted weight and height measurements.  GitHub Classroom will be used for
-assignment repositories.  Look for announcement in Sakai with link.
+assignment repositories.  Look for announcement in Sakai with link.  The
+created repository will be empty.  Create a README.md file in GitHub first.
+That will allow for this new repository to be cloned to your local computer.
 
 ### Program specifications
 * Receives input from the user from the console  
