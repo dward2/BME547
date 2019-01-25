@@ -41,7 +41,7 @@ progress, severe weather days, etc.  Please check back regularly.
 <tr>
 <td>Fri Jan 25</td> 
 <td>Git Workflow</a></td>
-<td>BMI Calculator?</td>
+<td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
 
 <tr>
