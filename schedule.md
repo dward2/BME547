@@ -34,7 +34,7 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Wed Jan 23</td>
-<td>Python Fundamentals, cont.</a></td>
+<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture3Jan23.md">Python Virtual Environments</a></td>
 <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
 </tr>
 
