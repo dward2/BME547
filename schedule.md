@@ -40,7 +40,7 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Fri Jan 25</td> 
-<td>Git Workflow</a></td>
+<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture4Jan25.md">Git Workflow</a></td>
 <td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
 
