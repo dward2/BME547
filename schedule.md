@@ -52,7 +52,7 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Fri Feb 1</td>
-<td>Unit Testing: Comprehensive unit tests</td>
+<td><a href="Lectures/robust_testing.md">Unit Testing: Comprehensive and Robust Unit Tests</td>
 <td>Unit Testing & CI Assignment</td>
 </tr>
 

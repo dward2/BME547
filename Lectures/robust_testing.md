@@ -1,4 +1,4 @@
-# Robust Unit Testing
+# Robust and Comprehensive Unit Testing
 
 Expanding on the basic idea of testing units of code from last class, we 
 should take some time to consider common ways to write robust unit tests. 
