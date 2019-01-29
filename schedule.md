@@ -46,7 +46,7 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Wed Jan 30</td>
-<td>Unit Testing: (py.test) & Continuous Integration (Travis CI)</a></td>
+<td><a href="Lectures/unit_testing.md">Unit Testing: (py.test) & Continuous Integration (Travis CI)</a></td>
 <td></td>
 </tr>
 
