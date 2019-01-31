@@ -46,14 +46,16 @@ progress, severe weather days, etc.  Please check back regularly.
 
 <tr>
 <td>Wed Jan 30</td>
-<td><a href="Lectures/unit_testing.md">Unit Testing: (py.test) & Continuous Integration (Travis CI)</a></td>
+<td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
 <td></td>
 </tr>
 
 <tr>
 <td>Fri Feb 1</td>
-<td>Unit Testing: Comprehensive unit tests</td>
-<td>Unit Testing & CI Assignment</td>
+<td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
+Integration & Travis</a>;
+<a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></td>
+<td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
 </tr>
 
 <tr>
