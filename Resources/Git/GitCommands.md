@@ -108,4 +108,53 @@ If the local branch doesn't exist on the remote origin, use:
 #### Pushing a local tag to GitHub
 `git push origin v#.#`
 
+#### Linking local repository to a second GitHub repository
+`git remote add <localnickname> <repositoryURL>`  
+where `<localnickname>` is a nickname that your local repository will use to
+reference this specific remote repository.  The nickname `origin` is the
+default for the first linked repository.  You can then substitute 
+`<localnickname>` for `origin` in any push/pull commands to send to this second
+repository.  Use carefully to make sure you keep the various remote and local
+repositories coordinated.
 
+#### Viewing branches in remote repository
+`git branch -a`  
+will list all local and remote branches
+
+#### Checkout and copy a remote branch to local repository
+Let's say you have cloned a GitHub repository as follows:
+```
+$ git clone git://example.com/myproject
+$ cd myproject
+```
+If we look at the branches in this repository, we will see:
+```
+$ git branch
+* master
+```
+To see what branches also exist in the remote repository, we type:
+```
+$ git branch -a
+* master
+  remotes/origin/HEAD
+  remotes/origin/master
+  remotes/origin/v1.0-stable
+  remotes/origin/experimental
+```
+To examine the remote branch, you can check it out directly:
+```
+$ git checkout origin/experimental
+```
+But, if you want to work on that branch, you need to create a local tracking
+branch which can be done by:
+```
+git checkout experimental
+```
+Now, if we look at the local branches:
+```
+$ git branch
+* experimental
+  master
+```
+The local `experimental` branch will now track with the remote branch of the 
+same name.
