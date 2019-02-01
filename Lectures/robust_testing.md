@@ -120,3 +120,11 @@ Nice article: https://www.business2community.com/tech-gadgets/4-types-software-t
 ## Resources
 * http://pythontesting.net/start-here/
 * https://docs.pytest.org/en/latest/
+
+# In Class Exercise
+* Write a function to subtract two numbers.
+* Write a function to find the minimum and maximum of a list.
+* Write unit tests for these functions.  Write at least one test that
+checks for failure (i.e., gives bad input and expects False)
+* Push to a GitHub repository
+* Activate Travis CI and implement automated testing.

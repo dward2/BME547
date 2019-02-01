@@ -7,7 +7,7 @@ changes didn't break anything.
 
 A better option would be to automate the testing whenever changes are made.
 This also helps when you are collaborating on a code base.  The tests should
-be designed so they ensure that the code runs and performas as expected.  
+be designed so they ensure that the code runs and performs as expected.  
 Then, when 
 developers add new code to the repository, the existing tests can be used to
 ensure that the code that is added meets the desired specifications and works
