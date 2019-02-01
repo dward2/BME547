@@ -32,7 +32,8 @@ the function should return a value of `True`
 * Function must follow the PEP-8 style guide.
 
 ### Approach
-* Create a GitHub repository
+* Create a public GitHub repository in your account with `bme547ci` somewhere 
+in the name
 * Clone this repository to your local computer
 * Develop code on a feature branch
 * Develop appropriate unit tests, including PEP-8 style check.
