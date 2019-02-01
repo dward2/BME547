@@ -32,7 +32,7 @@ the function should return a value of `True`
 * Function must follow the PEP-8 style guide.
 
 ### Approach
-* Create a GitHub Classroom repository
+* Create a GitHub repository
 * Clone this repository to your local computer
 * Develop code on a feature branch
 * Develop appropriate unit tests, including PEP-8 style check.
