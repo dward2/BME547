@@ -54,13 +54,14 @@ progress, severe weather days, etc.  Please check back regularly.
 <td>Fri Feb 1</td>
 <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
 Integration & Travis</a>;
-<a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></td>
+<a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Appxorimations</a></td>
 <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
 </tr>
 
 <tr>
 <td>Wed Feb 6</td>
-<td>Unit Testing:  Approximations, fixtures & more; Docstrings</td>
+<td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
+Docstrings</td>
 <td></td>
 </tr>
 
