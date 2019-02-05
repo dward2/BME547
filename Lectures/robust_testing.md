@@ -105,21 +105,6 @@ True
 * https://docs.pytest.org/en/latest/reference.html#pytest-approx
 * https://docs.scipy.org/doc/numpy/reference/generated/numpy.testing.assert_approx_equal.html
 
-## Additional References for Testing Fixtures
-* https://docs.pytest.org/en/latest/fixture.html
-* http://pythontesting.net/framework/pytest/pytest-fixtures/
-
-Example: https://github.com/mlp6/fem/blob/master/tests/conftest.py
-
-## Other Type of Software Testing
-1. Integration Testing (how do all of the units work together)
-2. System Testing (does the whole package work)
-3. User Testing (alpha / beta; what breaks)
-Nice article: https://www.business2community.com/tech-gadgets/4-types-software-testing-use-01704964#DEr51MdDRpj4zXyg.97
-
-## Resources
-* http://pythontesting.net/start-here/
-* https://docs.pytest.org/en/latest/
 
 # In Class Exercise
 * Write a function to subtract two numbers.
