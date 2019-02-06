@@ -61,7 +61,8 @@ Integration & Travis</a>;
 <tr>
 <td>Wed Feb 6</td>
 <td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
-Docstrings</td>
+<a href="Lectures/docstrings.md">Docstrings</a>;
+<a href="Lectures/sphinx.md">Sphinx</a></td>
 <td></td>
 </tr>
 
