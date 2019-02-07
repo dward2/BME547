@@ -68,7 +68,7 @@ Integration & Travis</a>;
 
 <tr>
 <td>Fri Feb 8</td>
-<td></td>
+<td><a href="Lectures/dictionaries.md">Dictionaries</a></td>
 <td>Add docstrings & testing to BMI Calculator?</td>
 </tr>
 
