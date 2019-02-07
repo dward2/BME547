@@ -68,8 +68,9 @@ Integration & Travis</a>;
 
 <tr>
 <td>Fri Feb 8</td>
-<td><a href="Lectures/dictionaries.md">Dictionaries</a></td>
-<td>Add docstrings & testing to BMI Calculator?</td>
+<td><a href="Lectures/dictionaries.md">Dictionaries</a>;
+<a href="Lectures/json.md">JSON</td>
+<td><a href="Assignments/DictionaryAssignment">Dictionary & JSON Assignment</td>
 </tr>
 
 <tr>
@@ -87,7 +88,7 @@ Integration & Travis</a>;
 <tr>
 <td>Web Feb 20</td>
 <td>Exceptions and Logging</td>
-<td>Add exception checking to BMI calculator?</td>
+<td>Add exception checking, docstrings, and testing to BMI calculator?</td>
 </tr>
 
 <tr>
