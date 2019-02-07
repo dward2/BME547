@@ -40,12 +40,13 @@ file will have a line containing `END` to mark the end of the file.
 
 ### Program Specifications
 * Read in the data from this text file.
-* From the TSH results from each patient, diagnose whether the patient has
+* From the TSH results from each patient, diagnose whether the patient has:
   + "hyperthyroidism" as defined by any of their tests results being less than 1.0,
-  + "hypothyroidism" as defined bgy any of their test results being greater than 4.0, or
+  + "hypothyroidism" as defined by any of their test results being greater than 4.0, or
   + "normal thyroid function" as defined by all of their test results being
   between 1.0 and 4.0, inclusive.
-  + No single patient will test results both above 4.0 and below 1.0.
+  + No single patient will have test results both above 4.0 and below 1.0,
+  hence will only meet one of the diagnoses above.
 * For each patient, create an output file named "FirstName-LastName.json".
 The file should contain the following information in JSON format: 
   + First Name
@@ -70,6 +71,7 @@ string handling, unless you find them useful)
 * Travis CI integration
 * Conforms to PEP-8 Style Guide 
 * Docstrings exist for all functions
-* Appropriate use of virtual environments
+* Appropriate use of virtual environments, including a `requirements.txt` or 
+`environment.yml` file being present in your GitHub repository.
 * Presence and content of README.md
 * Final submission is pushed to GitHub by deadline and is tagged appropriately.
