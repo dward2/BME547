@@ -79,7 +79,7 @@ easier for you as your projects get more complex.  Options include:
   + [Visual Studio Code](https://code.visualstudio.com/)
   + [Sublime Text](https://www.sublimetext.com/)
   + [Notepad++](https://notepad-plus-plus.org/)
-  + <a href="Resources/PyCharm">PyCharm</a> (full-featured IDE; professional edition 
+  + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) (full-featured IDE; professional edition 
   free to use in academic setting)
 
 ## Learning Git
