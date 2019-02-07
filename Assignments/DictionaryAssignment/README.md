@@ -75,3 +75,9 @@ string handling, unless you find them useful)
 `environment.yml` file being present in your GitHub repository.
 * Presence and content of README.md
 * Final submission is pushed to GitHub by deadline and is tagged appropriately.
+
+### Bonus
+* Sort the list of TSH values (low to high) before outputing them to the JSON
+file. 
+*  Create `sphinx` documentation and push the resulting `*.html` files to your
+GitHub repository.
