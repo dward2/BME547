@@ -16,7 +16,7 @@ For this assignment, we will be writing some code that is reading in patient
 data containing TSH test results.  This data will be analyzed for hypothyroidism
 and hyperthyroidism and then stored in a JSON output file.
 
-### Input Data
+## Input Data
 The input data is found in a text file called `test_data.txt` found in this 
 repository.  The data for a single patient is found on four lines with the 
 following format:
@@ -38,7 +38,7 @@ In the `test_data.txt` file, the first patient fills the first four rows, the
 second patient fills the next four rows, etc.  After the last patient, the
 file will have a line containing `END` to mark the end of the file.
 
-### Program Specifications
+## Program Specifications
 * Read in the data from this text file.
 * From the TSH results from each patient, diagnose whether the patient has:
   + "hyperthyroidism" as defined by any of their tests results being less than 1.0,
