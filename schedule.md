@@ -75,7 +75,7 @@ Integration & Travis</a>;
 
 <tr>
 <td>Wed Feb 13</td>
-<td>PyCharm, Debugging</td>
+<td><a href="Lectures/debugging.md">Debugging</a>, PyCharm</td>
 <td></td>
 </tr>
 
