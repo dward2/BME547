@@ -52,6 +52,7 @@ have been previously added to the repository.
 `git log -p` to also include the changes made at each commit.
 
 ### Tags
+* Check out details on semantic versioning here: http://semver.org
 #### Create a tag
 `git tag -a v#.# -m "Tag Message"`
 
