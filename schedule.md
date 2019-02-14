@@ -83,7 +83,7 @@ Integration & Travis</a>;
 <tr>
 <td>Fri Feb 15</td>
 <td>Dictionary Type (and other data structures), Classes, Property Decorators, Numpy Docs</td>
-<td></td>
+<td><a href="Assignments/ECG_Analysis">ECG_Analysis Assigned</a></td>
 </tr>
 
 <tr>
@@ -95,7 +95,7 @@ Integration & Travis</a>;
 <tr>
 <td>Fri Feb 22</td>
 <td>Functional Decomposition</td>
-<td>Heart Rate Monitor Assigned</td>
+<td></td>
 </tr>
 
 <tr>
