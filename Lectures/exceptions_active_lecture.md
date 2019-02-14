@@ -145,54 +145,6 @@ As above, the list of possible exceptions that can be raised can be found at
 https://docs.python.org/3/library/exceptions.html
 
 
-### Example
-```python
-def get_compass_direction_entry():
-    compass_direction = input("Enter N/S/E/W or Q for quit: ")
-    return compass_direction
-    
-def move_direction(direction):
-    continue_moving = True
-    available_directions = ["N", "E", "S", "W", "Q"]
-    if direction not in available_directions:
-        raise ValueError("Not a valid direction")
-    if direction == "N":
-        print("Move north")
-    elif direction == "E":
-        print("Move east")
-    elif direction == "S":
-        print("Move south")
-    elif direction == "W":
-        print("Move west")
-    elif direction == "Q":
-        print("Quit")
-        continue_moving = False
-    return continue_moving
- 
-def main_loop():
-    continue_loop = True
-    while continue_loop:
-        entry = get_compass_direction_entry()
-        try:
-            continue_loop = move_direction(entry)
-        except ValueError:
-            print("Please enter one of the requested characters.")
-    return
-    
-if __name__ == "__main__":
-    main_loop()
-```
-In the example above, the user is prompted to enter a character in the line
-`entry = get_compass_direction_entry()` in the `main_loop()`.  The character
-entered is then sent to the `move_direction()` function in a `try` block.
-
-In `move_direction()`, the entered character is checked against a list of 
-acceptable characters. If it is not in this list, a `ValueError` exception
-is raised ending the `move_direction()` function and telling `main_loop()`, 
-which called `move_direction()`, that the sent value is incorrect.  Rather than
-the program crashing from this error, the `except ValueError:` block handles
-this exception by telling the user to enter something different and then 
-allowing the loop to continue.
 
 ## Tests for Raised Exceptions
 If your function raises an exception, you will want to test if it raises the
@@ -261,52 +213,7 @@ Process finished with exit code 1
 There is a dedicate module to system error symbols: 
 https://docs.python.org/3/library/errno.html
 
-### Another Example of Using Warnings and Sys.Exit
-```python
-# An example of polling the voltage on a GPIO pin that needs to be within
-# +/- 0.3 V of 5 V, and will give unreliable operation if it deviates more
-# than +/- 0.5 V
-
-def check_voltage_deviation(voltage):
-    from warnings import warn
-    import sys
-    from numpy import abs
-
-    volt_deviation = abs(voltage - 5.0)
-
-    if volt_deviation > 0.5:
-        # 0 is normal termination
-        # 1 is abnormal termination
-        sys.exit("Voltage of {} has deviated too much (deviation of {} V)!"
-                 .format(voltage, volt_deviation))
-    if volt_deviation > 0.3:
-        warn("Voltage of {} is drifting a bit too much (deviation of {} V)."
-             .format(voltage, volt_deviation))
-    else:
-        print("Voltage of {} is within tolerance.".format(voltage))
-
-def main():
-    voltage_from_gpio_pin = [5.0, 5.1, 5.3, 4.5, 5.0, 2.0, 5.5, 5.0]
-
-    for v in voltage_from_gpio_pin:
-        check_voltage_deviation(v)
-
-if __name__ == "__main__":
-    main()
-```
-Output:
-```
-Voltage of 5.0 is within tolerance.
-Voltage of 5.1 is within tolerance.
-Voltage of 5.3 is within tolerance.
-D:/ClassRepos/GeneralStudentDebugging/script.py:19: UserWarning: Voltage of 4.5 is drifting a bit too much (deviation of 0.5 V).
-Voltage of 5.0 is within tolerance.
-
-Voltage of 2.0 has deviated too much (deviation of 3.0 V)!
-
-Process finished with exit code 1
-
-```
+[Logging](logging.md)
 
 ## References
 https://docs.python.org/3/tutorial/errors.html

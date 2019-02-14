@@ -82,7 +82,7 @@ Integration & Travis</a>;
 
 <tr>
 <td>Fri Feb 15</td>
-<td><a href="Lectures/exceptions.md">Exceptions</a> and 
+<td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
 <a href="Lectures/logging.md">Logging</a></td>
 <td></td>
 </tr>
