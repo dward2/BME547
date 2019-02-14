@@ -19,15 +19,15 @@ The arrow points to where the syntax is invalid, and the error message
 
 ## Exceptions
 In contrast, Exceptions are raised when you have valid syntax, but an error
-occurs when your command attempts to run.  For example:
-```
-f = open('file.bin', 'rb')
-```
-While this command is syntactically correct, if the file `file.bin` does not
-exist, then this command cannot be executed and will raise an exception:
-```
-FileNotFoundError: [Errno 2] No such file or directory: 'file.bin'
-```
+occurs when your command attempts to run.  
+
+##Class Exercise (5 min)
+* Write a function that will generate an exception error.
+* Call this function from another function.
+* Run code and verify that error is achieved.
+* Share with the class:  what error you found?
+
+## Exception Errors
 Other common exception errors are:
   * ``ZeroDivisionError``
   * ``NameError`` (trying to use a variable name that is not defined)
@@ -50,6 +50,10 @@ procedure to deal with exceptions.
 `try/except` allows us to "try" to execute a segment of code, and if an 
 exception is raised, then the "except" code is executed instead.  Our "excepts" 
 can be tailored to the specific exception error.
+
+## Class Exercise
+* Implement `try/except` fix in your code
+
 
 ### Pseudo-Code
 ```
@@ -108,31 +112,38 @@ command.  An example:
 raise ValueError("This message string gives more information and context about" 
                     "why this error was raised")
 ```
-As another example, you may want to raise an exception if inputs to a function
-are the wrong type:
-```python
-# This function may raise a TypeError if called with certain args:                                                                                                                                                                     
-def add(a, b):                                                                                                                                                                                                                         
-    if type(a) is not int or type(b) is not int:                                                                                                                                                                                       
-        raise TypeError("Inputs must be python ints")                                                                                                                                                                                  
-    return a + b                                              
+#### Pseudo-Code:
 ```
-In the example above, if the inputs to this function are not integers, the 
-caller of this function is notified (and the program as a whole) that an error 
-condition has occurred (and in particular it's a TypeError) by raising this 
-exception. If the calling function does not handle this exception then the 
-program will crash.
+if some_condition_I_don't_like is True:
+    raise ErrorType("Why I am unhappy")
+```
 
-As above, the list of possible exceptions that can be raised can be found at
-https://docs.python.org/3/library/exceptions.html
+## Class Exercise
+* Write a function called `add_two_numbers(a, b):`
+* Have this function return the sum of the two numbers
+* If the variables `a` or `b` do not contain an `int` variable, raise a `TypeError` exception.
+* If the variables `a` or `b` contain a negative number, raise a `ValueError` exception.
+* Call this function multiple times with integers and non-integers and see what happens.
 
-### What happens when an exception is raised
+## What happens when an exception is raised
 When you raise an exception, code execution in that function stops at that 
 point and the exception propogates up to the caller of the function. The 
 function does not return anything. The caller of your function can deal with 
 the exception with a `try/except` block (for example, re-prompting the user for 
 proper input) or it can allow the exception to propagate through the program 
 until it crashes with an error message.
+
+## Class Exercise
+* Write another function that calls `add_two_numbers()` and have that function 
+either:  
+  + print out the resulting summed number  
+  + prints "Needs Integers" if a `TypeError` is raised, or
+  + print "No negative numbers" if a `ValueError` is raised.
+  
+
+As above, the list of possible exceptions that can be raised can be found at
+https://docs.python.org/3/library/exceptions.html
+
 
 ### Example
 ```python
@@ -195,6 +206,10 @@ def test_something():
         move_direction("L")
 ```
 This test will pass if `move_direction()` successfully raises a ValueError
+
+## Class Exercise
+* Write tests for `add_two_numbers` that tests whether `ValueError` and 
+`TypeError` are successfully raised with bad inputs.
 
 ## Other Options
 ### Warnings
