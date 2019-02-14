@@ -28,39 +28,35 @@
   - Feature branches should be merged after passing unit tests with Travis CI.
   - Do not delete your branches after merging them into master.
 * Create an annotated tag titled `v1.0.0` or subsequent version when your
-assignment is completed and ready to be graded.
-
-
-* Frequent and meaningful commits!  
-* Branches should be used for specific feature implementations, bug fixes, etc.  
-* Merge your feature branches into the master branch using Pull Requests 
-    on GitHub.
-    - Feature branches should be merged after passing unit tests with Travis CI.  
-    - Do not delete your branches after merging them into master. 
-* Write a single function for each functional element of your code, and all 
-    function must have associated unit tests with complete coverage.
-  
-  + Make sure that your project has a `README.md` file that contains:
-      - instructions on how to run your program
-      - how you are calculating the beats per minute once you have identified
+    assignment is completed and ready to be graded.
+* Make sure that your project has a `README.md` file that contains:
+  - instructions on how to run your program
+  - how you are calculating the beats per minute once you have identified
         the beats
-      - a software license with your project (http://choosealicense.com/)  
-      - Bonus - integrate a Travis [status badge](https://docs.travis-ci.com/user/status-images/) 
+  - a software license with your project (http://choosealicense.com/)  
+  - anything else you think the graders should know to understand the operation
+      and function of your code.
+* Bonus - integrate a Travis [status badge](https://docs.travis-ci.com/user/status-images/) 
         in your README that displays the status of test passage
-  + Create an annotated tag titled `v1.0.0` when your assignment is completed 
-  and ready to be graded.  Check out details on semantic versioning here: http://semver.org
+  
 
 ## Python Code Expectations
+* Modular code:  write a single function for each functional element of your 
+    code, and all functions must have associated unit tests with comprehensive 
+    coverage.
 * Utilize a virtual environment.
 * Have Sphinx-friendly docstrings for all methods.  
-* Unit tests should exist in a separate file or directory of test files. 
-* Achieve the functional specifications with passing unit tests.  Make sure that you include a test for writing the output JSON file.
-* All methods should have well-defined input-action-output (as the unit tests will demand).
+* Unit tests should exist in a separate file or directory of test files using
+    standard naming conventions. 
+* Achieve the functional specifications with passing unit tests.  Make sure 
+    that you include a test for writing the output JSON file.
+* All methods should have well-defined input-action-output (as the unit tests 
+    will demand).
 * There should be no "hard-coded" values in your methods.
 * Adhere to [PEP8](https://www.python.org/dev/peps/pep-0008/) style. 
 * Implement exception handling: when reading in ECG data, if a non-numeric
-value is encountered, an exception should be raised and handled by the calling
-function with a try/except
+    value is encountered, an exception should be raised and handled by the 
+    calling function with a try/except
 * Gracefully terminate when the input file ends
 * Create meaningful logs  
    - log as `INFO` when starting analysis of a new ECG trace
@@ -68,6 +64,7 @@ function with a try/except
    - log as `WARNING` or `ERROR` when exceptions are generated
 
 ## Grading Criteria
+* Meeting the expectations outlined above, including...
 * Effective version control usage
 * Adequate unit test coverage and functional modularity
 * Python style and docstrings
