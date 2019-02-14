@@ -1,7 +1,12 @@
 # ECG Analysis Assignment
 
-* Create a new repository--`bme547ecg`--in your individual space on GitHub.
-* Add the instructors and teaching assistants as collaborators.
+* GitHub Classroom will be used to host repositories.  Travis-CI integration 
+with the BME547-Spring2019 organization has been established.  
+* After signing into GitHub, visit the GitHub Classroom link found in Sakai.
+  A private repository will be created in the BME547-Spring2019 organization
+  for you to use.  The repository will be pre-populated with the ECG test data
+  needed for the assignment.  Once a `.travis.yml` file is correctly created, 
+  Travis-CI integration will be made with your repository.
 
 ## ECG Analysis: Functional Specifications
   + Read ECG data from a CSV file that will have lines with `time, voltage`. 
