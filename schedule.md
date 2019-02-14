@@ -119,7 +119,7 @@ Integration & Travis</a>;
 <tr>
 <td>Fri Mar 8</td>
 <td>Intro to Web Services & Cloud-Connected Devices</td>
-<td>Heart Rate Monitor Due</td>
+<td>ECG_Analysis Assignment Due</td>
 </tr>
 
 <tr>
