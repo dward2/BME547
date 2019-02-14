@@ -82,13 +82,13 @@ Integration & Travis</a>;
 
 <tr>
 <td>Fri Feb 15</td>
-<td>Dictionary Type (and other data structures), Classes, Property Decorators, Numpy Docs</td>
+<td><a href="Lectures/exceptions.md">Exceptions</a> and Logging</td>
 <td></td>
 </tr>
 
 <tr>
 <td>Web Feb 20</td>
-<td>Exceptions and Logging</td>
+<td>Dictionary Type (and other data structures), Classes, Property Decorators, Numpy Docs</td>
 <td>Add exception checking, docstrings, and testing to BMI calculator?</td>
 </tr>
 
