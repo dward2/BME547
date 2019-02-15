@@ -85,7 +85,6 @@ Integration & Travis</a>;
 <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
 <a href="Lectures/logging.md">Logging</a></td>
 <td><a href="Assignments/ECG_Analysis">ECG_Analysis Assigned</a></td>
-<td></td>
 </tr>
 
 <tr>
