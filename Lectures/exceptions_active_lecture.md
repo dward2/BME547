@@ -21,7 +21,7 @@ The arrow points to where the syntax is invalid, and the error message
 In contrast, Exceptions are raised when you have valid syntax, but an error
 occurs when your command attempts to run.  
 
-##Class Exercise (5 min)
+## Class Exercise (5 min)
 * Write a function that will generate an exception error.
 * Call this function from another function.
 * Run code and verify that error is achieved.
