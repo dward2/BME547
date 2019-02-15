@@ -82,6 +82,9 @@ Integration & Travis</a>;
 
 <tr>
 <td>Fri Feb 15</td>
+<td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
+<a href="Lectures/logging.md">Logging</a></td>
+<td></td>
 <td>Dictionary Type (and other data structures), Classes, Property Decorators, Numpy Docs</td>
 <td><a href="Assignments/ECG_Analysis">ECG_Analysis Assigned</a></td>
 </tr>
