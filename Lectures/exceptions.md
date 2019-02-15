@@ -62,6 +62,8 @@ def main():
         clean_up_from_Error2()
     except:
         clean_up_from_any_other_error()
+    else:
+        code_to_run_after_do_stuff_with_no_exceptions()
 ```
 ### Example
 ```python
@@ -102,7 +104,7 @@ raising an exception is to notify the caller of the function
 that something has gone wrong and needs to be fixed for continued operation.
 
 ### How to raise an exception
-To raise an exception in Python to indicate an error, we se the `raise` 
+To raise an exception in Python to indicate an error, we use the `raise` 
 command.  An example:
 ```python
 raise ValueError("This message string gives more information and context about" 
