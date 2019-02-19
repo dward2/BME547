@@ -95,7 +95,8 @@ Integration & Travis</a>;
 
 <tr>
 <td>Fri Feb 22</td>
-<td><a href="Lectures/numpy.md">NumPy</a>, Matplotlib, and other packages</td>
+<td><a href="Lectures/numpy.md">NumPy</a>, 
+<a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</td>
 <td></td>
 </tr>
 

@@ -8,6 +8,8 @@ NumPy is a Python package for scientific computing that contains:
 Intended to improve easy and efficiency of data handling and calculation.
 
 ## Importing NumPy
+The `numpy` package must be installed in your virtual environment.  Then, in
+the Python code, it can be imported as follows: 
 ```
 import numpy as np
 ```
