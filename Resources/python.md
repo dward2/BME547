@@ -9,8 +9,8 @@
 * [Learn X in Y Minutes Python 3](https://learnxinyminutes.com/docs/python3/)
 
 ## NumPy
- Here are Numpy documentation websites
- that demonstrate how to create numpy arrays in code and from input
+ Here are NumPy documentation websites
+ that demonstrate how to create `numpy` arrays in code and from input
  files:
   * <https://docs.scipy.org/doc/numpy/user/basics.html>
   * <https://docs.scipy.org/doc/numpy/user/basics.creation.html>
