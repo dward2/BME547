@@ -89,13 +89,13 @@ Integration & Travis</a>;
 
 <tr>
 <td>Web Feb 20</td>
-<td>Numpy, Matplotlib, and other packages</td>
+<td>Functional Decomposition</td>
 <td></td>
 </tr>
 
 <tr>
 <td>Fri Feb 22</td>
-<td>Functional Decomposition</td>
+<td>Numpy, Matplotlib, and other packages</td>
 <td></td>
 </tr>
 

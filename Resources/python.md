@@ -15,6 +15,8 @@
   * <https://docs.scipy.org/doc/numpy/user/basics.html>
   * <https://docs.scipy.org/doc/numpy/user/basics.creation.html>
   * <https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html>
+  
+Also, see the NumPy related information at the SciPy Lectures link below.
 
 ## NumPy <-> Matlab
 * [Matlab-NumPy](http://mathesaurus.sourceforge.net/matlab-numpy.html)
