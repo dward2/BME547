@@ -16,8 +16,7 @@ with the BME547-Spring2019 organization has been established.
     - `duration`: time duration of the ECG strip  
     - `voltage_extremes`: tuple containing minimum and maximum lead voltages  
     - `num_beats`: number of detected beats in the strip
-    - `mean_hr_bpm`: estimated average heart rate over a user-specified number
-      of minutes (can choose a default interval)  
+    - `mean_hr_bpm`: estimated average heart rate over the length of the strip  
     - `beats`: numpy array of times when a beat occurred
   + Your `metrics` dictionary should be output as a [JSON](https://json.org/) 
   file.  The json file should have the same name as the ECG data file, but
