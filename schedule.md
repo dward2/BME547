@@ -103,7 +103,7 @@ Integration & Travis</a>;
 <tr>
 <td>Wed Feb 27</td>
 <td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a></td>
-<td>IEC 62304 Assignment</td>
+<td>IEC 62304 Assignment (in Sakai, due 3/22)</td>
 </tr>
 
 <tr>
@@ -149,7 +149,7 @@ Integration & Travis</a>;
 <td>Fri Mar 22</td>
 <!--<td><a href="Lectures/react/intro.md">Web/Mobile client (ReactJS) Introduction [SK]</a></td>-->
   <td>Virtual Machines and Basic Flask Web Service</td>
-<td></td>
+<td>IEC 62034 Assessment in Sakai Due</td>
 </tr>
 
 <tr>
