@@ -104,7 +104,7 @@ Then, when there is a test function that needs the data that is set up by
 the fixture, we pass that function name as a parameter to the test_function,
 as seen by the line `def test_first_item_two(load_array):`.
 
-### Order of Fixures and Test Functions
+### Order of Fixtures and Test Functions
 It is important that any text fixture is defined ahead of the test that will
 be using it.  If all of your tests are in a single file, just make sure that
 the fixtures are defined above the tests.  However, if you have multiple
@@ -117,6 +117,35 @@ first and run any code in it.  So, if all test fixtures are stored in this
 file, they will be guaranteed to be available for any other test file.  
 `conftest.py` is named as such because it is the "conf"iguration file for 
 py"test".  
+
+
+## Predefined Test Fixtures
+Pytest has some predefined test fixtures that can be used.  
+### Temporary directories for testing input/output
+If your code is doing input/output, you may want to avoid cluttering your 
+repository with lots of input/output files for testing.  Pytest provides
+fixtures for creating temporary file locations unique to the test instance.
+
+The `tmpdir` fixture provides a path to a temporary directory to use during
+testing.  An example:
+```
+def test_create_file(tmpdir):
+    from json_out import export_json
+    import json
+
+    outfile = tmpdir.join("testfile.txt")
+    mydic = {"First": "Test",
+             "Second": 15,
+             "Third": True,
+             "Fourth": "One more"}
+    export_json(mydic, outfile)
+    infile = open(outfile, "r")
+    newdic = json.load(infile)
+    assert newdic == mydic
+```
+ 
+For more info:
+https://docs.pytest.org/en/latest/tmpdir.html#
 
 
 ## Additional References for Testing Fixtures
