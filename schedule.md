@@ -115,7 +115,7 @@ Integration & Travis</a>;
 
 <tr>
 <td>Wed Mar 6</td>
-<td></td>
+<td>Working in class</td>
 <td></td>
 </tr>
 
