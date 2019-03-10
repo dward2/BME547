@@ -121,7 +121,8 @@ Integration & Travis</a>;
 
 <tr>
 <td>Fri Mar 8</td>
-<td>Intro to Web Services & Cloud-Connected Devices</td>
+<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture12Mar8.md">
+Intro to Web Service Design</a></td>
 <td>ECG_Analysis Assignment Due</td>
 </tr>
 
