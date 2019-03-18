@@ -28,11 +28,12 @@ if __name__ == '__main__':
 
 What did the above do?
 
-`from flask import Flask`  imports the `Flask` class from the `flask` package.
+`from flask import Flask jsonify` imports the `Flask` class and `jsonify`
+function from the `flask` package.
 
 `app = Flask(__name__)`
-creates an instance of the Flask class that will run the server.  It is supplied
-with the name of the current running module.
+creates an instance of the Flask class that will run the server.  It is 
+supplied with the name of the current running module.
 
 The above server code has two API endpoints:
 * `GET /'` which returns the server status as a string
@@ -48,10 +49,10 @@ is sent a request.  In this case, the function returns a string intended to
 let the client know that the server is active.
 
 `@app.route("/info", methods=["GET"])`
-Simlar to the previous decorator, it is attaching the procedure on the next
+Similar to the previous decorator, it is attaching the procedure on the next
 line to the route `/info`.
 
-`ddef information():`
+`def information():`
 is the function that will run when `/info` receives a GET request.  It
 returns a JSON string of the dictionary defined in the procedure.  The
 `flask` function `jsonify` encodes the given variable into a JSON string
@@ -78,20 +79,20 @@ loopback address or localhost address.  This establishes an IP connection
 to the local computer.
 
 To access the server, you could do one of two things:
-1.  In a browser, visit `http://127.0.0.1:5000/`, or
+1.  In a browser, visit `http://127.0.0.1:5000/info`, or
 2.  make a request such as follows:  
   ```
     import requests
 
-    r = requests.get("http://127.0.0.1:5000/")
+    r = requests.get("http://127.0.0.1:5000/info")
     print(r.text)
 ```
-Next, lets add another route to our server.  First, we must import two
-additional items from flask:
+Next, lets add another route to our server.  First, we must import an
+additional item from flask:  the `request` object.
 ```
 from flask import Flask, jsonify, request
 ```
-Then, here is the function to add a second route to our server:
+Then, here is the function to add a third route to our server:
 ```
 @app.route("/calculate_iwc", methods=["POST"])
 def calculate_iwc():
