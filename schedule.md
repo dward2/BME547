@@ -143,8 +143,9 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Wed Mar 20</td>
-  <td>Python Flask, API Design</td>
-  <td>Small Server Assignment?</td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture13Mar20.md">
+       Python Flask, API Design</a></td>
+  <td></td>
 </tr>
 
 <tr>
