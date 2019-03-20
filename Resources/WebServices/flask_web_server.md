@@ -18,7 +18,7 @@ def information():
     calc_info_string = ("The calculation can be accessed by POST to the "
                         "'/calculate_iwc' endpoint with a JSON containng "
                         "{'age': age, 'height_in': height_inches, "
-                        "'gender': male_or_female}"
+                        "'gender': male_or_female}")
     out_dictionary = {"info": info_string, "calc_info": calc_info_string}
     return jsonify(out_dictionary)
                  
