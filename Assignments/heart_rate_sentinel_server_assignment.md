@@ -13,11 +13,8 @@ be sent using the free [Sendgrid API](https://sendgrid.com/) (there is a
 wraps the API).  More information on setting up SendGrid can be found 
 [here](../Resources/WebServices/sendgrid.md).
 
-Assignment repositories will be hosted in GitHub Classroom.
-
-Note: for this assignment, you do not have to use a database. You can choose 
-to store patient information using in-memory data structures like python lists 
-and dictionaries. 
+Assignment repositories will be hosted in GitHub Classroom.  See the 
+assignment in Sakai for the link to create a repository.
 
 ## Server Specifications
 
@@ -27,7 +24,7 @@ Your Flask web service should implement the following API routes:
   ```
   {
       "patient_id": "1", # usually this would be the patient MRN
-      "attending_email": "bme547@gmail.com", 
+      "attending_email": "dr_user_id@yourdomain.com", 
       "user_age": 50, # in years
   }
   ```
@@ -121,20 +118,29 @@ handler functions directly (the functions associated with the `@app.route`
 decorator), assuming that they have limited code and primarily call other
 functions to do the work.  All of these other functions should be tested.  
 
+Note: for this assignment, your server will need to keep the information
+it is sent.  You can choose to store this information by using an in-memory
+data structure like Python lists and dictionaries, or you can choose to use
+an external database.
+
+For the attending e-mail:  use an e-mail address that you can check to verify
+appropriate function.  When your code is evaluated, a real e-mail address will 
+be used for verification.  
+
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
 (unit testing, git practices, Travis CI, virtual environments, PEP8, 
 docstrings, descriptive README.md, license, etc)__
 - Create a git tag for the final version of your repository as done previously  
 in this class.
-- __The SendGrid part of this assignment will not be worth the majority of 
+- The SendGrid part of this assignment will not be worth the majority of 
 points, so focus on that part after the rest of the functionality has been 
-completed.__
+completed.
 - Deploy this on your VCM and include in your README.md file the hostname and 
 port on which your server is running (eg., `vcm-1000.vm.duke.edu:5000`). 
 Remember to 
 follow the instructions about ensuring your server is not automatically
-shut down (there is a check box on the vcm control panel. It will ask you for a 
+shut down (there is a check box on the VCM control panel. It will ask you for a 
 reason, just say you are running a web server assignment for BME 547 
 Medical Software Design). __Please do this deployment step last, it is most 
 important to complete the rest of the assignment first (that is where most of 
@@ -154,7 +160,7 @@ SendGrid has a nice [python API](https://github.com/sendgrid/sendgrid-python)
 that you can install using pip. In the 
 [example code shown there](https://github.com/sendgrid/sendgrid-python#quick-start), 
 you need to set the `SENDGRID_API_KEY` environment variable to your API key 
-you created earlier. Try not to commit your key to github as that will expose 
+you created earlier. Try not to commit your key to GitHub as that will expose 
 it for others to use.  More detailed information can be found  
 [here](../Resources/WebServices/sendgrid.md).
 
