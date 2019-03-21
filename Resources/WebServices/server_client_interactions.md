@@ -42,8 +42,10 @@ def server_on():
 ```  
 The interpreter comes across a decoration called `@app.route`.  This tells the 
 interpreter that the function following the decorator should be called when a 
-request is made to the server at the `/` route.  For now, all it does
-is store that fact away, that "/" would call the `server_on()` function.
+request is made to the server at the `/` route (hence the decorator name
+`@app.route` meaning to assign a route to the server defined in `app`).  
+For now, the interpreter and server stores 
+that fact away, that "/" would call the `server_on()` function.
 
 It then continues until it finds the next decorator / function pair:
 ```
