@@ -1,12 +1,13 @@
 # Step-By-Step Workings of Server-Client Communication in Python
 This page will go step by step through a simple server-client interaction 
-between server code and client code.
+between [server code](iwc_server.py) and [client code](iwc_client.py).
 
-The code can be found here.  The code would be run in a virtual environment 
+The code would be run in a virtual environment 
 that has the `flask` and `requests` packages installed.
 
 ## Starting the Server
-The server code is in the file `iwc_server.py`.  Based on how the code is 
+The [server code](iwc_server.py) is in the file `iwc_server.py`.  Based on how 
+the code is 
 written, there are two ways to start the server.  We are going to discuss the
 first method initially, which is to simply run the code (by using your IDE or 
 from the command line by entering `python iwc_server.py`).
@@ -107,7 +108,8 @@ the code.
 
 ## Client Code
 Now that the server is running, the client program can be started which will
-access the code.  The client code is in the file `iwc_client.py`.  For this
+access the code.  The [client code](iwc_client.py) is in the file 
+`iwc_client.py`.  For this
 demonstration, it is written in a script format.  For most applications, it
 would be better to be written in typical functional format.
 
