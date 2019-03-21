@@ -151,8 +151,10 @@ Intro to Web Service Design</a></td>
 <tr>
 <td>Fri Mar 22</td>
 <!--<td><a href="Lectures/react/intro.md">Web/Mobile client (ReactJS) Introduction [SK]</a></td>-->
-  <td>Virtual Machines and Basic Flask Web Service</td>
-<td>IEC 62034 Assessment in Sakai Due</td>
+  <td>More on Virtual Machines and Flask Web Service</td>
+<td>IEC 62034 Assessment in Sakai Due
+
+<a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</td>
 </tr>
 
 <tr>
@@ -160,18 +162,18 @@ Intro to Web Service Design</a></td>
 <!--<td><a href="Lectures/react/lecture2.md">Polished ReactJS + RESTful API Requests [SK]</a></td>-->
 <!--<td><a href="Lectures/react/assignment.md">[09] Heart Rate Physician Client (due 4/4/18 @ 11:59pm)</a></td>-->
   <td>Introduction to Databases</td>
-  <td>Heart Rate Sentinel Server Assigned</td>
+  <td></td>
 </tr>
 
 <tr>
-  <td>Wed Mar 29</td>
-  <td>Intro to GUIs</td>
+  <td>Fri Mar 29</td>
+  <td></td>
   <td></td>
 </tr>
 
 <tr>
 <td>Wed Apr 3</td>
-<td></td>
+<td>Intro to GUIs</td>
 <td></td>
 </tr>
 
@@ -188,7 +190,7 @@ Intro to Web Service Design</a></td>
 </tr>
 
 <tr>
-<td>Wed Apr 12</td>
+<td>Fri Apr 12</td>
 <td>Final project work</td>
 <td></td>
 </tr>
