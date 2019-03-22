@@ -151,7 +151,7 @@ Intro to Web Service Design</a></td>
 <tr>
 <td>Fri Mar 22</td>
 <!--<td><a href="Lectures/react/intro.md">Web/Mobile client (ReactJS) Introduction [SK]</a></td>-->
-  <td>More on Virtual Machines and Flask Web Service</td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</td>
 <td>IEC 62034 Assessment in Sakai Due
 
 <a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</td>
