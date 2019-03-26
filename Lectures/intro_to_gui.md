@@ -1,63 +1,108 @@
 # Graphical User Interface (GUI)
 
-## Notes
+## Intro
 Typically, we think of computer programs as being sequential:  moving
-from one block to another, each block transforming inputs to outputs.
+from one block to another, each block transforming inputs to outputs, with
+continuous "action".
 
-GUIs are more "reactive" or event driven.  Program waits for some sort
-of user input.  That input causes and action leading to an output.
+GUIs are typically "reactive" or event driven.  After the initial display of
+the GUI, the program generally waits for some sort
+of user input.  That input triggers some code to take an action leading to 
+modified output in the GUI.  Then, the program waits for more user input.
 
-Other event driven things:  server-client, user - program, OS - kernel
+Another example of event-driven interactions is the server-client relationship.
+Once a server is started, it essentially waits for a request from a client.
+The client request triggers specific server code to act on that request.
 
-What are GUI events?  Clicking on a button, entering text in a field,
-dragging a scroll bar, making choice from menu
+__What are GUI events?__  Clicking on a button, entering text in a field,
+dragging a scroll bar, making a choice from a menu, etc.
 
-User causes event to happen, and the program responds to these events.
+In sum, the user causes an event to happen, and the program responds to these 
+events.
 
-<http://zetcode.com/gui/pyqt5/introduction/>
 
-<https://pythonspot.com/pyqt5/>
-
-<https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html>
-
-<https://tkdocs.com/tutorial/>
 
 Discuss how you might want to map out your interface, understand how it can
 be gridded, before getting started.
 
-## Ideals for GUI Interface
-* Make things cancelable.  Give the user the option to cancel an action at
+
+## Principles for GUI Interface Design
+* __Make things cancelable or reversible__  
+Give the user the option to cancel an action at
 any step of the process.  There is nothing more frustrating than clicking on
 something, realizing you don't want to do it, and having no option but to
-move forward with something you didn't want to do.
+move forward with something you didn't want to do.  Also, a more forgiving
+interface will encourage a user to do more exploration.
 
-* Provide frequent feedback.  Tell users when an action is complete and what
-was done during that action.
+* __Provide frequent feedback__  
+Tell users when an action is complete and what
+was done or completed during that action.
 
-* Place users in control of interface  
-  + Make actions reversible:  allows user to explore interface
-  + Create cues about what should be done next:  use checklists, put the
-  next action or input near to the previous action or input
-  + Be consistent in how interface works
+* __Create cues about what should be done next__  
+   + Use checklists or label steps
+   + Put the  next action or input near to the previous action or input
   
-* Avoid jargon.  Make sure that actions or input required are understood.
+* __Be consistent in how interface works__
+  
+* __Avoid jargon__  
+  Make sure that actions or input required are understood.
+
+## GUIs for Python
+There are a very large number of GUI packages for use in Python. 
+[See a list here.](https://wiki.python.org/moin/GuiProgramming)
+
+Most are a set of Python bindings to an underlying graphics package that often
+provides support for multiple platforms.  Two such packages are:
+* [Tkinter](https://docs.python.org/3/library/tk.html): a package bundled with 
+default Python distribution that binds to the open-source, cross-platform 
+GUI toolkit [Tk](https://en.wikipedia.org/wiki/Tk_(software)).
+* [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro): 
+a Python binding to the [Qt](https://www.qt.io/) framework, a popular 
+cross-platform GUI framework written in C++.
+
+A lot goes into deciding the best GUI package to use:  the needed 
+functionality, licensing considerations, easy of use, and personal preferences.
+
+In class, we will be discussing the use of the `tkinter` package as it is
+relatively easy to use and is part of the Python install,
 
 ## Tk Info
-When making a widget, you must always specify the parent when defining the
-Widget.  The parent is the widget in which you want to place the new widget.
+### Importing `tkinter`
+```
+from tkinter import *    # Standard binding to Tk (tk-inter(face))
+from tkinter import ttk  # Binding to newer "themed widgets"
+```
+
+### Widgets
+The building blocks for making a GUI in `tkinter` (as well as many GUI 
+packages) are widgets.  Pretty much every part of the GUI is considered a
+widget:  the window, buttons, checkboxes, radial buttons, labels.  You
+construct the GUI by adding widgets to your interface.
+
+The starting point for your GUI is the main window.  It is created as follows:
+```
+root = Tk()  # Defines the top (root) window.
+```
+To this root window, we now add widgets.
+
+When adding a widget, you must always specify the parent of the widget when 
+defining the widget.  The parent is the widget in which you want to place the 
+new widget.
 For example:
 ```
 root = Tk() # Defines the top, or root, window, so doesn't have a parent
 content = ttk.Frame(root)  # The content Frame is placed in root
-button = ttk.Button(content) # The button button is placed in the content
+ok_btn= ttk.Button(content)  # The ok_btn button is placed in the content Frame
 ```
   
-Widgets are configured when first created by sending parameters after the
-parent.  Example:
+Details about the widgets, such as its text, size, actions are configured when 
+the widget is first created by adding parameters after the
+parent parameter.  Example:
 ```
->>> button.ttk.Button(root, text="Hello", command="buttonpressed")
+>>> button = ttk.Button(root, text="Hello", command="buttonpressed", width=50)
 ```
-You can then see the values of the configurations as so:
+Later, if you need to see what the configuration values are, you can then see 
+the values of the configurations as follows:
 ```
 >>> button['text']
 'Hello'
@@ -70,6 +115,8 @@ We can change the value of certain configurations as follows:
 >>> button['text']
 'goodbye'
 ```
+Note, this does not work for every configuration item.
+
 We can get more information about a particular configuration as follows:
 ```
 >>> button.configure('text')
@@ -94,9 +141,71 @@ Or, a list of all of the configuration options:
  'class': ('class', '', '', '', '')}
 ```
 
-Need to create a Widget, and then put it in window in the right place.  This
-is called Geometry Management.  The `grid` command above is a type of 
-geometry manager.  
+### Geometry Management:  Laying out the GUI
+The code above defines and creates widgets.  But, none of the code above will 
+actually display any of the widgets because it does not define where any of the
+added widget should be on the parent widget.  Specifying the relative
+positions of the different widgets on a parent is called Geometry Management.  
+
+The `grid` command is the most versatile geometry management function.  It is 
+most easily explained by way of example.
+```
+root = Tk()
+mainframe = ttk.Frame(root).grid(column=0, row=0)
+ttk.Label(mainframe, text="Janauary").grid(column=0, row=0)
+ttk.Label(mainframe, text="February").grid(column=1, row=0)
+ttk.Label(mainframe, text="A really long label").grid(column=2, row=0)
+ttk.Label(mainframe, text="March").grid(column=0, row=1)
+ttk.Label(mainframe, text="April\nA Rainy Month").grid(column=1, row=1)
+ttk.Label(mainframe, text="May").grid(column=2, row=1)
+```
+![tk_example01.jpg](lecture_files/tk_example01.JPG)
+
+The code above first creates a root window, and then adds a Frame widget, 
+called `mainframe` to the window.  (We'll come back to that command in a 
+minute).  Then,a series Label widgets are added to this Frame.  They are 
+created with the `ttk.Label` command and are sent two parameters:  the parent, 
+which is the `mainframe` Frame, and the text to be displayed as the label.
+
+Then, the `.gird()` function is added to the Label declaration.  This function
+tells the interface how to add the widget to the "grid" layout of the parent,
+which is the `mainframe` Frame in this case.  The "grid" layout has columns and
+rows, where the first column and row has an index of 0 (zero).  When the
+window is drawn, the needed amount of space is created for each column and row,
+as you can see in the example window.  
+
+The default is that the widget will be centered in its grid space.  But, this
+can be modified with the `sticky` parameter.  Using the compass points of N,
+S, E, and W, you can tell the interface to re-align the widget within its
+grid space.  For example, May is centered both horizontally and vertically.
+It can be moved to the upper right of its grid space with the following
+modification:
+```
+ttk.Label(mainframe, text="May").grid(column=2, row=1, sticky="NE")
+```
+![tk_example02.jpg](lecture_files/tk_example02.JPG)
+
+Additional parameters are available 
+to further modify the appearance, and will be discussed below or can be
+found in the documentation.
+
+We have been discussing how the Labels were added to the grid layout of the
+Frame.  When the Frame was added to the root window, we also needed to assign
+where the Frame was going to be in the root window.  So, the Frame declaration
+also has a `.grid(column=0, row=0)` function.  Note, if the widget is not 
+added to the grid, it is not shown in the window.
+
+### Activating GUI / Starting Root Window
+Once the window is fully defined with all of its widgets, the GUI can be
+activated and displayed by the following command:
+```
+root.mainloop()
+```
+This will display the window and the program will wait until some sort of 
+user interaction with the GUI causes additional code to be run.
+
+
+
 
 ### Widgets of Interest
 * Frame  
@@ -123,7 +232,7 @@ geometry manager.
 * Button
     + `button = ttk.Button(parent, text='Okay', command=submitForm)`
     + `button.state(['disabled'])`  # disables button
-    + 'button.state(['!disabled'])'  # enables button
+    + `button.state(['!disabled'])`  # enables button
     + `button.instate[['disabled' | '!disabled']]`  # returns true if the
     specified flag is the current state.
     + `button.instate(['!disabled'], cmd)`  # runs cmd if button state enabled
@@ -141,7 +250,7 @@ geometry manager.
     + ```
       phone = StringVar()
       home = ttk.Radiobutton(parent, text='Home', variable=phone, value='home')
-      office = ttk.Radiobutton(parent, text='Office', variable=phone, value='office'
+      office = ttk.Radiobutton(parent, text='Office', variable=phone, value='office')
       cell = ttk.Radiobutton(parent, text='Mobile', variable=phone, value='cell')
       ```
 * Entry
@@ -167,3 +276,15 @@ geometry manager.
     from this list.
     + `current()` method determines which item in predefined values list is 
     selected.
+    
+## References
+<https://tkdocs.com/tutorial/>  -  An excellent tutorial for using Tk.  You can
+specify that you want to learn in Python and it will show the code using 
+`tkinter`.  It also has some links to good documentation.
+
+<https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html> - 
+documentation for PyQt5
+
+<http://zetcode.com/gui/pyqt5/introduction/> - a tutorial for using PyQt5
+
+<https://pythonspot.com/pyqt5/> - another tutorial for using PyQt5
