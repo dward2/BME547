@@ -1,3 +1,7 @@
+## UPDATE April 1, 2019
+It appears the website has changed since the instructions below were written.
+I will be updating this afternoon.  Dr. Ward
+
 # Provision Free MongoDB Database on mlab
 
 mLab is a online service that lets you quickly spin up a MongoDB database on a virtual machine that they own. Once you've spun up a database instance on their virtual machine, you can connect to and interact with it using database connection URL, as discussed in class. Remember that a database is a program, just like any other program you write. By knowing the connection URL, your Python Flask program knows where the database is running and can communicate with the database to save entries or retreive entries as needed. 
