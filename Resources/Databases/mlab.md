@@ -1,7 +1,3 @@
-## UPDATE April 1, 2019
-It appears the website has changed since the instructions below were written.
-I will be updating this afternoon.  Dr. Ward
-
 # Provision Free MongoDB Database on mongoDB.com
 
 MongoDB Atlas (previously mlab.com) is an online service that lets you quickly 
