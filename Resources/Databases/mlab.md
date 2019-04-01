@@ -7,7 +7,7 @@ mLab is a online service that lets you quickly spin up a MongoDB database on a v
 2. From your home screen click "create new" next to mongodb deployments
 3. Select any cloud provider, and then select the free "sandbox" plan for plan type, then hit continue in the lower right hand corner.
 4. Choose a region close to Duke on the next screen
-5. Name your database anything you would like (perhaps "bme590")
+5. Name your database anything you would like (perhaps "bme547")
 6. Hit submit order and your free mongodb database should be created.
 7. Click on your database name in the table under "MongoDB deployments"
 8. Users tab and then click "add database user" button on the right hand side. We are creating a "user" though which we will be accessing the database in our flask program. Name the user whatever you would like, but do not use a personal password for your password (we are not too worried about the security of this database...you can use something like "GODUKE10", but don't use a personal password that you use for another site).
