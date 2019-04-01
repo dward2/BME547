@@ -161,7 +161,7 @@ Intro to Web Service Design</a></td>
 <td>Wed Mar 27</td>
 <!--<td><a href="Lectures/react/lecture2.md">Polished ReactJS + RESTful API Requests [SK]</a></td>-->
 <!--<td><a href="Lectures/react/assignment.md">[09] Heart Rate Physician Client (due 4/4/18 @ 11:59pm)</a></td>-->
-  <td>Introduction to Databases</td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture15Mar27.md">Introduction to Databases</td>
   <td></td>
 </tr>
 
