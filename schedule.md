@@ -173,7 +173,7 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Wed Apr 3</td>
-<td>Intro to GUIs</td>
+<td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
 <td></td>
 </tr>
 
