@@ -195,6 +195,13 @@ where the Frame was going to be in the root window.  So, the Frame declaration
 also has a `.grid(column=0, row=0)` function.  Note, if the widget is not 
 added to the grid, it is not shown in the window.
 
+The `.grid()` function can be used separately from the definition of the 
+widget if the widget is saved in a variable.  Example:
+```
+may_label = ttk.Label(mainframe, text="May")
+may_label.grid(column=2, row=1, sticky="NE")
+```
+
 ### Activating GUI / Starting Root Window
 Once the window is fully defined with all of its widgets, the GUI can be
 activated and displayed by the following command:
