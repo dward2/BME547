@@ -185,9 +185,10 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Wed Apr 10</td>
-<td>Introduction to Security
+<td>Introduction to Security  
 
-Projects/Milestones/Issues in GitHub
+Projects/Milestones/Issues in GitHub  
+Image Encoding/Decoding
 </td>
 <td>Final Project Assigned</td>
 </tr>
