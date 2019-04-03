@@ -164,6 +164,11 @@ you created earlier. Try not to commit your key to GitHub as that will expose
 it for others to use.  More detailed information can be found  
 [here](../Resources/WebServices/sendgrid.md).
 
+NOTE:  For this assignment, unit tests for your function that sends e-mail
+using SendGrid are not required as that would require sending your API key to
+Travis.  While there are secure ways of doing so, it is not a topic for this
+class.
+
 ### Special note for Mac users
 :eyes: Apparently python 3.6 for Mac does not come configured to use the 
 standard root certificate authorities, so some folks may get a ssl error when 
