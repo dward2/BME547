@@ -40,15 +40,15 @@ environment variable upon log-in.
 Continue with step 3 of the instructions from the SendGrid setup
 guide, duplicated here.  In the terminal, navigate to your project folder and 
 then enter the following on the command line:
-  * `echo "export SEND_GRID_APIKEY='<your_API_key>'" > sendgrid.env` This will 
+  * `echo "export SENDGRID_API_KEY='<your_API_key>'" > sendgrid.env` This will 
   create a file called "sendgrid.env". 
   * `echo "sendgrid.env" >> .gitignore` will create (or add to an existing)
   `.gitignore` file so that you do not accidentally upload your sendgrid API
   key to GitHub.
-  * `source ./sendgrid.env` will add your SEND_GRID_APIKEY to your environment
+  * `source ./sendgrid.env` will add your SENDGRID_API_KEY to your environment
   variables, allowing your Python code to be able to access your SendGrid
   account.
-  * Enter `env` on the command line and look for the `SEND_GRID_APIKEY` value
+  * Enter `env` on the command line and look for the `SENDGRID_API_KEY` value
   to confirm that everything worked.
 
 NOTE:  You will need to enter the `source ./sendgrid.env` command each time
@@ -58,11 +58,11 @@ NOTE:  You will need to enter the `source ./sendgrid.env` command each time
 #### Option 2  
 * Edit the `.bashrc` file found in your `~` directory.
 * At the very bottom,  add the line 
-`export SEND_GRID_APIKEY='<your_API_key>'`where `<your_API_key>` is the 
+`export SENDGRID_API_KEY='<your_API_key>'`where `<your_API_key>` is the 
 generated key from above.
 * Save the file.
 * Log off and log back on.
-* Enter `env` on the command line and look for the `SEND_GRID_APIKEY` value
+* Enter `env` on the command line and look for the `SENDGRID_API_KEY` value
 to confirm that everything worked.
 
 ### For Windows 10
