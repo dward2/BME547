@@ -164,6 +164,11 @@ you created earlier. Try not to commit your key to GitHub as that will expose
 it for others to use.  More detailed information can be found  
 [here](../Resources/WebServices/sendgrid.md).
 
+__UPDATE__:  As of April 3, 2019, the python `sendgrid` package for using SendGrid
+was updated from version 5.6 to 6.0.  The function and syntax of some of the
+functions and processes changed. See the [sendgrid info](../Resources/WebServices/sendgrid.md)
+page on this site for more information.
+
 NOTE:  For this assignment, unit tests for your function that sends e-mail
 using SendGrid are not required as that would require sending your API key to
 Travis.  While there are secure ways of doing so, it is not a topic for this

@@ -3,6 +3,19 @@
 SendGrid is a web service that provides an API for sending e-mails from your
 own code.
 
+## __Important Update__
+On April 3, 2019, the `sendgrid` python package for using SendGrid in Python
+was updated from version 5.6 to 6.0.  This was a BREAKING CHANGE, meaning
+that the functionality and syntax of various functions changed.  The
+instructions below are written for version 5.6.  If you want to keep with 
+using this version, ensure that you are installing the correct sendgrid package
+by specifying the version number in your `requirements.txt` file as so:
+` sendgrid==5.6.0`.  
+
+If you choose to use the updated version 6.0, make sure to refer to the 
+instructions on the `sendgrid` GitHub site <https://github.com/sendgrid/sendgrid-python>
+as the instructions on this page may be obsolete for version 6.0.
+
 ## Set-up a SendGrid account and Generate an Access Key
 
 * Visit <sendgrid.com> and sign-up for the free plan.
@@ -73,9 +86,7 @@ Properties" window
 First, you will need to install the `sendgrid` package in the usual way for
 your system.
 
-The start-up page from the SendGrid website gives some example Python code that
-can also be found at <https://github.com/sendgrid/sendgrid-python#quick-start>.
-It is duplicated here:
+Below is some sample Python code for using `sendgrid` version 5.6.
 ```
 import sendgrid
 import os
@@ -90,4 +101,9 @@ mail = Mail(from_email, subject, to_email, content)
 response = sg.client.mail.send.post(request_body=mail.get())
 print(response.status_code)
 print(response.body)
-print(response.headers)```
+print(response.headers)
+```
+
+The start-up page from the SendGrid website gives some example Python code 
+for using `sendgrid` version 6.0 at <https://github.com/sendgrid/sendgrid-python#quick-start>.
+
