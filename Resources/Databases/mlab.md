@@ -59,3 +59,24 @@ called "Collections" or  choosing the "Collections" tab, depending on what
 screen you are starting from.  You will then see a collection with the same
 name as the `class` you created in your code.  In the example case above, it
 will be `user`.  You can then see the contents of this database.
+
+## Caution:  Using the same class in different modules
+There may be times where you need to access the class you define for your
+MongoDB database in multiple modules.  For example, you may have a module
+called `data_create.py` that uses a class `MyClass` for putting records into
+the MongoDB database.  Then, you might have a separate module called 
+`read_data.py` that also uses `MyClass` to access data from the MongoDB
+database.  
+
+__Do not cut and paste the code that defines the class from one
+module to the other.__  MongoDB will append the module name to the front
+of the class (ex. `data_create.MyClass`) when storing it in the database.
+If you then try and retrieve it from a different module where the class is 
+also defined, it will look for the data with a different class name
+(ex. `read_data.MyClass`).  It will look like there is no data available.
+
+Instead, define the class in one module, and import it into others that need
+to use it.  In the example above, `MyClass` could be defined in the 
+`data_create.py` module.  Then, in the `read_data.py` module, it could be
+imported using `from data_create import MyClass`.  Now, the `read_data.py`
+module will be looking for `data_create.MyClass` in the database.
