@@ -284,6 +284,10 @@ user interaction with the GUI causes additional code to be run.
     + `current()` method determines which item in predefined values list is 
     selected.
     
+### Adding Images to Interface
+See [tkinter_images.md](../Resources/tkinter_images.md) in the Resources folder
+for information on adding images to your interface.
+
 ## References
 <https://tkdocs.com/tutorial/>  -  An excellent tutorial for using Tk.  You can
 specify that you want to learn in Python and it will show the code using 

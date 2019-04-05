@@ -171,6 +171,50 @@ Activate the desired environment, then type the following.
  you do not want stored in your repo, those files can also be added to 
  `.gitignore`.
  
+ ## Case Study:  `sendgrid` module update
+ `sendgrid` is a package that provides Python functionality to access the
+ SendGrid API for sending e-mails from your Python code.  A project was
+ started when the released version of `sendgrid` was version 5.6.  People who
+ started the project and created a virtual environment from a `requirements.txt`
+ file with the `sendgrid` entry had version 5.6 installed and they started
+ code development using the version 5.6 syntax.
+ 
+ During the middle of the project, the `sendgrid` package was updated to
+ version 6.0.  This update was considered a BREAKING update, meaning that the
+ functionality and syntax of package changed.  Before this update was 
+ discovered, there were two types of impacts:  
+ * Some people did not start the project before the update.  So, they
+   created a virtual environment and installed `sendgrid` from their
+   `requirements.txt` file.  This installed the latest version of `sendgrid`
+   which was now version 6.0.  However, they followed the version 5.6 syntax,
+   being unaware of the update.  Their code didn't work.
+ * Those who had created their virtual environment before the update had 
+   version 5.6 installed, and they wrote their code using version 5.6 syntax.
+   Everything worked smoothly for them.  However, when someone else
+   downloaded their code, this new user would create a virtual environment
+   using the downloaded `requirements.txt` file.  This file would install
+   `sendgrid`, but would install the latest version 6.0.  Then, then they tried
+   to run the code written with version 5.6 syntax, the code would not work.
+   
+ This second case in particular highlights the value of virtual environments,
+ when done correctly.  Best practice is to specify the specific version of
+ each package used in the development virtual environment in the 
+ `requirements.txt` file.  In this way, you
+ "lock in" in the version that was used during development so that future
+ virtual environments that are created will also have the same version of
+ each package.  This avoids version conflicts.
+ 
+ Specific version of packages can be specified using the syntax shown in 
+ the following example:
+ ```
+ sendgrid == 5.6.0
+ ```
+ Therefore, it is recommended that specific versions be defined in the
+ `requirements.txt` file.  The `requirements.txt` file can be generated from
+ an existing virtual environment, and will include version numbers, by 
+ using the `pip freeze > requirements.txt` command described above.
+ 
+ 
  ## Links
  <https://docs.python.org/3/tutorial/venv.html> for information on `pip` and
  virtual environments in Linux.
@@ -178,4 +222,7 @@ Activate the desired environment, then type the following.
  
  <https://conda.io/docs/user-guide/tasks/manage-environments.html#> for 
  information on Conda Virtual Environments
+ 
+ <https://pip.pypa.io/en/stable/reference/pip_install/> for reference 
+ documentation on pip.
  

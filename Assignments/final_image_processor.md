@@ -14,7 +14,7 @@ This final project is somewhat open-ended to allow groups to tailor this to
 their areas of interest; however, recommended datasets and project requirements
 are provided below.  If you plan to stray away from the recommended projects
 and datasets, please submit a one-page project proposal to Dr. Ward and Dr.
-WAX by *Friday, April, 12, 2019* for evaluation to ensure the proposed
+Wax by *Friday, April, 12, 2019* for evaluation to ensure the proposed
 project meets the requirements for the class. Be sure to include motivations,
 technologies, functional specifications, and anticipated deliverables.
 
