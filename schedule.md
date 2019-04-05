@@ -179,9 +179,9 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Fri Apr 5</td>
-<td>Review Final Project
+<td><a href="Lectures/April-5-2019-Misc.md">Review Final Project
 
-Projects/Milestones/Issues in GitHub</td>
+Projects/Milestones/Issues in GitHub</a></td>
 <td>Heart Rate Sentinel Server Due
 
 <a href="Assignments/final_image_processor.md">Final Project Assigned</td>
