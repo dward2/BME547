@@ -179,18 +179,22 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Fri Apr 5</td>
-<td></td>
-<td>Heart Rate Sentinel Server Due</td>
+<td>Review Final Project
+
+Projects/Milestones/Issues in GitHub</td>
+<td>Heart Rate Sentinel Server Due
+
+<a href="Assignments/final_image_processor.md">Final Project Assigned</td>
 </tr>
 
 <tr>
 <td>Wed Apr 10</td>
 <td>Introduction to Security  
 
-Projects/Milestones/Issues in GitHub  
+  
 Image Encoding/Decoding
 </td>
-<td>Final Project Assigned</td>
+<td></td>
 </tr>
 
 <tr>
