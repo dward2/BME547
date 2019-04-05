@@ -13,8 +13,8 @@ groups for this projects.
 This final project is somewhat open-ended to allow groups to tailor this to
 their areas of interest; however, recommended datasets and project requirements
 are provided below.  If you plan to stray away from the recommended projects
-and datasets, please submit a one-page project proposal to Dr. Palmeri and Mr.
-Kumar by *Friday, April, 13, 2018* for evaluation to ensure the proposed
+and datasets, please submit a one-page project proposal to Dr. Ward and Dr.
+WAX by *Friday, April, 12, 2019* for evaluation to ensure the proposed
 project meets the requirements for the class. Be sure to include motivations,
 technologies, functional specifications, and anticipated deliverables.
 
@@ -27,50 +27,65 @@ development and design conventions taught in this class, including:
 * docstrings / Sphinx documentation
 
 ## Functional Specifications
-At a minimum, you image processor should do the following:
-* Provide a [graphical] user interface that will allow a user to select an image, list of
-  images, or a zip archive of images that will be uploaded to your web-server,
+### GUI Client
+At a minimum, you image processor client should do the following:
+* Provide a __graphical__ user interface that will allow a user to select an image, list of
+  images, or a zip archive of images for upload to your web-server,
   perform necessary preprocessing steps, and then issue a RESTful API request
-  to your cloud service for further processing.
-* Your [graphical] user interface will have a choice of processing steps to perform on each
-  uploaded image, including:
-  + Histogram Equalization [default]
+  to your cloud service to upload the images and do any further processing.
+  
+* In addition to uploading the raw image, your __graphical__ user interface 
+should give the user a choice of processing steps that the server should
+perform on the uploaded image, including:
+  + Histogram Equalization __default__
   + Contrast Stretching
   + Log Compression
-  + Reverse Video
-  + Others of your choice!
-* A cloud-based web service that exposes a well-crafted RESTful API that will
-  implement the image processing methods specified above (checkout out
-  [scikit-image](http://scikit-image.org/) to make your life easier on the image processing algorithms!).
-* A database should be implemented in some form to do one or more of the following:
-  + Store previous user actions / metrics (e.g. how many times has a user run Histogram Equalization, 
-  latency for running different processing tasks, etc). 
-  + Store uploaded images and timestamps for a user
-  + Store processed images (along with what processing was applied) and timestamps for a user
-  + Another use case you choose.
+  + Reverse Video  
+  The processed image should also be stored on the server.
+
 * Your user interface should also provide:
-  + An option to display and compare the original and processed images.
-  + An option to download the image(s) in one of the following formats:
+  + An option to display and compare the original and processed images from 
+  the server.
+  + An option to download the image(s) from the server in one of the following 
+  formats:
     - JPEG
     - PNG
-    - TIFF
+    - TIFF  
   If multiple images are to be downloaded, they should be downloaded as a zip archive.
   + Display histograms of the image color / intensity values of the original and processed images.
   + Display useful metadata, including:
     - Timestamp when uploaded
     - Time to process the image(s)
     - Image size (e.g., X x Y pixels)
+  
+### Cloud Server
+At a minimum, your image processor server should do the following:
+* Be a cloud-based web service running on your virtual machine that exposes 
+a well-crafted RESTful API that will
+  implement the image processing methods specified above (check out
+  [scikit-image](http://scikit-image.org/) to make your life easier on the image processing algorithms!).
+  
+
+* Allow for multiple, unique users to upload and retrieve their files.
+
+* A persistent database should be implemented in some form to do the following:  
+  + Store previous user actions / metrics (e.g. how many times has a user run Histogram Equalization, 
+  latency for running different processing tasks, etc). 
+  + Store uploaded images and timestamps for a user
+  + Store processed images (along with what processing was applied) and timestamps for a user
+  
 
 ## Deliverables
 * A detailed `README` describing the final performance and state of your
-  project.
+  project.  This should include a basic instruction manual for your GUI client.
 * Recorded video demo of your image processor in action.
 * All project code (in the form of a tagged GitHub repository named
-  `bme590final`)
+  `bme547final`)
 * Link to deployed web service 
+* Sphinx-generated documentation pushed to GitHub repository
 
 ## Recommended Datasets
-Your project can utilize some existing databases of image (or you can choose to
+Your project may utilize some existing databases of images (or you can choose to
 use your own images).  Here are some example datasets that you can access for
 this project:
 
@@ -82,12 +97,14 @@ this project:
   right hand corner. All data can also be accessed through a RESTful API
   provided by the ISIC.
 * http://www.vision.caltech.edu/Image_Datasets/Caltech101/
-* https://www.cs.toronto.edu/~kriz/cifar.html
+* <https://www.cs.toronto.edu/~kriz/cifar.html>
 * https://github.com/beamandrew/medical-data
 
 ## Grading
 **You should approach this final project as an opportunity to show a potential
 future employer an example of your software development skills.**
+
+The following is a partial list of aspects of the project that will be graded.
 
 * Git Repository
   + Issues/Milestones
@@ -99,7 +116,7 @@ future employer an example of your software development skills.**
   + Language convention and style (PEP8)
   + Sphinx documentation for all modules/functions
 * Testing and CI
-  + Unit test coverage of all functions (except Flask handler)
+  + Unit test coverage of all functions (except Flask handler and GUI calls)
   + Travis CI passing build
 * Cloud-based Web Service
   + RESTful API Design 
