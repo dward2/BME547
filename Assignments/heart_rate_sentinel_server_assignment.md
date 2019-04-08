@@ -72,8 +72,8 @@ Your Flask web service should implement the following API routes:
    Note that the `status` key should contain either the string "tachycardic" or
    "not tachycardic".  The key `timestamp` should contain a `datetime` string.
  
-* `GET /api/heart_rate/<patient_id>` should a list of all the previous heart 
-rate measurements for that patient.  Timestamps are not required.
+* `GET /api/heart_rate/<patient_id>` should return a list of all the previous 
+heart rate measurements for that patient.  Timestamps are not required.
 
 * `GET /api/heart_rate/average/<patient_id>` should return the patients's 
 average heart rate over all measurements you have stored for this patient.
