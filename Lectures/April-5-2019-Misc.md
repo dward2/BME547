@@ -9,6 +9,5 @@
   repository.
   + Send an e-mail to me and Dr. Wax, cc'ing your team mates, with a list
   of your team members and the location of your team GitHub repository.
-  
- * [GitHub Practices for Teams](github_teams.md)
+
 

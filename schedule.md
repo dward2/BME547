@@ -179,9 +179,7 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Fri Apr 5</td>
-<td><a href="Lectures/April-5-2019-Misc.md">Review Final Project
-
-Projects/Milestones/Issues in GitHub</a></td>
+<td><a href="Lectures/April-5-2019-Misc.md">Review Final Project</a></td>
 <td>Heart Rate Sentinel Server Due
 
 <a href="Assignments/final_image_processor.md">Final Project Assigned</td>
@@ -189,9 +187,8 @@ Projects/Milestones/Issues in GitHub</a></td>
 
 <tr>
 <td>Wed Apr 10</td>
-<td>Introduction to Security  
+<td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>
 
-  
 Image Encoding/Decoding
 </td>
 <td></td>
@@ -199,7 +196,9 @@ Image Encoding/Decoding
 
 <tr>
 <td>Fri Apr 12</td>
-<td>Final project work</td>
+<td>Introduction to Security
+
+Final project work</td>
 <td></td>
 </tr>
 
