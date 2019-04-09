@@ -39,7 +39,7 @@ represent numbers.  If we "encode" this binary number 101011 into the base10
 system, its value is "43".  As a string, this would be only two characters 
 long, and hence shorter to transmit.
 
-__ base16__
+__base16__
 
 base16 adds 6 additional symbols (a, b, c, d, e, f) for representing numbers.
 The binary number 101011 translates to "2b" in base16, also known as 
