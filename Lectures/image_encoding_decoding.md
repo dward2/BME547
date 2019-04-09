@@ -60,8 +60,8 @@ When sending as a string over the web, smaller is better.
 The binary number series of an image can be converted into a base64 string for
 transmission over the internet.  Python has a built-in module called `base64`
 that contains encoding and decoding functions for base64.  It is a built-in
-module, and so while it needs to be `imported` into code, it does not need to
-be separately installed in a virtual environment.
+module, and so while it needs an `import base64` in the code, it does not need 
+to be separately installed in a virtual environment.
 
 Below is sample code for using `base64` for encoding and decoding an image.
 
@@ -74,7 +74,9 @@ import matplotlib.image as mpimg
 
 def read_file_as_b64(image_path):
     with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read())
+        b64_bytes = base64.b64encode(image_file.read())
+    b64_string = str(b64_bytes, encoding='utf-8')
+    return b64_string
 
 
 def view_b64_image(base64_string):
@@ -94,15 +96,19 @@ def save_b64_image(base64_string):
 
 
 if __name__ == '__main__':
-    b64_img = read_file_as_b64("D:\dwonl\Pictures\Sight.jpg")
-    view_b64_image(b64_img)
-    save_b64_image(b64_img)
+    img_b64_string = read_file_as_b64("D:\dwonl\Pictures\Sight.jpg")
+    view_b64_image(img_b64_string)
+    save_b64_image(b64_string)
 ```
 The file encoding is demonstrated in the `read_file_as_b64()` function.  
   * First,a binary image file is opened using the `image_file` variable.
-  * `image_file.read()` reads in the bytes from the image file.
+  * `image_file.read()` reads in the binary bytes from the image file.
   * `base64.b64encode` takes the bytes from the image file and encodes them
-  into a base64 string.
+  into base64 encoded bytes, saved in the `b64_bytes` variable.
+  * As a `bytes` object is not JSON-serializable, the `b64_bytes` is converted
+  to a `str` type using the `str()` command.  The string encoding method of
+  `utf-8` is used.  (Note: an alternate method is 
+  `b64_string = b64_bytes.decode()` which decodes the bytes into a string.)
   
 The base64 string could now be sent to or returned by a web server as a JSON.
 
