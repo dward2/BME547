@@ -189,7 +189,7 @@ Intro to Web Service Design</a></td>
 <td>Wed Apr 10</td>
 <td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>
 
-Image Encoding/Decoding
+<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
 </td>
 <td></td>
 </tr>
