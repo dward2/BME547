@@ -196,7 +196,7 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Fri Apr 12</td>
-<td>Introduction to Security
+<td><a href="Lectures/intro_to_security.md">Introduction to Security</a>
 
 Final project work</td>
 <td></td>
