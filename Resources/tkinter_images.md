@@ -34,3 +34,10 @@ See the `Pillow` documentation [here](https://pillow.readthedocs.io/en/stable/in
  for more information on other
 transformations you can do on the image objects, such as resizing or cropping.
 
+### If images won't display when following the above:
+There can be an issue when adding an image, particularly with multiple windows,
+that the image will not display.  This can be caused by Python garbage
+collection when procedures that define pictures are finished.  Please
+see <http://effbot.org/pyfaq/why-do-my-tkinter-images-not-appear.htm> for
+more information.
+
