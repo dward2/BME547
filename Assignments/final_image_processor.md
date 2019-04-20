@@ -1,6 +1,6 @@
 # Image Processor Final Project (Spring 2019)
 
-**Final Project DUE:** Friday, April 26, 2019 11:59 PM EST 
+**Final Project DUE:** Monday, April 29, 2019 9:00 AM EST 
 
 ## Overview
 The final project in this class will require your team to leverage the

@@ -209,9 +209,9 @@ Final project work</td>
 </tr>
 
 <tr>
-<td>Fri Apr 26</td>
+<td>Mon Apr 29</td>
 <td></td>
-<td>Final project due</td>
+<td>Final project due 9:00 am</td>
 </tr>
 
 <table>
