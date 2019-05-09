@@ -1,7 +1,8 @@
 # Class Schedule
 
 This schedule is likely to change throughout the semester depending on class
-progress, severe weather days, etc.  Please check back regularly.
+progress, severe weather days, etc.  Please check back regularly.  Assume there 
+will be lecture every class period even if no topic is shown on the schedule.
 
 <table>
 
@@ -12,7 +13,7 @@ progress, severe weather days, etc.  Please check back regularly.
 </tr>
 
 <tr>
-<td>Fri Jan 11</td>
+<td>Mon Aug 26</td>
   <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
   <td><a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a></td>
   <!--<td><a href="Lectures/FirstDayClass/lecture01.md">Class Introduction, Objectives and Logistics</a></td>-->
@@ -20,38 +21,38 @@ progress, severe weather days, etc.  Please check back regularly.
 </tr>
 
 <tr>
-<td>Wed Jan 16</td>
+<td>Wed Aug 28</td>
   <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture1Jan16.md">Git: Repo Setup, Cloning/Forking, Issues, Branching, Pushing/Pulling</a></td>
   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
 </tr>
 
 <tr>
-<td>Fri Jan 18</td>
+<td>Mon Sept 2</td>
   <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture2Jan18.md">Python Fundamentals and Virtual Environments</a></td>
   <td></td>
   <!--<td><a href="Assignments/getting_started_git.md">Getting Started with git</a></td>-->
 </tr>
 
 <tr>
-<td>Wed Jan 23</td>
+<td>Wed Sept 4</td>
 <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture3Jan23.md">Python Virtual Environments</a></td>
 <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
 </tr>
 
 <tr>
-<td>Fri Jan 25</td> 
+<td>Mon Sept 9</td> 
 <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture4Jan25.md">Git Workflow</a></td>
 <td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
 
 <tr>
-<td>Wed Jan 30</td>
+<td>Wed Sept 11</td>
 <td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Fri Feb 1</td>
+<td>Mon Sept 16</td>
 <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
 Integration & Travis</a>;
 <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Appxorimations</a></td>
@@ -59,7 +60,7 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Wed Feb 6</td>
+<td>Wed Sept 18</td>
 <td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
 <a href="Lectures/docstrings.md">Docstrings</a>;
 <a href="Lectures/sphinx.md">Sphinx</a></td>
@@ -67,74 +68,78 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Fri Feb 8</td>
+<td>Mon Sept 23</td>
 <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
 <a href="Lectures/json.md">JSON</td>
 <td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</td>
 </tr>
 
 <tr>
-<td>Wed Feb 13</td>
+<td>Wed Sept 25</td>
 <td><a href="Lectures/debugging.md">Debugging</a>, 
 <a href="Resources/PyCharm">PyCharm</a></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Fri Feb 15</td>
+<td>Mon Sept 30</td>
 <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
 <a href="Lectures/logging.md">Logging</a></td>
 <td><a href="Assignments/ECG_Analysis">ECG_Analysis Assigned</a></td>
 </tr>
 
 <tr>
-<td>Web Feb 20</td>
+<td>Web Oct 2</td>
 <td>Functional Decomposition</td>
 <td></td>
 </tr>
 
 <tr>
-<td>Fri Feb 22</td>
-<td><a href="Lectures/numpy.md">NumPy</a>, 
-<a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</td>
+<td>Mon Oct 7</td>
+<td>Fall Break
+
+</td>
 <td></td>
 </tr>
 
 <tr>
-<td>Wed Feb 27</td>
-<td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a></td>
-<td>IEC 62304 Assignment (in Sakai, due 3/22)</td>
+<td>Wed Oct 9</td>
+<td><a href="Lectures/numpy.md">NumPy</a>, 
+<a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages
+</td>
+<td></td>
 </tr>
 
 <tr>
-<td>Fri Mar 1 </td>
+<td>Mon Oct 14 </td>
+<td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+</td>
+<td>IEC 62304 Assignment (in Sakai, due ##/##)</td>
+</tr>
+
+<tr>
+<td>Wed Oct 16</td>
 <td>More on <a href="Lectures/classes.md">Classes</a>  
 (Starting code <a href="Lectures/lecture_code/classes.py"> here</a>)</td>
 <td></td>
 </tr>
 
 <tr>
-<td>Wed Mar 6</td>
-<td>Working in class</td>
-<td></td>
-</tr>
-
-<tr>
-<td>Fri Mar 8</td>
+<td>Mon Oct 21</td>
 <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture12Mar8.md">
 Intro to Web Service Design</a></td>
 <td>ECG_Analysis Assignment Due</td>
 </tr>
 
 <tr>
-<td>Wed Mar 13</td>
-<td>Spring Break </td>
+<td>Wed Oct 23</td>
+<td></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Fri Mar 15</td>
-<td>Spring Break</td>
+<td>Mon Oct 28</td>
+<td></td>
 <td></td>
 <!--<td><a href="https://realpython.com/python-matplotlib-guide/">Matplotlib</a> / Seaborn</td>-->
 <!--<td><a href="https://build-system.fman.io/pyqt5-tutorial">Building a GUI with Qt5</a></td>-->
@@ -142,14 +147,14 @@ Intro to Web Service Design</a></td>
 </tr>
 
 <tr>
-<td>Wed Mar 20</td>
+<td>Wed Oct 30</td>
   <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture13Mar20.md">
        Python Flask, API Design</a></td>
   <td></td>
 </tr>
 
 <tr>
-<td>Fri Mar 22</td>
+<td>Mon Nov 4</td>
 <!--<td><a href="Lectures/react/intro.md">Web/Mobile client (ReactJS) Introduction [SK]</a></td>-->
   <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</td>
 <td>IEC 62034 Assessment in Sakai Due
@@ -158,7 +163,7 @@ Intro to Web Service Design</a></td>
 </tr>
 
 <tr>
-<td>Wed Mar 27</td>
+<td>Wed Nov 6</td>
 <!--<td><a href="Lectures/react/lecture2.md">Polished ReactJS + RESTful API Requests [SK]</a></td>-->
 <!--<td><a href="Lectures/react/assignment.md">[09] Heart Rate Physician Client (due 4/4/18 @ 11:59pm)</a></td>-->
   <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture15Mar27.md">Introduction to Databases</td>
@@ -166,19 +171,19 @@ Intro to Web Service Design</a></td>
 </tr>
 
 <tr>
-  <td>Fri Mar 29</td>
+  <td>Mon Nov 11</td>
   <td></td>
   <td></td>
 </tr>
 
 <tr>
-<td>Wed Apr 3</td>
+<td>Wed Nov 13</td>
 <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Fri Apr 5</td>
+<td>Mon Nov 18</td>
 <td><a href="Lectures/April-5-2019-Misc.md">Review Final Project</a></td>
 <td>Heart Rate Sentinel Server Due
 
@@ -186,7 +191,7 @@ Intro to Web Service Design</a></td>
 </tr>
 
 <tr>
-<td>Wed Apr 10</td>
+<td>Wed Nov 20</td>
 <td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>
 
 <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
@@ -195,23 +200,15 @@ Intro to Web Service Design</a></td>
 </tr>
 
 <tr>
-<td>Fri Apr 12</td>
+<td>Mon Nov 25</td>
 <td><a href="Lectures/intro_to_security.md">Introduction to Security</a>
 
-Final project work</td>
+Final project work
+
+Final Day of Class
+</td>
 <td></td>
 </tr>
 
-<tr>
-<td>Wed Apr 17</td>
-<td>Last day of class</td>
-<td></td>
-</tr>
-
-<tr>
-<td>Mon Apr 29</td>
-<td></td>
-<td>Final project due 9:00 am</td>
-</tr>
 
 <table>

@@ -1,23 +1,19 @@
-# BME 547 - Medical Software Design - Spring 2019  
+# BME 547 - Medical Software Design - Fall 2019  
 
 
-## Instructors
-Dr. Adam Wax  
-<a.wax@duke.edu>  
-Office Hours: TBD ()
-
+## Instructor
 Dr. David Ward  
 <david.a.ward@duke.edu>  
-Office Hours: TBD ()
+Office Hours: By appointment
 
-## Teaching Assistants
-Tejank Shah  
-<tejank.shah@duke.edu>   
+## Teaching Assistant
+Name
+<FName.LName@duke.edu>   
 Office Hours: TBD (location)
 
 ## Lecture
-Wed/Fri 1:25 pm --2:40 pm  
-Location Hudson Hall 115A
+Mon/Wed 11:45 am -- 1:00 PM  
+Location Teer 106
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
@@ -120,7 +116,8 @@ The following grading scheme is subject to change as the semester progresses:
 ## Class Schedule
 The course schedule is very likely to change depending on progress throughout
 the semester.  The updated [schedule](schedule.md) will always be available in
-the GitHub course repository.  
+the GitHub course repository.  Assume there will be lecture every class period
+even if no topic is shown on the schedule.
 
 ## Distributed Version Control Software (git)
 Software management is a ubiquitous tool in any engineering project, and this
