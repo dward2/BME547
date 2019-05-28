@@ -7,8 +7,8 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Name
-<FName.LName@duke.edu>   
+Evan Jelly
+<evan.jelly@duke.edu>   
 Office Hours: TBD (location)
 
 ## Lecture
