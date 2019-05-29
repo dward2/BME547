@@ -16,8 +16,6 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Mon Aug 26</td>
   <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
   <td><a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a></td>
-  <!--<td><a href="Lectures/FirstDayClass/lecture01.md">Class Introduction, Objectives and Logistics</a></td>-->
-  <!--<td><a href="Assignments/01_tool_setup_git_fundamentals.md">[01] Setup Course Tools & Git Fundamentals</a></td>-->
 </tr>
 
 <tr>
@@ -30,7 +28,6 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Mon Sept 2</td>
   <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture2Jan18.md">Python Fundamentals and Virtual Environments</a></td>
   <td></td>
-  <!--<td><a href="Assignments/getting_started_git.md">Getting Started with git</a></td>-->
 </tr>
 
 <tr>

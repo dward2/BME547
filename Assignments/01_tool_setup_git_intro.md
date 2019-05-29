@@ -74,13 +74,19 @@ so other Windows applications that have `git` hooks will not work.
 
 5. You will want a code writing environment / text editor that makes life 
 easier for you as your projects get more complex.  Options include:
-  + [VIM](http://www.vim.org) (ideal for terminal usage)
-  + [GitHub Atom](https://atom.io/)
-  + [Visual Studio Code](https://code.visualstudio.com/)
-  + [Sublime Text](https://www.sublimetext.com/)
-  + [Notepad++](https://notepad-plus-plus.org/)
-  + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) (full-featured IDE; professional edition 
-  free to use in academic setting)
+  + Terminal Editors
+    + [VIM](http://www.vim.org)
+    + [nano](https://www.nano-editor.org/)
+  + Code / Text editors
+    + [GitHub Atom](https://atom.io/)
+    + [Visual Studio Code](https://code.visualstudio.com/)
+    + [Sublime Text](https://www.sublimetext.com/)
+    + [Notepad++](https://notepad-plus-plus.org/)
+  + Browser-based Interactive
+    + [Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/#)
+  + Full-featured IDE (integrated development environment)
+    + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) 
+    (professional edition free to use in academic setting)
 
 ## Learning Git
 1. Never used git before?  Start with these resources:  
