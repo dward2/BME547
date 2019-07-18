@@ -8,6 +8,15 @@ user with the appropriate information without the `<` or `>`.  For example,
 However, including this is optional.
 * anything in quotes are generally strings that can be replaced by appropriate
 comments by the user.
+
+## Config
+#### To set your name and e-mail in local Git configuration. 
+`git config --global user.name "Your Name"`
+
+`git config --global user.email "Your e-mail"`
+
+
+
 ## Local Repositories
 
 #### Create a new local repository
@@ -65,14 +74,6 @@ have been previously added to the repository.
 #### Tag a past commit
 `git tag -a v#.# <commitchecksum>` where `<checksum>` is the first few digits
 of the commit number.
-
-### Config
-#### To set your name and e-mail for use in local Git
-`git config --global user.name "Your Name"`
-`git config --global user.email "Your e-mail"`
-
-
-
 
 
 

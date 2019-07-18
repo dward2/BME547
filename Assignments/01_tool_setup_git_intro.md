@@ -27,18 +27,22 @@ the "Initialize this repository with a README" check box.
 4. Download and install `git` at https://git-scm.com.  We will be using 
 `Git Bash`, *not* a GUI client.  
   
-   For MAC users, `git` is likely already installed.  Open a Terminal window
+   For **MAC** users, `git` is likely already installed.  Open a Terminal window
 and type `git --version`.  If you see a version number, it is already
 installed.  If not, you will need to download it from the site above.
 
-   Windows users have two options:   
+   **Windows** users have two options:   
    a) install from the above website (recommended) which will install the
-   GitBash command window, or  
+   GitBash command window (see <a href="Resources/installations.md">
+   installations</a> for additional details), or  
    b) use the Windows Subsystem for Linux 
-([Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about)) 
-with Ubuntu allowing you to access `git` through Linux.  
-Note - this second option does not installed `git` in your Windows environment, 
-so other Windows applications that have `git` hooks will not work.
+    ([Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about)) 
+    with Ubuntu allowing you to access `git` through Linux.  
+    Note - this second option does not installed `git` in your Windows environment, 
+    so other Windows applications that have `git` hooks will not work.
+  
+    Add your name and e-mail to your local Git configuration by following the
+     instructions under **Config**  on [this page](/Resources/installations.md). 
 
 3. [**Optional**]  Setup an SSH key to seamlessly push/pull to/from your GitHub repositories:
    https://help.github.com/articles/connecting-to-github-with-ssh/
