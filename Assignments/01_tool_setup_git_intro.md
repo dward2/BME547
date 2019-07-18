@@ -48,7 +48,7 @@ installed.  If not, you will need to download it from the site above.
    https://help.github.com/articles/connecting-to-github-with-ssh/
 
 4. Download and install `python3` at https://www.python.org/. Be sure to
-   install Python 3.6 or 3.7, *not* Python 2.7.  
+   install Python 3.7, *not* Python 2.7.  
    
    For Mac users, Python is likely already installed.  Open a Terminal window 
    and enter `python` or `python3`.  If installed, you should see something
@@ -59,18 +59,21 @@ installed.  If not, you will need to download it from the site above.
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
    ```
-   If the version number is 3.6 or higher, you are fine.  Type `quit()` to 
-   exit.  If python does not start, you will need to download it.
+   If the version number is 3.6 or higher, you are fine.  .  Type `quit()` to 
+   exit.  If python does not start, you will need to download it.  If you have
+   not used Python before and do not have any legacy code to consider, 
+   upgrading to the latest version may be a good idea.
      
-   Windows users have two options:  
-   a) [**Preferred**] Install Anaconda Python from 
-   https://www.anaconda.com/download.  Using "vanilla" Python on Windows can 
-   have challenges with importing some packages, such as `numpy`, which do not 
-   exist in compiled wheels for Windows.  You can download the complete 
+   Windows users have three options:  
+   a) Download and install from <https://www.python.org/> as described above.
+   Follow additional guidelines found [here](../Resources/installations.md) for
+   installation.  
+   b) Install Anaconda Python from 
+   https://www.anaconda.com/download.  You can download the complete 
    Anaconda package or Miniconda which brings in the bare minimum of packages 
    and then install what is necessary in virtual environments, but each project 
    will require more download overhead.  
-   b) Installing and using the [Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about), 
+   c) Installing and using the [Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about), 
    and running `python3` from within that environment.  This approach will give 
    you a legitimate Linux environment, but there is overhead to running GUI 
    applications through an X-server, which adds more complexity and can be 
@@ -90,7 +93,8 @@ easier for you as your projects get more complex.  Options include:
     + [Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/#)
   + Full-featured IDE (integrated development environment)
     + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) 
-    (professional edition free to use in academic setting)
+    (professional edition free to use in academic setting, also includes
+    Python interpreter).
 
 ## Learning Git
 1. Never used git before?  Start with these resources:  
