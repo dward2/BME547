@@ -33,7 +33,7 @@ installed.  If not, you will need to download it from the site above.
 
    **Windows** users have two options:   
    a) install from the above website (recommended) which will install the
-   GitBash command window (see <a href="Resources/installations.md">
+   GitBash command window (see <a href="../Resources/installations.md">
    installations</a> for additional details), or  
    b) use the Windows Subsystem for Linux 
     ([Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about)) 
