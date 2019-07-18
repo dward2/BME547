@@ -42,7 +42,7 @@ installed.  If not, you will need to download it from the site above.
     so other Windows applications that have `git` hooks will not work.
   
     Add your name and e-mail to your local Git configuration by following the
-     instructions under **Config**  on [this page](/Resources/installations.md). 
+     instructions under **Config**  on [this page](/Resources/Git/GitCommands.md#config). 
 
 3. [**Optional**]  Setup an SSH key to seamlessly push/pull to/from your GitHub repositories:
    https://help.github.com/articles/connecting-to-github-with-ssh/
