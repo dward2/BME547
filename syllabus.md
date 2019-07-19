@@ -13,15 +13,15 @@ Office Hours: TBD (location)
 
 ## Lecture
 Mon/Wed 11:45 am -- 1:00 PM  
-Location Teer 106
+Location: Teer 106
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
 control, feedback and algorithmic processing.  This course focuses on software
 design skills that are ubiquitous in the medical device industry, including
 software version control, unit testing, fault tolerance, continuous integration
-testing and documentation.  Experience will be gained in Python and potentially 
-other languages.
+testing and documentation.  Experience will be gained in the Python programming
+language.
 
 The course will be structured around various software projects related to
 medical devices that measure and process a biosignal, sends it to a web
@@ -49,7 +49,6 @@ BME 271 - Signals and Systems
   + Continuous integration (Travis CI)
 * Fault tolerance (raising exceptions)
 * Logging
-* Resource profiling (`cProfile`)
 * Documentation
   + Docstrings
   + Markdown
@@ -57,17 +56,15 @@ BME 271 - Signals and Systems
   + [ReadTheDocs](https://readthedocs.org)
 * Working with data
   + Data Storage (Text, Binary, HDF5, MongoDB)
-  + Data Wrangling
 * Data Processing & Display
   + Jupyter Notebooks
   + Matplotlib / Seaborn
   + Pandas (DataFrames)
   + [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)
-* Define software specifications and constraints (Requests for Comments, RFC)
 * Servers
   + Design & Implementation of a biomedical web service (Python Flask)
   + HTTP & RESTful APIs
-  + Docker and dependency management intro
+* Define software specifications and constraints (Requests for Comments, RFC)
 
 ## Attendance
 Lecture attendance and participation is important because you will be working

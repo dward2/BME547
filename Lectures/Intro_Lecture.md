@@ -6,15 +6,15 @@
 * GitHub / Tool Set-up
 
 ## Who are we?
-* Dr. Adam Wax
 * Dr. David Ward
-* Tejank Shah
+* Evan Jelly
 
 ## Who are you?
 * Name
 * Undergrad / Grad
 * Hometown
 * Programming language you are most comfortable with
+* What you did this summer
 * What your long term plans are
 * Fun fact about yourself
 
