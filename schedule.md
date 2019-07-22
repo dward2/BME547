@@ -20,7 +20,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Aug 28</td>
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture1Jan16.md">Git: Repo Setup, Cloning/Forking, Issues, Branching, Pushing/Pulling</a></td>
+  <td><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
+  Cloning, Add/Commit, Branching, Pushing/Pulling</td>
   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
 </tr>
 
