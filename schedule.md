@@ -22,25 +22,26 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Wed Aug 28</td>
   <td><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
   Cloning, Add/Commit, Branching, Pushing/Pulling</td>
-  <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
+  <td>Git Fundamentals/Practice</td>
+  <!--<td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>-->
 </tr>
 
 <tr>
 <td>Mon Sept 2</td>
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture2Jan18.md">Python Fundamentals and Virtual Environments</a></td>
+  <td><a href="Lectures/python_basics.md">Python Basics</a></td>
   <td></td>
 </tr>
 
 <tr>
 <td>Wed Sept 4</td>
 <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture3Jan23.md">Python Virtual Environments</a></td>
-<td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
+<td><!--<a href="Assignments/PythonFundamentalAssignment.md">-->Python Fundamentals</a></td>
 </tr>
 
 <tr>
 <td>Mon Sept 9</td> 
 <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture4Jan25.md">Git Workflow</a></td>
-<td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
+<td><!--<a href="Assignments/BMICalculatorAssignment.md">-->BMI Calculator</a></td>
 </tr>
 
 <tr>
@@ -54,7 +55,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
 Integration & Travis</a>;
 <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Appxorimations</a></td>
-<td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
+<td><!--<a href="Assignments/UnitTestingCIAssignment.md">-->Unit Testing & CI Assignment</a></td>
 </tr>
 
 <tr>
@@ -69,7 +70,7 @@ Integration & Travis</a>;
 <td>Mon Sept 23</td>
 <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
 <a href="Lectures/json.md">JSON</td>
-<td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</td>
+<td><!--<a href="Assignments/TSHTestDataConversion">-->TSH Test Data Conversion</td>
 </tr>
 
 <tr>
@@ -83,7 +84,7 @@ Integration & Travis</a>;
 <td>Mon Sept 30</td>
 <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
 <a href="Lectures/logging.md">Logging</a></td>
-<td><a href="Assignments/ECG_Analysis">ECG_Analysis Assigned</a></td>
+<td><!--<a href="Assignments/ECG_Analysis">-->ECG_Analysis Assigned</a></td>
 </tr>
 
 <tr>
@@ -157,7 +158,7 @@ Intro to Web Service Design</a></td>
   <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</td>
 <td>IEC 62034 Assessment in Sakai Due
 
-<a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</td>
+<!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned</td>
 </tr>
 
 <tr>
@@ -185,7 +186,7 @@ Intro to Web Service Design</a></td>
 <td><a href="Lectures/April-5-2019-Misc.md">Review Final Project</a></td>
 <td>Heart Rate Sentinel Server Due
 
-<a href="Assignments/final_image_processor.md">Final Project Assigned</td>
+<!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned</td>
 </tr>
 
 <tr>
