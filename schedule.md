@@ -45,7 +45,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Sept 9</td> 
-<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture4Jan25.md">Git Workflow</a></td>
+<td><a href=Lectures/git_workflow.md">Git Workflow</a></td>
 <td><!--<a href="Assignments/BMICalculatorAssignment.md">-->BMI Calculator</a></td>
 </tr>
 
