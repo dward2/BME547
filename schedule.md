@@ -20,9 +20,11 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Aug 28</td>
-  <td><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
-  Cloning, Add/Commit, Branching, Pushing/Pulling</td>
-  <td>Git Fundamentals/Practice</td>
+<td><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
+  Cloning, Add/Commit, Branching, Pushing/Pulling</a>;   
+  <a href="Resources/markdown.md">Markdown</a></td>
+  
+    <td>Git Fundamentals/Practice</td>
   <!--<td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>-->
 </tr>
 
