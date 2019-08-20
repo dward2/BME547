@@ -30,13 +30,16 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Sept 2</td>
-  <td><a href="Lectures/python_basics.md">Python Basics</a></td>
+  <td><a href="Lectures/python_basics.md">Python Basics</a>
+  
+  <a href="Lectures/virtual_environments.md">Virtual Environments</a>
+  </td>
   <td></td>
 </tr>
 
 <tr>
 <td>Wed Sept 4</td>
-<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture3Jan23.md">Python Virtual Environments</a></td>
+<td></td>
 <td><!--<a href="Assignments/PythonFundamentalAssignment.md">-->Python Fundamentals</a></td>
 </tr>
 
