@@ -1,5 +1,5 @@
 # BME 547 - Medical Software Design
-### Spring 2019
+### Fall 2019
 
 This repository serves as the default collection for all resources associated
 with the Duke BME Medical Software Design course (BME 547).
