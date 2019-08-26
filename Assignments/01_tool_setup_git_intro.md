@@ -50,7 +50,7 @@ installed.  If not, you will need to download it from the site above.
 4. Download and install `python3` at https://www.python.org/. Be sure to
    install Python 3.7, *not* Python 2.7.  
    
-   For Mac users, Python is likely already installed.  Open a Terminal window 
+   For **Mac** users, Python is likely already installed.  Open a Terminal window 
    and enter `python` or `python3`.  If installed, you should see something
    like the following:
    ```
@@ -64,7 +64,7 @@ installed.  If not, you will need to download it from the site above.
    not used Python before and do not have any legacy code to consider, 
    upgrading to the latest version may be a good idea.
      
-   Windows users have three options:  
+   **Windows** users have three options:  
    a) Download and install from <https://www.python.org/> as described above.
    Follow additional guidelines found [here](../Resources/installations.md) for
    installation.  
