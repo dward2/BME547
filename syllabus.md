@@ -105,10 +105,14 @@ The following grading scheme is subject to change as the semester progresses:
 <td>Assignments</td>
 <td>35%</td>
 </tr>
+<tr>
 <td>Final project</td>
 <td>50%</td>
 </tr>
 </table>
+
+All work is due by the date and time posted in Sakai.  No late submissions will
+be accepted without prior approval.
 
 ## Class Schedule
 The course schedule is very likely to change depending on progress throughout
