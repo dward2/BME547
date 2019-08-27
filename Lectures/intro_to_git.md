@@ -268,7 +268,7 @@ Date:   Wed Jan 16 11:24:53 2019 -0500
 
     modify file1.txt
 
-commit d945b32718b5104b765e06608e53f418cc1e3ff6 (HEAD -> master)
+commit d945b32718b5104b765e06608e53f418cc1e3ff6
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:55:21 2019 -0500
 
