@@ -15,6 +15,16 @@ Windows CMD window or PowerShell as desired.
 
 + No need to separately install pip and venv.  It was part of base package.
 + Activation of virtual environment uses `source <venvName>/Scripts/activate`
+
+* To use `python` from the GitBash command line, do the following:
+  
+  - Open GitBash and type `cd ~` to ensure you are in your home directory.
+  - Open the `.bashrc` file by typing `nano .bashrc`
+  - At the end of the file, add the following line: 
+  `alias python='winpty python.exe'`
+  - Save and close the file.
+  - Close and exit from the GitBash window
+  - Reopen the GitBash window and `python` should work from the command line.
  
 
 ## Notepad++

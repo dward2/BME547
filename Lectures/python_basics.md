@@ -1,4 +1,4 @@
-#Python Basics
+# Python Basics
 
 ## Script
 Let's start by making our first Python file.  
