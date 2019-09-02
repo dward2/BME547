@@ -37,7 +37,7 @@ if x == 'a':
     print("Add")
     a = 1
     b = 2
-    c = 1 + 2
+    c = a + b
     print("{} + {} = {}".format(a, b, c))
 elif x == "s":
     print("Subtract")
