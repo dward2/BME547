@@ -1,5 +1,5 @@
 # Modules
-An advantage of defining functions within a Python module files is that
+An advantage of defining functions within a Python module file is that
 you can import these functions into other modules.
 
 In a previous lecture, we created a module:
@@ -47,9 +47,9 @@ if __name__ == "__main__":
     print("Done")
 ```
 
-Let's say we have a different file, called `calculator.py` that we want to use
-the above functions in.  We can import functions from `first_module.py` into
-`calculator.py` for use.  Example:
+Let's say we have a different file called `calculator.py` in which we want to 
+use the functions defined in `first_module.py`.  We can import functions from 
+`first_module.py` into `calculator.py` for use.  Example:
 ```python
 # calculator.py
 from first_module import addsubtract
@@ -81,7 +81,7 @@ Add
 x = 10
 10 + 11 = 21
 ```
-In this case, all of the functions from first_module are imported.  But, with
+In this case, all of the functions from `first_module` are imported.  But, with
 this syntax, the module name and the function name need to be used to call
 the function.  We can make this easier by using an alias as follows:
 ```python
@@ -102,7 +102,7 @@ answer = addsubtract(4, 3, "-")
 print(answer)
 addition(10, 11)
 ```
-In this syntax, all of the function in first_module are imported, and you do
+In this syntax, all of the functions in `first_module` are imported, and you do
 not need to reference the module name when calling the imported functions.
 This approach is not considered best practice by some in that you may be 
 bringing in many functions that you don't need, and it is not obvious in the
@@ -186,7 +186,9 @@ Notice that the user was asked for an input command, then values for a and b.
 After the value of c and "Done" were printed, only then did the expected output
 from the `calculator.py` program be displayed.
 
-What happened?  As always, the python interpreter started at the top of the
+What happened?  `calculator.py` does not have any input statements.
+
+As always, the Python interpreter started at the top of the
 `calculator.py` file.  The first statement it sees is
 `from first_module import addsubtract`.  The Python interpreter then goes to 
 `first_module.py` file and starts scanning from the top.  It sees a variety of

@@ -1,4 +1,4 @@
-#Scope
+# Scope
 The scope of a variable is the area in the code in which this variable
 is accessible.  
 
@@ -43,10 +43,10 @@ When this module is run in Python, the interpreter starts at the top of the
 file and see that a function called `variable definition` is defined and then
 a function called `variable_output` is defined.  Then, it comes to line 13 with
 a statement in the module which it will execute.  This statement will run the
-`variable_definition()` functionat line 1.  This function defines local 
+`variable_definition()` function at line 1.  This function defines local 
 variables `a`
 and `b` and then prints out some strings using these variables.  This function
-ends and control is returned to line 13 where the function was called.  
+ends and control is returned to line 13 where the function was called.
 Next, Python sees the `variable_output{}` statement in line 14, so runs that
 function back at line 8.  This function tries to print the variable `a`.  This
 variable does not exist in this function.  There was an `a` defined in 
@@ -120,7 +120,7 @@ sees the definition of `variable_output` in lines 8 through 11.  Then, it
 comes across code in line 13.  It assigns values to `a` and `b` as global
 variables.  Then, in line 15, the code calls the function `variable_definition`.
 In line 2, the function `variable_definition` defines a local variable called
-`a`.  This local variable has precendent over the global variable `a`.  The
+`a`.  This local variable takes precedence over the global variable `a`.  The
 same goes for the `b` variable.  So, when the function prints `a` and `b` in 
 lines 4 and 5, it uses the values of the local variables.  The function ends
 and control is returned to line 15.  At this point, the local variables `a` and
@@ -130,7 +130,7 @@ The next line, line 16, calls the `variable_output` function.  In line 9, this
 function prints the `a` variable.  Since no local variable is defined as `a`,
 it uses the global variable `a`.
 
-### Use of `glabal` to Modify Global Variables 
+### Use of `global` to Modify Global Variables 
 In the example above, when a local function assigns a value to a variable with
 the same name as a global variable, it creates a new local variable of the same
 name and does not change the value of the global variable.  
