@@ -2,55 +2,57 @@
 
 ## Setup a Virtual Environment
 
-####First, make a new folder for your repository and then enter that repository.
+#### First, make a new folder for your repository and then enter that repository.
+Linux / Mac / GitBash:
+```
+dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos$ mkdir jupytertest
+dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos$ cd jupytertest
+```
 Windows / Conda:
 ```
 (base) D:\ClassRepos>mkdir jupytertest
 
 (base) D:\ClassRepos>cd jupytertest
 ```
-Linux / Mac:
-```
-dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos$ mkdir jupytertest
-dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos$ cd jupytertest
-```
 
-####Then, make a new virtual environment.
+#### Then, make a new virtual environment.
+Linux / Mac / GitBash:
+```
+dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$ python -m venv venvjup
+```
 Windows / Conda:
 ```
 (base) D:\ClassRepos\jupytertest>conda create --name JupyterEnv
 ```
-Linux / Mac:
-```
-dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$ python3 -m venv venvjup
-```
+
 #### Then, activate the virtual environment.
+Linux / Mac / GitBash:
+```
+dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$ source venvjup/bin/activate
+(venvjup) dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$
+```
 Windows / Conda:
 ```
 (base) D:\ClassRepos\jupytertest>activate JupyterEnv
 
 (JupyterEnv) D:\ClassRepos\jupytertest>
 ```
-Linux / Mac:
-```
-dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$ source venvjup/bin/activate
-(venvjup) dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$
-```
 
 #### In this environment, install the `jupyter` package.
+Linux / Mac / GitBash:
+```
+(venvjup) dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$ pip install jupyter
+```
 Windows / Conda:
 ```
 (JupyterEnv) D:\ClassRepos\jupytertest>conda install jupyter
-```
-Linux / Mac:
-```
-(venvjup) dward@DESKTOP-G8L84L6:/mnt/d/ClassRepos/jupytertest$ pip install jupyter
 ```
 A number of packages will be downloaded and installed.
 
 Note that, instead of directly installing `jupyter` by the commands above, it
 could be done by using the `enviornment.yml` file in conda or `requirements.txt`
-file in Linux/Mac.  See <../virtual_environments.md> for more info.
+file in Linux/Mac/GitBash.  See 
+[virtual_environments.md](../../Lectures/virtual_environments.md) for more info.
 
 ## Starting  Jupyter Notebook
 To start a new Jupyter Notebook, type
