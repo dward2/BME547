@@ -216,7 +216,52 @@ Activate the desired environment, then type the following.
  <https://pip.pypa.io/en/stable/reference/pip_install/> for reference 
  documentation on pip.
  
- 
+# In Class Exercise
+For the next homework assignment, you will need to use a Jupyter Notebook.
+So, in class, we are going to make a virtual environment, install `jupyter`,
+and run a Jupyter Notebook.
+* Make a new folder, and within that folder, create a new virtual environment.
+* Activate this environment, and install `jupyter` in this environment.
+* Follow instructions below for starting and using a Jupyter Notebook
+## Starting  Jupyter Notebook
+To start a new Jupyter Notebook, type
+```
+jupyter notebook
+```
+This will ideally open a browser window.  If not, a URL should be given in your
+terminal window that you can open with a browser.
+![images/JN_empty.JPG](../Resources/Jupyter/images/JN_empty.JPG)
+To start a new Jupyter Notebook, click on the "New" button and choose
+"Python 3" from the dropdown menu.  A new browser window should open.
+![images/JN_new_notebook.JPG](../Resources/Jupyter/images/JN_new_notebook.JPG)
+You can now explore the notebook.  You can add new cells by clicking on the
+"+" button.  You can change the type of cell (whether it contains code or 
+markdown) by clicking on the drop down that says "Code" in the picture above.
+You can change the order of the different cells using the arrow buttons.
+
+When you are ready to save the notebook, choose the "Save As..." option under 
+the File menu.
+
+When you are finished, you can click "Logout".  Go back to the command prompt.
+If there is not a prompt available for you to type, the jupyter server may
+still be running.  Click Ctrl-C to exit the server.  Then, you can see that
+a new jupyter notebook has been created in your directory with the file
+extension `.ipynb`.
+
+## Opening an existing Jupyter Notebook
+```
+jupyter notebook <notebookname>.ipynb
+``` 
+
+
+
+
+
+
+
+
+
+
  # Misc Stuff
  ## Linux (and MacOS)
 #### Install pip
