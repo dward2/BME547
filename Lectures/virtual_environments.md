@@ -28,9 +28,9 @@ First, navigate to the folder containing your project.  This can be the same
 folder as your git repository.
 
 Type  
-`python3 -m venv <VirtualEnvironmentName>`  
+`python -m venv <VirtualEnvironmentName>`  
 where `<VirtualEnvironmentName>` is the desired name of the virtual
-environment.  For example `python3 -m venv MyVenv` makes a virtual
+environment.  For example `python -m venv MyVenv` makes a virtual
 environment with the name `MyVenv`.  A subfolder with the name of the virtual
 environment will be created in the folder.
 
@@ -42,8 +42,8 @@ Following the same example as above:  `source MyVenv/bin/activate`
 
 #### Windows Bash
 In the Bash window, from the project folder, type:
-`source <VirtualEnvironmentName>/Scripts/actdivate`
-Following the example above:``soucrce MyVenv/Scripts/activate`
+`source <VirtualEnvironmentName>/Scripts/activate`
+Following the example above: `source MyVenv/Scripts/activate`
 #### Windows Command Line
 At the command prompt, in the project directory, type:
 ` ./<VirtualEnvironmentName/Scripts/activate.bat`
@@ -145,7 +145,7 @@ Activate the desired environment, then type the following.
  that should be excluded, add a file called `.gitignore` to your repository.
  In this file, list either the specific files or paths that you do not want
  included in your repository.  For example, creating a virtual environment
- using the command `python3 -m venv MyVenv` will create a folder called 
+ using the command `python -m venv MyVenv` will create a folder called 
  `MyVenv`.  To exclude this directory from the repo, I would add the following
  line to `.gitignore`:
  ```
