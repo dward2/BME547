@@ -12,7 +12,7 @@ aliases in Windows and GitBash are different than these.)
 * Type `ls -a` to list all files in this directory, including those that are
 hidden.  One of the files should be `.bash_profile`.
 * Open `.bash_profile` for editing in your favorite text editor.
-* Add the following line: `python=python3`
+* Add the following line: `alias python='python3'`
 * Save and close the file.
 * Close and then re-open your terminal window to have the new alias take
 effect.
@@ -38,7 +38,7 @@ hidden.  One of the files should be `.bashrc`.
       home directory.  If not, create a file called `.bash_aliases`.
     - Open `.bash_aliases` in your favorite text editor.
   
-+ In either `.bashrc` or `.bash_aliases`, add the following line: `python=python3`
++ In either `.bashrc` or `.bash_aliases`, add the following line: `alias python=python3`
 + Save and close the file.
 + To make the aliases active, you can do one of two things:
   - Close and then re-open your terminal window, or
@@ -47,3 +47,12 @@ hidden.  One of the files should be `.bashrc`.
 Now, the command `python` should run Python version 3.  
 
 Note, you can make an alias for any command line command.
+
+## Bypassing Alias
+If you temporarily do not want to use the alias, but in fact want to command
+you entered to be used without the alias, you can enter the command with the
+\ symbol before it.
+
+For example, above, an alias was defined such that the `python` command would
+run the Python 3 version:
+  
