@@ -21,7 +21,7 @@ Now, the command `python` should run Python version 3.
 
 Note, you can make an alias for any command line command.
 
-### Linux
+## Linux
 + In the terminal, type `cd ~` to ensure you are in your home directory.
 + Type `ls -a` to list all files in this directory, including those that are
 hidden.  One of the files should be `.bashrc`.
