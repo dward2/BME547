@@ -36,10 +36,9 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Sept 4</td>
-<td><a href="Lectures/virtual_environments.md">Virtual Environments</a>;
+<td><a href="Lectures/virtual_environments.md">Virtual Environments</a> / 
 
-<a href="Lectures/variable_scope.md">Scope</a> and
-    <a href="Lectures/modules.md">Modules</a>,
+<a href="Lectures/variable_scope.md">Scope</a>
 
 </td>
 <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
@@ -47,7 +46,9 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Sept 9</td> 
-<td><a href=Lectures/git_workflow.md">Git Workflow</a></td>
+<td><a href="Lectures/git_workflow.md">Git Workflow</a> / 
+<a href="Lectures/modules.md">Modules</a>
+</td>
 <td><!--<a href="Assignments/BMICalculatorAssignment.md">-->BMI Calculator</a></td>
 </tr>
 
@@ -61,7 +62,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Mon Sept 16</td>
 <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
 Integration & Travis</a>;
-<a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Appxorimations</a></td>
+<a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
 <td><!--<a href="Assignments/UnitTestingCIAssignment.md">-->Unit Testing & CI Assignment</a></td>
 </tr>
 
