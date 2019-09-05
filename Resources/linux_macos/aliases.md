@@ -53,6 +53,16 @@ If you temporarily do not want to use the alias, but in fact want to command
 you entered to be used without the alias, you can enter the command with the
 \ symbol before it.
 
-For example, above, an alias was defined such that the `python` command would
-run the Python 3 version:
-  
+For example, above, an alias was defined as `alias python='python3'` for macOS
+such that:
+```
+Work@Evans-MacBook-Pro ~ $ python -V
+Python 3.6.5
+```
+
+But, if it desired to run the original `python` command without the alias,
+enter:
+```
+Work@Evans-MacBook-Pro ~ $ \python -V
+Python 2.7.10
+```
