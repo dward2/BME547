@@ -24,7 +24,7 @@ for the function doing subtraction, etc.
 
 Alternatively, you might choose to do the branches differently, such as
 developing the addition on a single branch, and the commits could be the code
-for doing the math and then the code for the inerface.  Subtraction would be
+for doing the math and then the code for the interface.  Subtraction would be
 developed on a different branch.
 
 ## Exercise
