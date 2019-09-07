@@ -6,14 +6,47 @@ then be merged into the master branch.  No development should be done directly
 on the master branch.  In this way, the master branch always contains the 
 latest, correctly working copy of the program.
 
-Each feature should be reasonably independent from other features.
+Code development on each feature should be kept reasonably independent from 
+other features and branches.
 
 ## When to Commit
 A commit should represent a discrete piece of work or code, not a hodgepodge
 of changes.  When writing new code, at a minimum each new function should be
 its own commit.  When fixing bugs, each bug fix should be one commit.  Or, if
 it is a major bug requiring lots of changes, the bug fix might be done on a
-branch with multiple commits for when each function is changed.  
+branch with multiple commits for when each function is changed.
+
+Commit messages should describe what is added or changed in the program and,
+most importantly, why.  A message like "fixed bug" does not
+communicate anything.  Whereas "fixed bug where typing 'a' in interface led
+to crash in function 'addition'" is better.  
+
+<table>
+<tr>
+<th>Bad Commit Message</th>
+<th>Good Commit Message</th>
+</tr>
+
+<tr>
+<td>Fixed bug</td>
+<td>Fixed bug where typing 'a' in interface led to crash in function 'addition"</td>
+</tr>
+
+<tr>
+<td>Added new code</td>
+<td>Implement multiplication function in calculator</td>
+</tr>
+
+<tr>
+<td> Working more on feature</td>
+<td> Add two buttons to GUI to allow for scrolling through list</td>
+</tr>
+
+<tr>
+<td>Change pt_limit from 5 to 10</td>
+<td>Extended the number of points that will be plotted by changing constant pt_limit</td>
+</tr>
+<table>
 
 ## Example of branch/commit design
 Lets say you were working on a calculator app.  You might choose to develop
