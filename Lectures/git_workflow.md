@@ -79,7 +79,7 @@ def interface():
 if __name__ == '__main__':
         interface()
 ```
-* Commit and run to test.
+* Run code to test, then commit.
 * Modify so that it continues until quit is hit.
 ```python
 def interface():
@@ -106,7 +106,7 @@ def addition(a, b):
     return answer
 ```
 * Commit
-Write function to accept inputs:
+* Write function to accept inputs:
 ```python
 def addition_interface():
     print("Addition")
@@ -143,11 +143,16 @@ def interface():
 
 ### Continue Exercise
 * Find a partner and give permission for them to access your repository
-* Clone your partner's repository and using the feature branch approach, add
-a subtraction feature to their code.
+* Clone your partner's repository to your local computer.  If their repository
+has a name that you are already using, you can clone the repository into a
+folder with a different name using the following syntax:
+```bash
+git clone https://github.com/<userID>/<repoName>.git <NewFolderName>
+
+Example:  git clone https://github.com/dward2/calculator.git partner_calculator
+```
+ 
+* Using the feature branch approach, add a subtraction feature to their code.
 * Push the new branch to their GitHub repository.
 * Open a Pull Request and include your partner as a reviewer.  Do not merge
 the Pull Request.  That is up to the partner who owns the repository.
-
-
-
