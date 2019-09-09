@@ -169,7 +169,7 @@ with your Duke NetID.  So, an example address would be:
 
 This will let me know that you are finished.   
 
-### Continue Exercise: Validate input
+### Continue Exercise: LDL function on partner repository
 * Find a partner and give permission for them to access your repository
 * Clone your partner's repository to your local computer.  If their repository
 has a name that you are already using, you can clone the repository into a
@@ -190,6 +190,7 @@ to their code.
 the Pull Request.  That is up to the partner who owns the repository.
 
 ## If Time
+* Validate input
 * Tags
 * Issues
 * Linking code to issue
