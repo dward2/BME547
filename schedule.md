@@ -46,16 +46,16 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Sept 9</td> 
-<td><a href="Lectures/git_workflow.md">Git Workflow</a> / 
-<a href="Lectures/modules.md">Modules</a>
+<td><a href="Lectures/git_workflow.md">Git Workflow</a> 
 </td>
-<td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
+<td></td>
 </tr>
 
 <tr>
 <td>Wed Sept 11</td>
-<td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
-<td></td>
+<td><a href="Lectures/modules.md">Modules</a> / 
+<a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
+<td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
 
 <tr>
