@@ -9,19 +9,17 @@ That will allow for this new repository to be cloned to your local computer.
 * Receives input from the user from the console  
    + Console input can be received with code such as follows:   
    `x = input("Enter number: ")`  
-   Note that `x` will be a string and needs to be converted to a float.  
-   + Weight input must be in pounds  
-   + Height input must be in inches
+   Note that `x` will be a string and needs to be converted to a float.
+   + User must have the option of entering data in either kilograms/meters or
+       pounds/inches.  
    
-* Program must output to the console the calculated BMI.  
+* Outputs to the console the calculated BMI.  
    + Console output can be achieved by code such as:
    `print("The number entered was {}".format(x))`
    
-* Program must output whether the calculated BMI represents underweight,
+* Outputs whether the calculated BMI represents underweight,
 normal weight, overweight, or obese.
 
-* Extra credit:  give the user the option to enter weight in kilograms and 
-height in meters.
 
 ### Approach
 * Clone GitHub Classroom repository to your computer
