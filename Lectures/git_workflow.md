@@ -159,6 +159,16 @@ it can detect and analyze LDL results, using the same input format `LDL=###`.
 * LDL 160-189 is high
 * LDL > 190 is very high.
 
+When finished, open a browser window and visit the following link:
+```http://bme547server.colab.duke.edu:5000/done/<NetID>```
+ 
+ but replace `<NetID>`
+with your Duke NetID.  So, an example address would be:
+ 
+```http://bme547server.colab.duke.edu:5000/done/daw74```
+
+This will let me know that you are finished.   
+
 ### Continue Exercise: Validate input
 * Find a partner and give permission for them to access your repository
 * Clone your partner's repository to your local computer.  If their repository
@@ -170,14 +180,18 @@ git clone https://github.com/<userID>/<repoName>.git <NewFolderName>
 Example:  git clone https://github.com/dward2/calculator.git partner_calculator
 ```
  
-* Using the feature branch approach, add a subtraction feature to their code.
+* Using the feature branch approach, add a total cholesterol check feature 
+to their code.
+  - <200: Normal
+  - 200 - 239: Borderline high
+  - \>=240: High
 * Push the new branch to their GitHub repository.
 * Open a Pull Request and include your partner as a reviewer.  Do not merge
 the Pull Request.  That is up to the partner who owns the repository.
 
 ## If Time
-Tags
-Issues
-Linking code to issue
-Linking issue to PR or commits
-Closing issue in PR
+* Tags
+* Issues
+* Linking code to issue
+* Linking issue to PR or commits
+* Closing issue in PR
