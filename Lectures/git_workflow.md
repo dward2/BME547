@@ -61,10 +61,12 @@ for doing the math and then the code for the interface.  Subtraction would be
 developed on a different branch.
 
 ## Exercise
-
+Lets write a program that will do some basic laboratory test result checks.
 * Create a GitHub repository with a `README.md` file
 * Clone repository to your local computer
 * Create a virtual environment
+
+#### Interface Branch
 * Create branch called `interface`
 * Create a file and add the following code for the interface
 ```python
@@ -79,8 +81,8 @@ def interface():
 if __name__ == '__main__':
         interface()
 ```
-* Run code to test, then commit.
-* Modify so that it continues until quit is hit.
+* Run code to test, then commit it to repository.
+* Modify code so that it continues until quit is hit.
 ```python
 def interface():
     keep_running = True
@@ -96,52 +98,68 @@ def interface():
 ```
 * Commit
 * Push Branch to GitHub
-* On GitHub, do Pull Request
-* Locally, pull new master to local.
-* From master, create a new branch called `addition`.
-* Write function for addition:
-```python
-def addition(a, b):
-    answer = a + b
-    return answer
-```
-* Commit
-* Write function to accept inputs:
-```python
-def addition_interface():
-    print("Addition")
-    input1 = input("Enter the first number: ")
-    input2 = input("Enter the second number: ")
-    number1 = int(input1)
-    number2 = int(input2)
-    result = addition(number1, number2)
-    print("The answer is {}".format(result))
-    return
+* On GitHub, open Pull Request to merge `interface` into `master`.
+* Confirm Pull Request.
+* Pull new `master` branch to local.
 
+#### HDL Branch
+The first check will be categorizing the results of an HDL test.
+* From master, create a new branch called `HDL`.
+* Write function for checking the HDL result:
+```python
+def check_HDL(HDL):
+    if HDL >= 60:
+        return "Normal"
+    elif 40 <= HDL < 60:
+        return "Borderline Low"
+    else:
+        return "Low"        
 ```
 * Commit
-* Modify interface to add the addition option:
+* Write function to accept inputs.  The cholesterol interface should allow
+the user to type in `HDL=###` and parse the test type (HDL) and the result.
+```python
+def cholesterol_check():
+    print("Cholesterol Check")
+    chol = input("Enter your cholesterol result: ")
+    chol_data = chol.split("=")
+    if chol_data[0] == "HDL":
+        result = check_HDL(chol_data[1])
+        print("The cholesterol level is {}.".format(result))
+```
+* Commit
+* Modify interface to add the Cholesterol Check option:
 ```python
 def interface():
     keep_running = True
     while keep_running:
         print("My Program")
         print("Options:")
-        print("1 - Addition")
+        print("1 - Cholesterol Check")
         print("9 - Quit")
         choice = input("Enter your choice: ")
         if choice=='9':
             keep_running = False
         elif choice == '1':
-            addition_interface()
+            cholesterol_check()
     return
 ```
 * Commit
 * Test and make sure additional feature works.
-* Push `addition` branch to GitHub.
-* On GitHub, open a Pull Request to merge `addition` into `master`.
+* Push `HDL` branch to GitHub.
+* On GitHub, open a Pull Request to merge `HDL` into `master`.
+* Confirm pull request.
+* Pull updated `master` branch to local repository.
 
-### Continue Exercise
+### LDL Branch
+On your own:  make a new branch and modify the `cholesterol_check` such that
+it can detect and analyze LDL results, using the same input format `LDL=###`.
+* LDL < 130 is normal
+* LDL 130 to 159 is borderline high
+* LDL 160-189 is high
+* LDL > 190 is very high.
+
+### Continue Exercise: Validate input
 * Find a partner and give permission for them to access your repository
 * Clone your partner's repository to your local computer.  If their repository
 has a name that you are already using, you can clone the repository into a
@@ -156,3 +174,10 @@ Example:  git clone https://github.com/dward2/calculator.git partner_calculator
 * Push the new branch to their GitHub repository.
 * Open a Pull Request and include your partner as a reviewer.  Do not merge
 the Pull Request.  That is up to the partner who owns the repository.
+
+## If Time
+Tags
+Issues
+Linking code to issue
+Linking issue to PR or commits
+Closing issue in PR
