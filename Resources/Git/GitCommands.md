@@ -160,3 +160,20 @@ $ git branch
 ```
 The local `experimental` branch will now track with the remote branch of the 
 same name.
+
+## Git Log Options
+The following information was taken from 
+<https://ma.ttias.be/pretty-git-log-in-one-line/>.  
+
+#### One Line Log
+`git log --pretty=oneline`
+
+#### To create a permanent one-line log:
+Enter the following command on the git bash command line.
+```
+git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+It creates a new git command called `logline` that is used as follows:
+```
+git logline
+```
