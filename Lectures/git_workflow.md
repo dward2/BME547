@@ -158,19 +158,25 @@ it can detect and analyze LDL results, using the same input format `LDL=###`.
 * LDL 130 to 159 is borderline high
 * LDL 160-189 is high
 * LDL > 190 is very high.
+   
 
-When finished, open a browser window and visit the following link:
-```http://bme547server.colab.duke.edu:5000/done/<NetID>```
- 
- but replace `<NetID>`
-with your Duke NetID.  So, an example address would be:
- 
-```http://bme547server.colab.duke.edu:5000/done/daw74```
+### Additional Practice: Total Cholesterol function
+If you would like additional practice:
+* Using the feature branch approach, add a total cholesterol check feature 
+to their code.
+  - <200: Normal
+  - 200 - 239: Borderline high
+  - \>=240: High
 
-This will let me know that you are finished.   
-
-### Continue Exercise: LDL function on partner repository
+If you want to practice working with shared repositories, work with a partner:
 * Find a partner and give permission for them to access your repository
+  - Navigate to your repository that you want to share with someone else.
+  - Click on "Settings" in the repository toolbar.
+  - Select the "Collaborators" option in the left-side menu list.
+  - Enter a GitHub username in the box and click Add Collaborator.
+  - This should send an e-mail to the other user to accept and will then give
+  them read/write permissions to your repository.
+  
 * Clone your partner's repository to your local computer.  If their repository
 has a name that you are already using, you can clone the repository into a
 folder with a different name using the following syntax:
@@ -180,19 +186,8 @@ git clone https://github.com/<userID>/<repoName>.git <NewFolderName>
 Example:  git clone https://github.com/dward2/calculator.git partner_calculator
 ```
  
-* Using the feature branch approach, add a total cholesterol check feature 
-to their code.
-  - <200: Normal
-  - 200 - 239: Borderline high
-  - \>=240: High
-* Push the new branch to their GitHub repository.
-* Open a Pull Request and include your partner as a reviewer.  Do not merge
+* Develop the total cholesterol code on a feature branch of your partner's
+repository and push it up to their GitHub repository.
+* On GitHub in your partner's repositoriy, qpen a Pull Request and include your 
+partner as a reviewer.  Do not merge
 the Pull Request.  That is up to the partner who owns the repository.
-
-## If Time
-* Validate input
-* Tags
-* Issues
-* Linking code to issue
-* Linking issue to PR or commits
-* Closing issue in PR
