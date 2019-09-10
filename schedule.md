@@ -53,7 +53,9 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Sept 11</td>
-<td><a href="Lectures/modules.md">Modules</a> / 
+<td>
+<a href="Lectures/return_keyword.md">Return</a> /
+<a href="Lectures/modules.md">Modules</a> / 
 <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
 <td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
