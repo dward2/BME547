@@ -56,12 +56,19 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>
 <a href="Lectures/return_keyword.md">Return</a> /
 <a href="Lectures/modules.md">Modules</a> / 
-<a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
+<a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
+</td>
 <td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
 
 <tr>
 <td>Mon Sept 16</td>
+<td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Wed Sept 18</td>
 <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
 Integration & Travis</a>;
 <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
@@ -69,7 +76,7 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Wed Sept 18</td>
+<td>Mon Sept 23</td>
 <td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
 <a href="Lectures/docstrings.md">Docstrings</a>;
 <a href="Lectures/sphinx.md">Sphinx</a></td>
@@ -77,30 +84,24 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Mon Sept 23</td>
+<td>Wed Sept 25</td>
 <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
 <a href="Lectures/json.md">JSON</td>
 <td><!--<a href="Assignments/TSHTestDataConversion">-->TSH Test Data Conversion</td>
 </tr>
 
 <tr>
-<td>Wed Sept 25</td>
+<td>Mon Sept 30</td>
 <td><a href="Lectures/debugging.md">Debugging</a>, 
 <a href="Resources/PyCharm">PyCharm</a></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Mon Sept 30</td>
+<td>Web Oct 2</td>
 <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
 <a href="Lectures/logging.md">Logging</a></td>
 <td><!--<a href="Assignments/ECG_Analysis">-->ECG_Analysis Assigned</a></td>
-</tr>
-
-<tr>
-<td>Web Oct 2</td>
-<td>Functional Decomposition</td>
-<td></td>
 </tr>
 
 <tr>
@@ -113,36 +114,36 @@ Integration & Travis</a>;
 
 <tr>
 <td>Wed Oct 9</td>
-<td><a href="Lectures/numpy.md">NumPy</a>, 
-<a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages
+<td>Functional Decomposition
 </td>
 <td></td>
 </tr>
 
 <tr>
 <td>Mon Oct 14 </td>
-<td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+<td><a href="Lectures/numpy.md">NumPy</a>, 
+<a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</a>
 </td>
-<td>IEC 62304 Assignment (in Sakai, due ##/##)</td>
-</tr>
-
-<tr>
-<td>Wed Oct 16</td>
-<td>More on <a href="Lectures/classes.md">Classes</a>  
-(Starting code <a href="Lectures/lecture_code/classes.py"> here</a>)</td>
 <td></td>
 </tr>
 
 <tr>
+<td>Wed Oct 16</td>
+<td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</td>
+<td>IEC 62304 Assignment (in Sakai, due ##/##)</td>
+</tr>
+
+<tr>
 <td>Mon Oct 21</td>
-<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture12Mar8.md">
-Intro to Web Service Design</a></td>
+<td>More on <a href="Lectures/classes.md">Classes</a>  
+(Starting code <a href="Lectures/lecture_code/classes.py"> here</a>)</td>
 <td>ECG_Analysis Assignment Due</td>
 </tr>
 
 <tr>
 <td>Wed Oct 23</td>
-<td></td>
+<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture12Mar8.md">
+Intro to Web Service Design</a></td>
 <td></td>
 </tr>
 
