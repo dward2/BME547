@@ -17,6 +17,9 @@ of the commit number.
 #### Pushing a local tag to GitHub
 `git push origin v#.#`
 
+#### Push all local tags to GitHub
+`git push origin --tags`
+
 ## Issues
 GitHub repositories has a feature for tracking Issues.  Issues can be used for:
 * Creating a To Do list of things to do for code development
