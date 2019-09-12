@@ -137,6 +137,8 @@ to the `master` branch, you will be working from the most recent copy.  There
 may be times when you want to try a different approach to a feature, and in
 that case, it may be okay to branch off of a feature branch.
 
+Or, shown graphically:
+
 __Good:__
 
 ![branching-good](branching_files/branching_good.jpg)
