@@ -1,38 +1,39 @@
 # Branching
 
-Here is the standard workflow for using feature branches in git and GitHub.
+Here is the standard workflow for using feature branches in `git` and GitHub.
 
 #### Initial Commit
-First, create a repository on GitHub with a README.md file and clone it to your 
-local computer.  The repository has a single commit on the master branch:
+First, a new repository is created on GitHub with a README.md file and then  
+cloned to the local computer.  The repository has a single commit on the master 
+branch:
 
-Commit Tree:  ![network-1.jpg](branching_files/network-1.JPG)
+![network-1.jpg](branching_files/network-1.JPG)
 
-GitHub Commit History: ![commit-1.jpg](branching_files/commit-1.JPG)
+_GitHub Commit History_: ![commit-1.jpg](branching_files/commit-1.JPG)
 
-git local commit history:
+_git local commit history_:
 ![gitlog-1.jpg](branching_files/gitlog-1.JPG)
 
 
 #### First Feature Branch
-The first feature branch, in this case called `interface` is then created in 
-git and checked out with the following commands:
+The first feature branch is created in `git`, in this case called `interface`,  
+and checked out with the following commands:
 ```
 git branch interface
 git checkout interface
 ```
-On the interface branch, add the desired code and make the needed commits.
+On the interface branch, the desired code is added committed.
 
-The local git commit history now looks like this:
+The local `git` commit history now looks like this:
 
 ![gitlog-2.jpg](branching_files/gitlog-2.JPG)
 
-This feature branch is next pushed to GitHub.  As it does not currently exist
-on GitHub, the following command is used:
+Next, this feature branch is pushed to GitHub.  As this branch does not  
+currently exist on GitHub, the following command is used:
 ```
 git push --set-upstream origin interface
 ```
-The respository on GitHub now shows the `interface` branch and its commit 
+The repository on GitHub now shows the `interface` branch and its commit 
 history:
 
 ![network-2.jpg](branching_files/network-2.JPG)
@@ -51,27 +52,27 @@ Note that the commits from the `interface` branch have been added to the
 `master` branch.
 
 As this merge was done on GitHub, the local repository has no knowledge of this
-merge.  So, back in the local repository, the following `git` commands will
-update the local repository to the same condition as GitHub.  First, the
-master branch must be checked out.
+merge.  So, back in the local repository, the local repository is updated to 
+the same status as GitHub by using the following `git` commands.First, the
+master branch is checked out.
 ```
 git checkout master
 ```
-Then, we `fetch` the latest status from GitHub and `pull` the latest master
-to the local repository:
+Then, `fetch` is used to get the latest status from GitHub and `pull` is used
+to pull the latest `master` branch updates into the local repository:
 ```
 git fetch
 git pull
 ```
-`git` knows to pull the master branch because that is the currently active
-branch.  The local git commit history for the local master branch is:
+`git` knows to pull the `master` branch because that is the currently active
+branch.  The local git commit history for the local master branch is now:
 
 ![gitlog-3.jpg](branching_files/gitlog-3.JPG)
 
 #### Second Feature Branch
 A second feature branch, called `calculations` is now made from the `master` 
 branch.  Make sure that the `master` branch is currently checked out.  
-Then, a new branch can be made:
+Then, a new branch is made:
 ```
 git checkout master
 git branch calculations
