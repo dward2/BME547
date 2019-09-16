@@ -38,7 +38,6 @@ Pytest is not a default package in Python, so must be installed in a virtual env
 * `requirements.txt`
   + `pytest`
   + `pytest-pep8`
-  + `pytest-cov`  
   
 ## Using `Pytest`
 
