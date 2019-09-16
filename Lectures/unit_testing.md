@@ -28,9 +28,8 @@ that function should be broken up into smaller functions.
 * `pytest`
   + Easy to use and install with `pip` and `conda`.
   + Has Python specific features
-* `nose`
+* `nose2`
   + Extension of `unittest`
-  + Active development has stopped
   
 ## Installing `Pytest`
 Pytest is not a default package in Python, so must be installed in a virtual environment.
