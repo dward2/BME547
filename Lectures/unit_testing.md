@@ -193,4 +193,18 @@ the ability to check that code meets the PEP-8 style requirements.  Run `pytest`
 as follows:  
 `pytest -v --pep8`
 
+## Exercise
+__Goal__:  Develop Python code that:
+* receives as parameters two tuples, `(x1, y1), (x2, y2)`, that represent two
+(x, y) coordinates on a plane,
+* receives a parameter, `x`, that is a new value on the x-coordinate of the 
+above plane,
+* and returns a value `y` that is on the line created by the first two points.
+
+__Steps__:
+* Start new branch 
+* Write a unit test for this function
+* Develop needed code
+* Make sure code is written modularly so each algorithmic step can be tested.
+
 
