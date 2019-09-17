@@ -4,6 +4,8 @@ In this assignment, you will write a function and comprehensive unit tests to
 ensure the function meets specifications.  You will also configure Continuous
 Integration (CI) to automatically run tests on push and pull request events.
 
+See Sakai for GitHub Classroom link and due date.
+
 ### Background
 With the transition towards electronic medical records, many paper records are
 being scanned into a digital format.  [Optical character recognition](https://en.wikipedia.org/wiki/Optical_character_recognition)
