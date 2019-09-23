@@ -77,7 +77,7 @@ Integration & Travis</a>;
 
 <tr>
 <td>Mon Sept 23</td>
-<td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
+<td>
 <a href="Lectures/docstrings.md">Docstrings</a>;
 <a href="Lectures/sphinx.md">Sphinx</a></td>
 <td></td>
@@ -182,7 +182,7 @@ Intro to Web Service Design</a></td>
 
 <tr>
   <td>Mon Nov 11</td>
-  <td></td>
+  <td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;</td>
   <td></td>
 </tr>
 
