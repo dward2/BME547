@@ -77,16 +77,16 @@ Integration & Travis</a>;
 
 <tr>
 <td>Mon Sept 23</td>
-<td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
-<a href="Lectures/docstrings.md">Docstrings</a>;
-<a href="Lectures/sphinx.md">Sphinx</a></td>
+<td><a href="Lectures/dictionaries.md">Dictionaries</a>;
+<a href="Lectures/json.md">JSON</td>
 <td></td>
 </tr>
 
 <tr>
 <td>Wed Sept 25</td>
-<td><a href="Lectures/dictionaries.md">Dictionaries</a>;
-<a href="Lectures/json.md">JSON</td>
+<td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
+<a href="Lectures/docstrings.md">Docstrings</a>;
+<a href="Lectures/sphinx.md">Sphinx</a></td>
 <td><!--<a href="Assignments/TSHTestDataConversion">-->TSH Test Data Conversion</td>
 </tr>
 

@@ -42,3 +42,10 @@ The code above will give the following output:
 More information on doing file I/O in Python can be found at:
 * https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 * https://docs.python.org/3/library/functions.html#open
+
+## In Class Exercise
+* To your Cholesterol Calculator, add an option to enter patient data,
+including name and age.  Put that information into a dictionary.
+* Create a `json` output file that contains this information.
+* If time, integrate the ability to enter an HDL or LDL test result, have it
+diagnosed, and saved with the patient's data.
