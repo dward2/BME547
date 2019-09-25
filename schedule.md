@@ -86,7 +86,9 @@ Integration & Travis</a>;
 <td>Wed Sept 25</td>
 <td>
 <a href="Lectures/docstrings.md">Docstrings</a>;
-<a href="Lectures/sphinx.md">Sphinx</a></td>
+<a href="Lectures/numpy.md">NumPy</a>, 
+<a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</a>
+</td>
 <td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</td>
 </tr>
 
@@ -121,9 +123,8 @@ Integration & Travis</a>;
 
 <tr>
 <td>Mon Oct 14 </td>
-<td><a href="Lectures/numpy.md">NumPy</a>, 
-<a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</a>
-</td>
+<td>
+<a href="Lectures/sphinx.md">Sphinx</a></td>
 <td></td>
 </tr>
 

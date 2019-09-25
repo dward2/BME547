@@ -46,3 +46,10 @@ plt.plot(x, z, "g-")
 ## References
 * General Matplotlib website:  https://matplotlib.org/
 * Intro to using `pyplot` module:  https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py
+
+## In Class Exercise
+* Write a function that generates two `numpy` arrays:
+  - `time` that contains linear values from 0 to 10
+  - `y` that contains the `sin` of the values in `time`
+  -  Use the function `np.sin()`
+* Generate a plot of `y` vs. `time` using `matplotlib`
