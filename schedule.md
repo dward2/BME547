@@ -87,7 +87,7 @@ Integration & Travis</a>;
 <td>Wed Sept 25</td>
 <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
 <a href="Lectures/json.md">JSON</td>
-<td><!--<a href="Assignments/TSHTestDataConversion">-->TSH Test Data Conversion</td>
+<td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</td>
 </tr>
 
 <tr>
