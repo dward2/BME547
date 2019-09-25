@@ -1,7 +1,7 @@
 # TSH Test Data Conversion
 
 ## Set-up
-Hypothroidism and hyperthyroidism are conditions where the thyroid gland 
+Hypothyroidism and hyperthyroidism are conditions where the thyroid gland 
 produces either too little (hypo) or too much (hyper) of the hormone thyroxine.
 
 The thyroid gland is under the control of the pituitary gland.  When the level
@@ -81,7 +81,7 @@ string handling, unless you find them useful)
 * Final submission is pushed to GitHub by deadline and is tagged appropriately.
 
 ### Small Bonus
-* Sort the list of TSH values (low to high) before outputing them to the JSON
+* Sort the list of TSH values (low to high) before outputting them to the JSON
 file. 
 *  Create `sphinx` documentation and push the resulting `*.html` files to your
 GitHub repository.
