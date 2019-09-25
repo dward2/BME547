@@ -17,7 +17,7 @@ data containing TSH test results.  This data will be analyzed for hypothyroidism
 and hyperthyroidism and then stored in a JSON output file.
 
 ## Input Data
-A sample input file is found in a text file called `test_data.txt` in this 
+A sample input file is found in a text file called `sample_data.txt` in this 
 repository.  The data for a single patient is found on four lines with the 
 following format:
 ```
@@ -34,12 +34,12 @@ The fourth line contains the name of test, followed by a comma, and then a
 list of test results separated by commas.  The number of test results will
 vary from patient to patient.
 
-In the `test_data.txt` file, the first patient fills the first four rows, the
+In the `sample_data.txt` file, the first patient fills the first four rows, the
 second patient fills the next four rows, etc.  After the last patient, the
 file will have a line containing `END` to mark the end of the file.
 
 ## Program Specifications
-* Read in the data from a text file.  `test_data.txt` is a sample, but the file
+* Read in the data from a text file.  `sample_data.txt` is a sample, but the file
 on which your code will be graded will have different data and a different
 number of patients.  So, your code must be flexible enough to handle files
 of different sizes.
