@@ -84,10 +84,10 @@ Integration & Travis</a>;
 
 <tr>
 <td>Wed Sept 25</td>
-<td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;
+<td>
 <a href="Lectures/docstrings.md">Docstrings</a>;
 <a href="Lectures/sphinx.md">Sphinx</a></td>
-<td><!--<a href="Assignments/TSHTestDataConversion">-->TSH Test Data Conversion</td>
+<td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</td>
 </tr>
 
 <tr>
@@ -182,7 +182,7 @@ Intro to Web Service Design</a></td>
 
 <tr>
   <td>Mon Nov 11</td>
-  <td></td>
+  <td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;</td>
   <td></td>
 </tr>
 

@@ -17,7 +17,7 @@ data containing TSH test results.  This data will be analyzed for hypothyroidism
 and hyperthyroidism and then stored in a JSON output file.
 
 ## Input Data
-The input data is found in a text file called `test_data.txt` found in this 
+A sample input file is found in a text file called `test_data.txt` in this 
 repository.  The data for a single patient is found on four lines with the 
 following format:
 ```
@@ -39,7 +39,10 @@ second patient fills the next four rows, etc.  After the last patient, the
 file will have a line containing `END` to mark the end of the file.
 
 ## Program Specifications
-* Read in the data from this text file.
+* Read in the data from a text file.  `test_data.txt` is a sample, but the file
+on which your code will be graded will have different data and a different
+number of patients.  So, your code must be flexible enough to handle files
+of different sizes.
 * From the TSH results from each patient, diagnose whether the patient has:
   + "hyperthyroidism" as defined by any of their tests results being less than 1.0,
   + "hypothyroidism" as defined by any of their test results being greater than 4.0, or
@@ -49,14 +52,15 @@ file will have a line containing `END` to mark the end of the file.
   hence will only meet one of the diagnoses above.
 * For each patient, create an output file named "FirstName-LastName.json".
 The file should contain the following information in JSON format: 
-  + First Name
-  + Last Name
-  + Age
-  + Gender
-  + Diagnosis
-  + TSH (containing a list of all of the test results)
+  + `First Name`, as a string
+  + `Last Name`, as a string
+  + `Age`, as a numeric variable, not a string
+  + `Gender`, as a string
+  + `Diagnosis`, as a string
+  + `TSH` (containing a list of all of the test results as numeric variables, not
+  strings)
 * To create the above JSON output file, first create a dictionary with the keys
-listed above and their corresponding values.  Then, using the `open` and `json`
+listed exactly as above and their corresponding values.  Then, using the `open` and `json`
 commands, create and output the information.
 
 
@@ -76,7 +80,7 @@ string handling, unless you find them useful)
 * Presence and content of README.md
 * Final submission is pushed to GitHub by deadline and is tagged appropriately.
 
-### Bonus
+### Small Bonus
 * Sort the list of TSH values (low to high) before outputing them to the JSON
 file. 
 *  Create `sphinx` documentation and push the resulting `*.html` files to your
