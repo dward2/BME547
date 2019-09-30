@@ -37,4 +37,6 @@ if __name__ == "__main__":
     main()
 ```
 
+For in-class demo code, click [here](./debugging_code/debug_demo.py).
+
   
