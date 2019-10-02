@@ -102,7 +102,7 @@ Integration & Travis</a>;
 <tr>
 <td>Web Oct 2</td>
 <td>Functional Decomposition</td>
-<td><!--<a href="Assignments/ECG_Analysis">-->ECG_Analysis Assigned</a></td>
+<td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
