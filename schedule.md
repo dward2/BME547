@@ -101,8 +101,7 @@ Integration & Travis</a>;
 
 <tr>
 <td>Web Oct 2</td>
-<td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
-<a href="Lectures/logging.md">Logging</a></td>
+<td>Functional Decomposition</td>
 <td><!--<a href="Assignments/ECG_Analysis">-->ECG_Analysis Assigned</a></td>
 </tr>
 
@@ -116,7 +115,8 @@ Integration & Travis</a>;
 
 <tr>
 <td>Wed Oct 9</td>
-<td>Functional Decomposition
+<td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
+<a href="Lectures/logging.md">Logging</a>
 </td>
 <td></td>
 </tr>
@@ -135,10 +135,15 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
+<td> Sun Oct 20</td>
+<td></td>
+<td>ECG Analysis Assignment Due 11:59 PM</td>
+<tr>
+
 <td>Mon Oct 21</td>
 <td>More on <a href="Lectures/classes.md">Classes</a>  
 (Starting code <a href="Lectures/lecture_code/classes.py"> here</a>)</td>
-<td>ECG_Analysis Assignment Due</td>
+<td></td>
 </tr>
 
 <tr>
