@@ -122,16 +122,21 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Mon Oct 14 </td>
+<td>Mon Oct 14</td>
 <td>
-<a href="Lectures/sphinx.md">Sphinx</a></td>
+More on <a href="Lectures/classes.md">Classes</a>  
+(Starting code <a href="Lectures/lecture_code/classes.py"> here</a>)
+</td>
 <td></td>
 </tr>
 
 <tr>
 <td>Wed Oct 16</td>
-<td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</td>
-<td>IEC 62304 Assignment (in Sakai, due ##/##)</td>
+<td><a href="Lectures/sphinx.md">Sphinx</a>
+
+In-class Work Time
+</td>
+<td></td>
 </tr>
 
 <tr>
@@ -141,9 +146,8 @@ Integration & Travis</a>;
 <tr>
 
 <td>Mon Oct 21</td>
-<td>More on <a href="Lectures/classes.md">Classes</a>  
-(Starting code <a href="Lectures/lecture_code/classes.py"> here</a>)</td>
-<td></td>
+<td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</td>
+<td>IEC 62304 Assignment (in Sakai)</td>
 </tr>
 
 <tr>
@@ -155,7 +159,8 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Mon Oct 28</td>
-<td></td>
+<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture13Mar20.md">
+       Python Flask, API Design</a></td>
 <td></td>
 <!--<td><a href="https://realpython.com/python-matplotlib-guide/">Matplotlib</a> / Seaborn</td>-->
 <!--<td><a href="https://build-system.fman.io/pyqt5-tutorial">Building a GUI with Qt5</a></td>-->
@@ -164,32 +169,30 @@ Intro to Web Service Design</a></td>
 
 <tr>
 <td>Wed Oct 30</td>
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture13Mar20.md">
-       Python Flask, API Design</a></td>
-  <td></td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</td>
+  <td><!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned</td> 
 </tr>
 
 <tr>
 <td>Mon Nov 4</td>
-<!--<td><a href="Lectures/react/intro.md">Web/Mobile client (ReactJS) Introduction [SK]</a></td>-->
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</td>
-<td>IEC 62034 Assessment in Sakai Due
 
-<!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned</td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture15Mar27.md">Introduction to Databases</td>
+<td>
+
+</td>
 </tr>
 
 <tr>
 <td>Wed Nov 6</td>
-<!--<td><a href="Lectures/react/lecture2.md">Polished ReactJS + RESTful API Requests [SK]</a></td>-->
-<!--<td><a href="Lectures/react/assignment.md">[09] Heart Rate Physician Client (due 4/4/18 @ 11:59pm)</a></td>-->
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture15Mar27.md">Introduction to Databases</td>
+
+  <td></td>
   <td></td>
 </tr>
 
 <tr>
   <td>Mon Nov 11</td>
   <td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;</td>
-  <td></td>
+  <td>IEC 62034 Assessment in Sakai Due</td>
 </tr>
 
 <tr>
@@ -226,5 +229,10 @@ Final Day of Class
 <td></td>
 </tr>
 
+<tr>
+<td>Wed Dec 11</td>
+<td></td>
+<td> Final Project Due at 9:00 am </td>
+</tr>
 
 <table>
