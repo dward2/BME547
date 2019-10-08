@@ -3,14 +3,21 @@ If you are starting a new PyCharm project on your local computer, and you want
 to integrate it with a GitHub repository, you have three options.  
 
 If you starting completely from scratch and do not have any local files
-or an existing GitHub repository, follow Method 1 below.
+or an existing GitHub repository, follow __Method 1__ below.
 
 If you have an existing GitHub repository with at least one file in it, and 
 want to use those files to create a local repository and PyCharm project, use
-Method 2 below.  
+__Method 2__ below.  
 
 Finally, if you have already started a PyCharm project locally, but haven't yet 
-created a local repository or a GitHub repository, follow Method 3 below.
+created a local repository or a GitHub repository, follow __Method 3__ below.
+
+__Note:__ These instructions were written for the Windows version of Python.
+Where known, differences for the macOS version are included, but some 
+differences may not have been caught.
+
+Once you have your project set up and connected with GitHub, check out the
+section below called __Git Workflow in PyCharm__.
 
 ## Method 1:  Starting from scratch in PyCharm and GitHub
 ### Create a new local PyCharm project
@@ -22,7 +29,7 @@ would like for the new project/repository to be placed.  You can also update
 the path as needed.  Make sure that "Pure Python" is selected in the left-hand
 pane.  Click "Create".
 * If another PyCharm window is already open, the following window will be
-shown:
+shown:  
 ![OpenProjectWindow.PNG](images/OpenProjectWindow.PNG)
 * If so, select `Open in new window` and click "Ok".
 * PyCharm will create the new folder and project and will create a virtual
@@ -30,7 +37,7 @@ environment within this project.
 
 ### Create local `git` repository for this project
 * In the new project window, we need to activate `git`.  To do so, from the
-menu bar, choose `VCS/Import into Version Control/Create Git Repository...`
+menu bar, choose `VCS/Import into Version Control/Create Git Repository...`  
 ![CreateGitRepositoryWindow.PNG](images/CreateGitRepositoryWindow.PNG)
 * The newly created project folder should already be selected.  Click "Ok".
 * The bottom right portion of the PyCharm window should now show that `git`
@@ -42,14 +49,14 @@ is active and that you are on the master branch.
 * Get the GitHub repository URL for cloning.
 * In the PyCharm window, from the menu bar, select `VCS/Git/Remotes...`
 ![GitRemotesWindow.png](images/GitRemotesWindow.PNG)
-* Click on the "+" in the "Git Remotes" windows.
+* Click on the "+" in the "Git Remotes" windows.  
 ![DefineRemoteWindow.png](images/DefineRemoteWindow.PNG)
 * Enter the GitHub URL into the "URL" text box and click "Ok".
 * Click "Ok" to close the "Git Remotes" window.
 
 ### Create files in PyCharm
 * Create files in PyCharm.  As an example, lets make a `requirements.txt` file.
-* In the Projects tab on the left, select the project:
+* In the Projects tab on the left, select the project:    
 ![ProjectSelect.png](images/ProjectSelect.PNG)
 * From the menu bar, select "File/New..." and then select "File" from the 
 pop-up list.  Alternatively, you can right click on the project name in the
@@ -67,13 +74,13 @@ window will pop-up:  ![](images/VcsCommitWindow.PNG)
   or spelling dictionary files.  If you don't recognize the filename, it is 
   best to say "No" and not add it to the repository.
 * The newly added file will be shown in green.  This means it has been added
-to the repository, but not yet committed to it.
+to the repository, but not yet committed to it.  
 ![GreenFileName.png](images/GreenFileName.PNG)
 * Edit the file as desired.  Note that changes to files are automatically saved
 to your local computer.  There is no need to actively save the file.
 ### Commit changes to repository
 * Once editing is complete, the file may be committed to the repository from
-the menu bar by selecting "VCS/Commit...".
+the menu bar by selecting "VCS/Commit...".  
 ![](images/CommitChangesWindow.PNG)
 The "Commit Changes" window will show all files that have been modified since
 the last commit and allow you to commit all of these changes at once.  For this
@@ -83,7 +90,7 @@ Commit Message box and then click "Commit".
 
 ### Push Changes to GitHub
 * To push your local repository changes to GitHub, from the menu bar, select
-"VCS/Git/Push..."
+"VCS/Git/Push..."  
 ![PushCommitsWindow.png](images/PushCommitsWindow.PNG)
 * It will show a list of commits to be pushed.  Click on "Push".
 
@@ -97,9 +104,9 @@ Control/Git".
 into the "URL" text box.  A suggested name and path for the local project 
 folder will be shown in the "Directory" text box.  Modify as desired.  Then,
 click "Clone".
-*The following window will be shown:  
+* The following window will be shown:    
 ![CheckoutFromVersionControlWindow.png](images/CheckoutFromVersionControlWindow.PNG)
-* Click "Yes".  Then, the following window will be shown:  
+* Click "Yes".  Then, the following window will be shown:    
 ![OpenProjectWindow.png](images/OpenProjectWindow.PNG)
 * Click "Yes".  A new PyCharm window will open with this project open and the
 files from the Master branch of the GitHub repository will be available 
@@ -131,7 +138,7 @@ repository for this project__ above.
 repository__ above.  It is very important that the new GitHub repository you 
 create is completely empty.  If you initialize it with a README.md, the push 
 of your local repository to GitHub will fail.
-* Next, you will need to add the files you want to put into the repository.
+* Next, in PyCharm, you will need to add the files you want to put into the repository.
 Untracked files will be shown with red names.  Select a file that you want
 to add in the Projects tab and, from the menu bar, select "VCS/Git/Add".
 * Do this for all of the files you wish to add to the repository.  Their 
