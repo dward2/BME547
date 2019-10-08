@@ -132,9 +132,9 @@ add packages as needed using a requirements.txt file.
 These steps assume that you have an existing PyCharm project with files in it,
 but have not yet created a local `git` repository or a GitHub repository.
 
-* Follow the steps in Method 1 under the heading __Create local `git` 
+* Follow the steps in __Method 1__ under the heading __Create local `git` 
 repository for this project__ above.
-* Follow the steps in Method 1 under the heading __Link to a new GitHub 
+* Follow the steps in __Method 1__ under the heading __Link to a new GitHub 
 repository__ above.  It is very important that the new GitHub repository you 
 create is completely empty.  If you initialize it with a README.md, the push 
 of your local repository to GitHub will fail.
@@ -144,9 +144,9 @@ to add in the Projects tab and, from the menu bar, select "VCS/Git/Add".
 * Do this for all of the files you wish to add to the repository.  Their 
 filenames should now be green.  
 * Commit the added files to the repository following the steps above under the
-heading __Commit changes to repository__ in Method 1.
+heading __Commit changes to repository__ in __Method 1__.
 * Push the commit to GitHub using the steps above under the heading 
-__Push Changes to GitHub__ in Method 1.
+__Push Changes to GitHub__ in __Method 1__.
  
 
 
@@ -176,3 +176,44 @@ under the "Project: YourProjectName" heading.
 packages.  An "Available Packages" window will open.  Find the package you
 want to install and click on the "Install Packages" button.
  
+## Git Workflow in PyCharm
+Once your local PyCharm project and `git` repository are set up and linked to
+GitHub per the instructions above, here is the suggested `git` workflow in
+PyCharm.
+* In PyCharm, making sure that the `master` branch is active, make a new
+feature branch.  From the menu bar, select "VCS/Git/Branches..." and then
+select "+ New Branch" from the pop-up list.  
+![CreateNewBranchWindow.png](images/CreateNewBranchWindow.PNG)
+* Enter the name of your new branch and click "Ok".  It will now be shown as
+the active branch in the status bar in the lower right corner of the PyCharm
+window.
+*  Add/modify code as needed.  
+*  When new files are added, make sure to add them to the repository when 
+prompted.  These new files will have green filenames.
+* When existing files in the repository are modified, they will have blue
+filenames to show that they have been modified.  These files do not need to
+be added to the repository as PyCharm automatically adds existing repository
+files to the staging area when modified.
+* When ready to make a commit, follow the steps under the heading
+__Commit changes to repository__ under __Method 1__ to commit your changes.
+* When you are ready to merge the feature branch, push it to GitHub following
+the instructions above under the heading __Push Changes to GitHub__.  A new 
+feature branch on GitHub should be created with the same name as your local
+branch.
+* In GitHub, open a Pull Request to merge the newly pushed branch into the
+`master` branch and confirm the merge once all Travis Tests have passed.
+* Back in PyCharm, checkout the `master` branch by selecting 
+"VCS/Git/Branches..." from the menu bar, and then select `master` from the 
+pop-up list and "Checkout" from the sublist that opens.  Verify that `master`
+is shown as the active branch in the status bar on the bottom right.  Note that
+any changes you made on the feature branch are no longer visible as they have
+been merged onto the `master` branch on GitHub, but not locally.
+* In order to get the updates to the GitHub `master` branch, we need to pull 
+in the most recent `master` branch from GitHub by selecting "VCS/Git/Pull..."
+from the menu bar.  
+![PullChangesWindow.png](images/PullChangesWindow.PNG)
+* Make sure that `origin/master` is selected as the Branch to Merge, and then
+click "Pull".
+* The merged `master` branch on GitHub is now available locally.  Continue
+this cycle. 
+
