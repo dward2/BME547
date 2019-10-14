@@ -124,8 +124,7 @@ Integration & Travis</a>;
 <tr>
 <td>Mon Oct 14</td>
 <td>
-More on <a href="Lectures/classes.md">Classes</a>  
-(Starting code <a href="Lectures/lecture_code/classes.py"> here</a>)
+<a href="Lectures/classes.md">Classes</a>  
 </td>
 <td></td>
 </tr>
