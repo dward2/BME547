@@ -151,8 +151,8 @@ In-class Work Time
 
 <tr>
 <td>Wed Oct 23</td>
-<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture12Mar8.md">
-Intro to Web Service Design</a></td>
+<td><a href="Lectures/apis_webservices_requests.md">
+APIs, Intro To Web Services, Requests</a></td>
 <td></td>
 </tr>
 
