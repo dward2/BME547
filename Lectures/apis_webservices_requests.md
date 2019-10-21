@@ -93,7 +93,7 @@ Let's get a list of all of our branches from a repository.
 
 `GET /repos/:owner/:repo/branches` from requests made to `api.github.com`
 
-A Python package called `requests` (<http://docs.python-requests.org/en/master/>)
+A Python package called `requests` (<https://requests.kennethreitz.org/en/master/>)
 provides functionality for making requests to web servers.
 
 `import requests` imports the `requests` package.  It must be installed in your

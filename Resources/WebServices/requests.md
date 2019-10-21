@@ -113,7 +113,7 @@ The API says that the call for a list of branches is defined as:
 `GET /repos/:owner/:repo/branches` and that requests are made to the 
 `api.github.com` host.  How do we make this request.
 
-There is a Python package called `requests` (<http://docs.python-requests.org/en/master/>)
+There is a Python package called `requests` (<https://requests.kennethreitz.org/en/master/>)
 that gives us the ability to make requests to web servers.  The following
 code block shows how it is done:
 
