@@ -69,10 +69,10 @@ URL is a uniform resource locator.  An example of a URL is:
 
 `http://vcm-7631.vm.duke.edu:5000/sum`
 
-* `http` is the protocol for how the informaiton is to be transfered
+* `http` is the protocol for how the information is to be transferred
 * `vcm-7631-vm.duke.edu` is the host or hostname, which acts as an address to
 know which server to interact with.
-* `5000` is the port used to access the server.  Depending on the webserver,
+* `5000` is the port used to access the server.  Depending on the web server,
 it is often omitted.
 * `/sum` is the path (or sometimes called the route).  It references the
 specific functionality of the server you want to interact with.
@@ -113,7 +113,7 @@ The API says that the call for a list of branches is defined as:
 `GET /repos/:owner/:repo/branches` and that requests are made to the 
 `api.github.com` host.  How do we make this request.
 
-There is a Python package called `requests` (<http://docs.python-requests.org/en/master/)
+There is a Python package called `requests` (<http://docs.python-requests.org/en/master/>)
 that gives us the ability to make requests to web servers.  The following
 code block shows how it is done:
 
