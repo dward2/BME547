@@ -1,14 +1,14 @@
-# In-class Mini-Project
+# Mini-Project
 
 Write a program that uses the `request` library to POST the following student
-data to a server at `http://vcm-7631.vm.duke.edu:5000`.  Next, use the `/sum`
+data to a server at `http://vcm-6764.vm.duke.edu:5000`.  Next, use the `/sum`
 POST to get the results of adding two numbers.
 
 For syntax help, see [this Jupyter Notebook](/Resources/WebServices/requests.ipynb).
 
 The server has the following endpoints:
 
-* `POST http://vcm-7631.vm.duke.edu:5000/student`  
+* `POST http://vcm-6764.vm.duke.edu:5000/student`  
 allows you to add your
 student data.  The associated POST data should look like this JSON:  
     ```
@@ -22,10 +22,10 @@ student data.  The associated POST data should look like this JSON:
 "number of students" key.  If the request is unsucessful, it will return a
 JSON with a string giving the reason.
 
-* `GET http://vcm-7631.vm.duke.edu:5000/list`  
+* `GET http://vcm-6764.vm.duke.edu:5000/list`  
 returns a list of all the student data currently available on server
 
-* `POST http://vcm-7631.vm.duke.edu:5000/sum`  
+* `POST http://vcm-6764.vm.duke.edu:5000/sum`  
 allows you to compute a standard sum based on JSON input that looks like:
   ```
   {
