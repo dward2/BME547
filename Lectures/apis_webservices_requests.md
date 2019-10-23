@@ -35,7 +35,7 @@ To be a modern software developer, must have an understanding of web services
 and cloud computing.
 
 ## RESTful APIs:  Making requests on the web
-RESTful APIs are APIs in the cloud and are how we interact with webservers.
+RESTful APIs are APIs in the cloud and are how we interact with web servers.
 
 REST stands for **RE**presentational **S**tate **T**ransfer.
 
@@ -135,3 +135,5 @@ For additional information on the above, see
 
 Also, an interactive Jupyter notebook is available at
  <a href="../Resources/WebServices/requests.ipynb">Resources/WebServices/requests.ipynb</a>
+ 
+<a href="name_server_project.md">**Learning Project**</a>

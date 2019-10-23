@@ -153,7 +153,7 @@ In-class Work Time
 <td>Wed Oct 23</td>
 <td><a href="Lectures/apis_webservices_requests.md">
 APIs, Intro To Web Services, Requests</a></td>
-<td></td>
+<td><a href="Lectures/name_server_project.md">Recommended Learning Project (ungraded)</a></td>
 </tr>
 
 <tr>
