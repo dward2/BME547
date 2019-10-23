@@ -77,6 +77,9 @@ it is often omitted.
 * `/sum` is the path (or sometimes called the route).  It references the
 specific functionality of the server you want to interact with.
 
+Here is an easy to read website that explains more about URLs:  
+<https://doepud.co.uk/blog/anatomy-of-a-url>
+
 #### Client
 A client is anyone (in our case, a computer program on our local computer) that
 wants to interact or share information with a web server or service.
