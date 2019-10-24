@@ -158,17 +158,18 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Mon Oct 28</td>
-<td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture13Mar20.md">
-       Python Flask, API Design</a></td>
-<td></td>
-<!--<td><a href="https://realpython.com/python-matplotlib-guide/">Matplotlib</a> / Seaborn</td>-->
-<!--<td><a href="https://build-system.fman.io/pyqt5-tutorial">Building a GUI with Qt5</a></td>-->
-<!--<td>Pandas (DataFrames), Data Wrangling</td>-->
+<td><a href="Lectures/flask_server_setup.md">
+       Building a Web Server with Flask</a></td>
+<td><a href="Lectures/time_server_project.md">Recommended Server Project
+(ungraded)</a></td>
 </tr>
 
 <tr>
 <td>Wed Oct 30</td>
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</td>
+  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</a>
+  
+  Virtual machines, Running Client/Server on same machine/ Debugging Server /
+  Server Errors / Server Design</td>
   <td><!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned</td> 
 </tr>
 

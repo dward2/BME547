@@ -45,3 +45,7 @@ for detailed example of writing `flask` code for a web server.
   + `def say_hello(name):`
 * Run external server
   + `app.run(host="0.0.0.0")`
+  
+### Practice Project
+Click <a href="./time_server_project.md">here</a> for a mini-project to
+practice server creation.
