@@ -6,13 +6,13 @@ write.
 
 ## Setting up your Virtual Machine
 Duke OIT has allocated each student access to one virtual machine.  If you
-are already using your virtual machine for another class or project, would
+are already using your virtual machine for another class or project, and would
 prefer not to use that machine for this class, please let an instructor know
 and a request for a second virtual machine can be made.
 
 * Visit https://vcm.duke.edu/ and log in to the Virtual Computing Manager (VCM)
 using your NetID.
-* Click on "Reserve a VM"
+* Click on "Reserve a VM".
 * Select the type of VM you would like.  We will be demonstrating the use of 
 a Linux (Ubuntu) VM in class.  It is possible to use Windows 10 to host your
 server, if you prefer, but does require some additional set-up.
@@ -21,9 +21,9 @@ immediately, or may take some time to set up.  You will receive an e-mail when
 it is available.
 * Once the VM is available, you will see it listed on the home page of 
 <https://vmc.duke.edu>.  
-* Clicking on the name of your virtual server will allow you access the VM
+* Clicking on the name of your virtual server will allow you access to the VM
 Management Tools.  Your virtual server will have a default name such as 
-`vmc-####.vm.duke.edu`.  This will be used as the URL to access your server.
+`vcm-####.vm.duke.edu`.  This will be used as the URL to access your server.
 The user ID assigned to you to access this virtual machine should be the same
 as your NetID.  For now, you can ignore the Admin user name and password.
 
@@ -46,7 +46,7 @@ options for SSH clients.
 *  Upon running PuTTY, the initial window will be the PuTTY Configuration 
 window.  On the left hand pane of the window, "Session" should be chosen.
 *  In the "Host Name" box on the right-hand side, enter the name of your 
-VM (example, `vm-####.vm.duke.edu`).
+VM (example, `vcm-####.vm.duke.edu`).
 * A "PuTTY Security Alert" window may open.  Click "Yes" to continue.
 * Login to your VM using your NetID and password.
 * To avoid having to enter your VM host name each time, enter your host name as
@@ -56,14 +56,14 @@ In the future, you will just be able to "Load" that profile.
 #### Using MobaXterm
 *  Upon running, MobaXterm, click on the "Session" button on the upper left.
 *  In the "Session settings" window that opens, select "SSH" from the toolbar.  
-*  In the "Remote host" box, enter your VM name (`vm-####.vm.duke.edu`).
+*  In the "Remote host" box, enter your VM name (`vcm-####.vm.duke.edu`).
 *  To make future logins easier, you can enter your NetID in the "Specify 
 Username" field.  
 *  Click "Ok" and a terminal window should open.  Login to your account
 using your NetID and password.  
 *  In the future, MobaXterm will have saved this session information for easy
 log-in.
-* Note that MobaXterm has a nice feature of being able to access the file
+* Note that MobaXterm has a nice feature of being able to access the files
 in your VM through a menu system on the left hand pane of the MobaXterm
 window.  You can then open and edit these files in a local GUI text editor
 on your local computer for easier editing.  You can also upload and download
@@ -89,8 +89,8 @@ keep your remote machine or server active.  If you choose "Shutdown", the VM
 will completely turn off and you will need to turn it back on in the VCM.  
 
 ## Using Your Virtual Machine
-Once your machine is set up, you will need to configure it just as we described
-at the beginning of the semester.  
+Once your machine is set up, you will need to configure it for git and Python
+just as we described at the beginning of the semester.  
 
 This means making sure you have the 
 software needed for using git, python, installing packages, and using virtual 
