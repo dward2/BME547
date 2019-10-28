@@ -49,3 +49,7 @@ for detailed example of writing `flask` code for a web server.
 ### Practice Project
 Click <a href="./time_server_project.md">here</a> for a mini-project to
 practice server creation.
+
+### As Time Allows
+* Demonstrate in PyCharm
+* Run python vs Run flask (FLASK_APP=my_server.py flask run --host=0.0.0.0)
