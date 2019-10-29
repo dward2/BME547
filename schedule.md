@@ -201,10 +201,15 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
+<td> Sun Nov 17</td>
+<td></td>
+<td>Heart Rate Sentinel Server Due at 11:59 pm</td>
+</tr>
+
+<tr>
 <td>Mon Nov 18</td>
 <td><a href="Lectures/April-5-2019-Misc.md">Review Final Project</a></td>
-<td>Heart Rate Sentinel Server Due
-
+<td>
 <!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned</td>
 </tr>
 
