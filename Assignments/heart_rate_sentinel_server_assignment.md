@@ -111,11 +111,12 @@ for example, when the input JSON is incorrect).
 
 All of the above routes should do input data validation, making sure that
 the appropriate keys in JSON inputs exist, and that the data types are
-correct.  If the input is incorrect, an error code should be returned.  Also, 
+correct.  If the input is incorrect, a non-2xx error code should be returned.  Also, 
 the routes should return the appropriate status codes if a 
 request asks for a patient that does not exist.  It is not appropriate for data
-validation and error returns from your server be 500 errors caused by exceptions
-raised by your server.  You must handle exceptions and return an error code, 
+validation and error returns from your server be 500 "Internal Server Error" 
+codes caused by exceptions
+raised by your server.  You must handle exceptions and return a non-500 error code, 
 rather than having the server return a 500 error because it had an unhandled 
 exception.
   
