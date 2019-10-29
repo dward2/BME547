@@ -166,11 +166,10 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Wed Oct 30</td>
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture14Mar22.md">Interacting With A Web Service</a>
-  
-  Virtual machines, Running Client/Server on same machine/ Debugging Server /
-  Server Errors / Server Design</td>
-  <td><!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned</td> 
+  <a href="Resources/server_code_design.md">Server Design</a>,   
+  <a href="Resources/virtual_machines.md">Virtual machines</a>, Server Debugging
+  </td>
+  <td><a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</td> 
 </tr>
 
 <tr>
