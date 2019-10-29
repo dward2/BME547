@@ -178,8 +178,11 @@ could help in their evaluation.
 
 ## More information about SendGrid
 You need to create a free account at [sendgrid.com](https://sendgrid.com) and 
-then [create an API key](https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key) 
-which is a key that authenticates you to use the SendGrid API. Note that 
+then create an API key which is a key that authenticates you to use the 
+SendGrid API. Keys can be created either by following the procedures given at 
+<https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key>
+or using the Startup Guide as described at 
+[sendgrid.md](../Resources/WebServices/sendgrid.md).  Note that 
 SendGrid has a nice [python API](https://github.com/sendgrid/sendgrid-python) 
 that you can install using pip. In the 
 [example code shown there](https://github.com/sendgrid/sendgrid-python#quick-start), 
@@ -188,13 +191,8 @@ you created earlier. Do not commit your key to GitHub in either a file or
 hard-coded into your python code.  That will expose 
 it for others to use, and SendGrid has been known to scan the web for exposed
 keys and cancel accounts for keys it finds in order to avoid hackers/spammers 
-from using their system.  More detailed information can be found 
-[here](../Resources/WebServices/sendgrid.md).
-
-__UPDATE__:  As of April 3, 2019, the python `sendgrid` package for using SendGrid
-was updated from version 5.6 to 6.0.  The function and syntax of some of the
-functions and processes changed. See the [sendgrid info](../Resources/WebServices/sendgrid.md)
-page on this site for more information.
+from using their system.  More detailed information on setting up your API Key
+and `sendgrid` can be found [here](../Resources/WebServices/sendgrid.md).
 
 NOTE:  For this assignment, unit tests for your function that sends e-mail
 using SendGrid are not required as that would require sending your API key to

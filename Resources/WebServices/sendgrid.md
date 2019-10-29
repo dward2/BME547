@@ -3,24 +3,13 @@
 SendGrid is a web service that provides an API for sending e-mails from your
 own code.
 
-## __Important Update__
-On April 3, 2019, the `sendgrid` python package for using SendGrid in Python
-was updated from version 5.6 to 6.0.  This was a BREAKING CHANGE, meaning
-that the functionality and syntax of various functions changed.  The
-instructions below are written for version 5.6.  If you want to keep with 
-using this version, ensure that you are installing the correct sendgrid package
-by specifying the version number in your `requirements.txt` file as so:
-` sendgrid==5.6.0`.  
-
-If you choose to use the updated version 6.0, make sure to refer to the 
-instructions on the `sendgrid` GitHub site <https://github.com/sendgrid/sendgrid-python>
-as the instructions on this page may be obsolete for version 6.0.
-
 ## Set-up a SendGrid account and Generate an Access Key
 
-* Visit <sendgrid.com> and sign-up for the free plan.
+* Visit <https://sendgrid.com/> and sign-up for the free plan.
 * After signing-up, you will see an option for "Integrate using our Web API
-or SMTP relay."  Click on the "Start" button next to that option.
+or SMTP relay."  Click on the "Start" button next to that option.  If you
+do not see this option, look for the "Setup Guide" in the lower right corner
+of the dashboard or by clicking on your name in the upper left corner.
 * On the next page, click the Choose button under the "Web API" option.
 * On the next page, click the Choose button next to "Python".
 * On the next page, in Step 2, type in a name in the "My First API Key Name"
@@ -30,10 +19,10 @@ field, and click the "Create Key" button.
 ## Save the Access Key in your Environment Variables
 
 ### For Linux/MaxOS
-There are two options.  The first sets up a file that you would run each time
+There are two options.  The first option sets up a file that you would run each time
 you start your linux session, sort of like a virtual environment, allowing you
-to keep your customized environment variables specific to different projects.  
-The second modifies one of your log-in files to automatically set up the 
+to keep your customized environment variables specific to different projects. 
+The second option modifies one of your log-in files to automatically set up the 
 environment variable upon log-in.
 
 #### Option 1  
@@ -73,7 +62,7 @@ Choose this.
 "Advanced" tab.  If not, select that tab.  Click on the "Environment
 Variables..." button.
 * An "Environment Variables" window should open.  The upper half of this 
-window is called "User Variables for <name>" where <name> will be your Windows
+window is called "User Variables for username" where username will be your Windows
 ID.  Click on the "New..." button in this section.
 * A "New User Variable" window should open.  Enter `SENDGRID_API_KEY` for the
 variable name.  Enter the generated key from above as the variable value.
@@ -86,24 +75,37 @@ Properties" window
 First, you will need to install the `sendgrid` package in the usual way for
 your system.
 
-Below is some sample Python code for using `sendgrid` version 5.6.
+Below is some sample Python code for using `sendgrid` version 6.
 ```
-import sendgrid
 import os
-from sendgrid.helpers.mail import *
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
-sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
-from_email = Email("test@example.com")
-to_email = Email("test@example.com")
-subject = "Sending with SendGrid is Fun"
-content = Content("text/plain", "and easy to do anywhere, even with Python")
-mail = Mail(from_email, subject, to_email, content)
-response = sg.client.mail.send.post(request_body=mail.get())
-print(response.status_code)
-print(response.body)
-print(response.headers)
+message = Mail(
+    from_email='from_email@example.com',
+    to_emails='to@example.com',
+    subject='Sending with Twilio SendGrid is Fun',
+    html_content='<strong>and easy to do anywhere, even with Python</strong>')
+try:
+    sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
+    response = sg.send(message)
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+except Exception as e:
+    print(str(e))
 ```
 
-The start-up page from the SendGrid website gives some example Python code 
-for using `sendgrid` version 6.0 at <https://github.com/sendgrid/sendgrid-python#quick-start>.
+For more information on using `sendgrid` in your Python code, visit 
+<https://github.com/sendgrid/sendgrid-python>.
 
+
+## Note
+On April 3, 2019, the `sendgrid` python package for using SendGrid in Python
+was updated from version 5.6 to 6.0.  This was a BREAKING CHANGE, meaning
+that the functionality and syntax of various functions changed.  The
+instructions above are written for version 6.0.  If you need to use a previous
+version of `sendgrid`, ensure that you are installing the correct sendgrid 
+package by specifying the version number in your `requirements.txt` file as so:
+` sendgrid==5.6.0`.  Also, the syntax for use will be different than that 
+above.
