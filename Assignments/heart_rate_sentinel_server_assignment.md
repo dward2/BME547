@@ -26,7 +26,7 @@ Your Flask web service should implement the following API routes:
   {
       "patient_id": "1", # usually this would be the patient MRN
       "attending_email": "dr_user_id@yourdomain.com", 
-      "user_age": 50, # in years
+      "patient_age": 50, # in years
   }
   ```
   The patient_id and age will always be numeric, but may be sent in the JSON as 
@@ -113,9 +113,11 @@ All of the above routes should do input data validation, making sure that
 the appropriate keys in JSON inputs exist, and that the data types are
 correct.  If the input is incorrect, an error code should be returned.  Also, 
 the routes should return the appropriate status codes if a 
-request asks for a patient that does not exist.  It is not appropriate data
-validation and error return for your server to give a 500 error.  You must
-handle errors and return an error code, rather than using a server error.
+request asks for a patient that does not exist.  It is not appropriate for data
+validation and error returns from your server be 500 errors caused by exceptions
+raised by your server.  You must handle exceptions and return an error code, 
+rather than having the server return a 500 error because it had an unhandled 
+exception.
   
 Be sure to write modular code. This means your handler 
 functions for routes should be calling other independent functions as 
