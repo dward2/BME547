@@ -166,6 +166,7 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Wed Oct 30</td>
+<td>
   <a href="Resources/server_code_design.md">Server Design</a>,   
   <a href="Resources/virtual_machines.md">Virtual machines</a>, Server Debugging
   </td>
