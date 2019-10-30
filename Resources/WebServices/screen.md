@@ -43,7 +43,7 @@ To disconnect from the current session:  `ctrl-a d`
 To restart an existing (detached) session:  `screen -r`
 
 To stop and delete a screen session, get into that screen session using
-`screen -r`, and then typing `ctrl-c` followed by `:` then `quit`
+`screen -r`, and then typing `ctrl-a` followed by `:` then `quit`
 
 
 ## How to run a server on one screen and do other things on a second screen
