@@ -62,3 +62,17 @@ our Python code using a package called `pymodm` which gives us access to the
 MongoDB API, but also enforces type-checking which is very helpful from a 
 programming perspective.  
 
+The basics of accessing a MongoDB database from Python is demonstrated in
+this [Jupyter Notebook](../Resources/Databases/mongo_example.ipynb).
+
+### Creating a Mongo DB
+You have many options for setting up your own MongoDB instance.
+* Set-up a free could service at <https://www.mongodb.com/cloud/atlas>.
+Complete instructions for doing so can be found [here](../Resources/Databases/mlab.md).
+* You can install and run MongoDB on your own computer (locally or on your 
+virtual machine).  See the community edition [here](https://docs.mongodb.com/manual/installation/#tutorials)
+* You can install and run MongoDB easily using Docker.  More information to come.
+ 
+ 
+
+
