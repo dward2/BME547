@@ -176,8 +176,7 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Mon Nov 4</td>
-
-  <td><a href="https://github.com/awaxye/BME547/blob/master/Lectures/Lecture15Mar27.md">Introduction to Databases</td>
+  <td><a href="Lectures/databases.md">Introduction to Databases</td>
 <td>
 
 </td>
