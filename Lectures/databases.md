@@ -2,7 +2,7 @@
 Storing things in a program is a complicated proposition when you have large
 amounts of data or complicated data structures.
 
-Based on what we know about Python, how would we save information in our
+Based on what we know about Python to-date, how would we save information in our
 program and have it accessible for later use if we need to restart the program?
 
 The simplest approach would be to have a list in memory, and then save that
@@ -20,20 +20,20 @@ data and search through all the data each time you want only a piece).
 
 Here is where a database comes in.  A database is a program that is 
 responsible for managing data storage and retrieval for you.  A good database
-uses advanced algorithms for storing, finding, and retrieving data from an
+uses advanced and optimized algorithms for storing, finding, and retrieving data from an
 external source.  This reduced memory requirements for your application and 
 improves efficiency.  
 
 ## Types of Databases
 Databases can be split into two "families":  Relational (SQL) and 
-Non-Relational
+Non-Relational (noSQL).
 
 ### Relational (SQL) Databases
 Relational databases, often called SQL databases, have a pre-defined structure 
 (called a schema)
 that allows for "relationships" to be drawn between different sets of data.
 The data tables and variable types in these data tables are pre-defined, which
-can improve the efficiency and storage of the database.  The
+can improve the efficiency and size of the database.  The
 data tables consist of rows (records) and columns (fields).  
 SQL (Structured Query Language) is used to create, access, and manipulate the
 data in the database.  Most databases have type checking to ensure that data
@@ -50,33 +50,100 @@ database, there is not automatic data-type checking done before insertion
 into the database.
 
 ## MongoDB
-For this class, we will be using a non-relational database called MongoDB.  
+For this class, we will be using a non-relational database called MongoDB.
 It is easy to set-up and use.  A database is just like any other program that
 runs on a computer.  This program could be running on your own computer, on a
 virtual machine, or a cloud service.  Our Python code accesses the database
 by making requests to the database API.  
 
 
-We will be accessing the MongoDB database from 
-our Python code using a package called `pymodm` which gives us access to the
-MongoDB API, but also enforces type-checking which is very helpful from a 
-programming perspective.  
+We will be accessing the MongoDB database from our Python code using a package 
+called [PyMODM](https://pymodm.readthedocs.io/en/latest/) which gives us access 
+to the MongoDB API, but also enforces type-checking which is very helpful from 
+a programming perspective.  
 
 The basics of accessing a MongoDB database from Python is demonstrated in
 this [Jupyter Notebook](../Resources/Databases/mongo_example.ipynb).
 
+A code example can be found [here](../Resources/Databases/mongo_db_example.py).
+
 ### Creating a Mongo DB
 You have many options for setting up your own MongoDB instance.
-* Set-up a free could service at <https://www.mongodb.com/cloud/atlas>.
+* Set-up a free cloud service at <https://www.mongodb.com/cloud/atlas>.
 Complete instructions for doing so can be found [here](../Resources/Databases/mlab.md).
 * You can install and run MongoDB on your own computer (locally or on your 
-virtual machine).  See the community edition [here](https://docs.mongodb.com/manual/installation/#tutorials)
-* You can install and run MongoDB easily using Docker.  More information to come.
+virtual machine).  See the community edition [here](https://docs.mongodb.com/manual/installation/#tutorials).
+* You can install and run MongoDB easily using Docker.  
 
-### Add More
-Basic commands in pymodm
-The types of fields you set up.
-Look at how code would actually be set up 
+
+### PyMODM Syntax
+
+#### Import PyMODM package
+`from pymodm import connect, MongoModel, fields`
+
+#### Connect to MongoDB database
+`connect("mongodb+srv://<username>:<password>@<yourclustername>-nlfrn.mongodb.net/test?retryWrites=true")`  
+If using MongoDB Atlas, the string above is provided on the website.
+`<username>`, `<password>`, and `<yourclustername>` should be replaced with
+entries appropriate for the database in use.
+
+#### Create Schema / Data structure
+```
+class User(MongoModel):
+    email = fields.EmailField(primary_key=True)
+    first_name = fields.CharField()
+    last_name = fields.CharField()
+    age = fields.IntegerField()
+```
+The class name (`User` in the above example) can be defined by the user.  It
+must include `(MongoModel)` after the name so that it inherits the `MongoModel`
+class.  The number of fields and field names are up to the user.  
+
+Commonly used fields are:
+* `CharField`
+* `IntegerField`
+* `BooleanField`
+* `DateTimeField`
+* `EmailField`
+* `FileField`
+* `ImageField`
+* `FloatField`
+* `DictField`
+* `ListField`
+
+Information on these fields and other fields can be found in the PyMODM API: 
+<https://pymodm.readthedocs.io/en/latest/api/index.html#model-fields>
+
+Be aware of possible class/module conflicts as described 
+[here](../Resources/Databases/mongo_db_class_module_conflicts.md).
+
+#### Create a Database Item
+`u = User(email="suyash@suyashkumar.com", first_name="Suyash", last_name="Kumar", age="1000")`  
+`u` can be any variable name and `User` is whatever the name of the class as
+defined above.
+
+#### Save Item to Database
+`u.save()`
+
+#### Query Database:  Return all items
+`results = User.objects.raw({})`  
+`results` is any variable name and `User` is the name of the class defined as 
+above.  `results` will contain a QuerySet class, which can be iterated over to
+get the results as such:
+```
+for item in results:
+    print(item.email)
+``` 
+
+#### Query Database:  Return Items Based on Specific Search
+`results = User.objects.raw({"first_name": "Mark"})` if searching on 
+non-primary key  
+`results = User.objects.raw({"_id": "suyash@suyashkumar.com"})` if searching
+on primary key
+
+Comparison operators can be found at 
+<https://docs.mongodb.com/manual/reference/operator/query-comparison/>.  Example:  
+`results = User.objects.raw({"age": {"$gte": 1000}})`
  
 
 
