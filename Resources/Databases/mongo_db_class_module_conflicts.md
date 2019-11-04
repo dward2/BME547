@@ -7,7 +7,7 @@ You do not need to have that command in each module.
 However, there are precautions you must take in regards to how you define
 the MongoModel class that contains your data structure.
 
-In the example code above, when you look to see the entries of your database 
+In the example code found [here](./mongo_db_example.py), when you look to see the entries of your database 
 through the MongoDB website, you see the following:
 ```
 _id: "david.a.ward@duke.edu"
