@@ -72,7 +72,11 @@ Complete instructions for doing so can be found [here](../Resources/Databases/ml
 * You can install and run MongoDB on your own computer (locally or on your 
 virtual machine).  See the community edition [here](https://docs.mongodb.com/manual/installation/#tutorials)
 * You can install and run MongoDB easily using Docker.  More information to come.
- 
+
+### Add More
+Basic commands in pymodm
+The types of fields you set up.
+Look at how code would actually be set up 
  
 
 
