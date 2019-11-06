@@ -185,7 +185,9 @@ APIs, Intro To Web Services, Requests</a></td>
 <tr>
 <td>Wed Nov 6</td>
 
-  <td></td>
+  <td>MongoDB/PyMODM Example
+  <a href="https://github.com/dward2/database_demo_starter">
+  (starter repository here)</a></td>
   <td></td>
 </tr>
 
