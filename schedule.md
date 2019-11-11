@@ -168,8 +168,7 @@ APIs, Intro To Web Services, Requests</a></td>
 <td>Wed Oct 30</td>
 <td>
   <a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
-  <a href="Resources/virtual_machines.md">Virtual machines</a>,
-  <a href="Resources/WebServices/screen.md">Screen</a>
+  <a href="Resources/virtual_machines.md">Virtual machines</a>
   </td>
   <td><a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</td> 
 </tr>
@@ -184,8 +183,8 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Wed Nov 6</td>
-
-  <td>MongoDB/PyMODM Example
+  <td>
+  <a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
   <a href="https://github.com/dward2/database_demo_starter">
   (starter repository here)</a></td>
   <td></td>
@@ -193,13 +192,13 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
   <td>Mon Nov 11</td>
-  <td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>;</td>
+  <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
   <td>IEC 62034 Assessment in Sakai Due</td>
 </tr>
 
 <tr>
 <td>Wed Nov 13</td>
-<td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
+<td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a></td>
 <td></td>
 </tr>
 
