@@ -198,7 +198,7 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Wed Nov 13</td>
-<td><a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a></td>
+<td>More on GUIs, Tkinter Widgets</td>
 <td></td>
 </tr>
 
@@ -217,8 +217,8 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Wed Nov 20</td>
-<td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>
-
+<td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>  
+  
 <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
 </td>
 <td></td>
@@ -228,8 +228,9 @@ APIs, Intro To Web Services, Requests</a></td>
 <td>Mon Nov 25</td>
 <td><a href="Lectures/intro_to_security.md">Introduction to Security</a>
 
-Final project work
-
+<!--<a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>-->
+  
+Final project work  
 Final Day of Class
 </td>
 <td></td>
