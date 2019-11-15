@@ -210,16 +210,19 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Mon Nov 18</td>
-<td><a href="Lectures/April-5-2019-Misc.md">Review Final Project</a></td>
+<td><a href="Lectures/final_project_intro.md">Review Final Project</a>
+
+<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
+</td>
 <td>
-<!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned</td>
+<a href="Assignments/final_image_processor.md">Final Project Assigned</td>
 </tr>
 
 <tr>
 <td>Wed Nov 20</td>
 <td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>  
   
-<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
+
 </td>
 <td></td>
 </tr>
