@@ -58,8 +58,9 @@ When sending as a string over the web, smaller is better.
 
 ## Encoding an image 
 The binary number series of an image can be converted into a base64 string for
-transmission over the internet.  Python has a built-in module called `base64`
-that contains encoding and decoding functions for base64.  It is a built-in
+transmission over the internet and/or for storage as a string in a database 
+such as MongoDB.  Python has a built-in module called `base64` that contains
+encoding and decoding functions for base64.  It is a built-in
 module, and so while it needs an `import base64` in the code, it does not need 
 to be separately installed in a virtual environment.
 

@@ -35,3 +35,10 @@ arguement in the `f.save()` function can be any string desired.
 ### Links
 * Flask Uploading Files: <https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/#uploading-files>
 * Requests, Posting a File:  <https://requests.kennethreitz.org/en/master/user/quickstart/#post-a-multipart-encoded-file>
+
+### Storing Image in MongoDB
+Images can be stored in MongoDB, using PyMODM, in two ways.
+1.  Convert the image to a base64 string (see 
+[image_encoding_decoding.md](./image_encoding_decoding.md)) and store in a
+`CharField()`, or
+2.  Convert the image to a base64 encoded bytes and store in a `BinaryField()` 

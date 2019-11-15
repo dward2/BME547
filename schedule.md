@@ -212,7 +212,7 @@ APIs, Intro To Web Services, Requests</a></td>
 <td>Mon Nov 18</td>
 <td><a href="Lectures/final_project_intro.md">Review Final Project</a>
 
-<a href="Lectures/image_sending_receiving.md">Image Sending/Receiving</a>
+<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
 </td>
 <td>
 <a href="Assignments/final_image_processor.md">Final Project Assigned</td>
