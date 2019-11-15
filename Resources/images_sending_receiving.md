@@ -39,6 +39,6 @@ arguement in the `f.save()` function can be any string desired.
 ### Storing Image in MongoDB
 Images can be stored in MongoDB, using PyMODM, in two ways.
 1.  Convert the image to a base64 string (see 
-[image_encoding_decoding.md](./image_encoding_decoding.md)) and store in a
+[image_encoding_decoding.md](../Lectures/image_encoding_decoding.md)) and store in a
 `CharField()`, or
 2.  Convert the image to a base64 encoded bytes and store in a `BinaryField()` 
