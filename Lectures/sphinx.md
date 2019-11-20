@@ -6,8 +6,8 @@ Python that is extremely powerful and has lots of configuration options.
 Here are steps to automatically generate API-like documentation using 
 docstrings in either reStructuredText, Google, or Numpy format.
 
-**Note:** The Sphinx documentation files
-have not been updated with changes created in the August 2019 update of Sphinx.
+**Note:** As of 10/16/2019, the Sphinx documentation files
+had not been updated with changes created in the August 2019 update of Sphinx.
 Hence, they may not be correct.  The following steps have been verified for the
 new release.
 
@@ -95,3 +95,13 @@ Relevant GitHub documentation: https://help.github.com/articles/configuring-a-pu
 Documentation for [Napleon](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html)
 extension in Sphinx for Google or Numpy style docstrings: 
  http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+ 
+ ### Addition additional documentation in Sphinx
+ The instructions above generate information using the docstrings found in the
+ Python code.  To add additional webpages to the Sphinx-generated
+ documentation beyond what is in the docstrings and Python modules, do the 
+ following:
+ 
+ * In the folder ###, create a file with the extension `.rst`
+ * Using restructured text
+  
