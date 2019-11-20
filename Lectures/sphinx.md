@@ -6,8 +6,8 @@ Python that is extremely powerful and has lots of configuration options.
 Here are steps to automatically generate API-like documentation using 
 docstrings in either reStructuredText, Google, or Numpy format.
 
-**Note:** The Sphinx documentation files
-have not been updated with changes created in the August 2019 update of Sphinx.
+**Note:** As of 10/16/2019, the Sphinx documentation files
+had not been updated with changes created in the August 2019 update of Sphinx.
 Hence, they may not be correct.  The following steps have been verified for the
 new release.
 
@@ -95,3 +95,64 @@ Relevant GitHub documentation: https://help.github.com/articles/configuring-a-pu
 Documentation for [Napleon](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html)
 extension in Sphinx for Google or Numpy style docstrings: 
  http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+ 
+ ### Additional documentation in Sphinx
+ The instructions above generate information using the docstrings found in the
+ Python code.  To add additional webpages to the Sphinx-generated
+ documentation beyond what is in the docstrings and Python modules, do the 
+ following:
+ 
+ * In the folder `docs`, create a file with the extension `.rst` (example:
+ `api.rst`).
+ * Using restructured text, add the content to this file.
+   + Here is a good cheat sheet for ReStructured Text, although Sphinx doesn't
+   seem to recognize all of these formats: <http://docutils.sourceforge.net/docs/user/rst/quickref.html>
+   + Example:  
+   ```
+   API Module
+   ==========
+
+    Add a patient
+    -------------
+    
+    ::
+    
+      POST  URL/new_patient
+    
+    This route takes a dictionary with the following information.
+    
+    **patient_id**
+      The id number of the patient.  
+    **age**
+      The age of the patient.
+    **attending_email**
+      The e-mail of the attending physician
+      
+      
+    Add a heart rate to a patient record
+    ------------------------------------
+    
+    ::
+    
+      POST URL/add_heart_rate
+    
+    This route takes a dictionary with the following informaiton.
+    
+    patient_id
+      The id number of the patient to which to add a heart rate.
+    
+    heart_rate
+      The heart rate to be added.
+    ```
+* In the `index.rst` file in the `docs` folder, add the name of this newly
+created file, without the `.rst` extension, to the file list as shown in this
+example:
+  ```
+    .. toctree::
+       :maxdepth: 2
+       :caption: Contents:
+   
+       api
+       module1
+       module2
+  ```
