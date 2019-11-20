@@ -1,7 +1,10 @@
 # Working as a Team in GitHub
+
++ Introduce Teams
+
 * Identify one team member as the first to join the assignment.  Upon visiting
 the GitHub Classroom site, this team member will need to create a new team
-using the given team name.  This action will create a new team repository.    
+using the given team name.  This action will create a new team repository.      
 * Other team members can now visit the GitHub Classroom site, and join the
 already existing team.
 
@@ -18,6 +21,9 @@ already existing team.
   + Add to milestone
 
 * Avoid direct commits to master branch
+  + Solving conflicts
+    - [Description of how to solve conflicts](../Resources/Git/MergeConflicts.md)
+    - [Example](https://github.com/dward2/class_conflict)
 * Consider protection rules for master branch
 * Review of pull requests
 * Use .gitignore file to make sure you don't push up your venv or .idea files,
