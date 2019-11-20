@@ -1,4 +1,4 @@
-#SQL Databases
+# SQL Databases
 Relational databases, often called SQL databases, have a pre-defined structure 
 (called a schema)
 that allows for "relationships" to be drawn between different sets of data.
