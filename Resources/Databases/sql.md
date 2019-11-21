@@ -131,3 +131,18 @@ db_cursor.execute("DELETE FROM GeneralLedger WHERE ID=2")
 * The general SQL string for deleting items in a table is:
   + `DELETE FROM TableName WHERE Column1=Value`
   
+### Foreign Key Support
+To activate Foreign Key Support, include the following:
+```
+db_cursor.execute("PRAGMA foreign_keys = ON")
+```
+You can check status of foreign key activation by:
+```
+rows = db_cursor.execute("PRAGMA foreign_keys")
+print("rows: {}".format(rows))
+for i in rows:
+    print(i)
+    
+# (0,) means off
+# (1,) means on
+```
