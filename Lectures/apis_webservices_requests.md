@@ -99,7 +99,7 @@ provides functionality for making requests to web servers.
 `import requests` imports the `requests` package.  It must be installed in your
 virtual environment.
 
-`r = requests.get("https://api.github.com/respos/dward2/BME547/branches)`
+`r = requests.get("https://api.github.com/repos/dward2/BME547/branches)`
 
 The `requests.get()` function makes a get request to the URL given in the 
 string parameter.  The response from the server is stored in the variable `r`.
