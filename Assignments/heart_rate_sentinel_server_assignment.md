@@ -19,7 +19,9 @@ assignment in Sakai for the link to create a repository.
 
 ## Server Specifications
 
-Your Flask web service should implement the following API routes:
+Your Flask web service should implement the following API routes.  Please note
+that the `/api` at the start of the routes given below should be included
+in your route name.
 
 * `POST /api/new_patient` that takes a JSON as follows:
   ```
@@ -29,15 +31,18 @@ Your Flask web service should implement the following API routes:
       "patient_age": 50, # in years
   }
   ```
-  The patient_id and age will always be numeric, but may be sent in the JSON as 
-  either an integer or a string containing an integer.  Your code should be 
-  prepared for either.
+  The true patient_id and patient_age will always be integers.  But, the values
+  sent to this route in the above dictionary may contain integers, numeric 
+  strings, or a string with letters and numbers.  Your code must be prepared
+  to parse this input and determine whether the id and age are acceptable (i.e.,
+  can be turned into an integer) or rejected (if it contains any letters).  So,
+  `123` or `"123"` should be accepted as patient_ids, while `"a54"` or `"aj"` 
+  should be rejected.
   This route is called to register a new patient with your server.  This would
   occur when a heart rate monitor is checked out and attached 
   to a particular patient.  This will allow you to initialize a patient in
   your server and be able to accept future heart rate measurements for this 
-  patient.  It will always be called before any heart rate data for the patient
-  is sent.
+  patient.  
    
 * `POST /api/heart_rate` that takes a JSON as follows:
   ```
@@ -51,13 +56,16 @@ Your Flask web service should implement the following API routes:
   id might be sent as a string such as `"1501"` in the `new_patient` call, but 
   sent as an integer such as `1501` in the `heart_rate_ call`.  The 
   heart_rate may also be sent as an integer or string containing an integer. 
-  The numeric values will only be
-  integers, no decimals.  This route should store the sent heart rate
+  The numeric values will only be integers, no decimals.  As above, it is 
+  possible that letters will be included in either the `patient_id` or 
+  `heart_rate` and that data should be rejected.
+  This route should store the sent heart rate
   measurement in the record for the specified patient.  The 
   [current date/time stamp](https://stackoverflow.com/questions/415511/how-to-get-current-time-in-python) 
   of when the POST was received should also be stored with the heart rate
   measurement.  If the posted heart rate is tachycardic for the specified 
-  patient and patient age, an e-mail should be sent to the attending physician. 
+  patient and patient age, an e-mail should be sent to the attending physician
+  whose e-mail address was registered in the `api/new_patient` route. 
   This e-mail should include the patient_id, the tachycardic heart rate, and 
   the date/time stamp of that heart rate.
   
