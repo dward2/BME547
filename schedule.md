@@ -13,13 +13,13 @@ will be lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Mon Aug 26</td>
+<td>Fri Jan 10</td>
   <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
   <td><a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a></td>
 </tr>
 
 <tr>
-<td>Wed Aug 28</td>
+<td>Wed Jan 15</td>
 <td><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
   Cloning, Add/Commit, Branching, Pushing/Pulling</a>;   
   <a href="Resources/markdown.md">Markdown</a></td>
@@ -28,14 +28,14 @@ will be lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Mon Sept 2</td>
+<td>Fri Jan 17</td>
   <td><a href="Lectures/python_basics.md">Python Basics</a>
   </td>
   <td></td>
 </tr>
 
 <tr>
-<td>Wed Sept 4</td>
+<td>Wed Jan 22</td>
 <td><a href="Lectures/virtual_environments.md">Virtual Environments</a> / 
 
 <a href="Lectures/variable_scope.md">Scope</a>
@@ -45,14 +45,14 @@ will be lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Mon Sept 9</td> 
+<td>Fri Jan 24</td> 
 <td><a href="Lectures/git_workflow.md">Git Workflow</a> 
 </td>
 <td></td>
 </tr>
 
 <tr>
-<td>Wed Sept 11</td>
+<td>Wed Jan 29</td>
 <td>
 <a href="Lectures/return_keyword.md">Return</a> /
 <a href="Lectures/modules.md">Modules</a> / 
@@ -62,13 +62,13 @@ will be lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Mon Sept 16</td>
+<td>Fri Jan 31</td>
 <td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Wed Sept 18</td>
+<td>Wed Feb 5</td>
 <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
 Integration & Travis</a>;
 <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
@@ -76,14 +76,14 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Mon Sept 23</td>
+<td>Fri Feb 7</td>
 <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
 <a href="Lectures/json.md">JSON</td>
 <td></td>
 </tr>
 
 <tr>
-<td>Wed Sept 25</td>
+<td>Wed Feb 12</td>
 <td>
 <a href="Lectures/docstrings.md">Docstrings</a>;
 <a href="Lectures/numpy.md">NumPy</a>, 
@@ -93,28 +93,20 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Mon Sept 30</td>
+<td>Fri Feb 14</td>
 <td><a href="Lectures/debugging.md">Debugging</a>, 
 <a href="Resources/PyCharm">PyCharm</a></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Web Oct 2</td>
+<td>Wed Feb 19</td>
 <td>Functional Decomposition</td>
 <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
-<td>Mon Oct 7</td>
-<td>Fall Break
-
-</td>
-<td></td>
-</tr>
-
-<tr>
-<td>Wed Oct 9</td>
+<td>Fri Feb 21</td>
 <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
 <a href="Lectures/logging.md">Logging</a>
 </td>
@@ -122,7 +114,7 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Mon Oct 14</td>
+<td>Wed Feb 26</td>
 <td>
 <a href="Lectures/classes.md">Classes</a>  
 </td>
@@ -130,7 +122,7 @@ Integration & Travis</a>;
 </tr>
 
 <tr>
-<td>Wed Oct 16</td>
+<td>Fri Feb 28</td>
 <td><a href="Lectures/sphinx.md">Sphinx</a>
 
 In-class Work Time
@@ -139,25 +131,37 @@ In-class Work Time
 </tr>
 
 <tr>
-<td> Sun Oct 20</td>
+<td> Tue Mar 3</td>
 <td></td>
 <td>ECG Analysis Assignment Due 11:59 PM</td>
 <tr>
 
-<td>Mon Oct 21</td>
+<td>Wed Mar 4</td>
 <td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</td>
 <td>IEC 62304 Assignment (in Sakai)</td>
 </tr>
 
 <tr>
-<td>Wed Oct 23</td>
+<td>Fri Mar 6</td>
 <td><a href="Lectures/apis_webservices_requests.md">
 APIs, Intro To Web Services, Requests</a></td>
 <td><a href="Lectures/name_server_project.md">Recommended Learning Project (ungraded)</a></td>
 </tr>
 
 <tr>
-<td>Mon Oct 28</td>
+<td>Wed Mar 11</td>
+<td>Spring Break</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Fri Mar 13</td>
+<td>Spring Break</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Wed Mar 18</td>
 <td><a href="Lectures/flask_server_setup.md">
        Building a Web Server with Flask</a></td>
 <td><a href="Lectures/time_server_project.md">Recommended Server Project
@@ -165,7 +169,7 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Wed Oct 30</td>
+<td>Fri Mar 20</td>
 <td>
   <a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
   <a href="Resources/virtual_machines.md">Virtual machines</a>
@@ -174,7 +178,7 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Mon Nov 4</td>
+<td>Wed Mar 25</td>
   <td><a href="Lectures/databases.md">Introduction to Databases</td>
 <td>
 
@@ -182,7 +186,7 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Wed Nov 6</td>
+<td>Fri Mar 27</td>
   <td>
   <a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
   <a href="https://github.com/dward2/database_demo_starter">
@@ -191,25 +195,25 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-  <td>Mon Nov 11</td>
+  <td>Wed Apr 1</td>
   <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
   <td>IEC 62034 Assessment in Sakai Due</td>
 </tr>
 
 <tr>
-<td>Wed Nov 13</td>
+<td>Fri Apr 3</td>
 <td>More on GUIs, Tkinter Widgets</td>
 <td></td>
 </tr>
 
 <tr>
-<td> Sun Nov 17</td>
+<td> Tue Apr 7</td>
 <td></td>
 <td>Heart Rate Sentinel Server Due at 11:59 pm</td>
 </tr>
 
 <tr>
-<td>Mon Nov 18</td>
+<td>Wed Apr 8</td>
 <td><a href="Lectures/final_project_intro.md">Review Final Project</a>
 
 <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
@@ -219,7 +223,7 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Wed Nov 20</td>
+<td>Fri April 10</td>
 <td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>  
   
 
@@ -228,7 +232,7 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Mon Nov 25</td>
+<td>Wed Apr 15</td>
 <td><a href="Lectures/intro_to_security.md">Introduction to Security</a>
 
 <!--<a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>-->
@@ -240,7 +244,7 @@ Final Day of Class
 </tr>
 
 <tr>
-<td>Wed Dec 11</td>
+<td>Mon Apr 27</td>
 <td></td>
 <td> Final Project Due at 9:00 am </td>
 </tr>

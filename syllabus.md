@@ -12,8 +12,8 @@ Evan Jelly
 Office Hours: TBD (location)
 
 ## Lecture
-Mon/Wed 11:45 am -- 1:00 PM  
-Location: Teer 106
+Wed/Fri 11:45 am -- 1:00 PM  
+Location: Hudson Hall 115A
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
