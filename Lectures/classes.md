@@ -244,7 +244,7 @@ joan = Person("Joan", "Stevens", 45)
 joan.weight = -150
 x = joan.weight
 print("Before weight = {}".format(x))
-joan.weight =+ 17
+joan.weight += 17
 y = joan.weight
 print("After weight = {}".format(y))
 ```  
