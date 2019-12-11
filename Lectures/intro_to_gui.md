@@ -64,7 +64,7 @@ A lot goes into deciding the best GUI package to use:  the needed
 functionality, licensing considerations, easy of use, and personal preferences.
 
 In class, we will be discussing the use of the `tkinter` package as it is
-relatively easy to use and is part of the Python install,
+relatively easy to use and is part of the Python install.
 
 ## Tk Info
 ### Importing `tkinter`
@@ -72,7 +72,13 @@ relatively easy to use and is part of the Python install,
 from tkinter import *    # Standard binding to Tk (tk-inter(face))
 from tkinter import ttk  # Binding to newer "themed widgets"
 ```
-
+**Note:** Occasionally, the Tk package may not be installed during the Python 
+installation.  If, upon running the code above, an error of 
+`ModuleNotFoundError: No module named 'tkinter'` is seen, the following can
+be entered at the command line on macOS or Linux to install Tk:
+```
+sudo-apt sudo apt-get install python3-tk
+```
 ### Widgets
 The building blocks for making a GUI in `tkinter` (as well as many GUI 
 packages) are widgets.  Pretty much every part of the GUI is considered a
