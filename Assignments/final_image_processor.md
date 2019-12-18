@@ -80,7 +80,11 @@ a well-crafted RESTful API that will
   image processing steps. 
   + Store uploaded images and timestamps for a user
   + Store processed images (along with what processing was applied) and timestamps for a user
-  
+
+**Note**: The GUI should only make requests to the server and should not make 
+contact with the database.  All database functions should be handled from the
+server.  If the GUI needs to interact with the database, it should do it by
+making requests of the server. 
 
 ## Deliverables
 * A detailed `README` describing the final performance and state of your
