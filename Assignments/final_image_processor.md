@@ -61,8 +61,8 @@ perform on the uploaded image, including:
     - Timestamp when uploaded
     - CPU time required to process the image(s)
     - Image size (e.g., X x Y pixels)
-  + Ability to retrieve and display the user actions/metrics stored in the 
-    cloud database as described below. 
+  + Ability to retrieve from the server and display the user actions/metrics 
+  tracked by the server as described below. 
   
 ### Cloud Server
 At a minimum, your image processor server should do the following:
