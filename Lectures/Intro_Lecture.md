@@ -14,7 +14,6 @@
 * Undergrad / Grad
 * Hometown
 * Programming language you are most comfortable with
-* What you did this summer
 * What your long term plans are
 * Fun fact about yourself
 
