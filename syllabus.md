@@ -1,5 +1,4 @@
-# BME 547 - Medical Software Design - Fall 2019  
-
+# BME 547 - Medical Software Design - Spring 2020  
 
 ## Instructor
 Dr. David Ward  
@@ -24,8 +23,8 @@ testing and documentation.  Experience will be gained in the Python programming
 language.
 
 The course will be structured around various software projects related to
-medical devices that measure and process a biosignal, sends it to a web
-server, and makes those data accessible to a web client / mobile application.
+medical devices and databases that measure and process biosignals, send 
+information to a web server, and makes those data accessible to a web client.
 The projects will be designed to develop software
 design fundamentals.   Some project-related work will be done in groups.
 
@@ -35,11 +34,12 @@ conditional statements).
 
 BME 271 - Signals and Systems
 
-## Course Objectives
+## Course Topics
 * Software version control (`git`, GitHub)
 * Device programming fundamentals
   + Review of data types, variables, loops, conditional statements
-  + Python (v3.6): numpy, scipy, pandas, scikit
+  + Python (v3)
+  + Use of external libraries / packages
   + Virtual environments & dependency management (`pip`, `requirements.txt`)
   + Use of a programming IDE
   + Debugging (`pudb`)
@@ -47,7 +47,7 @@ BME 271 - Signals and Systems
   + Unit testing
   + Functional / System testing
   + Continuous integration (Travis CI)
-* Fault tolerance (raising exceptions)
+* Fault tolerance (handling and raising exceptions)
 * Logging
 * Documentation
   + Docstrings
@@ -55,10 +55,10 @@ BME 271 - Signals and Systems
   + Sphinx
   + [ReadTheDocs](https://readthedocs.org)
 * Working with data
-  + Data Storage (Text, Binary, HDF5, MongoDB)
+  + Data Storage (Text, Binary, MongoDB)
 * Data Processing & Display
   + Jupyter Notebooks
-  + Matplotlib / Seaborn
+  + Matplotlib
   + Pandas (DataFrames)
   + [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)
 * Servers
@@ -66,9 +66,9 @@ BME 271 - Signals and Systems
   + HTTP & RESTful APIs
 * Define software specifications and constraints (Requests for Comments, RFC)
 
-## Attendance
+## Attendance / Participation
 Lecture attendance and participation is important because you will be working
-in small groups some of the semester.  Participation in these in-class
+in small groups some of the semester.  Participation in assigned in-class
 activities will count for 15\% of your class grade.  It is very understandable
 that students will have to miss class for job interviews, personal reasons,
 illness, etc.  Absences will be considered **excused** if they are
@@ -98,7 +98,7 @@ class.
 The following grading scheme is subject to change as the semester progresses:
 <table>
 <tr>
-<td>Participation</td>
+<td>Participation / In-Class Assignments</td>
 <td>15%</td>
 </tr>
 <tr>
@@ -159,8 +159,10 @@ software repository will be provided on a regular basis.
 
 ## Duke Community Standard & Academic Honor
 Engineering is inherently a collaborative field, and in this class, you are
-encouraged to work collaboratively on your projects.  The work that you submit
-must be the product of your and your group's effort and understanding.  All
+encouraged to discuss what you have learned in class and share resources that
+you find.  However, your code development and final submitted code must be the 
+product of your and/or your group's effort and understanding.  It is not 
+permitted to share your code with others for them to copy or use.  Any external 
 resources developed by another person or company, and used in your project,
 must be properly recognized.
 
