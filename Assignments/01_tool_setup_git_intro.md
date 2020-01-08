@@ -22,7 +22,7 @@ the "Initialize this repository with a README" check box.
   look something like https://github.com/git_hub_user_name/repo_name.  
   d) In the README file, add these two URLs.  
   e) At the bottom of the page, click on the green "Commit changes" button.  
-  You should now active links to two other repositories.
+  You should now have active links to two other repositories.
     
 4. Download and install `git` at https://git-scm.com.  We will be using 
 `Git Bash`, *not* a GUI client.  
@@ -101,8 +101,8 @@ easier for you as your projects get more complex.  Options include:
   https://try.github.io/  
   https://www.codecademy.com/learn/learn-git  
   https://www.git-tower.com/learn/cheat-sheets/vcs-workflow  
-  http://gitimmersion.com/  
-  https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow
+  http://gitimmersion.com/
+  https://www.atlassian.com/git/tutorials/setting-up-a-repository
 
 1. Familiar with git (or just completed the exercises above)?  Give this a try:
   http://learngitbranching.js.org/

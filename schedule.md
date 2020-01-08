@@ -24,7 +24,7 @@ will be lecture every class period even if no topic is shown on the schedule.
   Cloning, Add/Commit, Branching, Pushing/Pulling</a>;   
   <a href="Resources/markdown.md">Markdown</a></td>
   
-  <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td
+  <td><!--<a href="Assignments/02_git_fundamentals_practice.md">-->Git Fundamentals/Practice</a></td
 </tr>
 
 <tr>
@@ -41,7 +41,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <a href="Lectures/variable_scope.md">Scope</a>
 
 </td>
-<td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
+<td><!--<a href="Assignments/PythonFundamentalAssignment.md">-->Python Fundamentals</a></td>
 </tr>
 
 <tr>
@@ -58,7 +58,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <a href="Lectures/modules.md">Modules</a> / 
 <a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
 </td>
-<td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
+<td><!--<a href="Assignments/BMICalculatorAssignment.md">-->BMI Calculator</a></td>
 </tr>
 
 <tr>
@@ -72,7 +72,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
 Integration & Travis</a>;
 <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
-<td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
+<td><!--<a href="Assignments/UnitTestingCIAssignment.md">-->Unit Testing & CI Assignment</a></td>
 </tr>
 
 <tr>
@@ -89,7 +89,7 @@ Integration & Travis</a>;
 <a href="Lectures/numpy.md">NumPy</a>, 
 <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</a>
 </td>
-<td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</td>
+<td><!--<a href="Assignments/TSHTestDataConversion">-->TSH Test Data Conversion</td>
 </tr>
 
 <tr>
@@ -102,7 +102,7 @@ Integration & Travis</a>;
 <tr>
 <td>Wed Feb 19</td>
 <td>Functional Decomposition</td>
-<td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
+<td><!--<a href="Assignments/ECG_Analysis">-->ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
@@ -145,7 +145,7 @@ In-class Work Time
 <td>Fri Mar 6</td>
 <td><a href="Lectures/apis_webservices_requests.md">
 APIs, Intro To Web Services, Requests</a></td>
-<td><a href="Lectures/name_server_project.md">Recommended Learning Project (ungraded)</a></td>
+<td><!--<a href="Lectures/name_server_project.md">-->Recommended Learning Project (ungraded)</a></td>
 </tr>
 
 <tr>
@@ -164,7 +164,7 @@ APIs, Intro To Web Services, Requests</a></td>
 <td>Wed Mar 18</td>
 <td><a href="Lectures/flask_server_setup.md">
        Building a Web Server with Flask</a></td>
-<td><a href="Lectures/time_server_project.md">Recommended Server Project
+<td><!--<a href="Lectures/time_server_project.md">-->Recommended Server Project
 (ungraded)</a></td>
 </tr>
 
@@ -174,7 +174,7 @@ APIs, Intro To Web Services, Requests</a></td>
   <a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
   <a href="Resources/virtual_machines.md">Virtual machines</a>
   </td>
-  <td><a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</td> 
+  <td><!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned</td> 
 </tr>
 
 <tr>
@@ -219,7 +219,7 @@ APIs, Intro To Web Services, Requests</a></td>
 <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
 </td>
 <td>
-<a href="Assignments/final_image_processor.md">Final Project Assigned</td>
+<!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned</td>
 </tr>
 
 <tr>
