@@ -86,7 +86,11 @@ credentials" window and click "Ok".
 now use the remote Windows computer just as you would a local Windows computer.
 * To disconnect, simply choose "Disconnect" from the Power window.  This will
 keep your remote machine or server active.  If you choose "Shutdown", the VM
-will completely turn off and you will need to turn it back on in the VCM.  
+will completely turn off and you will need to turn it back on in the VCM.
+  
+**NOTE:** If you are accessing your Windows VM from outside of the Duke
+network, you will need first need to access the Duke network through a VPN.
+See <https://oit.duke.edu/what-we-do/services/vpn> for more information.
 
 ## Using Your Virtual Machine
 Once your machine is set up, you will need to configure it for git and Python
