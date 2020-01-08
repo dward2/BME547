@@ -66,7 +66,7 @@ python path you captured above again followed by "\Scripts\".
 For example, the input for Variable Value should look something like:
 `C:\Users\<username>\AppData\Local\Programs\Python\Python37-32\;C:\Users\<username>\AppData\Local\Programs\Python\Python37-32\Scripts`
 
-Skip to "Finishe Editing Environemtnal Variables".
+Skip to "Finish Editing Environemtnal Variables".
 ##### Edit
 After clicking "Edit...", a window should open called "Edit environment 
 variable".  Click on the "New" button on the right, and enter the python path

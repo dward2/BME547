@@ -41,17 +41,17 @@ installed.  If not, you will need to download it from the site above.
     Note - this second option does not installed `git` in your Windows environment, 
     so other Windows applications that have `git` hooks will not work.
   
-    Add your name and e-mail to your local Git configuration by following the
+    **Everyone**: Add your name and e-mail to your local Git configuration by following the
      instructions under **Config**  on [this page](/Resources/Git/GitCommands.md#config). 
 
 3. [**Optional**]  Setup an SSH key to seamlessly push/pull to/from your GitHub repositories:
    https://help.github.com/articles/connecting-to-github-with-ssh/
 
-4. Download and install `python3` at https://www.python.org/. Be sure to
-   install Python 3.7, *not* Python 2.7.  
+4. Download and install `python` at https://www.python.org/. Use the latest
+released version (as of January 2020, this is version 3.8.1).  
    
    For **Mac** users, Python is likely already installed.  Open a Terminal window 
-   and enter `python` or `python3`.  If installed, you should see something
+   and enter `python`.  If installed, you should see something
    like the following:
    ```
    Python 3.6.5 (default, Apr  1 2018, 05:46:30)
@@ -59,11 +59,31 @@ installed.  If not, you will need to download it from the site above.
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
    ```
-   If the version number is 3.6 or higher, you are fine.  .  Type `quit()` to 
-   exit.  If python does not start, you will need to download it.  If you have
-   not used Python before and do not have any legacy code to consider, 
-   upgrading to the latest version may be a good idea.
-     
+   You can then type `quit()` at the `>>>` python prompt to exit.
+   
+   * If the version number is 3.6 or higher, you are good to go.
+   * If the version number is 2.7, enter `python3` into the terminal window and
+   see if that version is also installed.  If not, you will need to install 
+   `python3`.
+   Do not try to delete or "upgrade" the 2.7 version currently on your 
+   computer as it is a part of the macOS installation.
+   * If python does not start at all, you will need to install `python3`.  
+   
+   Info on installing `python3` on macOS can be found at:      
+     * <https://docs.python.org/3/using/mac.html>
+     * <http://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/>
+     * Note that if you have both `python2` and `python3` installed on your 
+     computer, it is possible that you will have to enter `python3` in place
+     of `python` to run the correct version.  Alternatively, you can set up an
+     alias by either:
+       + entering `echo "alias python=/usr/local/bin/python3.7" >> ~/.bashrc`
+       at the terminal prompt, or
+       + manually editing the `.bashrc` file to include the line 
+       `alias python=/usr/local/bin/python3.8`.  Note that you need to make
+       sure that the path (`/usr/local/bin/python3.8`) matches the actual
+       path on your computer.  For example, verify the version number is
+       correct.
+    
    **Windows** users have three options:  
    a) Download and install from <https://www.python.org/> as described above.
    Follow additional guidelines found [here](../Resources/installations.md) for
@@ -74,7 +94,7 @@ installed.  If not, you will need to download it from the site above.
    and then install what is necessary in virtual environments, but each project 
    will require more download overhead.  
    c) Installing and using the [Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about), 
-   and running `python3` from within that environment.  This approach will give 
+   and running `python` from within that environment.  This approach will give 
    you a legitimate Linux environment, but there is overhead to running GUI 
    applications through an X-server, which adds more complexity and can be 
    slower for complex interfaces.
