@@ -105,3 +105,15 @@ What are the advantages of running modular code?
 * Easier to read, can follow logic better
 * Code reuse (once a function is tested and validated, it can be used again
 without much thought).
+
+## Exercise Before Next Class
+* Complete the `calculator.py` module
+* Should contain the following functions:
+    * `add`
+    * `subtract`
+    * `multiply`
+    * `divide`
+* Module should call each function using the numbers 47 and 7 and then print 
+the results from each function.  Do not do this output inside the functions 
+themselves.
+* Push your module to GitHub.
