@@ -8,7 +8,7 @@ follows the `return` keyword, the function returns the `None` object.  If
 `return` is not included in a function, the function will also return `None`
 when it runs out of code in its block.
 
-#### Example 1
+#### Example 1 - No `return` used
 ```python
 def myfunction(x):
     a = x + 5
@@ -24,7 +24,7 @@ None
 When the function runs out of code without finding a `return` statement, it
 returns `None`.  This is an objects of its own in Python and is not a string.
 
-#### Example 2
+#### Example 2 - `return` used alone
 ```python
 def myfunction(x):
     a = x + 5
@@ -40,7 +40,7 @@ None
 Sometimes for clarity, a `return` may be added at the end of a function even
 if no value is being returned.
 
-#### Example 3
+#### Example 3 - `return` with a value
 ```python
 def myfunction(-20):
     a = x + 5
@@ -56,7 +56,7 @@ Output:
 When a value or variable is given after `return`, that value is returned to
 the calling function.
 
-#### Example 4
+#### Example 4 - multiple `return` types
 ```python
 def myfunction(x):
     a = x + 5
@@ -78,3 +78,27 @@ returns a string.  This is not considered best practice because the calling
 procedure now needs to be able to handle either an integer return or a string
 return.
 
+#### Example 5 - `return` multiple variables
+```python
+def division_results(dividend, divisor):
+    full = dividend / divisor
+    quotient = dividend // divisor
+    remainder = dividend % divisor
+    return full, quotient, remainder
+
+
+if __name__ == '__main__':
+    i = 11
+    j = 3
+    a, b, c = division_results(i, j)
+    print("The result of {} divided by {} is {}".format(i, j, a))
+    print("The quotient is {}".format(b))
+    print("The remainder is {}".format(c))
+ 
+Output:
+The result of 11 divided by 3 is 3.6666666666666665
+The quotient is 3
+The remainder is 2
+
+```
+More than one variable can be returned, as shown in the example above.
