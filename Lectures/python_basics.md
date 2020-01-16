@@ -60,7 +60,7 @@ In the `if` statement above, if `x` contains the string `a`, it executes the
 first block.  If `x` does not contain `a`, it will look at the next `elif`
 statement.  If 'x' contains 's', it will execute the block following the
 `elif`.  Finally, if neither the `if` or `elif` are true, the `else` block
-will be run.
+will be run.  Note that there can be more than one `elif` if needed.
 
 As the final print statement is not indented, it will be run after the `if` 
 statement.  
@@ -91,17 +91,14 @@ if __name__ == "__main__":
 The `def` keyword defines a function with the name that is given after `def`.
 After the function name, there must be a set of `()` followed by a `:`.  The
 code for the function should then be indented.  Parameter variables can be 
-sent to the function by including those inside the `()`.
+sent to the function by including those inside the `()`.  Functions can be
+ended with the use of the `return` keyword.  See 
+[return_keyword.md](./return_keyword.md) for more info on `return`.
 
-A python file containing functions is generally called a module.  If you want
-to run that module from the command line, Python
-needs to know where the code should start in the module.  That is done by
-the statement `if __name__ == "__main__"`.  When a module is being executed,
-it has a special variable called `__name__`.  If the module was directly 
-called from the command line, the variable `__name__` is given the value
-`__main__`.  So, if the file was run from the command line, the 
-`if __name__ == "__main__"` statement will be true and the code will start
-there.
+A python file containing functions is generally called a module.  When the
+Python interpreter runs a module, the interpreter starts at the top of the 
+file.  When it encounters any `def` statements, it registers those functions
+created and continues scanning the file until it finds a statement to execute.
 
 What are the advantages of running modular code?
 * Testable (crucial for medical software design)
