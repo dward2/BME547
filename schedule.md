@@ -31,7 +31,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Fri Jan 17</td>
   <td><a href="Lectures/python_basics.md">Python Basics</a>
   </td>
-  <td></td>
+  <td><a href="Lectures/python_basics.md#exercise-before-next-class">In-class Exercise</a></td>
 </tr>
 
 <tr>
