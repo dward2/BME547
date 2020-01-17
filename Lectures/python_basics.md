@@ -117,3 +117,15 @@ without much thought).
 the results from each function.  Do not do this output inside the functions 
 themselves.
 * Push your module to GitHub.
+* As additional practice, implement the ability for the user to enter two
+numbers and choose the operation they desire.  
+  + Note that `input()` returns what is typed by the user as a string.  This
+  string needs to be converted to a number in order to do math on it.  This
+  conversion can be done as follows:
+  ```python
+  a = input("Enter a number: ")
+  x = int(a)    # Converts the string 'a' into an integer stored in 'x'.  If 'a'
+                #   is not an integer, you will get an error.
+  y = float(a)  # Converts the string 'a' into a float variable stored in 'x'.
+                #   A float variable can be fractional.
+   ```
