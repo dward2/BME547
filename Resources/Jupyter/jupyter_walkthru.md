@@ -70,6 +70,12 @@ You can now explore the notebook.  You can add new cells by clicking on the
 markdown) by clicking on the drop down that says "Code" in the picture above.
 You can change the order of the different cells using the arrow buttons.
 
+Enter code into a cell.  To execute the cell, type `Shift+Enter`.
+
+**NOTE**: On Windows with Python 3.8, the Python Kernel did not start in
+the Jupyter Notebook.  One possible fix can be found 
+[here](../Resources/Jupyter/notebook_python38_fix.md).
+
 When you are ready to save the notebook, choose the "Save As..." option under 
 the File menu.
 
