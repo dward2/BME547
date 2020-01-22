@@ -37,9 +37,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Jan 22</td>
-<td><a href="Lectures/virtual_environments.md">Virtual Environments</a> / 
-
-<a href="Lectures/variable_scope.md">Scope</a>
+<td><a href="Lectures/modules.md">Modules</a> /
+<a href="Lectures/virtual_environments.md">Virtual Environments</a> 
 
 </td>
 <td><!--<a href="Assignments/PythonFundamentalAssignment.md">-->Python Fundamentals</a></td>
@@ -54,9 +53,9 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Jan 29</td>
-<td>
-<a href="Lectures/modules.md">Modules</a> / 
-<a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
+<td> 
+<a href="Lectures/git_workflow_more.md">Tags and Issues</a> / 
+<a href="Lectures/variable_scope.md">Scope</a> 
 </td>
 <td><!--<a href="Assignments/BMICalculatorAssignment.md">-->BMI Calculator</a></td>
 </tr>
