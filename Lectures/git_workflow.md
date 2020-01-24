@@ -188,6 +188,6 @@ Example:  git clone https://github.com/dward2/calculator.git partner_calculator
  
 * Develop the total cholesterol code on a feature branch of your partner's
 repository and push it up to their GitHub repository.
-* On GitHub in your partner's repositoriy, qpen a Pull Request and include your 
+* On GitHub in your partner's repository, open a Pull Request and include your 
 partner as a reviewer.  Do not merge
 the Pull Request.  That is up to the partner who owns the repository.
