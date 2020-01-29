@@ -57,7 +57,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <a href="Lectures/git_workflow_more.md">Tags and Issues</a> / 
 <a href="Lectures/variable_scope.md">Scope</a> 
 </td>
-<td><!--<a href="Assignments/BMICalculatorAssignment.md">-->BMI Calculator</a></td>
+<td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
 
 <tr>
