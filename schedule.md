@@ -54,8 +54,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Jan 29</td>
 <td> 
-<a href="Lectures/git_workflow_more.md">Tags and Issues</a> / 
-<a href="Lectures/variable_scope.md">Scope</a> 
+<a href="Lectures/lists.md">Lists</a> / 
+<a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
 </td>
 <td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
 </tr>
@@ -77,7 +77,8 @@ Integration & Travis</a>;
 <tr>
 <td>Fri Feb 7</td>
 <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
-<a href="Lectures/json.md">JSON</td>
+<a href="Lectures/json.md">JSON</a>; 
+<a href="Lectures/variable_scope.md">Scope</a> </td>
 <td></td>
 </tr>
 
