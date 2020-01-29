@@ -23,7 +23,8 @@ normal weight, overweight, or obese.
 
 ### Approach
 * Clone GitHub Classroom repository to your computer
-* Create feature branch for new feature to be added (e.g., data input)
+* Create feature branch from master branch for new feature to be added 
+(e.g., data input)
 * Use meaningful commit messages and an appropriate frequency of commits while
 developing features.
 * Push developed feature branch to GitHub.
@@ -34,7 +35,8 @@ master branch.
 * Pull the newly merged master branch back to your local repository so changes
 to master branch are captured locally.
 * Repeat for other features
-* Create a `README.md` file to explain how to run and use your program.
+* Create a `README.md` file to explain how to run your program from the command
+line and how to use your program.
 * When the assignment is completed, create an annotated git tag called `v1.0.0`
 on your master branch to indicate your final submission.
 * If you make additional changes after creating this tag, simply create another
