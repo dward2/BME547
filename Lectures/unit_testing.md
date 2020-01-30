@@ -194,7 +194,7 @@ as follows:
 `pytest -v --pep8`
 
 ## Exercise
-__Goal__:  Develop Python code that:
+__Goal__:  Develop a Python function that:
 * receives as parameters two tuples, `(x1, y1), (x2, y2)`, that represent two
 (x, y) coordinates on a plane,
 * receives a parameter, `x`, that is a new value on the x-coordinate of the 
@@ -203,8 +203,16 @@ above plane,
 
 __Steps__:
 * Start new branch 
-* Write a unit test for this function
-* Develop needed code
-* Make sure code is written modularly so each algorithmic step can be tested.
+* Write a unit test for this function before you code the function itself.
+* Develop the function.
+* If  you find that your function has multiple steps that can be broken down
+into smaller functions, do so, and then write a test for the smaller functions
+as well.
+
+__Additional Work__:
+* Develop a function that takes `(x1, y1), (x2, y2)` and a third point 
+`(x3, y3)` and returns True if the third point is on the line defined by the
+first two points.  Otherwise, it returns False.
+* Write unit tests that test this function for both True and False results.
 
 
