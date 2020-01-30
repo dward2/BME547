@@ -216,7 +216,7 @@ We can move the `HEAD` in order to go to previous points in history in our
 repository.
 ### Undoing commit while keeping the changes made in the staging area
 This is the reverse of `git commit`.  We are essentially removing changes 
-committed to the repository, but keeping those changes in the sta   
+committed to the repository, but keeping those changes in the staging area.   
 
 `git reset --soft <commitID>`  
 where `<commitID>` is the first few characters (usually 7) of the commit number 
