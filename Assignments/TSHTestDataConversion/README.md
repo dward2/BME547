@@ -4,13 +4,22 @@
 Hypothyroidism and hyperthyroidism are conditions where the thyroid gland 
 produces either too little (hypo) or too much (hyper) of the hormone thyroxine.
 
-The thyroid gland is under the control of the pituitary gland.  When the level
-of thyroxine drops too low, the pituitary gland produces Thyroid Stimulating
-Hormone (TSH) which stimulates the thyroid gland to produce more hormones.
-If the thyroid produces too little thyroxine, the amount of TSH produced by
-the pituitary gland is very high.  If the thyroid produces too much
-thyroxine, the pituitary gland produces very little TSH.  Therefore, TSH levels
-are often used to diagnose thyroid gland issues.  
+The thyroid gland is under the control of the pituitary gland.  The pituitary
+gland produces a hormone called Thyroid Stimulating Hormone (TSH) which 
+signals the thyroid gland to produce thyroxine.  Normally, TSH levels in the
+blood of 1.0 to 4.0 mIU effectively regulate the thyroid gland to produce the
+correct amount of thyroxine.
+
+In hypothyroidism, the thyroid gland does not produce enough 
+thyroxine.  When the pituitary gland detects low levels of thyroxine in the
+blood, it produces even more TSH to signal to the thyroid gland to make more
+thyroxine.  Therefore, hypothyroidism is determined by a TSH level of greater
+than 4.0 mIU in the blood stream.
+
+In hyperthyroidism, the thyroid gland produces too much thyroxine.  When the
+pituitary gland detects too high a level of thyroxine in the blood, it reduces
+product of TSH to signal to the thyroid to reduce thyroxine production.  So,
+a TSH level of less than 1.0 mIU in the blood is the sign for hyperthyroidism.  
 
 For this assignment, we will be writing some code that is reading in patient
 data containing TSH test results.  This data will be analyzed for hypothyroidism
@@ -43,7 +52,8 @@ file will have a line containing `END` to mark the end of the file.
 on which your code will be graded will have different data and a different
 number of patients.  So, your code must be flexible enough to handle files
 of different sizes.
-* From the TSH results from each patient, diagnose whether the patient has:
+* From the TSH results from each patient, assign one of the following diagnoses
+to the patient as follows:
   + "hyperthyroidism" as defined by any of their tests results being less than 1.0,
   + "hypothyroidism" as defined by any of their test results being greater than 4.0, or
   + "normal thyroid function" as defined by all of their test results being
@@ -67,12 +77,11 @@ commands, create and output the information.
 ## Grading Expectations
 * Good git usage and workflow
 * Meeting the above functional specifications
-* Appropriate functional modularity
-* Unit testing exists for your function(s) that determine the diagnosis, 
-following appropriate nomenclature and comprehensiveness.
-(For this assignment, unit tests are not required for input/output routines, or
-string handling, unless you find them useful)
-* Travis CI integration
+* Appropriate functional modularity that will allow for appropriate unit tests
+* Unit testing exists for all functions that do any algorithmic work, excluding
+input/output routines.
+* Travis CI integration with all branches passing unit tests and PEP-8 style
+before merge
 * Conforms to PEP-8 Style Guide 
 * Docstrings exist for all functions
 * Appropriate use of virtual environments, including a `requirements.txt` or 

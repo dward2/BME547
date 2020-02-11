@@ -89,7 +89,7 @@ Integration & Travis</a>;
 <a href="Lectures/numpy.md">NumPy</a>, 
 <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</a>
 </td>
-<td><!--<a href="Assignments/TSHTestDataConversion">-->TSH Test Data Conversion</td>
+<td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</td>
 </tr>
 
 <tr>
