@@ -30,8 +30,8 @@ whether the word will be upper case, lower case, mixed case, or have leading /
 trailing spaces or punctuation.
 * If the string contains the word "tachycardic," regardless of capitalization
 and leading or trailing spaces or punctuation, the function should return a 
-value of `True`.
-* Otherwise, the function should return a value of `False`.
+boolean value of `True`.
+* Otherwise, the function should return a boolean value of `False`.
 * Function must follow the PEP-8 style guide.
 
 ### Approach
