@@ -77,15 +77,15 @@ Integration & Travis</a>;
 <tr>
 <td>Fri Feb 7</td>
 <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
-<a href="Lectures/json.md">JSON</a>; 
-<a href="Lectures/variable_scope.md">Scope</a> </td>
+<a href="Lectures/json.md">JSON</a></td>
 <td></td>
 </tr>
 
 <tr>
 <td>Wed Feb 12</td>
 <td>
-<a href="Lectures/docstrings.md">Docstrings</a>;
+<a href="Lectures/docstrings.md">Docstrings</a>; 
+<a href="Lectures/variable_scope.md">Scope</a>;
 <a href="Lectures/numpy.md">NumPy</a>, 
 <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</a>
 </td>
@@ -95,7 +95,7 @@ Integration & Travis</a>;
 <tr>
 <td>Fri Feb 14</td>
 <td><a href="Lectures/debugging.md">Debugging</a>, 
-<a href="Resources/PyCharm">PyCharm</a></td>
+<a href="Resources/PyCharm">PyCharm</a> </td>
 <td></td>
 </tr>
 
