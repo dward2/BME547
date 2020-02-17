@@ -18,3 +18,17 @@ version of the program using your `.duke.edu` email address: https://www.jetbrai
 
 You do not *have* to use PyCharm, as many other code editors provide similar
 functionality, but we will use it as an example platform.
+
+## PyCharm Resources
+* Documentation:  [DocumentationLinks.md](DocumentationLinks.md)
+
+* Useful settings in PyCharm:  [PycharmSettings.md](PycharmSettings.md)
+
+* How to set up a new project in PyCharm and link to GitHub: 
+[NewProject.md](NewProject.md)
+
++ PyCharm How To Videos:  Visit "BME 547 Videos" in the Resources section of 
+Sakai      
+  + Cloning a GitHub Repository to Local Computer
+  + Git Workflow in PyCharm 
+  + Using PyTest in PyCharm
