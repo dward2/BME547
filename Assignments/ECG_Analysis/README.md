@@ -23,16 +23,19 @@
   excursion).  Analysis of the data should still be done as normal.
   + The following data should be calculated and saved as keys in a Python 
   dictionary called `metrics`:
-    - `duration`: time duration of the ECG strip  
-    - `voltage_extremes`: tuple containing minimum and maximum lead voltages  
-    - `num_beats`: number of detected beats in the strip
+    - `duration`: time duration of the ECG strip
+    - `voltage_extremes`: tuple in the form `(min, max)` where `min` and `max`
+    are the minimum and maximum lead voltages found in the data file.      
+    - `num_beats`: number of detected beats in the strip, as an 
     - `mean_hr_bpm`: estimated average heart rate over the length of the strip  
-    - `beats`: numpy array of times when a beat occurred
+    - `beats`: list of times when a beat occurred
   + Your `metrics` dictionary should be output as a [JSON](https://json.org/) 
   file.  The json file should have the same name as the ECG data file, but
    with an extension of `.json`.  Example:  the dictionary 
   with results from the ECG data found in `test_data12.csv` should be saved in
-  a json file called `test_data12.json`.   
+  a json file called `test_data12.json`.
+  + All numeric values reported above must be reported as numbers (i.e., `int`
+  or `float`) not as numeric strings (i.e., not `"5.3"`)   
 
 ## Git Version Control Expectations
 * Frequent and meaningful commits!
@@ -87,3 +90,4 @@
 * Python style and docstrings
 * Achieves functional specifications
 * Works with all of the provided test data
+* Any of the workflow or python methodology criteria from previous assignments
