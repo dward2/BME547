@@ -26,7 +26,7 @@
     - `duration`: time duration of the ECG strip
     - `voltage_extremes`: tuple in the form `(min, max)` where `min` and `max`
     are the minimum and maximum lead voltages found in the data file.      
-    - `num_beats`: number of detected beats in the strip, as an 
+    - `num_beats`: number of detected beats in the strip, as a numeric variable type.
     - `mean_hr_bpm`: estimated average heart rate over the length of the strip  
     - `beats`: list of times when a beat occurred
   + Your `metrics` dictionary should be output as a [JSON](https://json.org/) 
