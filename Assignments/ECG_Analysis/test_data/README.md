@@ -11,7 +11,7 @@ is in mV.
 * **Tests 1-27** include variable forms of ECG data. Some files have peaks at a
 constant voltage and period, while others have peaks at different voltages and
 a change in heart rate within the data set. The time intervals between
-measurements are vary per data set.
+measurements may vary per data set.
 
 * **Tests 28-31** contain some non-numeric entries, missing data, or NaN in 
 the time and voltage columns.  
