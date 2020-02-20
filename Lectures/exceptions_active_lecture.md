@@ -28,7 +28,7 @@ occurs when your command attempts to run.
 * Share with the class:  what error you found?
 
 ## Exception Errors
-Other common exception errors are:
+Common exception errors are:
   * ``ZeroDivisionError``
   * ``NameError`` (trying to use a variable name that is not defined)
   * ``TypeError`` (mixing conflicting types of data in an operation, or passing
@@ -141,11 +141,6 @@ either:
   + print out the resulting summed number  
   + prints "Needs Integers" if a `TypeError` is raised, or
   + print "No negative numbers" if a `ValueError` is raised.
-  
-
-As above, the list of possible exceptions that can be raised can be found at
-https://docs.python.org/3/library/exceptions.html
-
 
 
 ## Tests for Raised Exceptions
@@ -212,7 +207,7 @@ Going west is too dangerous. Must stop.
 Process finished with exit code 1
 ```
 
-There is a dedicate module to system error symbols: 
+There is a dedicated module to system error symbols: 
 https://docs.python.org/3/library/errno.html
 
 [Logging](logging.md)
