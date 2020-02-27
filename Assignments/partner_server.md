@@ -34,8 +34,9 @@ should include the date and time of the call and what endpoint was called.
       `{'age': 45, 'gender': "female"}`  
       where `age` could be any number and `gender` is either `"male"` or 
       `"female"`.
-    * returns a value with the estimated calorie need for a person of the 
-    given age and gender.  The website <https://health.gov/our-work/food-nutrition/2015-2020-dietary-guidelines/guidelines/appendix-2/>
+    * returns a value with the estimated calorie need for a moderately-active 
+    person of the given age and gender.  The website 
+    <https://health.gov/our-work/food-nutrition/2015-2020-dietary-guidelines/guidelines/appendix-2/>
     can be used to determine the appropriate response.
     
 ### Client Program Should...
