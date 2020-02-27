@@ -6,12 +6,12 @@
 ## Creating a class
 
 A class is defined with the following heading:
-```
+```python
 class Person:
 ```
 `Person` is the name of the class.  If the class should inherit the properties
 of another class, you would define the class as:
-```
+```python
 class Person(object):
 ```
 where `object` is replaced by the name of the class to inherit from.  If
@@ -37,7 +37,7 @@ specific value.
 ## Creating an instance of the class
 Once defined, an instance of the class can be created in code as a variable as 
 follows:
-```
+```python
 x = Person()
 ```
 The variable `x` is now an object that has the structure defined by the 
@@ -47,7 +47,7 @@ The variable `x` is now an object that has the structure defined by the
 
 To access the properties of a class instance in our code, we reference the 
 object variable name, followed by a `.` and the property name:
-```
+```python
 x = Person()
 print(x.firstname)
 print(x.lastname)
@@ -57,7 +57,7 @@ None
 None
 ```
 The value of a property is set in a similar manner:
-```
+```python
 x.firstname = "Robert"
 x.lastname = "Smith"
 print(x.firstname)
@@ -94,7 +94,7 @@ even if you don't need it.  This is a Python syntax requirement.
 
 ## Accessing class methods
 This method can be called from our code as follows:
-```
+```python
 x = Person()
 x.firstname = "Robert
 x.lastname = "Smith"
@@ -127,7 +127,7 @@ class Person:
 ```
 The `__init__` method is called immediately upon creating a new instance
 of the class in a variable as shown here:
-```
+```python
 x = Person("Robert", "Smith")
 ```
 
@@ -162,18 +162,18 @@ class Person(object):
 ```
 But, let's say we forgot to update our line of code that read 
 `x = Person("Robert", "Smith")`.  Python will return 
-```
+```python
 TypeError: __init__() missing 1 required positional argument: 'age_arg'
 ```
 We can avoid this error by giving the `__init__` method a default
 value for the `age_arg` parameter as follows:
-```
+```python
     def __init__(self, first_name_arg, last_name_arg, age_arg=None):
 ``` 
 Now, if no value is provided for `age_arg`, the `__init__` method will fill
 it with `None` and avoid an error.  We can then later set the age by
 directly accessing the property of the class as such:
-```
+```python
 x = Person("Robert", "Smith")`
 x.age = 35
 ```
@@ -207,7 +207,7 @@ the contents or properties of other objects.
 
 Using the example `Person` class above, we can now make a database of Person
 objects.
-```
+```python
 def create_persons_database():
     database = []
     new_person = Person("Ann", "Jones", 35)
@@ -269,7 +269,7 @@ I need to define specific functions in the class to perform those functions.
 ```
 With these functions, some code is now run to manipulate the inputs before
 setting the property of the class.
-```pythonstub
+```python
 john = Person("John", "Smith", 45)
 john.set_seight(-150)
 x = john.get_weight()
@@ -281,7 +281,7 @@ OUTPUT:
 
 Let's say that John has gained 17 pounds.  Adding 17 to the weight would
 require the following `get_weight` and `set_weight` calls.
-```
+```python
 john.set_weight(john.get_weight()+17)
 print(john.get_weight())
 
@@ -296,14 +296,14 @@ That is a very ugly way to add 17 to a variable.
  
  First, the `@property` decorator is used before a class function that gets 
  (or returns) the property of interest. 
- ``` 
+ ```python
     @property
     def weight(self):
         return self.__weight
   ```
 Now that `weight` is defined as a property, we use the `@weight.setter`
 decorator before a class function that sets the weight.
-```
+```python
   @weight.setter
   def weight(self, weight_arg):
       if weight_arg < 0:
@@ -313,7 +313,7 @@ decorator before a class function that sets the weight.
 ```
 
 Now, in the code, we can get and set the weight as follows:
-```
+```python
 joan = Person("Joan", "Stevens", 45)
 joan.weight = -150
 x = joan.weight
@@ -327,7 +327,7 @@ like any other kind of property or variable, but the setting and getting
 are now controlled by functions that we can control.
 
 The generic format is:
-```
+```python
     @property
     def name(self):
         {CODE THAT RETURNS YOUR HIDDEN VARIABLE}
