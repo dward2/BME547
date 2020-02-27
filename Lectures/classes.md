@@ -96,7 +96,7 @@ even if you don't need it.  This is a Python syntax requirement.
 This method can be called from our code as follows:
 ```python
 x = Person()
-x.firstname = "Robert
+x.firstname = "Robert"
 x.lastname = "Smith"
 print(x.return_full_name())
 
@@ -162,7 +162,7 @@ class Person(object):
 ```
 But, let's say we forgot to update our line of code that read 
 `x = Person("Robert", "Smith")`.  Python will return 
-```python
+```
 TypeError: __init__() missing 1 required positional argument: 'age_arg'
 ```
 We can avoid this error by giving the `__init__` method a default
