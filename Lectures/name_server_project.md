@@ -5,6 +5,9 @@ Write a program that uses the `request` library to POST student
 data to a server at `http://vcm-6764.vm.duke.edu:5000`.  And, use a
 POST to the same server ti get the results of adding two numbers.
 
+__Note__: If the server does not repond to your requests, it may be turned off.
+Pleaes contact Dr. Ward to have it turned on.
+
 For syntax help, see [this Jupyter Notebook](/Resources/WebServices/requests.ipynb).
 
 The server has the following endpoints:

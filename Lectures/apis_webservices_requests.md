@@ -120,7 +120,9 @@ specific server request that was made.
 ### POST Example
 Country Server API:  <a href = "../Resources/WebServices/country_server_api.md">API</a>
 
-Let's compare the information on Spain and Sweden.
+Let's compare the information on Spain and Sweden.  (Note: if this server does
+not respond, it may be shut off.  See the link "API" link above for more
+information on checking on server status and requesting activation.)
 
 ```
 import requests

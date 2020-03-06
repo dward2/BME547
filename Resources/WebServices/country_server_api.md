@@ -10,7 +10,7 @@ The countries are grouped into regions.
 URL:  <http://vcm-7631.vm.duke.edu:5000>  
   Note:  Server is not always active.  To check, click on the link above.
   If a window opens saying "Server On", then the server is active.  If you 
-  receive an error, it is not.
+  receive an error, it is not.  Contact Dr. Ward to activate the server.
 
 ### List of Regions
 `GET URL/regions`
