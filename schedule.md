@@ -143,9 +143,8 @@ In-class Work Time
 
 <tr>
 <td>Fri Mar 6</td>
-<td><a href="Lectures/apis_webservices_requests.md">
-APIs, Intro To Web Services, Requests</a></td>
-<td><!--<a href="Lectures/name_server_project.md">-->Recommended Learning Project (ungraded)</a></td>
+<td>CHANGE: No Class</td>
+<td></td>
 </tr>
 
 <tr>
@@ -162,47 +161,48 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Wed Mar 18</td>
-<td><a href="Lectures/flask_server_setup.md">
-       Building a Web Server with Flask</a></td>
-<td><!--<a href="Lectures/time_server_project.md">-->Recommended Server Project
-(ungraded)</a></td>
+<td><a href="Lectures/apis_webservices_requests.md">
+APIs, Intro To Web Services, Requests</a></td>
+<td><!--<a href="Lectures/name_server_project.md">-->Recommended Learning Project (ungraded)</a></td>
 </tr>
 
 <tr>
 <td>Fri Mar 20</td>
 <td>
-  <a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
-  <a href="Resources/virtual_machines.md">Virtual machines</a>
+  <a href="Lectures/flask_server_setup.md">
+       Building a Web Server with Flask</a>
   </td>
-  <td><!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned</td> 
+  <td><!--<a href="Lectures/time_server_project.md">-->Recommended Server Project
+(ungraded)</a></td> 
 </tr>
 
 <tr>
 <td>Wed Mar 25</td>
-  <td><a href="Lectures/databases.md">Introduction to Databases</td>
+  <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
+  <a href="Resources/virtual_machines.md">Virtual machines</a></td>
 <td>
 
-</td>
+<!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned
 </tr>
 
 <tr>
 <td>Fri Mar 27</td>
   <td>
-  <a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
-  <a href="https://github.com/dward2/database_demo_starter">
-  (starter repository here)</a></td>
+  <a href="Lectures/databases.md">Introduction to Databases</td>
   <td></td>
 </tr>
 
 <tr>
   <td>Wed Apr 1</td>
-  <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
+  <td><a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
+  <a href="https://github.com/dward2/database_demo_starter">
+  (starter repository here)</a></td>
   <td>IEC 62034 Assessment in Sakai Due</td>
 </tr>
 
 <tr>
 <td>Fri Apr 3</td>
-<td>More on GUIs, Tkinter Widgets</td>
+<td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
 <td></td>
 </tr>
 
@@ -214,21 +214,23 @@ APIs, Intro To Web Services, Requests</a></td>
 
 <tr>
 <td>Wed Apr 8</td>
-<td><a href="Lectures/final_project_intro.md">Review Final Project</a>
-
-<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
+<td>More on GUIs, Tkinter Widgets
 </td>
 <td>
-<!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned</td>
+</td>
 </tr>
 
 <tr>
 <td>Fri April 10</td>
-<td><a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>  
+<td><a href="Lectures/final_project_intro.md">Review Final Project</a>
+
+<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
+
+<a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>  
   
 
 </td>
-<td></td>
+<td><!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned</td>
 </tr>
 
 <tr>
