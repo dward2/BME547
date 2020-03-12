@@ -161,13 +161,26 @@ In-class Work Time
 
 <tr>
 <td>Wed Mar 18</td>
+<td>Extended Spring Break</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Fri Mar 20</td>
+<td>Extended Spring Break</td>
+<td></td>
+</tr>
+
+
+<tr>
+<td>Wed Mar 25</td>
 <td><a href="Lectures/apis_webservices_requests.md">
 APIs, Intro To Web Services, Requests</a></td>
 <td><!--<a href="Lectures/name_server_project.md">-->Recommended Learning Project (ungraded)</a></td>
 </tr>
 
 <tr>
-<td>Fri Mar 20</td>
+<td>Fri Mar 27</td>
 <td>
   <a href="Lectures/flask_server_setup.md">
        Building a Web Server with Flask</a>
@@ -177,7 +190,7 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Wed Mar 25</td>
+<td>Wed Apr 1</td>
   <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
   <a href="Resources/virtual_machines.md">Virtual machines</a></td>
 <td>
@@ -186,14 +199,14 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Fri Mar 27</td>
+<td>Fri Apr 3</td>
   <td>
   <a href="Lectures/databases.md">Introduction to Databases</td>
   <td></td>
 </tr>
 
 <tr>
-  <td>Wed Apr 1</td>
+  <td>Wed Apr 8</td>
   <td><a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
   <a href="https://github.com/dward2/database_demo_starter">
   (starter repository here)</a></td>
@@ -201,49 +214,37 @@ APIs, Intro To Web Services, Requests</a></td>
 </tr>
 
 <tr>
-<td>Fri Apr 3</td>
+<td>Fri Apr 10</td>
 <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
 <td></td>
 </tr>
 
 <tr>
-<td> Tue Apr 7</td>
+<td> Tue Apr 14</td>
 <td></td>
 <td>Heart Rate Sentinel Server Due at 11:59 pm</td>
 </tr>
 
 <tr>
-<td>Wed Apr 8</td>
-<td>More on GUIs, Tkinter Widgets
-</td>
-<td>
-</td>
-</tr>
-
-<tr>
-<td>Fri April 10</td>
+<td>Wed Apr 15</td>
 <td><a href="Lectures/final_project_intro.md">Review Final Project</a>
 
 <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
 
-<a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>  
-  
+<a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>
 
+Final Day of Class
 </td>
-<td><!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned</td>
+<td><!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned
+</td>
 </tr>
 
-<tr>
-<td>Wed Apr 15</td>
-<td><a href="Lectures/intro_to_security.md">Introduction to Security</a>
+
+<!--<a href="Lectures/intro_to_security.md">Introduction to Security</a>-->
 
 <!--<a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>-->
   
-Final project work  
-Final Day of Class
-</td>
-<td></td>
-</tr>
+
 
 <tr>
 <td>Mon Apr 27</td>

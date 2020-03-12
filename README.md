@@ -3,6 +3,20 @@
 # BME 547 - Medical Software Design
 ### Spring 2020
 
+##Schedule Update
+**Exact plans for the rest of the semester are still in development.  Lecture
+delivery will likely be in the form of video recordings in Panopto that you 
+can watch on
+your own schedule.  Office hours and questions will be handled via internet
+chats.  Assignments will continue in similar formats with information provided
+through GitHub and Sakai, and turned in via GitHub Classroom repositories.**
+
+**The updated [schedule](schedule.md) should be viewed as tentative and will 
+likely be further modified to account for the different lecture format.  More 
+information to come.**
+
+  
+
 This repository serves as the default collection for all resources associated
 with the Duke BME Medical Software Design course (BME 547).
 
