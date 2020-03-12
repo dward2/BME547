@@ -3,7 +3,7 @@
 # BME 547 - Medical Software Design
 ### Spring 2020
 
-##Schedule Update
+## Schedule Update
 **Exact plans for the rest of the semester are still in development.  Lecture
 delivery will likely be in the form of video recordings in Panopto that you 
 can watch on
