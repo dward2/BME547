@@ -194,8 +194,10 @@ APIs, Intro To Web Services, Requests</a></td>
   <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
   <a href="Resources/virtual_machines.md">Virtual machines</a></td>
 <td>
-
-<!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->Heart Rate Sentinel Server Assigned
+IEC 62034 Assessment in Sakai Due
+  
+<!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->
+Heart Rate Sentinel Server Assigned
 </tr>
 
 <tr>
@@ -210,7 +212,7 @@ APIs, Intro To Web Services, Requests</a></td>
   <td><a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
   <a href="https://github.com/dward2/database_demo_starter">
   (starter repository here)</a></td>
-  <td>IEC 62034 Assessment in Sakai Due</td>
+  <td></td>
 </tr>
 
 <tr>
