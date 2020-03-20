@@ -187,7 +187,7 @@ APIs, Intro To Web Services, Requests</a></td>
 1. <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=710630ea-a0bd-45ee-8111-ab8300f9774c">APIs, Web Services, and Requests</a>  
 2. <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=35a11f63-fbfe-4d5b-a29e-ab830111cd65">Python Requests</a>
 </td>
-<td><!--<a href="Lectures/name_server_project.md">-->Recommended Learning Project (ungraded)</a></td>
+<td><a href="Lectures/name_server_project.md">Recommended Learning Project (ungraded)</a></td>
 </tr>
 
 <tr>
