@@ -3,17 +3,29 @@
 # BME 547 - Medical Software Design
 ### Spring 2020
 
-## Schedule Update
-**Exact plans for the rest of the semester are still in development.  Lecture
-delivery will likely be in the form of video recordings in Panopto that you 
-can watch on
-your own schedule.  Office hours and questions will be handled via internet
-chats.  Assignments will continue in similar formats with information provided
-through GitHub and Sakai, and turned in via GitHub Classroom repositories.**
+## Remote Learning Update (posted 3/20/20)
+**Here are the changes that will be made for the class to finish the semester
+under the remote learning scheme.**
+* Lecture content will be delievered by pre-recorded video that will be found
+on Panopto.  The [schedule](schedule.md) will be updated for each lecture topic
+to include not only a link to the appropriate GitHub lecture notes page but
+also a link to the corresponding Panopto videos.  There may be more than one
+video per lecture topic.
+* Open office hours will be held during our normally scheduled lecture time of
+Wed./Fri. 11:45 am to 1:00 pm.  This time can be used to ask questions about 
+the pre-recorded lecture videos and/or give additional live demonstrations as
+dictated by those in the office hours.  Other topics of interest may be 
+addressed.  Participation in these office hours is optional.  
+* These office hours will be held virtually using [Zoom](https://duke.zoom.us). 
+The Zoom meetings can be joined through Sakai.  On the class Sakai
+website, click on "Zoom Meetings" in the left hand menu, and then click "Join"
+next to the appropriate time.
+* Individual help and discussion will continue to be given via e-mail, GitHub
+Issues, and 1-1 "virtual" conversation as requested.
+* Assignments will continue to be given through Sakai and turned in via GitHub 
+Classroom repositories. 
 
-**The updated [schedule](schedule.md) should be viewed as tentative and will 
-likely be further modified to account for the different lecture format.  More 
-information to come.**
+**Dr. Ward, 3/20/2020**
 
   
 

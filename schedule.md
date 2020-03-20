@@ -183,7 +183,10 @@ In-class Work Time
 <td>Wed Mar 25</td>
 <td><a href="Lectures/apis_webservices_requests.md">
 APIs, Intro To Web Services, Requests</a></td>
-<td><a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=710630ea-a0bd-45ee-8111-ab8300f9774c">APIs, Web Services, and Requests</a></td>
+<td>
+1. <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=710630ea-a0bd-45ee-8111-ab8300f9774c">APIs, Web Services, and Requests</a>  
+2. <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=35a11f63-fbfe-4d5b-a29e-ab830111cd65">Python Requests</a>
+</td>
 <td><!--<a href="Lectures/name_server_project.md">-->Recommended Learning Project (ungraded)</a></td>
 </tr>
 
@@ -193,6 +196,7 @@ APIs, Intro To Web Services, Requests</a></td>
   <a href="Lectures/flask_server_setup.md">
        Building a Web Server with Flask</a>
   </td>
+<td></td>
   <td><!--<a href="Lectures/time_server_project.md">-->Recommended Server Project
 (ungraded)</a></td> 
 </tr>
@@ -201,6 +205,7 @@ APIs, Intro To Web Services, Requests</a></td>
 <td>Wed Apr 1</td>
   <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
   <a href="Resources/virtual_machines.md">Virtual machines</a></td>
+<td></td>
 <td>
 IEC 62034 Assessment in Sakai Due
   
@@ -213,6 +218,7 @@ Heart Rate Sentinel Server Assigned
   <td>
   <a href="Lectures/databases.md">Introduction to Databases</td>
   <td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -220,6 +226,7 @@ Heart Rate Sentinel Server Assigned
   <td><a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
   <a href="https://github.com/dward2/database_demo_starter">
   (starter repository here)</a></td>
+<td></td>
   <td></td>
 </tr>
 
@@ -227,10 +234,12 @@ Heart Rate Sentinel Server Assigned
 <td>Fri Apr 10</td>
 <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
 <td></td>
+<td></td>
 </tr>
 
 <tr>
 <td> Tue Apr 14</td>
+<td></td>
 <td></td>
 <td>Heart Rate Sentinel Server Due at 11:59 pm</td>
 </tr>
@@ -245,6 +254,7 @@ Heart Rate Sentinel Server Assigned
 
 Final Day of Class
 </td>
+<td></td>
 <td><!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned
 </td>
 </tr>
@@ -258,6 +268,7 @@ Final Day of Class
 
 <tr>
 <td>Mon Apr 27</td>
+<td></td>
 <td></td>
 <td> Final Project Due at 9:00 am </td>
 </tr>

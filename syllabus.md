@@ -1,5 +1,8 @@
 # BME 547 - Medical Software Design - Spring 2020  
 
+**Check [HERE](README.md) for updates related to the switch to remote learning.
+Some of these changes may supercede information provided below.
+
 ## Instructor
 Dr. David Ward  
 <david.a.ward@duke.edu>  
