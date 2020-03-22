@@ -184,6 +184,7 @@ In-class Work Time
 <td><a href="Lectures/apis_webservices_requests.md">
 APIs, Intro To Web Services, Requests</a></td>
 <td>
+
 1. <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=710630ea-a0bd-45ee-8111-ab8300f9774c">APIs, Web Services, and Requests</a>  
 2. <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=35a11f63-fbfe-4d5b-a29e-ab830111cd65">Python Requests</a>
 </td>
@@ -196,8 +197,13 @@ APIs, Intro To Web Services, Requests</a></td>
   <a href="Lectures/flask_server_setup.md">
        Building a Web Server with Flask</a>
   </td>
-<td></td>
-  <td><!--<a href="Lectures/time_server_project.md">-->Recommended Server Project
+<td>
+
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=b1367883-b4d2-47bb-8937-ab86013a5df3">Web Server Development with Flask</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=e6e9b516-c411-4a8f-a6e8-ab86013cdc87">Variable URLs</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=df81b9ff-9766-4cbe-87d7-ab86013cfc7a">More with Route Names</a>
+</td>
+  <td><a href="Lectures/time_server_project.md">Recommended Server Project
 (ungraded)</a></td> 
 </tr>
 

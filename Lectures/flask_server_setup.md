@@ -34,7 +34,7 @@ for detailed example of writing `flask` code for a web server.
        variables into a JSON string for return
     + `app.run()` in `if __name__ == "__main__":` code
 * Access these endpoints by browser and local client program.
-  + Describe `localhost` and `http://127.0.0.1:5000`
+  + Describe `localhost:5000` and `http://127.0.0.1:5000`
   + Show how server can run in one terminal window while client in a second
     terminal window
 * Add a POST endpoint to the server.  Receive a JSON
@@ -43,13 +43,15 @@ for detailed example of writing `flask` code for a web server.
 * Add a variable URL
   + `@app.route("/sayhello/<name>", methods=["GET"])`
   + `def say_hello(name):`
-* Run external server
-  + `app.run(host="0.0.0.0")`
+
+  
   
 ### Practice Project
 Click <a href="./time_server_project.md">here</a> for a mini-project to
 practice server creation.
 
-### As Time Allows
+<!---### As Time Allows
+* Run external server
+  + `app.run(host="0.0.0.0")`
 * Demonstrate in PyCharm
-* Run python vs Run flask (FLASK_APP=my_server.py flask run --host=0.0.0.0)
+* Run python vs Run flask (FLASK_APP=my_server.py flask run --host=0.0.0.0)--->
