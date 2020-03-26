@@ -210,8 +210,15 @@ APIs, Intro To Web Services, Requests</a></td>
 <tr>
 <td>Wed Apr 1</td>
   <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
-  <a href="Resources/virtual_machines.md">Virtual machines</a></td>
-<td></td>
+  <a href="Resources/virtual_machines.md">Virtual machines</a>,
+  <a href="Resources/WebServices/screen.md">Screen</a></td>
+<td>
+
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=42e44216-db67-4df8-8c29-ab8a01570acf">Server Design</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=c652765d-258f-4825-b9b5-ab8a0158e7c4">Virtual Machines</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=4a01d850-2836-4490-b111-ab8a0158f5a6">Server Debugging</a>
+
+</td>
 <td>
 IEC 62034 Assessment in Sakai Due
   
@@ -229,7 +236,7 @@ Heart Rate Sentinel Server Assigned
 
 <tr>
   <td>Wed Apr 8</td>
-  <td><a href="Resources/WebServices/screen.md">Screen</a>, MongoDB/PyMODM Example
+  <td> MongoDB/PyMODM Example
   <a href="https://github.com/dward2/database_demo_starter">
   (starter repository here)</a></td>
 <td></td>
