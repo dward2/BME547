@@ -20,7 +20,7 @@ server, if you prefer, but does require some additional set-up.
 immediately, or may take some time to set up.  You will receive an e-mail when
 it is available.
 * Once the VM is available, you will see it listed on the home page of 
-<https://vmc.duke.edu>.  
+<https://vcm.duke.edu>.  
 * Clicking on the name of your virtual server will allow you access to the VM
 Management Tools.  Your virtual server will have a default name such as 
 `vcm-####.vm.duke.edu`.  This will be used as the URL to access your server.
