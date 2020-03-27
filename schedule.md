@@ -222,7 +222,7 @@ APIs, Intro To Web Services, Requests</a></td>
 <td>
 IEC 62034 Assessment in Sakai Due
   
-<!--<a href="Assignments/heart_rate_sentinel_server_assignment.md">-->
+<a href="Assignments/heart_rate_sentinel_server_assignment.md">
 Heart Rate Sentinel Server Assigned
 </tr>
 
@@ -254,7 +254,7 @@ Heart Rate Sentinel Server Assigned
 <td> Tue Apr 14</td>
 <td></td>
 <td></td>
-<td>Heart Rate Sentinel Server Due at 11:59 pm</td>
+<td></td>
 </tr>
 
 <tr>
@@ -265,10 +265,12 @@ Heart Rate Sentinel Server Assigned
 
 <a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>
 
-Final Day of Class
+
 </td>
 <td></td>
-<td><!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned
+<td>Heart Rate Sentinel Server Due at 9:00 am
+
+<!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned
 </td>
 </tr>
 

@@ -8,11 +8,8 @@ situation. So if a new
 heart rate is received for a patient that is tachycardic, the email should be 
 sent out at that time. The tachycardic calculation should be based on age 
 (more info [here](https://en.wikipedia.org/wiki/Tachycardia); you can assume 
-all patients will be one year old or older). The notification e-mail can 
-be sent using the free [Sendgrid API](https://sendgrid.com/) (there is a 
-[Sendgrid python package](https://github.com/sendgrid/sendgrid-python) that 
-wraps the API).  More information on setting up SendGrid can be found 
-[here](../Resources/WebServices/sendgrid.md).
+all patients will be one year old or older). A system for sending the e-mails
+is under development and will be shared with you next week.
 
 Assignment repositories will be hosted in GitHub Classroom.  See the 
 assignment in Sakai for the link to create a repository.
@@ -26,18 +23,19 @@ in your route name.
 * `POST /api/new_patient` that takes a JSON as follows:
   ```
   {
-      "patient_id": "1", # usually this would be the patient MRN
+      "patient_id": 1, # usually this would be the patient MRN
       "attending_email": "dr_user_id@yourdomain.com", 
       "patient_age": 50, # in years
   }
   ```
-  The true patient_id and patient_age will always be integers.  But, the values
+  The true patient_id and patient_age will always be integers.  But, the data
   sent to this route in the above dictionary may contain integers, numeric 
   strings, or a string with letters and numbers.  Your code must be prepared
   to parse this input and determine whether the id and age are acceptable (i.e.,
   can be turned into an integer) or rejected (if it contains any letters).  So,
-  `123` or `"123"` should be accepted as patient_ids, while `"a54"` or `"aj"` 
-  should be rejected.
+  `123` or `"123"` should be accepted as patient_ids (although the string 
+  `"123"` should be converted into the integer `123` for storage), while 
+  `"a54"` or `"aj"` should be rejected.  
   This route is called to register a new patient with your server.  This would
   occur when a heart rate monitor is checked out and attached 
   to a particular patient.  This will allow you to initialize a patient in
@@ -47,11 +45,12 @@ in your route name.
 * `POST /api/heart_rate` that takes a JSON as follows:
   ```
   {
-      "patient_id": "1", # usually this would be the patient MRN
+      "patient_id": 1, # usually this would be the patient MRN
       "heart_rate": 100
   }
   ```
-  As above, the patient_id may be sent as an integer or a string, and not 
+  As with the `/api/new_patient` route, the patient_id may be sent as an 
+  integer or a string, and not 
   necessarily the same as was sent in the `new_patient` call.  For example, the
   id might be sent as a string such as `"1501"` in the `new_patient` call, but 
   sent as an integer such as `1501` in the `heart_rate_ call`.  The 
@@ -70,11 +69,11 @@ in your route name.
   the date/time stamp of that heart rate.
   
 * `GET /api/status/<patient_id>`  
-  should return a JSON containing the latest heart rate, as an integer, for the
-  specified patient, whether this patient is 
+  should return a dictionary in a JSON string containing the latest heart rate, 
+  as an integer, for the specified patient, whether this patient is 
   currently tachycardic based on this most recently posted heart rate, and 
-  the date/time stamp of this most recent heart rate.  The return JSON
-  should look like:
+  the date/time stamp of this most recent heart rate.  The return 
+  dictionary/JSON string should look like:
   ```
   {
       "heart_rate": 100,
@@ -96,7 +95,7 @@ in your route name.
 * `POST /api/heart_rate/interval_average` that takes a JSON as follows: 
   ```
   {
-      "patient_id": "1",
+      "patient_id": 1,
       "heart_rate_average_since": "2018-03-09 11:00:36.372339" // date string
   }
   ```
@@ -149,26 +148,22 @@ it is sent.  You can choose to store this information by using an in-memory
 data structure like Python lists and dictionaries, or you can choose to use
 an external database.
 
-For the attending e-mail:  use an e-mail address that you can check to verify
-appropriate function.  When your code is being evaluated for grading, a real 
-e-mail address will be used for verification.  
+As stated above, more information will be provided next week on how to send
+the physician e-mail.
 
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
 (unit testing, git practices, Travis CI, virtual environments, PEP8, 
 docstrings, descriptive README.md, license, etc)__
-- Unit tesing should be done in parallel with code development.  So, when code
+- Unit testing should be done in parallel with code development.  So, when code
 is written on a feature branch and merged into master, there must be
 appropriate unit testing available during that merge.  You cannot write the
 code first, merge it, and then write the tests later.  Any code that is merged
 without simultaneous unit testing will be a deduction.
-- As discussed below, unit tests are not required for the function that calls 
-SendGrid, so keep this function separate and small.
+<!---- As discussed below, unit tests are not required for the function that calls 
+SendGrid, so keep this function separate and small.--->
 - Create a git tag for the final version of your repository as done previously 
 in this class.
-- The SendGrid part of this assignment will not be worth the majority of 
-points, so focus on that part after the rest of the functionality has been 
-completed.
 - Deploy your server code on your VCM and include in your README.md file the 
 hostname and port on which your server is running (eg., 
 `vcm-1000.vm.duke.edu:5000`).  Remember to 
@@ -185,42 +180,3 @@ include your client code in your repository.  If the graders have any issue
 with accessing or using your server, seeing how you did it in your client 
 could help in their evaluation.  
 
-## More information about SendGrid
-You need to create a free account at [sendgrid.com](https://sendgrid.com) and 
-then create an API key which is a key that authenticates you to use the 
-SendGrid API. Keys can be created either by following the procedures given at 
-<https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key>
-or using the Startup Guide as described at 
-[sendgrid.md](../Resources/WebServices/sendgrid.md).  Note that 
-SendGrid has a nice [python API](https://github.com/sendgrid/sendgrid-python) 
-that you can install using pip. In the 
-[example code shown there](https://github.com/sendgrid/sendgrid-python#quick-start), 
-you need to set the `SENDGRID_API_KEY` environment variable to your API key 
-you created earlier. Do not commit your key to GitHub in either a file or 
-hard-coded into your python code.  That will expose 
-it for others to use, and SendGrid has been known to scan the web for exposed
-keys and cancel accounts for keys it finds in order to avoid hackers/spammers 
-from using their system.  More detailed information on setting up your API Key
-and `sendgrid` can be found [here](../Resources/WebServices/sendgrid.md).
-
-NOTE:  For this assignment, unit tests for your function that sends e-mail
-using SendGrid are not required as that would require sending your API key to
-Travis.  While there are secure ways of doing so, it is not a topic for this
-class.
-
-### Special note for Mac users
-:eyes: Apparently python 3.6 and higher for Mac does not come configured to use the 
-standard root certificate authorities, so some folks may get a ssl error when 
-using the SendGrid client. To fix this, run the following command:
-
-```
-/Applications/Python\ 3.6/Install\ Certificates.command
-```
-
-If you installed Python 3.7, change 3.6 to 3.7 in the command above.
-
-If you're getting an error like this in conda, try 
-```sh
-conda remove certifi
-conda install certifi
-```
