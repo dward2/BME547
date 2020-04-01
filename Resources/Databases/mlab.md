@@ -7,33 +7,31 @@ instance on their virtual machine, you can connect to and interact with it
 using database connection URL, as discussed in class. Remember that a database 
 is a program, just like any other program you write. By knowing the connection 
 URL, your Python Flask program knows where the database is running and can 
-communicate with the database to save entries or retreive entries as needed. 
+communicate with the database to save entries or retrieve entries as needed. 
 
 ## Setup
 1. [Sign up](https://www.mongodb.com/cloud/atlas) for a free account at 
 mongoDB.
 2. Click on the Free Starter Cluster option.
-3. Select any cloud provider
-4. Choose a region close to Duke
+3. Select any cloud provider.
+4. Choose a region close to Duke or your current location.
 5. Ignore "Cluster Tier" or "Additional Settings" unless you want to spend
 some money to customize your account.  The base settings should be fine.
 6. Name your cluster anything you would like (perhaps "bme547")
 7. Click "Create Cluster" at the bottom of the page.
 8. After some period of time, your cluster will be ready.
-9. Follow the "Get Started" tasks by creating a database user.    
+9. Create a database user.    
    a. Click on "Database Access" under "Security" on the left-hand list.  
    b. Make sure the "MongoDB Users" sub-tab is selected.  Then click "Add New 
    User" button to the right.  
    c. Complete the username field, select a password (remember this), choose 
    "Read and write to any database", and click "Add User".
-10. Follow the next "Get Started" topic by adding to the "IP Whitelist".  
+10. Add IP addresses allowed to access the database on the "IP Whitelist".  
    a. Click on "Network Access" under "Security" on the left-hand list.  
    b. Make sure the "IP Whitelist" tab is selected.  Click on "Add IP Address".  
    c. Select "Allow Access From Anywhere" in the window that pops up.  Click 
     "Confirm".  It may take a few minutes for this step to be confirmed.
-11. Skip the "Load Sample Data" step of the "Get Started" tasks, unless you
-want to play around with some data.
-12. Finish the "Get Started" tasks by connecting to your database.  
+11. Get connection information to your database.  
    a. If not already there, click on "Clusters" under "Atlas" on the left-hand
    list.  
    b. Click on the "Connect" button.   
@@ -50,9 +48,9 @@ flask programs with `pymodm`, your first couple lines will look something like:
 from pymodm import connect
 connect("mongodb+srv://<username>:<password>@bme547-nlfrn.mongodb.net/test?retryWrites=true&w=majority")
 ```
-The string in the `connect` command above is the one you copied in step 12e 
+The string in the `connect` command above is the one you copied in step 11e 
 above, except `<username>` should have already been replaced by the username 
-you created in step 8 above.  You will manually need to replace `<password>` 
+you created in step 9 above.  You will manually need to replace `<password>` 
 with the password you created in step 9c above.
 
 Finally, you will need to add one more package to your `requirements.txt` file:
