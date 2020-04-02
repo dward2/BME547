@@ -230,7 +230,13 @@ Heart Rate Sentinel Server Assigned
 <td>Fri Apr 3</td>
   <td>
   <a href="Lectures/databases.md">Introduction to Databases</td>
-  <td></td>
+<td>
+
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=7e107f8a-ab5d-4bb6-9d70-ab9100de03f9">Intro to Databases</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=418bac02-0040-499e-a939-ab9100de1624">Setting up MongoDB Cloud Database</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=8e8faa62-7cb0-4bb1-bd3e-ab91011dc054">PyMODM</a>
+
+</td>
 <td></td>
 </tr>
 
