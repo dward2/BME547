@@ -244,7 +244,11 @@ Heart Rate Sentinel Server Assigned
   <td>Wed Apr 8</td>
   <td> MongoDB/PyMODM Example
   </td>
-<td></td>
+<td>
+
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=eb874abf-57aa-4a68-92a2-ab940166eb55">PyMODM/MongoDB Python Code Example</a>
+
+</td>
   <td></td>
 </tr>
 
