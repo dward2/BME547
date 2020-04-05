@@ -243,8 +243,7 @@ Heart Rate Sentinel Server Assigned
 <tr>
   <td>Wed Apr 8</td>
   <td> MongoDB/PyMODM Example
-  <a href="https://github.com/dward2/database_demo_starter">
-  (starter repository here)</a></td>
+  </td>
 <td></td>
   <td></td>
 </tr>
