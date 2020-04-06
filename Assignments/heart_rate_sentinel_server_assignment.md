@@ -9,7 +9,7 @@ heart rate is received for a patient that is tachycardic, the email should be
 sent out at that time. The tachycardic calculation should be based on age 
 (more info [here](https://en.wikipedia.org/wiki/Tachycardia); you can assume 
 all patients will be one year old or older). A system for sending the e-mails
-is under development and will be shared with you next week.
+is described below.
 
 Assignment repositories will be hosted in GitHub Classroom.  See the 
 assignment in Sakai for the link to create a repository.
@@ -148,8 +148,38 @@ it is sent.  You can choose to store this information by using an in-memory
 data structure like Python lists and dictionaries, or you can choose to use
 an external database.
 
-As stated above, more information will be provided next week on how to send
-the physician e-mail.
+### E-mail Server
+I have set-up a server to simulate accessing a third-party webservice for 
+sending e-mails.  When your program needs to send an e-mail, it should make
+a POST request to the following URL:
+```
+http://vcm-7631.vm.duke.edu:5007/hrss/send_email
+```
+**NOTE**: The port is `5007`.  This POST request should be sent a JSON with the
+following dictionary contents:
+```
+{
+ "from_email": <from_email_str>,
+ "to_email": <to_email_str>,
+ "subject": <subject_str>,
+ "content": <content_str>
+}
+```
+where `<from_email_str>` is a string containing the e-mail address from which
+the message is being sent, `<to_email_str>` is a string containing the e-mail
+address to which the message is being sent, `<subject_str>` is a string
+containing the subject of the e-mail, and `<content_str>` is a string 
+containing the content of the e-mail.
+
+If the request is successful, a string will be returned indicating that the
+e-mail was sent and the from and to address.  The status code will be 200.
+
+If the request is bad (i.e., there is a problem with the dictionary being sent
+or the e-mail addresses in it), a status code of 400 will be returned along
+with a string describing the error.
+
+If you have the code to call the e-mail server in its own modular function, you
+do not need to have a unit test for that function.
 
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
