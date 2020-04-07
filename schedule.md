@@ -247,7 +247,7 @@ Heart Rate Sentinel Server Assigned
 <td>
 
 * <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=eb874abf-57aa-4a68-92a2-ab940166eb55">PyMODM/MongoDB Python Code Example</a>
-
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=c074fea3-716d-4dbe-a9e1-ab960129374b">Issue with classes & modules</a>
 </td>
   <td></td>
 </tr>
