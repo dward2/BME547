@@ -255,7 +255,11 @@ Heart Rate Sentinel Server Assigned
 <tr>
 <td>Fri Apr 10</td>
 <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
-<td></td>
+<td>
+
+* <a href="">Intro to GUIs</a>
+* <a href="">GUI programming example</a>
+</td>
 <td></td>
 </tr>
 

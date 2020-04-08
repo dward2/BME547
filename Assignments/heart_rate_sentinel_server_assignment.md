@@ -72,8 +72,9 @@ in your route name.
   should return a dictionary in a JSON string containing the latest heart rate, 
   as an integer, for the specified patient, whether this patient is 
   currently tachycardic based on this most recently posted heart rate, and 
-  the date/time stamp of this most recent heart rate.  The return 
-  dictionary/JSON string should look like:
+  the a string containing the date and time of this most recent heart rate 
+  formatted as shown in the example below.  
+  The return dictionary/JSON string should look like:
   ```
   {
       "heart_rate": 100,
@@ -82,7 +83,7 @@ in your route name.
   }
   ```
    Note that the `status` key should contain either the string `"tachycardic"` or
-   `"not tachycardic"`.  The key `timestamp` should contain a `datetime` string.
+   `"not tachycardic"`.  
  
 * `GET /api/heart_rate/<patient_id>` should return a list of all the previous 
   heart rate measurements for that patient, as a list of integers.  Timestamps 
