@@ -257,8 +257,8 @@ Heart Rate Sentinel Server Assigned
 <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></td>
 <td>
 
-* <a href="">Intro to GUIs</a>
-* <a href="">GUI programming example</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=91e3f343-3be6-4c76-8b26-ab97013270a7">Intro to GUIs</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=542bb9d6-1554-4a72-8862-ab970135695a">GUI programming example</a>
 </td>
 <td></td>
 </tr>
