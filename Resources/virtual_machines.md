@@ -14,7 +14,7 @@ and a request for a second virtual machine can be made.
 using your NetID.
 * Click on "Reserve a VM".
 * Select the type of VM you would like.  We will be demonstrating the use of 
-a Linux (Ubuntu) VM in class.  It is possible to use Windows 10 to host your
+a Linux (Ubuntu 18) VM in class.  It is possible to use Windows 10 to host your
 server, if you prefer, but does require some additional set-up.
 * Depending on virtual machine availability, your VM may be available
 immediately, or may take some time to set up.  You will receive an e-mail when
