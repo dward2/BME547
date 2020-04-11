@@ -23,7 +23,7 @@ development and design conventions taught in this class, including:
 * continuous integration
 * unit testing
 * PEP8
-* docstrings / Sphinx documentation
+* docstrings
 * Use of issues and milestones to track development progress (new to this 
 assignment)
 
