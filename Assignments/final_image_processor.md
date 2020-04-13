@@ -27,48 +27,64 @@ development and design conventions taught in this class, including:
 * Use of issues and milestones to track development progress (new to this 
 assignment)
 
-**You should approach this final project as an opportunity to show a potential
-future employer an example of your software development skills.**
 
 ## Functional Specifications
 ### GUI Client
-At a minimum, you GUI client should do the following:
+At a minimum, your GUI client should do the following:
 * Provide a __graphical__ user interface that will allow a user to select an 
   image for upload to your web-server, and then issue a RESTful API request
   to your cloud service to upload the image.
   
-* In addition to uploading the raw image, your __graphical__ user interface 
-should give the user a choice of processing steps that the server should
-perform on the uploaded image, including:
+* Your __graphical__ user interface should allow the user to choose an uploaded
+image and conduct an image processing step on that image.  
+
+The choice of 
+processing steps that the server should perform on an uploaded image, including:
 <!--  + Histogram Equalization __default__
   + Contrast Stretching
   + Log Compression
   + Invert Image  
   (colors, not orientation  example: ![](support_files/pup.jpg) to ![](support_files/invert_pup.jpg))  
 -->  
-  The processed image should also be stored on the server.
+  The processed image should also be stored on the server.  Update the filename
+  of the processed image to indicate it has been processed.
 
 * Your user interface should also provide:
-  + The ability to choose, display, and compare original and processed images 
-  from the server.
-  + An option to download original or processed image(s) from the server.
+  + The ability to choose and display an image (original or processed) from the
+  server.
+  + The option to show two images from the server side-by-side.
+  + The option to download an image (original or processed) from the server and
+  save it on the local computer.
   + Display useful metadata of displayed images, including:
-    - Timestamp when uploaded
+    - Timestamp when uploaded (or processed)
     - Image size (e.g., X x Y pixels)
   
-### Cloud Server
-At a minimum, your image processor server should do the following:
-* Be a cloud-based web service running on your virtual machine that exposes 
-a well-crafted RESTful API that will
-  implement the image processing methods specified above (check out
-  [scikit-image](http://scikit-image.org/) to make your life easier on the image processing algorithms!).
-  
+* In order to complete these tasks, the client GUI will need to make RESTful 
+API requests to the server to get the list of uploaded images, to initiate the 
+image processing step on a selected image, and to 
+download images for either display or saving on the computer.
 
-* A persistent database should be implemented in some form to do the following:   
+### Cloud Server
+At a minimum, your server should be a cloud-based web service running on your 
+virtual machine that exposes a well-crafted RESTful API that will implement 
+the tasks needed by the client as described above and outlined here:
+
+* Accept images for uploading and storage in a persistent database
+
+* Conduct the image processing methods on selected files as specified above 
+  (check out
+  [scikit-image](http://scikit-image.org/) to make your life easier on the 
+  image processing algorithms!).
+  
+* Communicate with and utilize a persistent database that will:
   + Store uploaded images and timestamps
   + Store processed images and timestamps
+
+* Provide a list of available images to the client
+
+* Provide for the downloading of an image as requested
   
-* Provide what other services are needed for the client to perform its needed
+* Provide any other services as needed for the client to perform its needed
 functions.
 
 **Note**: The GUI should only make requests to the server and should not make 
@@ -79,12 +95,19 @@ making requests of the server.
 ## Deliverables
 * A detailed `README` describing the final performance and state of your
   project.  This should include a basic instruction manual for your GUI client.
-* Recorded video demo of your client program in action.
+* Recorded video demo of your client program in action.      
 * All project code for GUI client, server, and tests (in the form of a tagged 
-GitHub repository)
+GitHub repository).  Client and server code should be well documented with docstrings.
 * Link to deployed web service in your`README.md`.
-* Sphinx-generated documentation pushed to GitHub repository.  This should
-include information about your server API.
+
+#### Video demo
+* This can be a recorded screen capture or a video taken by camera.
+* Zoom allows an easy way to record actions on your screen with narration.
+Visit <https://support.zoom.us/hc/en-us/articles/201362473-Local-Recording> or
+do a web search on "using zoom to record screen" for lots of tutorials.
+* The video can be shared in many ways: in your GitHub repository, via a link
+to your cloud Zoom recording, on YouTube, or any other method.  Just indicate
+in your `README.md` how I can access the video.
 
 <!--## Recommended Datasets
 Your project may utilize some existing databases of images (or you can choose to
