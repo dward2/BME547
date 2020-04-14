@@ -36,18 +36,11 @@ At a minimum, your GUI client should do the following:
   to your cloud service to upload the image.
   
 * Your __graphical__ user interface should allow the user to choose an uploaded
-image and conduct an image processing step on that image.  
-
-The choice of 
-processing steps that the server should perform on an uploaded image, including:
-<!--  + Histogram Equalization __default__
-  + Contrast Stretching
-  + Log Compression
-  + Invert Image  
-  (colors, not orientation  example: ![](support_files/pup.jpg) to ![](support_files/invert_pup.jpg))  
--->  
-  The processed image should also be stored on the server.  Update the filename
-  of the processed image to indicate it has been processed.
+image and conduct an image processing step on that image.  For this assignment,
+the image processing step will be to invert an image (see example below).  This
+processing step should happen on the server, not the client.
+  
+  ![](support_files/invert_ex.png)
 
 * Your user interface should also provide:
   + The ability to choose and display an image (original or processed) from the
@@ -69,12 +62,14 @@ At a minimum, your server should be a cloud-based web service running on your
 virtual machine that exposes a well-crafted RESTful API that will implement 
 the tasks needed by the client as described above and outlined here:
 
-* Accept images for uploading and storage in a persistent database
+* Accept images for uploading and storage in a persistent database and include
+a timestamp in the database for when the image was uploaded
 
 * Conduct the image processing methods on selected files as specified above 
   (check out
   [scikit-image](http://scikit-image.org/) to make your life easier on the 
-  image processing algorithms!).
+  image processing algorithms!) and store the processed image in the database
+  along with a timestamp of when the processing took place
   
 * Communicate with and utilize a persistent database that will:
   + Store uploaded images and timestamps
@@ -82,7 +77,7 @@ the tasks needed by the client as described above and outlined here:
 
 * Provide a list of available images to the client
 
-* Provide for the downloading of an image as requested
+* Provide for the downloading of an image from the database to the client
   
 * Provide any other services as needed for the client to perform its needed
 functions.
