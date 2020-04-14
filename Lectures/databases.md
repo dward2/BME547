@@ -145,5 +145,20 @@ Comparison operators can be found at
 <https://docs.mongodb.com/manual/reference/operator/query-comparison/>.  Example:  
 `results = User.objects.raw({"age": {"$gte": 1000}})`
  
+### Checking for whether a primary key is in database
+If you do a search for a value in the primary key field that does not exist
+in the database, `pymodm` will generate an error.  So, here is some sample
+code for how you can check to see if an entry exists in the database.  
 
+```python
+from pymodm import errors as pymodm_errors
 
+try:
+    db_item = User.objects.raw({"_id": <item_to_search>})
+except pymodm_errors.DoesNotExist:
+    return False
+return True
+```
+This code snippet will return False if the `<item_to_search>` value is not
+found in the primary key field of the database.  It will return `True` if it
+is found.
