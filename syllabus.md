@@ -97,7 +97,7 @@ will be referenced throughout the semester.
 Project details will be discussed in lecture throughout the semester.
 
 ## Grading
-####**Updated on 4/15/2020 for Remote Learning**
+#### **Updated on 4/15/2020 for Remote Learning**
 Due to the current remote learning situation, I feel that it is appropriate to
 reduce the amount of value the final project has on the final grade for the
 class.  However, there may be some in the class who would like to utilize the 

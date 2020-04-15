@@ -283,7 +283,7 @@ Heart Rate Sentinel Server Assigned
 <td></td>
 <td>Heart Rate Sentinel Server Due at 9:00 am
 
-<!--<a href="Assignments/final_image_processor.md">-->Final Project Assigned
+<a href="Assignments/final_image_processor.md">Final Project Assigned
 </td>
 </tr>
 
