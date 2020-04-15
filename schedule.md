@@ -272,7 +272,7 @@ Heart Rate Sentinel Server Assigned
 
 <tr>
 <td>Wed Apr 15</td>
-<td><a href="Lectures/final_project_intro.md">Review Final Project</a>
+<td>
 
 <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
 
