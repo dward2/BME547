@@ -1,5 +1,10 @@
 # BME 547 - Medical Software Design - Spring 2020  
 
+#### **Posted 4/15/2020**
+See [Grading](https://github.com/dward2/BME547/blob/master/syllabus.md#grading)
+section below for updates to grading scheme.
+
+#### **Posted 3/20/2020**
 **Check [HERE](README.md) for updates related to the switch to remote learning.
 Some of these changes may supercede information provided below.
 
@@ -92,25 +97,38 @@ will be referenced throughout the semester.
 Project details will be discussed in lecture throughout the semester.
 
 ## Grading
+####**Updated on 4/15/2020 for Remote Learning**
+Due to the current remote learning situation, I feel that it is appropriate to
+reduce the amount of value the final project has on the final grade for the
+class.  However, there may be some in the class who would like to utilize the 
+existing grading scheme such that the high weight of the final project could
+improve their grade with an excellent performance on the final project.  So, I 
+will calculate the class grade in two ways.  The first
+method uses the original breakdown where the final project will be worth
+50% of the final grade.  The second method will reduce the final project
+to 20% of the grade and increase the assignments portion to 65%.  I will 
+record the higher of the two methods as the final grade.
+
 Assignments will be hosted in the course GitHub repository, GitHub Classroom,
 and Sakai.
 Due dates--including those that change--will be announced in lecture and by
 Sakai announcements that will be emailed to the
 class.  
-
-The following grading scheme is subject to change as the semester progresses:
 <table>
 <tr>
+<th></th><th>Method 1 (original)</th><th>Method 2 (revised)</th>
+</tr>
+<tr>
 <td>Participation / In-Class Assignments</td>
-<td>15%</td>
+<td>15%</td><td>15%</td>
 </tr>
 <tr>
 <td>Assignments</td>
-<td>35%</td>
+<td>35%</td><td>65%</td>
 </tr>
 <tr>
 <td>Final project</td>
-<td>50%</td>
+<td>50%</td><td>20%</td>
 </tr>
 </table>
 
