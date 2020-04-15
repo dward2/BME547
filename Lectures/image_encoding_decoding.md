@@ -131,6 +131,14 @@ The process for saving the base64 string into an image file on disk is
 demonstrated by the `save_b64_image()` function.
   * The base64 decoding is done the same as in the `view_b64_image()` function.
   * The resulting bytes are then written to a binary file. 
+  
+## Image Toolbox
+On the page [image_toolbox.md](../Resources/image_toolbox.md) in the Resources
+section, I describe in more detail the various transformations and states that
+the image data can be held in Python, including the base64 encoding and
+decoding.  Also included is code to perform the various transformation.  This
+information provides a basis for using and manipulating images for your final
+project. 
 
 ## Documentation Links
 * <https://docs.python.org/3/library/base64.html>
