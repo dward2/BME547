@@ -276,9 +276,6 @@ Heart Rate Sentinel Server Assigned
 
 <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
 
-<a href="Lectures/github_teams.md">Projects/Milestones/Issues in GitHub</a>
-
-
 </td>
 <td>
 
