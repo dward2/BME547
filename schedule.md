@@ -280,7 +280,7 @@ Heart Rate Sentinel Server Assigned
 <td>
 
 * <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=5aae2ebf-029b-4d00-ab84-ab9e00f22572">Finishing Course and Final Project</a>
-
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=17173218-235b-48d0-81ad-ab9e01009363">GitHub Issues and Milestones</a>
 </td>
 <td>Heart Rate Sentinel Server Due at 9:00 am
 
