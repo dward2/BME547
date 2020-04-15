@@ -1,5 +1,10 @@
 # BME 547 - Medical Software Design - Spring 2020  
 
+####**Posted 4/15/2020**
+See [Grading](https://github.com/dward2/BME547/blob/master/syllabus.md#grading)
+section below for updates to grading scheme.
+
+####**Posted 3/20/2020**
 **Check [HERE](README.md) for updates related to the switch to remote learning.
 Some of these changes may supercede information provided below.
 
@@ -109,16 +114,6 @@ and Sakai.
 Due dates--including those that change--will be announced in lecture and by
 Sakai announcements that will be emailed to the
 class.  
-
-The following grading scheme is subject to change as the semester progresses:
-Topic | Method 1 (original) | Method 2 (revised)
------ | ------------------- | ------------------
-1 | 2 | 3
-4 | 4 | 4
-
-
-
-
 <table>
 <tr>
 <th></th><th>Method 1 (original)</th><th>Method 2 (revised)</th>
