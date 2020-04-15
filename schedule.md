@@ -273,8 +273,9 @@ Heart Rate Sentinel Server Assigned
 <tr>
 <td>Wed Apr 15</td>
 <td>
+<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
 
-<a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
+<a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
 
 </td>
 <td>
