@@ -129,7 +129,7 @@ The following is a partial list of aspects of the project that will be graded.
   + Modularity of software code
   + Handling and raising exceptions
   + Language convention and style (PEP8)
-  + Sphinx documentation for all modules/functions
+  + Docstrings for all functions
 * Testing and CI
   + Unit test coverage of all functions (except Flask handler and GUI calls)
   + Travis CI passing build
