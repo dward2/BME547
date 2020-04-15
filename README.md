@@ -3,7 +3,13 @@
 # BME 547 - Medical Software Design
 ### Spring 2020
 
-## Remote Learning Update (posted 3/20/20)
+## Remote Learning Updates
+####**Posted 4/15/2020**
+Please see the Grading section of the syllabus ([linked here](https://github.com/dward2/BME547/blob/master/syllabus.md#grading))
+for updates to the grading scheme for the class.
+
+####**Posted 3/20/2020**
+  
 **Here are the changes that will be made for the class to finish the semester
 under the remote learning scheme.**
 * Lecture content will be delievered by pre-recorded video that will be found
