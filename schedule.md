@@ -283,6 +283,7 @@ Heart Rate Sentinel Server Assigned
 * <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=5aae2ebf-029b-4d00-ab84-ab9e00f22572">Finishing Course and Final Project</a>
 * <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=17173218-235b-48d0-81ad-ab9e01009363">GitHub Issues and Milestones</a>
 * <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=753ffec6-c1c4-4eeb-ba07-ab9f0019d3a5">Images Encoding and Decoding</a>
+* <a href="https://pratt.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=ee1fd4ec-95ea-4a2d-b5e0-ab9f0121ced8">Tkinter Image GUI Example</a>
 
 </td>
 <td>Heart Rate Sentinel Server Due at 9:00 am
