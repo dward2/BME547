@@ -2,6 +2,8 @@
 
 **Final Project DUE:** Monday, April 27, 2020, 9:00 AM EST 
 
+Q&A and Clarifications at bottom of this page.  **Updated 4/17/2020**
+
 ## Overview
 The final project in this class will require you to leverage the
 industry-standard skills you've learned over this semester to design and
@@ -143,3 +145,24 @@ The following is a partial list of aspects of the project that will be graded.
 * User interface functionality
 * Demo of the final working project
 * Robust README
+
+## Q and A and Clarifications
+As questions are raised and clarifications made, I will include those here:
+
+**4/17/2020**
+
+Your GUI should allow the user to choose any image they like on their computer,
+not just the sample images provided in the starting repository.  Those are
+provided simply as examples of the types of images I will be using when testing
+your program.  Feel free to use these for your testing.  Also, I will not be
+trying to upload any unusual image formats.  So, you do not need to program
+the GUI to handle obscure formats.  As long as it works for standard formats,
+(e.g., JPG), it will be fine.
+
+
+**4/15/2020**
+
+The final project for this semester will be done on an individual basis.  
+While in past semesters, the final project was done in teams, I have redesigned 
+the final project to be done individually in response to the current 
+remote-learning environment.
