@@ -162,3 +162,12 @@ return True
 This code snippet will return False if the `<item_to_search>` value is not
 found in the primary key field of the database.  It will return `True` if it
 is found.
+
+### Deleting a database entry
+If you need to delete a specific entry from your database in your Python code,
+first, query the object to find it and save it in a variable.  Then, use the
+`.delete()` method.  Example:
+```python
+x = Patient.objects.raw({"_id": "999"}).first()
+x.delete()
+```
