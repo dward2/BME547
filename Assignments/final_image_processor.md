@@ -2,7 +2,7 @@
 
 **Final Project DUE:** Monday, April 27, 2020, 9:00 AM EST 
 
-Q&A and Clarifications at bottom of this page.  **Updated 4/17/2020**
+Q&A and Clarifications at bottom of this page.  **Updated 4/19/2020**
 
 ## Overview
 The final project in this class will require you to leverage the
@@ -148,6 +148,24 @@ The following is a partial list of aspects of the project that will be graded.
 
 ## Q and A and Clarifications
 As questions are raised and clarifications made, I will include those here:
+
+**4/19/2020**
+
+I have had a number of questions about whether the "image toolbox" code that 
+I shared needs to be tested with unit tests.  The answer is **yes**.  Ideally, 
+all of your code will have a unit test.  As we have seen so far this semester, 
+some code can be problematic to have a unit test for (such as the flask 
+handlers or GUI code).  But, this image code can be tested.
+
+I have added some sample tests and advice on how to devise such tests on the 
+class GitHub repo page [Resources/image_toolbox.md](https://github.com/dward2/BME547/blob/master/Resources/image_toolbox.md#testing-toolbox-code).
+
+Please, if you are having any trouble designing a unit test for any of your 
+functions, please open a GitHub issue with a link to the function you are 
+trying to test and I will help you design an appropriate test.  And, if you 
+have any question about the information on this webpage, please let me know.
+
+
 
 **4/17/2020**
 
