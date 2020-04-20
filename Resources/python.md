@@ -8,6 +8,9 @@
 * [Playground and Cheatsheet For Learning Python](https://github.com/trekhleb/learn-python)
 * [Learn X in Y Minutes Python 3](https://learnxinyminutes.com/docs/python3/)
 
+### String Formatting in Python
+* [PyFormat: Using `%` and `.format()` for great good](https://pyformat.info/)
+
 ## NumPy
  Here are NumPy documentation websites
  that demonstrate how to create `numpy` arrays in code and from input
