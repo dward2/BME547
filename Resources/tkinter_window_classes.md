@@ -97,7 +97,12 @@ command function to the Ok button when it is pressed.  This command function is
 defined as a method in this new class.
 
 Fourth, any additional widgets you want to add to this new window type can be
-added.
+added.  (Note, if there is a widget that is defined in `BaseWin` that you no
+longer want on the new class window, you can use the `.destroy()` or 
+`.grid_remove` or `.grid_forget()` method as in `self.name_label.grid_forget()`.
+Look up the differenes between these three methods to determine the best one
+to use.
+
 
 This window type can now be activated with code such as this:
 ```python
