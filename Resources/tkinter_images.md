@@ -19,6 +19,11 @@ Then, it can be imported as follows:
 ```
 from PIL import ImageTk, Image
 ```  
+**Important:** Make sure that you use the above import line *AFTER* you import
+`tkinter`.  `tkinter` also has an `Image` class and we don't want that to 
+overwrite the `PIL` version.
+
+
 First, load in the image into a PIL image object.
 ```
 image_obj = Image.open("cloud3.jpg")
