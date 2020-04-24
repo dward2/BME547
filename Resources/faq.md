@@ -21,7 +21,7 @@ For example, a sub-function might look like this:
 
     def ok_button_cmd():
         hdl_value = hdl_entrybox_text.get()  # Gets entered value of an entry box from a StringVar()
-        answer = analyze_hdl(hdl_value)      # Calss a testable external function to do calculations. 
+        answer = analyze_hdl(hdl_value)      # Class a testable external function to do calculations. 
         result_label[“text”] = answer        # Updates GUI with answer from external function.
         return
 
