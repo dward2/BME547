@@ -2,7 +2,7 @@
 
 **Final Project DUE:** Monday, April 27, 2020, 9:00 AM EST 
 
-Q&A and Clarifications at bottom of this page.  **Updated 4/19/2020**
+Q&A and Clarifications at bottom of this page.  **Updated 4/26/2020**
 
 ## Overview
 The final project in this class will require you to leverage the
@@ -148,6 +148,28 @@ The following is a partial list of aspects of the project that will be graded.
 
 ## Q and A and Clarifications
 As questions are raised and clarifications made, I will include those here:
+
+**4/26/2020*
+
+I shared some code at 
+<https://github.com/dward2/BME547/blob/master/Resources/tkinter_images.md#loading-an-ndarray-containing-an-image-into-a-tkinter-label> 
+that you can use to convert an nd_array into a PIL.ImageTk.PhotoImage type 
+(stored in my variable "tk_image") that can be added to a Label in the tkinter 
+interface to display a picture.  If you try to write a unit test for a function 
+that contains this code, you will likely get one of two errors.  
+
+You may get "RuntimeError: Too early to create image".  This is because the 
+code that does this conversion requires that an active Tk() root window be 
+open, which it usually will not be in your unit tests.  If you add a 
+`root=Tk()` to your unit test or test module, it will run successfully.  
+
+But, 
+that would lead to the second error when you try to run this unit test in 
+Travis because Travis is not set up to run any kind of GUI interface.
+
+So, for this assignment, code like that referenced above does not need a unit 
+test.  Please let me know if you have any questions.
+
 
 **4/19/2020**
 
