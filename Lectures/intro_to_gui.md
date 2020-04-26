@@ -289,6 +289,8 @@ user interaction with the GUI causes additional code to be run.
     from this list.
     + `current()` method determines which item in predefined values list is 
     selected.
+    + `postcommand=` parameter links a function that will be called before any
+    values are displayed in the Combobox.
     
 ### Adding Images to Interface
 See [tkinter_images.md](../Resources/tkinter_images.md) in the Resources folder
