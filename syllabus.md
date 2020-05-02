@@ -1,26 +1,15 @@
 # BME 547 - Medical Software Design - Spring 2020  
 
-#### **Posted 4/15/2020**
-See [Grading](https://github.com/dward2/BME547/blob/master/syllabus.md#grading)
-section below for updates to grading scheme.
-
-#### **Posted 3/20/2020**
-**Check [HERE](README.md) for updates related to the switch to remote learning.
-Some of these changes may supercede information provided below.
-
 ## Instructor
 Dr. David Ward  
 <david.a.ward@duke.edu>  
 Office Hours: By appointment
 
 ## Teaching Assistant
-Evan Jelly
-<evan.jelly@duke.edu>   
-Office Hours: TBD (location)
 
 ## Lecture
-Wed/Fri 11:45 am -- 1:00 PM  
-Location: Hudson Hall 115A
+Mon/Tues/Wed/Thur 10:00 am -- 11:30 AM  
+Zoom Meeting Links can be found in Sakai
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device

@@ -1,39 +1,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 # BME 547 - Medical Software Design
-### Spring 2020
-
-## Remote Learning Updates
-#### **Posted 4/15/2020**
-Please see the Grading section of the syllabus ([linked here](https://github.com/dward2/BME547/blob/master/syllabus.md#grading))
-for updates to the grading scheme for the class.
-
-#### **Posted 3/20/2020**
-  
-**Here are the changes that will be made for the class to finish the semester
-under the remote learning scheme.**
-* Lecture content will be delievered by pre-recorded video that will be found
-on Panopto.  The [schedule](schedule.md) will be updated for each lecture topic
-to include not only a link to the appropriate GitHub lecture notes page but
-also a link to the corresponding Panopto videos.  There may be more than one
-video per lecture topic.
-* Open office hours will be held during our normally scheduled lecture time of
-Wed./Fri. 11:45 am to 1:00 pm.  This time can be used to ask questions about 
-the pre-recorded lecture videos and/or give additional live demonstrations as
-dictated by those in the office hours.  Other topics of interest may be 
-addressed.  Participation in these office hours is optional.  
-* These office hours will be held virtually using [Zoom](https://duke.zoom.us). 
-The Zoom meetings can be joined through Sakai.  On the class Sakai
-website, click on "Zoom Meetings" in the left hand menu, and then click "Join"
-next to the appropriate time.
-* Individual help and discussion will continue to be given via e-mail, GitHub
-Issues, and 1-1 "virtual" conversation as requested.
-* Assignments will continue to be given through Sakai and turned in via GitHub 
-Classroom repositories. 
-
-**Dr. Ward, 3/20/2020**
-
-  
+### Summer Session I 2020
 
 This repository serves as the default collection for all resources associated
 with the Duke BME Medical Software Design course (BME 547).
