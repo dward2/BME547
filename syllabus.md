@@ -7,9 +7,27 @@ Office Hours: By appointment
 
 ## Teaching Assistant
 
-## Lecture
-Mon/Tues/Wed/Thur 10:00 am -- 11:30 AM  
-Zoom Meeting Links can be found in Sakai
+## Remote Learning Delivery 
+This course is being offered via remote learning.  A computer and good internet
+connection are required.  Live, interactive class periods will be held via
+Zoom on **Mon/Tues/Wed/Thur 10:00 am -- 11:30 AM**.  It is expected that
+students will participate in these meetings whenever possible.  These class
+meetings will be recorded for those who are unable to attend (due to timezone 
+or technological issues) for viewing at a different time.
+
+Some lecture content may be delivered via pre-recorded videos that should be
+watched before class.  There will also be some "daily assignments" that will
+be conducted either during class or will be expected to be completed before
+class in preparation for a class period.  Again, for those who cannot attend 
+class, these daily assignments can be done at a different time, but will be
+expected to be completed within 24 hours of the assigned class period.  
+
+Sakai will be used for official course communication.  Zoom Meeting Links 
+will be posted in Sakai.
+
+About nine projects will be assigned throughout the semester.  The description
+of these assignments will be posted in Sakai and also in this GitHub repo.
+Assignments will be turned in via a GitHub Classroom repository.
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
@@ -27,9 +45,11 @@ design fundamentals.   Some project-related work will be done in groups.
 
 ## Prerequisites
 Basic familiarity with programming concepts (e.g., variables, loops,
-conditional statements).
+conditional statements, functions and parameters).
 
 BME 271 - Signals and Systems
+
+A computer with administrator rights and good internet connection.
 
 ## Course Topics
 * Software version control (`git`, GitHub)
@@ -64,11 +84,22 @@ BME 271 - Signals and Systems
 * Define software specifications and constraints (Requests for Comments, RFC)
 
 ## Attendance / Participation
-Lecture attendance and participation is important because you will be working
-in small groups some of the semester.  Participation in assigned in-class
-activities will count for 15\% of your class grade.  It is very understandable
+Lecture attendance and participation is important as the topics and skills you
+will be learning build upon each other.  Also, you will be working
+in small groups some of the semester.  Various "daily assignments" will also 
+be given as part of either class period preparation or during the class 
+period itself.  
+
+As stated above, it is understood that some class members may not be able to 
+join the class periods due to timezone or technology reasons.  In those cases,
+it is expected that those students will view the Zoom meeting recordings and
+complete the given daily assignment within 24 hours of assignment.  
+
+Completion of these assigned in-class activities (either during class or later)
+will count for 15\% of your class grade.  It is very understandable
 that students will have to miss class for job interviews, personal reasons,
-illness, etc.  Absences will be considered **excused** if they are
+illness, etc.  Absences or delayed daily work will be considered **excused** 
+if they are
 communicated to your instructors at least 48 hours in advance (subject
 to instructor discretion as an excused absence) or, for illness, through
 submission of a [Short Term Illness Form
@@ -86,18 +117,6 @@ will be referenced throughout the semester.
 Project details will be discussed in lecture throughout the semester.
 
 ## Grading
-#### **Updated on 4/15/2020 for Remote Learning**
-Due to the current remote learning situation, I feel that it is appropriate to
-reduce the amount of value the final project has on the final grade for the
-class.  However, there may be some in the class who would like to utilize the 
-existing grading scheme such that the high weight of the final project could
-improve their grade with an excellent performance on the final project.  So, I 
-will calculate the class grade in two ways.  The first
-method uses the original breakdown where the final project will be worth
-50% of the final grade.  The second method will reduce the final project
-to 20% of the grade and increase the assignments portion to 65%.  I will 
-record the higher of the two methods as the final grade.
-
 Assignments will be hosted in the course GitHub repository, GitHub Classroom,
 and Sakai.
 Due dates--including those that change--will be announced in lecture and by
@@ -105,24 +124,27 @@ Sakai announcements that will be emailed to the
 class.  
 <table>
 <tr>
-<th></th><th>Method 1 (original)</th><th>Method 2 (revised)</th>
+<th>Grading Breakdown</th><th></th>
 </tr>
 <tr>
 <td>Participation / In-Class Assignments</td>
-<td>15%</td><td>15%</td>
+<td>15%</td>
 </tr>
 <tr>
 <td>Assignments</td>
-<td>35%</td><td>65%</td>
+<td>45%</td>
 </tr>
 <tr>
 <td>Final project</td>
-<td>50%</td><td>20%</td>
+<td>40%</td>
 </tr>
 </table>
 
 All work is due by the date and time posted in Sakai.  No late submissions will
-be accepted without prior approval.
+be accepted without prior approval for an excused reason.  You will
+be given the opportunity to submit *one* assignment up to 48 hours late 
+for any reason without penalty if you notify me that you are utilizing that
+option before the deadline via e-mail.    
 
 ## Class Schedule
 The course schedule is very likely to change depending on progress throughout
