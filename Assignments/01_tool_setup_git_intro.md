@@ -12,18 +12,10 @@ with that information.
   c) In the title, enter your name and the GitHub user name you created. For 
   example, "David Ward - dward2".  
   d) In the comment area, please include your Duke e-mail address.  
-  e) Click the green "Submit new issue" button.  
-
-3.  a) Create a new repository with a name such as "Intro".  Make sure to select
-the "Initialize this repository with a README" check box.  
-  b) With the repository open, click on the README.md file and then click on 
-  the pencil in order to edit the file.  
-  c) With two classmates, exchange URLs for your repositories.  The URL should
-  look something like https://github.com/git_hub_user_name/repo_name.  
-  d) In the README file, add these two URLs.  
-  e) At the bottom of the page, click on the green "Commit changes" button.  
-  You should now have active links to two other repositories.
-    
+  e) In the Assignees section on the right, select dward2 so I will be 
+  notified of your issue.  
+  f) Click the green "Submit new issue" button.
+  
 4. Download and install `git` at https://git-scm.com.  We will be using 
 `Git Bash`, *not* a GUI client.  
   
@@ -116,21 +108,27 @@ easier for you as your projects get more complex.  Options include:
     (professional edition free to use in academic setting, also includes
     Python interpreter).
 
+## Checking Set-up
+A GitHub repository has been created with some simple steps for you to follow
+to verify that can execute git and Python on your computer.  Please visit
+<https://github.com/dward2/setup_verification> and follow the instructions
+found there.
+
 ## Learning Git
 1. Never used git before?  Start with these resources:  
   https://try.github.io/  
   https://www.codecademy.com/learn/learn-git  
   https://www.git-tower.com/learn/cheat-sheets/vcs-workflow  
-  http://gitimmersion.com/
+  http://gitimmersion.com/  
   https://www.atlassian.com/git/tutorials/setting-up-a-repository
 
 1. Familiar with git (or just completed the exercises above)?  Give this a try:
   http://learngitbranching.js.org/
 
-1. Having trouble?  We'll be reviewing some of these tools in lecture on
-  Wednesday.  
+1. Having trouble?  We'll be covering usage of many of these tools in upcoming
+  lectures.  
 
-## Learning Objectives:
+## What We Will Eventually Learn How To Do In Git:
   + Create a git repository on your local computer.
   + Create a local file, then add and commit it to your local repository.
   + Edit your local file, adding and committing those edits.
@@ -138,5 +136,6 @@ easier for you as your projects get more complex.  Options include:
   + Add the remote repository (origin) URL to your local repository.
   + Push your local repository to GitHub.
   + Create a local branch, create/add/commit a new file.
-  + Merge new local branch commit(s) into local master.
-  + Push updated master branch to GitHub.
+  + Push new local branch to GitHub.
+  + Merge new branch on GitHub into master branch on GitHub.
+  + Pull the updated master branch into local repository.
