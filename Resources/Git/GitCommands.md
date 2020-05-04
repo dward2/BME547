@@ -57,8 +57,11 @@ have been previously added to the repository.
 `git branch -m <old-name> <new-name>` if on a different branch.
 
 #### See list of commits and changes
-`git log` for list of commits
-`git log -p` to also include the changes made at each commit.
+`git log` for list of commits  
+`git log -p` to also include the changes made at each commit.  
+`git log --oneline` to show one commit per line  
+`git log --graph --oneline` to show log with branches plotted
+
 
 ### Tags
 * Check out details on semantic versioning here: http://semver.org
