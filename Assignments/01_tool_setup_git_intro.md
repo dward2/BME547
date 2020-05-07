@@ -51,20 +51,11 @@ installed.  If not, you will need to download it from the site above.
 released version (as of January 2020, this is version 3.8.1).  
    
    For **Mac** users, Python is likely already installed.  Open a Terminal window 
-   and enter `python`.  If installed, you should see something
-   like the following:
-   ```
-   Python 3.6.5 (default, Apr  1 2018, 05:46:30)
-   [GCC 7.3.0] on linux
-   Type "help", "copyright", "credits" or "license" for more information.
-   >>>
-   ```
-   You can then type `quit()` at the `>>>` python prompt to exit.
-   
+   and enter `python --version`.  You should see something like `Python 3.7.0`.
    * If the version number is 3.6 or higher, you are good to go.
-   * If the version number is 2.7, enter `python3` into the terminal window and
-   see if that version is also installed.  If not, you will need to install 
-   `python3`.
+   * If the version number is 2.7, enter `python3 --version` into the terminal 
+   window and see if version 3 is also installed.  If not, you will need to 
+   install `python3`.
    Do not try to delete or "upgrade" the 2.7 version currently on your 
    computer as it is a part of the macOS installation.
    * If python does not start at all, you will need to install `python3`.  
@@ -72,6 +63,9 @@ released version (as of January 2020, this is version 3.8.1).
    Info on installing `python3` on macOS can be found at:      
      * <https://docs.python.org/3/using/mac.html>
      * <http://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/>
+     * <https://opensource.com/article/19/5/python-3-default-mac> _(if you are
+     comfortable with using more advanced virtual environment options for
+     managing your python versions)_.
      * Note that if you have both `python2` and `python3` installed on your 
      computer, it is possible that you will have to enter `python3` in place
      of `python` to run the correct version.  Alternatively, you can set up an
@@ -83,6 +77,14 @@ released version (as of January 2020, this is version 3.8.1).
        sure that the path (`/usr/local/bin/python3.8`) matches the actual
        path on your computer.  For example, verify the version number is
        correct.
+       + You will need to do the same thing with the `pip` package installer.
+       Type `pip --version` at the command line and an output similar to
+       `pip 19.0.3 from /Library/Python/2.7/site-packages/pip-19.0.3-py2.7.egg/pip (python 2.7)`
+       will be shown.  If it refers to version 2, type `pip3 --version` to
+       make sure that `pip3` was installed as part of the  `python3` install
+       (it should have been).  Then, if you like, you can alias the `pip3` via
+       `echo "alias pip=/usr/local/bin/pip3" >> ~/.bashrc` or whatever the
+       correct path should be.
     
    **Windows** users have three options:  
    a) Download and install from <https://www.python.org/> as described above.
