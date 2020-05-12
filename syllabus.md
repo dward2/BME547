@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Spring 2020  
+# BME 547 - Medical Software Design - Summer 2020  
 
 ## Instructor
 Dr. David Ward  
