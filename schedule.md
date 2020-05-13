@@ -24,7 +24,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
     <a href="Resources/markdown.md">Markdown</a></td>
   
-   <td><!---<a href="Assignments/02_git_fundamentals_practice.md">--->Git Fundamentals/Practice</a></td
+   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td
 </tr>
 
 <tr>

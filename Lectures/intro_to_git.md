@@ -112,9 +112,11 @@ dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
 $ ls
 file1.txt
 ```
-When a new file is created, `git` adds it to its internal "Working Copy."
+When a change exists in the "Files in directory" that does not exist in the 
+"Repository", `git` considers this change to be part of its internal "Working 
+Copy."
 ![file1_working_copy.png](../Resources/Git/git_concepts_files/file1_working_copy.png)
-Files in the "Working Copy" are not considered to be part of the repository.
+
 Typing `git status` shows the following:
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
@@ -224,8 +226,9 @@ Notice that next to the most recent commit, there is a pointer called `HEAD`.
 the repository.  
 
 ## Editing File in Repository
-Now, lets say I edit `file1.txt`.  Git will see that the file has changed and
-will assign it to the working copy.
+Now, lets say I edit `file1.txt`.  Git will see that the file in the directory 
+has changed relative to the version in the repository.  So, Git will consider
+this change to be part of the working copy.
 ```
 $ git status
 On branch master
