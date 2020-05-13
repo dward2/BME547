@@ -12,9 +12,7 @@ with that information.
   c) In the title, enter your name and the GitHub user name you created. For 
   example, "David Ward - dward2".  
   d) In the comment area, please include your Duke e-mail address.  
-  e) In the Assignees section on the right, select dward2 so I will be 
-  notified of your issue.  
-  f) Click the green "Submit new issue" button.
+  e) Click the green "Submit new issue" button.
   
 4. Download and install `git` at https://git-scm.com.  We will be using 
 `Git Bash`, *not* a GUI client.  
