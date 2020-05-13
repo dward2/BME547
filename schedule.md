@@ -15,7 +15,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed May 13</td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
-    <td><!---<a href="Assignments/01_tool_setup_git_intro.md">--->Setup Course Tools</a></td>
+    <td><a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a></td>
 </tr>
 
 <tr>
