@@ -1,20 +1,21 @@
 # Assignment: BMI Calculator
 In this assignment, you will be writing a program to calculate BMI from
 inputted weight and height measurements.  GitHub Classroom will be used for
-assignment repositories.  Look for announcement in Sakai with link.  The
+assignment repositories.  Look for the announcement in Sakai with a link.  The
 created repository will be empty.  Create a README.md file in GitHub first.
 That will allow for this new repository to be cloned to your local computer.
 
 ### Program specifications
-* Receives input from the user from the console  
-   + Console input can be received with code such as follows:   
+* Receives input from the user from the command/terminal window  
+   + Input can be received with code such as:   
    `x = input("Enter number: ")`  
-   Note that `x` will be a string and needs to be converted to a float.
+   Note that `x` will be a string and may need to be converted to a `float` or
+   `int` depending on its use.
    + User must have the option of entering data in either kilograms/meters or
        pounds/inches.  
    
-* Outputs to the console the calculated BMI.  
-   + Console output can be achieved by code such as:
+* Outputs to the command/terminal window the calculated BMI  
+   + Output can be achieved by code such as:
    `print("The number entered was {}".format(x))`
    
 * Outputs whether the calculated BMI represents underweight,
@@ -32,8 +33,9 @@ developing features.
 master branch.
 * Merge the pull request into master branch.
 * Do not delete any of the feature branches.
-* Pull the newly merged master branch back to your local repository so changes
-to master branch are captured locally.
+* In your local repository, checkout the master branch and then pull the newly 
+merged master branch back to your local repository so changes to master branch 
+in GitHub are captured locally.
 * Repeat for other features
 * Create a `README.md` file to explain how to run your program from the command
 line and how to use your program.
@@ -57,4 +59,4 @@ master branch, and tagged before the deadline.
     + Code executes without errors
     + Code meets specifications given above
 * Presence and content of README.md file
-    
+
