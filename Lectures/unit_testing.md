@@ -19,6 +19,13 @@ to ensure that the code works as desired.
 ### What are "good" units?
 * Functions / methods must be written with a very specific and narrow 
 functional scope in mind.
+* Ideal unit:
+  + Takes inputs
+  + Does calculations on those inputs
+  + Returns output
+* Any function with a user interface only sends and receives data, but does
+not do any calculation.  Any calculation should be in a separate unit function
+that can be tested.
 * If you function does too much and requires a divergent set of tests, then
 that function should be broken up into smaller functions.
 
