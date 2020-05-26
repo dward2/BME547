@@ -1,5 +1,7 @@
 # Escaping the VIM editor when making a git commit
 
+<http://www.commitstrip.com/en/2017/05/29/trapped/>
+
 When making a `git commit`, if you do not specify a commit message on the
 command line by using `git commit -m "replace with your commit message"`, your
 default text editor will be opened for you to type in a commit message.
