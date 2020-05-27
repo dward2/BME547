@@ -70,7 +70,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
     Integration & Travis</a>;
     <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
-    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assignment</a></td>
+    <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
 </tr>
 
 <tr>
