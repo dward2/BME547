@@ -86,9 +86,14 @@ will be lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/docstrings.md">Docstrings</a>; 
     <a href="Lectures/variable_scope.md">Scope</a>;
     <a href="Lectures/numpy.md">NumPy</a>, 
-    <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</a>
+    <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages
     </td>
-    <td><!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion</td>
+    <td>
+    
+* <a href="Assignments/numpy_matplotlib_assignment.md">Take Home Exercise on Numpy/Matplotlib</a>
+
+* <a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</a></td>
+
 </tr>
 
 <tr>
