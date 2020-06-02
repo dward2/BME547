@@ -79,4 +79,8 @@ pudb.set_trace(paused=False)
 For in-class demo code, click [here](./debugging_code/debug_demo.py).  
 Or, clone repository at <https://github.com/dward2/debug_demo.git>.
 
+**Summer 2020**
+Class code at <https://github.com/dward2/debug_demo>
+
+
   
