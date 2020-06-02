@@ -106,7 +106,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed June 3</td>
     <td>Functional Decomposition</td>
-    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</a></td>
+    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>

@@ -10,7 +10,7 @@
 
 ## ECG Analysis: Functional Specifications
   + Read ECG data from a CSV file that will have lines with `time, voltage`. 
-  Example data can be found in the `test_data/` directory in this assignment directory.
+  Example data can be found in the `test_data/` directory of the repository.
   + If either value in a `time, voltage` pair is missing, contains a 
   non-numeric string, or is NaN, the program should
   recognize that it is missing, log an error to the log file, and skip to the 

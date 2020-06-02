@@ -1,5 +1,5 @@
-This README details the information for the tests csv files in this folder and
-the source of the data.
+This README details the information for the test csv files found in in this 
+folder of your GitHub Classroom repository and the source of the data.
 
 ## Source
 This data is originally from the [PhysioBank
@@ -8,13 +8,22 @@ Database](https://physionet.org/physiobank/database/#ecg) for ECG data.
 ## Test Files Description
 * The data are given as `time, voltage` pairs.  `time` is in seconds, `voltage`
 is in mV.
-* **Tests 1-27** include variable forms of ECG data. Some files have peaks at a
+* These files include variable forms of ECG data. Some files have peaks at a
 constant voltage and period, while others have peaks at different voltages and
 a change in heart rate within the data set. The time intervals between
 measurements may vary per data set.
+* Some data sets have been corrupted with additional low (<1 Hz) and/or 
+high (>50 Hz)) frequency noise.
+* For your assistance in developing appropriate data screening and
+noise reduction, the `test_data1_orig.csv` found in this folder is
+the raw data before the various additional signals were added.  You
+can use this data to check the results of your data cleaning.  Note,
+do not expect to get a perfect match to this data.  Just make sure
+that you can clean-up the data well enough to observe and detect
+the peaks.  
 
-* **Tests 28-31** contain some non-numeric entries, missing data, or NaN in 
-the time and voltage columns.  
+* **Tests 11, 20, 28, and 31** contain some non-numeric entries, missing data, 
+or NaN in the time and voltage columns.   
   - When NaN exists in the CSV file, and it is converted from a string to
     a float in Python, Python will not raise an error, but the float variable
     will be given the special identifier `nan` which means "not a number" to 
