@@ -86,7 +86,8 @@ will be lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/docstrings.md">Docstrings</a>; 
     <a href="Lectures/variable_scope.md">Scope</a>;
     <a href="Lectures/numpy.md">NumPy</a>, 
-    <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages
+    <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages,
+    <a href="Lectures/classes.md">Classes</a>
     </td>
     <td>
     
@@ -119,73 +120,71 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon June 8</td>
-    <td>
-    <a href="Lectures/classes.md">Classes</a>, 
-    <a href="Lectures/sphinx.md">Sphinx</a>  
+    <td> 
+    <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
+    <a href="Lectures/apis_webservices_requests.md">
+    APIs, Intro To Web Services, Requests</a>  
     </td>
-    <td></td>
+    <td><!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project (ungraded)</a></td>
 </tr>
 
 <tr>
 <td>Tue June 9</td>
     <td>
-    <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+    <a href="Lectures/flask_server_setup.md">
+           Building a Web Server with Flask</a>
     </td>
-    <td>IEC 62304 Assignment (in Sakai)</td>
+    <td><!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
+    (ungraded)</a></td>
 </tr>
 
 
 <tr>
 <td>Wed June 10</td>
-    <td><a href="Lectures/apis_webservices_requests.md">
-    APIs, Intro To Web Services, Requests</a></td>
-    <td><!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project (ungraded)</a></td>
+    <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
+    <a href="Resources/virtual_machines.md">Virtual machines</a>,
+    <a href="Resources/WebServices/screen.md">Screen</a></td>
+    <td><!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned</td>
     </tr>
 
 <tr>
 <td>Thu June 11</td>
-    <td><a href="Lectures/flask_server_setup.md">
-           Building a Web Server with Flask</a></td>
-    <td><!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
-    (ungraded)</a></td>
+    <td> <a href="Lectures/databases.md">Introduction to Databases</a></td>
+    <td></td>
 </tr>
 
 <tr>
 <td>Mon June 15</td>
-    <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
-    <a href="Resources/virtual_machines.md">Virtual machines</a>,
-    <a href="Resources/WebServices/screen.md">Screen</a></td>
+    <td>MongoDB/PyMODM Example</td>
     <td></td>
 </tr>
 
 <tr>
 <td>Tue June 16</td>
-    <td>
-    <a href="Lectures/databases.md">Introduction to Databases</a>  
+    <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
     <td></td> 
 </tr>
 
 <tr>
 <td>Wed June 17</td>
-    <td>MongoDB/PyMODM Example</td>
-    <td><!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned</a>
+    <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
+    <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></td>
+    <td><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a></td>
 </tr>
 
 <tr>
 <td>Thu June 18</td>
-    <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
-    </tdtd>
-    <td><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned
+    <td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+    </td>
+    <td>IEC 62304 Assignment (in Sakai)
     </td>
 </tr>
 
 <tr>
   <td>Mon June 22</td>
   <td>
-  <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
-
-   <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
+ LDOC
  
   </td>
     <td>
