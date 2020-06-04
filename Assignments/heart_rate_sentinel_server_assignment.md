@@ -1,8 +1,8 @@
 # Heart Rate Sentinel Server
-This assignment will have you build a simple centralized heart rate sentinel 
-server. This server will be built to receive GET and POST requests from mock 
-patient heart rate monitors that contain 
-patient heart rate information over time. If a patient exhibits a tachycardic 
+This assignment will have your team build a simple centralized heart rate 
+sentinel server. This server will be built to receive GET and POST requests 
+from mock patient heart rate monitors that contain patient heart rate 
+information over time.  If a patient exhibits a tachycardic 
 heart rate, the physician should receive an email warning them of the
 situation. So if a new 
 heart rate is received for a patient that is tachycardic, the email should be 
@@ -11,8 +11,11 @@ sent out at that time. The tachycardic calculation should be based on age
 all patients will be one year old or older). A system for sending the e-mails
 is described below.
 
+The server will also have routes that allow physicians to register on the
+server and provide their contact information.
+
 Assignment repositories will be hosted in GitHub Classroom.  See the 
-assignment in Sakai for the link to create a repository.
+assignment in Sakai for instructions to create a team repository.
 
 ## Server Specifications
 
@@ -24,7 +27,7 @@ in your route name.
   ```
   {
       "patient_id": 1, # usually this would be the patient MRN
-      "attending_email": "dr_user_id@yourdomain.com", 
+      "attending_username": "Smith.J", 
       "patient_age": 50, # in years
   }
   ```
@@ -40,8 +43,23 @@ in your route name.
   occur when a heart rate monitor is checked out and attached 
   to a particular patient.  This will allow you to initialize a patient in
   your server and be able to accept future heart rate measurements for this 
-  patient.  
+  patient.  The `"attending_username"` key contains a string that will be used 
+  to identify the attending physician.  It should be in the format 
+  "Lastname.FirstInitial" as shown in the example above.
    
+* `POST /api/new_attending` that takes a JSON as follows:
+  ```
+  {
+      "attending_username": "Smith.J",
+      "attending_email": "dr_user_id@yourdomain.com", 
+      "attending_phone": "919-867-5309"
+  }
+  ```
+  The e-mail provided here will be used to send notifications to the physician
+  that is registered for each patient.  The 
+  `"attending_username"` key will contain the same ID that is used in the
+  `api/new_patient` route above for the attending username.
+  
 * `POST /api/heart_rate` that takes a JSON as follows:
   ```
   {
@@ -79,7 +97,7 @@ in your route name.
   {
       "heart_rate": 100,
       "status":  "tachycardic" | "not tachycardic",
-      "timestamp": "2018-03-09 11:00:36.372339"  
+      "timestamp": "2018-03-09 11:00:36"  
   }
   ```
    Note that the `status` key should contain either the string `"tachycardic"` or
@@ -97,19 +115,39 @@ in your route name.
   ```
   {
       "patient_id": 1,
-      "heart_rate_average_since": "2018-03-09 11:00:36.372339" // date string
+      "heart_rate_average_since": "2018-03-09 11:00:36"
   }
   ```
   As above, the patient_id may be sent as an integer or a string, and not 
   necessarily in the same format as previously sent.  The
-  heart_rate_average_since will be a datetime string in the format shown.
+  heart_rate_average_since will be a string containing a date and time in the 
+  format shown.
   This POST should return the average, as an integer, of all the heart rates that have been
   posted for the specified patient since the given date/time.  Note that
   the given time stamp could be any time, and not necessarily the time of a 
   previous heart rate.
   
+* `GET /api/patients/<attending_username>` returns information on all of the 
+patients of the attending physician with the given `attending_username`.  This
+route should return a list where each entry of the list represents data from
+a patient of this physician.  Each entry in the list should be a JSON string in
+ the following format:
+```
+{
+    "patient_id": 1,
+    "last_heart_rate": 80,
+    "last_time": "2018-03-09 11:00:36",
+    "status":  "tachycardic" | "not tachycardic"
+}
+```
+  Note that the `status` key should contain either the string `"tachycardic"` or
+   `"not tachycardic"`  If no patients exist for a physician, an empty
+   list should be returned.
+   
 The server should write to a log file when the following events occur:
 * A new patient is registered.  The log entry should include the patient ID.
+* A new attending physician is registered.  The log entry should include the
+attending user name and e-mail.
 * A heart rate is posted that is tachycardic.  The log entry should include the 
 patient ID, the heart rate, and the attending physician e-mail.
 
@@ -181,6 +219,23 @@ with a string describing the error.
 
 If you have the code to call the e-mail server in its own modular function, you
 do not need to have a unit test for that function.
+
+## Working As A Team
+Start by having a planning meeting with your team.  
+One member of the team is responsible for implementing the `/api/new_patient`
+route while the other member of the team is responsible for implementing the
+`/api/new_attending` route.  As a team, decide which member will handle which
+of those two routes, and then agree on who will be responsible
+for the remaining routes.  For each route, open a GitHub issue and assign it
+to the responsible party (this will document who has primary responsibility for
+each route).  You will also need to agree on a basic structure for how to
+store the data and any other design decisions for the server.  
+
+During my evaluation of the final submission, I will be looking at commit
+histories to determine that both team members contributed to the project
+appropriately.  Feel free to work together, help each other, and edit and debug
+each others code.  But, make sure that each team member is contributing to
+their assigned routes.    
 
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
