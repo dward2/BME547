@@ -125,7 +125,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/apis_webservices_requests.md">
     APIs, Intro To Web Services, Requests</a>  
     </td>
-    <td><!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project (ungraded)</a></td>
+    <td><a href="Lectures/name_server_project.md">Recommended Learning Project</a></td>
 </tr>
 
 <tr>
@@ -135,7 +135,7 @@ will be lecture every class period even if no topic is shown on the schedule.
            Building a Web Server with Flask</a>
     </td>
     <td><!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
-    (ungraded)</a></td>
+    </a></td>
 </tr>
 
 
