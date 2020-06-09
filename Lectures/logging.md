@@ -35,6 +35,12 @@ start from scratch with each run of your program, modify the
 `logging.basicConfig` command as follows:  
 `logging.basicConfig(filename="example.log", filemode="w", level=logging.INFO)`  
 
+## Testing of Logging Functions
+See the page [testing_logging.md](../Resources/testing_logging.md) in the
+Resources folder for information on writing unit tests for functions that do
+logging.
+
+
 ## References
 https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
 
