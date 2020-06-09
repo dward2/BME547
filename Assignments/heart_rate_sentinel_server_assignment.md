@@ -142,7 +142,8 @@ a patient of this physician.  Each entry in the list should be a JSON string in
 ```
   Note that the `status` key should contain either the string `"tachycardic"` or
    `"not tachycardic"`  If no patients exist for a physician, an empty
-   list should be returned.
+   list should be returned.  If the `attending_username` does not exist in the
+   database, an appropriate error should be returned.
    
 The server should write to a log file when the following events occur:
 * A new patient is registered.  The log entry should include the patient ID.
@@ -225,7 +226,7 @@ Start by having a planning meeting with your team.
 One member of the team is responsible for implementing the `/api/new_patient`
 route while the other member of the team is responsible for implementing the
 `/api/new_attending` route.  As a team, decide which member will handle which
-of those two routes, and then agree on who will be responsible
+of those two routes, and then agree on who will be primarily responsible
 for the remaining routes.  For each route, open a GitHub issue and assign it
 to the responsible party (this will document who has primary responsibility for
 each route).  You will also need to agree on a basic structure for how to
@@ -234,8 +235,8 @@ store the data and any other design decisions for the server.
 During my evaluation of the final submission, I will be looking at commit
 histories to determine that both team members contributed to the project
 appropriately.  Feel free to work together, help each other, and edit and debug
-each others code.  But, make sure that each team member is contributing to
-their assigned routes.    
+each other's code.  But, make sure that each team member is contributing and
+commiting to their assigned routes.    
 
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
@@ -256,7 +257,7 @@ hostname and port on which your server is running (eg.,
 follow the instructions about ensuring your server is not automatically
 shut down (there is a check box on the VCM control panel. It will ask you for a 
 reason, just say you are running a web server assignment for BME 547 
-Medical Software Design). __Please do this deployment step last, it is most 
+Medical Software Design). __Please do this deployment step last.  It is most 
 important to complete the rest of the assignment first (that is where most of 
 the points are)__.
 - While developing your code, it is likely that you will write up a local
