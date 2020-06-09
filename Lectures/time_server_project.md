@@ -32,7 +32,7 @@ current date and time.
 `datetime.now().date()` returns a `datetime` object that contains the current
 date.  
 
-`datetime.now.time()` returns a `datetime` object that contains the current 
+`datetime.now().time()` returns a `datetime` object that contains the current 
 time.
 
 #### Specifying a specific date/time
