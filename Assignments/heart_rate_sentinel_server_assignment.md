@@ -222,7 +222,7 @@ If you have the code to call the e-mail server in its own modular function, you
 do not need to have a unit test for that function.
 
 ## Working As A Team
-Start by having a planning meeting with your team.  
+Start by having a planning meeting with your team.
 One member of the team is responsible for implementing the `/api/new_patient`
 route while the other member of the team is responsible for implementing the
 `/api/new_attending` route.  As a team, decide which member will handle which
@@ -230,7 +230,9 @@ of those two routes, and then agree on who will be primarily responsible
 for the remaining routes.  For each route, open a GitHub issue and assign it
 to the responsible party (this will document who has primary responsibility for
 each route).  You will also need to agree on a basic structure for how to
-store the data and any other design decisions for the server.  
+store the data and any other design decisions for the server.  Consider opening
+GitHub Issues, or adding comments to existing issues, that document these
+decisions so that both team members have access to them.
 
 During my evaluation of the final submission, I will be looking at commit
 histories to determine that both team members contributed to the project
