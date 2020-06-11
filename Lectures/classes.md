@@ -22,17 +22,20 @@ heading.
 
 ## Creating class properties
 
-The properties (variables) of the class are created in one of two ways.  If
-the properties are going to start empty, or always start with a specific value,
-they can be created in the class as follows:
+The properties (variables) of the class are created in a special function
+called `__init__`.
 
 ```python
 class Person:
-    firstname = None
-    lastname = None
+
+    def __init__(self):
+        self.firstname = None
+        self.lastname = None
 ```
 Replace `None` with a value if desired for the properties to start with a
-specific value.
+specific value.  `self` is used to indicate that the variable will belong to 
+the instance of the class that is created and may be different for each 
+instance (see below for more).
 
 ## Creating an instance of the class
 Once defined, an instance of the class can be created in code as a variable as 
@@ -67,24 +70,54 @@ OUTPUT:
 Robert
 Smith
 ```
+
+## Populating properties while creating an instance (more about `__init__`)
+It may be desirable to populate the properties of a class instance when it
+is being created.  This can be done by adding parameters to the `__init__`
+function.
+
+```python
+class Person:
+
+    def __init__(self, first_name_arg, last_name_arg):
+        self.firstname = first_name_arg
+        self.lastname = last_name_arg
+```
+The `__init__` function is called immediately upon creating a new instance
+(or manifestation) of the class and can populate the instance properties
+based on the values sent as parameters, as shown here:
+
+```python
+x = Person("Robert", "Smith")
+print(x.firstname)
+
+OUTPUT:
+Robert
+```
+Note that the `__init__` method can do more than just assign variables, but
+could also do other calculations desired upon making a new instance.
+
 ## Creating class methods
 In addition to variables or properties, classes can have functions, called
 methods, that act on the variables found in the class.  Consider the
 following method added to the `Person` class.
 ```python
 class Person:
-    firstname = None
-    lastname = None
-    
+
+    def __init__(self, first_name_arg, last_name_arg):
+        self.firstname = first_name_arg
+        self.lastname = last_name_arg    
+
     def return_full_name(self):
         return self.firstname + " " + self.lastname
 ```
-In order for the method to have access to the properties of the class, we
+In order for the method to have access to the specific properties of each class
+instance, we
 must establish those variables within the local scope of the method.  To
-do that, we define a parameter called `self` in the parameter list of the
+do that, we add the parameter `self` in the parameter list of the
 method.  Python understands `self` to refer to the instance of the object
 itself and is how the method has access to the properties and other methods 
-of this instance.  In the method above, the class properties of 
+of this instance.  In the method above, the instance properties of 
 `firstname` and `lastname` are accessed within the method by `self.firstname`
 and `self.lastname`.  Any variable created within a class method that does
 not start with `self` is considered local to that function only.
@@ -95,9 +128,7 @@ even if you don't need it.  This is a Python syntax requirement.
 ## Accessing class methods
 This method can be called from our code as follows:
 ```python
-x = Person()
-x.firstname = "Robert"
-x.lastname = "Smith"
+x = Person("Robert", "Smith")
 print(x.return_full_name())
 
 OUTPUT:
@@ -111,43 +142,6 @@ call (`x` in the case of `x.return_full_name()`).  If the method defines
 additional parameters beyond `self`, they would be included inside the 
 parentheses.  But, `self` is never included.  An example of this is shown below
 on this page.
-
-## Initializing properties when making an instance: `__init__()`
-In the examples above, a class is made with empty properties and then the
-properties are populated.  This can be done in an easier way by allowing
-initial values of the properties to be declared when defining an instance of
-a class.  This is done using a special class method called `__init__`.
-
-```python
-class Person:
-
-    def __init__(self, first_name_arg, last_name_arg):
-        self.firstname = first_name_arg
-        self.lastname = last_name_arg
-```
-The `__init__` method is called immediately upon creating a new instance
-of the class in a variable as shown here:
-```python
-x = Person("Robert", "Smith")
-```
-
-After `self` in the parameter list of `__init__`, include any other 
-parameters you 
-want to initialize when creating a new object of this class.  In the 
-example above, we include two parameters that are used for initializing the 
-class properties of `self.firstname` and `self.lastname`.  The inclusion of 
-`self.` in the variable name makes it available to all of the functions in 
-the class.  This is an alternate means of creating a class property to that of
-defining them directly within the class.
-
-Note that the `__init__` method can do more than just assign variables.  It
-can do other calculations or call other methods in the class as needed to 
-initialize it for use.
-
-Again, while `self` must be included in the parameter list when defining
-the method in the class, it is not included in the call to create an
-instance of the class.
-
 
 ## Default Parameters
 
@@ -227,9 +221,9 @@ now points to this new instance, the first instance still exists inside the
 `database` list.  The second instance is then appended to the `database`
 list.
 
-The objects found in the `database` list can be access as shown by the two
-example:  one using a `for` loop and one accessing a specific item via an
-index.
+The objects found in the `database` list can be accessed as shown by the two
+methods in the last three lines of the code block above: i) using a  `for` loop 
+or ii)  accessing a specific item via an index.
 
 # Hidden Properties and Set/Get Functions
 There may be times when, upon the setting of a property in a class, I may
