@@ -87,6 +87,10 @@ If using MongoDB Atlas, the string above is provided on the website.
 `<username>`, `<password>`, and `<yourclustername>` should be replaced with
 entries appropriate for the database in use.
 
+:eyes: If using macOS and you receive an SSL or certificate error when trying
+to use `pymodm`, visit the [installations_mac.md](../Resources/installations_mac.md#ssl-or-certificate-errors`)
+ page for a potential fix.
+
 #### Create Schema / Data structure
 ```
 class User(MongoModel):
