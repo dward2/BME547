@@ -4,10 +4,10 @@ To load an image into a `tkinter` interface, you set the image property
 of a Label or Button.
 
 ```
-root = Tk()  # Creates main window
-tk_image = PhotoImage(file="tenor.gif")  # Creates an image object
-my_img_label = Label(root, image=tk_image)  # assigns the image object to a label
-my_img_label.grid(column=0, row=0)  # Places label on the grid of the main window
+root = tk.Tk()                                  # Creates main window
+tk_image = tk.PhotoImage(file="tenor.gif")      # Creates an image object
+my_img_label = ttk.Label(root, image=tk_image)  # assigns the image object to a label
+my_img_label.grid(column=0, row=0)              # Places label on the grid of the main window
 root.mainloop()
 ```
 But, this will only work with GIF and PPM/PNM images (see [here](https://tkdocs.com/tutorial/fonts.html#images)).

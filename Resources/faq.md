@@ -25,22 +25,23 @@ For example, a sub-function might look like this:
         result_label[“text”] = answer        # Updates GUI with answer from external function.
         return
 
-### Why do we need both `from tkinter import *` and `from tkinter import ttk`?  Doesn't the first import everything?  And, isn't it bad form to use this syntax? 
+### If we use `from tkinter import *` to import `tkinter`, why do we also need `from tkinter import ttk`?  Doesn't the first import everything?  And, isn't it bad form to use this syntax? 
 *Question*:  
-In earlier lectures, you mentioned that imports like `from tkinter 
-import *` is not a good practice.  So, why are we importing `tkinter` like 
-this? And why do we still need to import `ttk` or `messagebox` after we have
+Some examples use the following syntax to import the base `tkinter` functions:
+`from tkinter import *`.  Isn't this considered poor practice? And, even if we
+do, And why do we still need to import `ttk` or `messagebox` after we have
 imported all functions in `tkinter`?
 
 *Answer*:  
-You are right, it is not a good practice. And, so probably shouldn't 
-be done here. But, online, most tutorials and examples for tkinter import it 
-this way. So, I just followed suit. Doesn't make it right, but it was just the 
-practical response.
+Yes, it is not generally considered good practice to use imports such as 
+`from tkinter import *`.  But, it can be convenient and so many online examples
+and tutorials for tkinter import it this way. So, be on the lookout for this.
 
-As for need to separately import `ttk` and `messagebox`, it has to do with 
+As for why we need to have `from tkinter import ttk, messagebox` after it 
+appears that we have already imported everything using `from tkinter import *`, 
+it has to do with 
 functions vs. modules. `tkinter` is a package with a number of functions, for 
-example Tk() that defines a root window or StringVar() that makes a string 
+example `Tk()` that defines a root window or `StringVar()` that makes a string 
 variable for use with widgets. `tkinter` also has a number of modules that 
 have additional functions inside them. `ttk` is a module of `tkinter` that has 
 its own functions such as `Button()` and `Entry()` that create certain widgets.

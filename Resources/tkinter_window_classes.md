@@ -43,7 +43,7 @@ to a function to close the window.
 
 Then, we create a window using this class as follows:
 ```python
-root = Tk()
+root = tk.Tk()
 my_window = BaseWin(root)
 root.mainloop()
 ``` 
@@ -70,7 +70,7 @@ class IOWindow(BaseWin):
         self.name_label.configure(text="IO Window")
         self.upload_label = ttk.Label(self.win, text="Enter file to upload")
         self.upload_label.grid(column=0, row=1)
-        self.file_name = StringVar()
+        self.file_name = tk.StringVar()
         self.entry_box = ttk.Entry(self.win, textvariable=self.file_name)
         self.entry_box.grid(column=0, row=2)
         self.ok_button.configure(command=self.upload_command)
@@ -106,7 +106,7 @@ to use.
 
 This window type can now be activated with code such as this:
 ```python
-root=Tk()
+root = tk.Tk()
 my_window = BaseWin(root)
 root.mainloop()
 ```
@@ -123,10 +123,10 @@ one of your defined classes, you could simply create a `Toplevel()` variable
 and then send it to the classes.  For example:
 
 ```python
-root = Tk()
+root = tk.Tk()
 ttk.Label(root, text="This is the root window.  Assume that we then want"
           "to open another window.")
-second_window = Toplevel()
+second_window = tk.Toplevel()
 my_second_window = IOWindow(second_window)
 root.mainloop()
 ```

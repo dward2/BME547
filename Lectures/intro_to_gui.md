@@ -69,8 +69,8 @@ relatively easy to use and is part of the Python install.
 ## Tk Info
 ### Importing `tkinter`
 ```
-from tkinter import *    # Standard binding to Tk (tk-inter(face))
-from tkinter import ttk  # Binding to newer "themed widgets"
+import tkinter import tk    # Standard binding to Tk (tk-inter(face))
+from tkinter import ttk     # Binding to newer "themed widgets"
 ```
 **Note:** Occasionally, the Tk package may not be installed during the Python 
 installation.  If, upon running the code above, an error of 
@@ -87,7 +87,7 @@ construct the GUI by adding widgets to your interface.
 
 The starting point for your GUI is the main window.  It is created as follows:
 ```
-root = Tk()  # Defines the top (root) window.
+root = tk.Tk()  # Defines the top (root) window.
 ```
 To this root window, we now add widgets.
 
@@ -96,7 +96,7 @@ defining the widget.  The parent is the widget in which you want to place the
 new widget.
 For example:
 ```
-root = Tk() # Defines the top, or root, window, so doesn't have a parent
+root = tk.Tk() # Defines the top, or root, window, so doesn't have a parent
 content = ttk.Frame(root)  # The content Frame is placed in root
 ok_btn= ttk.Button(content)  # The ok_btn button is placed in the content Frame
 ```
@@ -156,7 +156,7 @@ positions of the different widgets on a parent is called Geometry Management.
 The `grid` command is the most versatile geometry management function.  It is 
 most easily explained by way of example.
 ```
-root = Tk()
+root = tk.Tk()
 mainframe = ttk.Frame(root).grid(column=0, row=0)
 ttk.Label(mainframe, text="Janauary").grid(column=0, row=0)
 ttk.Label(mainframe, text="February").grid(column=1, row=0)
@@ -251,7 +251,7 @@ user interaction with the GUI causes additional code to be run.
     + `button.instate(['!disabled'], cmd)`  # runs cmd if button state enabled
 * Checkbutton
     + ```
-      measureSystem = StringVar()
+      measureSystem = tk.StringVar()
       check = ttk.Checkbutton(parent, text='Use Metric',
                   command=metricChanged, variable=measureSystem,
                   onvalue='metric', offvalue='imperial')
@@ -261,14 +261,14 @@ user interaction with the GUI causes additional code to be run.
     `offvalue`
 * Radiobutton
     + ```
-      phone = StringVar()
+      phone = tk.StringVar()
       home = ttk.Radiobutton(parent, text='Home', variable=phone, value='home')
       office = ttk.Radiobutton(parent, text='Office', variable=phone, value='office')
       cell = ttk.Radiobutton(parent, text='Mobile', variable=phone, value='cell')
       ```
 * Entry
     + ```
-      username = StringVar()
+      username = tk.StringVar()
       name = ttk.Entry(parent, textvariable=username)
       ```
     + `width` option specifies number of characters wide for field.
@@ -278,7 +278,7 @@ user interaction with the GUI causes additional code to be run.
     + `show='*'` configuration can be used for password entry
 * Combobox
     + ```
-      countryvar = StringVar()
+      countryvar = tk.StringVar()
       country = ttk.Combobox(parent, textvariable=countryvar)
       ```
     + `get` and `set` methods are used to set value
