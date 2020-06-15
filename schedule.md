@@ -156,7 +156,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon June 15</td>
     <td>MongoDB/PyMODM Example</td>
-    <td></td>
+    <td><a href="Lectures/database_class_work.md">In-Class Project</a></td>
 </tr>
 
 <tr>
