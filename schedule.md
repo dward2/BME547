@@ -170,7 +170,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Wed June 17</td>
     <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
     <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></td>
-    <td><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a></td>
+    <td><a href="Assignments/final_image_processor.md">Final Project Assigned</a></td>
 </tr>
 
 <tr>
