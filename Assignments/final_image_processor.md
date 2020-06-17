@@ -38,7 +38,7 @@ interface with the following functionality:
   computer.
   + Allow the user to select an ECG data file from the local computer.  This
   ECG data should then be analyzed for heart rate in beats per minute, display 
-  the resulting heart rate in the GUI, and display the an image of the ECG 
+  the resulting heart rate in the GUI, and display an image of the ECG 
   trace in the interface.
   + Upon user command, issue a RESTful API request to your server to upload
   whatever information is entered above.  The interface should only allow this
@@ -182,7 +182,7 @@ graded.
 * Demo of the final working project
 * Robust README
 
-## Q and A and Clarifications
+## Q & A and Clarifications
 As questions are raised and clarifications made, I will include those here:
 
 **Testing of Image Toolbox Code**
