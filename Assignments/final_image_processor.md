@@ -182,6 +182,12 @@ graded.
 * Demo of the final working project
 * Robust README
 
+## Links of Interest
+[Image Toolbox](../Resources/image_toolbox.md)
+[Tkinter Intro](../Lectures/intro_to_gui.md)
+[Images in Tkinter](../Resources/tkinter_images.md)
+[Tkinter Toolbox](../Resources/tkinter_toolbox.md) 
+
 ## Q & A and Clarifications
 As questions are raised and clarifications made, I will include those here:
 
