@@ -184,6 +184,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
   <td>Mon June 22</td>
   <td>
+  <a href="Lectures/intro_to_security.md">Introduction to Security</a>
+  
  LDOC
  
   </td>
@@ -194,7 +196,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 
 
-<!--<a href="Lectures/intro_to_security.md">Introduction to Security</a>-->
+
 
 <!--<a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>-->
   
