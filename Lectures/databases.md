@@ -158,7 +158,7 @@ code for how you can check to see if an entry exists in the database.
 from pymodm import errors as pymodm_errors
 
 try:
-    db_item = User.objects.raw({"_id": <item_to_search>})
+    db_item = User.objects.raw({"_id": <item_to_search>}).first()
 except pymodm_errors.DoesNotExist:
     return False
 return True
