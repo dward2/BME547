@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Summer 2020  
+# BME 547 - Medical Software Design - Fall 2020  
 
 ## Instructor
 Dr. David Ward  
@@ -6,26 +6,30 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
+Evan Jelly
+<evan.jelly@duke.edu>   
+Office Hours: By appointment
 
 ## Remote Learning Delivery 
 This course is being offered via remote learning.  A computer and good internet
 connection are required.  Live, interactive class periods will be held via
-Zoom on **Mon/Tues/Wed/Thur 10:00 am -- 11:30 AM**.  It is expected that
-students will participate in these meetings whenever possible.  These class
-meetings will be recorded for those who are unable to attend (due to timezone 
-or technological issues) for viewing at a different time.
+Zoom on **Mondays and Wednesday from  12:00 noon -- 1:15 PM**.  It is expected 
+that students will participate in these meetings whenever possible.  These 
+class meetings will be recorded for those who are unable to attend for viewing 
+at a different time.
 
 Some lecture content may be delivered via pre-recorded videos that should be
-watched before class.  There will also be some "daily assignments" that will
+watched before class, with an accompanying quiz to check for understanding.  
+There will also be some "daily assignments" that will
 be conducted either during class or will be expected to be completed before
 class in preparation for a class period.  Again, for those who cannot attend 
 class, these daily assignments can be done at a different time, but will be
 expected to be completed within 24 hours of the assigned class period.  
 
-Sakai will be used for official course communication.  Zoom Meeting Links 
+Sakai will be used for official course communication.  Zoom meeting links 
 will be posted in Sakai.
 
-About nine projects will be assigned throughout the semester.  The description
+A variety projects will be assigned throughout the semester.  The description
 of these assignments will be posted in Sakai and also in this GitHub repo.
 Assignments will be turned in via a GitHub Classroom repository.
 
@@ -90,12 +94,12 @@ in small groups some of the semester.  Various "daily assignments" will also
 be given as part of either class period preparation or during the class 
 period itself.  
 
-As stated above, it is understood that some class members may not be able to 
-join the class periods due to timezone or technology reasons.  In those cases,
-it is expected that those students will view the Zoom meeting recordings and
+If a class member cannot join the class period for any reason,
+it is expected that this person will view the Zoom meeting recordings and
 complete the given daily assignment within 24 hours of assignment.  
 
-Completion of these assigned in-class activities (either during class or later)
+Completion of these assigned in-class activities (either during class or within
+the 24 hour window)
 will count for 15\% of your class grade.  It is very understandable
 that students will have to miss class for job interviews, personal reasons,
 illness, etc.  Absences or delayed daily work will be considered **excused** 
@@ -193,10 +197,11 @@ software repository will be provided on a regular basis.
 Engineering is inherently a collaborative field, and in this class, you are
 encouraged to discuss what you have learned in class and share resources that
 you find.  However, your code development and final submitted code must be the 
-product of your and/or your group's effort and understanding.  It is not 
+product of your and/or your assigned group's effort and understanding.  It is not 
 permitted to share your code with others for them to copy or use.  Any external 
 resources developed by another person or company, and used in your project,
-must be properly recognized.
+must be properly recognized.  These outside resources must be clearly published
+and cannot be the work of other current or former Duke students.
 
 All students are expected to adhere to all principles of the [Duke Community
 Standard](http://www.integrity.duke.edu/standard.html).  Violations of the Duke
