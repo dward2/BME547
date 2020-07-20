@@ -1,6 +1,9 @@
 # Python Resources
 
 ## General Python Overview
+* [Computational Methods With Python](https://sakai.duke.edu/x/jR0AAK)
+    + This "Sakai" course was developed within Pratt and contains some very 
+    good introductory material to Python.
 * [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
 * [Intermediate Python](http://book.pythontips.com/en/latest/index.html)
 * [Python Essential Training (Lynda)](https://www.lynda.com/Python-tutorials/Python-Essential-Training/614299-2.html)
