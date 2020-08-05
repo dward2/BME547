@@ -208,4 +208,6 @@ Standard](http://www.integrity.duke.edu/standard.html).  Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
 Conduct.  Please do not hesitate to talk with your instructors about any
 situations involving academic honor, especially if it is ambiguous what should
-be done.
+be done.  More information on the Duke Community Standard, and its practice
+for this academic year, can be found at 
+<https://registrar.duke.edu/university-bulletins/duke-community-standard>.
