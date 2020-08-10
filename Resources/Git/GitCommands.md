@@ -16,7 +16,7 @@ comments by the user.
 `git config --global user.email "Your e-mail"`
 
 If you would like to change the default editor used by git, visit
-<https://help.github.com/en/github/using-git/associating-text-editors-with-git>
+<https://docs.github.com/en/github/using-git/associating-text-editors-with-git>
 or <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration> for more
 information.
 

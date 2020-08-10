@@ -7,6 +7,7 @@
 
 ## Who are we?
 * Dr. David Ward
+* Evan Jelly
 
 ## Who are you?
 * Name
@@ -16,8 +17,6 @@
 * Programming language you are most comfortable with
 * What your long term plans are
 * Fun fact about yourself
-* Share something you have done/discovered in the last two months (good book,
-show/movie, home activity, etc.)
 
 ## Syllabus Review
 [Syllabus](../syllabus.md)
