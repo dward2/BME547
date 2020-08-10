@@ -35,10 +35,10 @@ installed.  If not, you will need to download it from the site above.
      instructions under **Config**  on [this page](/Resources/Git/GitCommands.md#config). 
 
 3. [**Optional**]  Setup an SSH key to seamlessly push/pull to/from your GitHub repositories:
-   https://help.github.com/articles/connecting-to-github-with-ssh/
+   https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
 4. Download and install `python` at https://www.python.org/. Use the latest
-released version (as of January 2020, this is version 3.8.1).  
+released version (as of July 27, 2020, this is version 3.8.5).  
    
    For **Mac** users, Python is likely already installed.  Open a Terminal window 
    and enter `python --version`.  You should see something like `Python 3.7.0`.
@@ -107,6 +107,7 @@ easier for you as your projects get more complex.  Options include:
     + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) 
     (professional edition free to use in academic setting, also includes
     Python interpreter).
+    + [Spyder](https://www.spyder-ide.org/) (free IDE included with Anaconda)
 
 ## Checking Set-up
 A GitHub repository has been created with some simple steps for you to follow
