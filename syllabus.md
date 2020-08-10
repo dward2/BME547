@@ -13,18 +13,19 @@ Office Hours: By appointment
 ## Remote Learning Delivery 
 This course is being offered via remote learning.  A computer and good internet
 connection are required.  Live, interactive class periods will be held via
-Zoom on **Mondays and Wednesday from  12:00 noon -- 1:15 PM**.  It is expected 
-that students will participate in these meetings whenever possible.  These 
-class meetings will be recorded for those who are unable to attend for viewing 
-at a different time.
+Zoom on **Mondays and Wednesday from  12:00 noon -- 1:15 PM**.  Participation
+in the class meetings is expected.  If this presents a problem, you must 
+contact the instructor to make other arrangements.  
 
 Some lecture content may be delivered via pre-recorded videos that should be
-watched before class, with an accompanying quiz to check for understanding.  
+watched before class, with an accompanying quiz to check for understanding.
+Please see the "Attendance / Participation" section below for more information.
+
 There will also be some "daily assignments" that will
 be conducted either during class or will be expected to be completed before
-class in preparation for a class period.  Again, for those who cannot attend 
-class, these daily assignments can be done at a different time, but will be
-expected to be completed within 24 hours of the assigned class period.  
+the next class.  If prior permission has been obtained to miss a class, 
+these daily assignments can be done at a different time, but will be
+expected to be completed before the next assigned class period.  
 
 Sakai will be used for official course communication.  Zoom meeting links 
 will be posted in Sakai.
@@ -94,18 +95,28 @@ in small groups some of the semester.  Various "daily assignments" will also
 be given as part of either class period preparation or during the class 
 period itself.  
 
-If a class member cannot join the class period for any reason,
-it is expected that this person will view the Zoom meeting recordings and
-complete the given daily assignment within 24 hours of assignment.  
+If a class member cannot join the class period for any reason, they must
+contact the instructor ahead of time to make arrangements.  It would then be
+expected that this person will view the Zoom meeting recording and
+complete any given daily assignment before the next scheduled class meeting.
 
-Completion of these assigned in-class activities (either during class or within
-the 24 hour window)
-will count for 15\% of your class grade.  It is very understandable
+Before some lectures, a pre-recorded video may be assigned for viewing with
+an accompanying quiz.  Watching the video and completion of the quiz is 
+expected to be done before the class period begins.  
+
+Attendance in class, watching pre-class videos, completing pre-class quizzes
+on time, and completion of assigned in-class activities 
+will count for 15\% of your class grade.  Eighty percent successful completion
+of these activities is required to earn the entire 15\%.  Participation points
+will be decreased for completion rates less than 80\%.  
+
+
+It is very understandable
 that students will have to miss class for job interviews, personal reasons,
 illness, etc.  Absences or delayed daily work will be considered **excused** 
-if they are
-communicated to your instructors at least 48 hours in advance (subject
-to instructor discretion as an excused absence) or, for illness, through
+if they are communicated to and approved by your instructors at least 48 hours 
+in advance (subject to instructor discretion as an excused absence) or, 
+for illness, through
 submission of a [Short Term Illness Form
 (STIF)](http://www.pratt.duke.edu/undergrad/policies/3531) **before** class.
 Unexcused absences will count against the participation component of your class
@@ -131,7 +142,7 @@ class.
 <th>Grading Breakdown</th><th></th>
 </tr>
 <tr>
-<td>Participation / In-Class Assignments</td>
+<td>Participation / In-Class Assignments / Pre-Class Quizzes</td>
 <td>15%</td>
 </tr>
 <tr>
@@ -145,16 +156,17 @@ class.
 </table>
 
 All work is due by the date and time posted in Sakai.  No late submissions will
-be accepted without prior approval for an excused reason.  You will
-be given the opportunity to submit *one* assignment up to 48 hours late 
+be accepted without prior written approval for an excused reason.  You will
+be given the opportunity to submit *one* assignment (not including the Final
+Project) up to 48 hours late 
 for any reason without penalty if you notify me that you are utilizing that
 option before the deadline via e-mail.    
 
 ## Class Schedule
-The course schedule is very likely to change depending on progress throughout
-the semester.  The updated [schedule](schedule.md) will always be available in
-the GitHub course repository.  Assume there will be lecture every class period
-even if no topic is shown on the schedule.
+The course schedule is likely to change depending on progress throughout
+the semester.  The [schedule](schedule.md) will always be available in
+the GitHub course repository, but is always subject to change.  Assume there 
+will be lecture every class period even if no topic is shown on the schedule.
 
 ## Distributed Version Control Software (git)
 Software management is a ubiquitous tool in any engineering project, and this
@@ -198,10 +210,11 @@ Engineering is inherently a collaborative field, and in this class, you are
 encouraged to discuss what you have learned in class and share resources that
 you find.  However, your code development and final submitted code must be the 
 product of your and/or your assigned group's effort and understanding.  It is not 
-permitted to share your code with others for them to copy or use.  Any external 
-resources developed by another person or company, and used in your project,
+permitted to share your code with others for them to review, copy, or use.  Any 
+freely-available, external 
+resources developed by others, and used in your project,
 must be properly recognized.  These outside resources must be clearly published
-and cannot be the work of other current or former Duke students.
+for general use and cannot be the work of other current or former Duke students.
 
 All students are expected to adhere to all principles of the [Duke Community
 Standard](http://www.integrity.duke.edu/standard.html).  Violations of the Duke
