@@ -11,7 +11,8 @@ with that information.
   b) Click on the green "New issue" button.  
   c) In the title, enter your name and the GitHub user name you created. For 
   example, "David Ward - dward2".  
-  d) In the comment area, please include your Duke e-mail address.  
+  d) In the comment area, please include your Duke e-mail address and whether
+  your primary computer for this class is running Windows, macOS, or Linux.  
   e) Click the green "Submit new issue" button.
   
 4. Download and install `git` at https://git-scm.com.  We will be using 
