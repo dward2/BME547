@@ -109,6 +109,9 @@ easier for you as your projects get more complex.  Options include:
     (professional edition free to use in academic setting, also includes
     Python interpreter).
     + [Spyder](https://www.spyder-ide.org/) (free IDE included with Anaconda)
+    
+Check to see if your chosen text editor has the ability (or an extension) to
+edit and render Markdown text.  If so, set that up. 
 
 ## Checking Set-up
 A GitHub repository has been created with some simple steps for you to follow
