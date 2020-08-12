@@ -9,7 +9,7 @@ x = input("Enter a letter: ")
 print("You entered {}.".format(x))
 ```
 
-A file such as this with a list of Python commands is call a script.
+A file such as this with a list of Python commands is often called a script.
 
 `# basics.py` is a comment line.  The symbol `#` indicates that everything that
 follows on that line is a comment and should be ignored by the interpreter.
