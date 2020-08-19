@@ -167,6 +167,17 @@ $ git branch
 The local `experimental` branch will now track with the remote branch of the 
 same name.
 
+#### GitHub Credentials
+If you have a local repository linked to GitHub, and you are having problems
+pushing to that repository because of authentication issues, try the following
+command:
+```
+git remote set-url origin https://<GitHubID>:<GitHubPassword>@github/<GitHubID>/<RepositoryName>.git
+```
+This will store the credentials in the `.git/config` file.
+See <https://www.shellhacks.com/git-config-username-password-store-credentials/>
+for more info.
+
 ## Git Log Options
 The following information was taken from 
 <https://ma.ttias.be/pretty-git-log-in-one-line/>.  
