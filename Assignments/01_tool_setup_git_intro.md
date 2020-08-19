@@ -61,9 +61,9 @@ released version (as of July 27, 2020, this is version 3.8.5).
      computer, it is possible that you will have to enter `python3` in place
      of `python` to run the correct version.  Alternatively, you can set up an
      alias by either:
-       + entering `echo "alias python=/usr/local/bin/python3.7" >> ~/.bashrc`
+       + entering `echo "alias python=/usr/local/bin/python3.7" >> ~/.bashrc` (`echo "alias python=/usr/local/bin/python3" >> ~/.zshrc` for macOS 10.15 or later)
        at the terminal prompt, or
-       + manually editing the `.bashrc` file to include the line 
+       + manually editing the `.bashrc` (`.zshrc` for macOS 10.15 or later) file to include the line 
        `alias python=/usr/local/bin/python3.8`.  Note that you need to make
        sure that the path (`/usr/local/bin/python3.8`) matches the actual
        path on your computer.  For example, verify the version number is
@@ -74,7 +74,7 @@ released version (as of July 27, 2020, this is version 3.8.5).
        will be shown.  If it refers to version 2, type `pip3 --version` to
        make sure that `pip3` was installed as part of the  `python3` install
        (it should have been).  Then, if you like, you can alias the `pip3` via
-       `echo "alias pip=/usr/local/bin/pip3" >> ~/.bashrc` or whatever the
+       `echo "alias pip=/usr/local/bin/pip3" >> ~/.bashrc`, (`echo "alias python=/usr/local/bin/pip3" >> ~/.zshrc` for macOS 10.15 or later), or whatever the
        correct path should be.
     
    **Windows** users have three options:  
