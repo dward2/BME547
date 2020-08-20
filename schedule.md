@@ -30,7 +30,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Aug 24</td>
     <td><a href="Lectures/python_basics.md">Python Basics</a> /
-    <a href="Lectures/return_keyword.md">Return</a>
+    <a href="Lectures/return_keyword.md">Return</a> /
+    <a href="Lectures/git_workflow.md">Git Workflow</a>
     </td>
     <td><!---<a href="Lectures/python_basics.md#exercise-before-next-class">--->In-class Exercise</a></td>
 </tr>
@@ -45,7 +46,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Aug 31</td> 
-    <td><a href="Lectures/git_workflow.md">Git Workflow</a> 
+    <td> 
     </td>
     <td></td>
 </tr>

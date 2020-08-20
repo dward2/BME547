@@ -1,5 +1,6 @@
 # Git Workflow
 ## Feature Branch Approach
+![](./lecture_files/branching.png)
 In this approach, each major feature of the software is developed on its own
 branch in git.  Once the feature is complete, tested, and approved, it can
 then be merged into the master branch.  No development should be done directly
@@ -64,10 +65,9 @@ developed on a different branch.
 Lets write a program that will do some basic laboratory test result checks.
 * Create a GitHub repository with a `README.md` file
 * Clone repository to your local computer
-* Create a virtual environment
 
 #### Interface Branch
-* Create branch called `interface`
+* Create and checkout a branch called `interface`
 * Create a file and add the following code for the interface
 ```python
 def interface():
@@ -78,11 +78,11 @@ def interface():
     if choice=='9':
         return
    
-if __name__ == '__main__':
-        interface()
+interface()
 ```
 * Run code to test, then commit it to repository.
-* Modify code so that it continues until quit is hit.
+* Modify code, using a `while` loop, so that it continues until quit is hit.
+<!---
 ```python
 def interface():
     keep_running = True
@@ -96,16 +96,44 @@ def interface():
     return
    
 ```
+--->
 * Commit
 * Push Branch to GitHub
 * On GitHub, open Pull Request to merge `interface` into `master`.
 * Confirm Pull Request.
-* Pull new `master` branch to local.
+* On local computer, checkout `master` and pull the updated `master` branch 
+from GitHub to your local repository.
 
 #### HDL Branch
 The first check will be categorizing the results of an HDL test.
-* From master, create a new branch called `HDL`.
-* Write function for checking the HDL result:
+* From master, create and checkout a new branch called `HDL`.
+* Write a function to accept input from the user.
+<!---
+```python
+def accept_input():
+    entry = input("Enter the test result: ")
+    return int(entry)
+```
+--->
+* Commit
+* Write a function, called `check_HDL`, for checking the HDL result:
+<table>
+<tr>
+<th>If HDL Is</th> <th>Return</th>
+</tr>
+<tr>
+<td> 60 or greater</td> <td>"Normal"</td>
+</tr>
+<tr>
+<td>40 or greater but less than 60</td> <td>"Borderline Low"</td>
+</tr>
+<tr>
+<td>below 40</td> <td>"Low"</td>
+</tr>
+
+</table>
+
+<!---
 ```python
 def check_HDL(HDL):
     if HDL >= 60:
@@ -115,20 +143,35 @@ def check_HDL(HDL):
     else:
         return "Low"        
 ```
+--->
 * Commit
-* Write function to accept inputs.  The cholesterol interface should allow
-the user to type in `HDL=###` and parse the test type (HDL) and the result.
+* Write a "driver" function that calls your input function and then your 
+`check_HDL` function
+<!---
 ```python
-def cholesterol_check():
-    print("Cholesterol Check")
-    chol = input("Enter your cholesterol result: ")
-    chol_data = chol.split("=")
-    if chol_data[0] == "HDL":
-        result = check_HDL(int(chol_data[1]))
-        print("The cholesterol level is {}.".format(result))
+def HDL_test_checker():
+    test_result = accept_input()
+    HDL_level = check_HDL(test_result)
 ```
+--->
 * Commit
-* Modify interface to add the Cholesterol Check option:
+* Write a function to output your results, and call that function from your
+driver function.
+<!---
+```python
+def output_result(test_name, test_score, test_result):
+    print(f"For the {test_name} test, a result of {test_score} is {test_result}")
+
+def HDL_test_checker():
+    test_result = accept_input()
+    HDL_level = check_HDL(test_result)
+    output_results("HDL", test_result, HDL_level)
+```
+--->
+* Commit
+* Modify interface to add the HDL analysis option and call your HDL driver 
+function.
+<!---
 ```python
 def interface():
     keep_running = True
@@ -144,20 +187,21 @@ def interface():
             cholesterol_check()
     return
 ```
+--->
 * Commit
-* Test and make sure additional feature works.
+* Test everything, and make changes as needed.  Commit any changes.
 * Push `HDL` branch to GitHub.
 * On GitHub, open a Pull Request to merge `HDL` into `master`.
 * Confirm pull request.
 * Pull updated `master` branch to local repository.
 
 ### LDL Branch
-On your own:  make a new branch and modify the `cholesterol_check` such that
-it can detect and analyze LDL results, using the same input format `LDL=###`.
-* LDL < 130 is normal
+On your own:  make a new branch and modify your program to include the
+ability to analyze for LDL:
+* LDL less than 130 is normal
 * LDL 130 to 159 is borderline high
 * LDL 160-189 is high
-* LDL > 190 is very high.
+* LDL 190 and above is very high.
    
 
 ### Additional Practice: Total Cholesterol function
