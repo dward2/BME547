@@ -42,12 +42,12 @@ if no value is being returned.
 
 #### Example 3 - `return` with a value
 ```python
-def myfunction(-20):
+def myfunction(x):
     a = x + 5
     return a
 
 if __name__ == '__main__':
-    y = myfunction(2)
+    y = myfunction(-20)
     print(y)
     
 Output:
@@ -102,3 +102,23 @@ The remainder is 2
 
 ```
 More than one variable can be returned, as shown in the example above.
+
+#### Example 6 - `return` ends a function right away
+```python
+def print_information(age):
+    print("In this section, information is shared for all patients.")
+    print("   Information for All")
+    if age < 18:
+        return
+    print("In this section, information is shared with adults only.")
+    print("   Information for Adults Only")
+
+
+if __name__ == '__main__':
+    print_information(15)
+
+Output:
+In this section, information is shared for all patients.
+   Information for All
+```
+A function ends when a return is reached.
