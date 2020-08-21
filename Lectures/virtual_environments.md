@@ -46,7 +46,7 @@ In the Bash window, from the project folder, type:
 Following the example above: `source MyVenv/Scripts/activate`
 #### Windows Command Line
 At the command prompt, in the project directory, type:
-` ./<VirtualEnvironmentName/Scripts/activate.bat`
+` ./<VirtualEnvironmentName>/Scripts/activate.bat`
 
 For the example above, it would be: `./MyVenv/Scripts/activate.bat`
 ### Installing a single package in virtual environment
