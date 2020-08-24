@@ -33,7 +33,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/return_keyword.md">Return</a> /
     <a href="Lectures/git_workflow.md">Git Workflow</a>
     </td>
-    <td><!---<a href="Lectures/python_basics.md#exercise-before-next-class">--->In-class Exercise</a></td>
+    <td><a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a></td>
 </tr>
 
 <tr>
@@ -47,30 +47,31 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Aug 31</td> 
     <td> 
+    <a href="Lectures/lists.md">Lists</a> / 
+    <a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
     </td>
     <td></td>
 </tr>
 
 <tr>
 <td>Wed Sept 2</td>
-    <td> 
-    <a href="Lectures/lists.md">Lists</a> / 
-    <a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
+    <td>
+    <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a> 
     </td>
     <td><!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator</a></td>
 </tr>
 
 <tr>
 <td>Mon Sept 7</td>
-    <td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
+    <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
+    Integration & Travis</a>;
+    <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
     <td></td>
 </tr>
 
 <tr>
 <td>Wed Sept 9</td>
-    <td>Unit Testing: <a href="Lectures/continuous_integration_travis.md">Continuous 
-    Integration & Travis</a>;
-    <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
+    <td></td>
     <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assignment</a></td>
 </tr>
 
