@@ -5,7 +5,7 @@ assignment repositories.  Look for the announcement in Sakai with a link.  The
 created repository will be empty.  Create a README.md file in GitHub first.
 That will allow for this new repository to be cloned to your local computer.
 
-### Program specifications
+### Program Specifications
 * Receives input from the user from the command/terminal window  
    + Input can be received with code such as:   
    `x = input("Enter number: ")`  
@@ -18,8 +18,9 @@ That will allow for this new repository to be cloned to your local computer.
    + Output can be achieved by code such as:
    `print("The number entered was {}".format(x))`
    
-* Outputs whether the calculated BMI represents underweight,
-normal weight, overweight, or obese.
+* Outputs whether the calculated BMI represents "underweight",
+"normal weight", "overweight", or "obese".  The output must include one of
+these four words as written (same capitalization).
 
 
 ### Approach
@@ -38,7 +39,9 @@ merged master branch back to your local repository so changes to master branch
 in GitHub are captured locally.
 * Repeat for other features
 * Create a `README.md` file to explain how to run your program from the command
-line and how to use your program.
+line and how to use your program.  This should be considered a user's manual.
+It should explicitly say how to start your program.  For example, "To start
+the program, type `python bmi_calc.py` on the command line."
 * When the assignment is completed, create an annotated git tag called `v1.0.0`
 on your master branch to indicate your final submission.
 * If you make additional changes after creating this tag, simply create another
@@ -50,8 +53,10 @@ master branch, and tagged before the deadline.
 ### Grading Criteria
 * Good use of `git` workflow  
     + Meaningful commit messages and appropriate number of commits  
-    + Use of feature branches when adding new functionality
-    + Using Pull Requests for merging feature branches into master branch
+    + Use of feature branches, with meaningful names, when adding new 
+      functionality
+    + Using Pull Requests on GitHub for merging feature branches into master 
+      branch
     + All branches and final code pushed to GitHub
     + Use of a git tag
 * Python Fundamentals
