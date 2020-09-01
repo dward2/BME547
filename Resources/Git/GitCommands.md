@@ -15,10 +15,32 @@ comments by the user.
 
 `git config --global user.email "Your e-mail"`
 
-If you would like to change the default editor used by git, visit
-<https://docs.github.com/en/github/using-git/associating-text-editors-with-git>
-or <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration> for more
-information.
+#### To change the default editor use by Git
+`git config --global core.editor <editor_name>` where `<editor_name>` can be 
+one of the following:
+  * `nano` for the nano terminal editor
+  * `"'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
+    for Notepad++ on Windows (note, you may need to verify this exact path is)
+    the same on your computer.
+  * any path that leads to a text editor executible file.  
+
+Visit
+<https://docs.github.com/en/github/using-git/associating-text-editors-with-git>  
+for examples of setting the default editor to other text editors.  
+
+Also, visit <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration> 
+for more information on using git config.
+
+#### Changing single repository configurations
+Add setting: `git config --local --add <config_variable> <setting>`
+
+Edit setting:  `git config --local --edit <config_variable> <setting>`
+
+Remove setting:  `git config --local --unset <config_variable>`
+
+#### Show all configuration settings
+`git config --list --show-origin`  (will show settings from the system, global 
+and local configurations)
 
 ## Local Repositories
 
