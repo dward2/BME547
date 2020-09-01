@@ -208,18 +208,20 @@ __Goal__:  Develop a Python function that:
 above plane,
 * and returns a value `y` that is on the line created by the first two points.
 
-__Steps__:
-* Start new branch 
+__Steps__: 
 * Write a unit test for this function before you code the function itself.
+* Add instructor as a collaborator to your repository and create an issue that
+links to this unit test.  Add the instructor as an assignee.
 * Develop the function.
 * If  you find that your function has multiple steps that can be broken down
 into smaller functions, do so, and then write a test for the smaller functions
 as well.
+* Make sure your function passes your unit tests.
+* Open a second issue that links to the completed function and add instructor
+as an assignee.
 
 __Additional Work__:
 * Develop a function that takes `(x1, y1), (x2, y2)` and a third point 
 `(x3, y3)` and returns True if the third point is on the line defined by the
 first two points.  Otherwise, it returns False.
 * Write unit tests that test this function for both True and False results.
-
-
