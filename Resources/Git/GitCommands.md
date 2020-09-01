@@ -15,7 +15,7 @@ comments by the user.
 
 `git config --global user.email "Your e-mail"`
 
-#### To change the default editor use by Git
+#### To change the default editor used by Git
 `git config --global core.editor <editor_name>` where `<editor_name>` can be 
 one of the following:
   * `nano` for the nano terminal editor
