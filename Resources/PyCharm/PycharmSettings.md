@@ -23,15 +23,15 @@ file than requirements.txt, enter a different file name.
 Python option in the right side of the window (see below) and scroll down
 until you see the item "PEP8 coding style violation".  Make sure that is 
 checked.  
-* NOTE:  `pytest --pep8` will have the final word on whether PEP-8 style is
-achieved.  So, do not rely only on PyCharm to check for this.
+* NOTE:  `pytest --pycodestyle` will have the final word on whether PEP-8 style 
+is achieved.  So, do not rely only on PyCharm to check for this.
 ![](images/SettingsEditorInspectionsPython.PNG)
 
 ### Editor / Code Style / Python
 * Allows users to change settings in how the editor formats python code and 
 gives some errors.  
   + Be careful if you change any of these settings.  For this class, the 
-  `pytest --pep8` program will be the final word on whether PEP-8 style is 
+  `pytest --pycodestyle` program will be the final word on whether PEP-8 style is 
   achieved.
   
 ### Line length guide

@@ -43,7 +43,7 @@ Pytest is not a default package in Python, so must be installed in a virtual env
 
 * `requirements.txt`
   + `pytest`
-  + `pytest-pep8`
+  + `pytest-pycodestyle`
   
 ## Using `Pytest`
 
@@ -198,7 +198,7 @@ formatted visually, variables are named, functions named, etc.
 Python Code.  We will be using this style guide in this class.  `pytest` has
 the ability to check that code meets the PEP-8 style requirements.  Run `pytest`
 as follows:  
-`pytest -v --pep8`
+`pytest -v --pycodestyle`
 
 ## Exercise
 __Goal__:  Develop a Python function that:

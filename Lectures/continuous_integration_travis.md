@@ -41,7 +41,7 @@ cache:
 install:
       - pip install -r requirements.txt
 script:
-      - pytest -v --pep8
+      - pytest -v --pycodestyle
 ``` 
 Travis-CI is very finicky with respect to the format of this file.  So, ensure
 that your spacing and syntax are exact.
