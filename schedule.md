@@ -58,7 +58,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <td>
     <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a> 
     </td>
-    <td></td>
+    <td><a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a></td>
 </tr>
 
 <tr>
