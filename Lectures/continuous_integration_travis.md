@@ -5,20 +5,22 @@ would be done each time a change is made.  And, the tests would be run not just
 on the new code, but on all of the existing code to make sure that the new
 changes didn't break anything.
 
-A better option would be to automate the testing whenever changes are made.
-This also helps when you are collaborating on a code base.  The tests should
-be designed so they ensure that the code runs and performs as expected.  
-Then, when 
-developers add new code to the repository, the existing tests can be used to
-ensure that the code that is added meets the desired specifications and works
-correctly.  Finally, by having the tests automated, you ensure that everyone
-tests their code, and doesn't "forget".  
+A better option would be to automate the testing whenever changes are made.  
+The tests should be designed so they ensure that the code runs and performs as 
+expected.  Then, when developers add new code to the repository, the existing 
+tests can be used to ensure that the code that is added meets the desired 
+specifications and works correctly.  This increases confidence that frequent 
+code changes can be made while maintaining code quality.  Finally, by having 
+the tests automated, you ensure that everyone tests their code, and doesn't 
+"forget".  These considerations are especially important when you are 
+collaborating on a code base.    
 
-This type of testing is called Continuous Integration and can be integrated
-with the use of GitHub.  We will use a service called Travis CI.  Anytime new
-code is pushed into a branch in GitHub, Travis CI will automatically run our
-unit tests and give us the results.  In this way, only code that passes the
-test can then be merged into the master branch.
+This approach of frequent code updates and testing is called Continuous 
+Integration and Testing can be integrated with the use of GitHub.  We will use 
+a service called Travis CI.  Anytime new code is pushed into a branch in 
+GitHub, Travis CI will automatically run our unit tests and give us the 
+results.  In this way, only code that passes the test can then be merged into 
+the master branch.
 
 ## Using Travis-CI
 ### Enable Travis-CI
@@ -35,7 +37,7 @@ configuration file.  It should have the following format:
 ```
 language: python
 python:
-      - "3.6"
+      - "3.8"
 cache:
       - pip
 install:
@@ -44,4 +46,15 @@ script:
       - pytest -v --pycodestyle
 ``` 
 Travis-CI is very finicky with respect to the format of this file.  So, ensure
-that your spacing and syntax are exact.
+that your spacing and syntax are exact.  Note that the Python version can be
+changed if you want to test a particular version.  Detailed information on 
+the `.travis.yml` file can be found at <https://config.travis-ci.com/>.
+
+__NOTE__:  As of 9/3/2020, Travis was loading incompatible versions of `pytest`
+and `pytest-pycodestyle` if no version numbers were specified.  In the
+`requirements.txt` file, make sure to specify exact versions of these two
+packages that are compatible.  As of 9/3/2020, use the following:
+```
+pytest==6.0.1
+pytest-pycodestyle==2.2.0
+``` 

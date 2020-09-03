@@ -42,8 +42,13 @@ that function should be broken up into smaller functions.
 Pytest is not a default package in Python, so must be installed in a virtual environment.
 
 * `requirements.txt`
-  + `pytest`
-  + `pytest-pycodestyle`
+  + `pytest==6.0.1`
+  + `pytest-pycodestyle==2.2.0`
+  
+_Note: as of 9/3/2020, for some reason Travis-CI is loading an older version of
+`pytest` which is not compatible with the most recent version of 
+`pytest-pycodestyle`.  To avoid this problem, specify the version numbers as
+above._
   
 ## Using `Pytest`
 
@@ -97,15 +102,15 @@ The tests are run by the following command:
 The results of the above code is as follows:
 ```
 ============================= test session starts =============================
-platform win32 -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1 -- D:\Miniconda3\envs\mdpEnv\python.exe
+platform win32 -- Python 3.8.3, pytest-6.0.1, py-1.9.0, pluggy-0.13.1 -- d:\classrepos\testwork\venv\scripts\python.exe
 cachedir: .pytest_cache
-rootdir: D:\ClassRepos\BME547\Lectures\unit_testing_code, inifile:
-plugins: pep8-1.0.6, cov-2.6.0
-collected 1 item
+rootdir: D:\ClassRepos\testwork
+plugins: pycodestyle-2.2.0
+collecting ... collected 1 item
 
 test_temp_conversion.py::test_celsius_from_fahrenheit PASSED             [100%]
 
-========================== 1 passed in 0.02 seconds ===========================
+============================== 1 passed in 0.03s ==============================
 ```
 
 The test passed.  Let's say there was an error in the code.  For example,
@@ -115,11 +120,11 @@ in `celsius_from_fahrenheit`.  The results of the test would now look as
 follows:
 ```
 ============================= test session starts =============================
-platform win32 -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1 -- D:\Miniconda3\envs\mdpEnv\python.exe
+platform win32 -- Python 3.8.3, pytest-6.0.1, py-1.9.0, pluggy-0.13.1 -- d:\classrepos\testwork\venv\scripts\python.exe
 cachedir: .pytest_cache
-rootdir: D:\ClassRepos\BME547\Lectures\unit_testing_code, inifile:
-plugins: pep8-1.0.6, cov-2.6.0
-collected 1 item
+rootdir: D:\ClassRepos\testwork
+plugins: pycodestyle-2.2.0
+collecting ... collected 1 item
 
 test_temp_conversion.py::test_celsius_from_fahrenheit FAILED             [100%]
 
@@ -132,9 +137,13 @@ ________________________ test_celsius_from_fahrenheit _________________________
         result = celsius_from_fahrenheit(20)
 >       assert result == 68
 E       assert 71.0 == 68
+E         +71.0
+E         -68
 
-test_temp_conversion.py:5: AssertionError
-========================== 1 failed in 0.07 seconds ===========================
+test_temp_conversion.py:7: AssertionError
+=========================== short test summary info ===========================
+FAILED test_temp_conversion.py::test_celsius_from_fahrenheit - assert 71.0 == 68
+============================== 1 failed in 0.11s ==============================
 ```
 We see that the test failed and the output shows the result from the function
 (`71`) and the expected result (`68`).
@@ -177,16 +186,16 @@ We can see from this test that detect_fever is expected to return two values.
 `pytest -v` now returns the following output:
 ```
 ============================= test session starts =============================
-platform win32 -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1 -- D:\Miniconda3\envs\mdpEnv\python.exe
+platform win32 -- Python 3.8.3, pytest-6.0.1, py-1.9.0, pluggy-0.13.1 -- d:\classrepos\testwork\venv\scripts\python.exe
 cachedir: .pytest_cache
-rootdir: D:\ClassRepos\BME547\Lectures\unit_testing_code, inifile:
-plugins: pep8-1.0.6, cov-2.6.0
-collected 2 items
+rootdir: D:\ClassRepos\testwork
+plugins: pycodestyle-2.2.0
+collecting ... collected 2 items
 
 test_temp_conversion.py::test_celsius_from_fahrenheit PASSED             [ 50%]
 test_temp_conversion.py::test_detect_fever PASSED                        [100%]
 
-========================== 2 passed in 0.14 seconds ===========================
+============================== 2 passed in 0.04s ==============================
 ```
 
 We can see that both tests now passed.  
