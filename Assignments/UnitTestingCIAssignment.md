@@ -24,7 +24,7 @@ word "tachycardic".
 ### Function Specifications
 * Should be named `is_tachycardic` and located in a module called 
 `tachycardia.py`.
-* It should take a string argument as input.
+* It should receive a parameter containing the string to check.
 * This string will only contain a single word, but there is no guarantee
 whether the word will be upper case, lower case, mixed case, or have leading /
 trailing spaces or punctuation.
