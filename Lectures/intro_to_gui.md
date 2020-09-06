@@ -69,7 +69,7 @@ relatively easy to use and is part of the Python install.
 ## Tk Info
 ### Importing `tkinter`
 ```
-import tkinter import tk    # Standard binding to Tk (tk-inter(face))
+import tkinter as tk        # Standard binding to Tk (tk-inter(face))
 from tkinter import ttk     # Binding to newer "themed widgets"
 ```
 **Note:** Occasionally, the Tk package may not be installed during the Python 
