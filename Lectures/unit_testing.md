@@ -49,6 +49,34 @@ _Note: as of 9/3/2020, for some reason Travis-CI is loading an older version of
 `pytest` which is not compatible with the most recent version of 
 `pytest-pycodestyle`.  To avoid this problem, specify the version numbers as
 above._
+
+### conda version
+_If you don't have `conda`, please skip this section._
+
+`conda` does not have a version of `pytest-pycodestyle`. Rather, you have to 
+install the `pytest-codestyle` package which has similar functionality,
+but hasn't been updated to work with the most recent version of pytest.  So,
+to install in `conda`, create and activate your virtual environment, and then
+enter the following commands:
+```
+conda install pytest=5.4.1
+conda install -c conda-forge pytest-codestyle
+```
+Then, you can run pytest in the same way as described in the notes below:
+`pytest -v --pycodestyle`.  There will be some additional warnings in the
+output related to upcoming deprecated features, but those can be ignored.
+
+Alternatively, if you want to use the most recent version of `pytest`, you can
+install and run the most recent version of `pycodestyle` separately.  In this 
+case, in a new `conda` environment use the following install commands:
+```
+conda install pytest
+conda install pycodestyle
+``` 
+Then, when you want to test your files, you will need to type `pytest -v` to
+run your unit tests and then `pycodestyle -v .` to do the PEP-8 checks.  Note
+that the period in the `pycodestyle` command is needed in order to run the 
+check on all the Python files. 
   
 ## Using `Pytest`
 
