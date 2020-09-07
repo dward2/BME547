@@ -58,3 +58,12 @@ packages that are compatible.  As of 9/3/2020, use the following:
 pytest==6.0.1
 pytest-pycodestyle==2.2.0
 ``` 
+
+### conda users
+While you use `conda` for creating virtual environments on your local computer,
+Travis will use `pip` for package installation in its virtual environments.
+So, even though you will not use a `requirements.txt` file locally, you will
+need to create one for use in your repository so Travis can create the 
+proper virtual environment.  Use the same information above to make the 
+`requirements.txt` file, even if you have slightly different versions in 
+`conda`.
