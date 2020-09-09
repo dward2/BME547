@@ -72,7 +72,7 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Sept 9</td>
     <td>
-      Modularity Example (starter code <a href="https://github.com/dward2/modularity_example">here</a>);
+      <a href="Lectures/modularity_example.md">Modularity Example</a> (starter code <a href="https://github.com/dward2/modularity_example">here</a>);
       <a href="Lectures/dictionaries.md">Dictionaries</a>
     </td>
     <td></td>
