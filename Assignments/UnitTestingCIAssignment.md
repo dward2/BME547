@@ -39,7 +39,9 @@ boolean value of `True`.
   will create a repository for your submission.
 * Clone this repository to your local computer.
 * Develop code on feature branches.
-* Develop appropriate unit tests, including PEP-8 style check.
+* Develop appropriate unit tests
+* Ensure all functions, including the unit test functions, adhere to PEP-8 
+   style.
 * Enable and use TravisCI in this repository.
 * Push code to GitHub.
 * Generate Pull Request on GitHub to merge your feature branch into the master
@@ -57,6 +59,7 @@ of possible string inputs are successfully identified or rejected.
 * Appropriate naming and syntax for unit tests and testing files.
 * Implementation of Travis CI.
 * Appropriate use of virtual environments.
+* Code (functions and tests) meet PEP-8 style guidelines.
 
 ### Small Bonus:
 Make your `is_tachycardic` function more tolerant to close representations of
