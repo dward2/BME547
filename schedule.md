@@ -71,15 +71,18 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Sept 9</td>
-    <td></td>
+    <td>
+      Modularity Example (starter code <a href="https://github.com/dward2/modularity_example">here</a>);
+      <a href="Lectures/dictionaries.md">Dictionaries</a>
+    </td>
     <td></td>
 </tr>
 
 <tr>
 <td>Mon Sept 14</td>
-    <td><a href="Lectures/dictionaries.md">Dictionaries</a>;
+    <td>
     <a href="Lectures/json.md">JSON</a></td>
-    <td></td>
+    <td><!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion</a></td>
 </tr>
 
 <tr>
@@ -93,9 +96,9 @@ will be lecture every class period even if no topic is shown on the schedule.
     </td>
     <td>
     
-* <!---<a href="Assignments/numpy_matplotlib_assignment.md">--->Take Home Exercise on Numpy/Matplotlib</a>
+<!---<a href="Assignments/numpy_matplotlib_assignment.md">--->Take Home Exercise on Numpy/Matplotlib</a>
 
-* <!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion</a></td>
+</td>
 
 </tr>
 
