@@ -12,16 +12,14 @@ testability and readability, of a code sample.
 Here is some sample code:
 ```python
 """dosing.py
-    Example program of calculating first-day dose of Zithromax for pediatric
+    Example program of calculating first-day dose of medicine for pediatric
         patients.
     NOTE:  This is a programming example, and should not be used for any
              type of medical treatment or diagnostics.
-    SOURCE:
-      https://www.pfizermedicalinformation.com/en-us/zithromax/dosage-admin
 """
 
 def dose_amount():
-    print("Zithromax Day One Dosing Guidelines")
+    print("Day One Dosing Guidelines")
     print("")
     print("Choose diagnosis:")
     print("1 - Acute otitis media")
@@ -62,19 +60,17 @@ different tasks it performs.
 
 ```python
 """dosing.py
-    Example program of calculating first-day dose of Zithromax for pediatric
+    Example program of calculating first-day dose of medicine for pediatric
         patients.
     NOTE:  This is a programming example, and should not be used for any
              type of medical treatment or diagnostics.
-    SOURCE:
-      https://www.pfizermedicalinformation.com/en-us/zithromax/dosage-admin
 """
 
 def dose_amount():
     get_user_input()
 
 def get_user_input():
-    print("Zithromax Day One Dosing Guidelines")
+    print("Day One Dosing Guidelines")
     print("")
     print("Choose diagnosis:")
     print("1 - Acute otitis media")
@@ -123,12 +119,10 @@ next one.
 A better approach would be as follows:
 ```python
 """dosing.py
-    Example program of calculating first-day dose of Zithromax for pediatric
+    Example program of calculating first-day dose of medicine for pediatric
         patients.
     NOTE:  This is a programming example, and should not be used for any
              type of medical treatment or diagnostics.
-    SOURCE:
-      https://www.pfizermedicalinformation.com/en-us/zithromax/dosage-admin
 """
 
 def dose_amount():
@@ -137,7 +131,7 @@ def dose_amount():
     output_results(weight, dosage_mg_first_day)
 
 def get_user_input():
-    print("Zithromax Day One Dosing Guidelines")
+    print("Day One Dosing Guidelines")
     print("")
     print("Choose diagnosis:")
     print("1 - Acute otitis media")
@@ -189,7 +183,7 @@ manipulation and unit conversion.  So, it still cannot be tested.  First, lets
 split this into the two types of inputs:
 ```python
 def get_user_input_diagnosis():
-    print("Zithromax Day One Dosing Guidelines")
+    print("Day One Dosing Guidelines")
     print("")
     print("Choose diagnosis:")
     print("1 - Acute otitis media")
@@ -218,7 +212,7 @@ fail.  We need to further separate all I/O statements from any code that does
 data manipulation or calculation.  That split would like like this:
 ```python
 def get_user_input_diagnosis():
-    print("Zithromax Day One Dosing Guidelines")
+    print("Day One Dosing Guidelines")
     print("")
     print("Choose diagnosis:")
     print("1 - Acute otitis media")
@@ -255,12 +249,10 @@ manipulation and unit conversion code into a separate function.
 The final code now looks like this:
 ```python
 """dosing.py
-    Example program of calculating first-day dose of Zithromax for pediatric
+    Example program of calculating first-day dose of medicine for pediatric
         patients.
     NOTE:  This is a programming example, and should not be used for any
              type of medical treatment or diagnostics.
-    SOURCE:
-      https://www.pfizermedicalinformation.com/en-us/zithromax/dosage-admin
 """
 
 def dose_amount():
@@ -272,7 +264,7 @@ def dose_amount():
     output_results(weight, dosage_mg_first_day)
 
 def get_user_input_diagnosis():
-    print("Zithromax Day One Dosing Guidelines")
+    print("Day One Dosing Guidelines")
     print("")
     print("Choose diagnosis:")
     print("1 - Acute otitis media")
