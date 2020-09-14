@@ -8,7 +8,10 @@ The thyroid gland is under the control of the pituitary gland.  The pituitary
 gland produces a hormone called Thyroid Stimulating Hormone (TSH) which 
 signals the thyroid gland to produce thyroxine.  Normally, TSH levels in the
 blood of 1.0 to 4.0 mIU effectively regulate the thyroid gland to produce the
-correct amount of thyroxine.
+correct amount of thyroxine.  (In actuality, the hypothalamus is also involved
+in this loop, but it is the pituitary hormone that is measured diagnostically.
+See <https://www.uofmhealth.org/health-library/ug1836> for a brief description
+if interested.)
 
 In hypothyroidism, the thyroid gland does not produce enough 
 thyroxine.  When the pituitary gland detects low levels of thyroxine in the
