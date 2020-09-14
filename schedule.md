@@ -24,7 +24,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
     <a href="Resources/markdown.md">Markdown</a></td>
   
-   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td
+   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
 </tr>
 
 <tr>
@@ -82,19 +82,18 @@ will be lecture every class period even if no topic is shown on the schedule.
 <td>Mon Sept 14</td>
     <td>
     <a href="Lectures/json.md">JSON</a>;
-    <a href="Lectures/docstrings.md">Docstrings</a>
+    <a href="Lectures/docstrings.md">Docstrings</a>;
+    <a href="Lectures/variable_scope.md">Scope</a>;
+    <a href="Lectures/classes.md">Classes</a>
     </td>
-    <td><!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion</a></td>
+    <td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</a></td>
 </tr>
 
 <tr>
 <td>Wed Sept 16</td>
     <td>
-    <a href="Lectures/variable_scope.md">Scope</a>;
     <a href="Lectures/numpy.md">NumPy</a>, 
-    <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages,
-    <a href="Lectures/classes.md">Classes</a>
-    </td>
+    <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages,</td>
     <td>
     
 <!---<a href="Assignments/numpy_matplotlib_assignment.md">--->Take Home Exercise on Numpy/Matplotlib</a>
@@ -105,21 +104,21 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Sept 21</td>
-    <td><a href="Lectures/debugging.md">Debugging</a>, 
-    <a href="Resources/PyCharm">PyCharm</a> </td>
-    <td></td>
-</tr>
-
-<tr>
-<td>Wed Sept 23</td>
-    <td>Functional Decomposition</td>
+    <td>Functional Decomposition,  </td>
     <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
-<td>Mon Sept 28</td>
+<td>Wed Sept 23</td>
     <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
-    <a href="Lectures/logging.md">Logging</a>
+    <a href="Lectures/logging.md">Logging</a></td>
+    <td></td>
+</tr>
+
+<tr>
+<td>Mon Sept 28</td>
+    <td><a href="Lectures/debugging.md">Debugging</a>, 
+    <a href="Resources/PyCharm">PyCharm</a>
     </td>
     <td></td>
 </tr>
