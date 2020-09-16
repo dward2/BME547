@@ -92,19 +92,18 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Sept 16</td>
     <td>
-    <a href="Lectures/numpy.md">NumPy</a>, 
-    <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages,</td>
+        <a href="Lectures/numpy.md">NumPy</a>, 
+        <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages;
+        <a href="https://github.com/dward2/numpy_matplotlib_class">
+        Repo for class work</a>
+    </td>
     <td>
-    
-<!---<a href="Assignments/numpy_matplotlib_assignment.md">--->Take Home Exercise on Numpy/Matplotlib</a>
-
-</td>
-
+    </td>
 </tr>
 
 <tr>
 <td>Mon Sept 21</td>
-    <td>Functional Decomposition,  </td>
+    <td>Functional Decomposition</td>
     <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</a></td>
 </tr>
 
