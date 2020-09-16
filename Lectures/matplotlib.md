@@ -56,3 +56,13 @@ this exercise.
   -  Use the function `np.sin()`
 * Generate a plot of `y` vs. `time` using `matplotlib`
 --->
+
+## Troubleshooting
+If you are using linux (or sometimes macOS), when trying to run Matplotlib,
+you may get an error that says something like `Your currently selected backend, 
+'agg' does not support show().`  If you get this error, or something of the
+like, it may be that you do not have the `tkinter` package installed.  If that
+is the case, you will need to install it as follows:
+```bash
+sudo apt-get install python3-tk
+```
