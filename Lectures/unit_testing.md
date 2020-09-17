@@ -237,6 +237,82 @@ the ability to check that code meets the PEP-8 style requirements.  Run `pytest`
 as follows:  
 `pytest -v --pycodestyle`
 
+Typical output now looks like this:
+
+```
+============================= test session starts =============================
+platform win32 -- Python 3.8.3, pytest-6.0.1, py-1.9.0, pluggy-0.13.1 -- d:\classrepos\testwork\venv\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\ClassRepos\testwork
+plugins: pycodestyle-2.2.0
+collecting ... collected 4 items
+
+temp_conversion.py::PYCODESTYLE PASSED                                   [ 25%]
+test_temp_conversion.py::PYCODESTYLE PASSED                              [ 50%]
+test_temp_conversion.py::test_celsius_from_fahrenheit PASSED             [ 75%]
+test_temp_conversion.py::test_detect_fever PASSED                        [100%]
+
+============================== 4 passed in 0.14s ==============================
+
+```
+The PEP-8 checks are shown in the list first, and indicates whether they
+passed or failed.  Above is a passing example.  Below is an example of when 
+the code failed.  Note that the output give a description of where the PEP-8
+violation is and what the error was.
+
+```
+============================= test session starts =============================
+platform win32 -- Python 3.8.3, pytest-6.0.1, py-1.9.0, pluggy-0.13.1 -- d:\classrepos\testwork\venv\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\ClassRepos\testwork
+plugins: pycodestyle-2.2.0
+collecting ... collected 4 items
+
+temp_conversion.py::PYCODESTYLE FAILED                                   [ 25%]
+test_temp_conversion.py::PYCODESTYLE FAILED                              [ 50%]
+test_temp_conversion.py::test_celsius_from_fahrenheit PASSED             [ 75%]
+
+test_temp_conversion.py::test_detect_fever PASSED                        [100%]
+
+================================== FAILURES ===================================
+______________________________ pycodestyle-check ______________________________
+D:\ClassRepos\testwork\temp_conversion.py:26:1: W293 blank line contains whitespace
+
+______________________________ pycodestyle-check ______________________________
+D:\ClassRepos\testwork\test_temp_conversion.py:17:27: W292 no newline at end of file
+
+=========================== short test summary info ===========================
+FAILED temp_conversion.py::PYCODESTYLE
+FAILED test_temp_conversion.py::PYCODESTYLE
+========================= 2 failed, 2 passed in 0.07s =========================
+
+```
+Let's parse one of the failures:
+```
+______________________________ pycodestyle-check ______________________________
+D:\ClassRepos\testwork\temp_conversion.py:26:1: W293 blank line contains whitespace
+```
+It starts by telling us which file the error is in (`temp_conversion.py`).  It 
+then tells us the location of the error.  `26:1` means line 26 column 1.  It
+then gives us the PEP-8 error number (`W293`) and what the error is (`blank 
+line contains whitespace`).  When you fix these errors, you can run `pytest`
+again and see if they pass.
+
+Note, you may sometimes see the following output:
+```
+temp_conversion.py::PYCODESTYLE SKIPPED                                  [ 25%]
+``` 
+Rather than saying `PASSED` or `FAILED`, it says `SKIPPED`.  `pytest` uses a 
+cache to save information from run to run.  It uses this cache to determine if
+a file has changed since the last `pytest` run.  In order to save run time,
+PYCODESTYLE will not check a file if it has previously passed and has not
+changed since.  To force the PEP-8 check on files, use the `--cache-clear` flag
+as so:
+```
+pytest -v --pycodestyle --cache-clear
+```
+
+
 ## Exercise
 __Goal__:  Develop a Python function that:
 * receives as parameters two tuples, `(x1, y1), (x2, y2)`, that represent two
