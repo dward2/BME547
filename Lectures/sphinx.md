@@ -6,10 +6,9 @@ Python that is extremely powerful and has lots of configuration options.
 Here are steps to automatically generate API-like documentation using 
 docstrings in either reStructuredText, Google, or Numpy format.
 
-**Note:** As of 10/16/2019, the Sphinx documentation files
-had not been updated with changes created in the August 2019 update of Sphinx.
-Hence, they may not be correct.  The following steps have been verified for the
-new release.
+**Note:** The instructions given below may very  from that found in 
+the Sphinx documentation.  The instructions below are written to put
+all of the Sphinx files into a subfolder called `docs` in your project folder.
 
 1. Navigate to the root folder containing your project files.
 
@@ -24,15 +23,15 @@ virtual environment is active.
     the Sphinx-generated files.
 
 1. In the `docs` directory, there is a file called `conf.py`.  The following
-   edits need to be made:
+   edits need to be made to this file and then saved:
    + You will see the following lines that are commented out:    
         ```
         # import os
         # import sys
         # sys.path.insert(0, os.path.abspath('.'))
         ```  
-        Remove the comment markers and change the path from '.' to '..' so that 
-        the lines now look as follows:
+        Remove the comment markers and change the path from `'.'` to `'..'` so 
+        that the lines now look as follows:
         ```
         import os
         import sys
@@ -89,7 +88,7 @@ folder, enter the following command:
 
 **Example:** https://mlp6.github.io/fem/
 
-Relevant GitHub documentation: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch
+Relevant GitHub documentation: https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch
 
 
 Documentation for [Napleon](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html)
