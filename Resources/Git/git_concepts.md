@@ -99,7 +99,7 @@ Notice that next to the most recent commit, there is a pointer called `HEAD`.
 the repository.  
 
 ## Editing File in Repository
-Now, lets say I edit `file1.txt`.  Git will see that the file has changed and
+Now, let's say I edit `file1.txt`.  Git will see that the file has changed and
 will add it to the working directory.
 ```
 $ git status
@@ -249,7 +249,7 @@ Changes to be committed:
         new file:   file2.txt
 ```
 ### Undoing commit and removing files from index ("unadding")
-Going back to our repository above, lets say we wanted to undo the last commit
+Going back to our repository above, let's say we wanted to undo the last commit
 and "unadd" the changes from the staging area, but keep the changes in the
 working directory.  We do this by typing:  
 `git reset --mixed <commitID>`
@@ -279,7 +279,26 @@ dwonl@DESKTOP-G8L84L6 MINGW64 /d/unix/git_reset (master)
 Again, we see that the `HEAD` pointer moved to the commit we specified.
 We now see in `git status` that we have a change in the working directory
 (the addition of file2.txt) but it is untracked or not in the staging area.
-And, `HEAD` points 
 
+### Undoing commit and all changes made during this commit
+Again, going back to our repository above with both file1.txt and file2.txt
+committed, let's say that we want to uncommit the addition of file2.txt and 
+remove that file completely from the repository.  You would use the
+`git reset --hard <commitID>` command.
+```
+$ git reset --hard 8ca80c3
 
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+$ git log
+commit 8ca80c39c35e85a36019b365a3f61613dccb7552 (HEAD -> master)
+Author: David Ward <david.a.ward@duke.edu>
+Date:   Wed Jan 16 08:36:18 2019 -0500
+
+    first commit of file1.txt
+
+dwonl@DESKTOP-G8L84L6 MINGW64 /d/unix/git_reset (master)
+```
  
