@@ -64,14 +64,15 @@ to the patient as follows:
   + No single patient will have test results both above 4.0 and below 1.0,
   hence will only meet one of the diagnoses above.
 * For each patient, create an output file named "FirstName-LastName.json".
-The file should contain the following information in JSON format: 
-  + `First Name`, as a string
-  + `Last Name`, as a string
-  + `Age`, as a numeric variable, not a string
-  + `Gender`, as a string
-  + `Diagnosis`, as a string
-  + `TSH` (containing a list of all of the test results as numeric variables, not
-  strings)
+The file should contain a dictionary in JSON format with the following 
+keys and corresponding values: 
+  + `First Name`, value as a string
+  + `Last Name`, value as a string
+  + `Age`, value as a numeric variable, not a string
+  + `Gender`, value as a string
+  + `Diagnosis`, value as a string
+  + `TSH`, value as a list of all of the test results as numeric variables, not
+  strings
 * To create the above JSON output file, first create a dictionary with the keys
 listed exactly as above and their corresponding values.  Then, using the `open` and `json`
 commands, create and output the information.
