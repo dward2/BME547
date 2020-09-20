@@ -188,7 +188,7 @@ For this example, assume that `file1.txt` is created, added, and committed to
 a repository.  Then, a second file `file2.txt` is created, added, and
 committed to the repository.  
 
-When we type `git status`, we see that all files have been added and commited.
+When we type `git status`, we see that all files have been added and committed.
 ```
 $ git status
 On branch master
@@ -251,7 +251,8 @@ Changes to be committed:
 ### Undoing commit and removing files from index ("unadding")
 Going back to our repository above, let's say we wanted to undo the last commit
 and "unadd" the changes from the staging area, but keep the changes in the
-working directory.  We do this by typing:  
+working directory.  In other words, we want to undo both the `git commit` 
+and the `git add` commands.  We do this by typing:  
 `git reset --mixed <commitID>`
 
 ```
@@ -283,7 +284,9 @@ We now see in `git status` that we have a change in the working directory
 ### Undoing commit and all changes made during this commit
 Again, going back to our repository above with both file1.txt and file2.txt
 committed, let's say that we want to uncommit the addition of file2.txt and 
-remove that file completely from the repository.  You would use the
+remove that file completely from the repository.  In other words, we want to
+undo the "git commit" command, the "git add" commands, and also erase any 
+changes made since the last commit.  You would use the
 `git reset --hard <commitID>` command.
 ```
 $ git reset --hard 8ca80c3
@@ -301,4 +304,4 @@ Date:   Wed Jan 16 08:36:18 2019 -0500
 
 dwonl@DESKTOP-G8L84L6 MINGW64 /d/unix/git_reset (master)
 ```
- 
+ In this case. the `file2.txt` file no longer exists.
