@@ -1,9 +1,11 @@
-This README details the information for the test csv files found in in this 
-folder of your GitHub Classroom repository and the source of the data.
+This README details the information for the test csv files which will be found 
+in this folder of the GitHub Classroom repository that will be created for
+your use in this assignment.
 
 ## Source
 This data is originally from the [PhysioBank
-Database](https://physionet.org/physiobank/database/#ecg) for ECG data.
+Database](https://physionet.org/physiobank/database/#ecg) for ECG data, with
+some modifications.
 
 ## Test Files Description
 * The data are given as `time, voltage` pairs.  `time` is in seconds, `voltage`
