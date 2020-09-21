@@ -103,8 +103,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Sept 21</td>
-    <td>Functional Decomposition</td>
-    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</a></td>
+    <td>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></td>
+    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
