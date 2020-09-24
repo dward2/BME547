@@ -224,3 +224,11 @@ situations involving academic honor, especially if it is ambiguous what should
 be done.  More information on the Duke Community Standard, and its practice
 for this academic year, can be found at 
 <https://registrar.duke.edu/university-bulletins/duke-community-standard>.
+
+If a student is found responsible through the Office of Student Conduct for
+academic dishonesty on a graded item in this course, the student will 
+receive a zero for that assignment, to result in a final grade for the course
+reduced by at least one full letter grade.  If a student's admitted academic
+dishonesty is resolved directly through a faculty-student resolution agreement
+approved by the Office of Student Conduct, the terms of that agreement will
+dictate the grading response to the assignment at issue.
