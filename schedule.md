@@ -129,7 +129,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/apis_webservices_requests.md">
     APIs, Intro To Web Services, Requests</a>  
     </td>
-    <td><!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project</a></td>
+    <td><a href="Lectures/name_server_project.md">Recommended Learning Project</a></td>
 </tr>
 
 <tr>
