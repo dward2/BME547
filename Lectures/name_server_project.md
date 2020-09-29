@@ -2,13 +2,11 @@
 
 ## Name Server
 Write a program that uses the `request` library to POST student
-data to a server at `http://vcm-7631.vm.duke.edu:5001`.  (Note, this is the
-same server as the country_server from the lecture, but is running on port 
-`5001`).  And, use a POST request to the same server to get the results of 
-adding two numbers.
+data to a server at `http://vcm-6764.vm.duke.edu:5000`.  And, use a POST 
+request to the same server to get the results of adding two numbers.
 
-__Note__: If the server does not repond to your requests, it may be turned off.
-The server is not always active.  To check, click on <http://vcm-7631.vm.duke.edu:5001>.
+__Note__: If the server does not respond to your requests, it may be turned off.
+The server is not always active.  To check, click on <http://vcm-6764.vm.duke.edu:5000>.
 If a window opens saying "Server On", then the server is active.  If you 
 receive an error, it is not.  Contact Dr. Ward to activate the server.
 
@@ -16,7 +14,7 @@ For syntax help, see [this Jupyter Notebook](/Resources/WebServices/requests.ipy
 
 The server has the following endpoints:
 
-* `POST http://vcm-7631.vm.duke.edu:5001/student`  
+* `POST http://vcm-6764.vm.duke.edu:5000/student`  
 allows you to add your
 student data.  The associated POST data should look like this JSON:  
     ```
@@ -27,13 +25,13 @@ student data.  The associated POST data should look like this JSON:
     }
     ```  
   If successful, the POST request will return a JSON with a "message" key and a
-"number of students" key.  If the request is unsucessful, it will return a
+"number of students" key.  If the request is unsuccessful, it will return a
 JSON with a string giving the reason.
 
-* `GET http://vcm-7631.vm.duke.edu:5001/list`  
+* `GET http://vcm-6764.vm.duke.edu:5000/list`  
 returns a list of all the student data currently available on server
 
-* `POST http://vcm-7631.vm.duke.edu:5001/sum`  
+* `POST http://vcm-6764.vm.duke.edu:5000/sum`  
 allows you to compute a standard sum based on JSON input that looks like:
   ```
   {
@@ -44,6 +42,7 @@ allows you to compute a standard sum based on JSON input that looks like:
 
 ## Blood Match
 A blood type matching server is running at URL `http://vcm-7631.vm.duke.edu:5002`.
+(Note the different port number).
 You can verify if the server is running by clicking on 
 <http://vcm-7631.vm.duke.edu:5002>.  If it is not, contact Dr. Ward.
 
