@@ -138,7 +138,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/flask_server_setup.md">
            Building a Web Server with Flask</a>
     </td>
-    <td><!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
+    <td><a href="Lectures/time_server_project.md">Recommended Server Project
     </a></td>
 </tr>
 
