@@ -38,7 +38,7 @@ in your route name.
   can be turned into an integer) or rejected (if it contains any letters).  So,
   `123` or `"123"` should be accepted as patient_ids (although the string 
   `"123"` should be converted into the integer `123` for storage), while 
-  `"a54"` or `"aj"` should be rejected.  
+  `"a54"`, `"aj"`, or `"54a"` should be rejected.  
   This route is called to register a new patient with your server.  This would
   occur when a heart rate monitor is checked out and attached 
   to a particular patient.  This will allow you to initialize a patient in
@@ -253,8 +253,8 @@ without simultaneous unit testing will be a deduction.
 SendGrid, so keep this function separate and small.--->
 - Create a git tag for the final version of your repository as done previously 
 in this class.
-- Deploy your server code on your VCM and include in your README.md file the 
-hostname and port on which your server is running (eg., 
+- Deploy your server code on your virtual machine and include in your README.md 
+file the hostname and port on which your server is running (eg., 
 `vcm-1000.vm.duke.edu:5000`).  Remember to 
 follow the instructions about ensuring your server is not automatically
 shut down (there is a check box on the VCM control panel. It will ask you for a 
