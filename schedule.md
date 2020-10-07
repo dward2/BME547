@@ -145,50 +145,51 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Oct 7</td>
-    <td><a href="Lectures/server_code_design.md">Server Design</a>, Server Debugging,   
-    <a href="Resources/virtual_machines.md">Virtual machines</a>,
-    <a href="Resources/WebServices/screen.md">Screen</a></td>
-    <td><!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned</td>
+    <td><a href="Lectures/server_code_design.md">Server Design</a>   
+    <td><a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a></td>
     </tr>
 
 <tr>
 <td>Mon Oct 12</td>
-    <td> <a href="Lectures/databases.md">Introduction to Databases</a></td>
+    <td>Server Debugging, 
+    <a href="Resources/virtual_machines.md">Virtual machines</a>,
+    <a href="Resources/WebServices/screen.md">Screen</a>
+    </td>
     <td></td>
 </tr>
 
 <tr>
 <td>Wed Oct 14</td>
-    <td>MongoDB/PyMODM Example</td>
-    <td><!---<a href="Lectures/database_class_work.md">--->In-Class Project</a></td>
+    <td><a href="Lectures/databases.md">Introduction to Databases</a></td>
+    <td></td>
 </tr>
 
 <tr>
 <td>Mon Oct 19</td>
-    <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
+    <td>MongoDB/PyMODM Example
     </td>
-    <td></td> 
+    <td><!---<a href="Lectures/database_class_work.md">--->In-Class Project</a></td> 
 </tr>
 
 <tr>
 <td>Wed Oct 21</td>
-    <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
-    <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></td>
+    <td></td>
     <td><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a></td>
 </tr>
 
 <tr>
 <td>Mon Oct 26</td>
-    <td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+    <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
-    <td>IEC 62304 Assignment (in Sakai)
+    <td>
     </td>
 </tr>
 
 <tr>
   <td>Wed Oct 28</td>
   <td>
-  <a href="Lectures/intro_to_security.md">Introduction to Security</a>
+  <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
+    <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
   </td>
     <td>
 
@@ -208,13 +209,13 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
     <td>Mon Nov 9</td>
-    <td></td>
-    <td></td>
+    <td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a></td>
+    <td>IEC 62304 Assignment (in Sakai)</td>
 </tr>
 
 <tr>
     <td>Wed Nov 11</td>
-    <td></td>
+    <td><a href="Lectures/intro_to_security.md">Introduction to Security</a></td>
     <td></td>
 </tr>
 
