@@ -185,8 +185,8 @@ the input, call other functions, and return the results).
 
 Note: for this assignment, your server will need to keep the information
 it is sent.  You can choose to store this information by using an in-memory
-data structure like Python lists and dictionaries, or you can choose to use
-an external database.
+data structure like Python lists, dictionaries, or classes.  You could also
+choose to use an external database.
 
 ### E-mail Server
 I have set-up a server to simulate accessing a third-party webservice for 
