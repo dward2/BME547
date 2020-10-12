@@ -152,15 +152,16 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Oct 12</td>
     <td>Server Debugging, 
-    <a href="Resources/virtual_machines.md">Virtual machines</a>,
-    <a href="Resources/WebServices/screen.md">Screen</a>
+    <a href="Resources/virtual_machines.md">Virtual machines</a>
     </td>
     <td></td>
 </tr>
 
 <tr>
 <td>Wed Oct 14</td>
-    <td><a href="Lectures/databases.md">Introduction to Databases</a></td>
+    <td>Using Virtual Machines,
+    <a href="Resources/WebServices/screen.md">Screen</a>,
+    <a href="Lectures/databases.md">Introduction to Databases</a></td>
     <td></td>
 </tr>
 
