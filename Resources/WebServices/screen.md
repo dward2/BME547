@@ -25,6 +25,7 @@ Within each session, you can have multiple screens.
 
 ## Using Screen
 Start a new screen session:  `screen`
+
 Start a new screen session with a given name:  `screen -S <session_name>`
 
 List of commands:  `ctrl-a ?`
