@@ -168,7 +168,9 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Oct 19</td>
     <td>
-    <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>
+      <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>      
+      (<a href="https://github.com/dward2/mongo_db_jupyter_example">Class Demo  
+        Repository</a>)
     </td>
     <td></td> 
 </tr>
