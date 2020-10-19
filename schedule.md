@@ -167,15 +167,17 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Oct 19</td>
-    <td>MongoDB/PyMODM Example
+    <td>
+    <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>
     </td>
-    <td><!---<a href="Lectures/database_class_work.md">--->In-Class Project</a></td> 
+    <td></td> 
 </tr>
 
 <tr>
 <td>Wed Oct 21</td>
-    <td></td>
-    <td><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a></td>
+    <td>MongoDB/PyMODM Example</td>
+    <td><!---<a href="Lectures/database_class_work.md">--->In-Class Project</a>,
+    <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a></td>
 </tr>
 
 <tr>
