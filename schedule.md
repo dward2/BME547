@@ -178,8 +178,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Oct 21</td>
     <td>MongoDB/PyMODM Example</td>
-    <td><!---<a href="Lectures/database_class_work.md">--->In-Class Project</a>,
-    <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a></td>
+    <td><!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
+    </td>
 </tr>
 
 <tr>
@@ -187,6 +187,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
     <td>
+    <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a>
     </td>
 </tr>
 
