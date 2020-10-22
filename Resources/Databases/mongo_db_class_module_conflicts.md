@@ -104,7 +104,8 @@ it would have only found the "Gym" entry which was created using the
 `another_module.PhoneNumber` class.
 
 Unfortunately, just importing the definition created in the `database` module
-can also cause problems.  For example, if `another_module` is re-written as 
+will not solve the problem either, and can create other problems.
+For example, if `another_module` is re-written as 
 follows:
 ```
 # another_module.py
@@ -116,14 +117,20 @@ def add_another_number(name_arg, phone_number_arg):
     u.save()
     return
 ```
-this leads to what I call "looping imports".  When `database` imports the 
+the database entry stored here will have the `_cls` name of 
+`database.PhoneNumber` and still won't be found when trying to be found from
+the main module that will be looking for `__main__.PhoneNumber`.  In addition,
+if you are not careful with importing a module that is already being imported,
+you can get what I call "looping imports".  When `database` imports the 
 `another_module` module, the first thing `another_module` does is try to 
-import `database` during this import of `database`, `database` tries to 
-import `another_module` again, which will lead to an error.  
+import `database`.  Depending on what you are importing and whether there are
+global variables and function calls, this can lead to errors.  
 
 The solution is:  
 __Do not cut and paste the code that defines the class from one
-module to the other.  Define a separate module that only contains the
+module to the other.  Also, do not define a class in any module that might
+be run from the command line.  Instead, define a separate module that only 
+contains the
 MongoDB class information and import this into any module that needs to
 access the database.__  
 
