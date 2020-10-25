@@ -301,6 +301,16 @@ for information on adding images to your interface.
 specify that you want to learn in Python and it will show the code using 
 `tkinter`.  It also has some links to good documentation.
 
+<https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/index.html> - 
+Comprehensive documentation for `tkinter`.  A few years old and written for 
+Python 2.7, so some
+syntax may be slightly different, but has good description of all of the
+options and configurations for many of the `tkinter` widgets.
+
+<https://www.kite.com/python/docs/tkinter> - A not-terribly user friendly
+reference guide for `tkinter`, but does seem to have good lists of all
+methods, arguments, and keywords for all the widgets.
+
 <https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html> - 
 documentation for PyQt5
 
