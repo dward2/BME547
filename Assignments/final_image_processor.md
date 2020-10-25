@@ -1,19 +1,19 @@
-# Patient Monitoring Client/Server Project (Summer 2020)
+# Patient Monitoring Client/Server Project (Fall 2020)
 
-**Final Project DUE:** Wednesday, June 24, 2020, 11:59 PM EDT 
+**Final Project DUE:** Monday, November 16, 2020, 11:59 PM EDT 
 
 ## Overview
 The final project in this class will require you to leverage the
-industry-standard skills you've learned over this summer session to design a 
+industry-standard skills you've learned during this semester to design a 
 Patient Monitoring
 System that has a patient-side client, a monitoring-station client, and a
 server/database that allows patient data to be uploaded and stored on the
 server and retrieved for ad-hoc and continuous monitoring.
 
-This final project can be somewhat open-ended if you would like to tailor this to
+This final project can be modified ended if you would like to tailor this to
 your areas of interest.  If you plan to stray away from the recommended project
 and requirements below, please submit a one-page project proposal to Dr. Ward
-by *Friday, June 19, 2020 at 12:00 noon* for evaluation to ensure the proposed
+by *Monday, November 2, 2020 at 12:00 noon* for evaluation to ensure the proposed
 project meets the requirements for the class. Be sure to include motivations,
 technologies, functional specifications, and anticipated deliverables.
 
@@ -61,13 +61,13 @@ rate (i.e., whatever heart rate your code measured for the original ECG
 assignment will be considered the correct heart rate for this assignment).  
    
 ### Monitoring Station GUI Client
-At a minimum, your monitoring station GUI cliend should provide a __graphical__
+At a minimum, your monitoring station GUI client should provide a __graphical__
 user interface with the following functionality:
   + Allow the user to select a patient medical record number from a list of 
   available numbers on the server.
   + For the selected patient, display the medical record number, the patient
-  name, the latest measured heart rate/ECG image, and 
-  the date/time of which this latest heart rate data was uploaded to the server.
+  name, the latest measured heart rate & ECG image, and 
+  the date/time at which this latest heart rate data was uploaded to the server.
   + Allow the user to select from a list of historical ECG images and their 
    date/times for the selected patient, download the selected image, and 
    display the selected image side-by-side with the latest ECG image already 
@@ -96,7 +96,7 @@ the tasks needed by the clients as described above and outlined here:
 
 * Accept uploads from the patient-side client that will include, at a minimum,
 the medical record number.  The upload may also include a name, medical image, 
-and/or heart rate/ECG image.
+and/or heart rate & ECG image.
 * Communicate with and utilize a persistent database that will store the above
 uploaded data for retrieval at a future time.  
 * When a heart rate and ECG image are received, the date and time of receipt 
@@ -110,7 +110,7 @@ only be created the first time and does not to be updated.)
 * Accept requests from the monitoring station client to retrieve the following
 information from the database and download it to the client:
   + a list of available patient medical record numbers
-  + the name and latest heart rate/ECG image for a specific patient
+  + the name and latest heart rate & ECG image for a specific patient
   + a list of ECG Image timestamps for a specific patient
   + a list of medical images for a specific patient
   + a specific ECG Image based on timestamp for a specific patient
@@ -118,7 +118,7 @@ information from the database and download it to the client:
 * Provide any other services as needed for the client to perform its needed
 functions.
 
-**Note**: The GUI should only make requests to the server and should not make 
+**Note**: The GUIs should only make requests to the server and should not make 
 contact with the database.  All database functions should be handled from the
 server.  If the GUI needs to interact with the database, it should do it by
 making requests of the server. 
@@ -183,10 +183,10 @@ graded.
 * Robust README
 
 ## Links of Interest
-[Image Toolbox](../Resources/image_toolbox.md)
-[Tkinter Intro](../Lectures/intro_to_gui.md)
-[Images in Tkinter](../Resources/tkinter_images.md)
-[Tkinter Toolbox](../Resources/tkinter_toolbox.md) 
+* [Image Toolbox](../Resources/image_toolbox.md)
+* [Tkinter Intro](../Lectures/intro_to_gui.md)
+* [Images in Tkinter](../Resources/tkinter_images.md)
+* [Tkinter Toolbox](../Resources/tkinter_toolbox.md) 
 
 ## Q & A and Clarifications
 As questions are raised and clarifications made, I will include those here:
