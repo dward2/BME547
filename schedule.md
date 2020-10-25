@@ -187,7 +187,7 @@ will be lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
     <td>
-    <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned</a>
+    <a href="Assignments/final_image_processor.md">Final Project Assigned</a>
     </td>
 </tr>
 
