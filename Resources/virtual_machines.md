@@ -102,3 +102,16 @@ environments.  Review the information from the
 [setup assignment](/Assignments/01_tool_setup_git_intro.md) and
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
 virtual machine, you can follow the information given for macOS users.
+
+### Disable Automatic Power Downs
+As a default, your virtual machine is configured to automatically power down
+at the end of every day.  This a desirable power saving tool.  However, if
+you need to keep your VM and server running 24/7, you can disable this 
+setting as follows.
+* Visit <https://vcm.duke.edu/> and log in to the Virtual Computing Manager 
+(VCM) using your NetID.
+* Select the appropriate virtual machine under the "My Reservations" section.
+* Under VM Management Tools, you should see a checkbox labeled "Automatic
+power downs?".  Uncheck this box.  You will be prompted for a reason.  Enter
+that you need to have your VM running 24/7 for a class.
+
