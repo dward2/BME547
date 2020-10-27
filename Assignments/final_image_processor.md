@@ -1,6 +1,6 @@
 # Patient Monitoring Client/Server Project (Fall 2020)
 
-**Final Project DUE:** Monday, November 16, 2020, 11:59 PM EDT 
+**Final Project DUE:** Monday, November 16, 2020, 11:59 PM EST 
 
 ## Overview
 The final project in this class will require you to leverage the

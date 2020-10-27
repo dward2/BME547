@@ -194,9 +194,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
   <td>Wed Oct 28</td>
   <td>
-  Milestones/Projects;
-  <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
-    <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
+  Milestones/Projects; GUI Widgets continued
+  
   </td>
     <td>
 
@@ -204,7 +203,8 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
     <td>Mon Nov 2</td>
-    <td></td>
+    <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
+    <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></td>
     <td></td>
 </tr>
 
