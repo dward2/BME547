@@ -194,11 +194,12 @@ will be lecture every class period even if no topic is shown on the schedule.
 <tr>
   <td>Wed Oct 28</td>
   <td>
-  Milestones/Projects; GUI Widgets continued
-  
+    <a href="Lectures/github_teams.md">Milestones/Projects</a>; 
+    GUI Widgets continued
   </td>
-    <td>
-
+  <td>
+    <a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a>
+  </td>
 </tr>
 
 <tr>
