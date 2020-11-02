@@ -204,14 +204,16 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
     <td>Mon Nov 2</td>
-    <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>;
-    <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></td>
+    <td>
+        Connecting GUI to Code;
+        <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
+    </td>
     <td></td>
 </tr>
 
 <tr>
     <td>Wed Nov 4</td>
-    <td></td>
+    <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a></td>
     <td></td>
 </tr>
 
