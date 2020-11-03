@@ -13,7 +13,7 @@ of a dialog window is a "Save as" window.
 
 ### `tkinter.messagebox`
 Provides simple dialogs to share information or prompt user for Yes/No type of
-answers.
+answers.  
 <https://docs.python.org/3/library/tkinter.messagebox.html>
 ```python
 from tkinter import messagebox
@@ -27,7 +27,7 @@ messagebox.askyesnocancel(title, message)
 
 
 ### `tkinter.simpledialog`
-Provides dialogs allowing the user to enter various types of values.
+Provides dialogs allowing the user to enter various types of values.  
 <https://docs.python.org/3/library/dialog.html#module-tkinter.simpledialog>
 
 ```python
@@ -39,7 +39,7 @@ simpledialog.askstring(title, prompt)
 ```
 
 ### `tkinter.filedialog`
-Provides access to system file/directory selection windows.
+Provides access to system file/directory selection windows.  
 <https://docs.python.org/3/library/dialog.html#module-tkinter.filedialog>
 ```python
 from tkinter import filedialog
@@ -112,7 +112,7 @@ should be familiar.  If not, please go back and review
      hold an instance of the `SecondWindow` class.  This variable will be the
      reference for the second window.  It needs to be defined in the main body
      of the `main_window` function so that, later on, we have access to this
-     variable in all of the subfunctions.
+     variable in all of the sub-functions.
      
   * ```python
     def open_window_cmd():
@@ -120,7 +120,7 @@ should be familiar.  If not, please go back and review
         sec_win = SecondWindow()
     ```
   
-    This subfunction creates an instance of the `SecondWindow` class and stores
+    This sub-function creates an instance of the `SecondWindow` class and stores
     it in the `sec_win` variable.  Since we are modifying `sec_win` which was
     defined in the `main_window` parent function, we need to use the `nonlocal`
     command to define that we do not want to create a local version of 
@@ -203,7 +203,7 @@ For example, let's modify the `start_window.py` module as follows.
         sec_win = SecondWindow(info_to_send)
     ```
     This function now will retrieve the information that was entered by the
-    user and will send it to the initializtion function of the `SecondWindow`
+    user and will send it to the initialization function of the `SecondWindow`
     class.
     
 Now, we need to modify the `SecondWindow` class in `second_window.py` to 
@@ -312,12 +312,12 @@ see this:
 
 ![](images/start_window_4a.JPG)
 
-####Issues with this approach
+#### Issues with this approach
 The approach above is best used when you want to use a main window and its
 code to control what a second window does.  But, what if you want the first
 window to pause what it is doing and wait until the user does some sort of 
 entry or work in the second window.  In that case,you want to create the
-second window in what is called a "modal" state.  This means that control
+second window in what is called a **"modal"** state.  This means that control
 will be passed to the second window and will only be returned to the first 
 window once the user has finished interacting with the second window.  This
 behavior is similar to how dialog windows work.
@@ -372,7 +372,7 @@ The primary change is the addition of these two lines:
         self.win.wait_window()
 ```
 The `grab_set` method set the sole focus of the GUI onto the modal window and
-does not allow any interaction with other widgets.  The `wait_window` method
+does not allow any interaction with other windows.  The `wait_window` method
 stops code execution for other GUI elements except this window.  Only when this
 window is destroyed will other code continue.  This causes the `main_window`
 code to pause until interactions with this window are complete.
@@ -432,7 +432,7 @@ if __name__ == '__main__':
 Changes include:
   * `ModalWindow` is now the imported class.
   * Widgets and code for modifying and getting info from the second window is
-    removed
+    removed.
   * The `open_window_cmd` sub-function was modified to get the results from
   the modal window.
   
