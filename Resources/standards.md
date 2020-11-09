@@ -33,7 +33,7 @@ pharmacological, immunological or metabolic means, but which may be assisted in 
 by such means
 
 * __Name a hazard, a hazardous situation, the sequence of events that could
-lead to that hazardous situation, and the possible harm.
+lead to that hazardous situation, and the possible harm.__
 ![](images/med_standard_1.png)
 
 # Exercise 2
