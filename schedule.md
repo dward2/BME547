@@ -219,7 +219,9 @@ will be lecture every class period even if no topic is shown on the schedule.
 
 <tr>
     <td>Mon Nov 9</td>
-    <td><a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a></td>
+    <td>
+      <a href="Resources/standards.md">Standards: </a>
+      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a></td>
     <td>IEC 62304 Assignment (in Sakai)</td>
 </tr>
 
