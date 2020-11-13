@@ -32,6 +32,17 @@ for detailed example of writing `flask` code for a web server.
     + `return` returns a string as a response
     + `return jsonify(python variable)` is needed to convert non-string
        variables into a JSON string for return
+       - Note that `jsonify` must be used with the `return` statement.  It will
+         not function properly if done on its own.  
+         Example that will not work:
+         ```
+            x = jsonify(result)
+            return x
+         ```
+         Example that will work:
+         ```
+            return jsonify(result)
+         ``` 
     + `app.run()` in `if __name__ == "__main__":` code
 * Access these endpoints by browser and local client program.
   + Describe `localhost:5000` and `http://127.0.0.1:5000`

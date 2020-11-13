@@ -121,6 +121,21 @@ Finally, the `flask` function `jsonify()` is used to serialize the answer
 into a JSON string for transmittal back to the client.  In this case, the
 function defines a dictionary with the input variables and the result.
 
+#### `jsonify` Important Usage Note
+Note that `jsonify` must be used with the `return` statement.  It will
+not function properly if done on its own.  
+
+ Example that will not work:  
+ ```
+    x = jsonify(result)
+    return x
+ ```
+
+ Example that will work:
+ ```
+    return jsonify(result)
+ ``` 
+
 ### Variable URLs
 You can send information to a web server by using a variable name in
 a URL.  Here is an example:
