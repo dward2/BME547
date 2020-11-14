@@ -68,7 +68,7 @@ A computer with administrator rights and good internet connection.
 * Testing
   + Unit testing
   + Functional / System testing
-  + Continuous integration (Travis CI)
+  + Continuous integration (GitHub Actions)
 * Fault tolerance (handling and raising exceptions)
 * Logging
 * Documentation

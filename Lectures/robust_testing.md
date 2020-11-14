@@ -112,4 +112,4 @@ True
 * Write unit tests for these functions.  Write at least one test that
 checks for failure (i.e., gives bad input and expects False)
 * Push to a GitHub repository
-* Activate Travis CI and implement automated testing.
+* Activate GitHub Actions and implement automated testing.

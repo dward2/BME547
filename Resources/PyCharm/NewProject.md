@@ -201,7 +201,7 @@ the instructions above under the heading __Push Changes to GitHub__.  A new
 feature branch on GitHub should be created with the same name as your local
 branch.
 * In GitHub, open a Pull Request to merge the newly pushed branch into the
-`master` branch and confirm the merge once all Travis Tests have passed.
+`master` branch and confirm the merge once all automated tests have passed.
 * Back in PyCharm, checkout the `master` branch by selecting 
 "VCS/Git/Branches..." from the menu bar, and then select `master` from the 
 pop-up list and "Checkout" from the sublist that opens.  Verify that `master`

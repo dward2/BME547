@@ -33,5 +33,4 @@ as if others download, can break their stuff.
   + Make sure to add recipient as assignee or tag them.
   + Link to code with issue
   + For errors, link to a unit test or code that I can run to generate issue.
-  + Or link to Travis-CI errors
   
