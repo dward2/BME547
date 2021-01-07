@@ -76,15 +76,15 @@ dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first
 $ git init
 Initialized empty Git repository in C:/Users/dwonl/repos/first/.git/
 
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ 
 ```
-The command prompt now has `(master)` added to it, to indicate that we are
-currently on the master branch.  More about that later.
+The command prompt now has `(main)` added to it, to indicate that we are
+currently on the main branch.  More about that later.
 
 If we look at what is now in the folder, we see the following:
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ ls -a
 ./  ../  .git/
 ```
@@ -105,10 +105,10 @@ some text into the editor, and then type `ctrl-x` followed by `Y`, and then
 command line.  Now, we can see that the new file has been created:
 
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ nano file1.txt
 
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ ls
 file1.txt
 ```
@@ -119,9 +119,9 @@ Copy."
 
 Typing `git status` shows the following:
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -132,7 +132,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-`git status` tells us that we are on the master branch, we have not yet 
+`git status` tells us that we are on the main branch, we have not yet 
 committed anything to the repository, but that there are untracked files, with
 `file1.txt` being that file.
 
@@ -140,14 +140,14 @@ committed anything to the repository, but that there are untracked files, with
 We need to tell git which files we want to track or add to the repository.  We
 do that using the `git add <filename>` command:
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git add file1.txt
 warning: LF will be replaced by CRLF in file1.txt.
 The file will have its original line endings in your working directory.
 
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -165,9 +165,9 @@ area or index.
 Finally, we commit the file to the repository by using the `git commit` 
 command:
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git commit -m "initial commit of file1.txt"
-[master (root-commit) 47a8b7d] Add file1.txt to the repo
+[main (root-commit) 47a8b7d] Add file1.txt to the repo
  1 file changed, 2 insertions(+)
  create mode 100644 file1.txt
 ```
@@ -177,9 +177,9 @@ tree.
 
 The `git status` command now will show the following:
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git status
-On branch master
+On branch main
 nothing to commit, working tree clean
 ```
 
@@ -208,7 +208,7 @@ The commit history of the repository now looks like this:
 and can be seen by using the `git log` command.
 ```
 $ git log
-commit d945b32718b5104b765e06608e53f418cc1e3ff6 (HEAD -> master)
+commit d945b32718b5104b765e06608e53f418cc1e3ff6 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:55:21 2019 -0500
 
@@ -231,7 +231,7 @@ has changed relative to the version in the repository.  So, Git will consider
 this change to be part of the working copy.
 ```
 $ git status
-On branch master
+On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
@@ -250,7 +250,7 @@ unmodified copy of `file1.txt` from the previous commit (it is stored in the
 Next, the command `git add file1.txt` will add it to the staging area:
 ```
 $ git status
-On branch master
+On branch main
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
@@ -265,7 +265,7 @@ and `git commit -m "modify file1.txt"` will commit it to the repository.
 The commit history now looks like this:
 ```
 $ git log
-commit da349ca0ac31b1e1d6a4853a8f9721e9885ed6d4 (HEAD -> master)
+commit da349ca0ac31b1e1d6a4853a8f9721e9885ed6d4 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 11:24:53 2019 -0500
 
@@ -294,29 +294,29 @@ a short cut.
 ## Branches
 When we want to add a new feature or addition to our project, we will likely
 not want to corrupt the current "working" version of the project while we are
-developing the new version.  We can do this by using "branches".  The "master"
+developing the new version.  We can do this by using "branches".  The "main"
 branch is usually considered to have the most recent version of the best
 working code.  We then make a copy of that code and save it on a branch where
 we can work on it.
 
 To create a new branch, we use the command `git branch <branchname>`.
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git branch my_new_branch
 
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git branch
-* master
+* main
   my_new_branch
 ```
 
 Above, we created a new branch called `my_new_branch`.  Then, using the command
 `git branch` without a branch name, we can list the existing branches.  We can
-see our original `master` branch and the new `my_new_branch`.  The current 
+see our original `main` branch and the new `my_new_branch`.  The current 
 branch is shown by the `*` next to its name.  If we want to switch to the new
 branch, we use the command `git checkout <branchname>`:
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git checkout my_new_branch
 Switched to branch 'my_new_branch'
 
@@ -372,7 +372,7 @@ Then, all changes add to the staging area can be committed with a single commit
 command.
 
 Now, on our new branch, we have added a third file, and modified the first.
-What happens if we go back to our `master` branch?
+What happens if we go back to our `main` branch?
 
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (my_new_branch)
@@ -380,20 +380,20 @@ $ ls
 file1.txt  file2.txt  file3.txt
 
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (my_new_branch)
-$ git checkout master
-Switched to branch 'master'
+$ git checkout main
+Switched to branch 'main'
 
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ ls
 file1.txt  file2.txt
 ```
-The master branch has our original two files, and if you looked in file1.txt,
+The main branch has our original two files, and if you looked in file1.txt,
 it would not contain the new edits.  But, file3.txt and other changes have
 not been lost.  They are stored in `.git`.  We can bring the changes back by
 checking out the new branch again.
 
 ```
-dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ git checkout my_new_branch
 Switched to branch 'my_new_branch'
 

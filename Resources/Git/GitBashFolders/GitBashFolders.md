@@ -28,7 +28,7 @@ The `git clone` command has made a local repository in the new subfolder it crea
 
 ex:![enter_repo_example.png](enter_repo_example.png "enter_repo_example.png")
 
-Notice that the command line prompt now says `(master)` at the end, indicating that we are now in a git repository.  The folder contains whatever files were in the GitHub repository that was cloned.  These files can also be seen in Windows Explorer.
+Notice that the command line prompt now says `(main)` at the end, indicating that we are now in a git repository.  The folder contains whatever files were in the GitHub repository that was cloned.  These files can also be seen in Windows Explorer.
 
 ex:![windows_explorer_example.png](windows_explorer_example.png "windows_explorer_example.png")
 

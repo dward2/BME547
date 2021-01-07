@@ -6,7 +6,7 @@
   pre-populated with the ECG test data needed for the assignment.  Once a 
   `.travis.yml` file is correctly created, Travis-CI integration will be made 
   with your repository.
-* Your final submission must be made to the `master` branch of your repository.
+* Your final submission must be made to the `main` branch of your repository.
 
 ## ECG Analysis: Functional Specifications
   + Read ECG data from a CSV file that will have lines with `time, voltage`. 
@@ -41,10 +41,10 @@
 * Frequent and meaningful commits!
 * Branches should be used for specific feature implementions, bug fixes, etc.
 * Branch names should be meaningful.
-* Merge your feature branches into the master branch using Pull Requests
+* Merge your feature branches into the main branch using Pull Requests
   on Git Hub.
   - Feature branches should be merged after passing unit tests with Travis CI.
-  - Do not delete your branches after merging them into master.
+  - Do not delete your branches after merging them into main.
 * Create an annotated tag titled `v1.0.0` or subsequent version when your
     assignment is completed and ready to be graded.
 * Make sure that your project has a `README.md` file that contains:

@@ -20,11 +20,11 @@ already existing team.
   + Add to project
   + Add to milestone
 
-* Avoid direct commits to master branch
+* Avoid direct commits to main branch
   + Solving conflicts
     - [Description of how to solve conflicts](../Resources/Git/MergeConflicts.md)
     - [Example](https://github.com/dward2/class_conflict)
-* Consider protection rules for master branch
+* Consider protection rules for main branch
 * Review of pull requests
 * Use .gitignore file to make sure you don't push up your venv or .idea files,
 as if others download, can break their stuff.

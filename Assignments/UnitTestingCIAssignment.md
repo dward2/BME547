@@ -44,9 +44,9 @@ boolean value of `True`.
    style.
 * Enable and use TravisCI in this repository.
 * Push code to GitHub.
-* Generate Pull Request on GitHub to merge your feature branch into the master
+* Generate Pull Request on GitHub to merge your feature branch into the main
 branch only after Travis CI reports a passing status.
-* Tag final submission on the master branch as `v1.0.0`.
+* Tag final submission on the main branch as `v1.0.0`.
 
 
 ### Grading Criteria

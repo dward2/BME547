@@ -142,5 +142,5 @@ found there.
   + Push your local repository to GitHub.
   + Create a local branch, create/add/commit a new file.
   + Push new local branch to GitHub.
-  + Merge new branch on GitHub into master branch on GitHub.
-  + Pull the updated master branch into local repository.
+  + Merge new branch on GitHub into main branch on GitHub.
+  + Pull the updated main branch into local repository.
