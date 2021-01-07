@@ -24,7 +24,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
     <a href="Resources/markdown.md">Markdown</a></td>
   
-   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
+   <td><!---<a href="Assignments/02_git_fundamentals_practice.md">-->Git Fundamentals/Practice</td>
 </tr>
 
 <tr>
@@ -33,7 +33,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/return_keyword.md">Return</a> /
     <a href="Lectures/git_workflow.md">Git Workflow</a>
     </td>
-    <td><a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a></td>
+    <td><!---<a href="Lectures/git_workflow.md#LDL-Branch">-->In-class Exercise</td>
 </tr>
 
 <tr>
@@ -41,7 +41,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/modules.md">Modules</a> /
     <a href="Lectures/virtual_environments.md">Virtual Environments</a> 
     </td>
-    <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
+    <td><!---<a href="Assignments/PythonFundamentalAssignment.md">--->Python Fundamentals</td>
 </tr>
 
 <tr>
@@ -50,7 +50,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/lists.md">Lists</a> / 
     <a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
     </td>
-    <td><a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a></td>
+    <td><!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator</td>
 </tr>
 
 <tr>
@@ -58,7 +58,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
     <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a> 
     </td>
-    <td><a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a></td>
+    <td><!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise</td>
 </tr>
 
 <tr>
@@ -66,7 +66,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>Unit Testing: <a href="Lectures/continuous_integration_github_actions.md.md">Continuous 
     Integration & GitHub Actions</a>;
     <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
-    <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
+    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assignment</td>
 </tr>
 
 <tr>
@@ -86,7 +86,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/variable_scope.md">Scope</a>;
     <a href="Lectures/classes.md">Classes</a>
     </td>
-    <td><a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</a></td>
+    <td><!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion</td>
 </tr>
 
 <tr>
@@ -104,7 +104,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Thurs Feb 25</td>
     <td>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></td>
-    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
+    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</td>
 </tr>
 
 <tr>
@@ -129,7 +129,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/apis_webservices_requests.md">
     APIs, Intro To Web Services, Requests</a>  
     </td>
-    <td><a href="Lectures/name_server_project.md">Recommended Learning Project</a></td>
+    <td><!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project</td>
 </tr>
 
 <tr>
@@ -138,15 +138,15 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/flask_server_setup.md">
            Building a Web Server with Flask</a>
     </td>
-    <td><a href="Lectures/time_server_project.md">Recommended Server Project
-    </a></td>
+    <td><!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
+    </td>
 </tr>
 
 
 <tr>
 <td>Tues Mar 16</td>
     <td><a href="Lectures/server_code_design.md">Server Design</a>   
-    <td><a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a></td>
+    <td><!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned</td>
 
 
 <tr>
@@ -187,7 +187,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
     <td>
-    <a href="Assignments/final_image_processor.md">Final Project Assigned</a>
+    <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned
     </td>
 </tr>
 
@@ -198,12 +198,12 @@ will be a lecture every class period even if no topic is shown on the schedule.
     GUI Widgets continued
   </td>
   <td>
-    <a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a>
+    <!---<a href="Lectures/github_teams.md#Final-Project-Planning">--->Planning for Final Project
   </td>
 </tr>
 
 <tr>
-    <td>Tues Apr 13</td>
+    <td>Thurs Apr 8</td>
     <td>
         Connecting GUI to Code;
         <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
@@ -212,33 +212,27 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-    <td>Thurs Apr 15</td>
+    <td>Tues Apr 13</td>
     <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a></td>
     <td></td>
 </tr>
 
 <tr>
-    <td>Tues Apr 20</td>
+    <td>Thurs Apr 15</td>
     <td>
       <a href="Resources/standards.md">Standards: </a>
       <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a></td>
     <td>IEC 62304 Assignment (in Sakai)</td>
-    <td>Tues Apr 13</td>
-    <td></td>
-    <td></td>
 </tr>
 
 <tr>
-    <td>Wed Nov 11</td>
-    <td><a href="Lectures/intro_to_security.md">Introduction to Security</a></td>
+    <td>Tues Apr 20</td>
+    <td><a href="Lectures/intro_to_security.md">Introduction to Security</a>;
+    LDOC
+</td>
     <td></td>
 </tr>
 
-<tr>
-    <td>Mon Nov 16</td>
-    <td>LDOC</td>
-    <td></td>
-</tr>
 
 
 
