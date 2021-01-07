@@ -22,7 +22,7 @@ Upon typing`git status`, the following will show:
 
 ```
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -43,7 +43,7 @@ index.
 `git status` will now show:
 ```
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -62,7 +62,7 @@ and commits them to the tree or the repository itself.
 , and you will then see the following with `git status`:
 ```
 $ git status
-On branch master
+On branch main
 nothing to commit, working tree clean
 
 ```
@@ -81,7 +81,7 @@ The commit history of the repository now looks like this:
 and can be seen by using the `git log` command.
 ```
 $ git log
-commit d945b32718b5104b765e06608e53f418cc1e3ff6 (HEAD -> master)
+commit d945b32718b5104b765e06608e53f418cc1e3ff6 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:55:21 2019 -0500
 
@@ -103,7 +103,7 @@ Now, let's say I edit `file1.txt`.  Git will see that the file has changed and
 will add it to the working directory.
 ```
 $ git status
-On branch master
+On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
@@ -122,7 +122,7 @@ unmodified copy of `file1.txt` from the previous commit (it is stored in the
 Next, the command `git add file1.txt` will add it to the staging area:
 ```
 $ git status
-On branch master
+On branch main
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
@@ -137,13 +137,13 @@ and `git commit -m "modify file1.txt"` will commit it to the repository.
 The commit history now looks like this:
 ```
 $ git log
-commit da349ca0ac31b1e1d6a4853a8f9721e9885ed6d4 (HEAD -> master)
+commit da349ca0ac31b1e1d6a4853a8f9721e9885ed6d4 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 11:24:53 2019 -0500
 
     modify file1.txt
 
-commit d945b32718b5104b765e06608e53f418cc1e3ff6 (HEAD -> master)
+commit d945b32718b5104b765e06608e53f418cc1e3ff6 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:55:21 2019 -0500
 
@@ -191,14 +191,14 @@ committed to the repository.
 When we type `git status`, we see that all files have been added and committed.
 ```
 $ git status
-On branch master
+On branch main
 nothing to commit, working tree clean
 ```
 By typing `git log`, we can see the commit
 history of this repository.
 ```
 $ git log
-commit e5868b0718b5104b765e06608e53f418cc1e3ff6 (HEAD -> master)
+commit e5868b0718b5104b765e06608e53f418cc1e3ff6 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:55:21 2019 -0500
 
@@ -231,7 +231,7 @@ Then, we will see from `git log` that the HEAD has been moved to this commit,
 and the latest commit is no longer in the history.
 ```
 $ git log
-commit 8ca80c39c35e85a36019b365a3f61613dccb7552 (HEAD -> master)
+commit 8ca80c39c35e85a36019b365a3f61613dccb7552 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:36:18 2019 -0500
 
@@ -242,7 +242,7 @@ By typing `git status`, we see that we have moved file2.txt back into the
 staging area.
 ```
 $ git status
-On branch master
+On branch main
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
@@ -259,7 +259,7 @@ and the `git add` commands.  We do this by typing:
 $ git reset --mixed 8ca80c3
 
 $ git status
-On branch master
+On branch main
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
@@ -269,13 +269,13 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 
 $ git log
-commit 8ca80c39c35e85a36019b365a3f61613dccb7552 (HEAD -> master)
+commit 8ca80c39c35e85a36019b365a3f61613dccb7552 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:36:18 2019 -0500
 
     first commit of file1.txt
 
-dwonl@DESKTOP-G8L84L6 MINGW64 /d/unix/git_reset (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 /d/unix/git_reset (main)
 ```
 Again, we see that the `HEAD` pointer moved to the commit we specified.
 We now see in `git status` that we have a change in the working directory

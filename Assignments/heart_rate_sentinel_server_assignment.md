@@ -245,7 +245,7 @@ commiting to their assigned routes.
 (unit testing, git practices, Travis CI, virtual environments, PEP8, 
 docstrings, descriptive README.md, license, etc)__
 - Unit testing should be done in parallel with code development.  So, when code
-is written on a feature branch and merged into master, there must be
+is written on a feature branch and merged into main, there must be
 appropriate unit testing available during that merge.  You cannot write the
 code first, merge it, and then write the tests later.  Any code that is merged
 without simultaneous unit testing will be a deduction.

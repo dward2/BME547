@@ -20,7 +20,7 @@ Integration and Testing can be integrated with the use of GitHub.  We will use
 a service called Travis CI.  Anytime new code is pushed into a branch in 
 GitHub, Travis CI will automatically run our unit tests and give us the 
 results.  In this way, only code that passes the test can then be merged into 
-the master branch.
+the main branch.
 
 ## Using Travis-CI
 ### Enable Travis-CI

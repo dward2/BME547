@@ -25,6 +25,7 @@ already existing team.
 * Avoid direct commits to master branch
   + Solving conflicts
     - [Description of how to solve conflicts](../Resources/Git/MergeConflicts.md)
+    - [Example](https://github.com/dward2/class_conflict)
 * Consider protection rules for master branch (requires Settings access)
 * Review of pull requests
 * Use .gitignore file to make sure you don't push up your venv or .idea files,

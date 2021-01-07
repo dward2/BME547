@@ -1,7 +1,7 @@
 # Git and GitHub Merge Conflicts
 An Example
 
-The following file is commited to the master branch:
+The following file is committed to the main branch:
 ```
 # code.py
 
@@ -32,7 +32,7 @@ def subtract_numbers(total, a, b, c, d):
     answer = total - a - b - c - d
     return answer
 ```
-Meanwhile, back on the `master` branch, a different change was made to this 
+Meanwhile, back on the `main` branch, a different change was made to this 
 same function where `c` is subtracted twice:
 ```
 def subtract_numbers(total, a, b, c):
@@ -40,7 +40,7 @@ def subtract_numbers(total, a, b, c):
     return answer
 ```
 So, different changes have been made to the same lines of code in both the 
-`master` and `modify_code` branches.
+`main` and `modify_code` branches.
 
 ### Resolve Conflict During Merge On GitHub
 
@@ -59,7 +59,7 @@ Clicking on the "Resolve conflicts" brings up a screen with a text editor.
 The conflicts are highlighted with `<<<<<<<` and `>>>>>>>`.  
 The lines between `<<<<<<< modify_code` and `=======` exist in the 
 `modify_code` branch.  
-The lines between `=======` and `>>>>>>> master` exist in the master branch.
+The lines between `=======` and `>>>>>>> main` exist in the main branch.
 
 The desired final changes in the merge are made by editing this section to have
 the desired result, and then removing any lines containing `<<<<<<<`, `>>>>>>>`,
@@ -70,17 +70,17 @@ button should become active and can be clicked, allowing for the completion of
 the pull request.
 
 ### Resolve Conflict During Merge On Git Command Line
-To merge the `modify_code` branch into the `master` branch in git, the `master`
+To merge the `modify_code` branch into the `main` branch in git, the `main`
 branch would be checked out, and `git merge modify_cde` entered.  The result
 is as follows:
 ```
-/d/ClassRepos/git_conflict (master)
+/d/ClassRepos/git_conflict (main)
 $ git merge modify_code
 Auto-merging code.py
 CONFLICT (content): Merge conflict in code.py
 Automatic merge failed; fix conflicts and then commit the result.
 
-/d/ClassRepos/git_conflict (master|MERGING)
+/d/ClassRepos/git_conflict (main|MERGING)
 $
 
 ```
@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
 The conflicts are highlighted with `<<<<<<<` and `>>>>>>>`.  
 The lines between `<<<<<<< HEAD` and `=======` exist in the 
-`HEAD` branch, which is the `master` branch currently checked out.  
+`HEAD` branch, which is the `main` branch currently checked out.  
 The lines between `=======` and `>>>>>>> modify_code` exist in the 
 `modify_code` branch.
 
@@ -130,14 +130,14 @@ or `=======`.
 The file can then be saved.  To complete the merge, the modified file must
 be added and committed to the repository as follows:
 ```
-/d/ClassRepos/git_conflict (master|MERGING)
+/d/ClassRepos/git_conflict (main|MERGING)
 $ git add code.py
 
-/d/ClassRepos/git_conflict (master|MERGING)
+/d/ClassRepos/git_conflict (main|MERGING)
 $ git commit -m "Fixed merge conflicts to represent modify_code branch"
-[master bac021a] Fixed merge conflicts to represent modify_code branch
+[main bac021a] Fixed merge conflicts to represent modify_code branch
 
-dwonl@DESKTOP-G8L84L6 MINGW64 /d/ClassRepos/git_conflict (master)
+dwonl@DESKTOP-G8L84L6 MINGW64 /d/ClassRepos/git_conflict (main)
 $
 ```
-The branch is now simply labelled as `(master)`.
+The branch is now simply labelled as `(main)`.

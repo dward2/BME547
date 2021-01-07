@@ -41,7 +41,7 @@ menu bar, choose `VCS/Import into Version Control/Create Git Repository...`
 ![CreateGitRepositoryWindow.PNG](images/CreateGitRepositoryWindow.PNG)
 * The newly created project folder should already be selected.  Click "Ok".
 * The bottom right portion of the PyCharm window should now show that `git`
-is active and that you are on the master branch.  
+is active and that you are on the main branch.  
 ![GitMasterStatus.png](images/GitMasterStatus.PNG)
 
 ### Link to a new GitHub repository
@@ -109,7 +109,7 @@ click "Clone".
 * Click "Yes".  Then, the following window will be shown:    
 ![OpenProjectWindow.png](images/OpenProjectWindow.PNG)
 * Click "Yes".  A new PyCharm window will open with this project open and the
-files from the Master branch of the GitHub repository will be available 
+files from the main branch of the GitHub repository will be available 
 locally.
 ### Create a Virtual Environment
 * This method does not automatically create a virtual environment.
@@ -180,7 +180,7 @@ want to install and click on the "Install Packages" button.
 Once your local PyCharm project and `git` repository are set up and linked to
 GitHub per the instructions above, here is the suggested `git` workflow in
 PyCharm.
-* In PyCharm, making sure that the `master` branch is active, make a new
+* In PyCharm, making sure that the `main` branch is active, make a new
 feature branch.  From the menu bar, select "VCS/Git/Branches..." and then
 select "+ New Branch" from the pop-up list.  
 ![CreateNewBranchWindow.png](images/CreateNewBranchWindow.PNG)
@@ -201,19 +201,19 @@ the instructions above under the heading __Push Changes to GitHub__.  A new
 feature branch on GitHub should be created with the same name as your local
 branch.
 * In GitHub, open a Pull Request to merge the newly pushed branch into the
-`master` branch and confirm the merge once all Travis Tests have passed.
-* Back in PyCharm, checkout the `master` branch by selecting 
-"VCS/Git/Branches..." from the menu bar, and then select `master` from the 
-pop-up list and "Checkout" from the sublist that opens.  Verify that `master`
+`main` branch and confirm the merge once all automated tests have passed.
+* Back in PyCharm, checkout the `main` branch by selecting 
+"VCS/Git/Branches..." from the menu bar, and then select `main` from the 
+pop-up list and "Checkout" from the sublist that opens.  Verify that `main`
 is shown as the active branch in the status bar on the bottom right.  Note that
 any changes you made on the feature branch are no longer visible as they have
-been merged onto the `master` branch on GitHub, but not locally.
-* In order to get the updates to the GitHub `master` branch, we need to pull 
-in the most recent `master` branch from GitHub by selecting "VCS/Git/Pull..."
+been merged onto the `main` branch on GitHub, but not locally.
+* In order to get the updates to the GitHub `main` branch, we need to pull 
+in the most recent `main` branch from GitHub by selecting "VCS/Git/Pull..."
 from the menu bar.  
 ![PullChangesWindow.png](images/PullChangesWindow.PNG)
-* Make sure that `origin/master` is selected as the Branch to Merge, and then
+* Make sure that `origin/main` is selected as the Branch to Merge, and then
 click "Pull".
-* The merged `master` branch on GitHub is now available locally.  Continue
+* The merged `main` branch on GitHub is now available locally.  Continue
 this cycle. 
 

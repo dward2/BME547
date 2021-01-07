@@ -3,8 +3,8 @@
 ![](./lecture_files/branching.png)
 In this approach, each major feature of the software is developed on its own
 branch in git.  Once the feature is complete, tested, and approved, it can
-then be merged into the master branch.  No development should be done directly
-on the master branch.  In this way, the master branch always contains the 
+then be merged into the main branch.  No development should be done directly
+on the main branch.  In this way, the main branch always contains the 
 latest, correctly working copy of the program.
 
 Code development on each feature should be kept reasonably independent from 
@@ -99,14 +99,14 @@ def interface():
 --->
 * Commit
 * Push Branch to GitHub
-* On GitHub, open Pull Request to merge `interface` into `master`.
+* On GitHub, open Pull Request to merge `interface` into `main`.
 * Confirm Pull Request.
-* On local computer, checkout `master` and pull the updated `master` branch 
+* On local computer, checkout `main` and pull the updated `main` branch 
 from GitHub to your local repository.
 
 #### HDL Branch
 The first check will be categorizing the results of an HDL test.
-* From master, create and checkout a new branch called `HDL`.
+* From main, create and checkout a new branch called `HDL`.
 * Write a function to accept input from the user.
 <!---
 ```python
@@ -191,9 +191,9 @@ def interface():
 * Commit
 * Test everything, and make changes as needed.  Commit any changes.
 * Push `HDL` branch to GitHub.
-* On GitHub, open a Pull Request to merge `HDL` into `master`.
+* On GitHub, open a Pull Request to merge `HDL` into `main`.
 * Confirm pull request.
-* Pull updated `master` branch to local repository.
+* Pull updated `main` branch to local repository.
 
 ### LDL Branch
 On your own:  make a new branch and modify your program to include the

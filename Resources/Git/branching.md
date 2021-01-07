@@ -4,7 +4,7 @@ Here is the standard workflow for using feature branches in `git` and GitHub.
 
 #### Initial Commit
 First, a new repository is created on GitHub with a README.md file and then  
-cloned to the local computer.  The repository has a single commit on the master 
+cloned to the local computer.  The repository has a single commit on the main 
 branch:
 
 ![network-1.jpg](branching_files/network-1.JPG)
@@ -42,42 +42,42 @@ history:
 ![network-2.jpg](branching_files/network-2.JPG)
 ![commit-2.jpg](branching_files/commit-2.JPG)
 
-On GitHub, a pull request is opened to merge `interface` into `master` and the
+On GitHub, a pull request is opened to merge `interface` into `main` and the
 merge is completed.  The repository branch network now looks like this:
 
 ![network-3.jpg](branching_files/network-3.JPG)
 
-and the master branch now has the commit history:
+and the main branch now has the commit history:
 
 ![commit-3.jpg](branching_files/commit-3.JPG)
 
 Note that the commits from the `interface` branch have been added to the 
-`master` branch.
+`main` branch.
 
 As this merge was done on GitHub, the local repository has no knowledge of this
 merge.  So, back in the local repository, the local repository is updated to 
 the same status as GitHub by using the following `git` commands.First, the
-master branch is checked out.
+main branch is checked out.
 ```
-git checkout master
+git checkout main
 ```
 Then, `fetch` is used to get the latest status from GitHub and `pull` is used
-to pull the latest `master` branch updates into the local repository:
+to pull the latest `main` branch updates into the local repository:
 ```
 git fetch
 git pull
 ```
-`git` knows to pull the `master` branch because that is the currently active
-branch.  The local git commit history for the local master branch is now:
+`git` knows to pull the `main` branch because that is the currently active
+branch.  The local git commit history for the local main branch is now:
 
 ![gitlog-3.jpg](branching_files/gitlog-3.JPG)
 
 #### Second Feature Branch
-A second feature branch, called `calculations` is now made from the `master` 
-branch.  Make sure that the `master` branch is currently checked out.  
+A second feature branch, called `calculations` is now made from the `main` 
+branch.  Make sure that the `main` branch is currently checked out.  
 Then, a new branch is made:
 ```
-git checkout master
+git checkout main
 git branch calculations
 git checkout calculations
 ```
@@ -85,7 +85,7 @@ The git commit history for this new branch is as follows:
 
 ![gitlog-3new.jpg](branching_files/gitlog-3new.JPG)
 
-Note that it is exactly the same as `master`.  When a new branch is made, it
+Note that it is exactly the same as `main`.  When a new branch is made, it
 retains the commit history of the branch from which it was made.
 
 Now, code and commits are made on this new branch, leading to the following
@@ -114,11 +114,11 @@ Again, a pull request and merge is done on GitHub.
 And, as before, these changes on GitHub need to be pull back into the local
 repository using:
 ```
-git checkout master
+git checkout main
 git fetch
 git pull
 ```
-So that the local git commit history for `master` now looks like:
+So that the local git commit history for `main` now looks like:
 
 ![gitlog-5.jpg](branching_files/gitlog-5.JPG)
 
@@ -130,10 +130,10 @@ simply using the `git push` command when the feature branch is active.  Since
 GitHub already has the branch defined, you do not need to use the 
 `--set-upstream` flag.
 
-#### Best Practice:  Make new feature branches from `master` branch
+#### Best Practice:  Make new feature branches from `main` branch
 Whenever you are making a new feature branch, generally create this branch from
-the `master` branch.  In this way, if others collaborators have made changes
-to the `master` branch, you will be working from the most recent copy.  There
+the `main` branch.  In this way, if others collaborators have made changes
+to the `main` branch, you will be working from the most recent copy.  There
 may be times when you want to try a different approach to a feature, and in
 that case, it may be okay to branch off of a feature branch.
 

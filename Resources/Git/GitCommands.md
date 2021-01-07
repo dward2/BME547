@@ -133,7 +133,7 @@ If the local branch doesn't exist on the remote origin, use:
 `git remote -v`
 
 #### Pushing local repository to new GitHub repository
-`git push -u origin master`
+`git push -u origin main`
 
 #### Pushing a local tag to GitHub
 `git push origin v#.#`
@@ -160,14 +160,14 @@ $ cd myproject
 If we look at the branches in this repository, we will see:
 ```
 $ git branch
-* master
+* main
 ```
 To see what branches also exist in the remote repository, we type:
 ```
 $ git branch -a
-* master
+* main
   remotes/origin/HEAD
-  remotes/origin/master
+  remotes/origin/main
   remotes/origin/v1.0-stable
   remotes/origin/experimental
 ```
@@ -184,7 +184,7 @@ Now, if we look at the local branches:
 ```
 $ git branch
 * experimental
-  master
+  main
 ```
 The local `experimental` branch will now track with the remote branch of the 
 same name.

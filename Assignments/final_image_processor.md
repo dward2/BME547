@@ -114,7 +114,10 @@ information from the database and download it to the client:
   + a list of ECG Image timestamps for a specific patient
   + a list of medical images for a specific patient
   + a specific ECG Image based on timestamp for a specific patient
-  + a specific medical image for a specific patient
+  + a specific medical image for a specific patient  
+  __Note__: The above list does not imply that you must have one route for
+  each of those items.  Just make sure your server provides the needed 
+  services.
 * Provide any other services as needed for the client to perform its needed
 functions.
 
@@ -129,7 +132,8 @@ making requests of the server.
 * A detailed `README` describing the final performance and state of your
   project.  This should include a basic instruction manual for your GUI clients.
 * Recorded video demo of your client programs in action.      
-* Link to deployed web service in your`README.md`.
+* The URL of your deployed web service in your`README.md` (e.g., 
+  `vcm-11111.vm.duke.edu:5000`)
 
 #### Video demo
 * This can be a recorded screen capture or a video taken by camera.
