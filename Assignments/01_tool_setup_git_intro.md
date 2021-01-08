@@ -2,59 +2,70 @@
 
 ## Getting Setup
 1. Create an account on GitHub (https://github.com).  An understandable and
-professional user name is suggested.      
+professional user name is suggested.  
+   
 
 2. To communicate your GitHub user name to us, you will open a GitHub issue 
-with that information.  
-  a)  Go into the BME547 repository (<https://github.com/dward2/BME547>) and 
-  click on "Issues" in the tab bar at the top of the page.  
-  b) Click on the green "New issue" button.  
-  c) In the title, enter your name and the GitHub user name you created. For 
-  example, "David Ward - dward2".  
-  d) In the comment area, please include your Duke e-mail address and whether
-  your primary computer for this class is running Windows, macOS, or Linux.  
-  e) Click the green "Submit new issue" button.
-  
-4. Download and install `git` at https://git-scm.com.  We will be using 
-`Git Bash`, *not* a GUI client.  
-  
-   For **MAC** users, `git` is likely already installed.  Open a Terminal window
+with that information.
+   1. Go into the BME547 repository (<https://github.com/dward2/BME547>) and 
+  click on "Issues" in the tab bar at the top of the page.
+   2. Click on the green "New issue" button.
+   3. In the title, enter your name and the GitHub user name you created. For 
+  example, "David Ward - dward2".
+   4. In the comment area, please include your Duke e-mail address and whether
+  your primary computer for this class is running Windows, macOS, or Linux.
+   5. Click the green "Submit new issue" button.
+ 
+ 
+3. Download and install `git` at https://git-scm.com.  We will be using 
+`Git Bash`, *not* a GUI client.
+   + **MAC** users:   
+     `git` is likely already installed.  Open a Terminal window
 and type `git --version`.  If you see a version number, it is already
 installed.  If not, you will need to download it from the site above.
-
-   **Windows** users have two options:   
-   a) install from the above website (recommended) which will install the
+   + **Windows** users have two options:
+     1. install from the above website (recommended) which will install the
    GitBash command window (see <a href="../Resources/installations.md">
-   installations</a> for additional details), or  
-   b) use the Windows Subsystem for Linux 
+   installations</a> for additional details), or
+     2. use the Windows Subsystem for Linux 
     ([Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about)) 
     with Ubuntu allowing you to access `git` through Linux.  
-    Note - this second option does not installed `git` in your Windows environment, 
+    Note - this second option does not install `git` in your Windows environment, 
     so other Windows applications that have `git` hooks will not work.
-  
-    **Everyone**: Add your name and e-mail to your local Git configuration by following the
+   + **Everyone**: Add your name and e-mail to your local Git configuration by following the
      instructions under **Config**  on [this page](/Resources/Git/GitCommands.md#config). 
 
-3. [**Optional**]  Setup an SSH key to seamlessly push/pull to/from your GitHub repositories:
-   https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
-4. Download and install `python` at https://www.python.org/. Use the latest
-released version (as of July 27, 2020, this is version 3.8.5).  
-   
-   For **Mac** users, Python is likely already installed.  Open a Terminal window 
-   and enter `python --version`.  You should see something like `Python 3.7.0`.
-   * If the version number is 3.6 or higher, you are good to go.
-   * If the version number is 2.7, enter `python3 --version` into the terminal 
-   window and see if version 3 is also installed.  If not, you will need to 
-   install `python3`.
+4. Set up an SSH key to allow local authentication with GitHub:
+   1. Visit <https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh>
+   2. From the page above, follow the instructions under the links:
+      * [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+      * [Adding a new SSH key to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+      * [Testing your SSH connection](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/testing-your-ssh-connection)
+   3. To automatically load your SSH keys when starting git, follow the 
+    instructions at [Working with SSH key passphrases](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/working-with-ssh-key-passphrases
+
+    __NOTE:__ GitHub is currently transitioning to requiring SSH authentication.
+     However, until August 2021, id/password authentication is still available
+     if you have trouble with setting up SSH.
+
+
+5. Download and install `python` at https://www.python.org/. Use the latest
+released version (as of January 8, 2021, this is version 3.9.1).
+   + **Mac** users:  
+     * Python is likely already installed.  Open a Terminal window 
+       and enter `python --version`.  You should see something like `Python 3.7.0`.
+     * If the version number is 3.6 or higher, you are good to go.
+     * If the version number is 2.7, enter `python3 --version` into the terminal 
+       window and see if version 3 is also installed.  If not, you will need to 
+       install `python3`.
    Do not try to delete or "upgrade" the 2.7 version currently on your 
    computer as it is a part of the macOS installation.
-   * If python does not start at all, you will need to install `python3`.  
-   
+     * If python does not start at all, you will need to install `python3`.    
    Info on installing `python3` on macOS can be found at:      
-     * <https://docs.python.org/3/using/mac.html>
-     * <http://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/>
-     * <https://opensource.com/article/19/5/python-3-default-mac> _(if you are
+       * <https://docs.python.org/3/using/mac.html>
+       * <http://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/>
+       * <https://opensource.com/article/19/5/python-3-default-mac> _(if you are
      comfortable with using more advanced virtual environment options for
      managing your python versions)_.
      * Note that if you have both `python2` and `python3` installed on your 
@@ -77,41 +88,44 @@ released version (as of July 27, 2020, this is version 3.8.5).
        `echo "alias pip=/usr/local/bin/pip3" >> ~/.bashrc`, (`echo "alias python=/usr/local/bin/pip3" >> ~/.zshrc` for macOS 10.15 or later), or whatever the
        correct path should be.
     
-   **Windows** users have three options:  
-   a) Download and install from <https://www.python.org/> as described above.
+   + **Windows** users have three options:  
+     1. Download and install from <https://www.python.org/> as described above.
    Follow additional guidelines found [here](../Resources/installations.md) for
-   installation.  
-   b) Install Anaconda Python from 
+   installation.
+     2. Install Anaconda Python from 
    https://www.anaconda.com/download.  You can download the complete 
    Anaconda package or Miniconda which brings in the bare minimum of packages 
    and then install what is necessary in virtual environments, but each project 
-   will require more download overhead.  
-   c) Installing and using the [Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about), 
+   will require more download overhead.
+     3. Installing and using the [Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about), 
    and running `python` from within that environment.  This approach will give 
    you a legitimate Linux environment, but there is overhead to running GUI 
    applications through an X-server, which adds more complexity and can be 
    slower for complex interfaces.
 
-5. You will want a code writing environment / text editor that makes life 
+
+6. You will want a code writing environment / text editor that makes life 
 easier for you as your projects get more complex.  Options include:
-  + Terminal Editors
-    + [VIM](http://www.vim.org)
-    + [nano](https://www.nano-editor.org/)
-  + Code / Text editors
-    + [GitHub Atom](https://atom.io/)
-    + [Visual Studio Code](https://code.visualstudio.com/)
-    + [Sublime Text](https://www.sublimetext.com/)
-    + [Notepad++](https://notepad-plus-plus.org/)
-  + Browser-based Interactive
-    + [Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/#)
-  + Full-featured IDE (integrated development environment)
-    + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) 
+   + Terminal Editors
+      + [VIM](http://www.vim.org)
+      + [nano](https://www.nano-editor.org/)
+   + Code / Text editors
+      + [GitHub Atom](https://atom.io/)
+      + [Visual Studio Code](https://code.visualstudio.com/)
+      + [Sublime Text](https://www.sublimetext.com/)
+      + [Notepad++](https://notepad-plus-plus.org/)
+        (See [Resources/Notepad++.md](../Resources/notepad++.md) for set-up
+        info and markdown plug-ins)
+   + Browser-based Interactive
+     + [Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/#)
+   + Full-featured IDE (integrated development environment)
+     + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) 
     (professional edition free to use in academic setting, also includes
     Python interpreter).
-    + [Spyder](https://www.spyder-ide.org/) (free IDE included with Anaconda)
+     + [Spyder](https://www.spyder-ide.org/) (free IDE included with Anaconda)
     
-Check to see if your chosen text editor has the ability (or an extension) to
-edit and render Markdown text.  If so, set that up. 
+    Check to see if your chosen text editor has the ability (or an extension) to
+    edit and render Markdown text.  If so, set that up. 
 
 ## Checking Set-up
 A GitHub repository has been created with some simple steps for you to follow
@@ -120,6 +134,7 @@ to verify that can execute git and Python on your computer.  Please visit
 found there.
 
 ## Learning Git
+If you really can't wait to get started...
 1. Never used git before?  Start with these resources:  
   https://try.github.io/  
   https://www.codecademy.com/learn/learn-git  
