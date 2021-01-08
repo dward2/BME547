@@ -133,9 +133,7 @@ GitHub already has the branch defined, you do not need to use the
 #### Best Practice:  Make new feature branches from `main` branch
 Whenever you are making a new feature branch, generally create this branch from
 the `main` branch.  In this way, if others collaborators have made changes
-to the `main` branch, you will be working from the most recent copy.  There
-may be times when you want to try a different approach to a feature, and in
-that case, it may be okay to branch off of a feature branch.
+to the `main` branch, you will be working from the most recent copy.  
 
 Or, shown graphically:
 
@@ -145,5 +143,19 @@ __Good:__
 
 __Bad:__
 
-![branching-bad](branching_files/braching_bad.jpg)
+![branching-bad](branching_files/branching_bad.jpg)
+
+
+There may be times when you want to try a different approach to a feature, and 
+in that case, it may be okay to branch off of a feature branch.  For example,
+let's say you start a branch called `test2`.  You have implemented your feature,
+but you think there might be a different way to implement that feature.
+Rather than overwrite your first attempt, you want to keep what you have done
+and modify it for your second idea.  So, you could make a new branch from 
+`test2` called `test2_new_idea`.  And, if
+
+![branch_from_branch_ok](branching_files/branch_from_branch_ok.JPG)
+
+Or, if you prefer the original approach, you could checkout `test2` and merge 
+it.
 
