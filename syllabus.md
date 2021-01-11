@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Fall 2020  
+# BME 547 - Medical Software Design - Spring 2021  
 
 ## Instructor
 Dr. David Ward  
@@ -13,7 +13,7 @@ Office Hours: By appointment
 ## Remote Learning Delivery 
 This course is being offered via remote learning.  A computer and good internet
 connection are required.  Live, interactive class periods will be held via
-Zoom on **Mondays and Wednesday from  12:00 noon -- 1:15 PM**.  Participation
+Zoom on **Tuesdays and Thursday from  3:30 pm -- 4:15 PM**.  Participation
 in the class meetings is expected.  If this presents a problem, you must 
 contact the instructor to make other arrangements.  
 
@@ -81,12 +81,12 @@ A computer with administrator rights and good internet connection.
 * Data Processing & Display
   + Jupyter Notebooks
   + Matplotlib
-  + Pandas (DataFrames)
+  + Numpy
   + [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)
 * Servers
   + Design & Implementation of a biomedical web service (Python Flask)
   + HTTP & RESTful APIs
-* Define software specifications and constraints (Requests for Comments, RFC)
+* Medical Software Development Standards
 
 ## Attendance / Participation
 Lecture attendance and participation is important as the topics and skills you

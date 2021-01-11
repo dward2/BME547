@@ -1,7 +1,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 # BME 547 - Medical Software Design
-### Fall 2020
+### Spring 2021
 
 This repository serves as the default collection for all resources associated
 with the Duke BME Medical Software Design course (BME 547).
