@@ -412,31 +412,37 @@ clone it to our computer.
 ## Create a GitHub Repository
 First, log into Git Hub and go to your repositories page.  To get there, click
 on the user icon on the upper right portion of the screen and select "Your
-repositories" from the menu that appears.
+repositories" from the menu that appears.  Click on the green "New" button to 
+create a new repository.
 
+Alternatively, you can simply click on the "+" icon next to the user icon and
+select "New Repository".
 
-## Clone the GitHub Repository onto your local computer
-Click on the green "New" button to create a new repository.  Enter a repository
+Either way, a "Create a new repository" screen will open.  Enter a repository
 name and a short description if desired.  Select Public or Private, and make
 sure that "Initialize this repository with a README" is selected.  Then, click
 create repository.  A new repository page will be shown.  
 
-You will then see a green button labeled "Clone or download".  Click on that.
-A box should open with the title "Clone with HTTPS".  (If the box says "Clone
-with SSH", click on the "Use HTPS" link).  This box will have a URL to this
-repository.  Copy it to the clipboard.
+## Clone the GitHub Repository onto your local computer
+On the main page of your repository, you will then see a green button labeled 
+"Code".  Click on that.  A box should open with the title "Clone".  Make sure
+the SSH option is underlined.  
+![Example](./lecture_files/code_clone_ssh.JPG)
+
+Copy the SSH URL that is shown that looks like 
+`git@github.com:user_name/repo_name.git`.
 
 On your local computer, open Git Bash.  Navigate to your `repos` folder, or 
 any other folder in which you want to create a subfolder containing this 
-repository.  Then, use the following command:  `git clone <URL>`, substituting
-`<URL>` with the URL copied from GitHub.  This command will now make a new
-subfolder with the repository name from GitHub.
+repository.  Then, use the following command:  `git clone <SSH_URL>`, 
+substituting `<SSH_URL>` with the SSH URL copied from GitHub.  This command 
+will now make a new subfolder with the repository name from GitHub.
 
-As an example, let's say I have a GitHub repository called `gittest`.  I could
-clone that to my computer as follows:
+As an example, let's say I have a GitHub repository called `updated_ssh`.  I 
+could clone repository to my computer as follows:
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
-$ git clone https://github.com/dward2/gittest.git
+$ git clone git@github.com:dward2/updated_ssh.git
 Cloning into 'gittest'...
 remote: Enumerating objects: 47, done.
 remote: Total 47 (delta 0), reused 0 (delta 0), pack-reused 47
@@ -444,11 +450,11 @@ Unpacking objects: 100% (47/47), done.
 
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
 $ ls
-first/  gittest/
+first/  updated_ssh/
 ```  
-A new subfolder is created called "gittest".  If I wanted to use a different
+A new subfolder is created called "updated_ssh".  If I wanted to use a different
 name for the local folder, I could add an optional folder name after the URL.
-For example:  `git clone https://github.com/dward2/gittest.git MyGitTestRepo`
+For example:  `git clone git@github.com:dward2/updated_ssh.git ssh_example`
 
 You can now switch into this folder to use the repository.  You will see that
 the "README.md" file from GitHub can now be found in your local repository.

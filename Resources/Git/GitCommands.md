@@ -104,10 +104,9 @@ have been previously added to the repository.
 of the commit number.
 
 
-
 ## Remote Repositories
 #### Clone a repository (make a new local copy of an existing GitHub repository)
-`git clone https://github.com/<GitHubName>/<RepoName>.git [LocalFolderName]`
+`git clone git@github.com:<GitHubName>/<RepoName>.git [LocalFolderName]`
 where `<GitHubName>` is your GitHub username and `<RepoName>` is the name
 of the repository on GitHub.  `[LocalFolderName]` is optional and supplies
 the name of the local folder to be created.  If omitted, the `<RepoName>` is
@@ -190,6 +189,10 @@ The local `experimental` branch will now track with the remote branch of the
 same name.
 
 #### GitHub Credentials
+_**NOTE** This section may become obsolete when GitHub removes the ability to
+authenticate with username and password. (This is epxected to happen in 
+August 2021)._
+
 If you have a local repository linked to GitHub, and you are having problems
 pushing to that repository because of authentication issues, try the following
 command:
