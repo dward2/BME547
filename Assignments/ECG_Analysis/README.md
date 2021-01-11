@@ -55,7 +55,7 @@
   - a software license with your project (http://choosealicense.com/)  
   - anything else you think the graders should know to understand the operation
       and function of your code.
-* Bonus - integrate a Travis [status badge](https://docs.travis-ci.com/user/status-images/) 
+* Bonus - integrate a GitHub Actions [status badge](https://docs.github.com/en/free-pro-team@latest/actions/managing-workflow-runs/adding-a-workflow-status-badge) 
         in your README that displays the status of test passage
   
 

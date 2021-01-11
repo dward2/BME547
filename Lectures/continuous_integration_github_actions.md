@@ -36,7 +36,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
@@ -51,21 +51,21 @@ jobs:
 
 ```
 A brief description of the file above:
-* `name` is the name of the GitHub action you are creating and will be 
-shown on the GitHub website.  Can be anything.  The use of `name` under the
-`steps` title simply provides a string to include in the run output describing
-what each step does.  Can be anything.
+* `name` on the first line is the name of the GitHub action you are creating 
+  and will be shown on the GitHub website.  Can be anything.  The use of `name` 
+  under the `steps` title simply provides a string to include in the run output
+  describing what each step does.  Can be anything.
 * `on` indicates what repository actions will trigger this action.  In the 
 above example, `push` means that any push of commits to GitHub will trigger
 this action while `pull_request` means that the creation of a pull request
 will trigger the action.  If you only want to run it on pull requests, simply
 remove `push` from the list
 * `runs-on` indicates the type of virtual machine that will be used for this
-testing.  Please keep this as `ubuntu-latest`.
+testing.  Please keep this as `self-hosted`.
 * `uses` defines the actions to take to set up a virtual environment
   + `actions/checkout@v2` calls a standard action that checks out or clones
     your repo to the virtual machine
-  + `actions/set-up python@v2` calls a standard action to set-up a Python
+  + `actions/set-up python@v2` calls a standard action to set up a Python
     operating environment on the virtual machine
     - `with:`
       `python-version` indicates the specific Python version to be used.
