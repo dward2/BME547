@@ -160,7 +160,9 @@ be accepted without prior written approval for an excused reason.  You will
 be given the opportunity to submit *one* assignment (not including the Final
 Project) up to 48 hours late 
 for any reason without penalty if you notify me that you are utilizing that
-option before the deadline via e-mail.    
+option before the deadline via e-mail.
+
+Specific project feedback will be given using Gradescope and Sakai.
 
 ## Class Schedule
 The course schedule is likely to change depending on progress throughout
