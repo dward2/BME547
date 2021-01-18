@@ -43,15 +43,15 @@ installed.  If not, you will need to download it from the site above.
       * [Adding a new SSH key to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
       * [Testing your SSH connection](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/testing-your-ssh-connection)
    3. To automatically load your SSH keys when starting git, follow the 
-    instructions at [Working with SSH key passphrases](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/working-with-ssh-key-passphrases
+    instructions at [Working with SSH key passphrases](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/working-with-ssh-key-passphrases)
 
     __NOTE:__ GitHub is currently transitioning to requiring SSH authentication.
      However, until August 2021, id/password authentication is still available
      if you have trouble with setting up SSH.
 
 
-5. Download and install `python` at https://www.python.org/. Use the latest
-released version (as of January 8, 2021, this is version 3.9.1).
+5. Download and install `python` at https://www.python.org/. (As of 
+   January 8, 2021, the latest version is 3.9.1.)
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
