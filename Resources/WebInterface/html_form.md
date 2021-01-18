@@ -143,6 +143,15 @@ submitted with the form if that option is selected.  What text will be shown
 in the drop-down for that option is included between the `<option>` and
 `</option>` tags.
 
+## Miscellaneous
+### Require an entry
+Many of the input types described above can be set to require an entry before
+the form can be submitted.  To do that, include the "required" attribute as
+shown by this example:
+```html
+  <input type="text" id="first_name_id" name="first_name" required>
+```
+
 ## Integration with server
 To see how a form is integrated into an HTML page and used by a server,
 visit the page ????
