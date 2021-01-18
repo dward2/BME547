@@ -127,3 +127,7 @@ separated by commas.  Common style properties:
 ```html
 <p style="text-align: center;">
 ```
+
+## Comments
+Comments can be added to HTML as needed.  Anything found between `<!---` and
+`--->` will be ignored by the HTML interpreter.
