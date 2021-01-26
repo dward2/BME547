@@ -16,6 +16,8 @@ Adding a new SSH key to your GitHub account</a><br>
 <a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/testing-your-ssh-connection">
 Testing your SSH connection</a><br>
 
+On Windows, to avoid needing to enter your SSH passphrase every time it is 
+needed, see the instructions at https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows
 
 ## Support for multiple ssh keys with GitHub
 If you have multiple GitHub accounts, and you want to set up your GitBash to
