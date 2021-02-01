@@ -40,7 +40,7 @@ that should be made.
 
 ```html
 <form method="post">
-  <label id="first_name_id">Enter First Name:</label>
+  <label for="first_name_id">Enter First Name:</label>
   <input type="text" id="first_name_id" name="first_name">
 </form>
 ```
