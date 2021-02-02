@@ -41,7 +41,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/modules.md">Modules</a> /
     <a href="Lectures/virtual_environments.md">Virtual Environments</a> 
     </td>
-    <td><!---<a href="Assignments/PythonFundamentalAssignment.md">--->Python Fundamentals</td>
+    <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals</a></td>
 </tr>
 
 <tr>
