@@ -46,36 +46,40 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Thurs Feb 4</td> 
-    <td> 
-    <a href="Lectures/lists.md">Lists</a> / 
-    <a href="Lectures/git_workflow_more.md">Tags and Issues</a> 
-    </td>
-    <td><!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator</td>
+  <td> 
+    <a href="Lectures/modularity_example.md">Modularity Example</a> (starter code <a href="https://github.com/dward2/modularity_example">here</a>)<br>        
+    <a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a><br>
+    <a href="Lectures/git_workflow_more.md">Tags and Issues</a><br>
+  </td>
+  <td></td>
 </tr>
 
 <tr>
 <td>Tues Feb 9</td>
     <td>
-    <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a> 
+        <a href="Lectures/lists.md">Lists</a> /
+        <a href="Lectures/dictionaries.md">Dictionaries</a>
     </td>
-    <td><!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise</td>
+    <td>
+        <!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise<br>
+        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator
+</td>
 </tr>
 
 <tr>
 <td>Thurs Feb 11</td>
-    <td>Unit Testing: <a href="Lectures/continuous_integration_github_actions.md.md">Continuous 
-    Integration & GitHub Actions</a>;
-    <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></td>
-    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assignment</td>
+    <td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
+    <td></td>
 </tr>
 
 <tr>
 <td>Tues Feb 16</td>
     <td>
-      <a href="Lectures/modularity_example.md">Modularity Example</a> (starter code <a href="https://github.com/dward2/modularity_example">here</a>);
-      <a href="Lectures/dictionaries.md">Dictionaries</a>
+      Unit Testing: <a href="Lectures/continuous_integration_github_actions.md.md">Continuous 
+    Integration & GitHub Actions</a>;
+    <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a>
     </td>
-    <td></td>
+    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assignment</td>
 </tr>
 
 <tr>
@@ -86,7 +90,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/variable_scope.md">Scope</a>;
     <a href="Lectures/classes.md">Classes</a>
     </td>
-    <td><!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion</td>
+    <td></td>
 </tr>
 
 <tr>
@@ -98,20 +102,21 @@ will be a lecture every class period even if no topic is shown on the schedule.
         Repo for class work</a>
     </td>
     <td>
+        <!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion
     </td>
 </tr>
 
 <tr>
 <td>Thurs Feb 25</td>
     <td>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></td>
-    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</td>
+    <td></td>
 </tr>
 
 <tr>
 <td>Tues Mar 2</td>
     <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
     <a href="Lectures/logging.md">Logging</a></td>
-    <td></td>
+    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</td>
 </tr>
 
 <tr>
