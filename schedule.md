@@ -57,8 +57,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Tues Feb 9</td>
     <td>
-        <a href="Lectures/lists.md">Lists</a> /
-        <a href="Lectures/dictionaries.md">Dictionaries</a>
+        <a href="Lectures/lists.md">Lists</a>
     </td>
     <td>
         <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a>
@@ -84,6 +83,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Thurs Feb 18</td>
     <td>
+    <a href="Lectures/dictionaries.md">Dictionaries</a>;
     <a href="Lectures/json.md">JSON</a>;
     <a href="Lectures/docstrings.md">Docstrings</a>;
     <a href="Lectures/variable_scope.md">Scope</a>;
