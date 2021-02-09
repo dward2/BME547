@@ -61,15 +61,14 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/dictionaries.md">Dictionaries</a>
     </td>
     <td>
-        <!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise<br>
-        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator
+        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a>
 </td>
 </tr>
 
 <tr>
 <td>Thurs Feb 11</td>
     <td><a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a></td>
-    <td></td>
+    <td><!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise</td>
 </tr>
 
 <tr>
