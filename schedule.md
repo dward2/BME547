@@ -75,7 +75,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Tues Feb 16</td>
     <td>
-      Unit Testing: <a href="Lectures/continuous_integration_github_actions.md.md">Continuous 
+      Unit Testing: <a href="Lectures/continuous_integration_github_actions.md">Continuous 
     Integration & GitHub Actions</a>;
     <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a>
     </td>
