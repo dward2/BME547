@@ -57,7 +57,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Tues Feb 9</td>
     <td>
-        <a href="Lectures/lists.md">Lists</a>
+        <a href="Lectures/lists.md">Lists</a>;
+        For Loops;
+        <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters
     </td>
     <td>
         <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a>
