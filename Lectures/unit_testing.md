@@ -42,14 +42,9 @@ that function should be broken up into smaller functions.
 Pytest is not a default package in Python, so must be installed in a virtual environment.
 
 * `requirements.txt`
-  + `pytest==6.0.1`
-  + `pytest-pycodestyle==2.2.0`
+  + `pytest`
+  + `pytest-pycodestyle`
   
-_Note: as of 9/3/2020, for some reason Travis-CI is loading an older version of
-`pytest` which is not compatible with the most recent version of 
-`pytest-pycodestyle`.  To avoid this problem, specify the version numbers as
-above._
-
 ### conda version
 _If you don't have `conda`, please skip this section._
 
