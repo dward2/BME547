@@ -81,6 +81,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
       Unit Testing: <a href="Lectures/continuous_integration_github_actions.md">Continuous 
     Integration & GitHub Actions</a>;
     <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a>
+    <br>
+    (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
     </td>
     <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
 </tr>
