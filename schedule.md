@@ -135,19 +135,22 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Tues Mar 9</td>
     <td> 
     <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
-    <a href="Lectures/apis_webservices_requests.md">
-    APIs, Intro To Web Services, Requests</a>  
+      No Class
     </td>
-    <td><!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project</td>
+    <td></td>
 </tr>
 
 <tr>
 <td>Thurs Mar 11</td>
     <td>
+<a href="Lectures/apis_webservices_requests.md">
+    APIs, Intro To Web Services, Requests</a><br>
     <a href="Lectures/flask_server_setup.md">
            Building a Web Server with Flask</a>
     </td>
-    <td><!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
+    <td>
+        <!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project
+        <!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
     </td>
 </tr>
 
