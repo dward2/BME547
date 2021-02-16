@@ -59,7 +59,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <a href="Lectures/lists.md">Lists</a>;
         For Loops;
-        <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters
+        <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a>
     </td>
     <td>
         <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator</a>
@@ -82,7 +82,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     Integration & GitHub Actions</a>;
     <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a>
     </td>
-    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assignment</td>
+    <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assignment</a></td>
 </tr>
 
 <tr>

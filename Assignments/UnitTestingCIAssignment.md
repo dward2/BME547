@@ -32,7 +32,6 @@ trailing spaces or punctuation.
 and leading or trailing spaces or punctuation, the function should return a 
 boolean value of `True`.
 * Otherwise, the function should return a boolean value of `False`.
-* Function must follow the PEP-8 style guide.
 
 ### Approach
 * Log into GitHub and visit the GitHub Classroom link provided in Sakai.  This
@@ -40,13 +39,14 @@ boolean value of `True`.
 * Clone this repository to your local computer.
 * Develop code on feature branches.
 * Develop appropriate unit tests
-* Ensure all functions, including the unit test functions, adhere to PEP-8 
-   style.
-* Enable and use TravisCI in this repository.
+* Ensure all functions and code, including the unit test functions, adhere to 
+  PEP-8 style.
+* Use GitHub Actions in this repository to implement CI testing.
 * Push code to GitHub.
-* Generate Pull Request on GitHub to merge your feature branch into the main
-branch only after Travis CI reports a passing status.
-* Tag final submission on the main branch as `v1.0.0`.
+* Generate Pull Request on GitHub.  Only merge your feature branches into the
+  main branch once GitHub Actions reports a passing status.
+* Tag final submission on the main branch as `v1.0.0` or later number if 
+    revisions are necessary.
 
 
 ### Grading Criteria
@@ -57,9 +57,10 @@ pull requests, etc.).
 of possible string inputs are successfully identified or rejected.
 * The use of `@pytest.mark.parametrize` for at least one unit test.
 * Appropriate naming and syntax for unit tests and testing files.
-* Implementation of Travis CI.
+* Implementation of GitHub Actions / CI Testing.
 * Appropriate use of virtual environments.
 * Code (functions and tests) meet PEP-8 style guidelines.
+* Presence and content of README.md
 
 ### Small Bonus:
 Make your `is_tachycardic` function more tolerant to close representations of
