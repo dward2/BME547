@@ -102,10 +102,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <a href="Lectures/json.md">JSON</a>;
         <a href="Lectures/docstrings.md">Docstrings</a>;
-        <a href="Lectures/numpy.md">NumPy</a>, 
-        <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages;
-        <a href="https://github.com/dward2/numpy_matplotlib_class">
-        Repo for class work</a>
+<a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
+        <a href="Lectures/logging.md">Logging</a>
     </td>
     <td>
         <!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion
@@ -114,14 +112,19 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Thurs Feb 25</td>
-    <td>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></td>
+    <td>
+        <a href="Lectures/numpy.md">NumPy</a>, 
+        <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages;
+        <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>
+    </td>
     <td></td>
 </tr>
 
 <tr>
 <td>Tues Mar 2</td>
-    <td><a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
-    <a href="Lectures/logging.md">Logging</a></td>
+    <td>
+        Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a>
+    </td>
     <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</td>
 </tr>
 
