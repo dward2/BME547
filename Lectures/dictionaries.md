@@ -39,7 +39,7 @@ words and values are the definitions.
 a dictionary is, asking for the value corresponding to a key happens in the 
 same amount of time.
 
-### Retrieving values form a dictionary 
+### Retrieving values from a dictionary 
 ```
 def create_dictionary():
     new_dictionary = {"day": "between sunrise and sunset",
