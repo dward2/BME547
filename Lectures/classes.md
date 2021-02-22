@@ -237,9 +237,32 @@ would want this converted to a positive weight in the persons file.
 
 First, I need to define the weight property in the class.  But, unlike
 other properties, I don't want the user to be able to access it directly
-because I don't want a negative number to be used.  So, I "hide" the
-property by including double underscore before its name when creating it
-in the `__init__` function.
+because I don't want a negative number to be used.  So, I want to "hide" the
+property from the user.  Then, I define a "setter" method which allows the user 
+to send in a value for the weight, do some calculations on it, and store the
+calculated value in the hidden property.  Finally, I then define a "getter"
+method to allow the user to retrieve the value of the hidden property.
+
+Strictly speaking, Python does not have any "hidden" properties.  So, this is
+accomplished in one of two ways.  
+1. A convention has been established that
+class properties that start with a single underscore (for example, 
+`self._weight`) should be considered a non-public property of the class, and the
+user should not make any changes to it.  Some IDE's will not recognize these
+variables as a way to help keep them non-public.  But, the user can access them
+if they really wanted to.
+3. A property could be named with two underscores at the start
+   (example, `self.__weight`).  The use of the double underscore before a 
+   variable name in a class is actually
+called "name mangling."  The variable is not strictly hidden, but is given
+a "mangled" name by the Python interpreter.  This is primarily done to 
+assist in preventing name conflicts, but is a "hack" for hiding variables
+from accidental use. See the Python documentation 
+[here](https://docs.python.org/3.7/tutorial/classes.html#private-variables)
+for more details.  This "name mangling" effectively hides the variable from
+   the user.  The remaining of this example will use this approach.
+   
+As discussed above, first a hidden property is created to store the weight:
 ```python
     def __init__(self, first_name_arg, last_name_arg, age_arg=None):
         self.firstname = first_name_arg
@@ -249,7 +272,7 @@ in the `__init__` function.
 
 ```
 This property `__weight` is not accessible outside of the class.  So, in 
-order for the code outside of the class to set or return the weight , 
+order for the code outside of the class to set or return the weight, 
 I need to define specific functions in the class to perform those functions.
 ```python
     def set_weight(self, weight_arg):
@@ -332,12 +355,3 @@ The generic format is:
            AND STORES RESULT IN HIDDEN VARIABLE}
 ```
 where `name` can be chosen by user.
-  
-### Note:
-The use of the double underscore before a variable name in a class is actually
-called "name mangling."  The variable is not strictly hidden, but is given
-a "mangled" name by the Python interpreter.  This is primarily done to 
-assist in preventing name conflicts, but is a "hack" for hiding variables
-from accidental use. See the Python documentation 
-[here](https://docs.python.org/3.7/tutorial/classes.html#private-variables)
-for more details.
