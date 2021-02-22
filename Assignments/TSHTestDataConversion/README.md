@@ -21,7 +21,7 @@ than 4.0 mIU in the blood stream.
 
 In hyperthyroidism, the thyroid gland produces too much thyroxine.  When the
 pituitary gland detects too high a level of thyroxine in the blood, it reduces
-product of TSH to signal to the thyroid to reduce thyroxine production.  So,
+production of TSH to signal to the thyroid to reduce thyroxine production.  So,
 a TSH level of less than 1.0 mIU in the blood is the sign for hyperthyroidism.  
 
 For this assignment, we will be writing some code that is reading in patient
@@ -84,14 +84,16 @@ commands, create and output the information.
 * Appropriate functional modularity that will allow for appropriate unit tests
 * Unit testing exists for all functions that do any algorithmic work, excluding
 input/output routines.
-* Travis CI integration with all branches passing unit tests and PEP-8 style
-before merge
+* GitHub Actions CI integration with all branches passing unit tests and PEP-8 
+  style before merge
 * Conforms to PEP-8 Style Guide 
 * Docstrings exist for all functions
-* Appropriate use of virtual environments, including a `requirements.txt` or 
-`environment.yml` file being present in your GitHub repository.
+* Appropriate use of virtual environments as demonstrated by a  
+  `requirements.txt` and/or `environment.yml` file being present in your GitHub 
+  repository.
 * Presence and content of README.md
-* Final submission is pushed to GitHub by deadline and is tagged appropriately.
+* Final submission is pushed to GitHub by the deadline and is tagged 
+  appropriately.
 
 ### Small Bonus
 * Sort the list of TSH values (low to high) before outputting them to the JSON

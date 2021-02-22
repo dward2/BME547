@@ -91,8 +91,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Thurs Feb 18</td>
     <td>
     <a href="Lectures/dictionaries.md">Dictionaries</a>;
-    <a href="Lectures/classes.md">Classes</a>;
-    <a href="Lectures/variable_scope.md">Scope</a>
+    <a href="Lectures/classes.md">Classes</a>
     </td>
     <td></td>
 </tr>
@@ -106,7 +105,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/logging.md">Logging</a>
     </td>
     <td>
-        <!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion
+        <a href="Assignments/TSHTestDataConversion">TSH Test Data Conversion</a>
     </td>
 </tr>
 
@@ -115,7 +114,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <a href="Lectures/numpy.md">NumPy</a>, 
         <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages;
-        <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>
+        <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>;
+    <a href="Lectures/variable_scope.md">Scope</a>
     </td>
     <td></td>
 </tr>
