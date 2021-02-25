@@ -36,7 +36,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
@@ -61,7 +61,7 @@ this action while `pull_request` means that the creation of a pull request
 will trigger the action.  If you only want to run it on pull requests, simply
 remove `push` from the list
 * `runs-on` indicates the type of virtual machine that will be used for this
-testing.  Please keep this as `self-hosted`.
+testing.  Please keep this as `ubuntu-latest`.
 * `uses` defines the actions to take to set up a virtual environment
   + `actions/checkout@v2` calls a standard action that checks out or clones
     your repo to the virtual machine
