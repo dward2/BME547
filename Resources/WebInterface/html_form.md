@@ -29,7 +29,7 @@ are described here.
 </form>
 ```
 When the `<input>` element has the `type` attribute set to `"text"`, it
-creates a text box:
+creates a text box:<br>
 ![input text box](images/input_text.JPG)
 
 The `id` attribute is used to identify this particular element to the rest of
@@ -154,4 +154,5 @@ shown by this example:
 
 ## Integration with server
 To see how a form is integrated into an HTML page and used by a server,
-visit the page ????
+visit the page <a href="web_interface_with_flask.md">
+web_interface_with_flask.md</a>.
