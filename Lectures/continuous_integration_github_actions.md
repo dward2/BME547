@@ -25,10 +25,30 @@ branch has been tested and met quality control.
 
 ## Using GitHub Actions
 ### Create a testing action
-1. Create a folder in your repository called `.github\workflows`.
+Let's assume you have a repository in which you have created a virtual 
+environment and have a python module and python test module as such:
+```
+repository
+├──venv/
+├──my_program.py
+└──test_my_program.py
+```
+1. Create a folder in your repository called `.github`.  Within this folder,
+   create a subfolder called `workflows`.
 2. In that folder, create a file with the extension.yml.  You can name this
-file anything, but I might suggest `pytest_runner.yml`.
-3. Add the following to this file:
+file anything, but I might suggest `pytest_runner.yml`.  The repository should
+    now look like this:
+   ```
+   repository
+   ├──.github/
+   │  └──workflow/
+   │     └──pytest_runner.yml
+   ├──venv/
+   ├──my_program.py
+   └──test_my_program.py
+   ```
+3. Add the following content to the `pytest_runner.yml` file (or whatever name
+   you choose in step 2):
 ```yaml
 name: Pytest with Pycodestyle
 
