@@ -220,4 +220,10 @@ where `redirect()` and `url_for()` are functions imported from `flask` and
 upon submittal of the form.  This statement tells `flask` to make a GET
 request to the URL that is associated with the `function_name` flask 
 handler.
-  
+
+## Miscellaneous
+### File upload
+Due to security reasons, there is not an `html form` method for obtaining both
+the path and filename of a file to be uploaded.  But, there is a way to use
+`html form` and Flask to upload an item.  Details can be found at
+<https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/>.
