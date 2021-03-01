@@ -1,11 +1,9 @@
 # ECG Analysis Assignment
 
 * GitHub Classroom will be used to host repositories.    
-* After signing into GitHub, visit the GitHub Classroom link found in Sakai.
+* After signing in to GitHub, visit the GitHub Classroom link found in Sakai.
   A private repository will be created for you to use.  The repository will be 
-  pre-populated with the ECG test data needed for the assignment.  Once a 
-  `.travis.yml` file is correctly created, Travis-CI integration will be made 
-  with your repository.
+  pre-populated with the ECG test data needed for the assignment.  
 * Your final submission must be made to the `main` branch of your repository.
 
 ## ECG Analysis: Functional Specifications
@@ -16,7 +14,7 @@
   recognize that it is missing, log an error to the log file, and skip to the 
   next data pair. (See [test_data\README.md](test_data/README.md) for more 
   details.)
-  + If the file contains a voltage reading outside of the normal range of +/-
+  + If the file contains a voltage reading outside the normal range of +/-
   300 mv, add a `warning` entry to the log file indicating the name of the
   test file and that voltages exceeded the normal range.  This should only
   be done once per file (in other words, do not log every single voltage 
@@ -39,11 +37,12 @@
 
 ## Git Version Control Expectations
 * Frequent and meaningful commits!
-* Branches should be used for specific feature implementions, bug fixes, etc.
+* Branches should be used for specific feature implementations, bug fixes, etc.
 * Branch names should be meaningful.
 * Merge your feature branches into the main branch using Pull Requests
   on Git Hub.
-  - Feature branches should be merged after passing unit tests with Travis CI.
+  - Feature branches should be merged after passing unit tests with GitHub
+    Actions.
   - Do not delete your branches after merging them into main.
 * Create an annotated tag titled `v1.0.0` or subsequent version when your
     assignment is completed and ready to be graded.
@@ -52,7 +51,7 @@
   - how you define and identify a beat
   - how you are calculating the beats per minute once you have identified
         the beats
-  - a software license with your project (http://choosealicense.com/)  
+  - a software license with your project (<http://choosealicense.com/>)  
   - anything else you think the graders should know to understand the operation
       and function of your code.
 * Bonus - integrate a GitHub Actions [status badge](https://docs.github.com/en/free-pro-team@latest/actions/managing-workflow-runs/adding-a-workflow-status-badge) 
@@ -64,7 +63,7 @@
     code, and all functions must have associated unit tests with comprehensive 
     coverage.
 * Utilize a virtual environment with `requirements.txt` or `environment.yml`
-* Have Sphinx-friendly docstrings for all methods.  
+* Have Sphinx-friendly docstrings for all methods/functions.  
 * Unit tests should exist in a separate file or directory of test files using
     standard naming conventions. 
 * Achieve the functional specifications with passing unit tests.  
@@ -89,5 +88,5 @@
 * Adequate unit test coverage and functional modularity
 * Python style and docstrings
 * Achieves functional specifications
-* Works with all of the provided test data
+* Works with all the provided test data
 * Any of the workflow or python methodology criteria from previous assignments

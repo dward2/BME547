@@ -15,7 +15,7 @@ constant voltage and period, while others have peaks at different voltages and
 a change in heart rate within the data set. The time intervals between
 measurements may vary per data set.
 * Some data sets have been corrupted with additional low (<1 Hz) and/or 
-high (>50 Hz)) frequency noise.
+high (>50 Hz) frequency noise.
 * For your assistance in developing appropriate data screening and
 noise reduction, the `test_data1_orig.csv` found in this folder is
 the raw data before the various additional signals were added.  You
@@ -33,5 +33,5 @@ or NaN in the time and voltage columns.
     variable, use the function `math.isnan()` which will return `True` if 
     `nan`, `False` otherwise.
       
- * **Test 32** has values outside of the normal range of ECG data at a max of 
+ * **Test 32** has values outside the normal range of ECG data at a max of 
  +/- 300 mV. Test if program can detect these values are outside of ECG range.

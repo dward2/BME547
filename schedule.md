@@ -125,7 +125,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a>
     </td>
-    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</td>
+    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
