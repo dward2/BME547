@@ -203,7 +203,7 @@ if __name__ == '__main__':
 
 ```
 If we look at the flow of this function, when it receives a GET request, the
-`if` statement will evaluate as false and the function will simply return the
+`if` statement will evaluate as false, and the function will simply return the
 rendered template.  If the function receives a POST request, it will read-in
 the information from the form and call other functions to do the necessary
 information.  It will then also return the rendered template so that new
@@ -222,8 +222,60 @@ request to the URL that is associated with the `function_name` flask
 handler.
 
 ## Miscellaneous
-### File upload
+### File manipulation
+If we want our Flask code to be able to access and manipulate any file on a
+computer, we need to know the file name and the path to the file.
 Due to security reasons, there is not an `html form` method for obtaining both
-the path and filename of a file to be uploaded.  But, there is a way to use
-`html form` and Flask to upload an item.  Details can be found at
-<https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/>.
+the path and filename of a file to be manipulated.  However, there is an
+approach where we can use the `html form` `file` object and save a copy of
+the file in a known location that our Flask code can access and manipulate.
+
+The details of this approach can be found at 
+<https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/>.  And, are
+summarized here.
+
+A folder is defined to contain copies of the files we want to create that our
+code can access.  This can be done as follows:
+```python
+UPLOAD_FOLDER = "./upload_files"
+
+app = Flask(__name___)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+```
+In this case, a folder called `upload_files` is created within the repository.
+But, this folder can be anywhere (just give it the correct path) and can have
+any name.
+
+In the `html` code, use the following `form` syntax to create a button for
+selecting a file and uploading it to your code.
+```html
+<form method="post" enctype="multipart/form-data">
+  <input type="file" name="file">
+  <input type="submit" value="Upload">
+</form>
+```
+
+In the Python code, here is a simple function that would implement the 
+endpoint that uses the `html` code above:
+
+```python
+import os
+from werkzeug.utils import secure_filename
+
+@app.route("/route_name", methods=["GET", "POST"])
+def get_file():
+    if request.method == "POST":
+        file = request.files["file"]
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(app.config["UPLOAD_FOLDER"], filename))
+        # Other code to do whatever work is desired on the file
+
+    return render_template("html_file.html")
+```
+The `werkzeug` package should have been installed as a dependency for Flask.
+The `secure_filename` function provides some basic security to ensure that
+filenames are not used which might cause server/security issues.
+
+This code is the bare minimum.  View the website provided earlier in this
+section for more details and additional code to check for correct entries,
+appropriate file upload types, etc.
