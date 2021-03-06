@@ -41,7 +41,7 @@ file anything, but I might suggest `pytest_runner.yml`.  The repository should
    ```
    repository
    ├──.github/
-   │  └──workflow/
+   │  └──workflows/
    │     └──pytest_runner.yml
    ├──venv/
    ├──my_program.py
