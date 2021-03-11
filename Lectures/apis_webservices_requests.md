@@ -85,13 +85,13 @@ There is a lot of overlap between these two types.
 
 ### GET Example
 
-GitHub API:  (<https://developer.github.com/v3/)
+GitHub API:  (<https://docs.github.com/en/rest>)
 
 Let's get a list of all of our branches from a repository.
 
-<https://developer.github.com/v3/repos/branches/#list-branches>
+<https://docs.github.com/en/rest/reference/repos#branches>
 
-`GET /repos/:owner/:repo/branches` from requests made to `api.github.com`
+`GET /repos/{owner}/{repo}/branches` from requests made to `api.github.com`
 
 A Python package called `requests` (<https://requests.kennethreitz.org/en/master/>)
 provides functionality for making requests to web servers.
