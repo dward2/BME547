@@ -55,12 +55,7 @@ for detailed example of writing `flask` code for a web server.
   + `@app.route("/sayhello/<name>", methods=["GET"])`
   + `def say_hello(name):`
 
-  
-  
-### Practice Project
-Click <a href="./time_server_project.md">here</a> for a mini-project to
-practice server creation.
-
+    
 <!---### As Time Allows
 * Run external server
   + `app.run(host="0.0.0.0")`

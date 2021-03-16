@@ -1,22 +1,36 @@
-# Mini-Project:  Time Server
+# Time Server
 
 Develop a server with the following endpoints:
 
 * `GET URL/time`
-  + returns the current time (see below for info on using dates and times with 
-  Python)
+  + returns the current time as a string (see below for info on using dates 
+    and times with Python)
 * `GET URL/date`
-  + returns the current date
+  + returns the current date as a string
 * `POST URL/age`
   + receives a JSON in the following format:  
   `{'date': "10/10/1999", 'units': "years"}`
   + returns the length of time between the given date and the current time.
-  + The default return units should be years.  If you want to learn more
+  + The default return units should be years and should be returned as a 
+    `float`.  
+    Optional:  If you want to learn more
   about times, allow for different units to be entered and return the results
   in the given units.
  * `GET URL/until_next_meal/<meal>`
    + where `<meal>` could be `breakfast`, `lunch`, or `dinner`.  
-   + Returns the number of hours until that meal.
+   + Returns the number of hours until that meal as a `float`.
+
+### Grading Expectations
+* This assignment is meant for practice with the syntax and coding of a web
+  server, as well as the use of date/time variables in Python.
+* The primary focus of grading will be on the code that completes the tasks
+  listed above.
+* For this assignment only, I will not be looking for docstrings, use of git
+  workflow, unit testing, etc.  I will be looking at the final code itself for:
+  + PEP 8 compliance
+  + Successful implementation of the server routes above
+  + That code runs without error
+  
    
 ### Python Date and Time
 The `datetime` package (<https://docs.python.org/3/library/datetime.html>) is

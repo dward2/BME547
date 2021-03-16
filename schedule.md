@@ -160,19 +160,22 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Tues Mar 16</td>
     <td>
         <a href="Lectures/flask_server_setup.md">
-           Building a Web Server with Flask</a><br>
-        <a href="Lectures/server_code_design.md">Server Design</a>   
+           Building a Web Server with Flask</a>
     <td>
-<!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
-<!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned</td>
+        <a href="Assignments/time_server_project.md">Time Server Assigned</a>
+</td>
 
 
 <tr>
 <td>Thurs Mar 18</td>
-    <td>Server Debugging, 
+    <td><a href="Lectures/server_code_design.md">Server Design</a><br>
+    Server Debugging, 
     <a href="Resources/virtual_machines.md">Virtual machines</a>
     </td>
-    <td></td>
+    <td>
+        <a href="Assignments/heart_rate_sentinel_server_assignment.md">
+        Heart Rate Sentinel Server Assigned</a>
+</td>
 </tr>
 
 <tr>
@@ -245,9 +248,14 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
     <td>Tues Apr 20</td>
-    <td><a href="Lectures/intro_to_security.md">Introduction to Security</a>;
-    LDOC
+    <td><a href="Lectures/intro_to_security.md">Introduction to Security</a>
 </td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>Thurs April 22</td>
+    <td>Last Class</td>
     <td></td>
 </tr>
 
