@@ -169,8 +169,6 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Thurs Mar 18</td>
     <td><a href="Lectures/server_code_design.md">Server Design</a><br>
-    Server Debugging, 
-    <a href="Resources/virtual_machines.md">Virtual machines</a>
     </td>
     <td>
         <a href="Assignments/heart_rate_sentinel_server_assignment.md">
@@ -180,7 +178,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Tues Mar 23</td>
-    <td>Using Virtual Machines,
+    <td>
+    Server Debugging, 
+    <a href="Resources/virtual_machines.md">Virtual machines</a>,
     <a href="Resources/WebServices/screen.md">Screen</a>,
     <a href="Lectures/databases.md">Introduction to Databases</a></td>
     <td></td>

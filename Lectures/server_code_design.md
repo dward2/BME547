@@ -17,6 +17,28 @@ where `status_code` is the integer value of the status code number.  If no
 * Have any code needed to run upon the start of the server (e.g., logging
 set-up, database creation) be done in one or more functions that can be called
 from an init() function called from `if __name__ == "__main__":`.
+  
+## In-Class Project
+
+Develop a health database server
+
+### Routes
+` POST /new_patient`
+
+```python
+{"name": str, "id": int, "blood_type": str}
+```
+where blood type is one of O+, O-, A+, A-, B+, B-, AB+, AB-.
+
+
+`POST /add_test`
+
+```python
+{"id": int, "test_name": str, "test_result": int}
+``` 
+
+`GET /get_results/<patient_id>`
+
 
 
 
