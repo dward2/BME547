@@ -1,9 +1,10 @@
 # Heart Rate Sentinel Server
 This assignment will have your team build a simple centralized heart rate 
 sentinel server. This server will be built to receive GET and POST requests 
-from mock patient heart rate monitors that contain patient heart rate 
-information over time.  If a patient exhibits a tachycardic 
-heart rate, the physician should receive an email warning them of the
+that contain patient heart rate information from mock patient heart rate 
+monitors.  This server should store this data so that patient information 
+over time can be recalled.  When the server receives a tachycardic heart rate 
+for a patient, the physician should receive an email warning them of the
 situation. So if a new 
 heart rate is received for a patient that is tachycardic, the email should be 
 sent out at that time. The tachycardic calculation should be based on age 
@@ -90,7 +91,7 @@ in your route name.
   should return a dictionary in a JSON string containing the latest heart rate, 
   as an integer, for the specified patient, whether this patient is 
   currently tachycardic based on this most recently posted heart rate, and 
-  the a string containing the date and time of this most recent heart rate 
+  a string containing the date and time of this most recent heart rate 
   formatted as shown in the example below.  
   The return dictionary/JSON string should look like:
   ```
@@ -127,7 +128,7 @@ in your route name.
   the given time stamp could be any time, and not necessarily the time of a 
   previous heart rate.
   
-* `GET /api/patients/<attending_username>` returns information on all of the 
+* `GET /api/patients/<attending_username>` returns information on all the 
 patients of the attending physician with the given `attending_username`.  This
 route should return a list where each entry of the list represents data from
 a patient of this physician.  Each entry in the list should be a JSON string in
@@ -148,15 +149,15 @@ a patient of this physician.  Each entry in the list should be a JSON string in
 The server should write to a log file when the following events occur:
 * A new patient is registered.  The log entry should include the patient ID.
 * A new attending physician is registered.  The log entry should include the
-attending user name and e-mail.
+attending username and e-mail.
 * A heart rate is posted that is tachycardic.  The log entry should include the 
 patient ID, the heart rate, and the attending physician e-mail.
 
-All of the above routes should return an appropriate status code (depending on
+All the above routes should return an appropriate status code (depending on
 the outcome, including when the request was unsuccessful for whatever reason,
 for example, when the input JSON is incorrect).
 
-All of the above routes should do input data validation, making sure that
+All the above routes should do input data validation, making sure that
 the appropriate keys in JSON inputs exist, and that the data types are
 correct.  If the input is incorrect, a non-2xx error code should be returned.  Also, 
 the routes should return the appropriate status codes if a 
@@ -189,7 +190,7 @@ data structure like Python lists, dictionaries, or classes.  You could also
 choose to use an external database.
 
 ### E-mail Server
-I have set-up a server to simulate accessing a third-party webservice for 
+I have set up a server to simulate accessing a third-party webservice for 
 sending e-mails.  When your program needs to send an e-mail, it should make
 a POST request to the following URL:
 ```
@@ -238,23 +239,21 @@ During my evaluation of the final submission, I will be looking at commit
 histories to determine that both team members contributed to the project
 appropriately.  Feel free to work together, help each other, and edit and debug
 each other's code.  But, make sure that each team member is contributing and
-commiting to their assigned routes.    
+committing to their assigned routes.    
 
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
-(unit testing, git practices, Travis CI, virtual environments, PEP8, 
-docstrings, descriptive README.md, license, etc)__
+(unit testing, git practices, GitHub Actions CI Integration, virtual 
+  environments, PEP8, docstrings, descriptive README.md, license, etc)__
 - Unit testing should be done in parallel with code development.  So, when code
 is written on a feature branch and merged into main, there must be
 appropriate unit testing available during that merge.  You cannot write the
 code first, merge it, and then write the tests later.  Any code that is merged
-without simultaneous unit testing will be a deduction.
-<!---- As discussed below, unit tests are not required for the function that calls 
-SendGrid, so keep this function separate and small.--->
+without simultaneous unit testing will be lead to a deduction.
 - Create a git tag for the final version of your repository as done previously 
 in this class.
 - Deploy your server code on your virtual machine and include in your README.md 
-file the hostname and port on which your server is running (eg., 
+file the hostname and port on which your server is running (e.g., 
 `vcm-1000.vm.duke.edu:5000`).  Remember to 
 follow the instructions about ensuring your server is not automatically
 shut down (there is a check box on the VCM control panel. It will ask you for a 
