@@ -7,15 +7,25 @@ write.
 ## Setting up your Virtual Machine
 Duke OIT has allocated each student access to one virtual machine.  If you
 are already using your virtual machine for another class or project, and would
-prefer not to use that machine for this class, please let an instructor know
+prefer not to use that machine for this class, please let an instructor know, 
 and a request for a second virtual machine can be made.
 
 * Visit https://vcm.duke.edu/ and log in to the Virtual Computing Manager (VCM)
 using your NetID.
 * Click on "Reserve a VM".
-* Select the type of VM you would like.  We will be demonstrating the use of 
-a Linux (Ubuntu 18) VM in class.  It is possible to use Windows 10 to host your
-server, if you prefer, but does require some additional set-up.
+* Select the type of VM you would like.  The two recommended options (both 
+  under the "Plain VM: No Apps" title) are:
+  + Ubuntu18.04 (my preference for simplicity)
+    - A Linux operating system, will behave similar to macOS command line.
+    - This is what I will be demonstrating in class.
+    - Will come with git and Python pre-installed.
+  + Windows 10
+    - Will give the familiar Windows GUI.
+    - Will require the installation of git and Python just like at the start
+      of the semester.
+    - Allows for the use of an IDEs or GUI code editors.
+    - Requires using a VPN to access
+* Follow the additional prompts/questions.
 * Depending on virtual machine availability, your VM may be available
 immediately, or may take some time to set up.  You will receive an e-mail when
 it is available.
@@ -25,7 +35,7 @@ it is available.
 Management Tools.  Your virtual server will have a default name such as 
 `vcm-####.vm.duke.edu`.  This will be used as the URL to access your server.
 The user ID assigned to you to access this virtual machine should be the same
-as your NetID.  For now, you can ignore the Admin user name and password.
+as your NetID.  For now, you can ignore the Admin username and password.
 
 ## Accessing your Linux Virtual Machine
 * First, make sure your VM is powered on by clicking "Power On" in the Virtual 
@@ -33,18 +43,20 @@ Computing Manager.
 * You will need an SSH client on your computer, which is an application that
 allows you to access and interact with the Linux VM.  There are a variety of
 options for SSH clients.  
-  + For macOS, there is a built-in SSH client you can run from the Terminal 
-  window.  Type `ssh user@hostname` where `user` is is the user account to
-  be accessed and `hostname` is the name of the server.  For example:
-  `aa123@vcm-1111.vm.duke.edu`.  Then, login to your VM using your NetID and
-  password.
+  + For macOS and Windows, there is a built-in SSH client you can run from the 
+    Terminal/CMD/GitBash window.  Type `ssh user@hostname` where `user` is the 
+    user account to be accessed and `hostname` is the name of the server.  For 
+    example: `aa123@vcm-1111.vm.duke.edu`.  Then, login to your VM using your 
+    NetID and password.  You will now see your virtual machine linux prompt.
+    Typing `exit` at the prompt will close the connection to the VM and 
+    return you to your local command line prompt.
   + For Windows, a variety of free, third-party software exists, including:  
     ++ PuTTY, <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>  
     ++ MobaXterm, <https://mobaxterm.mobatek.net/>
     
 #### Using PuTTY
 *  Upon running PuTTY, the initial window will be the PuTTY Configuration 
-window.  On the left hand pane of the window, "Session" should be chosen.
+window.  On the left-hand pane of the window, "Session" should be chosen.
 *  In the "Host Name" box on the right-hand side, enter the name of your 
 VM (example, `vcm-####.vm.duke.edu`).
 * A "PuTTY Security Alert" window may open.  Click "Yes" to continue.
@@ -64,7 +76,7 @@ using your NetID and password.
 *  In the future, MobaXterm will have saved this session information for easy
 log-in.
 * Note that MobaXterm has a nice feature of being able to access the files
-in your VM through a menu system on the left hand pane of the MobaXterm
+in your VM through a menu system on the left-hand pane of the MobaXterm
 window.  You can then open and edit these files in a local GUI text editor
 on your local computer for easier editing.  You can also upload and download
 files through this interface.
@@ -86,7 +98,7 @@ credentials" window and click "Ok".
 now use the remote Windows computer just as you would a local Windows computer.
 * To disconnect, simply choose "Disconnect" from the Power window.  This will
 keep your remote machine or server active.  If you choose "Shutdown", the VM
-will completely turn off and you will need to turn it back on in the VCM.
+will completely turn off, and you will need to turn it back on in the VCM.
   
 **NOTE:** If you are accessing your Windows VM from outside of the Duke
 network, you will need first need to access the Duke network through a VPN.
