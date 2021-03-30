@@ -66,14 +66,14 @@ user interface with the following functionality:
   + Allow the user to select a patient medical record number from a list of 
   available numbers on the server.
   + For the selected patient, display the medical record number, the patient
-  name, the latest measured heart rate & ECG image, and 
+  name, the latest measured heart rate & ECG image (if one exists), and 
   the date/time at which this latest heart rate data was uploaded to the server.
   + Allow the user to select from a list of historical ECG images and their 
    date/times for the selected patient, download the selected image, and 
    display the selected image side-by-side with the latest ECG image already 
    displayed.
-  + Allow the user to save this downloaded ECG image to a file on their local 
-  computer.
+  + Allow the user to save a downloaded ECG image (either the latest or the
+    historical one chosen) to a file on their local computer.
   + Allow the user to select from a list of saved medical images for this 
   patient, download and display the image, and allow it to be saved locally.
   + When the user selects a new patient, any information from the previous
@@ -84,6 +84,11 @@ user interface with the following functionality:
   the currently selected patient.  If a new heart rate and ECG image are 
   available, those should be automatically downloaded and displayed on the 
   interface.
+  + When the user wants to select a new patient, select an historical ECG, or
+    select a medical image for a patient, the choices should represent the 
+    most recent options on the server.  In other words, the options for choices
+    must dynamically update, rather than be "locked in" based on what was 
+    available when the client was started.  
   + In order to complete these tasks, the client GUI will need to make RESTful 
   API requests to the server to get lists of available patient medical record
   numbers, available data for the selected patient, and the data/images 
@@ -214,6 +219,7 @@ have any question about the information on this webpage, please let me know.
 **Medical Images**
 
 Your GUI should allow the user to choose any image they like on their computer,
+which may or may not be found in the repository folder,
 not just the sample images provided in the starting repository.  Those are
 provided simply as examples of the types of images I will be using when testing
 your program.  Feel free to use these for your testing.  Also, I will not be
