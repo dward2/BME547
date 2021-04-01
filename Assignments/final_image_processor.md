@@ -1,6 +1,6 @@
-# Patient Monitoring Client/Server Project (Fall 2020)
+# Patient Monitoring Client/Server Project (Spring 2021)
 
-**Final Project DUE:** Monday, November 16, 2020, 11:59 PM EST 
+**Final Project DUE:** Sunday, April 25, 2021, 11:59 PM EST 
 
 ## Overview
 The final project in this class will require you to leverage the
@@ -10,10 +10,11 @@ System that has a patient-side client, a monitoring-station client, and a
 server/database that allows patient data to be uploaded and stored on the
 server and retrieved for ad-hoc and continuous monitoring.
 
-This final project can be modified ended if you would like to tailor this to
+This final project can be modified or redefined if you would like to tailor 
+this to
 your areas of interest.  If you plan to stray away from the recommended project
 and requirements below, please submit a one-page project proposal to Dr. Ward
-by *Monday, November 2, 2020 at 12:00 noon* for evaluation to ensure the proposed
+by *Thursday, April 8, 2021 at 12:00 noon* for evaluation to ensure the proposed
 project meets the requirements for the class. Be sure to include motivations,
 technologies, functional specifications, and anticipated deliverables.
 
@@ -135,7 +136,9 @@ making requests of the server.
 * All project code for the two GUI clients, server, and tests (in the form of a 
   tagged GitHub repository).  All code should be well documented with docstrings.
 * A detailed `README` describing the final performance and state of your
-  project.  This should include a basic instruction manual for your GUI clients.
+  project.  This should include a basic instruction manual for your GUI 
+  clients, an API reference guide for your server, and a description of your
+  database structure.
 * Recorded video demo of your client programs in action.      
 * The URL of your deployed web service in your`README.md` (e.g., 
   `vcm-11111.vm.duke.edu:5000`)
