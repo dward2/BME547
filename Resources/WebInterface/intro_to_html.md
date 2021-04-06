@@ -142,9 +142,9 @@ path or URL to the image.  The `alt` attribute provides a text string to
 display if the picture cannot be found or shown for some reason.
 
 _Note: How to exactly specify the path to a file on your computer or server
-can vary based on implementation.  So, always test that is works correctly.
+can vary based on implementation._  So, always test that is works correctly.
 Specifics for how to show an image using Flask are described here: 
-[Link to be added](to be added)
+[web_interface_with_flask.md#images](web_interface_with_flask.md#images)
 
 To specify a specific size for the image on the web page, use the `width` and
 `height` attributes with a numeric value in pixels.
