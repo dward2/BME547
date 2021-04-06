@@ -15,7 +15,9 @@ with the `return` command, will display the webpage defined by a template.
 
 Here is a very short example.  Let's say we have an HTML document called
 `index.html` that we want to display at the base route "\".  In our project
-directory, we create a subfolder called `templates`.  In that fo
+directory, we create a subfolder called `templates`.  In that folder, we
+place all of our `.html` files, such as `index.html`.  The following code
+serves up that web page.
 ```python
 from flask import Flask, render_template
 
