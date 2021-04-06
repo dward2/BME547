@@ -37,6 +37,113 @@ flask handler function should end with a call to
 is included as a string parameter.  Flask will look for this file in the
 `templates` folder created above.
 
+## Programmatic Changes to Web Page
+The content of a webpage can be modified by the server code using Flask.  Flask
+implements the Jinja2 Templating Language for allowing your code to modify
+the contents of the HTML document that is eventually displayed.
+
+### Displaying Contents of Variables
+The value of a variable can be displayed in HTML by enclosing the variable
+within `{{ }}`.  In this simple example, the heart rate of a patient is 
+displayed.
+```html
+<!--- patient_heart_rate_display.html --->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Data</title>
+</head>
+<body>
+  Patient Name:  {{ patient_name }}<br>
+  Patient Heart Rate:  {{ heart_rate }}
+</body>
+</html>
+```
+The value of the variables are set in the Python code by using named parameters
+in the `render_template` function, as shown here:
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/", methods=["GET"])
+def display_hr():
+    patient_name = "Ann Ables"
+    patient_hr = 50
+    return render_template("patient_heart_rate_display.html",
+                           patient_name=patient_name,
+                           heart_rate=patient_hr)
+
+if __name__ == '__main__':
+    app.run()
+```
+
+### Looping
+You can also loop through a variable.  Basic logic commands can be specified
+in the HTML file using `{% %}` as the enclosing brackets.  In this example,
+a list of dictionaries is looped through and displayed.
+```html
+<!--- patient_heart_rate_display.html --->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Data</title>
+</head>
+<body>
+  {% for patient in patients %}
+    <p>
+      Patient Name:  {{ patient["name"] }}<br>
+      Patient Heart Rate:  {{ patient["heart_rate"] }}
+    </p>
+  {% endfor %}
+</body>
+</html>
+```
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/", methods=["GET"])
+def display_hr():
+    patients = list()
+    patients.append({"name": "Ann Ables", "heart_rate": 60})
+    patients.append({"name": "Bob Boyles", "heart_rate": 110})
+    return render_template("patient_heart_rate_display.html",
+                           patients=patients)
+
+if __name__ == '__main__':
+    app.run()
+```
+Indentation in the HTML file is simply for ease of reading and has not impact
+on the display or coding.  The end of the "for" loop must be specifically
+specified using `{% endfor %}`.
+
+### If statements
+"If" statements can also be used as shown by the following example:
+```html
+<!--- patient_heart_rate_display.html --->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Data</title>
+</head>
+<body>
+  {% for patient in patients %}
+    <p>
+      Patient Name:  {{ patient["name"] }}<br>
+      Patient Heart Rate:  {{ patient["heart_rate"] }}
+      {% if patient["heart_rate"] > 100 %}
+        <br>Patient is Tachycardic
+      {% endif %}
+    </p>
+  {% endfor %}
+</body>
+</html>
+```
+Again, note that the "if" statement needed to be formally ended with 
+`{% endif %}`.  There are also `{% else %}` and `{% elif ... %}` blocks that
+can be used.
 
 ## Interacting with HTML Forms
 The use of forms in HTML for receiving user input is described at
@@ -215,13 +322,16 @@ If you want the server to display a different page after submitting a form,
 include the following `return` statement at the end of the `if` statement block 
 for when a POST request is received:
 ```python
-        return redirect(url_for(function_name))
+        return redirect(url_for("function_name"))
 ```  
 where `redirect()` and `url_for()` are functions imported from `flask` and
 `function_name` is the name of a flask handler function that you want to run
-upon submittal of the form.  This statement tells `flask` to make a GET
+upon submittal of the form.  Note that the function name needs to be inside of
+a string.  This statement tells `flask` to make a GET
 request to the URL that is associated with the `function_name` flask 
 handler.
+
+
 
 ## Miscellaneous
 ### File manipulation
@@ -282,3 +392,20 @@ filenames are not used which might cause server/security issues.
 This code is the bare minimum.  View the website provided earlier in this
 section for more details and additional code to check for correct entries,
 appropriate file upload types, etc.
+
+### Images
+Flask is designed to expect images for display on websites to be found in a
+folder called `static` within the repository.  So, best practice is to put
+images for display into this folder, and then they can be referenced in the
+HTML document as follows:
+
+```html
+<img src="{{ url_for('static', filename='trees.jpg') }}" alt="trees">
+```
+An alternate that sometimes works is as follows:
+```html
+<img src="../static/trees.jpg" alt="trees">
+```
+This assumes that Flask is using the templates folder as the starting location
+and so we need to use `..` to go back up a level to the repository directory
+before going into the static directory.

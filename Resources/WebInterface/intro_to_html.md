@@ -131,3 +131,23 @@ separated by commas.  Common style properties:
 ## Comments
 Comments can be added to HTML as needed.  Anything found between `<!---` and
 `--->` will be ignored by the HTML interpreter.
+
+## Images
+Images can be shown using the `img` element.
+```html
+<img src="trees.jpg" alt="trees">
+```
+The `src` and `alt` attributes are required.  The `src` attribute defines the
+path or URL to the image.  The `alt` attribute provides a text string to 
+display if the picture cannot be found or shown for some reason.
+
+_Note: How to exactly specify the path to a file on your computer or server
+can vary based on implementation.  So, always test that is works correctly.
+Specifics for how to show an image using Flask are described here: 
+[Link to be added](to be added)
+
+To specify a specific size for the image on the web page, use the `width` and
+`height` attributes with a numeric value in pixels.
+```html
+<img src="trees.jpg" alt="trees" width="500" height="500">
+```
