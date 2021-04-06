@@ -58,6 +58,12 @@ The `id` and `name` attributes do not have to be different.  In the example
 above, they could have both been given the value of `first_name`.  I named them
 differently just to show their different functions.
 
+#### Default Entry for Text Entry
+You can define an initial entry in a form text box using the `value` attribute.
+```html
+  <input type="text" id="first_name_id" name="first_name" value="Enter your name here">
+```
+
 ### Radio Buttons
 When the `<input>` element hase the `type` attribute set to `"radio"`, it
 displays a radio button.  Any number of radio buttons can be displayed by using
