@@ -291,3 +291,8 @@ Another link with possible solutions beyond the above might be found at this
 link:
 <https://stackoverflow.com/questions/40684543/how-to-make-python-use-ca-certificates-from-mac-os-truststore/42107877#42107877?newreg=819ef0d3d63740389ddd7206c106b4a0>
 
+Also, if the `/Application/Python 3.6/` folder doesn't exist, or if it doesn't
+have the `Install Certificates.command` file, the contents of the `Install 
+Certificates.command` file can be found at 
+<https://github.com/python/cpython/blob/master/Mac/BuildScript/resources/install_certificates.command>.
+Simply download and run this file in Python.
