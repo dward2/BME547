@@ -102,11 +102,12 @@ uploaded data for retrieval at a future time.
 * When a heart rate and ECG image are received, the date and time of receipt 
 should be stored with the data.
 * If the upload contains a medical record number not already found in the 
-database, a new entry should be made for that patient.  
+database, a new entry should be made for that patient, and the information 
+  sent with the request stored in this new record.  
 * If the upload contains a medical record number already found in the database,
-the other information sent (medical image or heart rate/ECG image) should be
-added to the existing information. (For this assignment, the patient name will 
-only be created the first time and does not to be updated.)
+any medical image and/or heart rate/ECG image sent with the request should be
+added to the existing information. If a patient name is also sent, it should 
+update the existing name in the database.
 * Accept requests from the monitoring station client to retrieve the following
 information from the database and download it to the client:
   + a list of available patient medical record numbers
