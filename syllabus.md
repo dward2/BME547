@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Spring 2021  
+# BME 547 - Medical Software Design - Fall 2021  
 
 ## Instructor
 Dr. David Ward  
@@ -10,26 +10,23 @@ Evan Jelly
 <evan.jelly@duke.edu>   
 Office Hours: By appointment
 
-## Remote Learning Delivery 
-This course is being offered via remote learning.  A computer and good internet
-connection are required.  Live, interactive class periods will be held via
-Zoom on **Tuesdays and Thursday from  3:30 pm -- 4:15 PM**.  Participation
-in the class meetings is expected.  If this presents a problem, you must 
-contact the instructor to make other arrangements.  
+## Course Delivery
+### Lecture
+Monday / Wednesday 12:00 pm to 1:15 pm  
+Location:  TBD
 
-Some lecture content may be delivered via pre-recorded videos that should be
+Attendance at lectures is an expectation of the course.  
+A laptop computer for classwork is highly recommended
+
+### Pre-lecture videos
+Some content will be delivered via pre-recorded videos that should be
 watched before class, with an accompanying quiz to check for understanding.
 Please see the "Attendance / Participation" section below for more information.
 
-There will also be some "daily assignments" that will
-be conducted either during class or will be expected to be completed before
-the next class.  If prior permission has been obtained to miss a class, 
-these daily assignments can be done at a different time, but will be
-expected to be completed before the next assigned class period.  
+### Official course communication
+Sakai will be used for official course communication.  
 
-Sakai will be used for official course communication.  Zoom meeting links 
-will be posted in Sakai.
-
+### Assignments
 A variety projects will be assigned throughout the semester.  The description
 of these assignments will be posted in Sakai and also in this GitHub repo.
 Assignments will be turned in via a GitHub Classroom repository.
@@ -109,6 +106,14 @@ on time, and completion of assigned in-class activities
 will count for 15\% of your class grade.  Eighty percent successful completion
 of these activities is required to earn the entire 15\%.  Participation points
 will be decreased for completion rates less than 80\%.  
+
+_Copied from above, may need to be edited with material around it_
+There will also be some "daily assignments" that will
+be conducted either during class or will be expected to be completed before
+the next class.  If prior permission has been obtained to miss a class, 
+these daily assignments can be done at a different time, but will be
+expected to be completed before the next assigned class period.  
+
 
 
 It is very understandable
