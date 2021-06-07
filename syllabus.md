@@ -6,14 +6,14 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Evan Jelly
-<evan.jelly@duke.edu>   
+TBD  
+<tbd@duke.edu>   
 Office Hours: By appointment
 
 ## Course Delivery
 ### Lecture
 Monday / Wednesday 12:00 pm to 1:15 pm  
-Location:  TBD
+Location:  Wilkinson 126
 
 Attendance at lectures is an expectation of the course.  
 A laptop computer for classwork is highly recommended
