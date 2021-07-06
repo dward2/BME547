@@ -26,8 +26,8 @@ word "tachycardic".
 `tachycardia.py`.
 * It should receive a parameter containing the string to check.
 * This string will only contain a single word, but there is no guarantee
-whether the word will be upper case, lower case, mixed case, or have leading /
-trailing spaces or punctuation.
+whether the word will be upper case, lower case, mixed case, and/or have one or 
+  more leading /trailing spaces and/or one or more punctuation marks.  
 * If the string contains the word "tachycardic," regardless of capitalization
 and leading or trailing spaces or punctuation, the function should return a 
 boolean value of `True`.

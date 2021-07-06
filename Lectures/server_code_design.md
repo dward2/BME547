@@ -40,6 +40,17 @@ where blood type is one of O+, O-, A+, A-, B+, B-, AB+, AB-.
 `GET /get_results/<patient_id>`
 
 
+### Event-Driven Code
+* Servers (and as we will discuss later, GUIs) are event-driven processes.
+  Once the server is set up, it "waits" for some sort of event to determine
+  what code to run next.  These "events" are GET or POST requests.  Since
+  these events are generated external to the server, the server cannot 
+  guarantee what order the events will occur.  So, the code cannot be written
+  to assume that the events will happen in a certain order.  If they do need
+  to happen in a certain order, the code needs to recoqnize when the order
+  is violated and provide an error/feedback message indicating that the 
+  correct order was not followed.  And, the server should not crash or cause
+  problems when the incorrect order is followed.
 
 
   
