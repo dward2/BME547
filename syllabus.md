@@ -6,8 +6,8 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-TBD  
-<tbd@duke.edu>   
+Lillian Ekem
+<lillian.eken@duke.edu>   
 Office Hours: By appointment
 
 ## Course Delivery
@@ -16,7 +16,7 @@ Monday / Wednesday 12:00 pm to 1:15 pm
 Location:  Wilkinson 126
 
 Attendance at lectures is an expectation of the course.  
-A laptop computer for classwork is highly recommended
+Bringing a laptop computer for working in class is highly recommended.
 
 ### Pre-lecture videos
 Some content will be delivered via pre-recorded videos that should be
@@ -94,7 +94,7 @@ period itself.
 
 If a class member cannot join the class period for any reason, they must
 contact the instructor ahead of time to make arrangements.  It would then be
-expected that this person will view the Zoom meeting recording and
+expected that this person will view the lecture recording and
 complete any given daily assignment before the next scheduled class meeting.
 
 Before some lectures, a pre-recorded video may be assigned for viewing with
@@ -106,15 +106,6 @@ on time, and completion of assigned in-class activities
 will count for 15\% of your class grade.  Eighty percent successful completion
 of these activities is required to earn the entire 15\%.  Participation points
 will be decreased for completion rates less than 80\%.  
-
-_Copied from above, may need to be edited with material around it_
-There will also be some "daily assignments" that will
-be conducted either during class or will be expected to be completed before
-the next class.  If prior permission has been obtained to miss a class, 
-these daily assignments can be done at a different time, but will be
-expected to be completed before the next assigned class period.  
-
-
 
 It is very understandable
 that students will have to miss class for job interviews, personal reasons,
@@ -137,8 +128,10 @@ will be referenced throughout the semester.
 Project details will be discussed in lecture throughout the semester.
 
 ## Grading
-Assignments will be hosted in the course GitHub repository, GitHub Classroom,
-and Sakai.
+Official assignment posting will be done in Sakai.  The detailed assignment
+description will be done in this GitHub repository.  Assignments will generally
+be submitted in a GitHub Classroom repository.
+
 Due dates--including those that change--will be announced in lecture and by
 Sakai announcements that will be emailed to the
 class.  
@@ -173,7 +166,7 @@ Specific project feedback will be given using Gradescope and Sakai.
 The course schedule is likely to change depending on progress throughout
 the semester.  The [schedule](schedule.md) will always be available in
 the GitHub course repository, but is always subject to change.  Assume there 
-will be lecture every class period even if no topic is shown on the schedule.
+will be a lecture every class period even if no topic is shown on the schedule.
 
 ## Distributed Version Control Software (git)
 Software management is a ubiquitous tool in any engineering project, and this
@@ -223,6 +216,10 @@ resources developed by others, and used in your project,
 must be properly recognized.  These outside resources must be clearly published
 for general use and cannot be the work of other current or former Duke students.
 
+In general, if you can install it from a package manager, such as `pip` or 
+`conda`, then you can use it as part of your work.  If you cannot, you should
+seek further guidance from the instructor.
+
 All students are expected to adhere to all principles of the [Duke Community
 Standard](http://www.integrity.duke.edu/standard.html).  Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
@@ -234,7 +231,7 @@ for this academic year, can be found at
 
 If a student is found responsible through the Office of Student Conduct for
 academic dishonesty on a graded item in this course, the student will 
-receive a zero for that assignment, to result in a final grade for the course
+receive a zero for that assignment and the final grade for the course will be
 reduced by at least one full letter grade.  If a student's admitted academic
 dishonesty is resolved directly through a faculty-student resolution agreement
 approved by the Office of Student Conduct, the terms of that agreement will
