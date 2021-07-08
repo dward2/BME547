@@ -5,10 +5,15 @@ Dr. David Ward
 <david.a.ward@duke.edu>  
 Office Hours: By appointment
 
-## Teaching Assistant
+## Teaching Assistants
 Lillian Ekem
 <lillian.eken@duke.edu>   
 Office Hours: By appointment
+
+Yuan Tian
+<yuan.tian277@duke.edu>
+Office Hours: By appointment
+
 
 ## Course Delivery
 ### Lecture
@@ -188,7 +193,7 @@ git repositories.  Some guidelines for using your git repositories:
   semester.
 * Instructors and teaching assistants will only review code that is committed
   to your repository (no emailed code!).
-* All of the commits associated with your repository are logged with your name
+* All the commits associated with your repository are logged with your name
   and a timestamp, and these cannot be modified.  Use descriptive commit
   messages so that your group members, instructors, and teaching assistants can
   figure out what you have done!!  You should not need to email group members
@@ -231,7 +236,7 @@ for this academic year, can be found at
 
 If a student is found responsible through the Office of Student Conduct for
 academic dishonesty on a graded item in this course, the student will 
-receive a zero for that assignment and the final grade for the course will be
+receive a zero for that assignment, and the final grade for the course will be
 reduced by at least one full letter grade.  If a student's admitted academic
 dishonesty is resolved directly through a faculty-student resolution agreement
 approved by the Office of Student Conduct, the terms of that agreement will
