@@ -6,12 +6,12 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistants
-Lillian Ekem
+Lillian Ekem  
 <lillian.eken@duke.edu>   
 Office Hours: By appointment
 
-Yuan Tian
-<yuan.tian277@duke.edu>
+Yuan Tian  
+<yuan.tian277@duke.edu>  
 Office Hours: By appointment
 
 
