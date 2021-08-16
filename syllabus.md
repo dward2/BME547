@@ -23,6 +23,12 @@ Location:  Wilkinson 126
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is highly recommended.
 
+### Safety Protocols
+Following Duke-mandated safety protocols is required for this class and
+students who fail to follow these protocols will be asked to leave the 
+classroom until they can comply.  The most recent Duke protocols can be found
+at <https://coronavirus.duke.edu/> and <https://returnto.duke.edu/>.
+
 ### Pre-lecture videos
 Some content will be delivered via pre-recorded videos that should be
 watched before class, with an accompanying quiz to check for understanding.
@@ -32,9 +38,10 @@ Please see the "Attendance / Participation" section below for more information.
 Sakai will be used for official course communication.  
 
 ### Assignments
-A variety projects will be assigned throughout the semester.  The description
-of these assignments will be posted in Sakai and also in this GitHub repo.
-Assignments will be turned in via a GitHub Classroom repository.
+A variety of projects will be assigned throughout the semester.  The 
+description of these assignments will be posted in Sakai and also in this 
+GitHub repo.  Assignments will be turned in via a GitHub Classroom repository.
+Assignment feedback will be delivered via Gradescope and Sakai.
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
@@ -228,16 +235,21 @@ seek further guidance from the instructor.
 All students are expected to adhere to all principles of the [Duke Community
 Standard](http://www.integrity.duke.edu/standard.html).  Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
-Conduct.  Please do not hesitate to talk with your instructors about any
-situations involving academic honor, especially if it is ambiguous what should
+Conduct or the appropriate Graduate School dean.  Please do not hesitate to 
+talk with your instructor about any situations involving academic honor, 
+especially if it is ambiguous about what should
 be done.  More information on the Duke Community Standard, and its practice
 for this academic year, can be found at 
 <https://registrar.duke.edu/university-bulletins/duke-community-standard>.
 
-If a student is found responsible through the Office of Student Conduct for
+For undergraduates, if a student is found responsible through the Office of 
+Student Conduct for
 academic dishonesty on a graded item in this course, the student will 
 receive a zero for that assignment, and the final grade for the course will be
 reduced by at least one full letter grade.  If a student's admitted academic
 dishonesty is resolved directly through a faculty-student resolution agreement
 approved by the Office of Student Conduct, the terms of that agreement will
 dictate the grading response to the assignment at issue.
+
+For graduate students, the appropriate policies of their graduate school will 
+apply.  
