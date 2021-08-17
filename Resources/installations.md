@@ -20,7 +20,7 @@ exceptions:
 
 
 ## Python
-* On opening install screen, select "Add Python 3.8 to Path".
+* On opening install screen, select "Add Python 3.9 to Path".
 * Run default installation.
 * Choose option to "Disable path length limit" at the end of the install.
 
