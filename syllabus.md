@@ -65,6 +65,9 @@ BME 271 - Signals and Systems
 
 A computer with administrator rights and good internet connection.
 
+Complete the prerequisite assessment found 
+[here](Assignments/00_programming_assessment.md).
+
 ## Course Topics
 * Software version control (`git`, GitHub)
 * Device programming fundamentals

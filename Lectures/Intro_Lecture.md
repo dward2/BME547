@@ -11,7 +11,7 @@
 * Yuan Tian
 
 ## Who are you?
-* Name
+* Name (how you would like to be addressed)
 * Undergrad / Grad
 * Hometown
 * Programming language you are most comfortable with
