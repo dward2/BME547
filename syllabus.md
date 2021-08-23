@@ -7,7 +7,7 @@ Office Hours: By appointment
 
 ## Teaching Assistants
 Lillian Ekem  
-<lillian.eken@duke.edu>   
+<lillian.ekem@duke.edu>   
 Office Hours: By appointment
 
 Yuan Tian  
