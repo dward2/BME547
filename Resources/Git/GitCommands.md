@@ -19,6 +19,7 @@ comments by the user.
 `git config --global core.editor <editor_name>` where `<editor_name>` can be 
 one of the following:
   * `nano` for the nano terminal editor
+  * `notebook` for the Notebook app in Windows  
   * `"'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
     for Notepad++ on Windows (note, you may need to verify this exact path is)
     the same on your computer.
