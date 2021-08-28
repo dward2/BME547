@@ -101,7 +101,17 @@ The quotient is 3
 The remainder is 2
 
 ```
-More than one variable can be returned, as shown in the example above.
+More than one variable can be returned, as shown in the example above.  In the
+case above, the different return values are captured in different variables.
+Another approach is to capture all the return values into a single variable
+which will be a tuple.  The last four lines of code from above would be
+modified as follows:
+```python
+    answers = division_results(i, j)
+    print("The result of {} divided by {} is {}".format(i, j, answers[0]))
+    print("The quotient is {}".format(answers[1]))
+    print("The remainder is {}".format(answers[2]))
+```
 
 #### Example 6 - `return` ends a function right away
 ```python
