@@ -28,7 +28,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
     <a href="Resources/markdown.md">Markdown</a></td>
   
-   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice</a></td>
+   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a></td>
 </tr>
 
 <tr>
@@ -37,7 +37,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/return_keyword.md">Return</a> /
     <a href="Lectures/git_workflow.md">Git Workflow</a>
     </td>
-    <td><!---<a href="Lectures/git_workflow.md#LDL-Branch">-->In-class Exercise</td>
+    <td><a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</td>
 </tr>
 
 <tr>
@@ -45,7 +45,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/modules.md">Modules</a> /
     <a href="Lectures/virtual_environments.md">Virtual Environments</a> 
     </td>
-    <td><!---<a href="Assignments/PythonFundamentalAssignment.md">--->Python Fundamentals<!---</a>---></td>
+    <td><!---<a href="Assignments/PythonFundamentalAssignment.md">--->Python Fundamentals Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -66,7 +66,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a>
     </td>
     <td>
-        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator<!---</a>--->
+        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator Assigned<!---</a>--->
 </td>
 </tr>
 
@@ -88,7 +88,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <br>
     (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
     </td>
-    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assignment<!---</a>---></td>
+    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -109,7 +109,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/logging.md">Logging</a>
     </td>
     <td>
-        <!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion<!---</a>--->
+        <!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion Assigned<!---</a>--->
     </td>
 </tr>
 
