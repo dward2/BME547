@@ -67,22 +67,36 @@ installed.  If not, you will need to download it from the site above.
      * Note that if you have both `python2` and `python3` installed on your 
      computer, it is possible that you will have to enter `python3` in place
      of `python` to run the correct version.  Alternatively, you can set up an
-     alias by either:
-       + entering `echo "alias python=/usr/local/bin/python3.7" >> ~/.bashrc` (`echo "alias python=/usr/local/bin/python3" >> ~/.zshrc` for macOS 10.15 or later)
-       at the terminal prompt, or
-       + manually editing the `.bashrc` (`.zshrc` for macOS 10.15 or later) file to include the line 
-       `alias python=/usr/local/bin/python3.8`.  Note that you need to make
-       sure that the path (`/usr/local/bin/python3.8`) matches the actual
-       path on your computer.  For example, verify the version number is
-       correct.
+     alias:
+       + Open a terminal window and check the window title bar and see if it
+         indicates you are using `bash` shell or a `zsh` shell.  Generally,
+         if you are running macOS 10.14 or earlier, it will be a `bash` shell.
+         With macOS 10.15 or higher, it could be either one.
+       + If you are using a `bash` shell, you will need to make modifications
+         to the `.bashrc` file.  If you are using a `zsh` shell, you will need
+         to make modifications to the `.zshrc` file.
+       + Enter `whereis python3` to determine the pathway to `python3`.  It
+         will usually be either `/usr/local/bin` or `/usr/bin`.
+       + You can modify the appropriate `rc` file determined above in one of 
+         two ways:
+         - Enter  `echo "alias python=/usr/local/bin/python3" >> ~/.bashrc` or
+           `echo "alias python=/usr/local/bin/python3.7" >> ~/.zshrc`
+         - Manually edit the appropriate file and add the line 
+           `alias python=/usr/local/bin/python3`  
+         - If your `whereis python3` result was only `/usr/bin`, then remove
+           `/local` from the paths above.
+         - Note: there have been some instances where the specific python3
+           version number is required.  So, if the above does not work, you
+           may need to set the alias path as `/usr/local/bin/python3.7` or the
+           appropriate version number.
        + You will need to do the same thing with the `pip` package installer.
        Type `pip --version` at the command line and an output similar to
        `pip 19.0.3 from /Library/Python/2.7/site-packages/pip-19.0.3-py2.7.egg/pip (python 2.7)`
        will be shown.  If it refers to version 2, type `pip3 --version` to
        make sure that `pip3` was installed as part of the  `python3` install
-       (it should have been).  Then, if you like, you can alias the `pip3` via
-       `echo "alias pip=/usr/local/bin/pip3" >> ~/.bashrc`, (`echo "alias python=/usr/local/bin/pip3" >> ~/.zshrc` for macOS 10.15 or later), or whatever the
-       correct path should be.
+       (it should have been).  Then, if you like, you can alias the `pip3`
+       following the same approach as python, just replace `python` and 
+         `python3` with `pip` and `pip3`.
     
    + **Windows** users have three options:  
      1. Download and install from <https://www.python.org/> as described above.
