@@ -143,8 +143,10 @@ __Good:__
 
 __Bad:__
 
-![branching-bad](branching_files/branching_bad.jpg)
-
+![branching-bad](branching_files/branching_bad.jpg)  
+(In the case above, the user forgot to checkout the main branch after merging
+the `test` branch into `main` on GitHub.  So, when they made the `test2`
+branch, it was a copy of `test` rather than `main`.)
 
 There may be times when you want to try a different approach to a feature, and 
 in that case, it may be okay to branch off of a feature branch.  For example,
@@ -159,3 +161,21 @@ and modify it for your second idea.  So, you could make a new branch from
 Or, if you prefer the original approach, you could checkout `test2` and merge 
 it.
 
+#### Forgetting to pull `main` from GitHub after a merge
+As another example, let's say the user successfully creates a branch, pushes
+it to GitHub, and merges it on GitHub.  GitHub will see the branches looking
+like this:
+
+![first_branch_good](branching_files/first_branch_good.JPG)
+
+Then, in their local repository, the user remembers to check out the main
+branch, but forgets to "pull" the merged changes on GitHub.  They then create
+a second branch, work on it, push to GitHub, and then merge on GitHub.  The
+branches will look like this:
+
+![forget to pull main after first merge](branching_files/forget_to_pull_main_after_first_merge.JPG)
+
+Since they did not pull the merged changes from GitHub after merging the first
+branch, the second branch was created from the initial empty repository.  This
+is not ideal because you should always be working from the most recent copy
+of the files whenever possible.
