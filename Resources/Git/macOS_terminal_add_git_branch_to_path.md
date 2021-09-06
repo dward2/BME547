@@ -1,11 +1,18 @@
 # Adding `git` branch to macOS terminal prompt
 
 In order to see the current `git` branch in the macOS terminal prompt,
-do the following:
+first determine the type of shell you are running in the terminal window.  You
+can look at the title of the terminal window and see if it contains `bash` or
+`zsh`.  Alternatively, at the command prompt, enter `echo $0` and it should
+return the shell name.  It should be either `bash` or `zsh`.
 
-## For mac OS 10.15 (Catalina) or later
+Then, follow the instructions below for the appropriate shell.
 
-With the update to MacOS Catalina, Apple changed the default shell to zsh, so the code will goto .zshrc instead of .bashrc.
+**Note:** The default shell for macOS 10.15 (Catalina) or later should be
+`zsh`.  For earlier versions of macOS, it should be `bash`.  But, in my
+experience, that isn't universal.  
+
+## `zsh` shell
 
 * Look to see if the file `~/.zshrc` exists.
 * If it does not, create it with `touch ~/.zshrc`.
@@ -25,15 +32,14 @@ zstyle ':vcs_info:git:*' formats ${COLOR_GIT}'(%b)'${COLOR_DEF}
 setopt PROMPT_SUBST
 PROMPT='%n@%m in ${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 ```
-Now run `source ~/.zshrc` in your Terminal to see the changes.
-* Note:
-If ~/.zshrc not there then run mv ~/.bashrc ~/.zshrc and mv ~/.bash_profile ~/.zprofile
+Now run `source ~/.zshrc` in your Terminal to see the changes.  You will need
+to navigate to a git repository folder to see the branch name in the prompt.
 
 ### Reference
 This information was taken from 
 <https://medium.com/@sreedhu7/show-git-branch-name-in-terminal-macos-catalina-625a69ecb2c9>
 
-## For mac OS 10.14 (Mojave) or earlier
+## `bash` shell
 
 * Look to see if the file `~/.bash_profile` exists.
 * If it does not, create it with `touch ~/.bash_profile`.
