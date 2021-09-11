@@ -66,7 +66,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a>
     </td>
     <td>
-        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator Assigned<!---</a>--->
+        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
 </td>
 </tr>
 
@@ -76,7 +76,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a>;
         <a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a>
     </td>
-    <td><!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise<!---</a>---></td>
+    <td><a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a></td>
 </tr>
 
 <tr>
