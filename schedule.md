@@ -109,7 +109,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/logging.md">Logging</a>
     </td>
     <td>
-        <!---<a href="Assignments/TSHTestDataConversion">--->TSH Test Data Conversion Assigned<!---</a>--->
+        <a href="Assignments/CPAP_Analysis">CPAP Analysis Assigned</a>
     </td>
 </tr>
 
