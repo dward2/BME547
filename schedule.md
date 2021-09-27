@@ -105,8 +105,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <a href="Lectures/json.md">JSON</a>;
         <a href="Lectures/docstrings.md">Docstrings</a>;
-<a href="Lectures/exceptions_active_lecture.md">Exceptions</a> and 
-        <a href="Lectures/logging.md">Logging</a>
+<a href="Lectures/exceptions_active_lecture.md">Exceptions</a>
     </td>
     <td>
         <a href="Assignments/CPAP_Analysis">CPAP Analysis Assigned</a>
@@ -116,10 +115,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Sept 27</td>
     <td>
+        <a href="Lectures/logging.md">Logging</a><br>
         <a href="Lectures/numpy.md">NumPy</a>, 
-        <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages;
-        <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>;
-    <a href="Lectures/variable_scope.md">Scope</a>
+        <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages<br>
+        <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>
     </td>
     <td></td>
 </tr>
@@ -127,6 +126,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Sept 29</td>
     <td>
+        <a href="Lectures/variable_scope.md">Scope</a>;
         Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a>
     </td>
     <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</td>
