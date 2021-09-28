@@ -21,12 +21,15 @@
   excursion).  Analysis of the data should still be done as normal.
   + The following data should be calculated and saved as keys in a Python 
   dictionary called `metrics`:
-    - `duration`: time duration of the ECG strip
+    - `duration`: time duration of the ECG strip as a numeric value
     - `voltage_extremes`: tuple in the form `(min, max)` where `min` and `max`
-    are the minimum and maximum lead voltages found in the data file.      
-    - `num_beats`: number of detected beats in the strip, as a numeric variable type.
-    - `mean_hr_bpm`: estimated average heart rate over the length of the strip  
-    - `beats`: list of times when a beat occurred
+    are the minimum and maximum lead voltages found in the data file.  `min`
+    and `max` should be numeric values.  
+    - `num_beats`: number of detected beats in the strip, as a numeric value
+    - `mean_hr_bpm`: estimated average heart rate over the length of the strip
+      as a numeric value
+    - `beats`: list of times when a beat occurred.  The individual times 
+      should be numeric values
   + Your `metrics` dictionary should be output as a [JSON](https://json.org/) 
   file.  The json file should have the same name as the ECG data file, but
    with an extension of `.json`.  Example:  the dictionary 

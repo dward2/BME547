@@ -126,10 +126,11 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Sept 29</td>
     <td>
-        <a href="Lectures/variable_scope.md">Scope</a>;
         Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a>
+        <br>        
+        <a href="Lectures/variable_scope.md">Scope</a>
     </td>
-    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned</td>
+    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
