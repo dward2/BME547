@@ -202,7 +202,7 @@ Tools heading in the left-hand pane.
 use the `requirements.txt` file to do so, open the Settings (or Preferences
 for macOS) window and select select "Project Interpreter"
 under the "Project: YourProjectName" heading.
-![SettingsProjInterWindowVENV.png](images/SettingsProjInterWindowVENV.PNG)
+![SettingsProjInterWindowVenv.png](images/SettingsProjInterWindowVenv.PNG)
 * Click the "+" on the right side of the window at the top of the list of 
 packages.  An "Available Packages" window will open.  Find the package you
 want to install and click on the "Install Packages" button.
