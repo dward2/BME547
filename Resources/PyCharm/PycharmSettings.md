@@ -37,9 +37,10 @@ gives some errors.
 ### Line length guide
 * A line in the editor can be shown that indicates the line length maximum.
 * To turn on and off, go to "Editor /Color Scheme / General" (see below).  
-Select "Hard wrap guide" in the right hand portion.  Turn "Foreground" on or 
-off.  When turning on, you can vary the color/intensity of the line by clicking 
-on the number code next to Foreground.
+In the right hand portion, select "Hard wrap guide" under "Editor / Guides".  
+  Turn "Foreground" on or off.  When turning on, you can vary the 
+  color/intensity of the line by clicking on the number code next to 
+  Foreground.
 ![](images/SettingsEditorColorSchemeGeneral.PNG)
   
 ### Editor / Code Style

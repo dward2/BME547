@@ -32,3 +32,7 @@ Sakai
   + Cloning a GitHub Repository to Local Computer
   + Git Workflow in PyCharm 
   + Using PyTest in PyCharm
+  + These videos were made with PyCharm v 2018.2.  Some things are slightly 
+    different with the more recent versions.  Refer to the details in
+    [NewProject.md](NewProject.md) for updates when things are different.
+    
