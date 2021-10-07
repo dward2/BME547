@@ -227,9 +227,10 @@ We can see that both tests now passed.
 Many software companies have style guides for coding, mandating how code is 
 formatted visually, variables are named, functions named, etc.
 [PEP-8](https://www.python.org/dev/peps/pep-0008/) is the Style Guide for 
-Python Code.  We will be using this style guide in this class.  `pytest` has
-the ability to check that code meets the PEP-8 style requirements.  Run `pytest`
-as follows:  
+Python Code.  (A more friendly presentation of the PEP-8 Style guide can be
+found [here](https://pep8.org/).  We will be using this style guide in this 
+class.  `pytest` has the ability to check that code meets the PEP-8 style 
+requirements.  Run `pytest` as follows:  
 `pytest -v --pycodestyle`
 
 Typical output now looks like this:
