@@ -155,20 +155,24 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
 <a href="Lectures/apis_webservices_requests.md">
     APIs, Intro To Web Services, Requests</a><br>
-    <a href="Lectures/flask_server_setup.md">
-           Building a Web Server with Flask</a>
     </td>
     <td>
-        <!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project
-        <!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
+        <a href="Lectures/name_server_project.md">Recommended Learning Project</a>
     </td>
 </tr>
 
 
 <tr>
 <td>Wed Oct 13</td>
-    <td><a href="Lectures/server_code_design.md">Server Design</a>   
-    <td><!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned</td>
+<td>
+    <a href="Lectures/flask_server_setup.md">
+       Building a Web Server with Flask</a><br>
+    <a href="Lectures/server_code_design.md">Server Design</a>
+</td>
+<td>
+    <!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
+    <!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned
+</td>
 
 
 <tr>

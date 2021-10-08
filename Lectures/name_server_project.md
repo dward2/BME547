@@ -2,19 +2,19 @@
 
 ## Name Server
 Write a program that uses the `request` library to POST student
-data to a server at `http://vcm-6764.vm.duke.edu:5000`.  And, use a POST 
+data to a server at `http://vcm-21170.vm.duke.edu:5000`.  And, use a POST 
 request to the same server to get the results of adding two numbers.
 
 __Note__: If the server does not respond to your requests, it may be turned off.
-The server is not always active.  To check, click on <http://vcm-6764.vm.duke.edu:5000>.
-If a window opens saying "Server On", then the server is active.  If you 
+The server is not always active.  To check, click on <http://vcm-21170.vm.duke.edu:5000>.
+If a browser window opens saying "Server On", then the server is active.  If you 
 receive an error, it is not.  Contact Dr. Ward to activate the server.
 
 For syntax help, see [this Jupyter Notebook](/Resources/WebServices/requests.ipynb).
 
 The server has the following endpoints:
 
-* `POST http://vcm-6764.vm.duke.edu:5000/student`  
+* `POST http://vcm-21170.vm.duke.edu:5000/student`  
 allows you to add your
 student data.  The associated POST data should look like this JSON:  
     ```
@@ -28,10 +28,10 @@ student data.  The associated POST data should look like this JSON:
 "number of students" key.  If the request is unsuccessful, it will return a
 JSON with a string giving the reason.
 
-* `GET http://vcm-6764.vm.duke.edu:5000/list`  
+* `GET http://vcm-21170.vm.duke.edu:5000/list`  
 returns a list of all the student data currently available on server
 
-* `POST http://vcm-6764.vm.duke.edu:5000/sum`  
+* `POST http://vcm-21170.vm.duke.edu:5000/sum`  
 allows you to compute a standard sum based on JSON input that looks like:
   ```
   {
