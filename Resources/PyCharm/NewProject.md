@@ -124,12 +124,25 @@ files from the main branch of the GitHub repository will be available
 locally.
 ### Create a Virtual Environment
 * This method does not automatically create a virtual environment.
-* In PyCharm, from the menu bar, select "File/Settings..."  in Windows (for
-macOS, it is "Preferences").
+* In some of the latest versions of PyCharm, it may detect the presence of a
+  `requirements.txt` file and ask if you want to create a virtual environment,
+  as shown below.
+  ![images/AutoAddVirtualEnvironment.png](images/AutoAddVirtualEnvironment.PNG)  
+  If so, verify the window contents and click "Ok".  Then, ensure that this
+  new virtual environment is used for this project.  Look in the lower right
+  status bar and see if this virtual environment has been selected.  If not,
+  follow the steps below, but instead of selecting "New environment" in the 
+  "Add Python Interpreter" window, select "Existing environment" and select the
+  `python.exe` file in the virutal environment created above.  You are now
+  finished.
+* If PyCharm did not automatically ask you to create a virtual environment, you
+  will need to do so yourself.  From the menu bar, select "File/Settings..." 
+  in Windows (for macOS, it is "Preferences").
 * In the left-hand pane of the Settings window, select "Project Interpreter"
 under the "Project: YourProjectName" heading.
 ![SettingsProjInterWindow.png](images/SettingsProjInterWindow.PNG)
-* It is currently using your default environment.  To create a new virtual
+* Otherwise, PyCharm will start with your your default environment.  
+  To create a new virtual
 environment for this project, click on the gear icon to the right of the
 "Project Interpreter" box and select "Add..." from the pop-up list.
 ![](images/AddPythonInterpreterWindow.PNG)
