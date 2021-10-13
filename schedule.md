@@ -169,7 +169,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
        Building a Web Server with Flask</a>
 </td>
 <td>
-    <a href="Lectures/time_server_project.md">Time Server Assigned</a> 
+    <a href="Assignments/time_server_project.md">Time Server Assigned</a> 
 </td>
 
 
