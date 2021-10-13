@@ -166,21 +166,20 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Wed Oct 13</td>
 <td>
     <a href="Lectures/flask_server_setup.md">
-       Building a Web Server with Flask</a><br>
-    <a href="Lectures/server_code_design.md">Server Design</a>
+       Building a Web Server with Flask</a>
 </td>
 <td>
-    <!---<a href="Lectures/time_server_project.md">--->Recommended Server Project
-    <!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned
+    <a href="Lectures/time_server_project.md">Time Server Assigned</a> 
 </td>
 
 
 <tr>
 <td>Mon Oct 18</td>
     <td>Server Debugging, 
+    <a href="Lectures/server_code_design.md">Server Design</a><br>
     <a href="Resources/virtual_machines.md">Virtual machines</a>
     </td>
-    <td></td>
+    <td><!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned<!---</a>---></td>
 </tr>
 
 <tr>
