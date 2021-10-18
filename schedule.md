@@ -175,16 +175,15 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Oct 18</td>
-    <td>Server Debugging, 
-    <a href="Lectures/server_code_design.md">Server Design</a><br>
-    <a href="Resources/virtual_machines.md">Virtual machines</a>
+    <td> 
+      <a href="Lectures/server_code_design.md">Server Design</a>
     </td>
-    <td><!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned<!---</a>---></td>
+    <td><a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a></td>
 </tr>
 
 <tr>
 <td>Wed Oct 20</td>
-    <td>Using Virtual Machines,
+    <td>Server Debugging, <a href="Resources/virtual_machines.md">Virtual machines</a>,
     <a href="Resources/WebServices/screen.md">Screen</a>,
     <a href="Lectures/databases.md">Introduction to Databases</a></td>
     <td></td>
