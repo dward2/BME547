@@ -257,7 +257,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-    <td> Wed Nov 22</td>
+    <td> Mon Nov 22</td>
     <td>Last Day of Class</td>
     <td></td>
 </tr>
