@@ -21,6 +21,22 @@ If you get a permission error while trying to install a package after entering
 the above command, include `sudo` before the command, and be prepared to enter
 your system password.
 
+If you cannot find the `Install Certificates.command`, try adding the 
+following lines to either your `~/.bash_profile` or `~/.zprofile` file:
+
+```
+CERT_PATH=$(python -m certifi)
+export SSL_CERT_FILE=${CERT_PATH}
+export REQUESTS_CA_BUNDLE=${CERT_PATH}
+```
+_Note_: if you need to enter `python3` instead of `python` at the command line,
+replace `python` with `python3` in the first line above.
+
+Close your terminal window and re-open it and see if the issue is resolved.
+
+
+### Conda
+
 If you're getting an error like this in conda, try 
 ```sh
 conda remove certifi
