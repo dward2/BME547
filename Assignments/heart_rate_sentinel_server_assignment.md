@@ -273,26 +273,5 @@ could help in their evaluation.
 standard root certificate authorities, so some folks may get a ssl error, other
 error, or just not be able to reach certain web services, such as MongoDB. 
 
-To fix this, run the following command:
-
-```
-/Applications/Python\ 3.6/Install\ Certificates.command
-```
-
-If you installed Python 3.7 or 3.8, change 3.6 to 3.7 or 3.8 in the command above.
-
-If you're getting an error like this in conda, try 
-```sh
-conda remove certifi
-conda install certifi
-```
-
-Another link with possible solutions beyond the above might be found at this
-link:
-<https://stackoverflow.com/questions/40684543/how-to-make-python-use-ca-certificates-from-mac-os-truststore/42107877#42107877?newreg=819ef0d3d63740389ddd7206c106b4a0>
-
-Also, if the `/Application/Python 3.6/` folder doesn't exist, or if it doesn't
-have the `Install Certificates.command` file, the contents of the `Install 
-Certificates.command` file can be found at 
-<https://github.com/python/cpython/blob/master/Mac/BuildScript/resources/install_certificates.command>.
-Simply download and run this file in Python.
+Please visit <a href="../Resources/installations_mac.md">Resources/installations_mac.md</a>
+for possible fixes.

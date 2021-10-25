@@ -6,7 +6,9 @@ standard root certificate authorities.  So, some folks may get a ssl error,
 other error, or just not be able to reach certain web services, such as 
 MongoDB. 
 
-To fix this, open a terminal window and make sure you are in your home
+### Fix #1
+
+Open a terminal window and make sure you are in your home
 directory (`cd ~`), that you are not in a virtual environment, and enter the 
 following command:
 
@@ -21,6 +23,9 @@ If you get a permission error while trying to install a package after entering
 the above command, include `sudo` before the command, and be prepared to enter
 your system password.
 
+
+### Fix #2
+
 If you cannot find the `Install Certificates.command`, try adding the 
 following lines to either your `~/.bash_profile` or `~/.zprofile` file:
 
@@ -34,6 +39,12 @@ replace `python` with `python3` in the first line above.
 
 Close your terminal window and re-open it and see if the issue is resolved.
 
+
+### Fix #3
+If you cannot find the `Install Certificates.command` file, the contents of
+this file can be found at:
+<https://github.com/python/cpython/blob/master/Mac/BuildScript/resources/install_certificates.command>.
+Download this file and run it in Python and see if it fixes your problem.
 
 ### Conda
 
