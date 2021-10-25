@@ -1,7 +1,6 @@
 # Provision Free MongoDB Database on mongoDB.com
 
-MongoDB Atlas (previously mlab.com) is an online service that lets you quickly 
-spin up a MongoDB 
+MongoDB Atlas is an online service that lets you quickly spin up a MongoDB 
 database on a virtual machine that they own. Once you've spun up a database 
 instance on their virtual machine, you can connect to and interact with it 
 using database connection URL, as discussed in class. Remember that a database 
@@ -11,39 +10,47 @@ communicate with the database to save entries or retrieve entries as needed.
 
 ## Setup
 1. [Sign up](https://www.mongodb.com/cloud/atlas) for a free account at 
-mongoDB.  Click on "Start free".
+mongoDB.  Click on "Get started now".
 2. Complete the form to create an account and click "Continue".
-3. Create an organization name and a project name.  You can use the defaults
-   or come up with your own.
-   Choose Python as your preferred language.  Click "Continue".
-4. Click on the "Create a cluster" button in the "Shared Clusters" option. 
-   This is the free version.
-5. Select any cloud provider.
-6. Choose a region close to Duke or your current location.
-7. Ignore "Cluster Tier" or "Additional Settings" unless you want to spend
+3. Enter your first and last name and agree to the terms and conditions by
+   selecting the check box.  Then, click "Create account".
+4. You will then receive an email from MongoDB to verify your e-mail.  Click
+   "Verify Email" in that email.
+5. Click "Continue" on the webpage that opens.
+6. Answer the questions on the "Welcome to Atlas!" page.  I answered:
+   - Learn MongoDB
+   - Internet of Things
+   - Python
+7. Click "Finish".   
+8. On the "Deploy a cloud database" page, select the Free "Shared" option and
+   click on the "Create" button for that option.
+9. Under "Cloud Provider and Region", select any cloud provider (I used AWS)
+and choose a region close to you (I selected N. Virginia).
+10. Ignore "Cluster Tier" or "Additional Settings" unless you want to spend
 some money to customize your account.  The base settings should be fine.
-8. Name your cluster anything you would like (perhaps "bme547")
-9. Click "Create Cluster" at the bottom of the page.
-10. After some period of time, your cluster will be ready.
-11. Create a database user.    
+11. Name your cluster anything you would like (perhaps "bme547")
+12. Click "Create Cluster" at the bottom of the page.
+13. A visual check may appear to help make sure you are not a robot.  Complete
+   it and click "Verify".
+14. After some period of time, your cluster will be ready.
+15. Create a database user.    
    a. Click on "Database Access" in the left-hand list.  
    b. Make sure the "Database Users" sub-tab is selected.  Then click "Add New 
    Database User" button.  
    c. Select the Password Authentication Method  
-   d. Complete the username field, select a password (remember this), choose 
+   d. Complete the username field, select a password (__remember this__), choose 
    "Read and write to any database", and click "Add User".
-12. Add IP addresses allowed to access the database on the "IP Whitelist".  
+16. Add IP addresses allowed to access the database on the "IP Whitelist".  
    a. Click on "Network Access" in the left-hand list.  
    b. Make sure the "IP Access List" tab is selected.  Click on "Add IP Address".  
    c. Select "Allow Access From Anywhere" in the window that pops up.  Click 
-    "Confirm".  It may take a few minutes for this step to be confirmed.
-13. Get connection information to your database.  
-   a. If not already there, click on "Clusters" in the left-hand list.  
+    "Confirm".
+17. Get connection information to your database.  
+   a. Click on "Databases" in the left-hand list.  
    b. Click on the "Connect" button.   
    c. Click on the "Connect Your Application" option.  
    d. Under "1. Select your driver and version", select "Python" for the Driver and 
-   "3.6 or later" for the version (or an earlier version if you are using 
-   that).  
+   "3.6 or later" for the version.  
    e. Copy the string that is shown under "2. Add your connection string into 
    your application code" section.  Make sure the checkbox labelled "Include
    full driver code example" is unchecked.  
@@ -55,7 +62,7 @@ flask programs with `pymodm`, your first couple lines will look something like:
 from pymodm import connect
 connect("mongodb+srv://<username>:<password>@bme547-nlfrn.mongodb.net/<dbname>?retryWrites=true&w=majority")
 ```
-The string in the `connect` command above is the one you copied in step 13e 
+The string in the `connect` command above is the one you copied in step 17e 
 above, except `<username>` should have already been replaced by the username 
 you created in step 11 above.  You will manually need to replace `<password>` 
 with the password you created in step 11c above.  `<dbname>` can be replaced
@@ -67,9 +74,9 @@ Finally, you will need to add one more package to your `requirements.txt` file:
 Now, you can access the database use code similar to [here](mongo_db_example.py).
 
 Once you have data added to your database, you can see it through the 
-MongoDB website.  Go to the "Collections" area by either clicking on a button
-called "Collections" or  choosing the "Collections" tab, depending on what
-screen you are starting from.  You will then see a collection with the same
-name as the `class` you created in your code.  In the example case above, it
-will be `user`.  You can then see the contents of this database.
+MongoDB website.  Select "Databases" from the left-hand side and click on 
+"Browse Collections" if you see that button, or select the "Collections" tab
+at the top, depending on your current screen.  You will then see a list of
+the `dbnames` that you created in your connect strings, and within each
+database, you will see any MongoModel `class` you created in your code.  
 
