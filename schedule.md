@@ -183,16 +183,18 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Oct 20</td>
-    <td>Server Debugging, <a href="Resources/virtual_machines.md">Virtual machines</a>,
-    <a href="Resources/WebServices/screen.md">Screen</a>,
-    <a href="Lectures/databases.md">Introduction to Databases</a></td>
+    <td>Server Debugging, 
+    <a href="Resources/virtual_machines.md">Virtual machines</a>    
+</td>    
     <td></td>
 </tr>
 
 <tr>
 <td>Mon Oct 25</td>
     <td>
-      <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>      
+        <a href="Resources/WebServices/screen.md">Screen on VMs</a>,
+        <a href="Lectures/databases.md">Introduction to Databases</a>,<br>
+        <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>      
       (<a href="https://github.com/dward2/mongo_db_jupyter_example">Class Demo  
         Repository</a>)
     </td>
