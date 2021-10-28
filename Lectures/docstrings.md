@@ -12,6 +12,7 @@ There are three common docstring styles that can be used:
 * [reStructuredText Docstring Format](https://www.python.org/dev/peps/pep-0287/)
 * [Numpy Style Python Docstrings](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
 * [Google Style Python Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+  (also https://google.github.io/styleguide/pyguide.html)
 
 `reStructuredText` docstrings are the "default" for most IDEs and code editors,
 but it can be difficult to read (IMO).  Numpy and Google-style docstring tend
