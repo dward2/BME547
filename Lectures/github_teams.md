@@ -61,7 +61,7 @@ already existing team.
 * Assign a team member (and optional due date) to each issue.
 * Use of a project is optional.
 * Communicate to me when your plan is complete so I may review it.
-* Target completion of plan by end of day Sunday, April 11.  
+* Target completion of plan by end of day Thursday, November 11.  
 * I will be looking to see how you use Milestones/Issues for communication
 in my grading of the final project.
   

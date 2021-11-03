@@ -1,6 +1,6 @@
-# Patient Monitoring Client/Server Project (Spring 2021)
+# Patient Monitoring Client/Server Project (Fall 2021)
 
-**Final Project DUE:** Sunday, April 25, 2021, 11:59 PM EST 
+**Final Project DUE:** Sunday, December 5, 2021, 11:59 PM EST 
 
 ## Overview
 The final project in this class will require you to leverage the
@@ -14,7 +14,7 @@ This final project can be modified or redefined if you would like to tailor
 this to
 your areas of interest.  If you plan to stray away from the recommended project
 and requirements below, please submit a one-page project proposal to Dr. Ward
-by *Thursday, April 8, 2021 at 12:00 noon* for evaluation to ensure the proposed
+by *Tuesday, November 9, 2021 at 12:00 noon* for evaluation to ensure the proposed
 project meets the requirements for the class. Be sure to include motivations,
 technologies, functional specifications, and anticipated deliverables.
 
