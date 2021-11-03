@@ -174,8 +174,8 @@ frequently as possible. All of those other independent functions
 should be tested. As mentioned above, you should also remember to validate user 
 inputs that come 
 from `request.get_json()` to ensure the right fields exist in the data and 
-that they are the right type. These validations should be written in 
-independent, testable functions (example:  `validate_heart_rate_request(r)`).
+that they are the right type. These validations should be done in 
+functions that can be tested.  
 You do not have to test the flask 
 handler functions directly (the functions associated with the `@app.route` 
 decorator), assuming that they have limited code and primarily call other
