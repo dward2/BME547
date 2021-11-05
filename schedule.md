@@ -222,7 +222,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
   <td>Wed Nov 3</td>
   <td>
     <a href="Lectures/github_teams.md">Milestones/Projects</a>; 
-    GUI Widgets continued
+    GUI Widgets continued; Connecting GUI to Code
   </td>
   <td>
     <a href="Assignments/final_image_processor.md">Final Project Assigned</a><br>
@@ -233,7 +233,6 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
     <td>Mon Nov 8</td>
     <td>
-        Connecting GUI to Code;
         <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
     </td>
     <td></td>
