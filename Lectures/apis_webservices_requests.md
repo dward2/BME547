@@ -108,7 +108,7 @@ The response `r` is a `requests.models.Response` object defined by the
 `requests` package.  It contains lots of information about the response.
 Printing `r` will only show the response code from the server.
 
-Response Codes:  <https://www.ietf.org/assignments/http-status-codes/http-status-codes.xml>
+Response Codes:  <https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml#http-status-codes-1>
 
 Other useful information in `r`:
 * `r.status_code` returns the status code as a number
