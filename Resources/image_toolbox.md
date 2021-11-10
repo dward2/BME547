@@ -74,7 +74,7 @@ from skimage.io import imsave
 
 with open(filename, "rb") as image_file:
     b64_bytes = base64.b64encode(image_file.read())
-    b64_string = str(b64_bytes, encoding='utf-8')
+b64_string = str(b64_bytes, encoding='utf-8')
 
 # Output:
 #    b64_string: string variable containing the image bytes encoded as a base64 
