@@ -133,6 +133,21 @@ contact with the database.  All database functions should be handled from the
 server.  If the GUI needs to interact with the database, it should do it by
 making requests of the server. 
 
+## Planning
+* It is a requirement for this assignment you develop milestones and issues
+  that provide a detailed plan of how you will approach and implement this
+  project.
+* Add these milestones and issues to your GitHub repository.
+* Each issue should be assigned to a team member.  
+* One team member must be responsible for coding the patient-side GUI.  The
+  other team member must be responsible for coding the monitoring-side GUI.
+* All other issues can be assigned to either team member with the goal of
+  balancing work load among the members.  Both team members may work
+  on any specific issue, but the assigned team member should make sure that 
+  the issue is addressed/implemented.
+* Notify the instructor when your plan is available for review before you begin
+  significant coding activities.
+
 ## Deliverables
 * All project code for the two GUI clients, server, and tests (in the form of a 
   tagged GitHub repository).  All code should be well documented with docstrings.
