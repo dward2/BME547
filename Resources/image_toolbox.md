@@ -66,6 +66,11 @@ from matplotlib import pyplot as plt
 from skimage.io import imsave
 ```
 
+`base64` and `io` are native Python modules and do not need to be installed in
+your virtual environment.  You will need to install `matplotlib` and
+`scikit-image` in your virtual enviornment in order to access `matplotlib` and
+`skimage.io` for import.
+
 ### Convert image file to base64 string
 ```python
 # Input:
