@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Fall 2021  
+# BME 547 - Medical Software Design - Spring 2022  
 
 ## Instructor
 Dr. David Ward  
@@ -17,8 +17,8 @@ Office Hours: By appointment
 
 ## Course Delivery
 ### Lecture
-Monday / Wednesday 12:00 pm to 1:15 pm  
-Location:  Wilkinson 126
+Monday / Wednesday 3:30 pm to 4:45 pm  
+Location:  Fitzpatrick Schiciano B 146
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is highly recommended.
@@ -76,7 +76,7 @@ Complete the prerequisite assessment found
   + Use of external libraries / packages
   + Virtual environments & dependency management (`pip`, `requirements.txt`)
   + Use of a programming IDE
-  + Debugging (`pudb`)
+  + Debugging
 * Testing
   + Unit testing
   + Functional / System testing
