@@ -135,7 +135,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Feb 21</td>
-    <td> Fall Break - No Class
+    <td> 
+        <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
+        <a href="Lectures/debugging.md">Debugging</a>, 
+        <a href="Resources/PyCharm">PyCharm</a>
     </td>
     <td></td>
 </tr>
@@ -143,21 +146,22 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Feb 23</td>
     <td> 
-    <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
-      <a href="Lectures/debugging.md">Debugging</a>, 
-    <a href="Resources/PyCharm">PyCharm</a>
+        <a href="Lectures/apis_webservices_requests.md">
+        APIs, Intro To Web Services, Requests</a>
     </td>
-    <td></td>
+    <td>
+        <a href="Lectures/name_server_project.md">Recommended Learning Project</a>
+    </td>
 </tr>
 
 <tr>
 <td>Mon Feb 28</td>
     <td>
-<a href="Lectures/apis_webservices_requests.md">
-    APIs, Intro To Web Services, Requests</a><br>
+        <a href="Lectures/flask_server_setup.md">
+           Building a Web Server with Flask</a>
     </td>
     <td>
-        <a href="Lectures/name_server_project.md">Recommended Learning Project</a>
+        <a href="Assignments/time_server_project.md">Time Server Assigned</a>    
     </td>
 </tr>
 
@@ -165,11 +169,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Mar 2</td>
 <td>
-    <a href="Lectures/flask_server_setup.md">
-       Building a Web Server with Flask</a>
+    <a href="Lectures/server_code_design.md">Server Design</a>
 </td>
 <td>
-    <a href="Assignments/time_server_project.md">Time Server Assigned</a> 
+    <a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a>     
 </td>
 
 <tr>
@@ -181,94 +184,100 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Mar 14</td>
     <td> 
-      <a href="Lectures/server_code_design.md">Server Design</a>
+      Server Debugging, <a href="Resources/virtual_machines.md">Virtual machines</a>,
+      <a href="Resources/WebServices/screen.md">Screen</a>,
+      <a href="Lectures/databases.md">Introduction to Databases</a>
     </td>
-    <td><a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a></td>
+    <td></td>
 </tr>
 
 <tr>
 <td>Wed Mar 16</td>
-    <td>Server Debugging, <a href="Resources/virtual_machines.md">Virtual machines</a>,
-    <a href="Resources/WebServices/screen.md">Screen</a>,
-    <a href="Lectures/databases.md">Introduction to Databases</a></td>
+    <td>
+      <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>      
+      (<a href="https://github.com/dward2/mongo_db_jupyter_example">Class Demo  
+        Repository</a>)
+    </td>
     <td></td>
 </tr>
 
 <tr>
 <td>Mon Mar 21</td>
     <td>
-      <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>      
-      (<a href="https://github.com/dward2/mongo_db_jupyter_example">Class Demo  
-        Repository</a>)
+      MongoDB/PyMODM Example
     </td>
-    <td></td> 
+    <td>
+      <!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
+    </td> 
 </tr>
 
 <tr>
 <td>Wed Mar 23</td>
-    <td>MongoDB/PyMODM Example</td>
-    <td><!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
+    <td>
+      <a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
+    </td>
+    <td>
+      <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned
     </td>
 </tr>
 
 <tr>
 <td>Mon Mar 28</td>
-    <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
+    <td>
+        <a href="Lectures/github_teams.md">Milestones/Projects</a>; 
+        GUI Widgets continued
     </td>
     <td>
-    <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned
+      <!---<a href="Lectures/github_teams.md#Final-Project-Planning">--->Planning for Final Project
     </td>
 </tr>
 
 <tr>
   <td>Wed Mar 30</td>
   <td>
-    <a href="Lectures/github_teams.md">Milestones/Projects</a>; 
-    GUI Widgets continued
+        Connecting GUI to Code;
+        <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
   </td>
   <td>
-    <!---<a href="Lectures/github_teams.md#Final-Project-Planning">--->Planning for Final Project
+    
   </td>
 </tr>
 
 <tr>
     <td>Mon Apr 4</td>
     <td>
-        Connecting GUI to Code;
-        <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
+      <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
     </td>
     <td></td>
 </tr>
 
 <tr>
     <td>Wed Apr 6</td>
-    <td><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a></td>
-    <td></td>
+    <td>
+      <a href="Resources/standards.md">Standards: </a>
+      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+    </td>
+    <td>
+      IEC 62304 Assignment (in Sakai)
+    </td>
 </tr>
 
 <tr>
     <td>Mon Apr 11</td>
     <td>
-      <a href="Resources/standards.md">Standards: </a>
-      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a></td>
-    <td>IEC 62304 Assignment (in Sakai)</td>
+      <a href="Lectures/intro_to_security.md">Introduction to Security</a>;
+    </td>
+    <td></td>
 </tr>
 
 <tr>
     <td>Wed Apr 13</td>
-    <td><a href="Lectures/intro_to_security.md">Introduction to Security</a>;
-</td>
+    <td>
+        Software Development Methodologies & Other Terminology
+        <br>Last Day of Class
+    </td>
     <td></td>
 </tr>
-
-<tr>
-    <td> Wed Nov 22</td>
-    <td>Last Day of Class</td>
-    <td></td>
-</tr>
-
-
-
 
 
 <!--<a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>-->
