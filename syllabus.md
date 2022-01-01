@@ -19,7 +19,7 @@ Office Hours: By appointment
 
 ### UPDATE
 __As of 1/1/22, the lectures on Wednesday, January 5, Monday, 
-January 10, and Wednesday, January 12 will be hed on ZOOM.  See the Zoom
+January 10, and Wednesday, January 12 will be held on ZOOM.  See the Zoom
 Meeting section of Sakai for the link.__
 
 ### Lecture
