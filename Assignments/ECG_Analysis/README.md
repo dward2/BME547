@@ -23,8 +23,10 @@
   dictionary called `metrics`:
     - `duration`: time duration of the ECG strip as a numeric value
     - `voltage_extremes`: tuple in the form `(min, max)` where `min` and `max`
-    are the minimum and maximum lead voltages found in the data file.  `min`
-    and `max` should be numeric values.  
+      are the minimum and maximum lead voltages as found in the raw data file.  
+      Do not take the absolute value.  The `min` should be that smallest number
+      (even if negative) and `max` should be the largest number.  `min`
+      and `max` should be numeric values.  
     - `num_beats`: number of detected beats in the strip, as a numeric value
     - `mean_hr_bpm`: estimated average heart rate over the length of the strip
       as a numeric value
