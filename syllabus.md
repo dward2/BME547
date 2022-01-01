@@ -16,9 +16,15 @@ Office Hours: By appointment
 
 
 ## Course Delivery
+
+### UPDATE
+__As of 1/1/22, the lectures on Wednesday, January 5, Monday, 
+January 10, and Wednesday, January 12 will be hed on ZOOM.  See the Zoom
+Meeting section of Sakai for the link.__
+
 ### Lecture
 Monday / Wednesday 3:30 pm to 4:45 pm  
-Location:  Fitzpatrick Schiciano B 146
+Location:  Fitzpatrick Schiciano B 1466
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is highly recommended.
@@ -104,7 +110,7 @@ Complete the prerequisite assessment found
 Lecture attendance and participation is important as the topics and skills you
 will be learning build upon each other.  Also, you will be working
 in small groups some of the semester.  Various "daily assignments" will also 
-be given as part of either class period preparation or during the class 
+be given either as part of class period preparation or during the class 
 period itself.  
 
 If a class member cannot join the class period for any reason, they must
@@ -118,9 +124,7 @@ expected to be done before the class period begins.
 
 Attendance in class, watching pre-class videos, completing pre-class quizzes
 on time, and completion of assigned in-class activities 
-will count for 15\% of your class grade.  Eighty percent successful completion
-of these activities is required to earn the entire 15\%.  Participation points
-will be decreased for completion rates less than 80\%.  
+will count for 15\% of your class grade.    
 
 It is very understandable
 that students will have to miss class for job interviews, personal reasons,
@@ -148,8 +152,7 @@ description will be done in this GitHub repository.  Assignments will generally
 be submitted in a GitHub Classroom repository.
 
 Due dates--including those that change--will be announced in lecture and by
-Sakai announcements that will be emailed to the
-class.  
+Sakai announcements that will be emailed to the class.  
 <table>
 <tr>
 <th>Grading Breakdown</th><th></th>

@@ -13,31 +13,31 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Jan 5</td>
+<td>Wed Jan 5<br><b>ZOOM</b></td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
     <td>
-      <a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a>
+      <!---<a href="Assignments/01_tool_setup_git_intro.md">--->Setup Course Tools<!---</a>--->
       <br>
-      <a href="Assignments/00_programming_assessment.md">Prerequisite Assessment</a>
+      <!---<a href="Assignments/00_programming_assessment.md">--->Prerequisite Assessment<!---</a>--->
 </td>
 </tr>
 
 <tr>
-<td>Mon Jan 10</td>
+<td>Mon Jan 10<br><b>ZOOM</b></td>
     <td><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
     Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
     <a href="Resources/markdown.md">Markdown</a></td>
   
-   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a></td>
+   <td><!---<a href="Assignments/02_git_fundamentals_practice.md">--->Git Fundamentals/Practice Assigned<!---</a>---></td>
 </tr>
 
 <tr>
-<td>Wed Jan 12</td>
+<td>Wed Jan 12<br><b>ZOOM</b></td>
     <td><a href="Lectures/python_basics.md">Python Basics</a> /
     <a href="Lectures/return_keyword.md">Return</a> /
     <a href="Lectures/git_workflow.md">Git Workflow</a>
     </td>
-    <td><a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a></td>
+    <td><!---<a href="Lectures/git_workflow.md#LDL-Branch">--->In-class Exercise<!---</a>---></td>
 </tr>
 
 <tr>
@@ -45,7 +45,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/modules.md">Modules</a> /
     <a href="Lectures/virtual_environments.md">Virtual Environments</a> 
     </td>
-    <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals Assigned</a></td>
+    <td><!---<a href="Assignments/PythonFundamentalAssignment.md">--->Python Fundamentals Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -66,7 +66,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a>
     </td>
     <td>
-        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
+        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator Assigned<!---</a>--->
 </td>
 </tr>
 
@@ -76,7 +76,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a>;
         <a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a>
     </td>
-    <td><a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a></td>
+    <td><!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise<!---</a>---></td>
 </tr>
 
 <tr>
@@ -88,7 +88,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <br>
     (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
     </td>
-    <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a></td>
+    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -108,7 +108,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <a href="Lectures/exceptions_active_lecture.md">Exceptions</a>
     </td>
     <td>
-        <a href="Assignments/CPAP_Analysis">CPAP Analysis Assigned</a>
+        <!---<a href="Assignments/CPAP_Analysis">--->CPAP Analysis Assigned<!---</a>--->
     </td>
 </tr>
 
@@ -130,7 +130,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <br>        
         <a href="Lectures/variable_scope.md">Scope</a>
     </td>
-    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
+    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -150,7 +150,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         APIs, Intro To Web Services, Requests</a>
     </td>
     <td>
-        <a href="Lectures/name_server_project.md">Recommended Learning Project</a>
+        <!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project<!---</a>--->
     </td>
 </tr>
 
@@ -161,7 +161,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
            Building a Web Server with Flask</a>
     </td>
     <td>
-        <a href="Assignments/time_server_project.md">Time Server Assigned</a>    
+        <!---<a href="Assignments/time_server_project.md">--->Time Server Assigned<!---</a>--->    
     </td>
 </tr>
 
@@ -172,7 +172,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/server_code_design.md">Server Design</a>
 </td>
 <td>
-    <a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a>     
+    <!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned<!---</a>--->     
 </td>
 
 <tr>
