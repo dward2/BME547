@@ -1,6 +1,6 @@
 # Undoing An Earlier Commit Once Pushed To GitHub
 
-As seen in the [git_concepts.md](https://github.com/dward2/BME547/blob/master/Resources/Git/git_concepts.md#reverting-to-earlier-commits)
+As seen in the [git_concepts.md](https://github.com/dward2/BME547/blob/main/Resources/Git/git_concepts.md#reverting-to-earlier-commits)
 page, the `git reset` command can be used to reset the current branch to an
 earlier commit.  This works well when working with the local repository on
 a single branch.  However, once you push a branch to GitHub and then merge it

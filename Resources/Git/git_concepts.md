@@ -292,16 +292,16 @@ changes made since the last commit.  You would use the
 $ git reset --hard 8ca80c3
 
 $ git status
-On branch master
+On branch main
 nothing to commit, working tree clean
 
 $ git log
-commit 8ca80c39c35e85a36019b365a3f61613dccb7552 (HEAD -> master)
+commit 8ca80c39c35e85a36019b365a3f61613dccb7552 (HEAD -> main)
 Author: David Ward <david.a.ward@duke.edu>
 Date:   Wed Jan 16 08:36:18 2019 -0500
 
     first commit of file1.txt
 
-dwonl@DESKTOP-G8L84L6 MINGW64 /d/unix/git_reset (master)
+$
 ```
  In this case. the `file2.txt` file no longer exists.

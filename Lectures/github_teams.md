@@ -34,12 +34,12 @@ already existing team.
   + Add to milestone
   + Add to project (if using projects)
 
-* Avoid direct commits to master branch
+* Avoid direct commits to `main` branch
   + Solving conflicts
     - [Description of how to solve conflicts](../Resources/Git/MergeConflicts.md)
     - [Example](https://github.com/dward2/class_conflict)
 * Review of pull requests
-* Consider protection rules for master branch (requires Settings access)
+* Consider protection rules for `main` branch (requires Settings access)
   
 + All questions about project should be directed through issues
   + Make sure to add recipient as assignee or tag them.

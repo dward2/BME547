@@ -29,7 +29,7 @@ The local `git` commit history now looks like this:
 ![gitlog-2.jpg](branching_files/gitlog-2.JPG)
 
 Note:  For information on how to implement this single-line commit log,
-go <a href="https://github.com/dward2/BME547/blob/master/Resources/Git/GitCommands.md#git-log-options">here</a>.
+go <a href="https://github.com/dward2/BME547/blob/main/Resources/Git/GitCommands.md#git-log-options">here</a>.
 
 Next, this feature branch is pushed to GitHub.  As this branch does not
 currently exist on GitHub, the following command is used:

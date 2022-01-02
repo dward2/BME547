@@ -129,7 +129,7 @@ easier for you as your projects get more complex.  Options include:
    + Browser-based Interactive
      + [Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/#)
    + Full-featured IDE (integrated development environment)
-     + [PyCharm](https://github.com/dward2/BME547/tree/master/Resources/PyCharm) 
+     + [PyCharm](https://github.com/dward2/BME547/tree/main/Resources/PyCharm) 
     (professional edition free to use in academic setting, also includes
     Python interpreter).
      + [Spyder](https://www.spyder-ide.org/) (free IDE included with Anaconda)
