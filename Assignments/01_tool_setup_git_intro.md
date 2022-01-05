@@ -47,7 +47,7 @@ installed.  If not, you will need to download it from the site above.
 
 
 5. Download and install `python` at https://www.python.org/. (As of 
-   August 17, 2021, the latest version is 3.9.6.)
+   January 4, 2022, the latest version is 3.10.1.)
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
@@ -72,6 +72,9 @@ installed.  If not, you will need to download it from the site above.
          indicates you are using `bash` shell or a `zsh` shell.  Generally,
          if you are running macOS 10.14 or earlier, it will be a `bash` shell.
          With macOS 10.15 or higher, it could be either one.
+       + Note that your terminal window may say something like `zsh is the
+         most recent shell being used`.  In my experience, you do NOT need to
+         upgrade to the `zsh` shell unless you want to.
        + If you are using a `bash` shell, you will need to make modifications
          to the `.bashrc` file.  If you are using a `zsh` shell, you will need
          to make modifications to the `.zshrc` file.
