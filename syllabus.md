@@ -223,6 +223,13 @@ git repositories.  Some guidelines for using your git repositories:
 We will review working with git repositories in lecture, and feedback on your
 software repository will be provided on a regular basis.
 
+## Academic Accommodations
+Students with a registered disability with the Student Disability Access Office
+may request certain accommodations.  A discussion about the general 
+implementation of these accommodations must be held between the instructor and 
+student and documented by e-mail at least 72 hours before a specific 
+accommodation may be requested. 
+
 ## Duke Community Standard & Academic Honor
 Engineering is inherently a collaborative field, and in this class, you are
 encouraged to discuss what you have learned in class and share resources that
