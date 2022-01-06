@@ -51,10 +51,11 @@ installed.  If not, you will need to download it from the site above.
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
-     * If the version number is 3.6 or higher, you are good to go.
      * If the version number is 2.7, enter `python3 --version` into the terminal 
-       window and see if version 3 is also installed.  If not, you will need to 
-       install `python3`.
+       window and see if version 3 is also installed.  
+     * If you do not have any version 3 or if your version 3 is earlier than
+       3.9, you will need to install a new version of `python3` of at least
+       verion 3.9.
    Do not try to delete or "upgrade" the 2.7 version currently on your 
    computer as it is a part of the macOS installation.
      * If python does not start at all, you will need to install `python3`.    
