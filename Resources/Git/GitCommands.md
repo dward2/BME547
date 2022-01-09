@@ -61,7 +61,13 @@ have been previously added to the repository.
 `git status`
 
 #### See changes in files made since the last commit
-`git diff` for all files, or `git diff <filename>` for a specific file.
+`git diff` shows all unstaged changes since the last commit
+
+`git diff --staged` shows all staged changes since the last commit
+
+To see changes for only a specific file, add the filename after the commands
+above.
+
 
 #### Add a new branch
 `git branch <branchname>`
