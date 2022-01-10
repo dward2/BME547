@@ -10,7 +10,7 @@ access the assignment.
 Log into your GitHub account.  Then, visit the URL in the Sakai assignment.
 
 Follow the instructions and a private repository containing your name and the 
-name of the assignment will be created within the BME547-Fall2021 
+name of the assignment will be created within the BME547-Spring2022 
 organization.  You will have ongoing access to this repository through your 
 personal GitHub account.  To access the repository, click on the GitHub
 icon in the upper left portion of the GitHub page that will take you to a 
