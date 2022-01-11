@@ -28,7 +28,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
     <a href="Resources/markdown.md">Markdown</a></td>
   
-   <td><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a></td>
+   <td><!---NOTE: GIT FUNDAMENTALS ASSIGNMENT NORMALLY HERE---></td>
 </tr>
 
 <tr>
@@ -37,7 +37,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/return_keyword.md">Return</a> /
     <a href="Lectures/git_workflow.md">Git Workflow</a>
     </td>
-    <td><!---<a href="Lectures/git_workflow.md#LDL-Branch">--->In-class Exercise<!---</a>---></td>
+    <td>
+        <a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a><br>
+        <a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>
+    </td>
 </tr>
 
 <tr>

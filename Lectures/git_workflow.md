@@ -63,6 +63,16 @@ developed on a different branch.
 
 ## Exercise
 Lets write a program that will do some basic laboratory test result checks.
+
+#### Specifications
+* Allows user to select the type of test (HDL vs LDL vs Total)
+* Allows user to enter the test result
+* Calculates whether the entered test results is in or out of desired ranges
+* Outputs the result to the user
+
+__Question__:  How might we split up this work?
+
+#### If not already done
 * Create a GitHub repository with a `README.md` file
 * Clone repository to your local computer
 
@@ -204,10 +214,9 @@ ability to analyze for LDL:
 * LDL 190 and above is very high.
    
 
-### Additional Practice: Total Cholesterol function
-If you would like additional practice:
+### Total Cholesterol Branch
 * Using the feature branch approach, add a total cholesterol check feature 
-to their code.
+to your code.
   - <200: Normal
   - 200 - 239: Borderline high
   - \>=240: High
