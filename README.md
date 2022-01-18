@@ -3,11 +3,6 @@
 # BME 547 - Medical Software Design
 ### Spring 2022
 
-### UPDATE
-__As of 1/1/22, the lectures on Wednesday, January 5, Monday, 
-January 10, and Wednesday, January 12 will be held on ZOOM.  See the Zoom
-Meeting section of Sakai for the link.__
-
 This repository serves as the default collection for all resources associated
 with the Duke BME Medical Software Design course (BME 547).
 

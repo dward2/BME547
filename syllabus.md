@@ -17,11 +17,6 @@ Office Hours: By appointment
 
 ## Course Delivery
 
-### UPDATE
-__As of 1/1/22, the lectures on Wednesday, January 5, Monday, 
-January 10, and Wednesday, January 12 will be held on ZOOM.  See the Zoom
-Meeting section of Sakai for the link.__
-
 ### Lecture
 Monday / Wednesday 3:30 pm to 4:45 pm  
 Location:  Fitzpatrick Schiciano B 1466
