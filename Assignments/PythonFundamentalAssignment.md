@@ -8,9 +8,10 @@ specific for you.  Clone this repository onto your local computer, and then
 navigate to the folder containing the repository.
 
 Next, create a virtual environment in the folder containing your repository.  
-Do not commit these files to the repository.  Instead, create a 
+Do not commit your virtual environment folder of files to the repository.
+Instead, create a 
 `.gitignore` file and add the folder name of your virtual environment to this 
-file.  Save and commit the file.  
+file.  Save and commit the `.gitignore` file to the repository.  
 
 Activate your virtual environment and install the `jupyter` package in this 
 virtual environment.
