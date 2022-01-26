@@ -69,7 +69,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a>
     </td>
     <td>
-        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator Assigned<!---</a>--->
+        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
 </td>
 </tr>
 
