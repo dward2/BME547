@@ -79,7 +79,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a>;
         <a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a>
     </td>
-    <td><!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise<!---</a>---></td>
+    <td><a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a></td>
 </tr>
 
 <tr>
