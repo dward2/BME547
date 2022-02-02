@@ -37,11 +37,11 @@ boolean value of `True`.
 * Log into GitHub and visit the GitHub Classroom link provided in Sakai.  This
   will create a repository for your submission.
 * Clone this repository to your local computer.
+* Set-up GitHub Actions in this repository to implement CI testing.
 * Develop code on feature branches.
-* Develop appropriate unit tests
+* Develop appropriate unit tests in parallel with code on feature branches.
 * Ensure all functions and code, including the unit test functions, adhere to 
   PEP-8 style.
-* Use GitHub Actions in this repository to implement CI testing.
 * Push code to GitHub.
 * Generate Pull Request on GitHub.  Only merge your feature branches into the
   main branch once GitHub Actions reports a passing status.

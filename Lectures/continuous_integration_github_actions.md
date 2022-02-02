@@ -59,10 +59,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - name: Set up Python 3.10
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.10'
     - name: Install dependencies
       run:  pip install -r requirements.txt
     - name: Test with pytest
@@ -89,7 +89,7 @@ testing.  Please keep this as `ubuntu-latest`.
     operating environment on the virtual machine
     - `with:`
       `python-version` indicates the specific Python version to be used.
-      Change the 3.8 to a different version if needed.
+      Change the 3.10 to a different version if needed.
 * `run` gives the specific commands to run in the virtual environment
   + `pip install -r requirements.txt`
   + `pytest -v --pycodestyle`
