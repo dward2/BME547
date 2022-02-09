@@ -108,10 +108,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <a href="Lectures/json.md">JSON</a>;
         <a href="Lectures/docstrings.md">Docstrings</a>;
-<a href="Lectures/exceptions_active_lecture.md">Exceptions</a>
+        <a href="Lectures/exceptions_active_lecture.md">Exceptions</a>
     </td>
     <td>
-        <!---<a href="Assignments/CPAP_Analysis">--->CPAP Analysis Assigned<!---</a>--->
+        <a href="Assignments/CPAP_Analysis">CPAP Analysis Assigned</a>
     </td>
 </tr>
 
