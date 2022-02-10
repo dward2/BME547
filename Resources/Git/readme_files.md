@@ -26,7 +26,7 @@ explanation in the program assignment.  Including an image or example of the
 output is often helpful
 * __API__: If your code has an API (for either a package or a server), describe
 the API here.
-* __Badges__: If you have status badges for licenses or Travis CI, group
+* __Badges__: If you have status badges for licenses or CI, group
 them somewhere, usually at the top under the title or at the bottom
 * __License__: Indicate the license applied to this repository.
 * __Author Information__:  Include information about the author and any 
@@ -42,12 +42,25 @@ sections, and line breaks)
 README.md does make understanding what information you have included easier
 to see and understand.  You don't have to "create" information to include
 just to have each of the sections above and have a long file.  But, make sure
-that the needed information is available and easy to find.  I would suggest
-that every README have at least the background/intro/purpose, install and
-usage instructions, a bit of details, and author information.  Other sections
-can be added as appropriate for the project or as requested in the problem
-assignment.  
-  
+that the needed information is available and easy to find.  
+
+At a minimum, every README should contain:
+* Name/Title of the repository
+* Your name
+* Brief description of the purpose of the repository/code
+* Instructions for starting your code (for example, virtual environment set-up
+  instructions, what python file to invoke on the command line, etc.)
+* If your program is interactive, a brief user's manual for how to use the
+  program
+* If there is code that should be modified before use (for example, if a
+  filename needs to be edited in the code), include instructions for that.
+
+Some assignments will specifically request additional information.
+
+And, the README is a great place of informing me about anything related to 
+your code that you think I should know.
+
+## Links  
 
 <https://github.com/matiassingers/awesome-readme> has curated links to what
 this user fields like are "awesome" readme files.  Take a look.  In the
