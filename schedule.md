@@ -128,12 +128,12 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Feb 16</td>
     <td>
-        <a href="Lectures/logging.md">Logging</a><br>
+        <a href="Lectures/logging.md">Logging</a> Data for example <a href="Lectures/lecture_files/tsh_class_data.txt">here</a><br>
         <a href="Lectures/numpy.md">NumPy</a>, 
         <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages<br>
         <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>
     </td>
-    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned<!---</a>---></td>
+    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
