@@ -76,8 +76,8 @@
     will demand).
 * There should be no "hard-coded" values in your methods.
 * Adhere to [PEP8](https://www.python.org/dev/peps/pep-0008/) style. 
-* Implement exception handling: when reading in ECG data, non-numeric
-    values should be detected using a try/except block, with the appropriate
+* Implement exception handling as needed: when reading in ECG data, non-numeric
+    values could be detected using a try/except block, with the appropriate
     exceptions being handled
 * Gracefully terminate when the input file ends
 * A logging text file should be created with the following log entries:  
