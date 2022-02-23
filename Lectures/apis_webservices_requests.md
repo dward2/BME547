@@ -167,8 +167,10 @@ Also, an interactive Jupyter notebook is available at
 ## In-Class Activity: Messaging API
 
 Find a partner in class and write some code to:
-* Send a messge to your partner
+* Send a message to your partner
 * Receive a message from your partner
+
+URL To Server:  `http://vcm-21170.vm.duke.edu:5001`
 
 ### `POST /add_message`
 Posts a message for a specific user.
