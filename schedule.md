@@ -137,7 +137,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Feb 21</td>
+<td>Mon Feb 21</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <a href="Lectures/debugging.md">Debugging</a>, 
@@ -153,7 +153,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         APIs, Intro To Web Services, Requests</a>
     </td>
     <td>
-        <!---<a href="Lectures/name_server_project.md">--->Recommended Learning Project<!---</a>--->
+        <a href="Lectures/name_server_project.md">Class Exercise</a>
     </td>
 </tr>
 
@@ -193,7 +193,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Mon Oct 25</td>
+<td>Wed Mar 16</td>
     <td>
         <a href="Resources/WebServices/screen.md">Screen on VMs</a>,
         <a href="Lectures/databases.md">Introduction to Databases</a>,<br>
@@ -215,7 +215,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Mon Nov 1</td>
+<td>Wed Mar 23</td>
     <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
     <td>

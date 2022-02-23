@@ -89,7 +89,7 @@ GitHub API:  (<https://docs.github.com/en/rest>)
 
 Let's get a list of all of our branches from a repository.
 
-<https://docs.github.com/en/rest/reference/repos#branches>
+<https://docs.github.com/en/rest/reference/branches>
 
 `GET /repos/{owner}/{repo}/branches` from requests made to `api.github.com`
 
@@ -118,7 +118,33 @@ native variable type.  The contents of the response will vary depending on the
 specific server request that was made.  
 
 ### POST Example
-Country Server API:  <a href = "../Resources/WebServices/country_server_api.md">API</a>
+
+__Name Server__
+
+The server has the following endpoints:
+
+* `POST http://vcm-21170.vm.duke.edu:5000/student`  
+allows you to add your
+student data.  The associated POST data should look like this JSON:  
+    ```
+    {
+       "name": "David Ward",
+       "net_id": "daw74",
+       "e-mail": "david.a.ward@duke.edu"
+    }
+    ```  
+  If successful, the POST request will return a JSON with a "message" key and a
+"number of students" key.  If the request is unsuccessful, it will return a
+JSON with a string giving the reason.
+
+* `GET http://vcm-21170.vm.duke.edu:5000/list`  
+returns a list of all the student data currently available on server
+
+
+<!---
+__Country Server__
+
+API:  <a href = "../Resources/WebServices/country_server_api.md">API</a>
 
 Let's compare the information on Spain and Sweden.  (Note: if this server does
 not respond, it may be shut off.  See the link "API" link above for more
@@ -131,11 +157,35 @@ countries = {"one": "Spain", "two": "Sweden"}
 r = requests.post("http://vcm-7631.vm.duke.edu:5000/compare", json=countries)
 print(r.json())
 ```
-
+--->
 For additional information on the above, see 
 <a href="../Resources/WebServices/requests.md">Resources/WebServices/requests.md</a>
 
 Also, an interactive Jupyter notebook is available at
  <a href="../Resources/WebServices/requests.ipynb">Resources/WebServices/requests.ipynb</a>
- 
-<a href="name_server_project.md">**Learning Project**</a>
+
+## In-Class Activity: Messaging API
+
+Find a partner in class and write some code to:
+* Send a messge to your partner
+* Receive a message from your partner
+
+### `POST /add_message`
+Posts a message for a specific user.
+
+Expects json input: `{"user": <user_name>, "message": <message_string>}`
+
+where 
+* `<user_name>` is a string containing the name of user for whom to post
+a message
+* `<message_string>` is a string containing the message for the user.
+
+### `GET /get_messages/<user_name>`
+
+Retrieves messages for the user indicated by `<user_name>`.
+
+Returns a list of messages for the user.  If the user has never had
+a message posted, a status code of 400 is returned.  If the user
+exists, but has no active messages, an empty list is returned.
+
+## <a href="name_server_project.md">**Class Exercise Link**</a>

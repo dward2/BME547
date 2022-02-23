@@ -1,5 +1,5 @@
-# Mini-Projects
-
+# Mini-Project
+<!---
 ## Name Server
 Write a program that uses the `request` library to POST student
 data to a server at `http://vcm-21170.vm.duke.edu:5000`.  And, use a POST 
@@ -39,7 +39,7 @@ allows you to compute a standard sum based on JSON input that looks like:
      "b": 2
   }
   ```
-
+--->
 ## Blood Match
 A blood type matching server is running at URL `http://vcm-7631.vm.duke.edu:5002`.
 (Note the different port number).
