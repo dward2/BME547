@@ -20,6 +20,8 @@ Develop a server with the following endpoints:
    + where `<meal>` could be `breakfast`, `lunch`, or `dinner`.  
    + Returns the number of hours until that meal as a `float`.
 
+Note: You can ignore leap years.
+
 ### Grading Expectations
 * This assignment is meant for practice with the syntax and coding of a web
   server, as well as the use of date/time variables in Python.
@@ -30,6 +32,10 @@ Develop a server with the following endpoints:
   + PEP 8 compliance
   + Successful implementation of the server routes above
   + That code runs without error
+* Your server can assume that it will only receive valid input.  You do not need
+  to program it to check for bad input.  Note, this is true only for this assignment.
+  The next server assignments will need to check for bad input.
+  
   
    
 ### Python Date and Time
