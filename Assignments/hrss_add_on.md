@@ -75,7 +75,8 @@
     `<password_as_str>` against previously registered administrator data.  If 
     there is a match, this route should return a list of dictionaries where
     each dictionary represents a specific tachycardia incidence.  The route
-    should examine all available heart rates for all patients.  If the posted
+    should examine all available heart rates for all patients that were posted
+    after the given "since_time" date/time.  If the posted
     heart rate is tachycardic, a dictionary should be added to the list in
     the following format:
     ```
