@@ -25,38 +25,57 @@ Your Flask web service should implement the following API routes.  Please note
 that the `/api` at the start of the routes given below should be included
 in your route name.
 
-* `POST /api/new_attending` that takes a JSON as follows:
+* `POST /api/new_attending` that takes a JSON input as follows:
   ```
   {
-      "attending_username": "Smith.J",
-      "attending_email": "dr_user_id@yourdomain.com", 
-      "attending_phone": "919-867-5309"
+      "attending_username": <attending_username_string>,
+      "attending_email": <attending_email_string>, 
+      "attending_phone": <attending_phone_string>
   }
   ```
+  where
+  + `<attending_username_string>` is a string in the format 
+    "LastName.FirstInitial" such as `"Smith.J"`
+  + `<attending_email_string>` is a string containing an e-mail address such
+    as `"DrSmith@my_hospital.com"`
+  + `<attending_phone_string>` is a string containing a 10 digit phone number
+    such as `"919-555-1212"`
+    
   The e-mail provided here will be used to send notifications to the physician
   that is registered for each patient.  While the e-mail should be of the
   correct syntax (i.e., name@domain.com), it does not need to be an active
-  e-mail address as we will be simulating email for this assignment.  The 
+  e-mail address as we will be using simulated email system for this 
+  assignment.  The value for the
   `"attending_username"` key will be used in the `api/new_patient` route below 
-  for linking a patient with an attending physician.  It should be in the 
-  format "Lastname.FirstInitial" as shown in the example above.
+  for linking a patient with an attending physician.  
   
-* `POST /api/new_patient` that takes a JSON as follows:
+* `POST /api/new_patient` that takes a JSON input as follows:
   ```
   {
-      "patient_id": 1, # usually this would be the patient MRN
-      "attending_username": "Smith.J", 
-      "patient_age": 50, # in years
+      "patient_id": <patient_id>,
+      "attending_username": <attending_username_string>, 
+      "patient_age": <patient_age>, # in years
   }
   ```
-  The true patient_id and patient_age will always be integers.  But, the data
-  sent to this route in the above dictionary may contain integers, numeric 
-  strings, or a string with letters and numbers.  Your code must be prepared
-  to parse this input and determine whether the id and age are acceptable (i.e.,
-  can be turned into an integer) or rejected (if it contains any letters).  So,
-  `123` or `"123"` should be accepted as patient_ids (although the string 
-  `"123"` should be converted into the integer `123` for storage), while 
-  `"a54"`, `"aj"`, or `"54a"` should be rejected.  
+  where
+  + `<patient_id>` is the patient medical record number.  The actual medical
+    record number will always be an integer.  However, the value sent as the 
+    `<patient_id>` value in the above dictionary may contain integers, numeric 
+    strings, or a string with letters and numbers.  Your code must be prepared
+    to parse this input and determine whether the id is acceptable (i.e.,
+    can be turned into an integer) or rejected (if it contains any letters).
+    So, `123` or `"123"` should be accepted as patient_ids (although the string 
+    `"123"` should be converted into the integer `123` for storage), while 
+    `"a54"`, `"aj"`, or `"54a"` should be rejected.
+  + `<attending_username_string>` is a string following the 
+    "LastName.FirstInitial" format as described in the `/api/add_attending` 
+    route above.
+  + `<patient_age>` is the patient's age in years.  The actual age will always
+    be an integer, but as with the `<patient_id>`, the value in the dictionary 
+    may be an integer, numeric string, or a string with letters and numbers.
+    Again, your code must distinguish between acceptable and unacceptable
+    inputs.
+    
   This route is called to register a new patient with your server.  This would
   occur when a heart rate monitor is checked out and attached 
   to a particular patient.  This will allow you to initialize a patient in
@@ -68,21 +87,27 @@ in your route name.
 * `POST /api/heart_rate` that takes a JSON as follows:
   ```
   {
-      "patient_id": 1, # usually this would be the patient MRN
-      "heart_rate": 100
+      "patient_id": <patient_id>,
+      "heart_rate": <heart_rate>
   }
   ```
-  As with the `/api/new_patient` route, the patient_id may be sent as an 
-  integer or a string, and not 
-  necessarily the same as was sent in the `new_patient` call.  For example, the
+  where
+  + `<patient_id>` is the patient medical record numbers
+  + `<heart_rate>` is the patient heart rate being recorded.
+  
+  As with the `/api/new_patient` route, the `<patient_id>` or `<heart_rate>`
+    values may be sent as an integer, a string containing an integer, or a 
+    string containing numbers and letters.  And, it may not 
+  necessarily be the same as was sent in the `/api/new_patient` call.  For 
+  example, the
   id might be sent as a string such as `"1501"` in the `new_patient` call, but 
-  sent as an integer such as `1501` in the `heart_rate_ call`.  The 
-  heart_rate may also be sent as an integer or string containing an integer. 
-  The numeric values will only be integers, no decimals.  As above, it is 
-  possible that letters will be included in either the `patient_id` or 
-  `heart_rate` and that data should be rejected.
+  sent as an integer such as `1501` in the `heart_rate` call.  Integers and
+    numeric strings should be accepted.  Strings of mixed numbers and integers
+    should be rejected.  The 
+  actual heart rate will only be integers, not decimals.  
+  
   This route should store the sent heart rate
-  measurement in the record for the specified patient.  The 
+  measurement as an integer in the record for the specified patient.  The 
   [current date/time stamp](https://github.com/dward2/BME547/blob/main/Assignments/time_server_project.md#getting-current-datetime) 
   of when the POST was received should also be stored with the heart rate
   measurement.  If the posted heart rate is tachycardic for the specified 
@@ -100,13 +125,19 @@ in your route name.
   The return dictionary/JSON string should look like:
   ```
   {
-      "heart_rate": 100,
-      "status":  "tachycardic" | "not tachycardic",
-      "timestamp": "2018-03-09 11:00:36"  
+      "heart_rate": <heart_rate_integer>,
+      "status":  <status_string>, 
+      "timestamp": <time_stamp_string>   
   }
   ```
-   Note that the `status` key should contain either the string `"tachycardic"` 
-  or `"not tachycardic"`.  
+  where
+  + `<heart_rate_integer>` the most recent heart rate as an integer 
+    (ex., `100`)
+  + `<status_string>` is either the string `"tachycardic"` or 
+    `"not tachycardic"` based on the most recent heart rate,
+  + `<time_stamp_string>` is a string indicating the date/time of the most
+    recent heart rate.  It should be in the format as shown by the example
+    "2018-03-09 11:00:36".
  
 * `GET /api/heart_rate/<patient_id>` should return a list of all the previous 
   heart rate measurements for that patient, as a list of integers.  Timestamps 
@@ -119,10 +150,14 @@ in your route name.
 * `POST /api/heart_rate/interval_average` that takes a JSON as follows: 
   ```
   {
-      "patient_id": 1,
-      "heart_rate_average_since": "2018-03-09 11:00:36"
+      "patient_id": <patient_id>,
+      "heart_rate_average_since": <time_stamp_string>
   }
   ```
+  where
+  + `<patient_id>` is the patient medical record number,
+  + `<time_stamp_string>` is a string containing a date/time following the
+  format as shown by the example "2018-03-09 11:00:36".  
   As above, the patient_id may be sent as an integer or a string, and not 
   necessarily in the same format as previously sent.  The
   heart_rate_average_since will be a string containing a date and time in the 
@@ -137,16 +172,24 @@ patients of the attending physician with the given `attending_username`.  This
 route should return a list of dictionaries, in a JSON string, where each 
   dictionary in the list represents data from a patient of this physician.  
   The patient dictionaries should be in the following format:
-```
-{
-    "patient_id": 1,
-    "last_heart_rate": 80,
-    "last_time": "2018-03-09 11:00:36",
-    "status":  "tachycardic" | "not tachycardic"
-}
-```
-  Note that the `status` key should contain either the string `"tachycardic"` or
-   `"not tachycardic"`  If no patients exist for a physician, an empty
+  ```
+  {
+      "patient_id": <patient_id>,
+      "last_heart_rate": <heart_rate_integer>,
+      "last_time": <time_stamp_string>,
+      "status": <status_string>
+  }
+  ```
+  where
+  + `<patient_id>` is the patient medical record number,
+  + `<heart_rate_integer>` the most recent heart rate as an integer 
+    (ex., `100`)
+  + `<time_stamp_string>` is a string containing a date/time following the
+  format as shown by the example "2018-03-09 11:00:36",  
+  + `<status_string>` is either the string `"tachycardic"` or 
+    `"not tachycardic"` based on the most recent heart rate.
+ 
+  If no patients exist for a physician, an empty
    list should be returned.  If the `attending_username` does not exist in the
    database, an appropriate error should be returned.
 
