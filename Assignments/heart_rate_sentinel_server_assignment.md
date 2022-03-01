@@ -20,10 +20,27 @@ assignment in Sakai for instructions to create a team repository.
 
 ## Server Specifications
 
+### Routes
 Your Flask web service should implement the following API routes.  Please note
 that the `/api` at the start of the routes given below should be included
 in your route name.
 
+* `POST /api/new_attending` that takes a JSON as follows:
+  ```
+  {
+      "attending_username": "Smith.J",
+      "attending_email": "dr_user_id@yourdomain.com", 
+      "attending_phone": "919-867-5309"
+  }
+  ```
+  The e-mail provided here will be used to send notifications to the physician
+  that is registered for each patient.  While the e-mail should be of the
+  correct syntax (i.e., name@domain.com), it does not need to be an active
+  e-mail address as we will be simulating email for this assignment.  The 
+  `"attending_username"` key will be used in the `api/new_patient` route below 
+  for linking a patient with an attending physician.  It should be in the 
+  format "Lastname.FirstInitial" as shown in the example above.
+  
 * `POST /api/new_patient` that takes a JSON as follows:
   ```
   {
@@ -45,22 +62,9 @@ in your route name.
   to a particular patient.  This will allow you to initialize a patient in
   your server and be able to accept future heart rate measurements for this 
   patient.  The `"attending_username"` key contains a string that will be used 
-  to identify the attending physician.  It should be in the format 
-  "Lastname.FirstInitial" as shown in the example above.
+  to match with an attending physician as described in the `/api/add_attending`
+  route.
    
-* `POST /api/new_attending` that takes a JSON as follows:
-  ```
-  {
-      "attending_username": "Smith.J",
-      "attending_email": "dr_user_id@yourdomain.com", 
-      "attending_phone": "919-867-5309"
-  }
-  ```
-  The e-mail provided here will be used to send notifications to the physician
-  that is registered for each patient.  The 
-  `"attending_username"` key will contain the same ID that is used in the
-  `api/new_patient` route above for the attending username.
-  
 * `POST /api/heart_rate` that takes a JSON as follows:
   ```
   {
@@ -79,11 +83,11 @@ in your route name.
   `heart_rate` and that data should be rejected.
   This route should store the sent heart rate
   measurement in the record for the specified patient.  The 
-  [current date/time stamp](https://stackoverflow.com/questions/415511/how-to-get-current-time-in-python) 
+  [current date/time stamp](https://github.com/dward2/BME547/blob/main/Assignments/time_server_project.md#getting-current-datetime) 
   of when the POST was received should also be stored with the heart rate
   measurement.  If the posted heart rate is tachycardic for the specified 
   patient and patient age, an e-mail should be sent to the attending physician
-  whose e-mail address was registered in the `api/new_patient` route. 
+  whose e-mail address was registered in the `api/add_attending` route. 
   This e-mail should include the patient_id, the tachycardic heart rate, and 
   the date/time stamp of that heart rate.
   
@@ -101,16 +105,16 @@ in your route name.
       "timestamp": "2018-03-09 11:00:36"  
   }
   ```
-   Note that the `status` key should contain either the string `"tachycardic"` or
-   `"not tachycardic"`.  
+   Note that the `status` key should contain either the string `"tachycardic"` 
+  or `"not tachycardic"`.  
  
 * `GET /api/heart_rate/<patient_id>` should return a list of all the previous 
   heart rate measurements for that patient, as a list of integers.  Timestamps 
-  are not required.
+  are not required.  The list should be returned as a JSON string.
 
 * `GET /api/heart_rate/average/<patient_id>` should return the patient's 
   average heart rate, as an integer, of all measurements you have stored for 
-  this patient.
+  this patient.  The integer should be returned as a JSON string.
  
 * `POST /api/heart_rate/interval_average` that takes a JSON as follows: 
   ```
@@ -126,13 +130,13 @@ in your route name.
   This POST should return the average, as an integer, of all the heart rates that have been
   posted for the specified patient since the given date/time.  Note that
   the given time stamp could be any time, and not necessarily the time of a 
-  previous heart rate.
+  previous heart rate.  The integer average should be returned as a JSON string.
   
 * `GET /api/patients/<attending_username>` returns information on all the 
 patients of the attending physician with the given `attending_username`.  This
-route should return a list where each entry of the list represents data from
-a patient of this physician.  Each entry in the list should be a JSON string in
- the following format:
+route should return a list of dictionaries, in a JSON string, where each 
+  dictionary in the list represents data from a patient of this physician.  
+  The patient dictionaries should be in the following format:
 ```
 {
     "patient_id": 1,
@@ -145,29 +149,34 @@ a patient of this physician.  Each entry in the list should be a JSON string in
    `"not tachycardic"`  If no patients exist for a physician, an empty
    list should be returned.  If the `attending_username` does not exist in the
    database, an appropriate error should be returned.
-   
+
+### Logging   
 The server should write to a log file when the following events occur:
-* A new patient is registered.  The log entry should include the patient ID.
 * A new attending physician is registered.  The log entry should include the
 attending username and e-mail.
+* A new patient is registered.  The log entry should include the patient ID.
 * A heart rate is posted that is tachycardic.  The log entry should include the 
 patient ID, the heart rate, and the attending physician e-mail.
 
-All the above routes should return an appropriate status code (depending on
-the outcome, including when the request was unsuccessful for whatever reason,
-for example, when the input JSON is incorrect).
+### Status Codes & Data Validation
+All the above routes should return an appropriate status code depending on
+the outcome.  For example, successful requests should return a 200 status code.
+Request that are unsuccessful (for example, when the input JSON is incorrect)
+should return a 400 (or other appropriate) status code.
 
 All the above routes should do input data validation, making sure that
 the appropriate keys in JSON inputs exist, and that the data types are
-correct.  If the input is incorrect, a non-2xx error code should be returned.  Also, 
-the routes should return the appropriate status codes if a 
+correct.  If the input is incorrect, a non-2xx status code should be returned.  
+
+Also, the routes should return the appropriate status codes if a 
 request asks for a patient that does not exist.  It is not appropriate for data
 validation and error returns from your server be 500 "Internal Server Error" 
 codes caused by exceptions
 raised by your server.  You must handle exceptions and return a non-500 error code, 
 rather than having the server return a 500 error because it had an unhandled 
 exception.
-  
+
+### Modular Code & Testing  
 Be sure to write modular code. This means your handler 
 functions for routes should be calling other independent functions as 
 frequently as possible. All of those other independent functions 
@@ -175,16 +184,17 @@ should be tested. As mentioned above, you should also remember to validate user
 inputs that come 
 from `request.get_json()` to ensure the right fields exist in the data and 
 that they are the right type. These validations should be done in 
-functions that can be tested.  
+functions that can be tested.
+
 You do not have to test the flask 
 handler functions directly (the functions associated with the `@app.route` 
 decorator), assuming that they have limited code and primarily call other
-functions to do the work.  All of these other functions should be tested.  
-
+functions to do the work.  All of these other functions should be tested.
 (In other words, your route functions should do nothing more than receive
 the input, call other functions, and return the results).
 
-Note: for this assignment, your server will need to keep the information
+### Data Storage
+For this assignment, your server will need to keep the information
 it is sent.  You can choose to store this information by using an in-memory
 data structure like Python lists, dictionaries, or classes.  You could also
 choose to use an external database.
@@ -215,7 +225,7 @@ containing the content of the e-mail.
 If the request is successful, a string will be returned indicating that the
 e-mail was sent and the from and to address.  The status code will be 200.
 
-If the request is bad (i.e., there is a problem with the dictionary being sent
+If the request is bad (i.e., there is a problem with the dictionary being sent, 
 or the e-mail addresses in it), a status code of 400 will be returned along
 with a string describing the error.
 
@@ -256,7 +266,7 @@ in this class.
 file the hostname and port on which your server is running (e.g., 
 `vcm-1000.vm.duke.edu:5000`).  Remember to 
 follow the instructions about ensuring your server is not automatically
-shut down (there is a check box on the VCM control panel. It will ask you for a 
+shut down (There is a checkbox on the VCM control panel. It will ask you for a 
 reason, just say you are running a web server assignment for BME 547 
 Medical Software Design). __Please do this deployment step last.  It is most 
 important to complete the rest of the assignment first (that is where most of 
