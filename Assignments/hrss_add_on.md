@@ -61,5 +61,32 @@
     ```
     If the submitted username and password does not match previously registered
     administrator information, a "401 Unauthorized" server status code should
-    be returned with an appropriate message. 
- 
+    be returned with an appropriate message.
+
+* `POST /api/admin/all_tachycardia` that takes a JSON as follows:
+    ```
+    {
+        "admin_username": <admin_username_as_str>,
+        "admin_password:": <password_as_str>,
+        "since_time": "2018-03-09 11:00:36"
+    }
+    ```
+    This route will check the submitted `<admin_username_as_str>` and 
+    `<password_as_str>` against previously registered administrator data.  If 
+    there is a match, this route should return a list of dictionaries where
+    each dictionary represents a specific tachycardia incidence.  The route
+    should examine all available heart rates for all patients that were posted
+    after the given "since_time" date/time.  If the posted
+    heart rate is tachycardic, a dictionary should be added to the list in
+    the following format:
+    ```
+      {
+          "patient_id": 1,
+          "attending_username": "Smith.J",
+          "attending_email": "dr_user_id@yourdomain.com", 
+          "tachycardia_datetime": 2018-03-09 11:00:36
+      }
+    ```
+    If the submitted username and password does not match previously registered
+    administrator information, a "401 Unauthorized" server status code should
+    be returned with an appropriate message.
