@@ -175,7 +175,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/server_code_design.md">Server Design</a>
 </td>
 <td>
-    <!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned<!---</a>--->     
+    <a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a>     
 </td>
 
 <tr>
