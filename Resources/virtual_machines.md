@@ -24,7 +24,7 @@ using your NetID.
     - Will require the installation of git and Python just like at the start
       of the semester.
     - Allows for the use of an IDEs or GUI code editors.
-    - Requires using a VPN to access
+    - Requires using a VPN to access when not on the Duke network
 * Follow the additional prompts/questions.
 * Depending on virtual machine availability, your VM may be available
 immediately, or may take some time to set up.  You will receive an e-mail when
