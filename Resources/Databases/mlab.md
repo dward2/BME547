@@ -9,46 +9,55 @@ URL, your Python Flask program knows where the database is running and can
 communicate with the database to save entries or retrieve entries as needed. 
 
 ## Setup
+Note: The MongoDB Atlas website interface for new accounts changes frequently.
+The instructions here are accurate as of March 2022, but may change.  So, if
+your experience varies from below, modify as needed.
+
 1. [Sign up](https://www.mongodb.com/cloud/atlas) for a free account at 
-mongoDB.  Click on "Get started now".
-2. Complete the form to create an account and click "Continue".
-3. Enter your first and last name and agree to the terms and conditions by
-   selecting the check box.  Then, click "Create account".
-4. You will then receive an email from MongoDB to verify your e-mail.  Click
+mongoDB.  Click on "Try Free".
+2. Enter your e-mail, first and last names, and select a password.  Agree to 
+   the terms and conditions by selecting the check box.  Then, click "Get
+   started free".
+3. You will then receive an email from MongoDB to verify your e-mail.  Click
    "Verify Email" in that email.
-5. Click "Continue" on the webpage that opens.
-6. Answer the questions on the "Welcome to Atlas!" page.  I answered:
+4. Click "Continue" on the webpage that opens.
+5. Answer the questions on the "Welcome to Atlas!" page.  I answered:
    - Learn MongoDB
    - Internet of Things
    - Python
-7. Click "Finish".   
-8. On the "Deploy a cloud database" page, select the Free "Shared" option and
+6. Click "Finish".   
+7. On the "Deploy a cloud database" page, select the Free "Shared" option and
    click on the "Create" button for that option.
-9. Under "Cloud Provider and Region", select any cloud provider (I used AWS)
+8. Under "Cloud Provider and Region", select any cloud provider (I used AWS)
 and choose a region close to you (I selected N. Virginia).
-10. Ignore "Cluster Tier" or "Additional Settings" unless you want to spend
+9. Ignore "Cluster Tier" or "Additional Settings" unless you want to spend
 some money to customize your account.  The base settings should be fine.
-11. Name your cluster anything you would like (perhaps "bme547")
-12. Click "Create Cluster" at the bottom of the page.
-13. A visual check may appear to help make sure you are not a robot.  Complete
+10. Name your cluster anything you would like (perhaps "bme547")
+11. Click "Create Cluster" at the bottom of the page.
+12. A visual check may appear to help make sure you are not a robot.  Complete
    it and click "Verify".
-14. After some period of time, your cluster will be ready.
-15. Create a database user.    
-   a. Click on "Database Access" in the left-hand list.  
-   b. Make sure the "Database Users" sub-tab is selected.  Then click "Add New 
-   Database User" button.  
-   c. Select the Password Authentication Method  
-   d. Complete the username field, select a password (__remember this__), choose 
-   "Read and write to any database", and click "Add User".
-16. Add IP addresses allowed to access the database on the "IP Whitelist".  
+13. You should be taken to a "Security Quickstart" page.
+14. Under "1. How would you like to authenticate your connection":
+    1. Select "Username and Password"
+    2. Enter a username
+    3. Select a password.  Copy this password down somewhere safe as you will
+         not see it again
+    4. Click "Create User"
+15. Under "2. Where would you like to conntect from?"
+    1. Choose "My Local Environment"
+    2. Click on "Add My Current IP Address"
+16. Click on "Finish and Close" to finish on the "Security Quickstart" page.
+17. Click on "Go to Database" on the pop-up window.
+18. After some period of time, your cluster will be ready.
+19. Add IP addresses allowed to access the database on the "IP Whitelist".  
    a. Click on "Network Access" in the left-hand list.  
    b. Make sure the "IP Access List" tab is selected.  Click on "Add IP Address".  
    c. Select "Allow Access From Anywhere" in the window that pops up.  Click 
     "Confirm".
-17. Get connection information to your database.  
+20. Get connection information to your database.  
    a. Click on "Databases" in the left-hand list.  
    b. Click on the "Connect" button.   
-   c. Click on the "Connect Your Application" option.  
+   c. Click on the "Connect your application" option.  
    d. Under "1. Select your driver and version", select "Python" for the Driver and 
    "3.6 or later" for the version.  
    e. Copy the string that is shown under "2. Add your connection string into 
@@ -62,7 +71,7 @@ flask programs with `pymodm`, your first couple lines will look something like:
 from pymodm import connect
 connect("mongodb+srv://<username>:<password>@bme547-nlfrn.mongodb.net/<dbname>?retryWrites=true&w=majority")
 ```
-The string in the `connect` command above is the one you copied in step 17e 
+The string in the `connect` command above is the one you copied in step 20e 
 above, except `<username>` should have already been replaced by the username 
 you created in step 11 above.  You will manually need to replace `<password>` 
 with the password you created in step 11c above.  `<dbname>` can be replaced
@@ -80,3 +89,12 @@ at the top, depending on your current screen.  You will then see a list of
 the `dbnames` that you created in your connect strings, and within each
 database, you will see any MongoModel `class` you created in your code.  
 
+
+
+### Adding another a database user.    
+   a. Click on "Database Access" in the left-hand list.  
+   b. Make sure the "Database Users" sub-tab is selected.  Then click "Add New 
+   Database User" button.  
+   c. Select the Password Authentication Method  
+   d. Complete the username field, select a password (__remember this__), choose 
+   "Read and write to any database", and click "Add User".
