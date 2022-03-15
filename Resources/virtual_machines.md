@@ -110,10 +110,31 @@ just as we described at the beginning of the semester.
 
 This means making sure you have the 
 software needed for using git, python, installing packages, and using virtual 
-environments.  Review the information from the 
+environments.  You will also need to set-up an SSH key to use with GitHub.
+Review the information from the
 [setup assignment](/Assignments/01_tool_setup_git_intro.md) and
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
 virtual machine, you can follow the information given for macOS users.
+
+###For Linux VMs, as of March 2022
+* The default installation has both Python2 and
+  Python3.  So, you will need to enter `python3` and `pip3` to access version 3.
+  Or, you can add the following aliases to your `.bashrc` (or `.bash_aliases` if
+  it exists) file:
+
+  ```bash
+  alias pip=pip3
+  alias python='python3'
+  ```
+* The `venv` package may not be installed as part of the Python installation.
+  If you attempt to install a virtual environment and get an error, install
+  `venv` with the following command:
+  ```bash
+  sudo apt-get install python3-venv
+  ```
+  You may be prompted to enter your password.  Once `venv` is installed, you
+  should then be able to create your virtual environment using `python3 -m 
+  venv venv`.
 
 ### Disable Automatic Power Downs
 As a default, your virtual machine is configured to automatically power down
