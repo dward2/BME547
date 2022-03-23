@@ -219,7 +219,6 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
     <td>
-      <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned
     </td>
 </tr>
 
@@ -230,6 +229,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         GUI Widgets continued
     </td>
     <td>
+      <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned
       <!---<a href="Lectures/github_teams.md#Final-Project-Planning">--->Planning for Final Project
     </td>
 </tr>
