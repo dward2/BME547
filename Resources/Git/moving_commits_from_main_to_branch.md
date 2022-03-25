@@ -70,8 +70,7 @@ In the local `main` branch, revert the two mistaken commits as follows:
 $ git revert 1298abb
 $ git revert 144bba4
 ```
-You may include a `-m "Reverting commit ID #####"` commit message after the
-commands above.  Otherwise, git will open the default editor and ask you for
+Git will open the default editor and ask you for
 a commit message.  It will suggest a good commit message for you to use.
 
 It is safest to revert the commits in the reverse order from which they were
