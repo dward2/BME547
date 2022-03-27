@@ -110,7 +110,7 @@ just as we described at the beginning of the semester.
 
 This means making sure you have the 
 software needed for using git, python, installing packages, and using virtual 
-environments.  You will also need to set-up an SSH key to use with GitHub.
+environments.  You will also need to set up an SSH key to use with GitHub.
 Review the information from the
 [setup assignment](/Assignments/01_tool_setup_git_intro.md) and
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
@@ -135,6 +135,23 @@ virtual machine, you can follow the information given for macOS users.
   You may be prompted to enter your password.  Once `venv` is installed, you
   should then be able to create your virtual environment using `python3 -m 
   venv venv`.
+
+### Deploying Your Server Code on the Virtual Machine
+* Clone your repository onto the virtual machine
+* If using a Linux virtual machine, follow the instructions for 
+  using `screen` [here](/Resources/WebServices/screen.md) and open up a
+  screen session in which to run the server.
+* Create and activate a virtual environment.  Use the 
+`requirements.txt` file to install the needed packages.
+* In the server code, modify add the named argument 
+`host="0.0.0.0"` to the `app.run()` command as follows:
+  ```python
+  app.run(host="0.0.0.0")
+  ```
+* Run the server code.
+* If using a Linux virtual machine, disconnect from the screen session so 
+  you can log off the virtual machine without shutting down the server.
+
 
 ### Disable Automatic Power Downs
 As a default, your virtual machine is configured to automatically power down
