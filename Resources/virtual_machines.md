@@ -116,7 +116,7 @@ Review the information from the
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
 virtual machine, you can follow the information given for macOS users.
 
-###For Linux VMs, as of March 2022
+### For Linux VMs, as of March 2022
 * The default installation has both Python2 and
   Python3.  So, you will need to enter `python3` and `pip3` to access version 3.
   Or, you can add the following aliases to your `.bashrc` (or `.bash_aliases` if
