@@ -10,8 +10,9 @@ using the given team name.  This action will create a new team repository.
 already existing team.
 --->
 
-* Use `.gitignore` file 
-  + Prevents you from pushing up your venv or other settings files which bloats 
+* Use `.gitignore` file in your team repository.
+  + Prevents you from pushing up your virtual environment or other settings 
+    files which bloats 
     repositories and can break the set-up of others who clone your repo.
   + You can create a template version of `.gitignore` in GitHub:
     - Click "Add File" and select "Create new file"
@@ -23,29 +24,26 @@ already existing team.
   + Note: a default license file can be added in the same way.  Just enter
     "license.txt" or "license.md" as the file name.
       
-+ Create big milestones.  Examples:  
-  + Create webserver
-  + Setup Database
-  + Design GUI
-+ Create issues and add to milestones
-  + Can use as a roadmap for getting work done.
-  + What is a task for getting webserver going?
-  + Add assignee
-  + Add to milestone
-  + Add to project (if using projects)
-
++ Use GitHub Issues and Milestones to plan your work.
+  + Milestones represent big picture items.  Examples:  
+    + Create webserver
+    + Setup Database
+    + Design GUI
+  + Create issues and assign them to each milestone that describe how to 
+    implement each milestone
+  + Can use these milestones and issues as a roadmap for getting work done.
+  + Make sure to add an assignee to each issue to make sure someone is
+    responsible for making sure it happens.
+    
 * Avoid direct commits to `main` branch
   + Solving conflicts
     - [Description of how to solve conflicts](../Resources/Git/MergeConflicts.md)
-    - [Example](https://github.com/dward2/class_conflict)
-* Review of pull requests
-* Consider protection rules for `main` branch (requires Settings access)
   
-+ All questions about project should be directed through issues
++ All questions about project should be directed through Issues
   + Make sure to add recipient as assignee or tag them.
   + Link to code with issue
-  + For errors, link to a unit test or code that I can run to generate issue.
-  + Or link to GitHub Actions report
+  + For errors, link to a unit test or code that can be run to generate the
+    error, or link to GitHub Actions report
   
 ## Final Project Planning
 ##### HRSS Lookback
@@ -56,12 +54,16 @@ already existing team.
 | Planning | | | |
 | Communication | | | |
 | Execution | | | |
-* Share this with me and your teammates
-* As a team, develop milestones and issues.
-* Assign a team member (and optional due date) to each issue.
-* Use of a project is optional.
-* Communicate to me when your plan is complete so I may review it.
-* Target completion of plan by end of day Thursday, November 11.  
+* Share this with me and your teammates via e-mail
+  
+##### Work Plan for Final Project
+* As a team, develop milestones and issues for completing the project.
+* Assign a team member (and optional due date) to each issue.  Remember that
+  each team member should be assigned to one of the GUIs.
+* Communicate to me when your plan is complete so I may review it. 
+  
+__Please target completion of your HRSS lookback and issues/milestones, and 
+share them with me, by the end of day Saturday, April 2.__  
 * I will be looking to see how you use Milestones/Issues for communication
 in my grading of the final project.
   
