@@ -225,19 +225,20 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Mar 28</td>
     <td>
-        <a href="Lectures/github_teams.md">Milestones/Projects</a>; 
-        GUI Widgets continued
+        <a href="https://duke.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e623476-f73f-4d9c-ac33-ae6300e54b9b">
+        <b>Video Lecture:</b>
+        Connecting GUI to Client/Server</a>
+        <a href="Lectures/github_teams.md">Milestones/Projects</a>
     </td>
     <td>
-      <!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned
-      <!---<a href="Lectures/github_teams.md#Final-Project-Planning">--->Planning for Final Project
+      <a href="Assignments/final_image_processor.md">Final Project Assigned
+      <a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project
     </td>
 </tr>
 
 <tr>
     <td>Wed Mar 30</td>
     <td>
-        Connecting GUI to Code;
         <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
     </td>
     <td></td>
