@@ -1,6 +1,6 @@
-# Patient Monitoring Client/Server Project (Fall 2021)
+# Patient Monitoring Client/Server Project (Spring 2022)
 
-**Final Project DUE:** Sunday, December 5, 2021, 11:59 PM EST 
+**Final Project DUE:** Friday, April 15, 2022, 11:59 PM EST 
 
 ## Overview
 The final project in this class will require you to leverage the
@@ -9,14 +9,6 @@ Patient Monitoring
 System that has a patient-side client, a monitoring-station client, and a
 server/database that allows patient data to be uploaded and stored on the
 server and retrieved for ad-hoc and continuous monitoring.
-
-This final project can be modified or redefined if you would like to tailor 
-this to
-your areas of interest.  If you plan to stray away from the recommended project
-and requirements below, please submit a one-page project proposal to Dr. Ward
-by *Tuesday, November 9, 2021 at 12:00 noon* for evaluation to ensure the proposed
-project meets the requirements for the class. Be sure to include motivations,
-technologies, functional specifications, and anticipated deliverables.
 
 It is expected that you will follow proper professional software
 development and design conventions taught in this class, including:
@@ -27,8 +19,7 @@ development and design conventions taught in this class, including:
 * docstrings
 * Use of issues and milestones to track development progress (new to this 
 assignment)
-
-
+  
 ## Functional Specifications
 ### Patient-side GUI Client
 At a minimum, your patient-side GUI client should provide a __graphical__ user 
@@ -47,8 +38,12 @@ interface with the following functionality:
   Data to upload should include the medical record number, patient name,
   measured heart rate/ECG image, and medical image.  If an item was not
   selected or added, it does not need to be uploaded.  
+  + After upload, the information entered in the GUI should REMAIN in the GUI 
+  so it can still be seen.  
   + The user should have the ability to update any of this information in the
   GUI and upload the new information to the server.
+  + The user should have the ability to delete/clear this information so 
+    that a new patient can be entered without having to exit the GUI.  
 
 For the ECG analysis of heart rates, please use your existing ECG analysis 
 code module, and modify it with a function that your GUI can call to execute
@@ -62,7 +57,7 @@ rate (i.e., whatever heart rate your code measured for the original ECG
 assignment will be considered the correct heart rate for this assignment).  
    
 ### Monitoring Station GUI Client
-At a minimum, your monitoring station GUI client should provide a __graphical__
+At a minimum, your monitoring-station GUI client should provide a __graphical__
 user interface with the following functionality:
   + Allow the user to select a patient medical record number from a list of 
   available numbers on the server.
@@ -141,6 +136,8 @@ making requests of the server.
 * Each issue should be assigned to a team member.  
 * One team member must be responsible for coding the patient-side GUI.  The
   other team member must be responsible for coding the monitoring-side GUI.
+  Make sure the issues above make it clear which team member is responsible
+  for which GUI.
 * All other issues can be assigned to either team member with the goal of
   balancing work load among the members.  Both team members may work
   on any specific issue, but the assigned team member should make sure that 
