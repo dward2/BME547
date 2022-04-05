@@ -149,7 +149,8 @@ project.
 URL is `http://vcm-21170.vm.duke.edu`.  (Port is 80, so not needed in URL)
 
 ### POST `/add_image`
-Add an image to the database and display on webpage
+Add an image to the database and display on webpage.  _Please upload only JPG
+files._
 
 Requires the following dictionary as JSON string
 ```python
