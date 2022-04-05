@@ -249,7 +249,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
       <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
     </td>
-    <td></td>
+    <td>
+      <a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
+        In-class Exercise</a>
+    </td>
 </tr>
 
 <tr>
