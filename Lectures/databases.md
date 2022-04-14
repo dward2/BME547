@@ -91,7 +91,7 @@ entries appropriate for the database in use.
 to use `pymodm`, visit the [installations_mac.md](../Resources/installations_mac.md#ssl-or-certificate-errors)
  page for a potential fix.
 
-:eyes: On Windows, if you get an error similar to 
+:eyes: On Windows or macOS, if you get an error similar to 
 `pymongo.errors.ServerSelectionTimeoutError:...[SSL:CERTIFICATE_VERIFY_ERROR]...`,
 import the `ssl` module and then add `ssl_cert_reqs=ssl.CERT_NONE`to the 
 `connect` command as so:
