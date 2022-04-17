@@ -13,6 +13,10 @@ each patient.  So, for example, if there are five patients in the
 database, there should be five separate clickable widgets that would each
 display the ECG trace for a specific patient.  
 
-With the ECG trace displayed, there should be a button or some other way
-for the user to say they are done looking at the ECG trace and have it
+While the ECG trace is being displayed, if the heart rate for that particular
+patient is updated in the database, the displayed ECG image should also 
+update with the new data.
+
+While the ECG trace is being displayed, there should be a button or some other 
+way for the user to say they are done looking at the ECG trace and have it
 be removed and show all of the patients again.
