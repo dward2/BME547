@@ -1,28 +1,26 @@
-# BME 547 - Medical Software Design - Spring 2022  
+# BME 547 - Medical Software Design - Fall 2022  
 
 ## Instructor
 Dr. David Ward  
 <david.a.ward@duke.edu>  
 Office Hours: By appointment
 
-## Teaching Assistants
-Lillian Ekem  
-<lillian.ekem@duke.edu>   
-Office Hours: By appointment
-
-Yuan Tian  
-<yuan.tian277@duke.edu>  
+## Teaching Assistant
+Jacqueline Foody
+<jacqueline.foody@duke.edu>   
 Office Hours: By appointment
 
 
 ## Course Delivery
 
 ### Lecture
-Monday / Wednesday 3:30 pm to 4:45 pm  
-Location:  Fitzpatrick Schiciano B 1466
+Monday / Wednesday 12:00 pm to 1:15 pm  
+Location:  Wilkinson 130
 
 Attendance at lectures is an expectation of the course.  
-Bringing a laptop computer for working in class is highly recommended.
+Bringing a laptop computer for working in class is required for completion of
+in-class assignments.  If this requirements causes any problems, please
+communicate with the instructor as soon as possible.
 
 ### Safety Protocols
 Following Duke-mandated safety protocols is required for this class and
