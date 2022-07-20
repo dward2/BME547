@@ -48,8 +48,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Sept 7</td>
-    <td><a href="Lectures/modules.md">Modules</a> /
-    <a href="Lectures/virtual_environments.md">Virtual Environments</a> 
+    <td>
+        <li><a href="Lectures/modules.md">Modules</a></li> 
+        <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li> 
     </td>
     <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals Assigned</a></td>
 </tr>
@@ -57,9 +58,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Sept 12</td> 
   <td> 
-    <a href="Lectures/modularity_example.md">Modularity Example</a> (starter code <a href="https://github.com/dward2/modularity_example">here</a>)<br>        
-    <a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a><br>
-    <a href="Lectures/git_workflow_more.md">Tags and Issues</a><br>
+    <li><a href="Lectures/modularity_example.md">Modularity Example</a> (starter code <a href="https://github.com/dward2/modularity_example">here</a>)</li>
+    <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a></li>
+    <li><a href="Lectures/git_workflow_more.md">Tags and Issues</a></li>
   </td>
   <td></td>
 </tr>
@@ -67,9 +68,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Sept 14</td>
     <td>
-        <a href="Lectures/lists.md">Lists</a>;
-        For Loops;
-        <a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a>
+        <li><a href="Lectures/lists.md">Lists</a></li>
+        <li>For Loops</li>
+        <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
     </td>
     <td>
         <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
@@ -79,8 +80,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Sept 19</td>
     <td>
-        <a href="Lectures/unit_testing.md">Unit Testing: (py.test)</a>;
-        <a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a>
+        <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
+        <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
     </td>
     <td><a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a></td>
 </tr>
@@ -88,10 +89,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Sept 21</td>
     <td>
-      Unit Testing: <a href="Lectures/continuous_integration_github_actions.md">Continuous 
-    Integration & GitHub Actions</a>;
-    <a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a>
-    <br>
+        <li>Unit Testing: <a href="Lectures/continuous_integration_github_actions.md">Continuous 
+    Integration & GitHub Actions</a></li>
+    <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></li>
     (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
     </td>
     <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a></td>
@@ -100,8 +100,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Sept 26</td>
     <td>
-    <a href="Lectures/dictionaries.md">Dictionaries</a>;
-    <a href="Lectures/classes.md">Classes</a>
+        <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
+        <li><a href="Lectures/classes.md">Classes</a></li>
     </td>
     <td></td>
 </tr>
@@ -109,9 +109,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Sept 28</td>
     <td>
-        <a href="Lectures/json.md">JSON</a>;
-        <a href="Lectures/docstrings.md">Docstrings</a>;
-        <a href="Lectures/exceptions_active_lecture.md">Exceptions</a>
+        <li><a href="Lectures/json.md">JSON</a></li>
+        <li><a href="Lectures/docstrings.md">Docstrings</a></li>
+        <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
     </td>
     <td>
         <a href="Assignments/CPAP_Analysis">CPAP Analysis Assigned</a>
@@ -121,9 +121,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Oct 3</td>
     <td>
-        Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a>
-        <br>        
-        <a href="Lectures/variable_scope.md">Scope</a>
+        <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li> 
+        <li><a href="Lectures/variable_scope.md">Scope</a></li>
     </td>
     <td></td>
 </tr>
@@ -131,9 +130,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Oct 5</td>
     <td>
-        <a href="Lectures/logging.md">Logging</a> Data for example <a href="Lectures/lecture_files/tsh_class_data.txt">here</a><br>
-        <a href="Lectures/numpy.md">NumPy</a>, 
-        <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages<br>
+        <li><a href="Lectures/logging.md">Logging</a> (Data for example <a href="Lectures/lecture_files/tsh_class_data.txt">here</a>)</li>
+        <li><a href="Lectures/numpy.md">NumPy</a>, 
+        <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</li>
         <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>
     </td>
     <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
@@ -151,8 +150,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Wed Oct 12</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
-        <a href="Lectures/debugging.md">Debugging</a>, 
-        <a href="Resources/PyCharm">PyCharm</a>
+        <li><a href="Lectures/debugging.md">Debugging</a></li> 
+        <li><a href="Resources/PyCharm">PyCharm</a></li>
     </td>
     <td></td>
 </tr>
@@ -190,9 +189,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Oct 26</td>
-    <td>Server Debugging, 
-    <a href="Resources/virtual_machines.md">Virtual machines</a>,
-    <a href="Resources/WebServices/screen.md">Screen on VMs</a>
+    <td>
+        <li>Server Debugging</li> 
+        <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
+        <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
 </td>    
     <td></td>
 </tr>
@@ -229,14 +229,14 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Nov 9</td>
     <td>
-        <a href="https://duke.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e623476-f73f-4d9c-ac33-ae6300e54b9b">
+        <li><a href="https://duke.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e623476-f73f-4d9c-ac33-ae6300e54b9b">
         <b>Video Lecture:</b>
-        Connecting GUI to Client/Server</a><br>
-        <a href="Lectures/github_teams.md">Milestones/Projects</a>
+        Connecting GUI to Client/Server</a></li>
+        <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
-      <a href="Assignments/final_image_processor.md">Final Project Assigned</a><br>
-      <a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a>
+      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
     </td>
 </tr>
 
