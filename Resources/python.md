@@ -6,7 +6,7 @@
     good introductory material to Python.
 * [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
 * [Intermediate Python](http://book.pythontips.com/en/latest/index.html)
-* [Python Essential Training (Lynda)](https://www.lynda.com/Python-tutorials/Python-Essential-Training/614299-2.html)
+* [Python Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/python-essential-training-14898805)
 * [Software Carpentry: Intermediate & Advanced Software](https://intermediate-and-advanced-software-carpentry.readthedocs.io/en/latest/index.html)
 * [Playground and Cheatsheet For Learning Python](https://github.com/trekhleb/learn-python)
 * [Learn X in Y Minutes Python 3](https://learnxinyminutes.com/docs/python3/)
@@ -27,7 +27,7 @@ Also, see the NumPy related information at the SciPy Lectures link below.
 ## NumPy <-> Matlab
 * [Matlab-NumPy](http://mathesaurus.sourceforge.net/matlab-numpy.html)
 * [NumPy for Matlab Users](https://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users)
-* [Python: Data Analysis (Lynda)](https://www.lynda.com/Numpy-tutorials/Introduction-Data-Analysis-Python/419162-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3apython%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2)
+* [Python: Data Analysis (LinkedIn Learning)](https://www.linkedin.com/learning/python-data-analysis-2)
 
 ## Scipy, Stats, Pandas
 * [SciPy Lectures](http://www.scipy-lectures.org/)
@@ -39,4 +39,5 @@ Also, see the NumPy related information at the SciPy Lectures link below.
 * [Matplotlib Lecture](https://nbviewer.jupyter.org/github/dpsanders/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
 * [Seaborn Examples](https://seaborn.pydata.org/examples/index.html)
 
-*Please note that Duke students have free access to the Lynda tutorials if you access them through the OIT software portal.*
+*Please note that Duke students have free access to the LinkedIn Learning 
+tutorials if you access them through the OIT software portal.*

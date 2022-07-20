@@ -26,14 +26,14 @@ communicate with the instructor as soon as possible.
 Following Duke-mandated safety protocols is required for this class and
 students who fail to follow these protocols will be asked to leave the 
 classroom until they can comply.  The most recent Duke protocols can be found
-at <https://coronavirus.duke.edu/> and <https://returnto.duke.edu/>.
+at <https://coronavirus.duke.edu/>.
 
-### Pre-lecture videos
+### Pre-lecture Videos
 Some content will be delivered via pre-recorded videos that should be
 watched before class, with an accompanying quiz to check for understanding.
 Please see the "Attendance / Participation" section below for more information.
 
-### Official course communication
+### Official Course Communication
 Sakai will be used for official course communication.  
 
 ### Assignments
@@ -100,35 +100,44 @@ Complete the prerequisite assessment found
 * Medical Software Development Standards
 
 ## Attendance / Participation
-Lecture attendance and participation is important as the topics and skills you
-will be learning build upon each other.  Also, you will be working
-in small groups some of the semester.  Various "daily assignments" will also 
-be given either as part of class period preparation or during the class 
-period itself.  
+Attendance and participation in class, watching pre-class videos, completing 
+pre-class quizzes on time, and completion of assigned in-class activities 
+will count for 15\% of your class grade.    
 
-If a class member cannot join the class period for any reason, they must
-contact the instructor ahead of time to make arrangements.  It would then be
-expected that this person will view the lecture recording and
-complete any given daily assignment before the next scheduled class meeting.
+Lecture attendance and participation is important as the topics and skills you
+will be learning build upon each other as the semester continues.  Also, you 
+will be working in small groups some of the semester.  The work we do together 
+during the lecture or as
+part of an "in-class" assignment that I give will be done in a GitHub Classroom
+repository and will be checked for timely completion and cataloged as part of
+the class participation grade.  So, it is expected that you will follow along
+and do the work to the best of your ability during class.
 
 Before some lectures, a pre-recorded video may be assigned for viewing with
 an accompanying quiz.  Watching the video and completion of the quiz is 
-expected to be done before the class period begins.  
+expected to be done before the class period begins and will be part of the 
+class participation grade.
 
-Attendance in class, watching pre-class videos, completing pre-class quizzes
-on time, and completion of assigned in-class activities 
-will count for 15\% of your class grade.    
+It is very understandable that students will have to miss class for job 
+interviews, personal reasons, illness, etc.  Absences from class or delayed 
+daily work will be considered **excused** only if:
+* for an illness, the illness is communicated through submission of an 
+  [Incapacitation Form](https://pratt.duke.edu/undergrad/students/policies/3531) 
+  **before** class and then the student contacts the instructor within the 
+  required 48 hours to discuss appropriate arrangements, or
+* for any other reason, the reason for the absence is communicated to and 
+  approved by the instructor at least 48 hours **in advance**.  Approval is subject 
+  to instructor discretion as to whether the type of absence should be 
+  considered an excused absence.
 
-It is very understandable
-that students will have to miss class for job interviews, personal reasons,
-illness, etc.  Absences or delayed daily work will be considered **excused** 
-if they are communicated to and approved by your instructors at least 48 hours 
-in advance (subject to instructor discretion as an excused absence) or, 
-for illness, through
-submission of a [Short Term Illness Form
-(STIF)](http://www.pratt.duke.edu/undergrad/policies/3531) **before** class.
 Unexcused absences will count against the participation component of your class
 grade.
+
+For excused absences, it is still expected that the student would view the 
+lecture recording and complete any work done during the lecture and/or any given 
+daily assignment before the next scheduled class meeting or the end of the
+expected absence.
+
 
 ## Textbooks & Resources
 There are no required textbooks for this class.  A variety of online resources
@@ -213,8 +222,9 @@ git repositories.  Some guidelines for using your git repositories:
 * Document!
 * Make commits small and logical; do them often!
 
-We will review working with git repositories in lecture, and feedback on your
-software repository will be provided on a regular basis.
+We will review working with git repositories in lecture.  Make sure to commit
+any work you do in class on your repository and push those changes to GitHub.
+This will be the mechanism that is used to ascertain your class participation.
 
 ## Academic Accommodations
 Students with a registered disability with the Student Disability Access Office
