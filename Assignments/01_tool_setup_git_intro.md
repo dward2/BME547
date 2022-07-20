@@ -28,7 +28,7 @@ installed.  If not, you will need to download it from the site above.
    GitBash command window (see <a href="../Resources/installations.md">
    installations</a> for additional details), or
      2. use the Windows Subsystem for Linux 
-    ([Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about)) 
+    ([Ubuntu Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/about)) 
     with Ubuntu allowing you to access `git` through Linux.  
     Note - this second option does not install `git` in your Windows environment, 
     so other Windows applications that have `git` hooks will not work.
@@ -37,17 +37,17 @@ installed.  If not, you will need to download it from the site above.
 
 
 4. Set up an SSH key to allow local authentication with GitHub:
-   1. Visit <https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh>
+   1. Visit <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>.
    2. From the page above, follow the instructions under the links:
-      * [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-      * [Adding a new SSH key to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-      * [Testing your SSH connection](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/testing-your-ssh-connection)
+      * [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+      * [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+      * [Testing your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
    3. To automatically load your SSH keys when starting git, follow the 
-    instructions at [Working with SSH key passphrases](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/working-with-ssh-key-passphrases)
+    instructions at [Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
 
 
 5. Download and install `python` at https://www.python.org/. (As of 
-   January 4, 2022, the latest version is 3.10.1.)
+   July 20, 2022, the latest version is 3.10.5.)
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
@@ -103,15 +103,16 @@ installed.  If not, you will need to download it from the site above.
          `python3` with `pip` and `pip3`.
     
    + **Windows** users have three options:  
-     1. Download and install from <https://www.python.org/> as described above.
+     1. Download and install from <https://www.python.org/>.
    Follow additional guidelines found [here](../Resources/installations.md) for
    installation.
-     2. Install Anaconda Python from 
-   https://www.anaconda.com/download.  You can download the complete 
+     2. Install Anaconda Python from <https://www.anaconda.com/products/distribution>.
+   You can download the complete 
    Anaconda package or Miniconda which brings in the bare minimum of packages 
    and then install what is necessary in virtual environments, but each project 
-   will require more download overhead.
-     3. Installing and using the [Ubuntu Linux Subsystem (Windows 10)](https://docs.microsoft.com/en-us/windows/wsl/about), 
+   will require more download overhead.  This option may require you to set-up
+   virtual environments somewhat differently than described in class.
+     3. Installing and using the [Ubuntu Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/about), 
    and running `python` from within that environment.  This approach will give 
    you a legitimate Linux environment, but there is overhead to running GUI 
    applications through an X-server, which adds more complexity and can be 
@@ -124,14 +125,11 @@ easier for you as your projects get more complex.  Options include:
       + [VIM](http://www.vim.org)
       + [nano](https://www.nano-editor.org/)
    + Code / Text editors
-      + [GitHub Atom](https://atom.io/)
       + [Visual Studio Code](https://code.visualstudio.com/)
       + [Sublime Text](https://www.sublimetext.com/)
       + [Notepad++](https://notepad-plus-plus.org/)
         (See [Resources/Notepad++.md](../Resources/notepad++.md) for set-up
         info and markdown plug-ins)
-   + Browser-based Interactive
-     + [Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/#)
    + Full-featured IDE (integrated development environment)
      + [PyCharm](https://github.com/dward2/BME547/tree/main/Resources/PyCharm) 
     (professional edition free to use in academic setting, also includes

@@ -7,14 +7,14 @@
 
 ## Who are we?
 * Dr. David Ward
-* Lillian Ekem
-* Yuan Tian
+* Jacqueline Foody
 
 ## Who are you?
 * Name (how you would like to be addressed)
 * Undergrad / Grad
 * Hometown
 * Programming language you are most comfortable with
+* What you did this past summer
 * What your long term plans are
 * Fun fact about yourself
 
