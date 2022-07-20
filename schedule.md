@@ -24,9 +24,12 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Aug 31</td>
-    <td><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
-    Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
-    <a href="Resources/markdown.md">Markdown</a></td>
+    <td>
+      <a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
+      Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
+      <a href="Resources/markdown.md">Markdown</a>;
+      <a href="Resources/Git/readme_files.md">README.md</a>
+    </td>
   
    <td><!---NOTE: GIT FUNDAMENTALS ASSIGNMENT NORMALLY HERE---></td>
 </tr>
