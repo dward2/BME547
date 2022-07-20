@@ -16,19 +16,18 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Mon Aug 29</td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
     <td>
-      <a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a>
-      <br>
-      <a href="Assignments/00_programming_assessment.md">Prerequisite Assessment</a>
+      <li><a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a></li>
+      <li><a href="Assignments/00_programming_assessment.md">Prerequisite Assessment</a></li>
 </td>
 </tr>
 
 <tr>
 <td>Wed Aug 31</td>
     <td>
-      <a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
-      Cloning, Add/Commit, Branching, Pushing/Pulling</a>;     
-      <a href="Resources/markdown.md">Markdown</a>;
-      <a href="Resources/Git/readme_files.md">README.md</a>
+      <li><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
+      Cloning, Add/Commit, Branching, Pushing/Pulling</a></li>     
+      <li><a href="Resources/markdown.md">Markdown</a></li>
+      <li><a href="Resources/Git/readme_files.md">README.md</a></li>
     </td>
   
    <td><!---NOTE: GIT FUNDAMENTALS ASSIGNMENT NORMALLY HERE---></td>
@@ -36,13 +35,14 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Mon Sept 5<br><b>Labor Day</b></td>
-    <td><a href="Lectures/python_basics.md">Python Basics</a> /
-    <a href="Lectures/return_keyword.md">Return</a> /
-    <a href="Lectures/git_workflow.md">Git Workflow</a>
+    <td>
+        <li><a href="Lectures/python_basics.md">Python Basics</a></li>
+        <li><a href="Lectures/return_keyword.md">Return</a></li> 
+        <li><a href="Lectures/git_workflow.md">Git Workflow</a></li>
     </td>
     <td>
-        <a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a><br>
-        <a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>
+        <li><a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a></li>
+        <li><a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a></li>
     </td>
 </tr>
 
