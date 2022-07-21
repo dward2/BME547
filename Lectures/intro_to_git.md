@@ -4,22 +4,26 @@ to track changes made to a project and allow different versions of a project
 to be created.
 
 ## Creating a local git repository
-We will be using Git Bash as a command line interface (CLI) for interacting 
-with git.
+We will be using a command line interface (CLI) for interacting with git.  The
+CLI could be a Git Bash window on a Windows machine or a Terminal window on
+a Mac.
 
-Open a Git Bash window.  
+Open a CLI.  Examples here will be from a Git Bash window.  
 
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~
 $
 ```
-You will see your local user name (`dwonl`), your computer name 
-(`DESKTOP-GBL4L6`), the current window platform (`MINGW64`) and the current
+You will see the command line prompt.  The exact content and format of the
+prompt will depend on your operating system and settings.  The default prompt
+in the Git Bash window will show your local user name (`dwonl`), your computer 
+name (`DESKTOP-GBL4L6`), the current window platform (`MINGW64`) and the current
 path `~`.
 
-Git bash uses Linux-like commands.  The `~` is shorthand for your home
-folder.  To see in which folder you currently are, you can use the `pwd`
-command.
+Both Git Bash windows and the Terminal on Mac use Linux-like commands.  The `~` 
+is shorthand for your home directory.  To see in which directory you currently 
+are in, you can use the `pwd`command.  `pwd` is short for "print working 
+directory".
 
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~
@@ -27,8 +31,8 @@ $ pwd
 /c/Users/dwonl
 ```
 
-I would suggest creating a folder in which to keep all of your repositories for
-this class.  Create a folder called `repos` or `BME547` or such, as follows.
+I would suggest creating a directory in which to keep all of your repositories 
+for this class.  Create a folder called `repos` or `BME547` or such, as follows.
 
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~
@@ -41,11 +45,11 @@ dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
 $ 
 ```
 
-The command `mkdir <folder_name>` creates a new folder (or directory, hence
-mkdir = make directory) as a subfolder within the current one.  The command 
-`cd <folder_name>` moves into the stated folder (cd = change directory).
+The command `mkdir <directory_name>` creates a new directory (
+mkdir = make directory) as a subdirectory within the current one.  The command 
+`cd <directory_name>` moves into the stated directory (cd = change directory).
 
-Now, in this new folder, lets make a subfolder to contain our first
+Now, in this new directory, lets make a subdirectory to contain our first
 repository.
 
 ```
@@ -56,9 +60,10 @@ dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
 $ ls
 first/
 ```
-The command `ls` lists the folders and files contained in the current folder.
+The command `ls` lists the files and directories contained in the current 
+directory.
 
-Move into this new subfolder in which we will make our repository.
+Navigate into this new subdirectory in which we will make our repository.
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
 $ cd first
@@ -67,10 +72,11 @@ dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first
 $
 ```
 
-A folder is simply a place to store files on your computer.
+A directory is simply a place to store files on your computer. (Note, the terms
+directory and folder are used interchangeably.)
 ![empty_directory.png](../Resources/Git/git_concepts_files/empty_directory.png)
 
-To create a git repository in this folder, enter the following command:
+To create a git repository in this directory, enter the following command:
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first
 $ git init
@@ -82,14 +88,14 @@ $
 The command prompt now has `(main)` added to it, to indicate that we are
 currently on the main branch.  More about that later.
 
-If we look at what is now in the folder, we see the following:
+If we look at what is now in the directory, we see the following:
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos/first (main)
 $ ls -a
 ./  ../  .git/
 ```
 
-The command `ls -a` shows all the content of a folder, including hidden items.
+The command `ls -a` shows all the content of a directory, including hidden items.
 A hidden directory called `.git` has been created to store information about
 the repository.  
 
@@ -97,7 +103,7 @@ Git creates three virtual containers in which it puts the files:
 ![empty_repository.png](../Resources/Git/git_concepts_files/empty_repository.png)
 
 ## Working Copy
-Lets start by adding a file to the folder.  For this first file, we are going
+Lets start by adding a file to the directory.  For this first file, we are going
 to create a file using the terminal editor `nano`.  At the command line,
 type `nano file1.txt`.  This will create a new file called `file1.txt`.  Enter
 some text into the editor, and then type `ctrl-x` followed by `Y`, and then
@@ -113,7 +119,7 @@ $ ls
 file1.txt
 ```
 When a change exists in the "Files in directory" that does not exist in the 
-"Repository", `git` considers this change to be part of its internal "Working 
+"Repository", git considers this change to be part of its internal "Working 
 Copy."
 ![file1_working_copy.png](../Resources/Git/git_concepts_files/file1_working_copy.png)
 
@@ -227,7 +233,7 @@ the repository.
 
 ## Editing File in Repository
 Now, lets say I edit `file1.txt`.  Git will see that the file in the directory 
-has changed relative to the version in the repository.  So, Git will consider
+has changed relative to the version in the repository.  So, git will consider
 this change to be part of the working copy.
 ```
 $ git status
@@ -242,8 +248,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 ![file1edit](../Resources/Git/git_concepts_files/file1_edit.png)
-The actual file in the directory will contain the edits.  `git` will assign
-this modified file to the working directory.  However, `git` still has an
+The actual file in the directory will contain the edits.  Git will assign
+this modified file to the working directory.  However, git still has an
 unmodified copy of `file1.txt` from the previous commit (it is stored in the
 `.git` subdirectory created with `git init`).
 
@@ -358,7 +364,7 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
-Our folder now has three files, file1.txt has been modified since the last
+Our directory now has three files, file1.txt has been modified since the last
 commit, file3.txt is untracked, and nothing is staged for commit.  We
 then need to add the two changes to the staging area and then commit.  This
 is done with the following series of commands:
@@ -410,7 +416,7 @@ repository to a GitHub repository is to create a new GitHub repository and then
 clone it to our computer.
 
 ## Create a GitHub Repository
-First, log into Git Hub and go to your repositories page.  To get there, click
+First, log into GitHub and go to your repositories page.  To get there, click
 on the user icon on the upper right portion of the screen and select "Your
 repositories" from the menu that appears.  Click on the green "New" button to 
 create a new repository.
@@ -432,11 +438,11 @@ the SSH option is underlined.
 Copy the SSH URL that is shown that looks like 
 `git@github.com:user_name/repo_name.git`.
 
-On your local computer, open Git Bash.  Navigate to your `repos` folder, or 
-any other folder in which you want to create a subfolder containing this 
+On your local computer, open Git Bash.  Navigate to your `repos` directory, or 
+any other directory in which you want to create a subdirectory containing this 
 repository.  Then, use the following command:  `git clone <SSH_URL>`, 
 substituting `<SSH_URL>` with the SSH URL copied from GitHub.  This command 
-will now make a new subfolder with the repository name from GitHub.
+will now make a new subdirectory with the repository name from GitHub.
 
 As an example, let's say I have a GitHub repository called `updated_ssh`.  I 
 could clone repository to my computer as follows:
@@ -452,11 +458,11 @@ dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
 $ ls
 first/  updated_ssh/
 ```  
-A new subfolder is created called "updated_ssh".  If I wanted to use a different
-name for the local folder, I could add an optional folder name after the URL.
+A new subdirectory is created called "updated_ssh".  If I wanted to use a different
+name for the local folder, I could add an optional directory name after the URL.
 For example:  `git clone git@github.com:dward2/updated_ssh.git ssh_example`
 
-You can now switch into this folder to use the repository.  You will see that
+You can now switch into this directory to use the repository.  You will see that
 the "README.md" file from GitHub can now be found in your local repository.
 
 ## Push and Pull
