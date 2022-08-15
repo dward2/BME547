@@ -47,7 +47,7 @@ installed.  If not, you will need to download it from the site above.
 
 
 5. Download and install `python` at https://www.python.org/. (As of 
-   July 20, 2022, the latest version is 3.10.5.)
+   August 15, 2022, the latest version is 3.10.6.)
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
