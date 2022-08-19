@@ -64,4 +64,6 @@ main branch, and tagged before the deadline.
     + Code executes without errors
     + Code meets specifications given above
 * Presence and content of README.md file
+  * See [Resources/Git/readme_files.md](../Resources/Git/readme_files.md) for
+    information on what should be included in a README file.
 
