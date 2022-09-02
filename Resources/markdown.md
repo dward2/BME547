@@ -14,4 +14,7 @@ Markdown viewer plug-ins can be found for many text/code editors for editing/
 viewing markdown files locally.
 
 For notepad++, one option is MarkdownViewer++ 
-(https://github.com/nea/MarkdownViewerPlusPlus).
+(https://github.com/nea/MarkdownViewerPlusPlus).  __Note:__ If the rendered
+markdown is not dynamically updating while entering text,  verify that you are
+using the 32-bit version of Notepad++.  I have had some experience that the
+dynamic render update does not work with the 64-bit version.
