@@ -52,7 +52,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/modules.md">Modules</a></li> 
         <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li> 
     </td>
-    <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals Assigned</a></td>
+    <td><!---<a href="Assignments/PythonFundamentalAssignment.md">--->Python Fundamentals Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -73,7 +73,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
     </td>
     <td>
-        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
+        <!---<a href="Assignments/BMICalculatorAssignment.md">--->BMI Calculator Assigned<!---</a>--->
 </td>
 </tr>
 
@@ -83,7 +83,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
     </td>
-    <td><a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a></td>
+    <td><!---<a href = "Lectures/unit_testing.md#exercise">--->In-class Exercise<!---</a>---></td>
 </tr>
 
 <tr>
@@ -94,7 +94,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></li>
     (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
     </td>
-    <td><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a></td>
+    <td><!---<a href="Assignments/UnitTestingCIAssignment.md">--->Unit Testing & CI Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -114,7 +114,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
     </td>
     <td>
-        <a href="Assignments/CPAP_Analysis">CPAP Analysis Assigned</a>
+        <!---<a href="Assignments/CPAP_Analysis">--->CPAP Analysis Assigned<!---</a>--->
     </td>
 </tr>
 
@@ -135,7 +135,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <a href="Lectures/matplotlib.md">Matplotlib</a>, and other packages</li>
         <a href="https://github.com/dward2/numpy_matplotlib_class">Repo for class work</a>
     </td>
-    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
+    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned<!---</a>---></td>
 </tr>
 
 <tr>
@@ -163,7 +163,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         APIs, Intro To Web Services, Requests</a>
     </td>
     <td>
-        <a href="Lectures/name_server_project.md">Class Exercise</a>
+        <!---<a href="Lectures/name_server_project.md">--->Class Exercise<!---</a>--->
     </td>
 </tr>
 
@@ -174,7 +174,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
            Building a Web Server with Flask</a>
     </td>
     <td>
-        <a href="Assignments/time_server_project.md">Time Server Assigned</a>    
+        <!---<a href="Assignments/time_server_project.md">--->Time Server Assigned<!---</a>---> 
     </td>
 </tr>
 
@@ -184,7 +184,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/server_code_design.md">Server Design</a>
 </td>
 <td>
-    <a href="Assignments/heart_rate_sentinel_server_assignment.md">Heart Rate Sentinel Server Assigned</a>     
+    <!---<a href="Assignments/heart_rate_sentinel_server_assignment.md">--->Heart Rate Sentinel Server Assigned<!---</a>---> 
 </td>
 
 <tr>
@@ -235,8 +235,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
-      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
+      <li><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned<!---</a>---></li>
+      <li><!---<a href="Lectures/github_teams.md#Final-Project-Planning">--->Planning for Final Project<!---</a>---></li>
     </td>
 </tr>
 
@@ -254,8 +254,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
       <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
     </td>
     <td>
-      <a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
-        In-class Exercise</a>
+      <!---<a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">--->
+        In-class Exercise<!---</a>--->
     </td>
 </tr>
 
