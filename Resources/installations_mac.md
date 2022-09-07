@@ -57,3 +57,18 @@ conda install certifi
 Another link with possible solutions beyond the above might be found at this
 link:
 <https://stackoverflow.com/questions/40684543/how-to-make-python-use-ca-certificates-from-mac-os-truststore/42107877#42107877?newreg=819ef0d3d63740389ddd7206c106b4a0>
+
+## Problems with Monterey macOS and installing certain packages with `pip`
+Some users of macOS "Monterey" were receiving an error that looked like this
+when installing certain packages in a virtual environment (`jupyter` for 
+example):
+
+![](./images/xcode-select-error.jpg)
+
+Note that there is the line that says `Perhaps try: xcode-select --install`.
+That points to the fix.
+
+In your terminal window, enter the command `xcode-select --install`.  When
+that command finishes, close the terminal window, open up a new terminal 
+window, reactivate your virtual environment, and try installing the packages 
+again.  
