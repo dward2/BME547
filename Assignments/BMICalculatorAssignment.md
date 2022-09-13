@@ -1,12 +1,12 @@
 # Assignment: BMI Calculator
-In this assignment, you will be writing a program to calculate BMI from
-inputted weight and height measurements.  GitHub Classroom will be used for
-assignment repositories.  Look for the announcement in Sakai with a link.  The
-created repository will be empty.  Create a README.md file in GitHub first.
-That will allow for this new repository to be cloned to your local computer.
+In this assignment, you will be writing a program to calculate BMI (Body Mass 
+Index) from inputted weight and height measurements.  GitHub Classroom will be 
+used for assignment repositories.  Look for the announcement in Sakai with a 
+link.  
 
 ### Program Specifications
-* Receives input from the user from the command/terminal window  
+* Receives weight and height input from the user from the command/terminal 
+  window  
    + Input can be received with code such as:   
    `x = input("Enter number: ")`  
    Note that `x` will be a string and may need to be converted to a `float` or
@@ -14,13 +14,14 @@ That will allow for this new repository to be cloned to your local computer.
    + User must have the option of entering data in either kilograms/meters or
        pounds/inches.  
    
-* Outputs to the command/terminal window the calculated BMI  
+* Outputs to the command/terminal window the BMI calculated from the entered
+  weight and height
    + Output can be achieved by code such as:
    `print("The number entered was {}".format(x))`
    
-* Outputs whether the calculated BMI represents "underweight",
-"normal weight", "overweight", or "obese".  The output must include one of
-these four words as written (same capitalization).
+* Outputs to the command/terminal window whether the calculated BMI represents 
+* "underweight", "normal weight", "overweight", or "obese".  The output must 
+  include one of these four words as written (same capitalization).
 
 
 ### Approach
@@ -38,14 +39,18 @@ main branch.
 merged main branch back to your local repository so changes to main branch 
 in GitHub are captured locally.
 * Repeat for other features
-* Create a `README.md` file to explain how to run your program from the command
-line and how to use your program.  This should be considered a user's manual.
-It should explicitly say how to start your program.  For example, "To start
-the program, type `python bmi_calc.py` on the command line."
-* When the assignment is completed, create an annotated git tag called `v1.0.0`
+* Edit the `README.md` file to contain information about your repository as 
+  explained at [Resources/Git/readme_files.md](../Resources/Git/readme_files.md).
+  For this assignment, include: 
+  * author information
+  * a brief description/purpose of the code
+  * how to run your program from the command line (For example, "To start
+  the program, type `python bmi_calc.py` on the command line.")
+  * an explanation for how to use your program (i.e., a user's manual)
+* When the assignment is completed, create an annotated git tag called `v1.0`
 on your main branch to indicate your final submission.
 * If you make additional changes after creating this tag, simply create another
-tag (e.g., `v1.0.1`).  We will grade whatever the most recent submission is.
+tag (e.g., `v1.1`).  We will grade whatever the most recent submission is.
 * Make sure your final submission is pushed to GitHub, merged into the
 main branch, and tagged before the deadline.
 
@@ -64,6 +69,4 @@ main branch, and tagged before the deadline.
     + Code executes without errors
     + Code meets specifications given above
 * Presence and content of README.md file
-  * See [Resources/Git/readme_files.md](../Resources/Git/readme_files.md) for
-    information on what should be included in a README file.
 
