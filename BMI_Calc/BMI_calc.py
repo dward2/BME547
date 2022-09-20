@@ -25,5 +25,10 @@ def data_input():
     print ("The weight entered was {} kg".format(weight_new))
     return weight_new, height_new
 
+def BMI_calc(w, h):
+    BMI = w / (h*h)
+    print("BMI = ")
+    print(BMI)
+    return BMI
 
 
