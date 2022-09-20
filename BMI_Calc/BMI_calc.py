@@ -32,3 +32,16 @@ def BMI_calc(w, h):
     return BMI
 
 
+def check_BMI(bmi):
+    if bmi > 30.0:
+        print("you are obese")
+        
+    elif 25 < bmi < 29.9:
+        print("you are overweight")
+        
+    elif 18.5 < bmi < 24.9:
+        print("you are healthy")
+        
+    else:
+        print("you are underweight")
+    
