@@ -28,7 +28,7 @@ word "tachycardic".
 * This string will only contain a single word, but there is no guarantee
 whether the word will be upper case, lower case, mixed case, and/or have one or 
   more leading /trailing spaces and/or one or more punctuation marks.  
-* If the string contains the word "tachycardic," regardless of capitalization
+* If the string contains the word "tachycardic", regardless of capitalization
 and leading or trailing spaces or punctuation, the function should return a 
 boolean value of `True`.
 * Otherwise, the function should return a boolean value of `False`.
