@@ -115,7 +115,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
     </td>
     <td>
-        <!---<a href="Assignments/CPAP_Analysis">--->CPAP Analysis Assigned<!---</a>--->
+        <a href="Assignments/CPAP_Analysis">CPAP Analysis Assigned</a>
     </td>
 </tr>
 
