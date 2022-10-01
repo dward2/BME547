@@ -27,7 +27,8 @@ word "tachycardic".
 * It should receive a parameter containing the string to check.
 * This string will only contain a single word, but there is no guarantee
 whether the word will be upper case, lower case, mixed case, and/or have one or 
-  more leading /trailing spaces and/or one or more punctuation marks.  
+  more leading / trailing spaces and/or one or more leading / trailing 
+  punctuation marks.  
 * If the string contains the word "tachycardic", regardless of capitalization
 and leading or trailing spaces or punctuation, the function should return a 
 boolean value of `True`.
@@ -44,7 +45,8 @@ boolean value of `True`.
   PEP-8 style.
 * Push code to GitHub.
 * Generate Pull Request on GitHub.  Only merge your feature branches into the
-  main branch once GitHub Actions reports a passing status.
+  main branch once GitHub Actions reports a passing status (for both unit
+  tests and PEP-8 style).
 * Tag final submission on the main branch as `v1.0.0` or later number if 
     revisions are necessary.
 
@@ -60,6 +62,8 @@ of possible string inputs are successfully identified or rejected.
 * Implementation of GitHub Actions / CI Testing.
 * Appropriate use of virtual environments.
 * Code (functions and tests) meet PEP-8 style guidelines.
+* Feature branches have passing GitHub Action tests (both unit tests and PEP-8
+  style checks) before merging into main.
 * Presence and content of README.md
 
 ### Small Bonus:
