@@ -46,8 +46,8 @@
 * Branch names should be meaningful.
 * Merge your feature branches into the main branch using Pull Requests
   on Git Hub.
-  - Feature branches should be merged after passing unit tests with GitHub
-    Actions.
+  - Feature branches should be merged after passing unit tests and PEP-8 style
+    with GitHub Actions.
   - Do not delete your branches after merging them into main.
 * Create an annotated tag titled `v1.0.0` or subsequent version when your
     assignment is completed and ready to be graded.
@@ -94,4 +94,5 @@
 * Python style and docstrings
 * Achieves functional specifications
 * Works with all the provided test data
-* Any of the workflow or python methodology criteria from previous assignments
+* Any of the workflow, python methodology, or other criteria from previous 
+  assignments
