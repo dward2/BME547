@@ -126,7 +126,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
-    <td></td>
+    <td>Complete exercise as explained in lecture</td>
 </tr>
 
 <tr>
@@ -135,7 +135,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li> 
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
     </td>
-    <td><!---<a href="Assignments/ECG_Analysis">--->ECG Analysis Assigned<!---</a>---></td>
+    <td><a href="Assignments/ECG_Analysis">ECG Analysis Assigned</a></td>
 </tr>
 
 <tr>
