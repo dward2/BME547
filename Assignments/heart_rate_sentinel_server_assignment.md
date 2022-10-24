@@ -47,7 +47,9 @@ in your route name.
   e-mail address as we will be using a simulated email system for this 
   assignment.  The value for the
   `"attending_username"` key will be used in the `api/new_patient` route below 
-  for linking a patient with an attending physician.  
+  for linking a patient with an attending physician.  The only verification
+  needed for the values of this dictionary is that they are all strings.
+  Verification that the strings meet the formats above is not necessary.
   
 * `POST /api/new_patient` that takes a JSON input as follows:
   ```
@@ -60,8 +62,8 @@ in your route name.
   where
   + `<patient_id>` is the patient medical record number.  The actual medical
     record number will always be an integer.  However, the value sent as the 
-    `<patient_id>` value in the above dictionary may contain integers, numeric 
-    strings, or a string with letters and numbers.  Your code must be prepared
+    `<patient_id>` value in the above dictionary may be an integer, a numeric 
+    string, or a string with letters and numbers.  Your code must be prepared
     to parse this input and determine whether the id is acceptable (i.e.,
     can be turned into an integer) or rejected (if it contains any letters).
     So, `123` or `"123"` should be accepted as patient_ids (although the string 
@@ -72,10 +74,11 @@ in your route name.
     route above.
   + `<patient_age>` is the patient's age in years.  The actual age will always
     be an integer, but as with the `<patient_id>`, the value in the dictionary 
-    may be an integer, numeric string, or a string with letters and numbers.
-    Again, your code must distinguish between acceptable and unacceptable
-    inputs.
-    
+    may be an integer (which should be accepted), a numeric string (which
+    should be accepted and converted into an integer), or a string with letters 
+    and numbers (which should be rejected).  Again, your code must distinguish 
+    between acceptable and unacceptable inputs.
+
   This route is called to register a new patient with your server.  This would
   occur when a heart rate monitor is checked out and attached 
   to a particular patient.  This will allow you to initialize a patient in
@@ -96,15 +99,13 @@ in your route name.
   + `<heart_rate>` is the patient heart rate being recorded.
   
   As with the `/api/new_patient` route, the `<patient_id>` or `<heart_rate>`
-    values may be sent as an integer, a string containing an integer, or a 
-    string containing numbers and letters.  And, it may not 
-  necessarily be the same as was sent in the `/api/new_patient` call.  For 
-  example, the
-  id might be sent as a string such as `"1501"` in the `new_patient` call, but 
-  sent as an integer such as `1501` in the `heart_rate` call.  Integers and
-    numeric strings should be accepted.  Strings of mixed numbers and integers
-    should be rejected.  The 
-  actual heart rate will only be integers, not decimals.  
+  values may be sent as an integer, a string containing an integer, or a string
+  containing numbers and letters.  And, it may not necessarily be the same type
+  as was sent in the `/api/new_patient` call.  For example, the id might be 
+  sent as a string such as `"1501"` in the `new_patient` call, but sent as an 
+  integer such as `1501` in the `heart_rate` call.  Integers and numeric 
+  strings should be accepted.  Strings of mixed numbers and integers should be
+  rejected.  The actual heart rate will only be integers, not decimals.  
   
   This route should store the sent heart rate
   measurement as an integer in the record for the specified patient.  The 
@@ -114,7 +115,8 @@ in your route name.
   patient and patient age, an e-mail should be sent to the attending physician
   whose e-mail address was registered in the `api/add_attending` route. 
   This e-mail should include the patient_id, the tachycardic heart rate, and 
-  the date/time stamp of that heart rate.
+  the date/time stamp of that heart rate.  See below for information on how to
+  simulate the sending of this e-mail.
   
 * `GET /api/status/<patient_id>`  
   should return a dictionary in a JSON string containing the latest heart rate, 
@@ -207,12 +209,13 @@ the outcome.  For example, successful requests should return a 200 status code.
 Request that are unsuccessful (for example, when the input JSON is incorrect)
 should return a 400 (or other appropriate) status code.
 
-All the above routes should do input data validation, making sure that
-the appropriate keys in JSON inputs exist, and that the data types are
+All the above routes should have input data validation making sure that
+the appropriate keys in JSON inputs exist and that the data types are
 correct.  If the input is incorrect, a non-2xx status code should be returned.  
 
 Also, the routes should return the appropriate status codes if a 
-request asks for a patient that does not exist.  It is not appropriate for data
+request asks for a patient or attending physician that does not exist.  It is 
+not appropriate for data
 validation and error returns from your server be 500 "Internal Server Error" 
 codes caused by exceptions
 raised by your server.  You must handle exceptions and return a non-500 error code, 
@@ -284,14 +287,15 @@ do not need to have a unit test for that function.
   for the remaining routes.  
 * For each route, open a GitHub issue and assign it to the responsible party 
   (this will document who has primary responsibility for each route).  
-* As a team, agree on a basic structure for how to store the data  Open a 
+* As a team, agree on a basic structure for how to store the data.  Open a 
   GitHub Issue and describe, in detail, how the data will be stored.  For 
   example, if the patient data will be stored in a dictionary, write out the
   specific format for the dictionary.
-* In your server code, write a function (called somethine like `init_database`)
+* In your server code, write a function (called something like `init_database`)
   in which you "hard code" some initial database entries.  This will allow each
   team member to get started without needing the other team members part to 
-  get started.
+  get started.  This function can then be removed once all of the code is
+  complete.
 * As desired, discuss and document any other design decisions for the server.
 
 The above steps must be completed by the first deadline as outlined in the
@@ -302,7 +306,7 @@ During my evaluation of the final submission, I will be looking at commit
 histories to determine that both team members contributed to the project
 appropriately.  Feel free to work together, help each other, and edit and debug
 each other's code.  But, make sure that each team member is contributing and
-committing to their assigned routes as documented in the GitHub Issues..    
+committing to their assigned routes as documented in the GitHub Issues.    
 
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
