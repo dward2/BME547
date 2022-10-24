@@ -44,7 +44,7 @@ in your route name.
   The e-mail provided here will be used to send notifications to the physician
   that is registered for each patient.  While the e-mail should be of the
   correct syntax (i.e., name@domain.com), it does not need to be an active
-  e-mail address as we will be using simulated email system for this 
+  e-mail address as we will be using a simulated email system for this 
   assignment.  The value for the
   `"attending_username"` key will be used in the `api/new_patient` route below 
   for linking a patient with an attending physician.  
@@ -229,7 +229,7 @@ from `request.get_json()` to ensure the right fields exist in the data and
 that they are the right type. These validations should be done in 
 functions that can be tested.
 
-You do not have to test the flask 
+You do not have to test the Flask 
 handler functions directly (the functions associated with the `@app.route` 
 decorator), assuming that they have limited code and primarily call other
 functions to do the work.  All of these other functions should be tested.
@@ -276,23 +276,33 @@ If you have the code to call the e-mail server in its own modular function, you
 do not need to have a unit test for that function.
 
 ## Working As A Team
-Start by having a planning meeting with your team.
-One member of the team is responsible for implementing the `/api/new_patient`
-route while the other member of the team is responsible for implementing the
-`/api/new_attending` route.  As a team, decide which member will handle which
-of those two routes, and then agree on who will be primarily responsible
-for the remaining routes.  For each route, open a GitHub issue and assign it
-to the responsible party (this will document who has primary responsibility for
-each route).  You will also need to agree on a basic structure for how to
-store the data and any other design decisions for the server.  Consider opening
-GitHub Issues, or adding comments to existing issues, that document these
-decisions so that both team members have access to them.
+* Schedule a planning meeting with your team.
+* One member of the team is responsible for implementing the `/api/new_patient`
+  route while the other member of the team is responsible for implementing the
+  `/api/new_attending` route.  As a team, decide which member will handle which
+  of those two routes, and then agree on who will be primarily responsible
+  for the remaining routes.  
+* For each route, open a GitHub issue and assign it to the responsible party 
+  (this will document who has primary responsibility for each route).  
+* As a team, agree on a basic structure for how to store the data  Open a 
+  GitHub Issue and describe, in detail, how the data will be stored.  For 
+  example, if the patient data will be stored in a dictionary, write out the
+  specific format for the dictionary.
+* In your server code, write a function (called somethine like `init_database`)
+  in which you "hard code" some initial database entries.  This will allow each
+  team member to get started without needing the other team members part to 
+  get started.
+* As desired, discuss and document any other design decisions for the server.
+
+The above steps must be completed by the first deadline as outlined in the
+Sakai assignment.  _If you complete these items before the deadline, which is
+highly recommended, please notify me for my review._
 
 During my evaluation of the final submission, I will be looking at commit
 histories to determine that both team members contributed to the project
 appropriately.  Feel free to work together, help each other, and edit and debug
 each other's code.  But, make sure that each team member is contributing and
-committing to their assigned routes.    
+committing to their assigned routes as documented in the GitHub Issues..    
 
 ## Submission Notes
 - __As always in this class, be sure to follow all best practice conventions 
