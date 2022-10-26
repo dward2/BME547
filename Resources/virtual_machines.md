@@ -4,28 +4,58 @@ operating system that allows you access to a virtual computer from any other
 computer.  In this class, we will use virtual machines to host servers that we 
 write.
 
-## Setting up your Virtual Machine
-Duke OIT has allocated each student access to one virtual machine.  If you
-are already using your virtual machine for another class or project, and would
-prefer not to use that machine for this class, please let an instructor know, 
-and a request for a second virtual machine can be made.
-
-* Visit https://vcm.duke.edu/ and log in to the Virtual Computing Manager (VCM)
-using your NetID.
-* Click on "Reserve a VM".
-* Select the type of VM you would like.  The two recommended options (both 
-  under the "Plain VM: No Apps" title) are:
-  + Ubuntu18.04 (my preference for simplicity)
-    - A Linux operating system, will behave similar to macOS command line.
+## Choice of Virtual Machine
+You have the choice to set-up either a Linux virtual machine or a Windows
+virtual machine.
+* Linux 
+    - A Linux operating system, will behave similar to macOS command line, and
+      to a lesser extent, the GitBash command line from Windows.
     - This is what I will be demonstrating in class.
     - Will come with git and Python pre-installed.
-  + Windows 10
+* Windows 10
     - Will give the familiar Windows GUI.
     - Will require the installation of git and Python just like at the start
       of the semester.
     - Allows for the use of an IDEs or GUI code editors.
     - Requires using a VPN to access when not on the Duke network
-* Follow the additional prompts/questions.
+
+I would recommend setting up the Linux machine.  It is simpler to setup and
+use.  We will primarily be developing the server on our local computers and
+only using the VM to deploy the server.  So, access to the command line and
+a terminal editor for simple code changes are all that is really needed.
+However, if you want the ability to use an IDE, Windows is an option.
+
+Duke OIT allocates each student access to one virtual machine.  In a new system
+started this semester (Fall 2022), I was also able to setup a certain number of
+VM reservations specific to this course which do not count against your 
+regular student allocation of one virtual machine.  But, I do not know if this
+course-specific machine will be able to be kept after the end of the semester.
+
+So, if you want to set-up a virtual machine and guarantee that it will remain
+active after the end of the semester (and until you graduate), you will want
+to NOT select the course-specific machine.  If you are already using your one
+virtual machine, or don't care to keep this VM after the semester, select the
+course-specific option.
+
+## Setting up your Virtual Machine
+
+* Visit https://vcm.duke.edu/ and log in to the Virtual Computing Manager (VCM)
+using your NetID.
+* Click on "Reserve a VM".
+* Select the type of VM you would like.
+  + Look under the "Everything" heading
+  + To select the course-specific Linux option, click on 
+    "BME 547 - 01: Medical Software Design -F22"
+  + To select the course-specific Windows option click on 
+    "(windows) BME 547 - 01: Medical Software Design - F22"
+  + To select the Linux option from your personal allocation, click on 
+    "Ubuntu Server 20.04"
+  + To select the Windows option from your personal allocation, click on 
+    Windows 10
+* A window may open up with information about connecting using SSH.  Select the
+  "Less secure option" option to skip setting up an SSH key (you are welcome to
+  set up an SSH key if you prefer).
+* A window may open up asking you to agree to the terms of use.  Select Agree.
 * Depending on virtual machine availability, your VM may be available
 immediately, or may take some time to set up.  You will receive an e-mail when
 it is available.
@@ -54,7 +84,7 @@ options for SSH clients.
     ++ PuTTY, <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>  
     ++ MobaXterm, <https://mobaxterm.mobatek.net/>
     
-#### Using PuTTY
+#### Using PuTTY (as of March 2019)
 *  Upon running PuTTY, the initial window will be the PuTTY Configuration 
 window.  On the left-hand pane of the window, "Session" should be chosen.
 *  In the "Host Name" box on the right-hand side, enter the name of your 
@@ -65,7 +95,7 @@ VM (example, `vcm-####.vm.duke.edu`).
 above, and then enter a name in the "Saved Sessions" text box and click "Save".
 In the future, you will just be able to "Load" that profile.
 
-#### Using MobaXterm
+#### Using MobaXterm (Personal Edition v11.0)
 *  Upon running, MobaXterm, click on the "Session" button on the upper left.
 *  In the "Session settings" window that opens, select "SSH" from the toolbar.  
 *  In the "Remote host" box, enter your VM name (`vcm-####.vm.duke.edu`).
@@ -116,9 +146,9 @@ Review the information from the
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
 virtual machine, you can follow the information given for macOS users.
 
-### For Linux VMs, as of March 2022
-* The default installation has both Python2 and
-  Python3.  So, you will need to enter `python3` and `pip3` to access version 3.
+### For the course-specific Linux VMs, as of October 2022
+* The default installation has `python3` installed.  So, you will need to enter 
+  `python3` and `pip3` to access version 3.
   Or, you can add the following aliases to your `.bashrc` (or `.bash_aliases` if
   it exists) file:
 
@@ -126,13 +156,14 @@ virtual machine, you can follow the information given for macOS users.
   alias pip=pip3
   alias python='python3'
   ```
-* The `venv` package may not be installed as part of the Python installation.
+* The `venv` package is not installed as part of the Python installation.
   If you attempt to install a virtual environment and get an error, install
   `venv` with the following command:
   ```bash
-  sudo apt-get install python3-venv
+  sudo apt-get install python3.8-venv
   ```
-  You may be prompted to enter your password.  Once `venv` is installed, you
+  You may be prompted to enter your password (which is your Duke NetID).  Once 
+  `venv` is installed, you
   should then be able to create your virtual environment using `python3 -m 
   venv venv`.
 
