@@ -55,9 +55,11 @@ some money to customize your account.  The base settings should be fine.
    c. Select "Allow Access From Anywhere" in the window that pops up.  Click 
     "Confirm".
 20. Get connection information to your database.  
-   a. Click on "Databases" in the left-hand list.  
+   a. Click on "Database" in the left-hand list.  
    b. Click on the "Connect" button.   
-   c. Click on the "Connect your application" option.  
+   c. Depending on the web interface you are shown, click on either the 
+      "MongoDB Drivers" option under the "Connect to your application" heading
+      or the "Connect your application" option.  
    d. Under "1. Select your driver and version", select "Python" for the Driver and 
    "3.6 or later" for the version.  
    e. Copy the string that is shown under "2. Add your connection string into 
