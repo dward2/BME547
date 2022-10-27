@@ -122,19 +122,46 @@ into a JSON string for transmittal back to the client.  In this case, the
 function defines a dictionary with the input variables and the result.
 
 #### `jsonify` Important Usage Note
-Note that `jsonify` must be used with the `return` statement.  It will
-not function properly if done on its own.  
+`jsonify()` is not a function that can be used anywhere to create a 
+JSON-encoded string.  It will only work properly if used with a `return` 
+statement of a Flask handler function (a function decorated with `@app.route`).
 
- Example that will not work:  
- ```
-    x = jsonify(result)
-    return x
- ```
+An example of proper usage:
+```python
+def get_result(a):
+    # Code to do work
+    return result
 
- Example that will work:
- ```
+@app.route("/get_result", methods=["POST"])
+    a = request.get_json()
+    result = get_result(a)
     return jsonify(result)
- ``` 
+```
+An example that will not work:  
+```python
+def get_result(a):
+    # Code to do work
+    return result
+
+@app.route("/get_result", methods=["POST"])
+    a = request.get_json()
+    result = get_result(a)
+    result_json = jsonify(result)  # Do not use jsonify without a return in a flask handler
+    return result_json
+```
+
+Another example that will not work:
+```python
+def get_result(a):
+    # Code to do work
+    return jsonify(result)  # Do not use jsonify in a non-flask handler 
+
+@app.route("/get_result", methods=["POST"])
+    a = request.get_json()
+    result = get_result(a)
+    return jsonify(result)
+```
+
 
 ### Variable URLs
 You can send information to a web server by using a variable name in
