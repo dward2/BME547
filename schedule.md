@@ -190,9 +190,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Oct 26</td>
     <td>
+        <li>More Server Design</li>
         <li>Server Debugging</li> 
-        <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
-        <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
 </td>    
     <td></td>
 </tr>
@@ -200,8 +199,10 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Oct 31</td>
     <td>
-        <a href="Lectures/databases.md">Introduction to Databases</a>,<br>
-        <a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a>      
+        <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
+        <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
+        <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
+        <li><a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a></li>      
       (<a href="https://github.com/dward2/mongo_db_jupyter_example">Class Demo  
         Repository</a>)
     </td>
