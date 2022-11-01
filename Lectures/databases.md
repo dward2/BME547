@@ -82,10 +82,24 @@ virtual machine).  See the community edition [here](https://docs.mongodb.com/man
 `from pymodm import connect, MongoModel, fields`
 
 #### Connect to MongoDB database
-`connect("mongodb+srv://<username>:<password>@<yourclustername>-nlfrn.mongodb.net/test?retryWrites=true")`  
-If using MongoDB Atlas, the string above is provided on the website.
-`<username>`, `<password>`, and `<yourclustername>` should be replaced with
-entries appropriate for the database in use.
+```
+connect("mongodb+srv://<username>:<password>@<yourclustername>-<server>.mongodb.net/<folder>?retryWrites=true&w=majority")
+```  
+If using MongoDB Atlas, you should obtain the string to use in the `connect`
+function from the MongoDB website.  Refer to the set-up instructions found 
+[here](../Resources/Databases/mlab.md) for how to get the connect string.  It 
+should be very similar to what is above.
+`<server>` will be provided in the string you obtain from the website.  You
+will need to replace `<username>`, `<password>`, and `<yourclustername>` with
+the appropriate information you entered doing the MongoDB set-up online.
+Finally, replace `<folder>` with any string.  This will be the "collection" 
+name in MongoDB.
+
+__Note__: There have been instances where the MongoDB website provides a
+connect string that does not provide the `<folder>` placeholder.  For example:
+`mongodb+srv://<username>:<password>@bme547.ba348.mongodb.net/?retryWrites=true&w=majority`
+In this case, you will need to remember to insert a collection/folder name
+between `mongodb.net/` and `?retryWrites`.
 
 :eyes: If using macOS and you receive an SSL or certificate error when trying
 to use `pymodm`, visit the [installations_mac.md](../Resources/installations_mac.md#ssl-or-certificate-errors)
