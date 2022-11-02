@@ -1,14 +1,16 @@
 # Scope
 The scope of a variable is the area in the code in which this variable
 is accessible.  It's scope is defined by where the variable is initially
-created and assigned a memory address.
+created (using an assignment statement such as `count = 5` or 
+`name_list = ["Apple", "Banana"]`).
 
-A variable which is created and assigned a memory address within a function is 
-a **local** variable whose scope is limited to that function.  It will not be 
-accessible outside of the function.
+A variable which is created within a function is a **local** variable whose 
+scope is limited to that function.  It will not be accessible outside of the 
+function.
 
 A variable which is created and assigned outside of any function is a 
-**global** variable and can be accessible anywhere in the module.
+**global** variable and can be accessible anywhere in the module, including
+functions.
 
 ### Example of Local Variable
 __Module Code:__
@@ -42,20 +44,24 @@ NameError: name 'a' is not defined
 __Description:__
 
 When this module is run in Python, the interpreter starts at the top of the 
-file and see that a function called `variable definition` is defined and then
+file and sees that a function called `variable definition` is defined and then
 a function called `variable_output` is defined.  Then, it comes to line 13 with
 a statement in the module which it will execute.  This statement will run the
-`variable_definition` function at line 1.  This function defines *local* 
-variables `a`
-and `b` and then prints out some strings using these variables.  This function
-ends and control is returned to line 13 where the function was called.  When
-the `variable_definition` function ends, the *local* variables `a` and `b` no 
-longer exist.
+`variable_definition` function at line 1.  Lines 2 and 3 create and assign
+variables `a` and `b`.  Since they are created inside this function, they are
+*local* variables and their scope is limited to this function.  The function 
+then prints out some strings using these 
+variables.  This function ends and control is returned to line 13 where the 
+function was called.  After the `variable_definition` function ends, the 
+*local* variables `a` and `b` no longer exist.
 
 Next, Python sees the `variable_output{}` statement in line 14, so runs that
-function back at line 8.  This function tries to print the variable `a`.  This
-variable has not yet been created in this function.  There was an `a` defined 
-in the `variable_definition` function, but it was local to that function and 
+function back at line 8.  This function tries to print the variable `a`.
+First, Python looks at the local scope of this function and does not find any
+variables in the local scope named `a`.  Python then looks at the global scope a
+nd does not find any global variables named `a`.  While there was previously
+a variable `a` defined 
+in the `variable_definition` function, it was local to that function and 
 does not exist outside of that function.  Therefore, the program stops with a 
 `NameError` since no variable named `a` exists in the current scope.
 
@@ -81,13 +87,14 @@ __Description:__
 When this module is executed, the Python interpreter starts at the top of the
 file.  It sees that `variable_output` is defined as a function and then 
 comes across line 6 with some code to execute.  First, it defines two variables
-called `a` and `b`.  As these variables are created and assigned a memory 
-location at the module level outside
+called `a` and `b`.  As these variables are created and assigned a value at the 
+module level outside
 of a function, they are considered *global* variables.  They are accessible
 anywhere within the code.  Next, the code reaches line 8 which calls the 
 function `variable_output` at line 1.  When this function tries to run at line
-2, it looks for the variable `a`.  Since `a` is a global variable, the 
-`variable_output` function is able to see the `a` variable and use it in the
+2, it looks for the variable `a`.  It firsts looks for a *local* variable `a`,
+and when it doesn't find one, it will look for and find the *global* variable
+`a`.  It will use this global variable in the
 `print` statement.  The same occurs for line 3 and the `b` variable.  This 
 program runs successfully.
 
@@ -130,24 +137,20 @@ __Description:__
 When the module code is run, the Python interpreter starts at the top of the
 file.  It sees the definition of `variable_definition` in lines 1-6.  It then
 sees the definition of `variable_output` in lines 8 through 11.  Then, it
-comes across code in line 13.  It creates a variable `a` and points it to a 
-memory location that contains the immutable integer `10`.  On line 14, the
-variable `b` is then created and pointed to the memory location containing the
-string `"Goodbye"`.  
+comes across code in line 13.  It creates a variable `a` and assigns it the
+value of `10`.  On line 14, the
+variable `b` is then created and and assigned the string value of `"Goodbye"`.
+Since these variables were created outside of a function, they are considered
+*global* variables.
 
 Then, in line 15, the code calls the function `variable_definition`.  On line 
-2, the code needs to assigns the value of `5` to the `a` variable.  An `a` 
-variable exists in the global scope.  But, since integer
-variables are immutable, assigning `a` a new value would require assigning it a 
-new memory location.  Thus, this assignment of a new memory location to `a` 
-inside a function makes `a` a *local* variable inside the `variable_definition`
-function.  But, the *global* `a` variable still exists.  So, 
-in line 2, the function `variable_definition` defines a local variable called
-`a`.  This local variable takes precedence over the global variable `a`.  The
- same thing happens for the `b` variable.  Strings are immutable, so the `b`
-variable created on line 3 requires a new memory location, and is therefore
-created as a local `b` variable.  So, when the function prints `a` and `b` in 
-lines 4 and 5, it uses the values of the local variables.  The function ends
+2, the code creates and assigns the value of `5` to the variable `a`.  Since
+this creation and assignment is happening inside a function, a new *local*
+variable `a` is created.  Line 3 also creates a new *local* variable `b`.
+Next, lines 4 and 5 are executed that need the variables `a` and `b` for
+printing.  Python first looks for *local* variables, and finds local versions
+of `a` and `b` and therefore prints the values of `5` and `"Hello"`.
+The function ends
 and control is returned to line 15.  At this point, the local variables `a` and
 `b` defined in `variable_definition` no longer exist and the global variables
 `a` and `b` continue to have their assigned values of `10` and `"Goodbye"`.
@@ -174,7 +177,7 @@ def variable_definition():
     return
 ```
 The `global` keyword tells the function that `a` and `b` are global variables,
-and so any use of those variables will impact the global variable, rather than
+and so any use of those variables will use the global variable, rather than
 create a local variable.  The output for this modified code is as follows:
 ```
 a defined as 5 in variable_definition
@@ -205,18 +208,15 @@ UnboundLocalError: local variable 'stock_count' referenced before assignment
 ```
 __Description:__
 
-The first line of code to be executes is line 6 where the `stock_count`
-*global* variable is created and pointed to the memory location containing the
-integer `15`.  Then, the `add_to_inventory(12)` command is executed.  Line 2
+The first line of code to be executed is line 6 where the `stock_count`
+*global* variable is created and assigned the value of `15`.  Then, the 
+`add_to_inventory(12)` command is executed.  Line 2
 is executed next.  On this line, the Python interpreter sees the left side of
-the assignment and says that `stock_count`
-is going to be assigned a new value.  Since it is going to be assigned an
-integer, which is immutable, a new memory location will need to be used.  
-Because this new memory location is being assigned within a function, the 
-`stock_count` variable being created now becomes a *local* variable, but
-doesn't yet have a value.  Then, the Python looks at the right side of the
-assignment and tries to get the value of the `stock_count` variable.  Since
-there is now a *local* version of `stock_count`, it tries to use that value.
+the assignment and realizes that a variable assignment is being made.  So,
+since this is happening within a function, Python creates a new *local*
+variable called `stock_count`.  Then, the Python interpreter looks at the right 
+side of the assignment and tries to get the value of the `stock_count` variable.  
+Since there is now a *local* version of `stock_count`, it tries to use that value.
 But, it hasn't been assigned a value yet.  So, an error is generated because
 the value of `stock_count` was needed before it was assigned.
 
@@ -238,12 +238,12 @@ __Output when modified code above is run:__
 The new stock count is 27
 ```
 For this case, when `add_to_inventory` is run, Python is told to use the
-*global* version of `stock_count`.
+*global* version of `stock_count` and no *local* version is created.
 
 ### Mutable Variables
-Mutable variable types work a bit differently.  The use of the `global` command
-to access a mutable global variable is still required if the local use of that
-variable would require a new memory location.  For example:
+Mutable variable types work a bit differently.  If a mutable variable is
+created and assigned in a function, it is created as a local variable.  For 
+example:
 
 __Module Code:__
 ```
@@ -267,14 +267,14 @@ The global name_list is ['Ape', 'Bonobo', 'Chimp']
 ```
 
 In this case, a *global* variable `name_list` is created on line 1.  Then,
-when `print_names()` is called on line 9, line 4 is executed.  Since this line
-is creating a new list, rather than modifying an existing list, a new memory
-location is made for it, thereby creating a *local* variable `name_list` which
-is used for the printing.  The *global* variable `name_list` is not changed as
+when `print_names()` is called on line 9, line 4 is executed.  This line is 
+creating and assigning a new list to the `name_list` variable and so creates a
+*local* variable `name_list`.  This local version is used for the print loop.
+The *global* variable `name_list` is not changed as
 evidenced by the print output from line 10.
 
-If we wanted to modify the global variable, we would need to use the `global`
-keyword.
+If we wanted to change the global variable instead of creating a local one, we 
+would need to use the `global` keyword.
 
 __Modified Code:__
 ```
@@ -299,8 +299,9 @@ The global name_list is ['Zebra', 'Yak', 'Xenops']
 ```
 
 But, here is where mutable variables can act differently.  If you "modify" an
-existing mutable variable in such a way that a new memory location is not
-required, you do not need to use the `global` keyword.  In the following
+existing *global* mutable variable, rather than give it a new assignment, you 
+do not create a *local* version but can use the *global* version, and there is
+no need to use the `global` keyword.  In the following
 example, a list is modified using the `append` method.
 
 __Module Code:__
@@ -325,14 +326,18 @@ __Output when module code above is run:__
 The global name_list is ['Ape', 'Bonobo', 'Chimp', 'Zebra']
 ```
 
-In this code, when line 4 is executed, a mutable variable that already exists
-in a memory location is being modified.  This is not assigning a new memory
-location and so is not creating a *local* variable.  Therefore, the *global*
-variable can be used and modified.  
+In this code, when line 4 is executed by the Python interpreter, it is not
+creating and assigning a new variable.  Rather, it is modifying an existing
+variable.  So, the interpreter first looks to see if there is a local variable
+called `name_list`.  Since there is not, it then looks for and finds the 
+global `name_list` variable and makes a change to it.
 
 Other mutable variable types, such as dictionary and classes, will work the
 same way.  As long as you are not creating a new instance of that data type,
-you can modify the existing data type without the need of the `global` keyword.
+you can modify the existing variable without the need of the `global` keyword.
+
+In these cases, it is still okay to use the `global` variable if you like to
+make it even more clear that you are using the *global* variable.
 
 
 ## References
