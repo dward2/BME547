@@ -78,15 +78,18 @@
     should examine all available heart rates for all patients that were posted
     after the given "since_time" date/time.  If the posted
     heart rate is tachycardic, a dictionary should be added to the list in
-    the following format:
+    the format as given by the following example:
     ```
       {
           "patient_id": 1,
           "attending_username": "Smith.J",
           "attending_email": "dr_user_id@yourdomain.com", 
-          "tachycardia_datetime": 2018-03-09 11:00:36
+          "tachycardia_datetime": "2018-03-09 11:00:36"
       }
     ```
+    The value of the `patient_id` key should be an integer.  The value for the
+    remaining keys should all be strings.  The `tachycardia_datetime` value
+    string should have the date/time format as shown.
     If the submitted username and password does not match previously registered
     administrator information, a "401 Unauthorized" server status code should
     be returned with an appropriate message.
