@@ -17,6 +17,15 @@ While the ECG trace is being displayed, if the heart rate for that particular
 patient is updated in the database, the displayed ECG image should also 
 update with the new data.
 
+While the ECG trace is being displayed, the user should be able to see or
+access a list of all the available historic heart rates and their associated 
+timestamps
+for the selected patient.  The user should be able to select one of those
+heart rates and show the ECG image associated with that heart rate next to the
+already displayed most recent ECG image.
+
 While the ECG trace is being displayed, there should be a button or some other 
 way for the user to say they are done looking at the ECG trace and have it
-be removed and show all of the patients again.
+be removed and show all of the patients again.  If a second ECG trace was 
+loaded for comparison, it should also be removed.
+
