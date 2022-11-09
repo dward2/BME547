@@ -1,6 +1,4 @@
-# Patient Monitoring Client/Server Project (Spring 2022)
-
-**Final Project DUE:** Friday, April 15, 2022, 11:59 PM EST 
+# Patient Monitoring Client/Server Project
 
 ## Overview
 The final project in this class will require you to leverage the
@@ -17,7 +15,7 @@ development and design conventions taught in this class, including:
 * unit testing
 * PEP8
 * docstrings
-* Use of issues and milestones to track development progress (new to this 
+* use of issues and milestones to track development progress (new to this 
 assignment)
   
 ## Functional Specifications
@@ -35,15 +33,19 @@ interface with the following functionality:
   + Upon user command, issue a RESTful API request to your server to upload
   whatever information is entered above.  The interface should only allow this
   request to be made if at least a medical record number has been entered.
-  Data to upload should include the medical record number, patient name,
-  measured heart rate/ECG image, and medical image.  If an item was not
+  Data to upload should include the medical record number and the following,
+  if uploaded:  patient name,
+  measured heart rate & ECG image, and medical image.  If an item was not
   selected or added, it does not need to be uploaded.  
   + After upload, the information entered in the GUI should REMAIN in the GUI 
   so it can still be seen.  
   + The user should have the ability to update any of this information in the
-  GUI and upload the new information to the server.
-  + The user should have the ability to delete/clear this information so 
-    that a new patient can be entered without having to exit the GUI.  
+  GUI and upload the new information to the server.  If the patient name is
+  updated in the GUI, it should be replaced in the server.  If a new heart
+  rate/ECG image or medical image is updated in the GUI, this new information
+  should be added to the existing information on the server.
+  + The user should have the ability to delete/clear this information from the
+  GUI so that a new patient can be entered without having to exit the GUI.  
 
 For the ECG analysis of heart rates, please use your existing ECG analysis 
 code module, and modify it with a function that your GUI can call to execute
