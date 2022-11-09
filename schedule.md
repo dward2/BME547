@@ -232,8 +232,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <li><a href="Lectures/intro_to_gui.md#widgets-of-interest">
             More GUI Widgets</a></li>    
-        <li><a href="https://duke.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e623476-f73f-4d9c-ac33-ae6300e54b9b">
-        Connecting GUI to Client/Server</a></li>
+        <li>Connecting GUI to Client/Server</li>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
