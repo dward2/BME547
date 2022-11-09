@@ -63,7 +63,7 @@ already existing team.
 * Communicate to me when your plan is complete so I may review it. 
   
 __Please target completion of your HRSS lookback and issues/milestones, and 
-share them with me, by the end of day Saturday, April 2.__  
+share them with me, by the end of day Wednesday, November 16.__  
 * I will be looking to see how you use Milestones/Issues for communication
 in my grading of the final project.
   
