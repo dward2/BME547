@@ -230,14 +230,15 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Nov 9</td>
     <td>
+        <li><a href="Lectures/intro_to_gui.md#widgets-of-interest">
+            More GUI Widgets</a></li>    
         <li><a href="https://duke.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e623476-f73f-4d9c-ac33-ae6300e54b9b">
-        <b>Video Lecture:</b>
         Connecting GUI to Client/Server</a></li>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
-      <li><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned<!---</a>---></li>
-      <li><!---<a href="Lectures/github_teams.md#Final-Project-Planning">--->Planning for Final Project<!---</a>---></li>
+      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
     </td>
 </tr>
 
