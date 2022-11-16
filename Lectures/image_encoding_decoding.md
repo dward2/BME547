@@ -171,3 +171,20 @@ Variable URL where:
   + `<id_no>` is the integer used to tag the image as above
 
 Returns `string` containing the image encoded as a base 64 string.
+
+## In-Class Exercise
+###Write client code that does the following:
+1. Converts an image file to a base64 string (USE A JPG FILE)
+   1. The filename can be hard coded or you can ask it from user using 
+   `filedialog.askopenfilename()`
+2. Uploads that base64 string to the server
+3. Downloads a base64 string for the "watermarked" image
+4. Saves the downloaded base64 string as an image file
+   1. Download filename can be either hardcoded or you can ask it from user
+   using `filedialog.asksaveasfilename()`
+
+### If time, create a GUI that will display the downloaded file.
+* Have the GUI automatically do steps 1 through 3 above
+* Then, have it display the image in the GUI rather than save it
+* Alternate:  Add a button to the GUI that allows the user to select the 
+  image to upload rather than hardcoding it.
