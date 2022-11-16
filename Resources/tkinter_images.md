@@ -82,15 +82,9 @@ above.
 # Input:
 #    img_ndarray:  variable containing an ndarray with image data
 
-import io
-from skimage.io import imsave
 from PIL import Image, ImageTk
 
-f = io.BytesIO()
-imsave(f, img_ndarray, plugin='pil')
-out_img = io.BytesIO()
-out_img.write(f.getvalue())
-img_obj = Image.open(out_img)
+img_obj = Image.fromarray(img_ndarray)
 tk_image = ImageTk.PhotoImage(img_obj)
 
 # Output:

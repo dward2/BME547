@@ -127,6 +127,20 @@ plt.show()
 #    A `matplotlib` window with an image
 ```
 
+### Convert image in ndarray format to a `tk_image` variable for display in a `tkinter` Label
+```python
+# Input:
+#    img_ndarray: variable containing an ndarray with image data
+
+from PIL import Image, ImageTk
+image_obj = Image.fromarray(img_ndarray)
+tk_image = ImageTk.PhotoImage(image_obj)
+
+# Output:
+#    `tk_image`: variable containing an image to use with a Label widget
+```
+
+
 ### Convert image in ndarray format into a base64 string
 ```python
 # Input:
