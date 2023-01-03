@@ -164,6 +164,7 @@ in your route name.
   necessarily in the same format as previously sent.  The
   heart_rate_average_since will be a string containing a date and time in the 
   format shown.
+
   This POST should return the average, as an integer, of all the heart rates that have been
   posted for the specified patient since the given date/time.  Note that
   the given time stamp could be any time, and not necessarily the time of a 
