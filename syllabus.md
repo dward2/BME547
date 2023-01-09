@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Fall 2022  
+# BME 547 - Medical Software Design - Spring 2023  
 
 ## Instructor
 Dr. David Ward  
@@ -14,8 +14,8 @@ Office Hours: By appointment
 ## Course Delivery
 
 ### Lecture
-Monday / Wednesday 12:00 pm to 1:15 pm  
-Location:  Wilkinson 130
+Wednesday / Friday 12:00 pm to 1:15 pm  
+Location:  Tier 106
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is required for completion of
@@ -241,12 +241,22 @@ product of your and/or your assigned group's effort and understanding.  It is no
 permitted to share your code with others for them to review, copy, or use.  Any 
 freely-available, external 
 resources developed by others, and used in your project,
-must be properly recognized.  These outside resources must be clearly published
+must be properly cited in the documentation (either in the README.md file or
+in a docstring or other in-code comment).  These outside resources must be clearly published
 for general use and cannot be the work of other current or former Duke students.
 
 In general, if you can install it from a package manager, such as `pip` or 
 `conda`, then you can use it as part of your work.  If you cannot, you should
 seek further guidance from the instructor.
+
+For this class, the use of any tool that uses artificial intelligence, machine
+learning, large data sets, or other means to suggest code for use is strictly
+prohibited.  If, despite this warning, you submit code wholly or partially 
+based on the use of any such tool, and this
+code is similar to previously existing code that is not adequately cited
+in your documentation, or is similar to another student's code submitted for 
+this class, this will be considered a case of academic dishonesty
+similar to directly copying such code, regardless of the user intent.
 
 All students are expected to adhere to all principles of the [Duke Community
 Standard](http://www.integrity.duke.edu/standard.html).  Violations of the Duke
