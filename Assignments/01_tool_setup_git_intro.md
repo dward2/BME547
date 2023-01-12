@@ -46,8 +46,10 @@ installed.  If not, you will need to download it from the site above.
     instructions at [Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
 
 
-5. Download and install `python` at https://www.python.org/. (As of 
-   August 15, 2022, the latest version is 3.10.6.)
+5. Download and install `python` at https://www.python.org/. (
+   + **NOTE:** As of January 12, 2023, the latest version is 3.11.1.  The 3.11
+     version is still relatively new and not all packages/libraries have been
+     updated for this version.  I would recommend installing version 3.10.9.
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
