@@ -15,7 +15,7 @@ Office Hours: By appointment
 
 ### Lecture
 Wednesday / Friday 12:00 pm to 1:15 pm  
-Location:  Tier 106
+Location:  Teer 106
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is required for completion of
