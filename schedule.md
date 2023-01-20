@@ -42,7 +42,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/git_workflow.md">Git Workflow</a></li>
     </td>
     <td>
-        <!---<a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a>--->
+        <a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a>
     </td>
 </tr>
 
