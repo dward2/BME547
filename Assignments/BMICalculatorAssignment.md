@@ -19,8 +19,8 @@ link.
    + Output can be achieved by code such as:
    `print("The number entered was {}".format(x))`
    
-* Outputs to the command/terminal window whether the calculated BMI represents 
-* "underweight", "normal weight", "overweight", or "obese".  The output must 
+* Outputs to the command/terminal window whether the calculated BMI represents
+  "underweight", "normal weight", "overweight", or "obese".  The output must 
   include one of these four words as written (same capitalization).
 
 
