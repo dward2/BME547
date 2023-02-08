@@ -96,8 +96,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
     </td>
     <td>
-        Assignment #2 Assigned
-        <!---<a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a></td>--->
+        <a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a></td>
 </tr>
 
 <tr>
