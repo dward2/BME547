@@ -19,7 +19,7 @@ be flexible enough to read results that may be slightly off.
 
 ### Function Specifications
 * The function should be named `is_email` and located in a module called 
-`email.py`.
+`email_checker.py`.
 * The function should receive a single parameter containing the string to 
   check.
 * The function should return a boolean value.
