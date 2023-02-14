@@ -24,20 +24,22 @@ The data for a single patient is formatted as follows:
 ```
 FirstName Lastname
 DOB
-GREEN
+GREEN X Y
 #,#,#,#,...,#
 #,#,#,#,...,#
 #,#,#,#,...,#
 #,#,#,#,...,#
 ...
 #,#,#,#,..,,#
-RED
+END
+RED X Y
 #,#,#,#,...,#
 #,#,#,#,...,#
 #,#,#,#,...,#
 #,#,#,#,...,#
 ...
 #,#,#,#,..,,#
+END
 ```
 
 The first line will have the first and last name of the patient separated by a
@@ -48,55 +50,59 @@ The second line will have the date of birth of the patient, formatted as
 `mm/dd/yyyy`.  
 Examples:  `09/02/1974`; `12/23/2001`
 
-The third line will have the string `GREEN` to indicate that the image data
-on the following lines will be for the "Green" channel of the RGB image.  
+The third line will have the string `GREEN X Y` where `X` and `Y` are integers
+indicating the size of the image.  `X` is the number of columns (or data points
+per row) and `Y` is the number of rows (or lines of data points).  `GREEN`
+indicates that the image data on the following lines will be for the "Green" 
+channel of the RGB image.  
 
-The image data follows and is split up into rows and columns, with an equal
-number of rows and columns.  So, the image is square.  Each row will 
+The image data follows and is split up into rows and columns.  Each row will 
 contain integers between 0 and 255, separated by commas.  The number of data 
-points on each row will equal the number of rows that exist for the image.
+points on each row will equal the value of `X`.  The number of rows will equal
+the value of `Y`.  After the image data, another line will simply contain 
+`END`.
 
-Example (for Green channel):
+Example:
 ```
-3,10,3,98,9
-13,15,16,2,9
-174,11,253,4,7
-2,12,5,10,0
-1,8,9,5,104
+GREEN 6 5
+3,10,3,98,9,2
+13,15,16,2,9,16
+174,11,253,4,7,0
+2,12,5,10,0,4
+1,8,9,5,104,4
+END
 ```
-Note, there are five data points on each line and there are five row, meaning
-the image is 5x5.
+Note, there are six data points on each line and there are five row, meaning
+the image is 6x5.
 
-After the "Green" image data is shown, the next line will have the string `RED`
+After the `END` line of "Green" image data, the next line will have the string `RED`
 to indicate that the image data on the following lines will be for the "Red"
 channel of the RGB image.  This data will be exactly the same size as the 
 "Green" data in terms of the number of points per line and the number of lines.
 
 Example (for Red channel):
 ```
-2,75,158,8,235
-232,7,11,11,9
-5,8,7,2,9
-13,240,10,238,16
-236,181,2,7,1
+RED 6 5
+2,75,158,8,235,146
+232,7,11,11,9,177
+5,8,7,2,9,77
+13,240,10,238,16,91
+236,181,2,7,1,227
+END
 ```
 
 The input file will contain multiple patients sequentially with no blank lines
-or other indicators between them.  So, immediately after the last data line of
+or other indicators between them.  So, immediately after the `END` line of the
 "Red" data for a patient, the next line will contain the name of
 the next patient.
 
-After the last patient, the file will have a line containing `END` to mark the
-end of the file.
-
-Note that the image size for each patient may vary.  So, while one patient may
-have a 5x5 image, another may have a 7x7 image while another may be 12x12.
+Note that the image size for each patient may vary.  
 
 Your assignment will be graded on a different input file than the sample
 provided.  However, the format as described above will be the same.  Your code
 does not need to account for "mistakes" in the format.  The file will be 
 formatted correctly.  But, your code must be able to handle files with any
-number of patients and with different image sizes.
+number of patients and with different image sizes for each patient.
 
 ## Image Analysis
 The image is a square grid with each grid point being measured for the 
@@ -113,11 +119,11 @@ green and red data to be greater than 75.
 
 Using the example above for the "Green" channel, there are four values of 75
 or greater, so there are 4 live cells in the image.  For the "Red" channel,
-there are 8 values of 75 or greater, so there are 8 dead cells.  That leads
-to a total cell count of 12.  The live fraction is 4 / 12 = 0.33.  The dead
-fraction is 0.66.  The cell density fraction is the number of total cells (12) 
-divided by the total number of image data points (5x5=25) for a value 
-of 12 / 25 = 0.48.  
+there are thirteen values of 75 or greater, so there are 13 dead cells.  That leads
+to a total cell count of 17.  The live fraction is 4 / 17 = 0.24.  The dead
+fraction is 0.76.  The cell density fraction is the number of total cells (17) 
+divided by the total number of image data points (6x5=30) for a value 
+of 17 / 30 = 0.57.  
 
 ## Program Specifications
 * Read input data from a text file.  `sample_data.txt` is provided as a sample,
@@ -128,7 +134,7 @@ of 12 / 25 = 0.48.
   need to program any kind of file input interface.
 * For each patient, determine the following:
   + Determine the total number of data points for the image (for example, if
-    the image is 5x5, the total number of data points is 25).
+    the image is 6x5, the total number of data points is 30).
   + Determine the number of live cells and the live cell fraction based on 
     the criteria above.
   + Determine the number of dead cells and the dead cell fraction based on 
@@ -164,11 +170,11 @@ of 12 / 25 = 0.48.
     table.
 * To create the above JSON output file, first create a dictionary with the keys
   listed exactly as above and assign each key the corresponding value.  Then,
-  using the `open` and `json` commands, create the file and output the 
+  using the `open` and `json.dump` commands, create the file and output the 
   information.
 
 ### Notes
-* In the dictionary/JSON description above, when a value is indicated to be a
+* In the dictionary description above, when a value is indicated to be a
   float or integer, it should NOT be a string containing a float or integer,
   but an actual number.
 * Remember that when a line of text is read in by Python, it may have a return
