@@ -137,10 +137,10 @@ of 12 / 25 = 0.48.
     (live + dead) divided by the total number of data points.
   + Determine the analytical result of the image based on this table:
 
-    |   | Cell Density Fraction >= 0.5 | Cell Density Fraction < 0.5 |
-    |--------|-----------------| --- |
-    | __Live Cell Fraction >= 0.7__ | PASSED | TENTATIVE_PASS  |
-    | __Live Cell Fraction < 0.7__ | FAILED | TENTATIVE_FAIL  |
+    |   | Cell Density Fraction >= 0.4 | Cell Density Fraction < 0.4 |
+    |------------|-------------------------| --- |
+    | __Live Cell Fraction >= 0.7__ | PASSED     | TENTATIVE_PASS          |
+    | __Live Cell Fraction < 0.7__ | FAILED   | TENTATIVE_FAIL          |
 
 * For each patient, create an individual output file with the name 
   "FirstName-LastName.json" where FirstName and LastName are replaced with the
