@@ -113,7 +113,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
-        <li><a href="Lectures/file_input.md">Text File Input</a></li>
+        <li><a href="Lectures/file_input.md">Text File Input</a> (<a href="Lectures/lecture_files/input_file_input_lecture.txt">Sample Data</a>)</li>
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
     </td>
     <td>
