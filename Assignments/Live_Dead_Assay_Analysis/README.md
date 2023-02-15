@@ -31,7 +31,6 @@ GREEN X Y
 #,#,#,#,...,#
 ...
 #,#,#,#,..,,#
-END
 RED X Y
 #,#,#,#,...,#
 #,#,#,#,...,#
@@ -59,8 +58,7 @@ channel of the RGB image.
 The image data follows and is split up into rows and columns.  Each row will 
 contain integers between 0 and 255, separated by commas.  The number of data 
 points on each row will equal the value of `X`.  The number of rows will equal
-the value of `Y`.  After the image data, another line will simply contain 
-`END`.
+the value of `Y`.  
 
 Example:
 ```
@@ -70,12 +68,11 @@ GREEN 6 5
 174,11,253,4,7,0
 2,12,5,10,0,4
 1,8,9,5,104,4
-END
 ```
 Note, there are six data points on each line and there are five row, meaning
 the image is 6x5.
 
-After the `END` line of "Green" image data, the next line will have the string `RED`
+After the "Green" image data, the next line will have the string `RED`
 to indicate that the image data on the following lines will be for the "Red"
 channel of the RGB image.  This data will be exactly the same size as the 
 "Green" data in terms of the number of points per line and the number of lines.
@@ -88,13 +85,14 @@ RED 6 5
 5,8,7,2,9,77
 13,240,10,238,16,91
 236,181,2,7,1,227
-END
 ```
 
-The input file will contain multiple patients sequentially with no blank lines
-or other indicators between them.  So, immediately after the `END` line of the
-"Red" data for a patient, the next line will contain the name of
-the next patient.
+After the "Red" image data, the next line will have the string `END` to
+indicate the end of data for that patient.  
+
+The input file will contain multiple patients sequentially.  So, immediately 
+after the `END` line of a patient, the next line will contain the name of
+the next patient, unless it is the last patient in the file.
 
 Note that the image size for each patient may vary.  
 
