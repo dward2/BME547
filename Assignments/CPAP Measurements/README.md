@@ -1,4 +1,4 @@
-# CPAP Measurement Assignment
+# CPAP Measurements Assignment
 
 ## Background
 
