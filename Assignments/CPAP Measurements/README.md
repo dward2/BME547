@@ -42,12 +42,12 @@ for the V1 tube is shown below.
 ![V1 setup](Images/bi-directional%20venturi.jpg)
 
 Flow through a venturi tube is calculated from the pressure drop between the
-wider portion of the tube upstream of the tube and the narrow portion of the
-tube. From the Bernouli equation and conservation of mass, at a constant
-volume flowrate, the linear velocity of the flow will change as the cross-
-sectional area for flow changes.  This change in linear velocity will change
-the pressure.  The ratio of pressures and areas can be used to calculate the
-volumetric flow.
+wider portion of the tube upstream of the constriction and the narrow portion 
+of the tube. From the Bernoulli equation and conservation of mass, at a 
+constant volume flow rate, the linear velocity of the flow will change as the 
+cross-sectional area for flow changes.  This change in linear velocity will 
+change the pressure.  The ratio of pressures and areas can be used to calculate 
+the volumetric flow.
 
 ![venturi_flow_equation](Images/venturi_flow_equation.jpg)
 
@@ -96,9 +96,9 @@ patient (expiration).  The volumetric flow rate is calculated using $p_{1,exp}$
 and $p_2$ in the above equation.  The resulting flow rate is assigned a
 negative value to indicate flow away from the patient.
 
-The input file is a text file with the data for time point on a separate line.
-The seven data points for each time period are separated by commas.  The first
-line of the data file contains the description of the seven data columns.
+The input file is a text file with the data for each time point on a separate 
+line.  The seven data points for each time period are separated by commas.  The 
+first line of the data file contains the description of the seven data columns.
 
 ## Program Specifications
 * The program should read the input data from a text file.  Example input files 
@@ -130,7 +130,7 @@ calculated and saved as key-value pairs in a Python dictionary called
   should have the same name as the input file, but with an extension of `.json`
   instead of `.txt`.  Example:  the dictionary created from the input file of
   `patient_04.txt` should be saved in a JSON file called `patient_04.json`.
-* All numeric values above shold be reported as numbers (i.e., `int` or 
+* All numeric values above should be reported as numbers (i.e., `int` or 
   `float`), not as numeric strings (i.e., not `"5.3"`)
 * When calculating the `leakage`, if the leakage value is negative, a `warning`
   log entry should be added to the log indicating that the leakage is negative.
@@ -193,3 +193,16 @@ Hub.
 * Works with all the provided test data
 * Any of the workflow, python methodology, or other criteria from previous 
   assignments
+
+## References
+This assignment and the sample data used are derived from data found on 
+[PhysioNet](https://physionet.org/).
+
+Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., 
+... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: 
+Components of a new research resource for complex physiologic signals. 
+Circulation [Online]. 101 (23), pp. e215–e220.
+
+Guy, E., Knopp, J., & Chase, G. (2022). CPAP Pressure and Flow Data from a 
+Local Trial of 30 Adults at the University of Canterbury (version 1.0.1). 
+PhysioNet. https://doi.org/10.13026/xfae-vv63.
