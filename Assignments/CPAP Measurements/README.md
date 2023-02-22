@@ -122,7 +122,7 @@ calculated and saved as key-value pairs in a Python dictionary called
   * `breaths`: integer, number of breaths in the data
   * `breath_rate_bpm`: float, the average breathing rate from the data in 
      breaths per minute
-  * `breating_times`: list of floats, the identified times for each breath
+  * `breath_times`: list of floats, the identified times for each breath
   * `apnea_count`: integer, number of apnea events in the data
   * `leakage`: float, the total amount of mask leakage observed in the data
     in liters
