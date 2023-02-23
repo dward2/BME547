@@ -22,7 +22,7 @@ either:
        for "Python" and select the "Python" extension by Microsoft.  Click on
        the install button.
 
-## Clone a Git Repository
+## Clone a GitHub Repository
 1. In VS Code, open the Source Control side bar by selecting 
    `View/Source Control` menu item or clicking on the Source Control icon on
    the left: ![Source_Control_Icon](images/source_control_icon_vs_code.JPG)
