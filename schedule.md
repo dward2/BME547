@@ -146,7 +146,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <li><a href="Lectures/debugging.md">Debugging</a></li> 
-        <li><a href="Resources/PyCharm">PyCharm</a></li>
+        <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td></td>
 </tr>

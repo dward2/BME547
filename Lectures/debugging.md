@@ -51,8 +51,11 @@ to watch your code execute line-by-line while observing the value of the
 variables in the code.  This allows you to see the flow of your program and
 the results of its calculations.
 
-IDE's with debugging features include PyCharm, Visual Studio, Visual Studio 
-Code, and Spyder.  
+IDE's with debugging features include 
+[PyCharm](../Resources/PyCharm/readme.MD), 
+[Visual Studio](https://visualstudio.microsoft.com/), 
+[Visual Studio Code](../Resources/visual_studio_code.md), and 
+[Spyder](https://www.spyder-ide.org/).  
 
 Python installations come with a simple IDE with debugger called IDLE
 (<https://docs.python.org/3/library/idle.html>) that provides a basic GUI for
