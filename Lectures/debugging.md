@@ -1,4 +1,69 @@
 # Debugging
+## For in-class demo code,  
+<!--- click [here](./debugging_code/debug_demo.py).--->  
+Clone repository at <https://github.com/dward2/debug_class>
+
+<!---
+**Summer 2020**
+Class code at <https://github.com/dward2/debug_demo>
+--->
+
+## Debugging Strategies
+
+### Understand the bug
+* What did you expect your code to do?
+* What happened instead?
+
+__The Principle of Confirmation__ [1]
+> Fixing a buggy program is a process of confirming, one by one, that the many 
+> things you believe to be true about the code actually are true. When you 
+> find that one of your assumptions is not true, you have found a clue to 
+> the location of the bug.
+
+[1] Matloff, N., Salzman, P.J., The Art of Debugging with GDB, DDD, and 
+Eclipse, 2008
+
+### Reproduce your bug
+* Make sure the bug occurs consistently and whether it is dependent on certain
+inputs or conditions.
+* Write a unit test that demonstrates the bug.  Can be used to prove that you
+have fixed it.
+
+### Examine your assumptions
+* Verify the content of variables.  Don't assume what they contain.
+* Check carefully for typos.  Don't assume you know what a line of code
+actually contains.
+* Did you make a change to your code recently that you _assume_ is unrelated 
+to the problem you are seeing?
+  
+### Determine the location of error/fault
+* Step through your code in debug mode and see where the problem first occurs.
+* Use a top-down approach.  Step over your high level function calls and make
+sure each one returns the expected results.  When you find where things start
+  to diverge from expected, then you can step into that function to look for
+  the exact spot of divergence.
+
+## Debuggers
+Debuggers are programs that help you find errors (bugs) in your code.  They
+are usually part of an "integrated development environment" (IDE) that also
+contains a code editor and other development tools.  The debugger allows you
+to watch your code execute line-by-line while observing the value of the 
+variables in the code.  This allows you to see the flow of your program and
+the results of its calculations.
+
+IDE's with debugging features include PyCharm, Visual Studio, Visual Studio 
+Code, and Spyder.  
+
+Python installations come with a simple IDE with debugger called IDLE
+(<https://docs.python.org/3/library/idle.html>) that provides a basic GUI for
+code editing and debugging.  
+
+There are also two Python standard packages that can be used for debugging
+called `pdb` and `pudb`.  `pudb` works on macOS/Linux only.  Specific debugging
+code is added to your code to allow for breaking the code and displaying
+variable content.  `pdb` is a command-line tool whereas `pudb` will open up a
+terminal interface for debugging.
+
 ## pdb
 * Python has a built in debugging package called `pdb`.
 * Reference: https://docs.python.org/3/library/pdb.html
@@ -75,46 +140,4 @@ import pudb
 pudb.set_trace(paused=False)
 ```
 
-### For in-class demo code,  
-<!--- click [here](./debugging_code/debug_demo.py).--->  
-Clone repository at <https://github.com/dward2/debug_class>
 
-<!---
-**Summer 2020**
-Class code at <https://github.com/dward2/debug_demo>
---->
-
-## Debugging Strategies
-
-### Understand the bug
-* What did you expect your code to do?
-* What happened instead?
-
-__The Principle of Confirmation__ [1]
-> Fixing a buggy program is a process of confirming, one by one, that the many 
-> things you believe to be true about the code actually are true. When you 
-> find that one of your assumptions is not true, you have found a clue to 
-> the location of the bug.
-
-[1] Matloff, N., Salzman, P.J., The Art of Debugging with GDB, DDD, and 
-Eclipse, 2008
-
-### Reproduce your bug
-* Make sure the bug occurs consistently and whether it is dependent on certain
-inputs or conditions.
-* Write a unit test that demonstrates the bug.  Can be used to prove that you
-have fixed it.
-
-### Examine your assumptions
-* Verify the content of variables.  Don't assume what they contain.
-* Check carefully for typos.  Don't assume you know what a line of code
-actually contains.
-* Did you make a change to your code recently that you _assume_ is unrelated 
-to the problem you are seeing?
-  
-### Determine the location of error/fault
-* Step through your code in debug mode and see where the problem first occurs.
-* Use a top-down approach.  Step over your high level function calls and make
-sure each one returns the expected results.  When you find where things start
-  to diverge from expected, then you can step into that function to look for
-  the exact spot of divergence.
