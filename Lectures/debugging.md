@@ -61,11 +61,12 @@ Python installations come with a simple IDE with debugger called IDLE
 (<https://docs.python.org/3/library/idle.html>) that provides a basic GUI for
 code editing and debugging.  
 
-There are also two Python standard packages that can be used for debugging
-called `pdb` and `pudb`.  `pudb` works on macOS/Linux only.  Specific debugging
-code is added to your code to allow for breaking the code and displaying
-variable content.  `pdb` is a command-line tool whereas `pudb` will open up a
-terminal interface for debugging.
+In the Python standard library, there is a module called `pdb` that can be used 
+for debugging, primarily from the command line (see below).  There is also a 
+terminal-based debugger called `pudb` which can be installed in your 
+environment and provide an easier-to-use graphical interface directly in the
+terminal window.  `pudb` works on macOS/Linux only.  Both of these debuggers
+work by the developer adding breakpoints directly in the code.
 
 ## pdb
 * Python has a built in debugging package called `pdb`.
