@@ -97,6 +97,74 @@ Assume `x` is the following array:
  x[2] = [8. 9. 10. 11.] (or X[2,:]
  x[:,2] = [ 2. 6. 10. 14.]
  ```
+
+## Equality of Numpy Arrays
+When working on a numpy array, any action performed on the array is generally
+applied to each element of the array to yield another array.  For example:
+
+```python
+array_1 = np.array([1, 2, 3, 4])
+added_array = array_1 + 3
+print(added_array)
+```
+yields the output:
+```
+[4 5 6 7]
+```
+The `+` operand operated on each element of the array to create a new array.
+
+The equality or `==` operator does the same.  Example:
+```python
+array_1 = np.array([1, 2, 3, 4])
+array_2 = np.array([1, 2, 3, 4])
+print(array_1 == array_2)
+```
+yields the output
+```
+[ True  True  True  True]
+```
+Whereas in this example:
+```python
+array_1 = np.array([1, 2, 3, 4])
+array_2 = np.array([1, 6, 3, 4])
+print(array_1 == array_2)
+```
+yields the output
+```
+[ True False  True  True]
+```
+The `==` comparison actually compares each element of the two arrays and 
+creates a new array with the results for each comparison.
+
+What happens if we try to compare two numpy arrays within a unit test.  The
+code `assert array_1 == array_2` confuses Python because `assert` is supposed
+to receive a single boolean, not an array of booleans.  So,  you will get an
+error that says: `ValueError: The truth value of an array with more than one 
+element is ambiguous. Use a.any() or a.all()`.  
+
+What is "ambiguous" is whether the test should pass if all elements of the
+array are true or if it should pass if any one of the elements in the array is 
+true.    
+
+That is where `.all()`. and `.any()` come in.  If `.all()` is applied to this 
+list of booleans, then all the values in the list must be true for the overall 
+comparison to be true.  If `.any()` is applied to this list, only one needs to 
+be true to yield the overall comparison to be true.
+
+Examples:
+```python
+x = (np.array([1, 2, 3, 4]) == np.array([1, 2, 3, 4])).all()  # x is True
+y = (np.array([1, 2, 3, 4]) == np.array([1, 2, 3, 4])).any()  # y is True
+
+z = (np.array([1, 2, 6, 4]) == np.array([1, 2, 3, 4])).all()  # z is False
+m = (np.array([1, 2, 6, 4]) == np.array([1, 2, 3, 4])).any()  # z is True
+```
+In the example above, I am using the `.all()` and `.any()` methods.  But, you can also use the `np.all()` or `np.any()` functions such as:
+```python
+n = np.all(np.array([1, 2, 6, 4]) == np.array([1, 2, 3, 4]))  # n is False
+p = np.any(np.array([1, 2, 6, 4]) == np.array([1, 2, 3, 4]))  # p is True
+```
+  
  
  ## References
  * https://docs.scipy.org/doc/numpy/user/basics.html
