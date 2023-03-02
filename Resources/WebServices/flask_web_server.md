@@ -56,7 +56,8 @@ line to the route `/info`.
 is the function that will run when `/info` receives a GET request.  It
 returns a JSON string of the dictionary defined in the procedure.  The
 `flask` function `jsonify` encodes the given variable into a JSON string
-to be sent over the web.
+to be sent over the web.  See the section on **`jsonify` Usage Notes** below 
+for more information about when this needs to be used.
 
 `app.run()` starts the server.  
 
@@ -121,46 +122,49 @@ Finally, the `flask` function `jsonify()` is used to serialize the answer
 into a JSON string for transmittal back to the client.  In this case, the
 function defines a dictionary with the input variables and the result.
 
-#### `jsonify` Important Usage Note
-`jsonify()` is not a function that can be used anywhere to create a 
-JSON-encoded string.  It will only work properly if used with a `return` 
-statement of a Flask handler function (a function decorated with `@app.route`).
+### `jsonify` Usage Notes
+#### When is `jsonify` needed
+`http` communication is done by using strings.  So, the information sent 
+between our clients and servers need to be strings.  When a Flask handler
+function (a function decorated with `@app.route`) uses a `return`, the
+information sent back with the return must be converted into a string.  Flask
+will automatically convert some variable types into strings, but not others.
+And, the ones it does convert automatically, it converts some to JSON-encoded
+strings and others not.
 
-An example of proper usage:
-```python
-def get_result(a):
-    # Code to do work
-    return result
+For data types that are not automatically converted to strings by Flask, Flask
+does offer a function that you can include in the return that will force the
+return to be converted into JSON-encoded string.  That function is called
+`jsonify`.
 
-@app.route("/get_result", methods=["POST"])
-    a = request.get_json()
-    result = get_result(a)
-    return jsonify(result)
-```
-An example that will not work:  
-```python
-def get_result(a):
-    # Code to do work
-    return result
+Below is a list of the various Python data types and what behavior to expect
+when using `return` with a Flask handler.
 
-@app.route("/get_result", methods=["POST"])
-    a = request.get_json()
-    result = get_result(a)
-    result_json = jsonify(result)  # Do not use jsonify without a return in a flask handler
-    return result_json
-```
-
-Another example that will not work:
-```python
-def get_result(a):
-    # Code to do work
-    return jsonify(result)  # Do not use jsonify in a non-flask handler 
-
-@app.route("/get_result", methods=["POST"])
-    a = request.get_json()
-    result = get_result(a)
-    return jsonify(result)
-```
+* `int` or `float`  
+  Flask will not automatically convert these to strings.  You must use 
+  `jsonify`.
+* `bool`  
+  Flask will not automatically convert a boolean to a string.  You must use
+  `jsonify`.
+* `str`  
+  A string, already being a string, doesn't need any conversion.  But, if you
+  do not use `jsonify`, it is sent as a regular string, not a JSON-encoded
+  string and `requests.json()` will cause an error.  Use `jsonify` with a 
+  string if you want to use `requests.json()` on the client side.
+* `list`  
+  Flask will automatically convert a list into a string.  This string will be
+  correctly interpreted by `requests.json()` on the client side.  So, the use
+  of `jsonify` is optional.
+* `dict`  
+  Flask will automatically convert a dictionary into a string.  But, the keys
+  of the dictionary must either be all strings or all integers.  They cannot
+  be of mixed types.  The string returned can be interpreted correctly by
+  `requests.json()`.  Note that if the dictionary returned by the server has
+  keys that are integers, the decoded dictionary on the client side will have
+  numeric strings for keys instead of integers.
+* `tuple`  
+  Flask will not automatically convert a tuple into a string.  You must use
+  `jsonify`.
 
 
 ### Variable URLs
