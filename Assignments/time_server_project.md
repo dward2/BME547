@@ -49,10 +49,10 @@ a native Python package that can be imported as follows:
 `datetime.now()` returns a `datetime` object that contains the 
 current date and time.
 
-`datetime.now().date()` returns a `datetime` object that contains the current
+`datetime.now().date()` returns a `date` object that contains the current
 date.  
 
-`datetime.now().time()` returns a `datetime` object that contains the current 
+`datetime.now().time()` returns a `time` object that contains the current 
 time.
 
 #### Specifying a specific date/time
@@ -74,6 +74,18 @@ The `strftime` command is short for `str`ing `f`rom `time`.  Additional
 information on the string formatting can be found at 
 <https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes>
 
+#### Convert `str` to `datetime` object
+The function `datetime.strptime()` can be thought of as `str`ing `p`arsing to 
+create a date`time` object.  `datetime.strptime()` takes two parameters.  The
+first is the string to be parsed.  The second is the format string, using the 
+same codes as discussed above, that matches the format of the string to be 
+parsed.  Example:
+```
+in_string = "03-05-1980"
+x = datetime.strptime(in_string, "%m-%d-%Y")  # x will be a datetime object
+print(x)  # Output: 1980-03-05 00:00:00
+```
+
 #### `timedelta` objects
 The difference between two times is captured in a `timedelta` object.  Example:
 ```
@@ -89,6 +101,19 @@ e = datetime(2019, 10, 20, 15, 22, 55)
 f = e - d
 print(f.seconds)  # Output: 8240
 ```
+
+When adding or subtracting date/time objects, they must be of the same type.
+For example, the following will give an error:
+```
+x = datetime(1980, 3, 5)
+today = datetime.now().date()
+delta = today - x
+
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 
+'datetime.datetime'
+```
+The `x` variable was a `datetime` object whereas the `today` variable was a
+`date` object.  To solve this, convert `x` to a `date` object by `x.date()`. 
 
 Note that there also objects to just contain the `date` and `time`.  See
 the documentation at <https://docs.python.org/3/library/datetime.html> for
