@@ -26,7 +26,7 @@ a terminal editor for simple code changes are all that is really needed.
 However, if you want the ability to use an IDE, Windows is an option.
 
 Duke OIT allocates each student access to one virtual machine.  In a new system
-started this semester (Fall 2022), I was also able to setup a certain number of
+started this year, I am also able to setup a certain number of
 VM reservations specific to this course which do not count against your 
 regular student allocation of one virtual machine.  But, I do not know if this
 course-specific machine will be able to be kept after the end of the semester.
@@ -43,18 +43,17 @@ course-specific option.
 using your NetID.
 * Click on "Reserve a VM".
 * Select the type of VM you would like.
-  + Look under the "Everything" heading
+  + Look under the "Everything" heading and select the "All" tab.
   + To select the course-specific Linux option, click on 
-    "BME 547 - 01: Medical Software Design -F22"
-  + To select the course-specific Windows option click on 
-    "(windows) BME 547 - 01: Medical Software Design - F22"
+    "BME 547 - 01: Medical Software Design (Lecture)".
   + To select the Linux option from your personal allocation, click on 
-    "Ubuntu Server 20.04"
+    "Ubuntu Server 20.04".
   + To select the Windows option from your personal allocation, click on 
-    Windows 10
-* A window may open up with information about connecting using SSH.  Select the
-  "Less secure option" option to skip setting up an SSH key (you are welcome to
-  set up an SSH key if you prefer).
+    "Windows 10".
+* A window may open up with the heading "No SSH Key Found" and gives some 
+  information about connecting using SSH.  Select the "Proceed with the less
+  secure option" button to skip setting up an SSH key (unless you prefer to
+  set up an SSH key, which you are welcome to do).
 * A window may open up asking you to agree to the terms of use.  Select Agree.
 * Depending on virtual machine availability, your VM may be available
 immediately, or may take some time to set up.  You will receive an e-mail when
@@ -74,12 +73,19 @@ Computing Manager.
 allows you to access and interact with the Linux VM.  There are a variety of
 options for SSH clients.  
   + For macOS and Windows, there is a built-in SSH client you can run from the 
-    Terminal/CMD/GitBash window.  Type `ssh user@hostname` where `user` is the 
-    user account to be accessed and `hostname` is the name of the server.  For 
-    example: `aa123@vcm-1111.vm.duke.edu`.  Then, login to your VM using your 
-    NetID and password.  You will now see your virtual machine linux prompt.
-    Typing `exit` at the prompt will close the connection to the VM and 
-    return you to your local command line prompt.
+    Terminal/CMD/GitBash window.  
+    + Type `ssh user@hostname` where `user` is the user account to be accessed
+      (usually your Duke NetID) and `hostname` is the name of the server.  For 
+      example: `aa123@vcm-1111.vm.duke.edu`.  
+    + At the first access,  you may be asked to verify the authenticity of the
+      host.  Type `yes` if you are sure you entered the correct VM address.
+      The connection will be closed and you will need to connect again.
+    + Upon connecting, you will be prompted for your password.  This is your
+      Duke NetID password.  You will not see any characters in the terminal
+      when typing your password.  Enter your password followed by "Enter".
+    + You will now see your virtual machine linux prompt.
+      Typing `exit` at the prompt will close the connection to the VM and 
+      return you to your local command line prompt.
   + For Windows, a variety of free, third-party software exists, including:  
     ++ PuTTY, <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>  
     ++ MobaXterm, <https://mobaxterm.mobatek.net/>
@@ -146,21 +152,27 @@ Review the information from the
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
 virtual machine, you can follow the information given for macOS users.
 
-### For the course-specific Linux VMs, as of October 2022
-* The default installation has `python3` installed.  So, you will need to enter 
-  `python3` and `pip3` to access version 3.
-  Or, you can add the following aliases to your `.bashrc` (or `.bash_aliases` if
+### For the course-specific Linux VMs, as of March 2023
+* The default installation has `python3` (version 3.10.6) installed.  So, you 
+  will need to enter `python3` and `pip3` to access version 3.  Or, you can 
+  add the following aliases to your `.bashrc` (or `.bash_aliases` if
   it exists) file:
 
   ```bash
-  alias pip=pip3
+  alias pip='pip3'
   alias python='python3'
   ```
-* The `venv` package is not installed as part of the Python installation.
+* The `pip` program is not installed as part of this Python installation.  If
+  you are unable to run pip, you can install it as follows:
+  ```bash
+    sudo apt install python3-zip
+  ```
+  You may be prompted to enter your password (which is your Duke NetID).
+* The `venv` package is not installed as part of this Python installation.
   If you attempt to install a virtual environment and get an error, install
   `venv` with the following command:
   ```bash
-  sudo apt-get install python3.8-venv
+  sudo apt install python3.10-venv
   ```
   You may be prompted to enter your password (which is your Duke NetID).  Once 
   `venv` is installed, you
