@@ -220,12 +220,11 @@ def information():
 The GET request to `/info` is accepted as the method `"GET"` is specified
 in the `@app.route` decorator.  The `information()` function is called.
 It generated two strings, and then creates a dictionary using those two 
-strings.  A dictionary is a Python variable type and cannot be sent directly
-over the internet.  As discussed above, data transfer over the web is generally
-done by strings.  So, the server needs to serialize the Python dictionary or 
-encode it into a
-JSON string.  This encoding is done by the `jsonify()` function imported
-from the `flask` package.  The line 
+strings.  As discussed on the [flask_web_server.md](https://github.com/dward2/BME547/blob/main/Resources/WebServices/flask_web_server.md#jsonify-usage-notes)
+page, data transfer over the web is generally done by strings.  So, the server
+needs to encode the dictionary into a JSON string.  While Flask will
+automatically do this for a dictionary, in this code the use of the `jsonify()` 
+function imported from the `flask` package does it explicitly.  The line 
 ```
     return jsonfify(out_dictionary)
 ``` 
