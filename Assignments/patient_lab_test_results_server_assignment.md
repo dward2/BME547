@@ -271,7 +271,7 @@ needed keys exist and the value types are correct.
 
 All routes that are sent a medical record number (either in POST requests or
 as part of a variable URL), except the 
-`patient/ann_patient` route, should validate that the given medical record 
+`patient/add_patient` route, should validate that the given medical record 
 number exists in the database.  
 
 All routes that are sent a test name (either in POST requests or
