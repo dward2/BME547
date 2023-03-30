@@ -186,6 +186,16 @@ contact with the database.  All database functions should be handled from the
 server.  If the GUI needs to interact with the database, it should do it by
 making requests of the server. 
 
+### Multiple Patient-side Clients
+The system should allow for multiple patient-side GUIs to be running 
+simultaneously to simulate a sleep lab where multiple CPAPs are reporting to
+a central monitoring station.  In theory, you should not need to make any
+coding adjustments based on whether there is only a single patient-side client
+running or multiple patient-side clients running.  I will be
+testing your final submission by opening up multiple patient-side GUIs and a 
+single monitoring station GUI and using all at the same time.  You may want to
+test your system that way at least once.
+
 ## Choice of GUI Framework
 `tkinter` can provide all of the GUI functionality necessary to meet the
 above objectives.  However, you are also welcome to use a different GUI
