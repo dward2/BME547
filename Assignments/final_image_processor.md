@@ -51,25 +51,29 @@ interface with the following functionality:
     + the patient room number
     + if entered, the patient name
     + if both a CPAP pressure and CPAP calculated data have been entered, 
-      upload all of that data together
+      upload the CPAP pressure, breathing rate, apnea count, and CPAP flow
+      image (the flow vs time data does not need to be uploaded, just the plot)
   + After the initial upload, the medical record number and room number entry
   should be locked out/deactivated so that no further changes can be made to 
   them (until the condition described below).  Note, the values for MRN and 
   room number should still be visible in the GUI.  
   + After upload, the information entered in the GUI should REMAIN in the GUI 
   so it can still be seen.  
-  + The user should have the ability to update the patient name and select a
+  + The user should have the ability to update the patient name, change the CPAP
+  pressure, and select a
   new CPAP data file for analysis and then send these updates to the server
   upon command.  The MRN and room number should not change. If the patient name 
-  is updated in the GUI, it should be replaced in the server.  If the breathing
-  rate/apnea count/CPAP image is updated in the GUI, this new information
+  is updated in the GUI, it should be replaced in the server.  If the CPAP pressure/
+  breathing
+  rate/apnea count/CPAP flow image is updated in the GUI, this new information
   should be added to the existing information on the server.  (In other words,
   there can be multiple CPAP data measurements in the database for a patient.)
   + The GUI should periodically (at least every 30 seconds, but can be more 
   frequent) query the server
   to see if a new CPAP pressure has been commanded by the monitoring station.
   If so, the value in the CPAP pressure entry should be automatically updated
-  to that new value.
+  to that new value.  Any future uploads of CPAP data should use this new
+  value.
   + The user should have the ability to "reset" the device.  This means that
   all entries and displayed data are removed, including the patient medical 
   record number and room number.  The MRN and room number inputs should be 
@@ -102,7 +106,7 @@ user interface with the following functionality:
   + Allow the user to select a room number from a list of available numbers on 
   the server.
   + For the selected room number, display the medical record number, the patient
-  name, the latest CPAP pressure and breathing rate/apnea count/CPAP image 
+  name, the latest CPAP pressure and breathing rate/apnea count/CPAP flow image 
   (if they exist), and 
   the date/time at which this latest CPAP data was uploaded to the server.
   + The information displayed should be from the most recent patient in the 
@@ -111,10 +115,10 @@ user interface with the following functionality:
     If it is zero or one, it should be displayed in the default text color used
     by the rest of the GUI.
   + Allow the user to select from a list of the date/times of all stored CPAP
-    data for the selected patient, download the appropriate CPAP image, and 
-    display the selected image side-by-side with the latest CPAP image already 
+    data for the selected patient, download the appropriate CPAP flow image, and 
+    display the selected image side-by-side with the latest CPAP flow image already 
     displayed.
-  + Allow the user to save a downloaded CPAP image (either the latest or the
+  + Allow the user to save a downloaded CPAP flow image (either the latest or the
     historical one chosen) to a file on their local computer.
   + Allow the user to enter an updated CPAP pressure and upload this new
     pressure to the server to be retrieved by the patient-side GUI.  The GUI
@@ -211,6 +215,8 @@ team members and the instructor.
   balancing work load among the members.  Both team members may work
   on any specific issue, but the assigned team member should make sure that 
   the issue is addressed/implemented.
+* It is suggested that your database issues describe, as best as possible, the
+  database structure desired.
 * Notify the instructor when your plan is available for review before you begin
   significant coding activities.
 
