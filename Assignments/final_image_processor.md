@@ -2,8 +2,8 @@
 
 ## Overview
 The final project in this class will require you to leverage the
-industry-standard skills you've learned during this semester to design a 
-Sleep Lab Monitoring
+industry-standard skills you've learned during this semester to design
+and implement a Sleep Lab Monitoring
 System that has a patient-side client, a monitoring-station client, and a
 server/database that allows patient data to be uploaded and stored on the
 server, retrieved for ad-hoc and continuous monitoring, and for communication
