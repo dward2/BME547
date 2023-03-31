@@ -237,8 +237,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
-      <li><!---<a href="Assignments/final_image_processor.md">--->Final Project Assigned<!---</a>---></li>
-      <!---<li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>--->
+      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
     </td>
 </tr>
 

@@ -46,14 +46,14 @@ already existing team.
     error, or link to GitHub Actions report
   
 ## Final Project Planning
-##### HRSS Lookback
+##### Patient Lab Test Results Server Assignment Lookback
 * Each team member should complete the following template:
 
-| | What went well | What could go better | What to do different
-| --- | --- | --- | --- |
-| Planning | | | |
-| Communication | | | |
-| Execution | | | |
+|               | What went well | What could go better | What to do different |
+|---------------|----------------|----------------------|----------------------|
+| Planning      |                |                      |                      |
+| Communication |                |                      |                      |
+| Execution     |                |                      |                      |
 * Share this with me and your teammates via e-mail
   
 ##### Work Plan for Final Project
@@ -62,8 +62,8 @@ already existing team.
   each team member should be assigned to one of the GUIs.
 * Communicate to me when your plan is complete so I may review it. 
   
-__Please target completion of your HRSS lookback and issues/milestones, and 
-share them with me, by the end of day Wednesday, November 16.__  
+__Please target completion of your lookback and issues/milestones, and 
+share them with me, by the end of day Friday, April 7.__  
 * I will be looking to see how you use Milestones/Issues for communication
 in my grading of the final project.
   
