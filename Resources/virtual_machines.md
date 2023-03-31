@@ -165,7 +165,7 @@ virtual machine, you can follow the information given for macOS users.
 * The `pip` program is not installed as part of this Python installation.  If
   you are unable to run pip, you can install it as follows:
   ```bash
-    sudo apt install python3-zip
+    sudo apt install python3-pip
   ```
   You may be prompted to enter your password (which is your Duke NetID).
 * The `venv` package is not installed as part of this Python installation.
