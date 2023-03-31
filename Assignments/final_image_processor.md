@@ -1,12 +1,13 @@
-# Patient Monitoring Client/Server Project
+# Sleep Lab Monitoring Client/Server Project
 
 ## Overview
 The final project in this class will require you to leverage the
 industry-standard skills you've learned during this semester to design a 
-Patient Monitoring
+Sleep Lab Monitoring
 System that has a patient-side client, a monitoring-station client, and a
 server/database that allows patient data to be uploaded and stored on the
-server and retrieved for ad-hoc and continuous monitoring.
+server, retrieved for ad-hoc and continuous monitoring, and for communication
+of updated settings to the patient.
 
 It is expected that you will follow proper professional software
 development and design conventions taught in this class, including:
@@ -20,77 +21,126 @@ assignment)
   
 ## Functional Specifications
 ### Patient-side GUI Client
+The patient-side GUI will act as a stand-in for a CPAP machine which is 
+tracking a particular patient undergoing a sleep study.
+
 At a minimum, your patient-side GUI client should provide a __graphical__ user 
 interface with the following functionality:
   + Allow the user to enter a patient name.
-  + Allow the user to enter a patient medical record number.
-  + Allow the user to select and display a medical image from the local 
-  computer.
-  + Allow the user to select an ECG data file from the local computer.  This
-  ECG data should then be analyzed for heart rate in beats per minute, display 
-  the resulting heart rate in the GUI, and display an image of the ECG 
-  trace in the interface.
+  + Allow the user to enter a patient medical record number (MRN).
+  + Allow the user to enter a room number.
+  + Allow the user to enter a CPAP pressure in units of cmH2O (the GUI should validate
+    that the entry is an integer and must be between 4 and 25, inclusive, which 
+    is the typical range for CPAP operation).
+  + Allow the user to select a CPAP data file from the local computer.  This
+  CPAP data should then be analyzed for:
+    + breathing rate in breaths per minute, 
+    + number of apnea events
+    + flow rate vs. time
+  + The resulting breathing rate and number of apnea events should be displayed 
+  in the GUI along with an image of the flow rate vs. time curve.  The
+  combination of breathing rate, number of apnea events, and the CPAP flow
+  image will be referred to as the CPAP calculated data.
+  + If the number of apnea events is two or greater, that value should be 
+  displayed in red.  If it zero or one, it should be displayed in the default color of the
+  rest of the text in the GUI.
   + Upon user command, issue a RESTful API request to your server to upload
   whatever information is entered above.  The interface should only allow this
-  request to be made if at least a medical record number has been entered.
-  Data to upload should include the medical record number and the following,
-  if uploaded:  patient name,
-  measured heart rate & ECG image, and medical image.  If an item was not
-  selected or added, it does not need to be uploaded.  
+  request to be made if at least a medical record number and a room number have 
+  been entered.  This upload should include:
+    + the patient medical record number
+    + the patient room number
+    + if entered, the patient name
+    + if both a CPAP pressure and CPAP calculated data have been entered, 
+      upload the CPAP pressure, breathing rate, apnea count, and CPAP flow
+      image (the flow vs time data does not need to be uploaded, just the plot)
+  + After the initial upload, the medical record number and room number entry
+  should be locked out/deactivated so that no further changes can be made to 
+  them (until the condition described below).  Note, the values for MRN and 
+  room number should still be visible in the GUI.  
   + After upload, the information entered in the GUI should REMAIN in the GUI 
   so it can still be seen.  
-  + The user should have the ability to update any of this information in the
-  GUI and upload the new information to the server.  If the patient name is
-  updated in the GUI, it should be replaced in the server.  If a new heart
-  rate/ECG image or medical image is updated in the GUI, this new information
-  should be added to the existing information on the server.
-  + The user should have the ability to delete/clear this information from the
-  GUI so that a new patient can be entered without having to exit the GUI.  
+  + The user should have the ability to update the patient name, change the CPAP
+  pressure, and select a
+  new CPAP data file for analysis and then send these updates to the server
+  upon command.  The MRN and room number should not change. If the patient name 
+  is updated in the GUI, it should be replaced in the server.  If the CPAP pressure/
+  breathing
+  rate/apnea count/CPAP flow image is updated in the GUI, this new information
+  should be added to the existing information on the server.  (In other words,
+  there can be multiple CPAP calculated data measurements in the database for a patient.)
+  + The GUI should periodically (at least every 30 seconds, but can be more 
+  frequent) query the server
+  to see if a new CPAP pressure has been commanded by the monitoring station.
+  If so, the value in the CPAP pressure entry should be automatically updated
+  to that new value.  Any future uploads of CPAP data should use this new
+  value.
+  + The user should have the ability to "reset" the device.  This means that
+  all entries and displayed data are removed, including the patient medical 
+  record number and room number.  The MRN and room number inputs should be 
+  reactivated so that the GUI could be used for a new patient.  Any data 
+  about the previous patient should be removed so it is not accidentally 
+  uploaded with any new patient information.
 
-For the ECG analysis of heart rates, please use your existing ECG analysis 
+For the analysis of CPAP data, please use your existing CPAP Measurements 
 code module, and modify it with a function that your GUI can call to execute
-your code to do the 
-analysis.  The ECG data files will be the same test files from the ECG Analysis
-assignment.  This ECG code will not be re-evaluated and does not need unit
-tests (although it will still need to pass PEP-8 testing).  The only evaluation
-that will be made is that you call this function correctly from the GUI code
-and receive the heart rate back correctly.  You don't need the correct heart
-rate (i.e., whatever heart rate your code measured for the original ECG 
-assignment will be considered the correct heart rate for this assignment).  
+your code to do the analysis and return it.  The CPAP data files will follow
+the same format as those from the CPAP Measurement assignment.  (In fact, they
+will basically be the same files, but I will modify them to remove any missing
+data so that there are no problems with that and I may also increase the number
+of apnea events.)  This CPAP Measurement code will not be re-evaluated and does 
+not need unit tests (although it will still need to pass PEP-8 testing).  The 
+only evaluation that will be made is that you call the interface function 
+correctly from the GUI code and receive the needed CPAP data back.  You will 
+need to get the flow vs. time data in order to create the plot.  You do not 
+need to correct your CPAP measurements.  Whatever results your code currently
+returns will be considered the correct values for this assignment.  
    
-### Monitoring Station GUI Client
+### Monitoring-Station GUI Client
+The monitoring-station GUI will be considered a stand-in for a central 
+monitoring location where the sleep lab technicians can monitor the CPAP 
+results for all patients and command changes in the CPAP pressure for specific
+patients/rooms.
+
 At a minimum, your monitoring-station GUI client should provide a __graphical__
 user interface with the following functionality:
-  + Allow the user to select a patient medical record number from a list of 
-  available numbers on the server.
-  + For the selected patient, display the medical record number, the patient
-  name, the latest measured heart rate & ECG image (if one exists), and 
-  the date/time at which this latest heart rate data was uploaded to the server.
-  + Allow the user to select from a list of historical ECG images and their 
-   date/times for the selected patient, download the selected image, and 
-   display the selected image side-by-side with the latest ECG image already 
-   displayed.
-  + Allow the user to save a downloaded ECG image (either the latest or the
+  + Allow the user to select a room number from a list of available numbers on 
+  the server.
+  + For the selected room number, display the medical record number, the patient
+  name, the latest CPAP pressure and breathing rate/apnea count/CPAP flow image 
+  (if they exist), and 
+  the date/time at which this latest CPAP calculated data was uploaded to the server.
+  + The information displayed should be from the most recent patient in the 
+  room.
+  + If the apnea count value is two or greater, it should be displayed in red.
+    If it is zero or one, it should be displayed in the default text color used
+    by the rest of the GUI.
+  + Allow the user to select from a list of the date/times of all stored CPAP calculated
+    data for the selected patient, download the appropriate CPAP flow image, and 
+    display the selected image side-by-side with the latest CPAP flow image already 
+    displayed.
+  + Allow the user to save a downloaded and displayed CPAP flow image (either the latest or the
     historical one chosen) to a file on their local computer.
-  + Allow the user to select from a list of saved medical images for this 
-  patient, download and display the image, and allow it to be saved locally.
-  + When the user selects a new patient, any information from the previous
+  + Allow the user to enter an updated CPAP pressure and upload this new
+    pressure to the server to be retrieved by the patient-side GUI.  The GUI
+    should only allow integer values of 4 to 25, inclusive, to be entered and uploaded.
+  + When the user selects a new room, any information from the previous
   patient on the interface needs to be replaced with the information from the
-  new patient or removed from the interface.
+  new room/patient or removed from the interface.
   + The interface should make periodic requests (at least every 30 seconds, but
   can be more frequent) to the server to check for any updated information for
-  the currently selected patient.  If a new heart rate and ECG image are 
+  the currently selected room.  If new CPAP data is 
   available, those should be automatically downloaded and displayed on the 
-  interface.
-  + When the user wants to select a new patient, select an historical ECG, or
-    select a medical image for a patient, the choices should represent the 
+  interface in place of the old data.
+  + When the user wants to select a new room or historical CPAP calculated data, the 
+   choices presented should represent the 
     most recent options on the server.  In other words, the options for choices
     must dynamically update, rather than be "locked in" based on what was 
     available when the client was started.  
   + In order to complete these tasks, the client GUI will need to make RESTful 
-  API requests to the server to get lists of available patient medical record
-  numbers, available data for the selected patient, and the data/images 
-  themselves.
+  API requests to the server to get lists of available room
+  numbers, available data for the selected room, and the data/images 
+  themselves, as well as send updates to the CPAP pressure.
 
 ### Cloud Server
 At a minimum, your server should be a cloud-based web service running on your 
@@ -98,37 +148,69 @@ virtual machine that exposes a well-crafted RESTful API that will implement
 the tasks needed by the clients as described above and outlined here:
 
 * Accept uploads from the patient-side client that will include, at a minimum,
-the medical record number.  The upload may also include a name, medical image, 
-and/or heart rate & ECG image.
+the room number and medical record number.  The upload may also include a 
+patient name, CPAP pressure, and CPAP calculated data/image.
 * Communicate with and utilize a persistent database that will store the above
 uploaded data for retrieval at a future time.  
-* When a heart rate and ECG image are received, the date and time of receipt 
+* When CPAP calculated data are received, the date and time of receipt 
 should be stored with the data.
-* If the upload contains a medical record number not already found in the 
-database, a new entry should be made for that patient, and the information 
+* If the upload contains a room and/or medical record number not already found in the 
+database, a new entry should be made for that room and/or patient, and the information 
   sent with the request stored in this new record.  
 * If the upload contains a medical record number already found in the database,
-any medical image and/or heart rate/ECG image sent with the request should be
+the CPAP calculated data sent with the request should be
 added to the existing information. If a patient name is also sent, it should 
 update the existing name in the database.
-* Accept requests from the monitoring station client to retrieve the following
+* Accept requests from the monitoring-station client to retrieve the following
 information from the database and download it to the client:
-  + a list of available patient medical record numbers
-  + the name and latest heart rate & ECG image for a specific patient
-  + a list of ECG Image timestamps for a specific patient
-  + a list of medical images for a specific patient
-  + a specific ECG Image based on timestamp for a specific patient
-  + a specific medical image for a specific patient  
+  + a list of available room numbers
+  + the name and medical record number of the latest patient in a specific room
+  + the latest CPAP pressure and CPAP data for the latest patient in a specific
+    room
+  + a list of CPAP calculated data timestamps for the latest patient in a specific room
+  + a specific CPAP image based on timestamp for the latest patient in a specific
+    room 
+
   __Note__: The above list does not imply that you must have one route for
   each of those items.  Just make sure your server provides the needed 
   services.
-* Provide any other services as needed for the client to perform its needed
+* Accepts requests from the monitoring station client with updated CPAP
+pressure information for a specific room.
+* Accepts requests from the patient-side client for updated CPAP pressure for
+a specific room (note, it may not exist if no new pressure has been given by
+the monitoring station)
+* Provide any other services as needed for either client to perform its needed
 functions.
 
 **Note**: The GUIs should only make requests to the server and should not make 
 contact with the database.  All database functions should be handled from the
 server.  If the GUI needs to interact with the database, it should do it by
 making requests of the server. 
+
+### Multiple Patient-side Clients
+The system should allow for multiple patient-side GUIs to be running 
+simultaneously to simulate a sleep lab where multiple CPAPs are reporting to
+a central monitoring station.  In theory, you should not need to make any
+coding adjustments based on whether there is only a single patient-side client
+running or multiple patient-side clients running.  I will be
+testing your final submission by opening up multiple patient-side GUIs and a 
+single monitoring station GUI and using all at the same time.  You may want to
+test your system that way at least once.
+
+## Choice of GUI Framework
+`tkinter` can provide all of the GUI functionality necessary to meet the
+above objectives.  However, you are also welcome to use a different GUI
+framework if you like, such as PyQT or any other choice.  You are also welcome
+to program a web/browser GUI for your clients if you prefer.  Visit
+<https://github.com/dward2/BME547/tree/main/Resources/WebInterface> for info
+and basic tutorials for using HTML/CSS/flask to create such an interface.
+
+## Database
+As discussed in class, using MongoDB and PyModm will satisfy the requirements
+for a persistent database.  As all team members will be working with the 
+database, the use of any other type of persistent data base (SQL instead of
+non-relational, or a non-MongoDB online option) requires approval from all
+team members and the instructor.
 
 ## Planning
 * It is a requirement for this assignment you develop milestones and issues
@@ -144,6 +226,8 @@ making requests of the server.
   balancing work load among the members.  Both team members may work
   on any specific issue, but the assigned team member should make sure that 
   the issue is addressed/implemented.
+* It is suggested that your database-related issues describe, as best as possible, the
+  database structure desired.
 * Notify the instructor when your plan is available for review before you begin
   significant coding activities.
 
@@ -234,13 +318,3 @@ functions, please open a GitHub issue with a link to the function you are
 trying to test and I will help you design an appropriate test.  And, if you 
 have any question about the information on this webpage, please let me know.
 
-**Medical Images**
-
-Your GUI should allow the user to choose any image they like on their computer,
-which may or may not be found in the repository folder,
-not just the sample images provided in the starting repository.  Those are
-provided simply as examples of the types of images I will be using when testing
-your program.  Feel free to use these for your testing.  Also, I will not be
-trying to upload any unusual image formats.  So, you do not need to program
-the GUI to handle obscure formats.  As long as it works for standard formats,
-(e.g., JPG), it will be fine.
