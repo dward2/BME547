@@ -7,10 +7,22 @@ with the server, the display should have four sections, each of which shows
 information about the patient in that room.
 
 For each room, the display should include the room number, patient medical 
-record number, and (if they exist) patient name, latest CPAP Pressure, latest
+record number, and (if they exist) patient name, latest CPAP pressure, latest
 breathing rate, and latest apnea count.  If the apnea count is two or greater,
 it should be displayed in red.  Otherwise, it should match the default text
-color used by the rest of the GUI.
+color used by the rest of the GUI.  For each room, the GUI should also
+display the total apnea count for all data for the latest patient.  So, for
+example, assume a patient exists in the database with the following apnea count data:
+
+| Time | Apnea Count |
+| --- | --- |
+| 1/1/23 01:00:00 | 2 |
+| 1/1/23 02:00:00 | 0 |
+| 1/1/23 03:00:00 | 1 |
+
+The GUI should display the latest apnea count as `1` and the total apnea
+count as `3`.
+
 
 The GUI should automatically update (at least once every 30 seconds) with any 
 new rooms that are added to the database and any updates for any existing

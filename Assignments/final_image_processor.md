@@ -27,21 +27,22 @@ tracking a particular patient undergoing a sleep study.
 At a minimum, your patient-side GUI client should provide a __graphical__ user 
 interface with the following functionality:
   + Allow the user to enter a patient name.
-  + Allow the user to enter a patient medical record number.
+  + Allow the user to enter a patient medical record number (MRN).
   + Allow the user to enter a room number.
-  + Allow the user to enter a CPAP Pressure in cmH2O (the GUI should validate
+  + Allow the user to enter a CPAP pressure in units of cmH2O (the GUI should validate
     that the entry is an integer and must be between 4 and 25, inclusive, which 
     is the typical range for CPAP operation).
   + Allow the user to select a CPAP data file from the local computer.  This
   CPAP data should then be analyzed for:
     + breathing rate in breaths per minute, 
-    + number of apnea events 
-  The resulting breathing rate and number of apnea events should be displayed 
+    + number of apnea events
+    + flow rate vs. time
+  + The resulting breathing rate and number of apnea events should be displayed 
   in the GUI along with an image of the flow rate vs. time curve.  The
   combination of breathing rate, number of apnea events, and the CPAP flow
   image will be referred to as the CPAP calculated data.
-  + If the number of apnea events is greater than 2, that value should be 
-  displayed in red.  If it zero or one, it should be the default color of the
+  + If the number of apnea events is two or greater, that value should be 
+  displayed in red.  If it zero or one, it should be displayed in the default color of the
   rest of the text in the GUI.
   + Upon user command, issue a RESTful API request to your server to upload
   whatever information is entered above.  The interface should only allow this
@@ -67,7 +68,7 @@ interface with the following functionality:
   breathing
   rate/apnea count/CPAP flow image is updated in the GUI, this new information
   should be added to the existing information on the server.  (In other words,
-  there can be multiple CPAP data measurements in the database for a patient.)
+  there can be multiple CPAP calculated data measurements in the database for a patient.)
   + The GUI should periodically (at least every 30 seconds, but can be more 
   frequent) query the server
   to see if a new CPAP pressure has been commanded by the monitoring station.
@@ -95,34 +96,34 @@ need to get the flow vs. time data in order to create the plot.  You do not
 need to correct your CPAP measurements.  Whatever results your code currently
 returns will be considered the correct values for this assignment.  
    
-### Monitoring Station GUI Client
-The monitoring station GUI will be considered a stand-in for a central 
+### Monitoring-Station GUI Client
+The monitoring-station GUI will be considered a stand-in for a central 
 monitoring location where the sleep lab technicians can monitor the CPAP 
 results for all patients and command changes in the CPAP pressure for specific
-patients.
+patients/rooms.
 
-At a minimum, your monitoring station GUI client should provide a __graphical__
+At a minimum, your monitoring-station GUI client should provide a __graphical__
 user interface with the following functionality:
   + Allow the user to select a room number from a list of available numbers on 
   the server.
   + For the selected room number, display the medical record number, the patient
   name, the latest CPAP pressure and breathing rate/apnea count/CPAP flow image 
   (if they exist), and 
-  the date/time at which this latest CPAP data was uploaded to the server.
+  the date/time at which this latest CPAP calculated data was uploaded to the server.
   + The information displayed should be from the most recent patient in the 
   room.
   + If the apnea count value is two or greater, it should be displayed in red.
     If it is zero or one, it should be displayed in the default text color used
     by the rest of the GUI.
-  + Allow the user to select from a list of the date/times of all stored CPAP
+  + Allow the user to select from a list of the date/times of all stored CPAP calculated
     data for the selected patient, download the appropriate CPAP flow image, and 
     display the selected image side-by-side with the latest CPAP flow image already 
     displayed.
-  + Allow the user to save a downloaded CPAP flow image (either the latest or the
+  + Allow the user to save a downloaded and displayed CPAP flow image (either the latest or the
     historical one chosen) to a file on their local computer.
   + Allow the user to enter an updated CPAP pressure and upload this new
     pressure to the server to be retrieved by the patient-side GUI.  The GUI
-    should only allow integer values of 4 to 25 to be entered and uploaded.
+    should only allow integer values of 4 to 25, inclusive, to be entered and uploaded.
   + When the user selects a new room, any information from the previous
   patient on the interface needs to be replaced with the information from the
   new room/patient or removed from the interface.
@@ -131,7 +132,7 @@ user interface with the following functionality:
   the currently selected room.  If new CPAP data is 
   available, those should be automatically downloaded and displayed on the 
   interface in place of the old data.
-  + When the user wants to select a new room or historical CPAP data, the 
+  + When the user wants to select a new room or historical CPAP calculated data, the 
    choices presented should represent the 
     most recent options on the server.  In other words, the options for choices
     must dynamically update, rather than be "locked in" based on what was 
@@ -148,25 +149,25 @@ the tasks needed by the clients as described above and outlined here:
 
 * Accept uploads from the patient-side client that will include, at a minimum,
 the room number and medical record number.  The upload may also include a 
-patient name, CPAP Pressure, and CPAP data/image.
+patient name, CPAP pressure, and CPAP calculated data/image.
 * Communicate with and utilize a persistent database that will store the above
 uploaded data for retrieval at a future time.  
-* When CPAP data are received, the date and time of receipt 
+* When CPAP calculated data are received, the date and time of receipt 
 should be stored with the data.
-* If the upload contains a medical record number not already found in the 
-database, a new entry should be made for that patient, and the information 
+* If the upload contains a room and/or medical record number not already found in the 
+database, a new entry should be made for that room and/or patient, and the information 
   sent with the request stored in this new record.  
 * If the upload contains a medical record number already found in the database,
-the CPAP data sent with the request should be
+the CPAP calculated data sent with the request should be
 added to the existing information. If a patient name is also sent, it should 
 update the existing name in the database.
-* Accept requests from the monitoring station client to retrieve the following
+* Accept requests from the monitoring-station client to retrieve the following
 information from the database and download it to the client:
   + a list of available room numbers
   + the name and medical record number of the latest patient in a specific room
   + the latest CPAP pressure and CPAP data for the latest patient in a specific
     room
-  + a list of CPAP Data timestamps for the latest patient in a specific room
+  + a list of CPAP calculated data timestamps for the latest patient in a specific room
   + a specific CPAP image based on timestamp for the latest patient in a specific
     room 
 
@@ -176,7 +177,7 @@ information from the database and download it to the client:
 * Accepts requests from the monitoring station client with updated CPAP
 pressure information for a specific room.
 * Accepts requests from the patient-side client for updated CPAP pressure for
-a specific room (not, it may not exist of no new pressure has been given by
+a specific room (note, it may not exist if no new pressure has been given by
 the monitoring station)
 * Provide any other services as needed for either client to perform its needed
 functions.
@@ -225,7 +226,7 @@ team members and the instructor.
   balancing work load among the members.  Both team members may work
   on any specific issue, but the assigned team member should make sure that 
   the issue is addressed/implemented.
-* It is suggested that your database issues describe, as best as possible, the
+* It is suggested that your database-related issues describe, as best as possible, the
   database structure desired.
 * Notify the instructor when your plan is available for review before you begin
   significant coding activities.
