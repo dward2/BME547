@@ -156,7 +156,7 @@ single test request.  This dictionary should be formatted as follows:
     { 
        "patient_mrn": <medical_record_number>,
        "completed_tests": <list_of_test_dictionaries>,
-       "open requests": <list_of_request_dictionaries>
+       "open_requests": <list_of_request_dictionaries>
       }  
   ```
   where:
