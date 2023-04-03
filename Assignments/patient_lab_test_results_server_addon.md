@@ -19,7 +19,7 @@
   * contain at least one upper case letter
   * contain at least one lower case letter
   * contain at least one number
-  * not contain any spaces
+  * not contain any spaces  
   If any of the above conditions are not met, the request should be rejected
   with a 400 status code and appropriate message.
 
