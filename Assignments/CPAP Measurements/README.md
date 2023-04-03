@@ -118,7 +118,7 @@ pressure versus time data.  This can be done from the Venturi 1 data.
 * From the flow versus time data, the following information should be 
 calculated and saved as key-value pairs in a Python dictionary called 
 `metrics`.  The key-value pairs should be:
-  * `duration`: float, the time duration of the data in seconds
+  * `duration`: float, the time duration of the raw data in seconds
   * `breaths`: integer, number of breaths in the data
   * `breath_rate_bpm`: float, the average breathing rate from the data in 
      breaths per minute
