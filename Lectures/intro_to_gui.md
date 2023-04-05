@@ -291,6 +291,40 @@ user interaction with the GUI causes additional code to be run.
     selected.
     + `postcommand=` parameter links a function that will be called before any
     values are displayed in the Combobox.
+
+### Changing Attributes of Widgets
+
+In the examples above, attributes of widgets are set in two different ways:
+1. By named parameter when the widget is first created.  Here, the `text`
+   attribute is set by named parameter in the `Label` creator call:   
+   `label = ttk.Label(root, text="This is a label.")`
+2. By indexing of the widget variable using the attribute name.  Here, the 
+   `text` attribute is changed:  
+   `label["text"] = "This is the updated text for the label."`
+
+There is a third way of changing the value of the attribute, and that is to use
+the `.configure()` method of the widget and use a named parameter.  Example:
+3.  `label.configure(text="Another way to change label text")`
+
+### Getting Current Attribute
+There are two methods for obtaining the current value of an attribute.
+1. Use the `.cget()` attribute that takes a string containing the name of the
+   attribute to query.  Example:  
+   `label_text = label.cget("text")`
+2. Indexing the widget variable using the attribute name.  Example:  
+   `label_text = label["text"]`
+
+### Activate / Deactivate Widget with State
+A widget can be "turned on or off" by changing its state.  To deactivate a
+widget so that the user cannot interact with it, change its state to 
+`tk.DISABLED` as follows:
+
+  `widget_name.configure(state=tk.DISABLED)`
+
+To reactivate the widget, use the `tk.NORMAL` state:
+
+`widget_name.configure(state=tk.NORMAL)`
+
     
 ### Adding Images to Interface
 See [tkinter_images.md](../Resources/tkinter_images.md) in the Resources folder
@@ -306,6 +340,9 @@ Comprehensive documentation for `tkinter`.  A few years old and written for
 Python 2.7, so some
 syntax may be slightly different, but has good description of all of the
 options and configurations for many of the `tkinter` widgets.
+
+<https://docs.python.org/3/library/tkinter.ttk.html> - Official Python
+documentation on the `ttk` themed widgets.
 
 <https://www.kite.com/python/docs/tkinter> - A not-terribly user friendly
 reference guide for `tkinter`, but does seem to have good lists of all
