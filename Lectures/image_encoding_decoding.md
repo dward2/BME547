@@ -173,7 +173,7 @@ Variable URL where:
 Returns `string` containing the image encoded as a base 64 string.
 
 ## In-Class Exercise
-###Write client code that does the following:
+### Write client code that does the following:
 1. Converts an image file to a base64 string (USE A JPG FILE)
    1. The filename can be hard coded or you can ask it from user using 
    `filedialog.askopenfilename()`
