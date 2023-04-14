@@ -43,3 +43,17 @@ seconds).  When those three seconds are passed, `alternate_label` is called
 which switches the label from "Off" to "On".  Then, it finishes by issuing
 another `.after()` command so that the procedure is run again 3 seconds later.
 This will continue until the user closes the window.  
+
+## Intercepting the Close Button
+In `tkinter`, clicking on the "close" button in a window's title bar will
+call `tkinter` to destroy the window (equivalent to using the `.destroy()`
+method on the window widget).  It is possible to change the result of clicking
+on the close button by providing your own function that is run when the close
+button is clicked.  This is done with the following command:
+```python
+root.protocol("WM_DELETE_WINDOW", callback)
+```
+where `root` is the variable of the window widget in question and `callback`
+is the name of the function you want to used when the "close" button is
+clicked.  Usually, you will want to end the `callback` function with a call to
+`root.destroy()` if you want the final action to be to close the window.
