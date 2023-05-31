@@ -10,6 +10,7 @@
 * [Software Carpentry: Intermediate & Advanced Software](https://intermediate-and-advanced-software-carpentry.readthedocs.io/en/latest/index.html)
 * [Playground and Cheatsheet For Learning Python](https://github.com/trekhleb/learn-python)
 * [Learn X in Y Minutes Python 3](https://learnxinyminutes.com/docs/python3/)
+* [W3 Schools Python Tutorial](https://www.w3schools.com/python/)
 
 ### String Formatting in Python
 * [PyFormat: Using `%` and `.format()` for great good](https://pyformat.info/)
