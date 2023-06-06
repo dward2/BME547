@@ -13,7 +13,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Jan 13</td>
+<td>Mon Aug 28</td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
     <td>
       <li><a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a></li>
@@ -22,7 +22,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Jan 18</td>
+<td>Wed Aug 30</td>
     <td>
       <li><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
       Cloning, Add/Commit, Branching, Pushing/Pulling</a></li>     
@@ -35,7 +35,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Jan 20<br></td>
+<td>Wed Sept 6<br></td>
     <td>
         <li><a href="Lectures/python_basics.md">Python Basics</a></li>
         <li><a href="Lectures/return_keyword.md">Return</a></li> 
@@ -47,7 +47,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Jan 25</td>
+<td>Mon Sept 11</td>
     <td>
         <li><a href="Lectures/git_workflow_overview.md">Git Workflow Overview</a></li>
         <li><a href="Lectures/modules.md">Modules</a></li> 
@@ -57,7 +57,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Jan 27</td> 
+<td>Wed Sept 13</td> 
   <td> 
     <li><a href="Lectures/modularity_example.md">Modularity Example</a> (starter code <a href="https://github.com/dward2/modularity_example">here</a>)</li>
     <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a></li>
@@ -67,7 +67,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Feb 1</td>
+<td>Mon Sept 18</td>
     <td>
         <li><a href="Lectures/lists.md">Lists</a></li>
         <li>For Loops</li>
@@ -79,7 +79,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Feb 3</td>
+<td>Wed Sept 20</td>
     <td>
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
@@ -88,7 +88,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Feb 8</td>
+<td>Mon Sept 25</td>
     <td>
         <li>Unit Testing: <a href="Lectures/continuous_integration_github_actions.md">Continuous 
     Integration & GitHub Actions</a></li>
@@ -100,7 +100,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Feb 10</td>
+<td>Wed Sept 27</td>
     <td>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
         <li><a href="Lectures/classes.md">Classes</a></li>
@@ -109,7 +109,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Feb 15</td>
+<td>Mon Oct 2</td>
     <td>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
@@ -122,7 +122,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Feb 17</td>
+<td>Wed Oct 4</td>
     <td>
         <li><a href="Lectures/logging.md">Logging</a></li>
         <li><a href="Lectures/numpy.md">NumPy</a> and 
@@ -132,7 +132,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Feb 22</td>
+<td>Mon Oct 9</td>
     <td>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li> 
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
@@ -142,7 +142,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Feb  24</td>
+<td>Wed Oct 11</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <li><a href="Lectures/debugging.md">Debugging</a></li> 
@@ -152,7 +152,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Mar 1</td>
+<td>Wed Oct 18</td>
     <td> 
         <a href="Lectures/apis_webservices_requests.md">
         APIs, Intro To Web Services, Requests</a>
@@ -163,7 +163,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Mar 3</td>
+<td>Mon Oct 23</td>
     <td>
         <a href="Lectures/flask_server_setup.md">
            Building a Web Server with Flask</a>
@@ -174,7 +174,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Mar 8</td>
+<td>Wed Oct 25</td>
 <td>
     <a href="Lectures/server_code_design.md">Server Design</a>
 </td>
@@ -183,7 +183,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </td>
 
 <tr>
-<td>Fri Mar 10</td>
+<td>Mon Oct 30</td>
     <td>
         <li>More Server Design</li>
         <li>Server Debugging</li> 
@@ -192,13 +192,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Mar 13-17</td>
-<td><b>Spring Break</b></td>
-<td></td>
-</tr>
-
-<tr>
-<td>Wed Mar 22</td>
+<td>Wed Nov 1</td>
     <td>
         <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
@@ -211,7 +205,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Mar 24</td>
+<td>Mon Nov 6</td>
     <td>
       MongoDB/PyMODM Example
     </td>
@@ -221,7 +215,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Mar 29</td>
+<td>Wed Nov 8</td>
     <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
     </td>
     <td>
@@ -229,7 +223,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Mar 31</td>
+<td>Mon Nov 13</td>
     <td>
         <li><a href="Lectures/intro_to_gui.md#widgets-of-interest">
             More GUI Widgets</a></li>    
@@ -243,7 +237,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Apr 5</td>
+<td>Wed Nov 15</td>
     <td>
         <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
     </td>
@@ -251,7 +245,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Apr 7</td>
+<td>Mon Nov 20</td>
     <td>
       <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
     </td>
@@ -262,7 +256,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Apr 12</td>
+<td>Mon Nov 27</td>
     <td>
       <a href="Resources/standards.md">Standards: </a>
       <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
@@ -273,7 +267,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Apr 14</td>
+<td>Wed Nov 29</td>
     <td>
       <a href="Lectures/intro_to_security.md">Introduction to Security</a>;
     </td>
@@ -281,12 +275,18 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Wed Apr 19</td>
+<td>Mon Dec 4</td>
     <td>
         Software Development Methodologies & Other Terminology
-        <br>Last Day of Class
     </td>
     <td></td>
+</tr>
+
+<tr>
+<td>Wed Dec 6</td>
+    <td>
+        Last Day of Class
+    </td>
 </tr>
 
 
