@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Spring 2023  
+# BME 547 - Medical Software Design - Fall 2023  
 
 ## Instructor
 Dr. David Ward  
@@ -6,16 +6,16 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Jacqueline Foody
-<jacqueline.foody@duke.edu>   
+Hae Sol Moon
+<haesol.moon@duke.edu>   
 Office Hours: By appointment
 
 
 ## Course Delivery
 
 ### Lecture
-Wednesday / Friday 12:00 pm to 1:15 pm  
-Location:  Teer 106
+Monday / Wednesday 11:45 am to 1:00 pm  
+Location:  Hudson Hall 212
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is required for completion of
@@ -34,13 +34,21 @@ watched before class, with an accompanying quiz to check for understanding.
 Please see the "Attendance / Participation" section below for more information.
 
 ### Official Course Communication
-Sakai will be used for official course communication.  
+Canvas will be used for official course communication.  As this will be the
+first semester for all of us using Canvas, close attention to Canvas will be
+required.  Ensure that you have Notifications turned on to the "Notify 
+immediately" or "Daily summary" for the following categories:
+* Due Date
+* Announcement
+* Grading
+Assistance with using Canvas can be obtained within Canvas by clicking on the
+Help icon on the left side menu.
 
 ### Assignments
 A variety of projects will be assigned throughout the semester.  The 
-description of these assignments will be posted in Sakai and also in this 
+description of these assignments will be posted in Canvas and also in this 
 GitHub repo.  Assignments will be turned in via a GitHub Classroom repository.
-Assignment feedback will be delivered via Gradescope and Sakai.
+Assignment feedback will be delivered via Gradescope and Canvas.
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
@@ -149,12 +157,13 @@ will be referenced throughout the semester.
 Project details will be discussed in lecture throughout the semester.
 
 ## Grading
-Official assignment posting will be done in Sakai.  The detailed assignment
+Official assignment posting will be done in Canvas.  The detailed assignment
 description will be done in this GitHub repository.  Assignments will generally
 be submitted in a GitHub Classroom repository.
 
 Due dates--including those that change--will be announced in lecture and by
-Sakai announcements that will be emailed to the class.  
+Canvas announcements (be sure to have your Canvas Announcement notification 
+on).  
 <table>
 <tr>
 <th>Grading Breakdown</th><th></th>
@@ -173,14 +182,14 @@ Sakai announcements that will be emailed to the class.
 </tr>
 </table>
 
-All work is due by the date and time posted in Sakai.  No late submissions will
+All work is due by the date and time posted in Canvas.  No late submissions will
 be accepted without prior written approval for an excused reason.  You will
 be given the opportunity to submit *one* assignment (not including the Final
 Project) up to 48 hours late 
 for any reason without penalty if you notify me that you are utilizing that
 option before the deadline via e-mail.
 
-Specific project feedback will be given using Gradescope and Sakai.
+Specific project feedback will be given using Gradescope and Canvas.
 
 ## Class Schedule
 The course schedule is likely to change depending on progress throughout
