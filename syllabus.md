@@ -41,14 +41,16 @@ immediately" or "Daily summary" for the following categories:
 * Due Date
 * Announcement
 * Grading
+
 Assistance with using Canvas can be obtained within Canvas by clicking on the
 Help icon on the left side menu.
 
 ### Assignments
 A variety of projects will be assigned throughout the semester.  The 
 description of these assignments will be posted in Canvas and also in this 
-GitHub repo.  Assignments will be turned in via a GitHub Classroom repository.
-Assignment feedback will be delivered via Gradescope and Canvas.
+GitHub repo.  Official due dates will be found in Canvas.  Assignments will be 
+turned in via a GitHub Classroom repository.  Assignment feedback will be 
+delivered via Gradescope and Canvas.
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
