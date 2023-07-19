@@ -48,9 +48,11 @@ Help icon on the left side menu.
 ### Assignments
 A variety of projects will be assigned throughout the semester.  The 
 description of these assignments will be posted in Canvas and also in this 
-GitHub repo.  Official due dates will be found in Canvas.  Assignments will be 
-turned in via a GitHub Classroom repository.  Assignment feedback will be 
-delivered via Gradescope and Canvas.
+GitHub repo.  Official due dates will be found in Canvas.  While future 
+assignments are shown in Canvas with tentative due dates, these future 
+assignments and due dates are subject to change based on course progress.
+Assignments will be turned in via a GitHub Classroom repository.  Assignment 
+feedback will be delivered via Gradescope and Canvas.
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
