@@ -43,7 +43,9 @@ immediately" or "Daily summary" for the following categories:
 * Grading
 
 Assistance with using Canvas can be obtained within Canvas by clicking on the
-Help icon on the left side menu.
+Help icon on the left side menu.  For more information, please visit 
+"[For Students](https://go.canvas.duke.edu/students-0/?utm_source=newsletter&utm_medium=email&utm_content=For%20Students&utm_campaign=fall-users-aug-msg)"
+on the Duke Canvas website (<https://go.canvas.duke.edu/>).
 
 ### Assignments
 A variety of projects will be assigned throughout the semester.  The 
