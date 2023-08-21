@@ -27,6 +27,7 @@ functionality, but we will use it as an example platform.
 * How to set up a new project in PyCharm and link to GitHub: 
 [NewProject.md](NewProject.md)
 
+<!---
 + PyCharm How To Videos:  Visit "BME 547 Videos" in the Resources section of 
 Sakai      
   + Cloning a GitHub Repository to Local Computer
@@ -35,4 +36,4 @@ Sakai
   + These videos were made with PyCharm v 2018.2.  Some things are slightly 
     different with the more recent versions.  Refer to the details in
     [NewProject.md](NewProject.md) for updates when things are different.
-    
+--->    

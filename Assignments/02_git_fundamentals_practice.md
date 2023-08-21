@@ -3,11 +3,11 @@
 In this assignment, you will use some basic `git` commands to add information
 to a repository using feature branches.
 
-This assignment will be completed using GitHub Classroom. The Sakai 
+This assignment will be completed using GitHub Classroom. The Canvas 
 announcement for this assignment will contain a URL that will allow you to 
 access the assignment. 
 
-Log into your GitHub account.  Then, visit the URL in the Sakai assignment.
+Log into your GitHub account.  Then, visit the URL in the Canvas assignment.
 
 Follow the instructions and a private repository containing the name of the 
 assignment and your GitHub ID will be created within the BME-547-Spring-2023 
@@ -25,4 +25,4 @@ The repository for this assignment will have an initial README.md
 document containing the instructions for the assignment.   
 
 Your final submission must be committed and pushed to your GitHub Classroom 
-repository before the deadline outlined in Sakai.  
+repository before the deadline outlined in Canvas.  

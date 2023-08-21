@@ -4,7 +4,7 @@ In this assignment, you will write a function and comprehensive unit tests to
 ensure the function meets specifications.  You will also configure Continuous
 Integration (CI) to automatically run tests on push and pull request events.
 
-See Sakai for GitHub Classroom link and due date.
+See Canvas for GitHub Classroom link and due date.
 
 ### Background
 Assume you are part of the development team for a medical system input device
@@ -58,7 +58,7 @@ be flexible enough to read results that may be slightly off.
 in actual use but are adapted for this assignment specifically.
 
 ### Approach
-* Log into GitHub and visit the GitHub Classroom link provided in Sakai.  This
+* Log into GitHub and visit the GitHub Classroom link provided in Canvas.  This
   will create a repository for your submission.
 * Clone this repository to your local computer.
 * Set-up GitHub Actions in this repository to implement CI testing.

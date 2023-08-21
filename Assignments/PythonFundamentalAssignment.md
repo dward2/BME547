@@ -2,7 +2,7 @@
 
 This assignment will be done using Jupyter notebooks.
 
-In the Sakai assignment, you will see a link to a GitHub Classroom.  Log into 
+In the Canvas assignment, you will see a link to a GitHub Classroom.  Log into 
 your GitHub account and then visit that site.  This will create a repository 
 specific for you.  Clone this repository onto your local computer, and then
 navigate to the folder containing the repository.
@@ -32,4 +32,4 @@ and then push the commit up to GitHub.  Visit the GitHub Classroom repository
 to ensure that your completed notebook is, in fact, uploaded.  We will be 
 grading the file that is found in your GitHub Classroom site.
 
-The deadline for this assignment can be found in Sakai.
+The deadline for this assignment can be found in Canvas.

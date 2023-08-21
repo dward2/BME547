@@ -386,7 +386,7 @@ not need unit tests if you write them as described.
 
 The above steps must be completed and documented by GitHub Issues by the first 
 deadline as outlined in the
-Sakai assignment.  _If you complete these items before the deadline, which is
+Canavs assignment.  _If you complete these items before the deadline, which is
 highly recommended, please notify me for my review._
 
 During my evaluation of your submission, I will be looking at commit

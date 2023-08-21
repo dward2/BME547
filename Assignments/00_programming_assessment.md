@@ -11,13 +11,13 @@ areas for additional study so that you are prepared for the
 other assignments in this course.
 
 Complete the following exercises in the programming language of your choice.
-Upload the source code file(s) to the appropriate Sakai assignment.  Include
-any comments you would like to share in the text box of the Sakai assignment.
+Upload the source code file(s) to the appropriate Canvas assignment.  Include
+any comments you would like to share as comments within your code file.
 
 If you cannot complete any part of this assignment, that is okay and simply
 indicates an area for some additional learning so you can be successful in the
-rest of the course.  Make a note in the Sakai text box about the part of the
-assignment you could not complete.
+rest of the course.  Make a note in your uploaded code file about the part of 
+the assignment you could not complete.
 
 ## Exercise One
 * Create a variable that contains an array or list that contains the following 

@@ -1,5 +1,5 @@
 # NumPy and Matplotlib Exercise
-In Sakai, there is a "NumPy and Matplotlib Exercise" assignment.  In that
+In Canvas, there is a "NumPy and Matplotlib Exercise" assignment.  In that
 assignment, you will find a link to a GitHub Classroom assignment.  Click on
 that link to accept the assignment.  The repository that is created contains
 two Jupyter notebooks.
