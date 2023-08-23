@@ -7,7 +7,7 @@
 
 ## Who are we?
 * Dr. David Ward
-* Jacqueline Foody
+* Hae Sol Moon
 
 ## Who are you?
 * Name (how you would like to be addressed)
