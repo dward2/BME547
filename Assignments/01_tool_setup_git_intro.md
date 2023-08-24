@@ -46,10 +46,8 @@ installed.  If not, you will need to download it from the site above.
     instructions at [Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
 
 
-5. Download and install `python` at https://www.python.org/. (
-   + **NOTE:** As of January 12, 2023, the latest version is 3.11.1.  The 3.11
-     version is still relatively new and not all packages/libraries have been
-     updated for this version.  I would recommend installing version 3.10.9.
+5. Download and install `python` at https://www.python.org/. 
+   + **NOTE:** As of August 24, 2023, the latest version is 3.11.15.  
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
@@ -57,9 +55,9 @@ installed.  If not, you will need to download it from the site above.
        window and see if version 3 is also installed.  
      * If you do not have any version 3 or if your version 3 is earlier than
        3.9, you will need to install a new version of `python3` of at least
-       verion 3.9.
-   Do not try to delete or "upgrade" the 2.7 version currently on your 
-   computer as it is a part of the macOS installation.
+       version 3.9.
+   __Do not try to delete or "upgrade" the 2.7 version currently on your 
+   computer as it is a part of the macOS installation.__
      * If python does not start at all, you will need to install `python3`.    
    Info on installing `python3` on macOS can be found at:      
        * <https://docs.python.org/3/using/mac.html>
