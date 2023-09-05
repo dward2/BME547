@@ -1,7 +1,7 @@
 # Python Virtual Environments
 
 ## Intro
-Python comes with standard set of libraries and functionality.  This base
+Python comes with a standard set of libraries and functionality.  This base
 functionality can be expanded by the installation of additional packages.
 These additional packages can be added to the base installation on your 
 computer.  However, there is the possibility that some installed packages
@@ -88,8 +88,16 @@ Conda is a Python Package repository for Windows.
 Enter the following commands at the Anaconda Prompt.
 
 #### To create a new virtual environment
-`conda create --name <Environment Name>`  
+`conda create --name <Environment Name> python=3.11`  
 where `<Environment Name>` is the name of the virtual environment to be created.
+`3.11` can be replaced with the preferred version number.
+
+If you don't specify a specific version of Python, none will be installed
+in the environment.  Then, when other packages are installed into this
+environment, they will load whatever version of Python they require.  But, this
+can lead to version problems if different packages require different versions
+of Python.  Therefore, it is recommended to specify a Python version when
+creating the virtual environment.
 
 #### To activate a virtual environment
 `conda activate <Environment Name>` or `activate <Environment Name>`  
@@ -119,8 +127,9 @@ For easy duplication of virtual environments, it is recommended to maintain a
 list of packages to be installed in a virtual environment in a file called
 `environment.yml`.  This file is formatted similar to the following example:
 ```
-name: myvenv
+name: my_venv
 dependencies:
+  - python=3.11
   - numpy
   - scipy
 ```
@@ -293,3 +302,233 @@ You then need to install the virtual environment package by typing
 sudo apt-get install python3-venv
 ```
 
+## Details related to Python Path
+### `venv`
+When you first start a Git Bash or terminal window, you start in the 
+default environment for Python.  Entering `python` will run whatever version
+of Python can be found in your default paths.  For example, in my installation
+(Windows 10), entering the command `where python` yields the following:
+```bash
+daw74@vcm-23932 MINGW64 ~/repos/project
+$ where python
+C:\Users\daw74\AppData\Local\Programs\Python\Python311\python.exe
+```
+
+Now, when I create a virtual environment, all of the files necessary to run
+Python are copied into the folder created with the virtual environment.  Then,
+when the virtual environment is activated, the path is modified so that it
+looks for Python in the new virtual environment location.
+
+```bash
+daw74@vcm-23932 MINGW64 ~/repos/project
+$ python -m venv my_venv
+
+daw74@vcm-23932 MINGW64 ~/repos/project
+$ source my_venv/Scripts/activate
+(my_venv)
+daw74@vcm-23932 MINGW64 ~/repos/project
+$ where python
+C:\Users\daw74\repos\project\my_venv\Scripts\python.exe
+C:\Users\daw74\AppData\Local\Programs\Python\Python311\python.exe
+
+```
+Now, a new path has been given priority that points to the Python version 
+copied into the virtual environment.  When the environment is deactivated, this
+new path is removed and points back to the default Python location (see below).  
+
+```bash
+(my_venv)
+daw74@vcm-23932 MINGW64 ~/repos/project
+$ deactivate
+
+daw74@vcm-23932 MINGW64 ~/repos/project
+$ where python
+C:\Users\daw74\AppData\Local\Programs\Python\Python311\python.exe
+```
+
+### `conda`
+When you first start an Anaconda Prompt or Anaconda Powershell Prompt (which
+is shown in the examples below), you start in the base environment.  The base
+environment will be pointing to a python version isntalled as part of Anaconda.
+```bash
+(base) PS C:\Users\daw74\repos\project> where.exe python
+C:\Users\daw74\AppData\Local\anaconda3\python.exe
+C:\Users\daw74\AppData\Local\Programs\Python\Python311\python.exe
+```
+The use of the `conda list` command gives you all of the packages installed.
+If you installed the full Anaconda, this will be a long list and includes
+Python.
+```bash
+(base) PS C:\Users\daw74\repos\project> conda list
+# packages in environment at C:\Users\daw74\AppData\Local\anaconda3:
+#
+# Name                    Version                   Build  Channel
+alabaster                 0.7.12             pyhd3eb1b0_0
+anaconda-client           1.11.2          py310haa95532_0
+anaconda-navigator        2.4.0           py310haa95532_0
+anaconda-project          0.11.1          py310haa95532_0
+anyio                     3.5.0           py310haa95532_0
+appdirs                   1.4.4              pyhd3eb1b0_0
+...
+python                    3.10.9               h966fe2a_1
+...
+zeromq                    4.3.4                hd77b12b_0
+zfp                       0.5.5                hd77b12b_6
+zict                      2.1.0           py310haa95532_0
+zipp                      3.11.0          py310haa95532_0
+zlib                      1.2.13               h8cc25b3_0
+zope                      1.0             py310haa95532_1
+zope.interface            5.4.0           py310h2bbff1b_0
+zstandard                 0.19.0          py310h2bbff1b_0
+zstd                      1.5.2                h19a0ad4_0
+```
+
+When we make a new environment using conda, an empty environment is created.
+(Note: your actual response may vary from the below as I have edited it 
+somewhat for brevity.)
+
+```bash
+(base) PS C:\Users\daw74\repos\project> conda create --name my_venv
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\daw74\AppData\Local\anaconda3\envs\my_venv
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate my_venv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) PS C:\Users\daw74\repos\project> conda activate my_venv
+(my_venv) PS C:\Users\daw74\repos\project> conda list
+# packages in environment at C:\Users\daw74\AppData\Local\anaconda3\envs\my_venv:
+#
+# Name                    Version                   Build  Channel
+```
+
+Notice that after activating the new environment, `conda list` returns nothing 
+installed in the environment, including Python.  The "Anaconda" version of
+Python is no longer available in this environment as seen by:
+```bash
+(my_venv) PS C:\Users\daw74\repos\project> where.exe python
+C:\Users\daw74\AppData\Local\Programs\Python\Python311\python.exe
+```
+Notice that the anaconda version is no longer in the path.  But, the generic
+Python that is also available on this computer is still there.  So, Python
+will still run.  But, when another package is loaded into the environment,
+conda will install a version of Python because it believes that no Python
+exists.  For example, let's install the `wikipedia` package.
+
+```bash
+(my_venv) PS C:\Users\daw74\repos\project> conda install -c conda-forge wikipedia
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\daw74\AppData\Local\anaconda3\envs\my_venv
+
+  added / updated specs:
+    - wikipedia
+
+The following NEW packages will be INSTALLED:
+
+  beautifulsoup4     conda-forge/noarch::beautifulsoup4-4.12.2-pyha770c72_0
+  certifi            pkgs/main/noarch::certifi-2020.6.20-pyhd3eb1b0_3
+  pip                conda-forge/win-64::pip-20.0.2-py36_1
+  python             conda-forge/win-64::python-3.6.15-h39d44d4_0_cpython
+  python_abi         conda-forge/win-64::python_abi-3.6-2_cp36m
+  requests           conda-forge/win-64::requests-2.12.5-py36_0
+  setuptools         conda-forge/win-64::setuptools-49.6.0-py36ha15d459_3
+  soupsieve          conda-forge/noarch::soupsieve-2.5-pyhd8ed1ab_0
+  ucrt               conda-forge/win-64::ucrt-10.0.22621.0-h57928b3_0
+  vc                 conda-forge/win-64::vc-14.3-h64f974e_17
+  vc14_runtime       conda-forge/win-64::vc14_runtime-14.36.32532-hfdfe4a8_17
+  vs2015_runtime     conda-forge/win-64::vs2015_runtime-14.36.32532-h05e6639_17
+  wheel              conda-forge/noarch::wheel-0.36.2-pyhd3deb0d_0
+  wikipedia          conda-forge/noarch::wikipedia-1.4.0-py_2
+  wincertstore       conda-forge/noarch::wincertstore-0.2-pyhd8ed1ab_1009
+
+Proceed ([y]/n)? y
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+```
+Notice that Python version 3.6 is being installed.  That is because the 
+`wikipedia` package specifies that at least Python 3.6 must be installed.
+Since conda doesn't see an installed version of Python, it uses that version.
+Unfortunately, some of the other supporting packages have been updated such 
+that they no longer work with Python 3.6.  So, the above installation will fail
+when trying to use `wikipedia`.  
+
+Therefore, I would suggest it is best practice to create a conda virtual
+environment with Python already installed.  You can do this during the creation
+of the virtual environment as follows:
+
+```bass
+(base) PS C:\Users\daw74\repos\project> conda create --name my_venv python=3.11
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\daw74\AppData\Local\anaconda3\envs\my_venv
+
+  added / updated specs:
+    - python=3.11
+
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              conda-forge/win-64::bzip2-1.0.8-h8ffe710_4
+  ca-certificates    conda-forge/win-64::ca-certificates-2023.7.22-h56e8100_0
+  libexpat           conda-forge/win-64::libexpat-2.5.0-h63175ca_1
+  libffi             conda-forge/win-64::libffi-3.4.2-h8ffe710_5
+  libsqlite          conda-forge/win-64::libsqlite-3.43.0-hcfcfb64_0
+  libzlib            conda-forge/win-64::libzlib-1.2.13-hcfcfb64_5
+  openssl            conda-forge/win-64::openssl-3.1.2-hcfcfb64_0
+  pip                conda-forge/noarch::pip-23.2.1-pyhd8ed1ab_0
+  python             conda-forge/win-64::python-3.11.5-h2628c8c_0_cpython
+  setuptools         conda-forge/noarch::setuptools-68.1.2-pyhd8ed1ab_0
+  tk                 conda-forge/win-64::tk-8.6.12-h8ffe710_0
+  tzdata             conda-forge/noarch::tzdata-2023c-h71feb2d_0
+  ucrt               conda-forge/win-64::ucrt-10.0.22621.0-h57928b3_0
+  vc                 conda-forge/win-64::vc-14.3-h64f974e_17
+  vc14_runtime       conda-forge/win-64::vc14_runtime-14.36.32532-hfdfe4a8_17
+  vs2015_runtime     conda-forge/win-64::vs2015_runtime-14.36.32532-h05e6639_17
+  wheel              conda-forge/noarch::wheel-0.41.2-pyhd8ed1ab_0
+  xz                 conda-forge/win-64::xz-5.2.6-h8d14728_0
+
+Proceed ([y]/n)? y
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate my_venv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+```
+Note that Python is now installed with the virtual environment.  Then, if the
+`wikipedia` package is installed, it will not load Python 3.6 because a higher
+version of Python is already installed.
