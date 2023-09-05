@@ -176,7 +176,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
     <td>
         <!---<a href="Assignments/time_server_project.md">Time Server Assigned</a>--->
-        Assignment #7 Assigned
+        Assignment #7 Assigned<br>
         <!---<a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>--->
         Assignment #8 Assigned
     </td>
@@ -297,6 +297,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         Last Day of Class
     </td>
+    <td></td>
 </tr>
 
 
