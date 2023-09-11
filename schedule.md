@@ -30,7 +30,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
       <li><a href="Resources/Git/readme_files.md">README.md</a></li>
     </td>
     <td>
-        <!---<a href="Assignments/02_git_fundamentals_practice.md">--->Git Fundamentals/Practice Assigned<!---</a>--->
+        <a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>
     </td>  
 </tr>
 
@@ -53,7 +53,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/modules.md">Modules</a></li> 
         <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li> 
     </td>
-    <td><!---<a href="Assignments/PythonFundamentalAssignment.md">--->Python Fundamentals Assigned<!---</a>---></td>
+    <td><a href="Assignments/PythonFundamentalAssignment.md">Python Fundamentals Assigned</a></td>
 </tr>
 
 <tr>
