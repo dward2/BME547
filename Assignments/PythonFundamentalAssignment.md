@@ -7,11 +7,14 @@ your GitHub account and then visit that site.  This will create a repository
 specific for you.  Clone this repository onto your local computer, and then
 navigate to the folder containing the repository.
 
-Next, create a virtual environment in the folder containing your repository.  
-Do not commit your virtual environment folder of files to the repository.
-Instead, create a 
-`.gitignore` file and add the folder name of your virtual environment to this 
-file.  Save and commit the `.gitignore` file to the repository.  
+Next, you need to create a virtual environment that has `jupyter` installed
+in it.  You may use an existing environment (such as the one created in class)
+that already has `jupyter` installed, or you can create a new one for this
+assignment.  
+
+Do not commit your virtual environment folder to the repository.  Instead, 
+create a `.gitignore` file and add the folder name of your virtual environment 
+to this file.  Save and commit the `.gitignore` file to the repository.  
 
 Activate your virtual environment and install the `jupyter` package in this 
 virtual environment.
