@@ -26,7 +26,7 @@ link.
 
 ### Approach
 * Clone GitHub Classroom repository to your computer
-* Create feature branch from main branch for new feature to be added 
+* Create feature branch from main branch for each new feature to be added 
 (e.g., data input)
 * Use meaningful commit messages and an appropriate frequency of commits while
 developing features.
