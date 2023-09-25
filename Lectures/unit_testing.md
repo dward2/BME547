@@ -309,8 +309,10 @@ above plane,
 
 __Steps__: 
 * Write a unit test for this function before you code the function itself.
-* Add instructor as a collaborator to your repository and create an issue that
-links to this unit test.  Add the instructor as an assignee.
+* Create an issue that links to this unit test.  Add the instructor as an 
+  assignee.  If the instructor does not show up in the list of possible 
+  assignees, you may need to add the instructor as a collaborator to your 
+  repository.
 * Develop the function.
 * If  you find that your function has multiple steps that can be broken down
 into smaller functions, do so, and then write a test for the smaller functions
