@@ -34,10 +34,12 @@ be flexible enough to read results that may be slightly off.
     * does not start or end with an underscore, period, or dash
     * does not contain any consecutive underscores, periods, and dashes 
       (i.e., "david..ward" is unacceptable, but "david.-ward" is)
+    * does not contain any other characters such as `+`, `*`, `!` or `&`
   * the **domain**
     * contains only letters (a-z, A-Z), numbers (0-9), and dashes (-)
     * does not start or end with a dash
     * does not contain any consecutive dashes
+    * does not contain any other characters such as `_`, `+`, `*`, `!` or `&`
   * the **toplevel**
     * contains only letters (a-z, A-Z)
     * consists of at least two letters
@@ -78,7 +80,7 @@ in actual use but are adapted for this assignment specifically.
 
 ### Grading Criteria
 * Good git workflow usage (good commit messages and frequency, use of branches,
-pull requests, etc.).
+pull requests, creting branches from latest, merged main branch, etc.).
 * Meeting the functional specifications above.
 * Presence of comprehensive unit testing to ensure that the appropriate range 
 of possible string inputs are checked.
