@@ -138,3 +138,39 @@ git add .github
 git commit -m "Activate GitHub Actions"
 git push 
 ```
+## Recommended Workflows for Setting up GitHub Actions and other repository items
+There are two recommended methods for how to integrate the set-up of GitHub
+Actions and other initial repository items into the feature branch workflow.
+They are to either i) use a "set-up" branch or, ii) integrate these actions 
+into your first true feature branch.
+
+### Using a set-up branch
+1.  Immediately after cloning your repository, create a branch with a name such 
+as `setup` or `repo_initialization`.  
+2. As described above, create the GitHub Actions `.yml` file in the appropriate 
+place.  Add and commit that file to the repository.  
+3. Create the `requirements.txt` file that will be needed by GitHub Actions to 
+create the virtual environment.  At a minimum, include `pytest` and 
+`pytest-pycodestyle`.  Add and commit that file to the repository.
+4. Create a Python code file so that `pytest` will have something to find and
+check.  If there are not any `*.py` files, `pytest` will give an error causing
+GitHub Actions to fail.  I would recommend creating the file you plan in which
+you plan to write your code.  Then, include the single command `pass` in the
+file.  Add and commit this file to the repository.
+5. Add any other initial files you would like to include, such as `.gitignore`.
+6. Push this branch to GitHub.
+7. On GitHub, open a pull request to merge this branch into `main`.  When the
+GitHub Actions shows passing status, merge the branch.
+8. In your local repository, checkout the `main` branch and pull in the merged
+changes from GitHub.
+
+### Integrating set-up with first feature branch
+1. Immediately after cloning your repository, create your first feature branch.
+2. Follow steps 2 through 5 under "Using a set-up branch" above.
+3. Start writing the code for your first feature.
+4. Ensure you write any needed unit tests for the code written on this branch.
+5. Push the branch to GitHub.
+6. On GitHub, open a pull request to merge this branch into `main`.  When the
+GitHub Actions shows passing status, merge the branch.
+7. In your local repository, checkout the `main` branch and pull in the merged
+changes from GitHub.
