@@ -67,20 +67,22 @@ in actual use but are adapted for this assignment specifically.
 * Develop code on feature branches.
 * Write modular code.  So, have the `is_email` function call other functions
   if appropriate.
-* Develop unit tests in parallel with code on feature branches.
+* For code written on a feature branch, develop unit tests for that code on
+  the same branch before merging.
 * Ensure all functions and code, including the unit test functions, adhere to 
   PEP-8 style.
 * Push code to GitHub.
 * Generate Pull Request on GitHub.  Only merge your feature branches into the
   main branch once GitHub Actions reports a passing status (for both unit
-  tests and PEP-8 style).
+  tests and PEP-8 style) and that all functions being merged have appropriate
+  test coverage.
 * Tag final submission on the main branch as `v1.0.0` or later number if 
     revisions are necessary.
 
 
 ### Grading Criteria
 * Good git workflow usage (good commit messages and frequency, use of branches,
-pull requests, creting branches from latest, merged main branch, etc.).
+pull requests, creating branches from latest, merged main branch, etc.).
 * Meeting the functional specifications above.
 * Presence of comprehensive unit testing to ensure that the appropriate range 
 of possible string inputs are checked.

@@ -138,6 +138,20 @@ git add .github
 git commit -m "Activate GitHub Actions"
 git push 
 ```
+
+### Including CI in Git Feature Branch Workflow
+After setting up GitHub Actions as described above, GitHub Actions will run
+`pytest` upon every push of a branch and upon creating a pull request.  When
+you create a feature branch and develop new code on that feature branch, **you
+should also write the needed unit test functions for that new code on the same
+feature branch**.  In this 
+way, before you merge the feature branch into the `main` branch, you will have
+appropriate test coverage of the new code to ensure it is working before adding
+it to the `main` branch.  It is okay for GitHub Actions running `pytest` to 
+fail on individual commits pushed to GitHub.  But, all errors should be fixed
+and all tests pass before doing any merge to the `main` branch.
+
+
 ## Recommended Workflows for Setting up GitHub Actions and other repository items
 There are two recommended methods for how to integrate the set-up of GitHub
 Actions and other initial repository items into the feature branch workflow.
