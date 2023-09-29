@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Fall 2023  
+# BME 547 - Medical Software Design - Spring 2024  
 
 ## Instructor
 Dr. David Ward  
@@ -14,8 +14,8 @@ Office Hours: By appointment
 ## Course Delivery
 
 ### Lecture
-Monday / Wednesday 11:45 am to 1:00 pm  
-Location:  Hudson Hall 212
+Wednesday / Friday 11:45 am to 1:00 pm  
+Location:  ???
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is required for completion of
