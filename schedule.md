@@ -120,8 +120,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
     </td>
     <td>
-        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
-        Assignment #5 Assigned
+        <a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>
+        <!---Assignment #5 Assigned--->
     </td>
 </tr>
 
