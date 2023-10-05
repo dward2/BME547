@@ -355,3 +355,9 @@ The generic format is:
            AND STORES RESULT IN HIDDEN VARIABLE}
 ```
 where `name` can be chosen by user.
+
+# Unit Testing of Class Methods
+Like any function, class methods should have unit tests to verify their correct
+functioning.  Visit 
+[Resources/unit_testing_class_methods.md](../Resources/unit_testing_class_methods.md)
+for more details and examples.

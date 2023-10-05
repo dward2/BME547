@@ -298,6 +298,10 @@ as so:
 pytest -v --pycodestyle --cache-clear
 ```
 
+### Unit testing of class methods
+Class methods require unit testing just like a standard function.  Details and
+examples for doing so can be found at 
+[Resources/unit_testing_class_methods.md](../Resources/unit_testing_class_methods.md).
 
 ## Exercise
 __Goal__:  Develop a Python function that:
