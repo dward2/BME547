@@ -77,9 +77,18 @@ def div_example():
         print("Inverse of {} is {}".format(x, y))
 ```
 
+### Bare 'except' clause
+PEP-8 standards as defined by `pycodestyle` prohibit the use of a bare
+`except` clause.  The bare `except` clause will capture all exceptions.  It is
+unlikely the code will be able to fix such a general case.  Please see the
+PEP-8 recommendation on this topic which is the third bullet point under
+Programming Recommendations at <https://peps.python.org/pep-0008/#programming-recommendations>.
+
+
 ### `finally` clause
-If there some code you would like to have regardless of whether there is an
-error or not, you can add a `finally` clause.
+If there is some code you would like to execute regardless of whether there is an
+error or not, you can add a `finally` clause.  Often, code in this section is
+used to clean-up resources used in the `try` block.
 ```python
 def open_file_example(filename):
     try:
@@ -91,8 +100,15 @@ def open_file_example(filename):
     finally:
         print("The function `open_file_example` is finished.")
     return
-    
 ```
+It is often asked why you would need to use a finally clause when you could
+just include that code after the try/except block.  It is always possible that
+one of the `except` blocks could possibly raise an exception.  If so, since
+there is not a way of capturing this secondary `exception` the code following
+the `try/except` block would not be executed.  But, the `finally` block is
+always executed, regardless of the outcomes of the exception catching.  So, if
+there is code that must absolutely be run, it should be placed in the `finally`
+block.
 
 ## Raising Exceptions
 ### Why and When?
