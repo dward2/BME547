@@ -20,6 +20,8 @@ You do not *have* to use PyCharm, as many other code editors provide similar
 functionality, but we will use it as an example platform.
 
 ## PyCharm Resources
+* Using PyCharm with BME 547 Workflows:  [using_pycharm.md](using_pycharm.md)
+
 * Documentation:  [DocumentationLinks.md](DocumentationLinks.md)
 
 * Useful settings in PyCharm:  [PycharmSettings.md](PycharmSettings.md)
