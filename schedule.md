@@ -164,7 +164,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
         APIs, Intro To Web Services, Requests</a>
     </td>
     <td>
-        <!---<a href="Lectures/name_server_project.md">Class Exercise</a>--->
+        <a href="Lectures/name_server_project.md">Class Exercise</a>
     </td>
 </tr>
 
