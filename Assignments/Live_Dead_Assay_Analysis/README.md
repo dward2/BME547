@@ -112,8 +112,8 @@ To analyze the image, look at the green and red values for each data point.  If
 the green value is **greater than or equal to 75**, then that data point
 represents a "live" cell.  If the red value is **greater than or equal to 75**,
 the that data point represents a "dead" cell.  If neither value is greater than
-75, there is not a cell at that data point.  It is not possible for both the
-green and red data to be greater than 75.
+or equal to 75, there is not a cell at that data point.  It is not possible for 
+both the green and red data to be greater than 75.
 
 Using the example above for the "Green" channel, there are four values of 75
 or greater, so there are 4 live cells in the image.  For the "Red" channel,
@@ -138,7 +138,8 @@ of 17 / 30 = 0.57.
   + Determine the number of dead cells and the dead cell fraction based on 
     the criteria above.
   + Determine the cell density fraction as defined by the total number of cells
-    (live + dead) divided by the total number of data points.
+    (live + dead) divided by the total number of data points in the image as
+    determined by its size (i.e., 6x5=30).
   + Determine the analytical result of the image based on this table:
 
     |   | Cell Density Fraction >= 0.4 | Cell Density Fraction < 0.4 |
