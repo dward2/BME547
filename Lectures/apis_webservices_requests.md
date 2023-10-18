@@ -184,7 +184,8 @@ a message
 
 ### `GET /get_messages/<user_name>`
 
-Retrieves messages for the user indicated by `<user_name>`.
+Retrieves messages for the user indicated by `<user_name>` and then deletes 
+those messages on server.
 
 Returns a list of messages for the user.  If the user has never had
 a message posted, a status code of 400 is returned.  If the user
