@@ -461,6 +461,9 @@ committing to their assigned routes as documented in the GitHub Issues.
 - __As always in this class, be sure to follow all best practice conventions 
 (unit testing, git practices, GitHub Actions CI Integration, virtual 
   environments, PEP8, docstrings, descriptive README.md, license, etc)__
+- README.md should contain team member names, the purpose of the repository,
+instructions for how to run your server locally, and the URL/link to your
+server on your virtual machine (if it is active).
 - Unit testing should be done in parallel with code development.  So, when code
 is written on a feature branch and merged into main, there must be
 appropriate unit testing available during that merge.  You cannot write the
