@@ -440,6 +440,17 @@ deadline as outlined in the
 Canvas assignment.  _If you complete these items before the deadline, which is
 highly recommended, please notify me for my review._
 
+It is also highly suggested that, once you have defined what your database 
+should look like, write a function that pre-populates the database with initial
+information.  This way, you avoid the problem where a team member needs to wait
+on another team member to write their code to populate the needed information
+in the database.  If, during development, one person needs the database to 
+change in order to implement their work,
+they can change this pre-populated database accordingly and other team members
+can adjust their work as needed.  When the final code is ready, the call to 
+this function that pre-populates the database can be removed so the database
+starts empty.  
+
 During my evaluation of your submission, I will be looking at commit
 histories to determine that both team members contributed to the project
 appropriately.  Feel free to work together, help each other, and edit and debug
