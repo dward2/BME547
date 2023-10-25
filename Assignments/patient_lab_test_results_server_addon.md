@@ -12,7 +12,8 @@
   * `<password>` is a string containing the password of the new administrator
 
   Neither the username nor password strings should be empty strings.  If either
-  one is, a 400 status code with appropriate message should be returned.
+  one is, the registration should be rejected and a 400 status code with 
+  appropriate message should be returned.  
 
   The submitted password must:
   * be at least 8 characters in length
@@ -94,8 +95,8 @@
     ```
       {
           "test_name": <test_name>,
-          "result": <test_result>,
-          "timestamp": <date_time_stamp>
+          "test_result": <test_result>,
+          "test_timestamp": <date_time_stamp>
       }
     ```
     where

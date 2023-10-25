@@ -175,10 +175,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
            Building a Web Server with Flask</a>
     </td>
     <td>
-        <!---<a href="Assignments/time_server_project.md">Time Server Assigned</a>--->
-        Assignment #7 Assigned<br>
-        <!---<a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>--->
-        Assignment #8 Assigned
+        <a href="Assignments/time_server_project.md">Time Server Assigned</a>
+        <!---Assignment #7 Assigned<br>--->
     </td>
 </tr>
 
@@ -188,6 +186,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <a href="Lectures/server_code_design.md">Server Design</a>
 </td>
 <td>
+        <a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>
+        <!---Assignment #8 Assigned--->
      
 </td>
 

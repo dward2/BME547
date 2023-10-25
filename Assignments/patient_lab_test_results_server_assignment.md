@@ -1,11 +1,11 @@
 # Patient Lab Test Results Server
-This assignment will have your team build a simple, centralized patient test
-results server.  This server will be built to receive GET and POST requests
+This assignment will have your team build a patient test request and results 
+reporting server.  This server will be built to receive GET and POST requests
 from two general types of users:
 * Physician: can enter patient information, order tests, and get test
 results
-* Lab technician: can get what tests were ordered and upload the results of
-tests
+* Lab technician: can retrieve what tests were ordered and upload the results
+ of tests
 
 The server should store the data it is sent so that it can be recalled as 
 needed.
@@ -32,14 +32,16 @@ Your Flask server should implement the following routes.
   * `<patient_age>` is the patient's age in years (see the section below
   entitled **Medical Record Number and Age Data Types** for more information
   on expected data types for this value)
-    
+
   The e-mail address provided here will be used to send notifications to the
   attending physician if any test results come back as abnormal.  While the
   e-mail address should be of the correct syntax (i.e., name@domain.com), it
   does not need to be an active e-mail address as we will be using a simulated
-  email system for this assignment.  For the e-mail address, the server only 
-  needs to validate that it is a string.  It does not need any validation of
-  the format.
+  e-mail system for this assignment.  The simulated e-mail system will require
+  that the e-mail address be of the correct syntax.  However, for this
+  assignment, your server only needs to validate that any e-mail address input 
+  it receives is a string.  It does not need any validation of the format of 
+  that string as I will only be testing correctly formatted e-mail addresses.
 
 * `POST /patient/new_request` allows the attending physician to request that a
   test be performed on a patient.  It takes a JSON as input as follows:
@@ -53,16 +55,19 @@ Your Flask server should implement the following routes.
   * `<medical_record_number>` is the patient medical record number 
   (see the section **Medical Record Number and Age Data Types** below for
   information on the expected data types for this value)
-  * `<test_name>` is the name of the test be requested
+  * `<test_name>` is a string containing the name of the test requested
 
   The received request should be stored on the server so that the lab can see
   what tests have been requested.  A date/time stamp should be stored with the
   request.  An e-mail should then be sent to
-  the lab.  The email should be "from" the attending physician, "to" the lab,
-  the subject line should contain the patient medical record number and test 
-  name, and the body of the email should contain the patient medical record
-  number, test name, and the request date/time.  Information on how to send
-  the e-mail is provided below.  
+  the lab.  The email should be:
+  * **"from"** the attending physician, 
+  * **"to"** the lab,
+  * the **subject** line should contain the patient medical record number and 
+    test name, and
+  * the **body/content** of the email should contain the patient medical
+    record number, test name, and the request date/time.  Information on how to
+    send the e-mail is provided below.  
 
 * `POST /lab/email_address` registers the e-mail address of the lab with the
   server.  It takes a JSON input as follows:
@@ -74,12 +79,13 @@ Your Flask server should implement the following routes.
   where:
   * `<email_address>` is a string containing the e-mail address of the lab
 
-  The e-mail address will be used to send new requests when uploaded to the
+  This e-mail address will be used to send new requests when uploaded to the
   server.  As above, it should be a correct e-mail address (such as 
   `lab@hospital.com`) but does not need to be an active e-mail.
 
 * `GET /lab/list_available_tests` returns a list of strings that contains the
-names of available tests.  Available tests should include:
+names of tests that can be requested and stored in this server.  This list of
+tests should include:
   * `"HR"` for a heart rate
   * `"HDL"` for HDL
   * `"LDL"` for LDL
@@ -118,40 +124,45 @@ single test request.  This dictionary should be formatted as follows:
   where:
   * `<medical_record_number>` is the patient medical record number (see the
   section **Medical Record Number and Age Data Types** below for more info)
-  * `<test_name>` is the name of the test performed
+  * `<test_name>` is a string containing the name of the test performed
   * `<test_result>` is a numeric value (`int` or `float`) with the result of
   the test
 
   The server should store this lab result along with the date/time stamp of
-  when the result was received.  The request for this test for this patient
-  should be removed from the database.  There will only be
-  one open request per test type per patient at any given time.  
+  when the result was received.  The open request for this test for this
+  patient should be removed from the database.  There will only be
+  one open request per test type per patient at any given time.  Note: your
+  server does not need to enforce this, but is rather a constraint I will use
+  during my testing and evaluation of the server.
 
-  The server should also examine the results of the test.  If the result is 
+  Upon receiving the results in this POST request, the server should examine 
+  the results of the test.  If the test result is 
   "abnormal", an email should be sent to the attending physician.
-  The email should be sent "to" the attending, "from" the lab, the
-  subject line should include the patient medical record number, the test name, 
-  and "Abnormal result".  The body should contain the patient medical record
-  number, the test name, the actual result value,
-  and the date/time that the test was completed.   
+  The email should be sent: 
+  * **"to"** the attending physician,
+  * **"from"** the lab, 
+  * the **subject** line should include the patient medical record number, the 
+    test name, and "Abnormal result", and
+  * the **body/content** should contain the patient medical record number, the
+    test name, the actual result value, and the date/time that the test was 
+    completed.   
 
   Abnormal results are considered as follows:
-  * For `"HR"`, an abnormal result is when the heart rate is tachycardic.  The
-  heart rate above which is tachycardic varies by age.  Use the ranges as given
-  at <https://en.wikipedia.org/wiki/Tachycardia> under the "Diagnosis" heading.
-  All ages will be at least 1-year-old, so ignore the levels for less than 
-  1-year-old.  
-  * For `"HDL"`, a value of less than 60 is considered abnormal.
-  * For `"LDL"`, a value of 130 or greater is considered abnormal.
-  * For `"TSH"`, a value less than 1.0 or greater than 4.0 is considered
-    abnormal.  (In other words, a value of 1.0 to 4.0 inclusive is considered
-    normal.)
+    * For `"HR"`, an abnormal result is when the heart rate is tachycardic.  The
+    heart rate above which is tachycardic varies by age.  Use the ranges as given
+    at <https://en.wikipedia.org/wiki/Tachycardia> under the "Diagnosis" heading.
+    All ages will be at least 1-year-old, so ignore the levels for less than 
+    1-year-old.  
+    * For `"HDL"`, a value of less than 60 is considered abnormal.
+    * For `"LDL"`, a value of 130 or greater is considered abnormal.
+    * For `"TSH"`, a value less than 1.0 or greater than 4.0 is considered
+      abnormal.  (In other words, a value of 1.0 to 4.0 inclusive is considered
+      normal.)
 
 * `GET /patient/results/<patient_mrn>` retrieves information about a patient.
   The variable URL contains the medical record number of the patient to be
-  retrieved.  The route 
-  returns a JSON-encoded string that contains a dictionary with the
-  following information:
+  retrieved.  The route returns a JSON-encoded string that contains a 
+  dictionary with the following information:
   ```
     { 
        "patient_mrn": <medical_record_number>,
@@ -177,8 +188,8 @@ single test request.  This dictionary should be formatted as follows:
       { 
          "test_name": <test_name>,
          "test_result": <test_result>,
-         "status": <status_string>
-         "timestamp": <datetime_stamp>
+         "test_status": <status_string>
+         "test_timestamp": <datetime_stamp>
         }  
     ```
   where:
@@ -194,7 +205,7 @@ single test request.  This dictionary should be formatted as follows:
   The open request dictionaries should look like this:
     ```
       {
-         "test_name": <teste_name>,
+         "test_name": <test_name>,
          "request_timestamp": <datetime_stamp>
       }
     ```
@@ -232,7 +243,8 @@ single test request.  This dictionary should be formatted as follows:
         "average_since": <date_time_stamp>
   ```
   where:
-  * `<medical_record_number>` is the patient medical record number
+  * `<medical_record_number>` is the patient medical record number (see the
+  section **Medical Record Number and Age Data Types** below for more info)
   * `<test_name`> is a string containing the name of the test of interest
   * `<date_time_stamp>` is a string containing a date/time in the format given
   in this example:  `2018-03-09 11:00:36`
@@ -254,7 +266,7 @@ letters and numbers.  Your code must be prepared to parse this input and
 determine whether the input is acceptable (can it be
 turned into an integer) or rejected (if it contains any letters).  So, 
 * `123` or `"123"` should be accepted (although the 
-  string `"123"` should be converted into the integer  `123` for storage)
+  string `"123"` should be converted into the integer `123` for storage)
 * `"a54"`, `"aj"`, or `"54a"` should be rejected.
 
 Note that you cannot assume that a medical record number or age will always
@@ -262,8 +274,8 @@ be sent in one form or another.  For example, when a patient with the medical
 record number of 1501 is sent to the `patient/new_patient` route, the medical
 record number might be sent as a string such as `"1501"`.  Then, in a following
 request to the `patient/new_request` route, the integer `1501` might be sent.
-So, you must always check that the medical record number or age input is 
-acceptable or not, regardless of whether it was before.
+So, you must always check that the medical record number or age input for each
+request is acceptable or not, regardless of how it was sent previously.
 
 ### Validation
 All POST routes should perform validation of the input JSON to ensure that the
@@ -280,7 +292,8 @@ one of the defined test names.
 
 All routes that are sent an e-mail address only need to validate that the
 value sent is a string.  Specific validation of the e-mail format is not
-required.  
+required (although as mentioned above, it must be a normal format to be 
+accepted by the email simulation system).
 
 Routes that are sent a date/time stamp as a string only need to validate that
 the date/time stamp is a string.  It does not need to validate that the
@@ -312,7 +325,7 @@ The server should write to a log file when the following events occur:
 ### Data Storage
 For this assignment, your server will need to keep the information it is sent.
 You can choose to store this information using an in-memory data structure
-like lists, dictionaries, or classes.  You could also choose to use an
+of lists, dictionaries, and/or classes.  You could also choose to use an
 external database.
 
 ### E-mail Server
@@ -320,7 +333,7 @@ I have set up a server to simulate accessing a third-party webservice for
 sending e-mails.  When your program needs to send an e-mail, it should make
 a POST request to the following URL:
 ```
-http://vcm-7631.vm.duke.edu:5007/send_email
+http://vcm-33934.vm.duke.edu:5007/send_email
 ```
 **NOTE**: The port is `5007`.  
 
@@ -349,6 +362,42 @@ with a string describing the error.
 
 If you have the code to call the e-mail server in its own modular function, you
 do not need to have a unit test for that function.
+
+**NOTE**:  This is NOT a route that you need to add to your server.  Instead,
+when your server needs to send an e-mail, your server makes a POST request to
+a different server (yes, a server can act as a client for another server).
+
+## Server Usage Workflow
+A typical order of events for using this server would be:
+1. Register a lab e-mail address
+2. Attending physician registers a new patient
+3. Attending physician makes a new test request
+4. Lab may or may not access the "/lab/open_requests" route.  Since the lab
+   receives an e-mail about requests, it is not required that this route be
+   visited before running/uploading results.
+5. Lab posts a new test result.
+6. Attending physician accesses one or more of the provided routes to retrieve 
+   results.
+
+BUT, this is just a typical workflow.  Requests to the server might actually
+be made in any order.  For example, multiple patients might be registered, then
+multiple test requests may be entered, then some but not all test results
+might be posted, and then more patients registered or more tests registered.
+Results might be requested before the tests are done.  Your server needs to be
+ready to handle requests made in any order.
+
+There are some limitations on the order in which the server will be called.
+For evaluation of this server, you can assume the following:
+* A call to the `lab/email_address` will be made before any tests are requested.
+* Only one open request per test type per patient will be sent.  So, at any
+  given time, there will not be a patient that has two open requests for the
+  same test.  Some allowable (but not exhaustive) examples:
+  * A single patient may have an open test request for an HR test and TSH test.
+  * One patient may have an open test request for an HR test and a second
+    patient may have an open test request for an HR test and a HDL test.
+  * A patient may have an open test request for an HR request, the lab may then
+    post the result of that test, and then the attending may request a second
+    HR request after the first one is complete.
 
 ## Modular Code & Testing
 Be sure to write modular code.  This means your Flask handler functions should
@@ -380,13 +429,15 @@ not need unit tests if you write them as described.
 * As a team, agree on a basic structure for how to store the data.  Open a 
   GitHub Issue and describe, in detail, how the data will be stored.  For 
   example, if the patient data will be stored in a dictionary, write out the
-  specific format for the dictionary.  
+  specific format for the dictionary.  Note that it is okay if, during 
+  development, you need to modify this database structure.  Just make a note
+  of any changes in this issue.
 * As desired, discuss and document in GitHub Issues any other design decisions 
   for the server.
 
 The above steps must be completed and documented by GitHub Issues by the first 
 deadline as outlined in the
-Canavs assignment.  _If you complete these items before the deadline, which is
+Canvas assignment.  _If you complete these items before the deadline, which is
 highly recommended, please notify me for my review._
 
 During my evaluation of your submission, I will be looking at commit
