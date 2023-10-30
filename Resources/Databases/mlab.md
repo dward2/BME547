@@ -16,55 +16,54 @@ your experience varies from below, modify as needed.
 1. [Sign up](https://www.mongodb.com/cloud/atlas) for a free account at 
 mongoDB.  Click on "Try Free".
 2. Enter your e-mail, first and last names, and select a password.  Agree to 
-   the terms and conditions by selecting the check box.  Then, click "Get
-   started free".
+   the terms and conditions by selecting the check box.  Then, click "Join
+   now with no obligation".
 3. You will then receive an email from MongoDB to verify your e-mail.  Click
    "Verify Email" in that email.
 4. Click "Continue" on the webpage that opens.
 5. Answer the questions on the "Welcome to Atlas!" page.  I answered:
-   - Learn MongoDB
-   - Internet of Things
-   - Python
+   1. Learn MongoDB
+   2. New to MongoDB
+   3. Python
+   4. Not sure (for what kind of data)
+   5. Not sure (for application architectural models)   
 6. Click "Finish".   
-7. On the "Deploy a cloud database" page, select the Free "Shared" option and
-   click on the "Create" button for that option.
-8. Under "Cloud Provider and Region", select any cloud provider (I used AWS)
-and choose a region close to you (I selected N. Virginia).
-9. Ignore "Cluster Tier" or "Additional Settings" unless you want to spend
-some money to customize your account.  The base settings should be fine.
-10. Name your cluster anything you would like (perhaps "bme547")
-11. Click "Create Cluster" at the bottom of the page.
-12. A visual check may appear to help make sure you are not a robot.  Complete
-   it and click "Verify".
-13. You should be taken to a "Security Quickstart" page.
-14. Under "1. How would you like to authenticate your connection":
+7. On the "Deploy your database" page:
+   1. Select the "M0 FREE" button.
+   2. Choose any provider under Provider (I use aws).
+   3. Change the cluster name, or accept the default.
+   4. Click the green "Create" button.
+   5. You may need to complete a puzzle to prove you are not a robot.
+8. You should be taken to a "Security Quickstart" page.
+9. Under "How would you like to authenticate your connection":
     1. Select "Username and Password"
-    2. Enter a username
+    2. Enter a username (this user name will be used by your Python program
+       to access the database and is different than the user name/email you
+       use to access the MongoDB website)
     3. Select a password.  Copy this password down somewhere safe as you will
          not see it again
     4. Click "Create User"
-15. Under "2. Where would you like to conntect from?"
+15. Under "Where would you like to connect from?"
     1. Choose "My Local Environment"
-    2. Click on "Add My Current IP Address"
 16. Click on "Finish and Close" to finish on the "Security Quickstart" page.
 17. Click on "Go to Database" on the pop-up window.
 18. After some period of time, your cluster will be ready.
 19. Add IP addresses allowed to access the database on the "IP Whitelist".  
    a. Click on "Network Access" in the left-hand list.  
    b. Make sure the "IP Access List" tab is selected.  Click on "Add IP Address".  
-   c. Select "Allow Access From Anywhere" in the window that pops up.  Click 
+   c. Click on "Allow Access From Anywhere" in the window that pops up.  Click 
     "Confirm".
 20. Get connection information to your database.  
    a. Click on "Database" in the left-hand list.  
    b. Click on the "Connect" button.   
-   c. Depending on the web interface you are shown, click on either the 
-      "MongoDB Drivers" option under the "Connect to your application" heading
-      or the "Connect your application" option.  
-   d. Under "1. Select your driver and version", select "Python" for the Driver and 
-   "3.6 or later" for the version.  
-   e. Copy the string that is shown under "2. Add your connection string into 
-   your application code" section.  Make sure the checkbox labelled "Include
-   full driver code example" is unchecked.  
+   c. Click "Drivers" under the "Connect to your application" heading  
+   d. Under "1. Select your driver and version", select "Python" for the Driver 
+      and "3.6 or later" for the version (this will ensure it will work on
+      your virtual machine which will have Python 3.10 installed)
+   e. Ignore section 2
+   f. Copy the string that is shown under "3. Add your connection string into 
+   your application code" section.  Make sure the slider "view full code
+   sample" is slid to the left (off).  
    f. Save this string for use in class and projects.  
 
 Cool, you're done setting up the database! Now, when you're using this in your 
@@ -75,9 +74,11 @@ connect("mongodb+srv://<username>:<password>@bme547-nlfrn.mongodb.net/<dbname>?r
 ```
 The string in the `connect` command above is the one you copied in step 20e 
 above, except `<username>` should have already been replaced by the username 
-you created in step 11 above.  You will manually need to replace `<password>` 
+you created in step 9 above.  You will manually need to replace `<password>` 
 with the password you created in step 11c above.  `<dbname>` can be replaced
-by any name of your choosing.
+by any name of your choosing.  (Note, the connect string you copy from the
+MongoDB website will not have `<dbname>` in it.  It will show the `/` and `?`
+adjacent.  You need to add something in that space.)
 
 Finally, you will need to add one more package to your `requirements.txt` file:
 `dnspython` in order to access the database with the string above.
@@ -90,7 +91,6 @@ MongoDB website.  Select "Databases" from the left-hand side and click on
 at the top, depending on your current screen.  You will then see a list of
 the `dbnames` that you created in your connect strings, and within each
 database, you will see any MongoModel `class` you created in your code.  
-
 
 
 ### Adding another a database user.    

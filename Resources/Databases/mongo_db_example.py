@@ -5,7 +5,25 @@ from pymodm import connect, MongoModel, fields
 
 
 def init_mongo_db():
-    connect("mongodb+srv://<username>:<password>@<yourclustername>-nlfrn.mongodb.net/test?retryWrites=true")
+    connect("mongodb+srv://<username>:<password>@<yourclustername>-nlfrn.mongodb.net/<dbname>?retryWrites=true")
+    """
+    The connect string above should be replaced by the one provided for you
+    by MongoDb.  Make sure that the <username>, <password>, <yourclustername>,
+    and <dbname> have all been replaced by the appropriate entries.
+    Note that the connect string provided by MongoDB may not have a placeholder
+    for the <dbname> in which case you will need to add the database name
+    yourself.
+    
+    When running this program, if you get an error such as 
+    "ServerSelectionTimeoutError" or "SSL:CERTIFICATE_VERIFY_ERROR], you will
+    need to add the following import to the top of the code:
+    
+    import ssl
+    
+    And, modify the "connect" command as follows:
+    
+    connect(<your connect string>, ssl_cert_reqs=ssl.CERT_NONE)
+    """
 
 
 class User(MongoModel):
