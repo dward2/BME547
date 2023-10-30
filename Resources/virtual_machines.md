@@ -25,9 +25,9 @@ only using the VM to deploy the server.  So, access to the command line and
 a terminal editor for simple code changes are all that is really needed.
 However, if you want the ability to use an IDE, Windows is an option.
 
-Duke OIT allocates each student access to one virtual machine.  In a new system
-started this year, I am also able to setup a certain number of
-VM reservations specific to this course which do not count against your 
+Duke OIT allocates each student access to one virtual machine.  I have also
+requested Linux virtual machine reservations to be available for each student 
+in this course that will not count against your 
 regular student allocation of one virtual machine.  But, I do not know if this
 course-specific machine will be able to be kept after the end of the semester.
 
@@ -44,10 +44,11 @@ using your NetID.
 * Click on "Reserve a VM".
 * Select the type of VM you would like.
   + Look under the "Everything" heading and select the "All" tab.
-  + To select the course-specific Linux option, click on 
-    "BME 547 - 01: Medical Software Design (Lecture)".
+  + To select the course-specific Linux option, look for an entry similar to  
+    "BME 547 - 01: Medical Software Design (Lecture)" and may also include the
+    semester (e.g., F2023).  Click on that option.
   + To select the Linux option from your personal allocation, click on 
-    "Ubuntu Server 20.04".
+    "Ubuntu Server 22.04".
   + To select the Windows option from your personal allocation, click on 
     "Windows 10".
 * A window may open up with the heading "No SSH Key Found" and gives some 
@@ -152,8 +153,8 @@ Review the information from the
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
 virtual machine, you can follow the information given for macOS users.
 
-### For the course-specific Linux VMs, as of March 2023
-* The default installation has `python3` (version 3.10.6) installed.  So, you 
+### For the course-specific Linux VMs, as of October 2023
+* The default installation has `python3` (version 3.10.9) installed.  So, you 
   will need to enter `python3` and `pip3` to access version 3.  Or, you can 
   add the following aliases to your `.bashrc` (or `.bash_aliases` if
   it exists) file:
@@ -162,8 +163,9 @@ virtual machine, you can follow the information given for macOS users.
   alias pip='pip3'
   alias python='python3'
   ```
-* The `pip` program is not installed as part of this Python installation.  If
-  you are unable to run pip, you can install it as follows:
+* The `pip` program may or may not be installed as part of this Python 
+  installation.  Run it as `pip3` unless you crate an alias.  If you are 
+  unable to run pip, you can install it as follows:
   ```bash
     sudo apt install python3-pip
   ```

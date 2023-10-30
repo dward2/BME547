@@ -195,7 +195,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Mon Oct 30</td>
     <td>
         <li>More Server Design</li>
-        <li>Server Debugging</li> 
+        <li>Server Debugging</li>
+        <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
 </td>    
     <td></td>
 </tr>
@@ -203,7 +204,6 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Nov 1</td>
     <td>
-        <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
         <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
         <li><a href="Lectures/databases.md#mongodb">Intro to MongoDB/PyMODM</a></li>      
