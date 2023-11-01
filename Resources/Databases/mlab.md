@@ -17,7 +17,8 @@ your experience varies from below, modify as needed.
 mongoDB.  Click on "Try Free".
 2. Enter your e-mail, first and last names, and select a password.  Agree to 
    the terms and conditions by selecting the check box.  Then, click "Join
-   now with no obligation".
+   now with no obligation".  Note:  Instead of  "Join now with no obligation",
+   this button may be named "Submit" or "Get started free". 
 3. You will then receive an email from MongoDB to verify your e-mail.  Click
    "Verify Email" in that email.
 4. Click "Continue" on the webpage that opens.
@@ -43,17 +44,18 @@ mongoDB.  Click on "Try Free".
     3. Select a password.  Copy this password down somewhere safe as you will
          not see it again
     4. Click "Create User"
-15. Under "Where would you like to connect from?"
+10. Under "Where would you like to connect from?"
     1. Choose "My Local Environment"
-16. Click on "Finish and Close" to finish on the "Security Quickstart" page.
-17. Click on "Go to Database" on the pop-up window.
-18. After some period of time, your cluster will be ready.
-19. Add IP addresses allowed to access the database on the "IP Whitelist".  
+11. Click on "Finish and Close" to finish on the "Security Quickstart" page.
+12. Click on "Go to Database" on the pop-up window.  Note: the button might be
+    labelled "Go to Overview" instead.
+13. After some period of time, your cluster will be ready.
+14. Add IP addresses allowed to access the database on the "IP Whitelist".  
    a. Click on "Network Access" in the left-hand list.  
    b. Make sure the "IP Access List" tab is selected.  Click on "Add IP Address".  
    c. Click on "Allow Access From Anywhere" in the window that pops up.  Click 
     "Confirm".
-20. Get connection information to your database.  
+15. Get connection information to your database.  
    a. Click on "Database" in the left-hand list.  
    b. Click on the "Connect" button.   
    c. Click "Drivers" under the "Connect to your application" heading  
