@@ -58,11 +58,12 @@ mongoDB.  Click on "Try Free".
 15. Get connection information to your database.  
    a. Click on "Database" in the left-hand list.  
    b. Click on the "Connect" button.   
-   c. Click "Drivers" under the "Connect to your application" heading  
+   c. Click "Drivers" under the "Connect to your application" heading.  
    d. Under "1. Select your driver and version", select "Python" for the Driver 
-      and "3.6 or later" for the version (this will ensure it will work on
-      your virtual machine which will have Python 3.10 installed)
-   e. Ignore section 2
+      and "3.11 or later" for the version.
+   e. Ignore section 2.  (The correct version of `pymongo` will be installed by
+      `pymodm`.  NOTE:  The `pymongo` version that is installed by `pymodm`
+      should be at least 3.11.0.  If it isn't, upgrade it manually.)
    f. Copy the string that is shown under "3. Add your connection string into 
    your application code" section.  Make sure the slider "view full code
    sample" is slid to the left (off).  
