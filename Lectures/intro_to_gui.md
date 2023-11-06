@@ -60,3 +60,4 @@ functionality, licensing considerations, easy of use, and personal preferences.
 In class, we will be discussing the use of the `tkinter` package as it is
 relatively easy to use and is part of the Python install.
 
+Details about using `tkinter` can be found at [tkinter_details.md](tkinter_details.md)

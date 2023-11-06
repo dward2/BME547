@@ -1,6 +1,11 @@
 # Tkinter
 
+## Contents
+* <a href="#here">Using `tkinter` package</a>
+
 ## Using `tkinter` package
+<p id="here">
+
 ### Importing `tkinter` into your code
 ```
 import tkinter as tk        # Standard binding to Tk (tk-inter(face))
@@ -234,7 +239,7 @@ widgets are listed in the Widgets of Interest section below.
 
 
 ### Widgets
-**Window**  
+#### Window  
   + ![Window](lecture_files/widget_images/window_widget.JPG)
 + `tk.Tk()`  
   `tk.toplevel()`
@@ -264,7 +269,7 @@ widgets are listed in the Widgets of Interest section below.
     and maximum size of the window.
   + `.title(string)` sets the title of the window as found in the window bar.
 
-**Frame**   
+#### Frame   
   * ![Frame](lecture_files/widget_images/frame_widget.JPG)  
   * `frame = ttk.Frame(parent, **options)`
   * Can be used to organize a GUI.  Creates a rectangular container inside 
@@ -276,7 +281,7 @@ widgets are listed in the Widgets of Interest section below.
       `width`
     * `ttk`: `borderwidth`, `height`, `padding`, `relief`, `width`
 
-**Label**
+#### Label
   + `label = ttk.Label(parent, **options)`
   + Creates a label for display of text or image
   + Options most used:
@@ -291,7 +296,7 @@ widgets are listed in the Widgets of Interest section below.
       `image`, `justify`, `padding`, `relief`, `text`, `textvariable`,
       `width`, `wraplength`
 
-**Button**
+#### Button
   + `button = ttk.Button(parent, **options)`
   + Creates a clickable button
   + Options most used:
@@ -307,7 +312,7 @@ widgets are listed in the Widgets of Interest section below.
       `text`, `textvariable`, `width`, `wraplength`
     + `ttk`: `command`, `image`, `text`, `textvariable`, `width`
 
-**Checkbutton**
+#### Checkbutton
   + `checkbutton = ttk.Checkbutton(parent, **options)` 
   + Creates a check box in which the user can either select (on) or deselect
     (off) the box
@@ -329,7 +334,7 @@ widgets are listed in the Widgets of Interest section below.
     + `ttk`: `command`, `image`, `offvalue`, `onvalue`, `text`, `variable`,
       `width`
 
-**Radiobutton**
+#### Radiobutton
   + `radio_button = ttk.Radiobutton(parent, **options)`
   + Create one or more radiobuttons to allow the user to make a choice from
     among one or more alternatives.
@@ -349,7 +354,7 @@ widgets are listed in the Widgets of Interest section below.
       `text`, `value`, `variable`, `width`, `wraplength`
     + `ttk`: `command`, `text`, `value`, `variable`, `width`
 
-**Entry**
+#### Entry
   + `entry = ttk.Entry(parent, **options)`
   + Provides a text entry box to receive user input from the keyboard
   + Options most used:
@@ -364,7 +369,7 @@ widgets are listed in the Widgets of Interest section below.
       `relief`, `show`, `state`, `textvariable`, `width`
     + `ttk`: `font`, `justify`, `show`, `textvariable`, `width`
 
-**Combobox**
+#### Combobox
   + `combo_box = ttk.Combobox(parent, **options)`
   + Creates a combination of entry box and drop-down menu to allow for the
     user to make an input based on pre-defined options or their own entry
