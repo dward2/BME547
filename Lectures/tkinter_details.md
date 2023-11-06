@@ -1,10 +1,9 @@
 # Tkinter
 
 ## Contents
-* <a href="#here">Using `tkinter` package</a>
+* <a href="#widget-reference">Using `tkinter` package</a>
 
 ## Using `tkinter` package
-<p id="here">
 
 ### Importing `tkinter` into your code
 ```
