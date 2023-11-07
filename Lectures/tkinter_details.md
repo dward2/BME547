@@ -12,16 +12,27 @@
 * <a href="#widget-reference">Widget Reference</a>
   * <a href="#general">General</a>
   * <a href="#tk-vs-ttk-widgets">`tk` vs `ttk` Widgets</a>
-  * <a href="#options-common-to-many-widgets">Options common to many widgets</a>
+  * <a href="#options-common-to-many-widgets">Options Common to Many Widgets</a>
+  * <a href="#methods-commmon-to-many-widgets">Methods Common to Many Widgets</a>
   * <a href="#common-widgets">Common Widgets</a>
     * <a href="#window">Window</a>
     * <a href="#frame">Frame</a>
+    * <a href="#labelframe">LabelFrame</a>
     * <a href="#label">Label</a>
     * <a href="#button">Button</a>
     * <a href="#checkbutton">Checkbutton</a>
     * <a href="#radiobutton">Radiobutton</a>
     * <a href="#entry">Entry</a>
     * <a href="#combobox">Combobox</a>
+  * <a href="#changing-attributes-of-widgets">Changing Widget Options</a>
+  * <a href="#getting-current-value-of-widget-options">Getting Current Value of Widget Options</a>
+  * <a href="#activate--deactivate-widget-with-state">Activate / Deactivate Widget with State</a>
+  * <a href="#widget-variables">Widget Variables</a>
+  * <a href="#adding-images-to-interface">Adding Images to Interface</a>
+* <a href="#grid-manager">Grid Manager</a>
+  * <a href="#named-parameters-for-.grid-method">Named Parameters for `.grid()` Method</a>
+* <a href="#gui-creation-walkthrough">GUI Creation Walkthrough</a>
+* <a href="#references">References</a>
 
 ## Using `tkinter` package
 
@@ -81,16 +92,16 @@ always done as the first parameter in the call to create a widget.
 
 For example:
 ```
-root = tk.Tk()               # Defines the top, or root, window, so doesn't have a parent
-content = ttk.Frame(root)    # The content Frame is placed in the root window
-ok_btn= ttk.Button(content)  # The ok_btn button is placed in the content Frame
+root = tk.Tk()                # Defines the top, or root, window, so doesn't have a parent
+content = ttk.Frame(root)     # The content Frame is placed in the root window
+ok_btn = ttk.Button(content)  # The ok_btn button is placed in the content Frame
 ```
   
 Details about the widgets, such as its text, size, actions are configured when 
 the widget is first created by setting options via named parameters after the
 parent parameter.  Example:
 ```
-button = ttk.Button(root, text="Hello", command="buttonpressed", width=50)
+button = ttk.Button(root, text="Hello", command=buttonpressed, width=50)
 ```
 These configurations can be accessed and modified, as will be discussed below.
 
@@ -113,7 +124,8 @@ ok_btn.grid(column=0, row=0)
 The `.grid(column=0, row=0)` method call tells the widget to place itself on 
 the grid manager of the parent widget into the first column and the first row.
 
-More information on the grid manager is shared below.
+More information on the grid manager is shared below at 
+<a href="#grid-manager">Grid Manager</a>.
 
 ### Activating GUI / Starting Root Window
 Once the window is fully defined with all of its widgets, the GUI can be
@@ -145,13 +157,13 @@ The options are set by using named parameters when defining the instance
 of the widget or by the `.configure()` method after the widget is defined.
 
 "Methods" are the methods or functions that the widget can perform.  These are
-usually used to change or obtain information about the widget.
+usually used to obtain or change information about the widget.
 
 ### `tk` vs `ttk` Widgets
 Tkinter comes with two different types of widgets, what I will call `tk` and 
 `ttk` widgets.  The `tk` widgets are the standard widgets that were initially
 developed for Tk.  As operating systems changed, and a more modern user 
-interface was developed, the `tk` widgets no longer match the look and feel of
+interface was developed, the `tk` widgets no longer matched the look and feel of
 the new operating systems.  So, the `ttk` widgets were designed to provide a
 better match with the native look and feel of the underlying operating system.
 
@@ -164,11 +176,13 @@ to do.
 Both provide very similar functionality, although `ttk` offers some additional
 widgets that `tk` does not.
 
-### Options common to many widgets
+### Options Common to Many Widgets
 
 Here are definitions of the many options available for the widgets.  Not all
 options are available for all widgets.  The available options for specific
-widgets are listed in the Widgets of Interest section below.
+widgets are listed in the Widgets of Interest section below.  You can also 
+get a list of available options for a widget as follows:
+`widget_variable.configure().keys()`
 
 * `background`
   * Specifies the background color of the widget.
@@ -255,6 +269,21 @@ widgets are listed in the Widgets of Interest section below.
     line. 
   * Value is an integer.  Default is 0, meaning no limit or one line of text.
 
+### Methods Common to Many Widgets
+* `.cget(<option>)`
+  * Returns the value for the specified `<option>`
+  * Example:  `text_in_label = label.cget("text")`
+* `.configure()`
+  * When used without a parameter, returns a dictionary with all of the 
+    configuration options for the widget as the keys.  The values of the
+    dictionary provide information about their current values.
+* `.configure(**options)`
+  * Sets one or more options for a widget
+  * Example:  `label.configure(text="Warning", foreground="red")`
+* `.destroy()`
+  * Removes widget and all of its children from GUI
+* `.grid()`
+  * See section on Grid Manager
 
 
 ### Common Widgets
@@ -547,35 +576,41 @@ widgets are listed in the Widgets of Interest section below.
   + Options:
     + `ttk`: `height`, `justify`, `postcommand`, `state`, `textvariable`, 
       `values`, `width`
-  + Common Methods:
+  + Common Methods Specific to Combobox:
     + `.get()` returns the current value in the Combobox
     + `.set(value)` sets the current text in the widget to `value`
     + `.bind('<<ComboboxSelected>>', function)` will call `function` 
        whenever the value of the combobox changes.
-    + `.state('readonly')` disbles the users ability to enter a new value
+    + `.state('readonly')` disables the users ability to enter a new value
       as text into the combobox and forces them to select from the predefined
       values
     + `.current()` method determines which item in predefined values list is 
       selected.  Returns -1 if the current combobox entry does not match one
       of the pre-defined values.
     + `.current([i])` selects the `i`th item in the pre-defined values list.
+  + Example Code:
+    ```python
+    ttk.Label(root, text="County:").grid(column=0, row=0)
+    county_variable = tk.StringVar()
+    combobox = ttk.Combobox(root, textvariable=county_variable,
+                            values=("Durham", "Orange", "Wake"),
+                            state=["readonly"])
+    combobox.grid(column=1, row=0)
+    ```
 
 
-### Changing Attributes of Widgets
+### Changing Widget Options
 
-In the examples above, attributes of widgets are set in two different ways:
-1. By named parameter when the widget is first created.  Here, the `text`
-   attribute is set by named parameter in the `Label` creator call:   
-   `label = ttk.Label(root, text="This is a label.")`
-2. By indexing of the widget variable using the attribute name.  Here, the 
+After a widget is created, there two ways in which the widget options can be
+changed:
+
+1. Use the `.configure()` method of the widget.   Example:
+  `label.configure(text="This is updated label text.")`
+2. By indexing of the widget variable using the option name.  Here, the 
    `text` attribute is changed:  
    `label["text"] = "This is the updated text for the label."`
 
-There is a third way of changing the value of the attribute, and that is to use
-the `.configure()` method of the widget and use a named parameter.  Example:
-3.  `label.configure(text="Another way to change label text")`
-
-### Getting Current Attribute
+### Getting Current Value of Widget Options
 There are two methods for obtaining the current value of an attribute.
 1. Use the `.cget()` attribute that takes a string containing the name of the
    attribute to query.  Example:  
@@ -594,10 +629,124 @@ To reactivate the widget, use the `tk.NORMAL` state:
 
 `widget_name.configure(state=tk.NORMAL)`
 
+### Widget Variables
+Many widgets can have information about what it contains connected to a
+"control" or "widget" variable.  These are special variables defined by 
+`tkinter` for linking a Python variable to a widget's value.
+
+Just like there are different types of python variables, there are different
+types of these `tkinter` widget variables.  They include:
+* `tk.StringVar()` for storing strings
+* `tk.IntVar()` for storing integers
+* `tk.BooleanVar()` for storing booleans
+
+These variables are generally connected to a widget by using the widget's
+option `variable` or `textvariable` depending on the widget.  
+
+These `tkinter` widget variables do not act exactly like standard `string`, 
+`int`, or `bool` variables, but are defined classes.  And, their values are
+accessed by the `.get()` method and are changed by the `.set()` method.
+
+Examples:
+```python
+    entry_text = tk.StringVar()
+    entry_widget = ttk.Entry(root, textvariable=entry_text)
+    entry_widget.grid(column=0, row=0)
+
+    # To set an initial entry, use the `.set()` method of the entry_text
+    entry_text.set("Enter your text here")
+    
+    # In later code, to get the text in the Entry widget
+    entered_text = entry_text.get()
+```
+You can see other examples in the Example Code found with the description of
+these widgets:  <a href="#checkbutton">Checkbutton</a>, 
+<a href="#radiobutton">Radiobutton</a>, <a href="#entry">Entry</a>, and
+<a href="#combobox">Combobox</a>
+
     
 ### Adding Images to Interface
 See [tkinter_images.md](../Resources/tkinter_images.md) in the Resources folder
 for information on adding images to your interface.
+
+## Grid Manager 
+The grid geometry manager provides a versatile way of placing widgets into 
+another widget with a variety of control.  To place a widget into a grid, use
+the `.grid()` method of the widget.
+
+Using the grid manager is is most easily explained by way of example.
+```python
+root = tk.Tk()
+labal_jan = ttk.Label(root, text="January")
+label_feb = ttk.Label(root, text="February")
+label_long = ttk.Label(root, text="A really long label")
+label_mar = ttk.Label(root, text="March")
+label_apr = ttk.Label(root, text="April\nA Rainy Month")
+label_may = ttk.Label(root, text="May")
+
+label_jan.grid(column=0, row=0)
+label_feb.grid(column=1, row=0)
+label_long.grid(column=2, row=0)
+label_mar.grid(column=0, row=1)
+label_apr.grid(column=1, row=1)
+label_may.grid(column=2, row=1)
+```
+![tk_example01.jpg](lecture_files/tk_example01.JPG)
+
+The code above first creates a root window.  Then,a series Label widgets are 
+created as children of the root window.  They are 
+created with the `ttk.Label` command, but are not yet displayed in the GUI.
+
+To display them, they must be added to the "grid" using the `.grid()` method
+of the widget.  This method
+tells the grid manager how to add the widget to the "grid" layout of the parent,
+which is the `root` window in this case.  The "grid" layout has columns and
+rows, where the first column and row has an index of 0 (zero).  When the
+window is drawn, the needed amount of space is created for each column and row,
+as you can see in the example window.  
+
+The default is that the widget will be centered in its grid space (see how
+"A really long label" and "May" sit in column 2).  But, this
+can be modified with the `sticky` named parameter.  Using the compass points of N,
+S, E, and W, you can tell the grid manager to re-align the widget within its
+grid space.  The sticky named parameter can receive a value as a string with the
+compass direction (`"NE"`) or it could receive a predefined constant from the
+`tkinter` library (`tk.NE`).  For example, May is centered both horizontally and vertically.
+It can be moved to the upper right of its grid space with either of the following
+modifications:
+```python
+label_may.grid(column=2, row=1, sticky="NE")
+label_may.grid(column=2, row=1, sticky=tk.NE)
+```
+![tk_example02.jpg](lecture_files/tk_example02.JPG)
+
+### Named Parameters for `.grid()` Method
++ `column` and `row`
+  + The column and row number where you want to place the widget.  Numbering
+    for both start at zero.
++ `columnspan` and `rowspan`
+  + By default, a widget is placed into a single grid space and the column and
+    row size are set to completely contain the widget in that space.  If a
+    widget should span over multiple grid spaces, these parameters specify how
+    many columns or rows should be covered by the widget.
+  + Example:   
+    ```python
+      label.grid(column=4, row=2, columnspan=3)
+    ```  
+    will place the widget on row 2 and across columns 4, 5, and 6.
++ `padx`, `pady`
+  + Specifies how many pixels should exist between the edge of the widget and
+    the border of the cell.  `padx` puts space on the left and right side of
+    the widget while `pady` puts space above and below the widget.
++ `sticky`
+  + Specifies where the widget should sit inside the gird space.  The default,
+    if not specified, is centered.  `sticky` takes either a string containing
+    cardinal directions (ex., "N", "SW") or a predefined `tkinter` constant
+    (tk.N, tk.SW).
+
+## GUI Creation Walkthrough
+An example of creating a GUI in tkinter can be found at 
+[tkinter_walkthrough.md](tkinter_walkthrough.md).
 
 ## References
 <https://tkdocs.com/tutorial/>  -  An excellent tutorial for using Tk.  You can
@@ -624,106 +773,3 @@ documentation for PyQt5
 
 <https://pythonspot.com/pyqt5/> - another tutorial for using PyQt5
 
-
-
-Later, if you need to see what the configuration values are, you can then see 
-the values of the configurations as follows:
-```
->>> button['text']
-'Hello'
-```
-We can change the value of certain configurations as follows:
-```
->>> button['text'] = 'goodbye'
-# Or another way is
->>> button.configure(text='goodbye')
->>> button['text']
-'goodbye'
-```
-Note, this does not work for every configuration item.
-
-We can get more information about a particular configuration as follows:
-```
->>> button.configure('text')
-('text', 'text', 'Text', '', 'goodbye')
-```
-Or, a list of all of the configuration options:
-```
->>> button.configure()
-{'command': ('command', 'command', 'Command', '', 'buttonpressed'),
- 'default': ('default', 'default', 'Default', <index object: 'normal'>, <index object: 'normal'>),
- 'takefocus': ('takefocus', 'takeFocus', 'TakeFocus', 'ttk::takefocus', 'ttk::takefocus'),
- 'text': ('text', 'text', 'Text', '', 'goodbye'),
- 'textvariable': ('textvariable', 'textVariable', 'Variable', '', ''),
- 'underline': ('underline', 'underline', 'Underline', -1, -1),
- 'width': ('width', 'width', 'Width', '', ''),
- 'image': ('image', 'image', 'Image', '', ''),
- 'compound': ('compound', 'compound', 'Compound', <index object: 'none'>, <index object: 'none'>),
- 'padding': ('padding', 'padding', 'Pad', '', ''),
- 'state': ('state', 'state', 'State', <index object: 'normal'>, <index object: 'normal'>),
- 'cursor': ('cursor', 'cursor', 'Cursor', '', ''),
- 'style': ('style', 'style', 'Style', '', ''),
- 'class': ('class', '', '', '', '')}
-```
-
-### Grid 
-The `grid` command is the most versatile geometry management function.  It is 
-most easily explained by way of example.
-```
-root = tk.Tk()
-mainframe = ttk.Frame(root).grid(column=0, row=0)
-ttk.Label(mainframe, text="Janauary").grid(column=0, row=0)
-ttk.Label(mainframe, text="February").grid(column=1, row=0)
-ttk.Label(mainframe, text="A really long label").grid(column=2, row=0)
-ttk.Label(mainframe, text="March").grid(column=0, row=1)
-ttk.Label(mainframe, text="April\nA Rainy Month").grid(column=1, row=1)
-ttk.Label(mainframe, text="May").grid(column=2, row=1)
-```
-![tk_example01.jpg](lecture_files/tk_example01.JPG)
-
-The code above first creates a root window, and then adds a Frame widget, 
-called `mainframe` to the window.  (We'll come back to that command in a 
-minute).  Then,a series Label widgets are added to this Frame.  They are 
-created with the `ttk.Label` command and are sent two parameters:  the parent, 
-which is the `mainframe` Frame, and the text to be displayed as the label.
-
-Then, the `.gird()` function is added to the Label declaration.  This function
-tells the interface how to add the widget to the "grid" layout of the parent,
-which is the `mainframe` Frame in this case.  The "grid" layout has columns and
-rows, where the first column and row has an index of 0 (zero).  When the
-window is drawn, the needed amount of space is created for each column and row,
-as you can see in the example window.  
-
-The default is that the widget will be centered in its grid space.  But, this
-can be modified with the `sticky` parameter.  Using the compass points of N,
-S, E, and W, you can tell the interface to re-align the widget within its
-grid space.  For example, May is centered both horizontally and vertically.
-It can be moved to the upper right of its grid space with the following
-modification:
-```
-ttk.Label(mainframe, text="May").grid(column=2, row=1, sticky="NE")
-```
-![tk_example02.jpg](lecture_files/tk_example02.JPG)
-
-Additional parameters are available 
-to further modify the appearance, and will be discussed below or can be
-found in the documentation.
-
-We have been discussing how the Labels were added to the grid layout of the
-Frame.  When the Frame was added to the root window, we also needed to assign
-where the Frame was going to be in the root window.  So, the Frame declaration
-also has a `.grid(column=0, row=0)` function.  Note, if the widget is not 
-added to the grid, it is not shown in the window.
-
-The `.grid()` function can be used separately from the definition of the 
-widget if the widget is saved in a variable.  Example:
-```
-may_label = ttk.Label(mainframe, text="May")
-may_label.grid(column=2, row=1, sticky="NE")
-```
-
-# ToDo
-Add info on Widget Variables
-Add info on linking functions with command
-Make a ToC at the top of the page
-Add methods common to all widgets
