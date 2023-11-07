@@ -2,6 +2,26 @@
 
 ## Contents
 * <a href="#widget-reference">Using `tkinter` package</a>
+  * <a href="#importing-tkinter-into-your-code">Importing `tkinter` into your code</a>
+  * <a href="#widgets">Widgets</a>
+  * <a href="#geometry-managers">Geometry Managers</a>
+  * <a href="#root-window">Root Window</a>
+  * <a href="#adding-a-widget">Adding A Widget</a>
+  * <a href="#placingdisplaying-widget-in-parent">Placing/Displaying a Widget in Parent</a>
+  * <a href="#activating-gui--starting-root-window">Activating GUI / Starting Root Window</a>
+* <a href="#widget-reference">Widget Reference</a>
+  * <a href="#general">General</a>
+  * <a href="#tk-vs-ttk-widgets">`tk` vs `ttk` Widgets</a>
+  * <a href="#options-common-to-many-widgets">Options common to many widgets</a>
+  * <a href="#common-widgets">Common Widgets</a>
+    * <a href="#window">Window</a>
+    * <a href="#frame">Frame</a>
+    * <a href="#label">Label</a>
+    * <a href="#button">Button</a>
+    * <a href="#checkbutton">Checkbutton</a>
+    * <a href="#radiobutton">Radiobutton</a>
+    * <a href="#entry">Entry</a>
+    * <a href="#combobox">Combobox</a>
 
 ## Using `tkinter` package
 
@@ -54,10 +74,10 @@ root = tk.Tk()  # Defines the top (root) window.
 ```
 To this root window, we now add widgets.
 
-### Creating a Widget
-When creating a child widget, you must always specify the parent widget into 
-which to place the child.  This specification of the parent widget is always 
-done as the first parameter in the call to create a widget.
+### Adding a Widget
+When adding a widget to your GUI, you must always specify the parent widget 
+into which to place the child.  This specification of the parent widget is 
+always done as the first parameter in the call to create a widget.
 
 For example:
 ```
@@ -237,9 +257,9 @@ widgets are listed in the Widgets of Interest section below.
 
 
 
-### Widgets
+### Common Widgets
 #### Window  
-  + ![Window](lecture_files/widget_images/window_widget.JPG)
+![Window](lecture_files/widget_images/window_widget.JPG)
 + `tk.Tk()`  
   `tk.toplevel()`
 + Creates a window.  Use `tk.Tk()` to define the base/root window and use 
@@ -248,29 +268,46 @@ widgets are listed in the Widgets of Interest section below.
   + `background` sets the window background color
 + Options:
   + `background`, `borderwidth`, `height`, `padx`, `pady`, `relief`, `width`
-+ Common Methods:
-  + `.geometry()` returns a string containing the current size and location of
-    the window.  The string will be formatted as `"WxH+X+Y"`.  `W` and `H` are the
-    width and height of the window, in pixels, and are separated by the `x` 
-    character.  `X` is the distance, in pixels, between the top of the screen
-    and the top of the window. `Y` is the distance, in pixels, between the
-    left side of the screen and the left side of the window.  Both `X` and `Y`
-    are generally preceded by the `+` character.  If one of the `+` is replaced
-    by a `-`, then the following distance is related to the opposite side of
-    the screen.  So `"WxH-X-Y"` means that `X` is now the distance between the
-    right side of the screen the the right side of the window, and `Y` is the
-    difference between the bottom of the screen and the bottom of the window.
-  + `.geometry("WxH+X+Y")` sets the initial geometry of the window.  The
-    definition of the input string is the same as described above.  To set the
-    size only, the string can contain only `"WxH"`.  To specify the location
-    only, the string can contain only `"+X+Y"`.
-  + `.minsize(width, height)` and `.maxsize(width, height)` set the minimum
-    and maximum size of the window.
-  + `.title(string)` sets the title of the window as found in the window bar.
++ Common Methods Specific to Window:
+  + `.geometry()` 
+    + returns a string containing the current size and location of
+      the window.  The string will be formatted as `"WxH+X+Y"`.  `W` and `H` are the
+      width and height of the window, in pixels, and are separated by the `x` 
+      character.  `X` is the distance, in pixels, between the top of the screen
+      and the top of the window. `Y` is the distance, in pixels, between the
+      left side of the screen and the left side of the window.  Both `X` and `Y`
+      are generally preceded by the `+` character.  If one of the `+` is replaced
+      by a `-`, then the following distance is related to the opposite side of
+      the screen.  So `"WxH-X-Y"` means that `X` is now the distance between the
+      right side of the screen the the right side of the window, and `Y` is the
+      difference between the bottom of the screen and the bottom of the window.
+  + `.geometry("WxH+X+Y")` 
+    + sets the initial geometry of the window.  The
+      definition of the input string is the same as described above.  To set the
+      size only, the string can contain only `"WxH"`.  To specify the location
+      only, the string can contain only `"+X+Y"`.
+  + `.mainloop()` 
+    + only applies to `tk.Tk()` 
+    + displays the GUI and starts the
+      background loop waiting for any GUI user events.
+  + `.minsize(width, height)`
+    + sets the minimum size of the window.
+  + `.maxsize(width, height)` 
+    + sets the maximum size of the window.
+  + `.title(string)` 
+    + sets the title of the window as found in the window bar.
++ Example Code:
+  ```python
+  root = tk.Tk()
+  root.title("Root Window")
+  root.geometry("400x100")
+  root.mainloop()
+  ```
 
 #### Frame   
-  * ![Frame](lecture_files/widget_images/frame_widget.JPG)  
-  * `frame = ttk.Frame(parent, **options)`
+![Frame](lecture_files/widget_images/frame_tk_widget.JPG)  ![Frame](lecture_files/widget_images/frame_widget.JPG)
+  * `tk.Frame(parent, **options)`
+  * `ttk.Frame(parent, **options)`
   * Can be used to organize a GUI.  Creates a rectangular container inside 
     the parent widget.  The frame then has its own grid manager in which to 
     arrange its own child widgets while the frame is managed by its parents
@@ -279,9 +316,42 @@ widgets are listed in the Widgets of Interest section below.
     * `tk`: `background`, `borderwidth`, `height`, `padx`, `pady`, `relief`,
       `width`
     * `ttk`: `borderwidth`, `height`, `padding`, `relief`, `width`
+  * Example code:
+    ```python
+    frame = ttk.Frame(root, borderwidth=10, relief=tk.GROOVE)
+    frame.grid(column=1, row=0)
+    label1 = ttk.Label(frame, text="Inside of Frame", width=8, wraplength=50,
+                       justify=tk.CENTER)
+    label1.grid(column=0, row=0)
+    label2 = ttk.Label(frame, text="Put more widgets here")
+    label2.grid(column=0, row=1)
+    ```
+
+#### LabelFrame   
+![LabelFrame](lecture_files/widget_images/labelframe_tk_widget.JPG)
+![LabelFrame](lecture_files/widget_images/labelframe_widget.JPG)
+  * `tk.LabelFrame(parent, **options)`
+  * `ttk.LabelFrame(parent, **options)`
+  * Same as `Frame` but includes text as part of the frame border
+  * Options:
+    * `tk`: `background`, `borderwidth`, `foreground`, `height`, `padx`, `pady`, 
+      `relief`, `text`, `width`
+    * `ttk`: `borderwidth`, `height`, `padding`, `relief`, `text`, `width`
+  * Example code:
+    ```python
+    frame = ttk.LabelFrame(root, text="My Frame", borderwidth=10, relief=tk.GROOVE)
+    frame.grid(column=1, row=0)
+    label1 = ttk.Label(frame, text="Inside of Frame", width=8, wraplength=50,
+                       justify=tk.CENTER)
+    label1.grid(column=0, row=0)
+    label2 = ttk.Label(frame, text="Put more widgets here")
+    label2.grid(column=0, row=1)
+    ```
 
 #### Label
-  + `label = ttk.Label(parent, **options)`
+![Label](lecture_files/widget_images/label_widget.JPG)
+  + `tk.Label(parent, **options)`
+  + `ttk.Label(parent, **options)`
   + Creates a label for display of text or image
   + Options most used:
     + `text` takes a string containing the text to show in the label
@@ -294,9 +364,18 @@ widgets are listed in the Widgets of Interest section below.
     + `ttk`: `anchor`, `background`, `borderwidth`, `font`, `foreground`,
       `image`, `justify`, `padding`, `relief`, `text`, `textvariable`,
       `width`, `wraplength`
+  + Example Code:
+    ```python
+    label_1 = ttk.Label(root, text="Label One", foreground="blue")
+    label_1.grid(column=0, row=0)
+    label_2 = ttk.Label(root, text="Label Two", font=("Times", 18))
+    label_2.grid(column=0, row=1)
+    ```
 
 #### Button
-  + `button = ttk.Button(parent, **options)`
+![Button](lecture_files/widget_images/button_widget.JPG)
+  + `tk.Button(parent, **options)`
+  + `ttk.Button(parent, **options)`
   + Creates a clickable button
   + Options most used:
       + `text` takes a string containing the text to show in the button
@@ -304,17 +383,33 @@ widgets are listed in the Widgets of Interest section below.
         display in the button
       + `command` takes a function name that should be executed when the
         button is clicked
-      + `state` that defines whether the button is active or no
+      + `state` that defines whether the button is active or not
   + Options:
     + `tk`: `anchor`, `background`, `borderwidth`, `command`, `font`, `foreground`,
       `height`, `image`, `justify`, `padx`, `pady`, `relief`, `state`, 
       `text`, `textvariable`, `width`, `wraplength`
-    + `ttk`: `command`, `image`, `text`, `textvariable`, `width`
+    + `ttk`: `command`, `image`, `state`, `text`, `textvariable`, `width`
+  + Common Method Specific to Button
+    + `.invoke()` 
+      + calls the button's `command` function and returns what that function
+        returns.  Does nothing if the button is disabled or there is no
+        function assigned to `command`.
+  + Example Code:
+    ```python
+    button = ttk.Button(root, text="Start", command=start_btn_cmd,
+                          state=tk.DISABLED)
+    button.grid(column=0, row=0)
+    ```
 
 #### Checkbutton
-  + `checkbutton = ttk.Checkbutton(parent, **options)` 
+![Checkbutton](lecture_files/widget_images/checkbutton_tk_widget.JPG)
+![Checkbutton](lecture_files/widget_images/checkbutton_widget.JPG)
+  + `tk.Checkbutton(parent, **options)`
+  + `ttk.Checkbutton(parent, **options)` 
   + Creates a check box in which the user can either select (on) or deselect
-    (off) the box
+    (off) the box.  If the initial value of the widget variable to which the
+    checkbutton is attached is not given an initial value, the checkbutton
+    widget will initially show an unselected state (neither on nor off).
   + Options most used:
     + `text` takes a string containing the text to show next to the checkbutton
     + `variable` takes a Widget Variable that will contain the value that
@@ -330,11 +425,33 @@ widgets are listed in the Widgets of Interest section below.
       `foreground`, `height`, `image`, `justify`, `offvalue`, `onvalue`,
       `padx`, `pady`, `relief`, `state`, `text`, `variable`, `width`,
       `wraplength`
-    + `ttk`: `command`, `image`, `offvalue`, `onvalue`, `text`, `variable`,
-      `width`
+    + `ttk`: `command`, `image`, `offvalue`, `onvalue`, `state`, `text`, 
+      `variable`, `width`
+  + Common Methods Specific to Checkbutton (both `tk` and `ttk` versions)
+    + `.invoke()`
+      + calls any `command` function associated with the checkbutton
+  + Common Methods Specific to Checkbutton (`tk` version ONLY)
+    + `.deselect()`
+      + clears (turns off) the checkbutton
+    + `.select()`
+      + sets (turns on) the checkbutton
+    + `.toggle()`
+      + Toggles the state of the checkbutton (turns on if off or off if on)
+  + Example Code:
+    ```python
+    check_status = tk.StringVar()
+    check_status.set("+")
+    checkbutton = ttk.Checkbutton(root, text="rH positive",
+                                  variable=check_status, onvalue="+",
+                                  offvalue="-", command=check_box_changed)
+    checkbutton.grid(column=0, row=0, padx=10, pady=10)
+    ```
 
 #### Radiobutton
-  + `radio_button = ttk.Radiobutton(parent, **options)`
+![Radiobutton](lecture_files/widget_images/radiobutton_tk_widget.JPG)
+![Radiobutton](lecture_files/widget_images/radiobutton_widget.JPG)
+  + `tk.Radiobutton(parent, **options)`
+  + `ttk.Radiobutton(parent, **options)`
   + Create one or more radiobuttons to allow the user to make a choice from
     among one or more alternatives.
   + When radiobuttons use linked to the same Widget Variable, they represent
@@ -351,10 +468,39 @@ widgets are listed in the Widgets of Interest section below.
     + `tk`: `anchor`, `background`, `borderwidth`, `command`, `font`,
       `foreground`, `height`, `justify`, `padx`, `pady`, `relief`, `state`
       `text`, `value`, `variable`, `width`, `wraplength`
-    + `ttk`: `command`, `text`, `value`, `variable`, `width`
+    + `ttk`: `command`, `state`, `text`, `value`, `variable`, `width`
+ + Common Methods Specific to Radiobutton (both `tk` and `ttk` versions)
+    + `.invoke()`
+      + calls any `command` function associated with the radiobutton
+  + Common Methods Specific to Radiobutton (`tk` version ONLY)
+    + `.deselect()`
+      + Clears (turns off) the radiobutton
+    + `.select()`
+      + Sets (turns on) the radiobutton
+  + Example Code:
+    ```python
+    # Two radiobuttons grouped by the `am_pm` StringVar
+    am_pm = tk.StringVar()
+    am_pm.set("AM")
+    rb_1 = ttk.Radiobutton(root, text="AM", variable=am_pm, value="AM")
+    rb_1.grid(column=0, row=0, padx=10)
+    rb_2 = ttk.Radiobutton(root, text="PM", variable=am_pm, value="PM")
+    rb_2.grid(column=0, row=1, padx=10)
+
+    # Two radiobuttons grouped by the `time_tpe` StringVar
+    time_type = tk.StringVar()
+    time_type.set("am pm")
+    rb_3 = ttk.Radiobutton(root, text="24 hour clock", variable=time_type, value="24 hr")
+    rb_3.grid(column=1, row=0, padx=10)
+    rb_4 = ttk.Radiobutton(root, text="AM/PM clock", variable=time_type, value="am pm")
+    rb_4.grid(column=1, row=1, padx=10)
+    ```
 
 #### Entry
-  + `entry = ttk.Entry(parent, **options)`
+![Entry](lecture_files/widget_images/entry_tk_widget.JPG)
+![Entry](lecture_files/widget_images/entry_widget.JPG)
+  + `tk.Entry(parent, **options)`
+  + `ttk.Entry(parent, **options)`
   + Provides a text entry box to receive user input from the keyboard
   + Options most used:
     + `width` specifies the width of the entry box in number of characters
@@ -366,10 +512,23 @@ widgets are listed in the Widgets of Interest section below.
   + Options:
     + `tk`: `background`, `borderwidth`, `foreground`, `font`, `justify`,
       `relief`, `show`, `state`, `textvariable`, `width`
-    + `ttk`: `font`, `justify`, `show`, `textvariable`, `width`
+    + `ttk`: `font`, `justify`, `show`, `state`, `textvariable`, `width`
+  + Example Code:
+    ```python
+    ttk.Label(root, text="Name:").grid(column=0, row=0, sticky=tk.E)
+    name_variable = tk.StringVar()
+    name_entry = ttk.Entry(root, textvariable=name_variable, width=30)
+    name_entry.grid(column=1, row=0, pady=5)
+    
+    ttk.Label(root, text="Phone Number:").grid(column=0, row=1, sticky=tk.E)
+    phone_variable = tk.StringVar()
+    phone_entry = ttk.Entry(root, textvariable=phone_variable, width=15)
+    phone_entry.grid(column=1, row=1, sticky=tk.W, pady=5)
+    ```
 
 #### Combobox
-  + `combo_box = ttk.Combobox(parent, **options)`
+![Combobox](lecture_files/widget_images/combobox_widget.png)
+  + `ttk.Combobox(parent, **options)`
   + Creates a combination of entry box and drop-down menu to allow for the
     user to make an input based on pre-defined options or their own entry
   + Only available as a `ttk` widget
@@ -386,8 +545,8 @@ widgets are listed in the Widgets of Interest section below.
     + `textvariable` specifies the Widget Variable that will contain the 
       value that is shown in the Combobox.
   + Options:
-    + `ttk`: `height`, `justify`, `postcommand`, `textvariable`, `values`,
-      `width`
+    + `ttk`: `height`, `justify`, `postcommand`, `state`, `textvariable`, 
+      `values`, `width`
   + Common Methods:
     + `.get()` returns the current value in the Combobox
     + `.set(value)` sets the current text in the widget to `value`
@@ -567,3 +726,4 @@ may_label.grid(column=2, row=1, sticky="NE")
 Add info on Widget Variables
 Add info on linking functions with command
 Make a ToC at the top of the page
+Add methods common to all widgets
