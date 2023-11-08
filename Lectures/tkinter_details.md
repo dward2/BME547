@@ -13,7 +13,7 @@
   * <a href="#general">General</a>
   * <a href="#tk-vs-ttk-widgets">`tk` vs `ttk` Widgets</a>
   * <a href="#options-common-to-many-widgets">Options Common to Many Widgets</a>
-  * <a href="#methods-commmon-to-many-widgets">Methods Common to Many Widgets</a>
+  * <a href="#methods-common-to-many-widgets">Methods Common to Many Widgets</a>
   * <a href="#common-widgets">Common Widgets</a>
     * <a href="#window">Window</a>
     * <a href="#frame">Frame</a>
@@ -24,13 +24,13 @@
     * <a href="#radiobutton">Radiobutton</a>
     * <a href="#entry">Entry</a>
     * <a href="#combobox">Combobox</a>
-  * <a href="#changing-attributes-of-widgets">Changing Widget Options</a>
+  * <a href="#changing-widget-options">Changing Widget Options</a>
   * <a href="#getting-current-value-of-widget-options">Getting Current Value of Widget Options</a>
   * <a href="#activate--deactivate-widget-with-state">Activate / Deactivate Widget with State</a>
   * <a href="#widget-variables">Widget Variables</a>
   * <a href="#adding-images-to-interface">Adding Images to Interface</a>
 * <a href="#grid-manager">Grid Manager</a>
-  * <a href="#named-parameters-for-.grid-method">Named Parameters for `.grid()` Method</a>
+  * <a href="#named-parameters-for-grid-method">Named Parameters for `.grid()` Method</a>
 * <a href="#gui-creation-walkthrough">GUI Creation Walkthrough</a>
 * <a href="#references">References</a>
 
@@ -332,7 +332,7 @@ get a list of available options for a widget as follows:
   root.geometry("400x100")
   root.mainloop()
   ```
-
+---
 #### Frame   
 ![Frame](lecture_files/widget_images/frame_tk_widget.JPG)  ![Frame](lecture_files/widget_images/frame_widget.JPG)
   * `tk.Frame(parent, **options)`
@@ -355,7 +355,7 @@ get a list of available options for a widget as follows:
     label2 = ttk.Label(frame, text="Put more widgets here")
     label2.grid(column=0, row=1)
     ```
-
+---
 #### LabelFrame   
 ![LabelFrame](lecture_files/widget_images/labelframe_tk_widget.JPG)
 ![LabelFrame](lecture_files/widget_images/labelframe_widget.JPG)
@@ -376,7 +376,7 @@ get a list of available options for a widget as follows:
     label2 = ttk.Label(frame, text="Put more widgets here")
     label2.grid(column=0, row=1)
     ```
-
+---
 #### Label
 ![Label](lecture_files/widget_images/label_widget.JPG)
   + `tk.Label(parent, **options)`
@@ -400,7 +400,7 @@ get a list of available options for a widget as follows:
     label_2 = ttk.Label(root, text="Label Two", font=("Times", 18))
     label_2.grid(column=0, row=1)
     ```
-
+---
 #### Button
 ![Button](lecture_files/widget_images/button_widget.JPG)
   + `tk.Button(parent, **options)`
@@ -429,7 +429,7 @@ get a list of available options for a widget as follows:
                           state=tk.DISABLED)
     button.grid(column=0, row=0)
     ```
-
+---
 #### Checkbutton
 ![Checkbutton](lecture_files/widget_images/checkbutton_tk_widget.JPG)
 ![Checkbutton](lecture_files/widget_images/checkbutton_widget.JPG)
@@ -475,7 +475,7 @@ get a list of available options for a widget as follows:
                                   offvalue="-", command=check_box_changed)
     checkbutton.grid(column=0, row=0, padx=10, pady=10)
     ```
-
+---
 #### Radiobutton
 ![Radiobutton](lecture_files/widget_images/radiobutton_tk_widget.JPG)
 ![Radiobutton](lecture_files/widget_images/radiobutton_widget.JPG)
@@ -524,7 +524,7 @@ get a list of available options for a widget as follows:
     rb_4 = ttk.Radiobutton(root, text="AM/PM clock", variable=time_type, value="am pm")
     rb_4.grid(column=1, row=1, padx=10)
     ```
-
+---
 #### Entry
 ![Entry](lecture_files/widget_images/entry_tk_widget.JPG)
 ![Entry](lecture_files/widget_images/entry_widget.JPG)
@@ -554,7 +554,7 @@ get a list of available options for a widget as follows:
     phone_entry = ttk.Entry(root, textvariable=phone_variable, width=15)
     phone_entry.grid(column=1, row=1, sticky=tk.W, pady=5)
     ```
-
+---
 #### Combobox
 ![Combobox](lecture_files/widget_images/combobox_widget.png)
   + `ttk.Combobox(parent, **options)`
@@ -597,7 +597,7 @@ get a list of available options for a widget as follows:
                             state=["readonly"])
     combobox.grid(column=1, row=0)
     ```
-
+---
 
 ### Changing Widget Options
 
