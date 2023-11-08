@@ -228,7 +228,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
-        <li><a href="Resources/GUI_Projects/README.md">Suggested GUI Projects</a></li>
+        <li><a href="Resources/GUI_Projects">Suggested GUI Projects</a></li>
     </td>
     <td>
     </td>
