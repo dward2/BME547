@@ -225,24 +225,24 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 <tr>
 <td>Wed Nov 8</td>
-    <td><a href="Lectures/intro_to_gui.md">Intro to GUIs</a>
+    <td>
+        <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
+        <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
     </td>
     <td>
-      <!---<li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>--->
-        Final Project Assigned
     </td>
 </tr>
 
 <tr>
 <td>Mon Nov 13</td>
     <td>
-        <li><a href="Lectures/intro_to_gui.md#widgets-of-interest">
-            More GUI Widgets</a></li>    
         <li>Connecting GUI to Client/Server</li>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
+      <!---<li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>--->
+        Final Project Assigned
     </td>
 </tr>
 
