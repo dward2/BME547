@@ -15,9 +15,9 @@ To use the `image_label` module:
 `pip install Pillow`
 3. Include the following import statement into your GUI code:
 
-``python
+```python
 from image_label import ImageLabel
-``
+```
 
 ## API
 
