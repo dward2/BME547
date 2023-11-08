@@ -1,5 +1,4 @@
 import random
-from typing import Union
 
 SUITS = ["Clubs", "Diamonds", "Hearts", "Spades"]
 RANKS = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen",
@@ -37,12 +36,12 @@ class Deck:
         return "Deck: fresh {} discard {}".format(len(self._deck),
                                                   len(self._discards))
 
-    def deal_card(self) -> Card:
+    def deal_card(self):
         if len(self._deck) == 0:
             raise RuntimeError("Deck out of cards")
         return self._deck.pop(random.randrange(0, len(self._deck)))
 
-    def receive_discard(self, card: Union[Card, list[Card]]) -> None:
+    def receive_discard(self, card):
         if type(card) not in [Card, list]:
             raise TypeError("Argument not a Card type")
         if type(card) is Card:
@@ -53,7 +52,7 @@ class Deck:
                     raise TypeError("An item in list was not a Card type")
             self._discards.extend(card)
 
-    def reset(self) -> None:
+    def reset(self):
         self.__init__()
 
 
@@ -61,29 +60,29 @@ class Player:
 
     def __init__(self, number: int):
         self.number: int = number
-        self._cards: list[Card] = []
+        self._cards: list = []
 
     def __repr__(self):
         return "Player {} Score: {}".format(self.number, self.score)
 
-    def receive_card(self, card: Card) -> None:
+    def receive_card(self, card):
         if type(card) is not Card:
             raise TypeError("Argument not a Card")
         self._cards.append(card)
 
-    def discard_cards(self) -> list[Card]:
+    def discard_cards(self):
         result = self._cards.copy()
         self._cards.clear()
         return result
 
-    def output(self) -> str:
+    def output(self):
         out_str = "Player {} ".format(self.number)
         out_str += " Score={} ".format(self.score)
         out_str += "Cards={}".format(self._cards)
         return out_str
 
     @property
-    def score(self) -> int:
+    def score(self):
         found_ace = False
         total = 0
         for card in self._cards:
@@ -97,7 +96,7 @@ class Player:
         return result
 
     @property
-    def cards(self) -> list[str]:
+    def cards(self):
         return [c.__repr__() for c in self._cards]
 
 
@@ -115,34 +114,34 @@ class Blackjack:
             self.deal_card_to_player()
             self.deal_card_to_dealer()
 
-    def deal_card_to_player(self) -> str:
+    def deal_card_to_player(self):
         card = self._deck.deal_card()
         self._player.receive_card(card)
         return card.__repr__()
 
-    def deal_card_to_dealer(self) -> str:
+    def deal_card_to_dealer(self):
         card = self._deck.deal_card()
         self._dealer.receive_card(card)
         return card.__repr__()
 
-    def new_round_reshuffle(self) -> None:
+    def new_round_reshuffle(self):
         self._player.discard_cards()
         self._dealer.discard_cards()
         self._deck.reset()
         self._initial_deal()
 
     @property
-    def player_score(self) -> int:
+    def player_score(self):
         return self._player.score
 
     @property
-    def dealer_score(self) -> int:
+    def dealer_score(self):
         return self._dealer.score
 
     @property
-    def dealer_cards(self) -> list[str]:
+    def dealer_cards(self):
         return self._dealer.cards
 
     @property
-    def player_cards(self) -> list[str]:
+    def player_cards(self):
         return self._player.cards
