@@ -1,8 +1,13 @@
 # import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
-
-from PIL import ImageTk, Image, ImageDraw, ImageColor, UnidentifiedImageError
+try:
+    from PIL import (ImageTk, Image, ImageDraw, ImageColor,
+                     UnidentifiedImageError)
+except ModuleNotFoundError:
+    raise ModuleNotFoundError("'Pillow' package is not installed and is "
+                              "required for use with the `image_label` module."
+                              "  Please install using `pip install Pillow`.")
 
 
 class MissingOptionError(Exception):
@@ -133,5 +138,3 @@ class ImageLabel(ttk.Label):
             self._resize_and_display_image()
         else:
             return self._width
-
-
