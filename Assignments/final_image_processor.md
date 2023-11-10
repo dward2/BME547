@@ -42,8 +42,8 @@ interface with the following functionality:
   combination of breathing rate, number of apnea events, and the CPAP flow
   image will be referred to as the CPAP calculated data.
   + If the number of apnea events is two or greater, that value should be 
-  displayed in red.  If it zero or one, it should be displayed in the default color of the
-  rest of the text in the GUI.
+  displayed in red.  If the number of apnea events is zero or one, it should be 
+  displayed in the default color of the rest of the text in the GUI.
   + Upon user command, issue a RESTful API request to your server to upload
   whatever information is entered above.  The interface should only allow this
   request to be made if at least a medical record number and a room number have 
@@ -104,17 +104,22 @@ patients/rooms.
 
 At a minimum, your monitoring-station GUI client should provide a __graphical__
 user interface with the following functionality:
-  + Allow the user to select a room number from a list of available numbers on 
-  the server.
+  + Allow the user to select a room number from a list of all room numbers on 
+  the server.  The all room numbers list should include any room number that 
+  has been sent to the server as part of a patient upload.
   + For the selected room number, display the medical record number, the patient
   name, the latest CPAP pressure and breathing rate/apnea count/CPAP flow image 
   (if they exist), and 
   the date/time at which this latest CPAP calculated data was uploaded to the server.
   + The information displayed should be from the most recent patient in the 
+  room.  There will only ever be one patient at a time in a room.  If a patient
+  exists in a room, and then a new patient is sent to the server using the same
+  room number, it can be assumed that the first patient has left the room and
+  the new patient is now the currently active (or most recent) patient in that
   room.
   + If the apnea count value is two or greater, it should be displayed in red.
-    If it is zero or one, it should be displayed in the default text color used
-    by the rest of the GUI.
+    If the apnea count value is zero or one, it should be displayed in the 
+   default text color used by the rest of the GUI.
   + Allow the user to select from a list of the date/times of all stored CPAP calculated
     data for the selected patient, download the appropriate CPAP flow image, and 
     display the selected image side-by-side with the latest CPAP flow image already 
@@ -124,15 +129,16 @@ user interface with the following functionality:
   + Allow the user to enter an updated CPAP pressure and upload this new
     pressure to the server to be retrieved by the patient-side GUI.  The GUI
     should only allow integer values of 4 to 25, inclusive, to be entered and uploaded.
-  + When the user selects a new room, any information from the previous
-  patient on the interface needs to be replaced with the information from the
-  new room/patient or removed from the interface.
+  + When the user selects a different room from the room list on the server, any 
+  information from the previous patient displayed
+  on the interface needs to be replaced with the information from the
+  new room/patient selected or removed from the interface.
   + The interface should make periodic requests (at least every 30 seconds, but
   can be more frequent) to the server to check for any updated information for
   the currently selected room.  If new CPAP data is 
   available, those should be automatically downloaded and displayed on the 
   interface in place of the old data.
-  + When the user wants to select a new room or historical CPAP calculated data, the 
+  + When the user wants to select a different room or historical CPAP calculated data, the 
    choices presented should represent the 
     most recent options on the server.  In other words, the options for choices
     must dynamically update, rather than be "locked in" based on what was 
@@ -163,7 +169,7 @@ added to the existing information. If a patient name is also sent, it should
 update the existing name in the database.
 * Accept requests from the monitoring-station client to retrieve the following
 information from the database and download it to the client:
-  + a list of available room numbers
+  + a list of room numbers that have been sent to the server
   + the name and medical record number of the latest patient in a specific room
   + the latest CPAP pressure and CPAP data for the latest patient in a specific
     room
@@ -203,7 +209,10 @@ above objectives.  However, you are also welcome to use a different GUI
 framework if you like, such as PyQT or any other choice.  You are also welcome
 to program a web/browser GUI for your clients if you prefer.  Visit
 <https://github.com/dward2/BME547/tree/main/Resources/WebInterface> for info
-and basic tutorials for using HTML/CSS/flask to create such an interface.
+and basic tutorials for using HTML/CSS/flask to create such an interface.  Note
+that this web/browser GUI should be implemented by its own server (i.e., its
+own `flask` based code) that makes requests to the separate cloud server as
+described above.  The cloud server should not have its own interface.
 
 ## Database
 As discussed in class, using MongoDB and PyModm will satisfy the requirements
@@ -213,7 +222,7 @@ non-relational, or a non-MongoDB online option) requires approval from all
 team members and the instructor.
 
 ## Planning
-* It is a requirement for this assignment you develop milestones and issues
+* It is a requirement for this assignment that you develop milestones and issues
   that provide a detailed plan of how you will approach and implement this
   project.
 * Add these milestones and issues to your GitHub repository.
@@ -224,10 +233,14 @@ team members and the instructor.
   for which GUI.
 * All other issues can be assigned to either team member with the goal of
   balancing work load among the members.  Both team members may work
-  on any specific issue, but the assigned team member should make sure that 
+  on any of these other issues, but the assigned team member should make sure that 
   the issue is addressed/implemented.
 * It is suggested that your database-related issues describe, as best as possible, the
-  database structure desired.
+  database structure desired.  As in the previous assignment, consider
+  pre-populating the database with initial results so that all team members
+  can get started on their work without needing the other team members work
+  to be completed first.  The pre-populated data should be removed upon final
+  deployment.
 * Notify the instructor when your plan is available for review before you begin
   significant coding activities.
 
@@ -268,7 +281,7 @@ this project:
 -->
 ## Grading
 
-The following is a partial list of aspects on which the project that will be 
+The following is a partial list of aspects on which the project will be 
 graded.
 
 * Git Repository

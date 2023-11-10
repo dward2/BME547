@@ -1,8 +1,8 @@
 # Final Project Add On
 
 Develop a GUI that allows a user to see, in a single display, all of the
-available room numbers and the information on the patient in each room
-simultaneously.  For example, if there are four rooms currently registered
+room numbers on the server and the information on the most recent patient in each room
+simultaneously.  For example, if there are four rooms registered
 with the server, the display should have four sections, each of which shows
 information about the patient in that room.
 
@@ -33,8 +33,8 @@ with that patient that will cause the display to show the most recent
 CPAP flow image for that patient.  The clickable object could be the room
 number, any other information associated with that room, or a button or other 
 widget associated with each room.  So, for example, if there are five patients in the 
-database, there should be five separate clickable widgets that would each 
-display the latest CPAP flow image for the appropriate patient.  
+database, there should be five separate clickable widgets that would each lead to the 
+display of the latest CPAP flow image for the appropriate patient.  
 
 While the CPAP flow image is being displayed, if the CPAP flow image for that 
 particular patient is updated in the database, the displayed CPAP flow image 
@@ -55,4 +55,3 @@ loaded for comparison, it should also be removed.
 The GUI should allow the user to send an updated CPAP pressure for any specific 
 room to the server to be retrieved by the patient-side client.  How this is
 done is a design-decision for the developer.
-
