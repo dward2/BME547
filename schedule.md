@@ -228,6 +228,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
+        <li><a href="Lectures/tkinter_walkthrough.md">Tkinter/GUI Walkthrough</a></li>
         <li><a href="Resources/GUI_Projects">Suggested GUI Projects</a></li>
     </td>
     <td>
@@ -238,6 +239,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Mon Nov 13</td>
     <td>
         <li>Connecting GUI to Client/Server</li>
+        <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
