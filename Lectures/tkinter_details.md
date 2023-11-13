@@ -272,6 +272,11 @@ get a list of available options for a widget as follows:
 ### Methods Common to Many Widgets
 * `.cget(<option>)`
   * Returns the value for the specified `<option>`
+  * May return an empty string if the option has not yet been set and the
+    default value is being used
+  * For `ttk` widgets, sometimes this will return a `Tcl_Obj` type.  This type
+    will likely have a `.string` attribute that you can use to get the string
+    value
   * Example:  `text_in_label = label.cget("text")`
 * `.configure()`
   * When used without a parameter, returns a dictionary with all of the 
