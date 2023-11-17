@@ -1,16 +1,26 @@
 # Python Resources
 
 ## General Python Overview
+* [Python Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/python-essential-training-14898805)  
+  * Self-paced video course(1)
+* [Think Python: How to Think Like a Computer Scientist](https://greenteapress.com/thinkpython2/html/index.html)
+  * On-line book
+* [W3 Schools Python Tutorial](https://www.w3schools.com/python/)
+  * Well organized tutorial and reference site for Python
 * [Computational Methods With Python](https://sakai.duke.edu/x/jR0AAK)
-    + This "Sakai" course was developed within Pratt and contains some very 
+  * This "Sakai" course was developed within Pratt and contains some very 
     good introductory material to Python.
-* [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
 * [Intermediate Python](http://book.pythontips.com/en/latest/index.html)
-* [Python Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/python-essential-training-14898805)
-* [Software Carpentry: Intermediate & Advanced Software](https://intermediate-and-advanced-software-carpentry.readthedocs.io/en/latest/index.html)
+  * As the name suggests, some more advanced topics in Python
+
+### Official Python Documentation
+* [Official Python.org Documentation](https://docs.python.org/3/)
+
+#### Other sites on Python
+* [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
 * [Playground and Cheatsheet For Learning Python](https://github.com/trekhleb/learn-python)
 * [Learn X in Y Minutes Python 3](https://learnxinyminutes.com/docs/python3/)
-* [W3 Schools Python Tutorial](https://www.w3schools.com/python/)
+
 
 ### String Formatting in Python
 * [PyFormat: Using `%` and `.format()` for great good](https://pyformat.info/)
@@ -40,5 +50,5 @@ Also, see the NumPy related information at the SciPy Lectures link below.
 * [Matplotlib Lecture](https://nbviewer.jupyter.org/github/dpsanders/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
 * [Seaborn Examples](https://seaborn.pydata.org/examples/index.html)
 
-*Please note that Duke students have free access to the LinkedIn Learning 
+*(1) Please note that Duke students have free access to the LinkedIn Learning 
 tutorials if you access them through the OIT software portal.*
