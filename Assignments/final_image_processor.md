@@ -290,12 +290,12 @@ graded.
   + Feature-branch workflow
 * Software best practices
   + Modularity of software code
-  + Handling and raising exceptions
+  + Handling and raising exceptions as needed
   + Language convention and style (PEP8)
   + Docstrings for all functions
 * Testing and CI
   + Unit test coverage of all functions (except Flask handler and GUI calls)
-  + Travis CI passing build
+  + GitHub Actions (with tests and PEP8 check) passing build
 * Cloud-based Web Service
   + RESTful API Design 
   + Validation Logic 
