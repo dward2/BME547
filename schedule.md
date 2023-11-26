@@ -251,7 +251,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Nov 15</td>
     <td>
-        <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
+        <li><a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></li>
+        <li><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a></li>
     </td>
     <td></td>
 </tr>
@@ -259,9 +260,11 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Nov 20</td>
     <td>
-      <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
+       <a href="Resources/standards.md">Standards: </a>
+      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
     </td>
     <td>
+        <a href="https://canvas.duke.edu/courses/7999/assignments/19829">IEC 62304 Assignment</a>
       <!---<a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
         In-class Exercise</a>--->
     </td>
@@ -270,18 +273,16 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Nov 27</td>
     <td>
-      <a href="Resources/standards.md">Standards: </a>
-      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+        <a href="Lectures/intro_to_security.md">Introduction to Security</a>
     </td>
     <td>
-      IEC 62304 Assignment (in Sakai)
     </td>
 </tr>
 
 <tr>
 <td>Wed Nov 29</td>
     <td>
-      <a href="Lectures/intro_to_security.md">Introduction to Security</a>;
+      Software Development Methodologies & Other Terminology
     </td>
     <td></td>
 </tr>
@@ -289,7 +290,6 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Mon Dec 4</td>
     <td>
-        Software Development Methodologies & Other Terminology
     </td>
     <td></td>
 </tr>
