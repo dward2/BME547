@@ -46,7 +46,7 @@ We are going to demonstrate how asymmetric and symmetric encryption can be
 used to send secret information to another person without prior agreement of 
 any encryption keys.
 
-We will be using the `pycroptodome` package.  
+We will be using the `pycryptodome` package.  
 
 With a partner, complete the following steps.
 
