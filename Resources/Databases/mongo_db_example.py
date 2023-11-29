@@ -15,14 +15,10 @@ def init_mongo_db():
     yourself.
     
     When running this program, if you get an error such as 
-    "ServerSelectionTimeoutError" or "SSL:CERTIFICATE_VERIFY_ERROR], you will
-    need to add the following import to the top of the code:
+    "ServerSelectionTimeoutError" or "SSL:CERTIFICATE_VERIFY_FAILED], you will
+    need to modify the "connect" command as follows:
     
-    import ssl
-    
-    And, modify the "connect" command as follows:
-    
-    connect(<your connect string>, ssl_cert_reqs=ssl.CERT_NONE)
+    connect(<your connect string>, tlsAllowInvalidCertificates=True)
     """
 
 

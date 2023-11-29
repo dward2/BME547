@@ -106,15 +106,14 @@ to use `pymodm`, visit the [installations_mac.md](../Resources/installations_mac
  page for a potential fix.
 
 :eyes: On Windows or macOS, if you get an error similar to 
-`pymongo.errors.ServerSelectionTimeoutError:...[SSL:CERTIFICATE_VERIFY_ERROR]...`,
-import the `ssl` module and then add `ssl_cert_reqs=ssl.CERT_NONE`to the 
-`connect` command as so:
-
+`pymongo.errors.ServerSelectionTimeoutError:...[SSL:CERTIFICATE_VERIFY_FAILED]...`,
+modify your `connect` call with the following option:
 ```python
-import ssl
-
-connect("<YourConnectString", ssl_cert_reqs=ssl.CERT_NONE)
+connect("<YourConnectString", tlsAllowInvalidCertificates=True)
 ```
+Note that the earlier fix for this by using the option 
+`ssl_cert_reqs=ssl.CERT_NONE` has been deprecated.
+
 
 #### Create Schema / Data structure
 ```
