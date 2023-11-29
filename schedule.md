@@ -282,11 +282,13 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Nov 29</td>
     <td>
-      Software Development Methodologies & Other Terminology
+      Software Development Methodologies & Other Terminology<br>
+      Last Day of Class
     </td>
     <td></td>
 </tr>
 
+<!---
 <tr>
 <td>Mon Dec 4</td>
     <td>
@@ -301,7 +303,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
     <td></td>
 </tr>
-
+--->
 
 <!--<a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>-->
   
