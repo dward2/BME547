@@ -274,14 +274,15 @@ this class, this will be considered a case of academic dishonesty
 similar to directly copying such code, regardless of the user intent.
 
 All students are expected to adhere to all principles of the [Duke Community
-Standard](http://www.integrity.duke.edu/standard.html).  Violations of the Duke
+Standard](https://students.duke.edu/wp-content/uploads/2023/10/DCS-Guide-2023-2024.pdf-1.pdf).
+Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
 Conduct or the appropriate Graduate School dean.  Please do not hesitate to 
 talk with your instructor about any situations involving academic honor, 
 especially if it is ambiguous about what should
 be done.  More information on the Duke Community Standard, and its practice
 for this academic year, can be found at 
-<https://registrar.duke.edu/university-bulletins/duke-community-standard>.
+<https://students.duke.edu/get-assistance/community-standard/>.
 
 For undergraduates, if a student is found responsible through the Office of 
 Student Conduct for
