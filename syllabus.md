@@ -6,8 +6,8 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Hae Sol Moon
-<haesol.moon@duke.edu>   
+Sophie Shi  
+<sophie.shi@duke.edu>   
 Office Hours: By appointment
 
 
@@ -15,7 +15,7 @@ Office Hours: By appointment
 
 ### Lecture
 Wednesday / Friday 11:45 am to 1:00 pm  
-Location:  ???
+Location:  Teer 106
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is required for completion of
@@ -34,8 +34,8 @@ watched before class, with an accompanying quiz to check for understanding.
 Please see the "Attendance / Participation" section below for more information.
 
 ### Official Course Communication
-Canvas will be used for official course communication.  As this will be the
-first semester for all of us using Canvas, close attention to Canvas will be
+Canvas will be used for official course communication.  For some, this may be 
+the first semester using Canvas.  Close attention to Canvas will be
 required.  Ensure that you have Notifications turned on to the "Notify 
 immediately" or "Daily summary" for the following categories:
 * Due Date
@@ -92,24 +92,24 @@ Complete the prerequisite assessment found
   + Debugging
 * Testing
   + Unit testing
-  + Functional / System testing
+  <!---+ Functional / System testing--->
   + Continuous integration (GitHub Actions)
 * Fault tolerance (handling and raising exceptions)
 * Logging
 * Documentation
   + Docstrings
   + Markdown
-  + Sphinx
-  + [ReadTheDocs](https://readthedocs.org)
+  <!---+ Sphinx
+  + [ReadTheDocs](https://readthedocs.org)--->
 * Working with data
   + Data Storage (Text, Binary, MongoDB)
 * Data Processing & Display
   + Jupyter Notebooks
   + Matplotlib
   + Numpy
-  + [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)
+  <!---+ [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)--->
 * Servers
-  + Design & Implementation of a biomedical web service (Python Flask)
+  + Design & Implementation of a web service (Python Flask)
   + HTTP & RESTful APIs
 * Medical Software Development Standards
 
@@ -205,7 +205,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 
 ## Distributed Version Control Software (git)
 Software management is a ubiquitous tool in any engineering project, and this
-task becomes increasingly difficult during group development. Version control
+task becomes increasingly important during group development. Version control
 software has many benefits and uses in software development, including
 preservation of versions during the development process, the ability for
 multiple contributors and reviewers on a project, the ability to tag
@@ -266,8 +266,8 @@ seek further guidance from the instructor.
 
 For this class, the use of any tool that uses artificial intelligence, machine
 learning, large data sets, or other means to suggest code for use is strictly
-prohibited.  If, despite this warning, you submit code wholly or partially 
-based on the use of any such tool, and this
+prohibited.  If, despite this stated prohibition, you submit code wholly or 
+partially based on the use of any such tool, and this
 code is similar to previously existing code that is not adequately cited
 in your documentation, or is similar to another student's code submitted for 
 this class, this will be considered a case of academic dishonesty
