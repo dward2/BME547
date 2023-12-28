@@ -10,7 +10,7 @@ Develop a server with the following endpoints:
 * `POST URL/age`
   + receives a JSON in the following format:  
   `{'date': "10/10/1999", 'units': "years"}`
-  + returns the length of time between the given date and the current time.
+  + returns the length of time between the given date and the current date.
   + The default return units should be years and should be returned as a 
     `float`.  
     Optional:  If you want to learn more
