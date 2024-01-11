@@ -152,7 +152,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fre Feb 23</td>
+<td>Fri Feb 23</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <li><a href="Lectures/debugging.md">Debugging</a></li> 

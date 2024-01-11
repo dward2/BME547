@@ -7,7 +7,7 @@
 
 ## Who are we?
 * Dr. David Ward
-* Hae Sol Moon
+* Sophie Shi
 
 ## Who are you?
 * Name (how you would like to be addressed)
