@@ -47,7 +47,7 @@ installed.  If not, you will need to download it from the site above.
 
 
 5. Download and install `python` at https://www.python.org/. 
-   + **NOTE:** As of August 24, 2023, the latest version is 3.11.15.  
+   + **NOTE:** As of January 7, 2024, the latest version is 3.12.1.  
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
        and enter `python --version`.  You should see something like `Python 3.7.0`.
@@ -126,6 +126,7 @@ easier for you as your projects get more complex.  Options include:
       + [nano](https://www.nano-editor.org/)
    + Code / Text editors
       + [Visual Studio Code](https://code.visualstudio.com/)
+        (See install and use info at [Resources/visual_studio_code.md](../Resources/visual_studio_code.md)).
       + [Sublime Text](https://www.sublimetext.com/)
       + [Notepad++](https://notepad-plus-plus.org/)
         (See [Resources/Notepad++.md](../Resources/notepad++.md) for set-up
