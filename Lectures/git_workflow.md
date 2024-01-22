@@ -221,14 +221,22 @@ to your code.
   - 200 - 239: Borderline high
   - \>=240: High
 
-If you want to practice working with shared repositories, work with a partner:
+As an optional modification to the work on the Total Cholesterol Branch, you
+could decide to practice working with shared repositories by working with a
+partner.  If so, find a partner and follow these steps:
+
 * Find a partner and give permission for them to access your repository
-  - Navigate to your repository that you want to share with someone else.
-  - Click on "Settings" in the repository toolbar.
-  - Select the "Collaborators" option in the left-side menu list.
-  - Enter a GitHub username in the box and click Add Collaborator.
-  - This should send an e-mail to the other user to accept and will then give
-  them read/write permissions to your repository.
+  * If your repository is inside a GitHub Classroom, you will need to contact
+    the instructor so they can grant the needed permissions for you and your
+    partner to access each other's repositories.
+  * If your repository was created by yourself within your GitHub account,
+    follow these steps:
+    - Navigate to your repository that you want to share with someone else.
+    - Click on "Settings" in the repository toolbar.
+    - Select the "Collaborators" option in the left-side menu list.
+    - Enter a GitHub username in the box and click Add Collaborator.
+    - This should send an e-mail to the other user to accept and will then give
+    them read/write permissions to your repository.
   
 * Clone your partner's repository to your local computer.  If their repository
 has a name that you are already using, you can clone the repository into a
@@ -242,5 +250,5 @@ Example:  git clone https://github.com/dward2/calculator.git partner_calculator
 * Develop the total cholesterol code on a feature branch of your partner's
 repository and push it up to their GitHub repository.
 * On GitHub in your partner's repository, open a Pull Request and include your 
-partner as a reviewer.  Do not merge
-the Pull Request.  That is up to the partner who owns the repository.
+partner as a reviewer.  Do not merge the Pull Request.  That is up to the 
+partner who owns the repository.
