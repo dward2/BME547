@@ -29,10 +29,13 @@ A web browser will automatically launch, or you will be instructed to open a
 browser and open address `127.0.0.1` or `localhost`.  This browser window
 will contain the Jupyter Notebook for you to use.
 
-Work through the interactive notebook.  Make sure to save it when you are
-complete.  Then, in `git`, add and commit the completed Jupyter Notebook file
-and then push the commit up to GitHub.  Visit the GitHub Classroom repository
-to ensure that your completed notebook is, in fact, uploaded.  We will be 
-grading the file that is found in your GitHub Classroom site.
+Work through the interactive notebook.  Execute existing code cells.  Make sure
+to complete the TASKS that are indicated.  Make sure to save the notebook when 
+you are finished.  Then, in `git`, add and commit the completed Jupyter 
+Notebook file and then push the commit up to GitHub.  (*Note*: For this 
+assignment, it is okay to make a commit on the `main` branch.)  Visit the 
+GitHub Classroom repository to ensure that your completed notebook is, in fact, 
+uploaded.  We will be grading the file that is found in your GitHub Classroom 
+site.
 
 The deadline for this assignment can be found in Canvas.
