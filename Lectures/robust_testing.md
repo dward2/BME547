@@ -105,7 +105,7 @@ True
 * https://docs.pytest.org/en/latest/reference.html#pytest-approx
 * https://docs.scipy.org/doc/numpy/reference/generated/numpy.testing.assert_approx_equal.html
 
-
+<!---
 # In Class Exercise
 * Write a function to subtract two numbers.
 * Write a function to find the minimum and maximum of a list.
@@ -113,3 +113,4 @@ True
 checks for failure (i.e., gives bad input and expects False)
 * Push to a GitHub repository
 * Activate GitHub Actions and implement automated testing.
+--->
