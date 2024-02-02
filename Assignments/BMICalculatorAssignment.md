@@ -59,7 +59,7 @@ main branch, and tagged before the deadline.
 * Good use of `git` workflow  
     + Meaningful commit messages and appropriate number of commits  
     + Use of feature branches, with meaningful names, when adding new 
-      functionality
+      functionality (must have at least two feature branches)
     + Using Pull Requests on GitHub for merging feature branches into main 
       branch
     + All branches and final code pushed to GitHub
