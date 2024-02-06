@@ -100,4 +100,6 @@ The GitHub repository now looks like this:
 Now, either continued development could be done on the `New_Feature3` branch,
 or it could be merged into `main` following the usual procedure.  
 
+![](misc_files/fix_branch_network_final.JPG)
+
 
