@@ -59,6 +59,9 @@ be flexible enough to read results that may be slightly off.
 **NOTE**: The above email name specifications are not the formal specifications
 in actual use but are adapted for this assignment specifically.
 
+**NOTE**: You cannot assume that the string sent to your function will actually
+contain a `@` or `.` or anything at all.
+
 ### Approach
 * Log into GitHub and visit the GitHub Classroom link provided in Canvas.  This
   will create a repository for your submission.
