@@ -72,3 +72,7 @@ In your terminal window, enter the command `xcode-select --install`.  When
 that command finishes, close the terminal window, open up a new terminal 
 window, reactivate your virtual environment, and try installing the packages 
 again.  
+
+
+## Showing Hidden Files in macOS Finder windows
+Press Command + Shift + `.` (period)
