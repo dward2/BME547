@@ -1,29 +1,31 @@
 # In Class Exercise
 
 If needed, the starting code can be found at 
-<https://github.com/BME547-Fall2023/bme547-classwork-dward2/blob/main/patient_db.py>
+
+<https://github.com/BME547-Spring2024/bme-547-classwork-dward2/blob/testing/health_database.py>
 
 ## Dictionary Data Type
+* Create a `dictionary` branch for this work.
 
-### Convert `create_db_entry` function
+### Convert `create_database_entry` function
 Convert from creating a list to a dictionary.  
 Keys:  
 * First Name
 * Last Name
-* MRN
 * Age
+* MRN
 * Tests
 
 ### Write `get_full_name` and modify `print_directory`
   * First, write a function that receives a patient dictionary and returns
     the full name.
   * Second, modify the `print_directory` function that prints each patient on 
-    a single line.
+    a single line.  *Can remove any Room printing.*
   * The output for each patient should look like:
     ```
     MRN: 1, Full Name: Ann Ables, Age: 34
     ```
-### Convert `retrieve_patient`
+### Convert `get_patient`
 
 ### Convert `add_test_to_patient`
   
@@ -36,5 +38,3 @@ Keys:
 ### Convert database from a list to a dictionary
   * Modify all code as needed
 
-## Classes
-Convert patient storage from dictionary to class
