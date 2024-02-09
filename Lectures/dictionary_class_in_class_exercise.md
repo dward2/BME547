@@ -16,10 +16,10 @@ Keys:
 * MRN
 * Tests
 
-### Write `get_full_name` and modify `print_directory`
+### Write `get_full_name` and modify `print_database`
   * First, write a function that receives a patient dictionary and returns
     the full name.
-  * Second, modify the `print_directory` function that prints each patient on 
+  * Second, modify the `print_database` function that prints each patient on 
     a single line.  *Can remove any Room printing.*
   * The output for each patient should look like:
     ```
@@ -38,3 +38,7 @@ Keys:
 ### Convert database from a list to a dictionary
   * Modify all code as needed
 
+## When Finished
+When you are finished, click on
+<a href="http://daw.colab.duke.edu/done" target="_blank">this link</a>
+to let me know you are finished.
