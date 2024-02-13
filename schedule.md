@@ -110,7 +110,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Fri Feb 9</td>
     <td>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
-        <li><a href="Lectures/classes.md">Classes</a></li>
+        <!---<li><a href="Lectures/classes.md">Classes</a></li>--->
     </td>
     <td><a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a></td>
 </tr>
