@@ -136,7 +136,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
-    <td><!---Complete exercise as explained in lecture---></td>
+    <td><a href="https://canvas.duke.edu/courses/26498/assignments/69063">
+            In-Class Exercise (see Canvas)</a></td>
 </tr>
 
 <tr>
