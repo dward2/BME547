@@ -147,8 +147,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
     </td>
     <td>
-        <!---<a href="Assignments/CPAP Measurements">CPAP Measurements Assigned</a>--->
-        Assignment #6 Assigned
+        <a href="Assignments/CPAP Measurements">CPAP Measurements Assigned</a>
+        <!---Assignment #6 Assigned--->
     </td>
 </tr>
 

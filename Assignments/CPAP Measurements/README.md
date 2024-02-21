@@ -122,7 +122,8 @@ calculated and saved as key-value pairs in a Python dictionary called
   * `breaths`: integer, number of breaths in the data
   * `breath_rate_bpm`: float, the average breathing rate from the data in 
      breaths per minute
-  * `breath_times`: list of floats, the identified times for each breath
+  * `breath_times`: list of floats, the time in seconds from the data at which 
+    each breath occurs (not the duration of each breath)
   * `apnea_count`: integer, number of apnea events in the data
   * `leakage`: float, the total amount of mask leakage observed in the data
     in liters
@@ -136,10 +137,10 @@ calculated and saved as key-value pairs in a Python dictionary called
   log entry should be added to the log indicating that the leakage is negative.
 
 A breath can be identified by a positive peak in volumetric flow (the 
-inhalation) followed by a negative peak in flow (the exhalation).
+inhalation) followed by a return to zero or negative flow (the exhalation).
 
-An apnea event occurs when the time elapsed between breaths is more than
-10 seconds.  
+An apnea event occurs when the time elapsed between breaths (the time between
+observed peaks) is more than 10 seconds.  
 
 The leakage is calculated by determining the total net flow through Venturi 1.
 If more flow is observed going to the patient than coming back from the 
