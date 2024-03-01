@@ -180,8 +180,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
            Building a Web Server with Flask</a>
     </td>
     <td>
-        <!---<a href="Assignments/time_server_project.md">Time Server Assigned</a>--->
-        Assignment #7 Assigned<br>
+        <a href="Assignments/time_server_project.md">Time Server Assigned</a>
+        <!---Assignment #7 Assigned<br>--->
     </td>
 </tr>
 

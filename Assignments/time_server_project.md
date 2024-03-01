@@ -9,7 +9,7 @@ Develop a server with the following endpoints:
   + returns the current date as a string
 * `POST URL/age`
   + receives a JSON in the following format:  
-  `{'date': "10/10/1999", 'units': "years"}`
+  `{'date': "10/21/1999", 'units': "years"}`
   + returns the length of time between the given date and the current date.
   + The default return units should be years and should be returned as a 
     `float`.  
@@ -56,7 +56,7 @@ date.
 time.
 
 #### Specifying a specific date/time
-`datetime(2010, 2, 14, 18, 5, 13)` returns a `datetime` object that contains
+`datetime(2010, 2, 14, 18, 35, 43)` returns a `datetime` object that contains
 the date and time defined by the parameters in the following order: year,
 month, date, hour (24 hr clock), minutes, seconds.
 
@@ -66,9 +66,9 @@ month, date, hour (24 hr clock), minutes, seconds.
 `datetime_variable` into a string with format given by the specified format
 string.  Example:
 ```
-x = datetime(2010, 2, 14, 18, 5, 13)
+x = datetime(2010, 2, 14, 18, 35, 43)
 y = datetime.strftime(x, "%m-%d-%y %H:%M:%S")
-print(y)   # Output: 02-14-10 18:05:13 
+print(y)   # Output: 02-14-10 18:35:43 
 ```
 The `strftime` command is short for `str`ing `f`rom `time`.  Additional 
 information on the string formatting can be found at 
@@ -81,9 +81,9 @@ first is the string to be parsed.  The second is the format string, using the
 same codes as discussed above, that matches the format of the string to be 
 parsed.  Example:
 ```
-in_string = "03-05-1980"
+in_string = "03-15-1980"
 x = datetime.strptime(in_string, "%m-%d-%Y")  # x will be a datetime object
-print(x)  # Output: 1980-03-05 00:00:00
+print(x)  # Output: 1980-03-15 00:00:00
 ```
 
 #### `timedelta` objects
@@ -105,7 +105,7 @@ print(f.seconds)  # Output: 8240
 When adding or subtracting date/time objects, they must be of the same type.
 For example, the following will give an error:
 ```
-x = datetime(1980, 3, 5)
+x = datetime(1980, 3, 15)
 today = datetime.now().date()
 delta = today - x
 
