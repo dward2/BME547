@@ -104,7 +104,7 @@
     * `<test_results>` is an `int` or `float` that contains the result for the
     abnormal test
     * `<date_time_stamp>` is a string with the date and time of the test result
-    formatted as follows:  `2018-03-09 11:00:36`.
+    formatted as follows:  `2018-03-19 11:00:36`.
 
   If the submitted username and password do not match previously registered
   administrator information, a "401 Unauthorized" server status code should
@@ -132,11 +132,11 @@
   that specific test across all patients.  
 
   For example, assume there are three open requests in the database as such:
-  * "TSH" from 3/1/2023 09:00:25 for Patient 1
-  * "TSH" from 3/1/2023 15:30:16 for Patient 2
-  * "HDL" from 3/1/2023 16:45:58 for Patient 1
+  * "TSH" from 3/14/2023 09:00:25 for Patient 1
+  * "TSH" from 3/14/2023 15:30:16 for Patient 2
+  * "HDL" from 3/14/2023 16:45:58 for Patient 1
   
-  And, assume that the current time is 3/1/2023 17:00:00.  The elapsed time
+  And, assume that the current time is 3/14/2023 17:00:00.  The elapsed time
   since the first TSH request is 7 hours, 59 minutes, and 35 seconds.  The
   elapsed time since the second TSH request is 1 hour, 29 minutes, 44 seconds.
   The two of these elapsed times together is 9 hours, 29 minutes, and 19 seconds.

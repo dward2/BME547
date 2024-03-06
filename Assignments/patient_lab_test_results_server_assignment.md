@@ -41,7 +41,7 @@ Your Flask server should implement the following routes.
   that the e-mail address be of the correct syntax.  However, for this
   assignment, your server only needs to validate that any e-mail address input 
   it receives is a string.  It does not need any validation of the format of 
-  that string as I will only be testing correctly formatted e-mail addresses.
+  that string: during my testing of your server, I will only be using correctly formatted e-mail addresses.
 
 * `POST /patient/new_request` allows the attending physician to request that a
   test be performed on a patient.  It takes a JSON as input as follows:
@@ -99,14 +99,14 @@ single test request.  This dictionary should be formatted as follows:
     { 
        "patient_mrn": <medical_record_number>,
        "test_name": <test_name>,
-       "request_date": <request_date_time>
+       "request_timestamp": <request_date_time>
     }  
   ```
   where:
   * `<medical_record_number>` is an integer containing the patient medical
   record number
   * `<test_name>` is a string containing the name of the test to be performed
-  * `<request_date>` is a string containing the date/time stamp of when the
+  * `<request_date_time>` is a string containing the date/time stamp of when the
   request was received.  It should be in the format as shown by this
   example:  `2018-03-19 11:00:36`
   
