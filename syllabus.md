@@ -6,16 +6,16 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Sophie Shi  
-<sophie.shi@duke.edu>   
+Zac Spalding  
+<zac.spalding@duke.edu>   
 Office Hours: By appointment
 
 
 ## Course Delivery
 
 ### Lecture
-Wednesday / Friday 11:45 am to 1:00 pm  
-Location:  Teer 106
+Monday / Wednesday 11:45 am to 1:00 pm  
+Location:  Wilkinson 130
 
 Attendance at lectures is an expectation of the course.  
 Bringing a laptop computer for working in class is required for completion of
