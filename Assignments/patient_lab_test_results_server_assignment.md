@@ -108,7 +108,7 @@ single test request.  This dictionary should be formatted as follows:
   * `<test_name>` is a string containing the name of the test to be performed
   * `<request_date>` is a string containing the date/time stamp of when the
   request was received.  It should be in the format as shown by this
-  example:  `2018-03-09 11:00:36`
+  example:  `2018-03-19 11:00:36`
   
   If there are no uncompleted test requests, an empty list should be returned.
 
@@ -200,7 +200,7 @@ single test request.  This dictionary should be formatted as follows:
   depending on the value of the test
   * `<datetime_stamp>` is a string containing the date/time stamp of when the
   test result was received by the server.  It should be in the format as shown 
-  by this example:  `2018-03-09 11:00:36`
+  by this example:  `2018-03-19 11:00:36`
   
   The open request dictionaries should look like this:
     ```
@@ -213,7 +213,7 @@ single test request.  This dictionary should be formatted as follows:
   * `<test_name>` is a string containing the name of the test
   * `<datetime_stamp>` is a string containing the date/time stamp of when the
   test request was received by the server.  It should be in the format as shown 
-  by this example:  `2018-03-09 11:00:36` 
+  by this example:  `2018-03-19 11:00:36` 
 
 * `GET /patient/results/<patient_mrn>/<test_name>` returns a list of all 
   available test results for the specified type of test for the specified 
@@ -247,7 +247,7 @@ single test request.  This dictionary should be formatted as follows:
   section **Medical Record Number and Age Data Types** below for more info)
   * `<test_name`> is a string containing the name of the test of interest
   * `<date_time_stamp>` is a string containing a date/time in the format given
-  in this example:  `2018-03-09 11:00:36`
+  in this example:  `2018-03-19 11:00:36`
   
   This route should find test results for the specified patient for the
   specified test and average only those results that were received at or after
