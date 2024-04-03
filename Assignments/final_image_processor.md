@@ -124,8 +124,8 @@ user interface with the following functionality:
     data for the selected patient, download the appropriate CPAP flow image, and 
     display the selected image side-by-side with the latest CPAP flow image already 
     displayed.
-  + Allow the user to save a downloaded and displayed CPAP flow image (either the latest or the
-    historical one chosen) to a file on their local computer.
+  + For both the latest CPAP flow image and the historical CPAP flow image, 
+    allow the user to save the flow image to a file on their local computer.
   + Allow the user to enter an updated CPAP pressure and upload this new
     pressure to the server to be retrieved by the patient-side GUI.  The GUI
     should only allow integer values of 4 to 25, inclusive, to be entered and uploaded.

@@ -256,9 +256,6 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
     </td>
     <td>
-        Final Project Assigned
-      <!---<li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>--->
     </td>
 </tr>
 
@@ -268,7 +265,11 @@ will be a lecture every class period even if no topic is shown on the schedule.
         <li><a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></li>
         <li><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a></li>
     </td>
-    <td></td>
+    <td>
+        <!---Final Project Assigned--->
+      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
+    </td>
 </tr>
 
 <tr>

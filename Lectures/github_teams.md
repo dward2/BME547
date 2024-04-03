@@ -63,7 +63,7 @@ already existing team.
 * Communicate to me when your plan is complete so I may review it. 
   
 __Please target completion of your lookback and issues/milestones, and 
-share them with me, by the end of day Sunday, November 20.__  
+share them with me, by the end of day Wednesday, April 10.__  
 * I will be looking to see how you use Milestones/Issues for communication
 in my grading of the final project.
   
