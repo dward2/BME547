@@ -262,8 +262,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Apr 3</td>
     <td>
-        <li><a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a></li>
-        <li><a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a></li>
+        <a href="Resources/tkinter_images.md">Adding Images to tkinter GUI</a>
     </td>
     <td>
         <!---Final Project Assigned--->
@@ -275,30 +274,30 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Fri Apr 5</td>
     <td>
-       <a href="Resources/standards.md">Standards: </a>
-      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+        <a href="Lectures/image_encoding_decoding.md">Image Encoding/Decoding</a>
     </td>
     <td>
-      IEC62304 Assignment  
-      <!---<a href="https://canvas.duke.edu/courses/7999/assignments/19829">IEC 62304 Assignment</a>--->
-      <!---<a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
-        In-class Exercise</a>--->
     </td>
 </tr>
 
 <tr>
 <td>Wed Apr 10</td>
     <td>
-        <a href="Lectures/intro_to_security.md">Introduction to Security</a>
+       <a href="Resources/standards.md">Standards: </a>
+      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
     </td>
     <td>
+      <!---IEC62304 Assignment--->
+      <a href="https://canvas.duke.edu/courses/26498/assignments/69051">IEC 62304 Assignment</a>
+      <!---<a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
+        In-class Exercise</a>--->
     </td>
 </tr>
 
 <tr>
 <td>Fri Apr 12</td>
     <td>
-      Software Development Methodologies & Other Terminology<br>
+    Office Hours
     </td>
     <td></td>
 </tr>
@@ -306,7 +305,9 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr>
 <td>Wed Apr 17</td>
     <td>
-        Last Day of Class
+        Last Day of Class<br>
+      <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li>
+      <li>Software Development Methodologies & Other Terminology<br></li>
     </td>
     <td></td>
 </tr>
