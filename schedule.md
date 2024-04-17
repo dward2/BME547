@@ -307,7 +307,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>
         Last Day of Class<br>
       <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li>
-      <li>Software Development Methodologies & Other Terminology<br></li>
+      <!---<li>Software Development Methodologies & Other Terminology<br></li>--->
     </td>
     <td></td>
 </tr>
