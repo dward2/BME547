@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Spring 2024  
+# BME 547 - Medical Software Design - Fall 2024  
 
 ## Instructor
 Dr. David Ward  
