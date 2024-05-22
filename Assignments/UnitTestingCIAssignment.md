@@ -35,11 +35,13 @@ be flexible enough to read results that may be slightly off.
     * does not contain any consecutive underscores, periods, and dashes 
       (i.e., "david..ward" is unacceptable, but "david.-ward" is)
     * does not contain any other characters such as `+`, `*`, `!` or `&`
+    * consists of at least one letter
   * the **domain**
     * contains only letters (a-z, A-Z), numbers (0-9), and dashes (-)
     * does not start or end with a dash
     * does not contain any consecutive dashes
     * does not contain any other characters such as `_`, `+`, `*`, `!` or `&`
+    * consists of at least one letter
   * the **toplevel**
     * contains only letters (a-z, A-Z)
     * consists of at least two letters
