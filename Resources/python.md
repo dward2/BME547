@@ -1,9 +1,14 @@
 # Python Resources
 
 ## General Python Overview
-* [Python Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/python-essential-training-14898805)  
-  * Self-paced video course(1)
-* [Think Python: How to Think Like a Computer Scientist](https://greenteapress.com/thinkpython2/html/index.html)
+* LinkedIn Learning Courses
+  * Self-paced video course
+  *  Duke students have free access to the LinkedIn Learning 
+tutorials if you access them through the OIT software portal.
+  * Two options:
+    * [Python Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/python-essential-training-18764650/getting-started-with-python?u=77842946)  
+    * [Learning Python (LinkedIn Learning)](https://www.linkedin.com/learning/learning-python-14393370/learning-python-22821893?u=77842946)
+* [Think Python](https://allendowney.github.io/ThinkPython/)
   * On-line book
 * [W3 Schools Python Tutorial](https://www.w3schools.com/python/)
   * Well organized tutorial and reference site for Python
@@ -50,5 +55,3 @@ Also, see the NumPy related information at the SciPy Lectures link below.
 * [Matplotlib Lecture](https://nbviewer.jupyter.org/github/dpsanders/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
 * [Seaborn Examples](https://seaborn.pydata.org/examples/index.html)
 
-*(1) Please note that Duke students have free access to the LinkedIn Learning 
-tutorials if you access them through the OIT software portal.*
