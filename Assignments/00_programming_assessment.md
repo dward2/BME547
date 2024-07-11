@@ -21,7 +21,7 @@ the instructor for guidance.
 
 ## Exercise One
 Write a Python script that does the following: 
-* Creates a list that contains with the following strings and assigns this list
+* Creates a list that contains the following strings and assigns this list
   to a variable:
   + apple
   + banana
@@ -34,18 +34,19 @@ Write a Python script that does the following:
   into your variable.
 * Write code that will parse the data in the variable above and create two new 
   variables, each of which contains a new list.  One of these new
-  variables should contain all the strings from the list above with five 
+  variables should contain all the strings from the list above that contain five 
   characters or less.  The second new variable should contain all the strings 
-  with six characters or more.
-* For each of the two new variables, write code that will output each string,
-  on its own line, to either the screen or an output file.
+  that contain six characters or more.
+* For each of the two new variables, write code that will output each string in
+  both lists, on its own line, to either the screen or an output file.
   
 ## Exercise Two
 In a Python code file, complete the following:
 * Write a function that receives a number as a parameter and returns a boolean
-  of `True` if the parameter is positive and returns `False` if not.
+  of `True` if the parameter is positive or `False` if not.
 * Write a function that accepts three parameters (`a`, `b`, and `c`) and
-  returns the two solutions to the quadratic formula.  You can ignore complex
+  returns the two solutions to the quadratic formula using the three parameters
+  as input.  You can ignore complex
   numbers for this assignment and assume that the values of `a`, `b`, and `c`
   will always yield two real roots.
 * Write a program that 
@@ -86,7 +87,7 @@ Assume you have the following data:
 </table>
 
 In a Python code file, complete the following:
-* Create a variable with an empty list.
+* Create a variable containing an empty list.
 * Use the `.append()` method to populate this list with the data above where
   each item in the list is of the form: `[name, id]`.
 * Show how you would print out the patient id of Bob Boyles from this list.
