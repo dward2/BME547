@@ -72,7 +72,10 @@ design fundamentals.   Some project-related work will be done in groups.
 
 ## Prerequisites
 Basic familiarity with programming concepts (e.g., variables, loops,
-conditional statements, functions and parameters).
+conditional statements, functions and parameters) and their implementation in
+Python.
+
+Basic familiarity with Python data types, including lists and dictionaries.
 
 BME 271 - Signals and Systems
 
@@ -136,13 +139,16 @@ It is very understandable that students will have to miss class for job
 interviews, personal reasons, illness, etc.  Absences from class or delayed 
 daily work will be considered **excused** only if:
 * for an illness, the illness is communicated through submission of an 
-  [Incapacitation Form](https://pratt.duke.edu/undergrad/students/policies/3531) 
+  [Incapacitation Form](https://class-absences.trinity.duke.edu/if)*   
   **before** class and then the student contacts the instructor within the 
   required 48 hours to discuss appropriate arrangements, or
 * for any other reason, the reason for the absence is communicated to and 
   approved by the instructor at least 48 hours **in advance**.  Approval is subject 
   to instructor discretion as to whether the type of absence should be 
-  considered an excused absence.
+  considered an excused absence.  
+  `*` see [Pratt Policies & Procedures](https://pratt.duke.edu/life/resources/policies/)
+      for more information.
+
 
 Unexcused absences will count against the participation component of your class
 grade.
@@ -274,7 +280,7 @@ this class, this will be considered a case of academic dishonesty
 similar to directly copying such code, regardless of the user intent.
 
 All students are expected to adhere to all principles of the [Duke Community
-Standard](https://students.duke.edu/wp-content/uploads/2023/10/DCS-Guide-2023-2024.pdf-1.pdf).
+Standard](https://students.duke.edu/wp-content/uploads/2024/01/DCS-Guide-2023-2024.pdf-1.pdf).
 Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
 Conduct or the appropriate Graduate School dean.  Please do not hesitate to 
