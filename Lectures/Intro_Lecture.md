@@ -7,7 +7,7 @@
 
 ## Who are we?
 * Dr. David Ward
-* Sophie Shi
+* Zac Spalding
 
 ## Who are you?
 * Name (how you would like to be addressed)

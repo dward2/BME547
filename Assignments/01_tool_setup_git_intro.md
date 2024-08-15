@@ -46,25 +46,20 @@ installed.  If not, you will need to download it from the site above.
     instructions at [Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
 
 
-5. Download and install `python` at https://www.python.org/. 
-   + **NOTE:** As of January 7, 2024, the latest version is 3.12.1.  
+5. Download and install `python`. 
    + **Mac** users:  
      * Python is likely already installed.  Open a Terminal window 
-       and enter `python --version`.  You should see something like `Python 3.7.0`.
-     * If the version number is 2.7, enter `python3 --version` into the terminal 
-       window and see if version 3 is also installed.  
+       and enter `python --version`.  You may see an output like 
+       `Python 3.9.0`.
+     * If the version number is 2.7, or if no version of python is found, 
+       enter `python3 --version` into the terminal window.  
      * If you do not have any version 3 or if your version 3 is earlier than
-       3.9, you will need to install a new version of `python3` of at least
-       version 3.9.
-   __Do not try to delete or "upgrade" the 2.7 version currently on your 
+       3.10, you will need to install the latest version of `python3`.
+     * __Do not try to delete or "upgrade" the 2.7 version or any 
+       other version currently on your 
    computer as it is a part of the macOS installation.__
-     * If python does not start at all, you will need to install `python3`.    
-   Info on installing `python3` on macOS can be found at:      
-       * <https://docs.python.org/3/using/mac.html>
-       * <http://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/>
-       * <https://opensource.com/article/19/5/python-3-default-mac> _(if you are
-     comfortable with using more advanced virtual environment options for
-     managing your python versions)_.
+     * Visit <https://docs.python.org/3/using/mac.html> for instructions on 
+       installing Python. 
      * Note that if you have both `python2` and `python3` installed on your 
      computer, it is possible that you will have to enter `python3` in place
      of `python` to run the correct version.  Alternatively, you can set up an
@@ -79,20 +74,17 @@ installed.  If not, you will need to download it from the site above.
        + If you are using a `bash` shell, you will need to make modifications
          to the `.bashrc` file.  If you are using a `zsh` shell, you will need
          to make modifications to the `.zshrc` file.
-       + Enter `whereis python3` to determine the pathway to `python3`.  It
-         will usually be either `/usr/local/bin` or `/usr/bin`.
+       + Enter `which python3` to determine the pathway to `python3`.  It
+         will could be either `/usr/local/bin`, `/usr/bin`, 
+         `/Library/Frameworks/Python.framework/Versions/3.12/bin/python3`, 
+         or something similar.
        + You can modify the appropriate `rc` file determined above in one of 
-         two ways:
-         - Enter  `echo "alias python=/usr/local/bin/python3" >> ~/.bashrc` or
-           `echo "alias python=/usr/local/bin/python3.7" >> ~/.zshrc`
+         two ways, replacing `<python_path` with the appropriate path 
+         determined from the step above:
+         - Enter  `echo "alias python=<python_path>" >> ~/.bashrc` or
+           `echo "alias python=<python_path>" >> ~/.zshrc`
          - Manually edit the appropriate file and add the line 
-           `alias python=/usr/local/bin/python3`  
-         - If your `whereis python3` result was only `/usr/bin`, then remove
-           `/local` from the paths above.
-         - Note: there have been some instances where the specific python3
-           version number is required.  So, if the above does not work, you
-           may need to set the alias path as `/usr/local/bin/python3.7` or the
-           appropriate version number.
+           `alias python=<python_path>`  
        + You will need to do the same thing with the `pip` package installer.
        Type `pip --version` at the command line and an output similar to
        `pip 19.0.3 from /Library/Python/2.7/site-packages/pip-19.0.3-py2.7.egg/pip (python 2.7)`
@@ -104,14 +96,19 @@ installed.  If not, you will need to download it from the site above.
     
    + **Windows** users have three options:  
      1. Download and install from <https://www.python.org/>.
-   Follow additional guidelines found [here](../Resources/installations.md) for
-   installation.
-     2. Install Anaconda Python from <https://www.anaconda.com/products/distribution>.
-   You can download the complete 
-   Anaconda package or Miniconda which brings in the bare minimum of packages 
-   and then install what is necessary in virtual environments, but each project 
-   will require more download overhead.  This option may require you to set-up
-   virtual environments somewhat differently than described in class.
+        * Follow additional guidelines found [here](../Resources/installations.md) for installation.
+        * **NOTE:** As of August 15, 2024, the latest version is 3.12.5.  
+   
+     2. Install Python from Anaconda.
+        * You can install either the full Anaconda distribution
+          (<https://www.anaconda.com/download/success>() (which will download 
+          many commonly used packages and set them up in a base environment)
+          or you can install Miniconda 
+        (<https://docs.anaconda.com/miniconda/miniconda-install/>) which 
+          brings in the bare minimum of packages (RECOMMENDED)
+        * Using Anaconda will require you to set-up
+   virtual environments somewhat differently than what will be described in 
+          class.
      3. Installing and using the [Ubuntu Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/about), 
    and running `python` from within that environment.  This approach will give 
    you a legitimate Linux environment, but there is overhead to running GUI 
