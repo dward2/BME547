@@ -91,6 +91,7 @@ Complete the prerequisite assessment found
   + Python (v3)
   + Use of external libraries / packages
   + Virtual environments & dependency management (`pip`, `requirements.txt`)
+  + Custom classes
   + Use of a programming IDE
   + Debugging
 * Testing
@@ -114,6 +115,8 @@ Complete the prerequisite assessment found
 * Servers
   + Design & Implementation of a web service (Python Flask)
   + HTTP & RESTful APIs
+* Graphical User Interfaces (GUIs)
+* Introduction to Security
 * Medical Software Development Standards
 
 ## Attendance / Participation
@@ -280,7 +283,7 @@ this class, this will be considered a case of academic dishonesty
 similar to directly copying such code, regardless of the user intent.
 
 All students are expected to adhere to all principles of the [Duke Community
-Standard](https://students.duke.edu/wp-content/uploads/2024/01/DCS-Guide-2023-2024.pdf-1.pdf).
+Standard](https://students.duke.edu/wp-content/uploads/2024/08/DCS-Guide-2023-2024.pdf).
 Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
 Conduct or the appropriate Graduate School dean.  Please do not hesitate to 

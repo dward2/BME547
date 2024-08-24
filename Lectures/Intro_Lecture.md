@@ -13,7 +13,6 @@
 * Name (how you would like to be addressed)
 * Undergrad / Grad
 * Hometown
-* Programming language you are most comfortable with
 * What your long term plans are
 * Fun fact about yourself
 
