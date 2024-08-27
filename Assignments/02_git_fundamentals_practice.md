@@ -10,14 +10,14 @@ access the assignment.
 Log into your GitHub account.  Then, visit the URL in the Canvas assignment.
 
 Follow the instructions and a private repository containing the name of the 
-assignment and your GitHub ID will be created within the BME 547-Spring 2024 
+assignment and your GitHub ID will be created within the BME547-Fall2024 
 organization.  You will have ongoing access to this repository through your 
 personal GitHub account.  To access the repository, click on the GitHub
 icon in the upper left portion of the GitHub page that will take you to a 
 dashboard page for your account.  You should be able to see your repositories
 on the left hand side.  Alternatively, you can click on your GitHub avatar
 on the upper right portion of the GitHub page.  Choose "Your Organizations"
-from the menu.  Then, pick the "BME547-Spring2024" organization on the
+from the menu.  Then, pick the "BME547-Fall2024" organization on the
 Organizations page.  You will then see your repositories within this
 organization.  
 
