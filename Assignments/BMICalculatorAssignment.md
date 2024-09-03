@@ -47,12 +47,8 @@ in GitHub are captured locally.
   * how to run your program from the command line (For example, "To start
   the program, type `python bmi_calc.py` on the command line.")
   * an explanation for how to use your program (i.e., a user's manual)
-* When the assignment is completed, create an annotated git tag called `v1.0`
-on your main branch to indicate your final submission.
-* If you make additional changes after creating this tag, simply create another
-tag (e.g., `v1.1`).  We will grade whatever the most recent submission is.
-* Make sure your final submission is pushed to GitHub, merged into the
-main branch, and tagged before the deadline.
+* Make sure your final submission is pushed to GitHub and fully merged into the
+main branch before the deadline.
 
 
 ### Grading Criteria
@@ -63,7 +59,6 @@ main branch, and tagged before the deadline.
     + Using Pull Requests on GitHub for merging feature branches into main 
       branch
     + All branches and final code pushed to GitHub
-    + Use of a git tag
 * Python Fundamentals
     + Modular code
     + Code executes without errors
