@@ -51,7 +51,8 @@ Example</a> (starter code <a href="https://github.com/dward2/modularity_example"
         <li><a href="Lectures/git_workflow_overview.md">Git Workflow Overview</a></li>    
    </td>
     <td>
-        <!---<a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a>--->
+        <a href="Lectures/git_workflow.md#LDL-Branch">In-class Exercise</a>
+        <br>
         <!---Assignment #2 Assigned--->
         <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
     </td>
@@ -66,7 +67,7 @@ Example</a> (starter code <a href="https://github.com/dward2/modularity_example"
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
     </td>
     <td>
-    <!---<a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a>--->
+    <a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a>
     </td>
 </tr>
 
