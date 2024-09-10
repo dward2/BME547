@@ -67,7 +67,8 @@ Example</a> (starter code <a href="https://github.com/dward2/modularity_example"
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
     </td>
     <td>
-    <a href = "Lectures/unit_testing.md#exercise">In-class Exercise</a>
+    <!---<a href = "Lectures/unit_testing.md#exercise">In-class 
+Exercise</a>--->
     </td>
 </tr>
 
