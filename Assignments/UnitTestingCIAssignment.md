@@ -4,7 +4,8 @@ In this assignment, you will write a function and comprehensive unit tests to
 ensure the function meets specifications.  You will also configure Continuous
 Integration (CI) to automatically run tests on push and pull request events.
 
-See Canvas for GitHub Classroom link and due date.
+See Canvas for due date and information about setting up a repository for 
+the assignment.
 
 ### Background
 Assume you are part of the development team for a medical system input device
@@ -65,8 +66,7 @@ in actual use but are adapted for this assignment specifically.
 contain a `@` or `.` or anything at all.
 
 ### Approach
-* Log into GitHub and visit the GitHub Classroom link provided in Canvas.  This
-  will create a repository for your submission.
+* Log into GitHub and visit the GitHub repository created for you.
 * Clone this repository to your local computer.
 * Set-up GitHub Actions in this repository to implement CI testing.
 * Develop code on feature branches.
@@ -92,7 +92,7 @@ pull requests, creating branches from latest, merged main branch, etc.).
 * Presence of comprehensive unit testing to ensure that the appropriate range 
 of possible string inputs are checked.
 * The use of `@pytest.mark.parametrize` for at least one unit test.
-* Appropriate naming and syntax for unit tests and testing files.
+* Appropriate naming and syntax for unit tests and testing modules.
 * Implementation of GitHub Actions / CI Testing.
 * Appropriate use of virtual environments.
 * Code (functions and tests) meet PEP-8 style guidelines.

@@ -67,8 +67,6 @@ Example</a> (starter code <a href="https://github.com/dward2/modularity_example"
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
     </td>
     <td>
-    <!---<a href = "Lectures/unit_testing.md#exercise">In-class 
-Exercise</a>--->
     </td>
 </tr>
 
@@ -81,8 +79,9 @@ Exercise</a>--->
     (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
   </td>
   <td>
-    Assignment #3 Assigned
-      <!---<a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a>--->
+    <!---Assignment #3 Assigned--->
+      <li><a href = "Lectures/unit_testing.md#exercise">In-class Exercise: TDD</a></li>
+      <li><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a></li>
   </td>
 </tr>
 
