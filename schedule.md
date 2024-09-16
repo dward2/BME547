@@ -88,23 +88,23 @@ Example</a> (starter code <a href="https://github.com/dward2/modularity_example"
 <tr>
 <td>Mon Sep 16</td>
     <td>
-        <li><a href="Lectures/lists.md">Lists</a></li>
-        <li>For Loops</li>
+        <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>(starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
+        <li><a href="Lectures/file_input.md">Text File Input</a> (<a href="Lectures/lecture_files/blood_test_data.txt">Sample Data</a>)</li>
+        <!---<li><a href="Lectures/lists.md">Lists</a></li>
+        <li>For Loops</li>--->
     </td>
     <td>
-</td>
+    </td>
 </tr>
 
 <tr>
 <td>Wed Sep 18</td>
     <td>
-    <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a></li>
     <li><a href="Lectures/git_workflow_more.md">Tags and Issues</a></li>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
-        <li><a href="Lectures/file_input.md">Text File Input</a> (<a href="Lectures/lecture_files/input_file_input_lecture.txt">Sample Data</a>)</li>
     </td>
     <td>
         Assignment #4 Assigned
