@@ -130,17 +130,47 @@ In the Source Control side bar, click on the three horizontal dots in the
 upper right and select "Pull"
 
 
-## Using PycodeStyle in VS Code Editor
-Select the "File/Preferences/Settings" menu item.  On the left hand side of the
-Settings window, open "Extensions" and select "Python".  On the right hand side
-of the Settings window, scroll down until you find the "Linting: Pycodestyle
-Enabled" check box:  
-![Pycodestyle checkbox](images/pycodestyle_settings_checkbox.JPG)  
-Make sure the checkbox is selected.
+## Using PycodeStyle / Flake8 in VS Code Editor
+`pycodestyle` is no longer directly supported in VS Code.  However, a
+package called `flake8` that is based on `pycodestyle` is supported.  To 
+install the `flake8` extension in VS Code:
+1. Click on the ![Extensions Icon](images/Extensions_Icon_VS_Code.JPG) icon 
+   to open the Extensions tab.  In the "Search Extensions in Marketplace" 
+   search box at the top of the tab, enter Flake 8.
+2. Look for the Flake8 extension published by Microsoft:  
+   ![Flake8 Extension](images/Flake8_Extension.jpg)
+3. Click "Install".
 
-Pycodestyle will now check your code and highlight with a red squickly 
-underline where there are PEP-8 errors.  Note, this check is only done with 
-the file is saved.  It does not appear to be dynamic.  
+PEP-8 errors should now be shown was wavy lines below the code lines.  If 
+you hover over the wavy line, a message should be displayed with the PEP8 
+error.  Look for both errors (which will be shown by a red wavy line and 
+have an E error code, such as E302) and warnings (Yellow wavy lines and 
+have a W error code, such as W391).
+
+**Important Note**: The `flake8` extension does not act dynamically.  It 
+only does its checks when a file is opened or saved.  So, after you make 
+some changes to fix any issues, you will need to save the file in order to 
+get `flake8` to update.    
+
+In addition to these errors and warnings, `flake8` highlights some 
+additional code issues that are not PEP-8 issues.  For example, if you 
+declare a variable and never use it, `flake8` will highlight that.  These 
+issues have an F error code (such as F841).  By default, `flake8` also 
+shows these as red wavy lines.  To help distinguish between PEP8 errors 
+that should be changed and these "F" issues, you can change the color, or 
+entirely remove, the line for the "F" issues.  In VS Code, 
+* go to the "File" menu and select "Preferences/Settings...".  
+* In the left pane of the Settings tab, select "Extensions/Flake 8".
+* In the right pane, scroll until you find "Severity".
+* As an alternate to the above two steps, you can search for "Flake8: 
+  Severity" in the "Search Settings" search bar.
+* In Flake8: Severity, hover over the item code you want to change and 
+  click on the pencil that will display on the right.  
+* Select "Hint" or "Information" from the dropdown menu and then click Ok.  
+  "Hint" will show a dotted line where the issue is found.  "Information" 
+  will show a blue wavy line.
+
+
 
 
 
