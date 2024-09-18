@@ -102,13 +102,15 @@ Example</a> (starter code <a href="https://github.com/dward2/modularity_example"
 <tr>
 <td>Wed Sep 18</td>
     <td>
-    <li><a href="Lectures/git_workflow_more.md">Tags and Issues</a></li>
+    <!---<li><a href="Lectures/git_workflow_more.md">Tags and 
+Issues</a></li>--->
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
+        <li>Continue work on database code</li>
     </td>
     <td>
-        Assignment #4 Assigned
-        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
+        <!---Assignment #4 Assigned--->
+        <a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>
     </td>
 </tr>
 
