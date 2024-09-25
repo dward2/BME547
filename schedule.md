@@ -132,8 +132,9 @@ Issues</a></li>--->
         <li><a href="Lectures/logging.md">Logging</a></li>
 </td>
     <td>
-        Assignment #5 Assigned
-        <!--- New Class Assignment -->
+        <!---Assignment #5 Assigned-->
+        <a href="Assignments/custom_class_assignment.md">Custom Class 
+Assignment</a>
     </td>
 </tr>
 
