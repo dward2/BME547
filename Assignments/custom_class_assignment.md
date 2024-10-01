@@ -113,10 +113,10 @@ blood donors for a patient or recipients of donations from a patient.
 * Docstrings are only required for the Patient class methods, including the 
   initialization.
 * If you need a reminder about blood type compatability, you can refer to 
-  the website <https://www.lifeblood.com.
-  au/patients/blood-for-transfusion/matching-blood-groups> and look at the 
-  table in the section titled "1 Red cell compatibility".  In this table, 
-  "Patients blood group" refers to the blood recipient.
+  the website 
+  <https://www.lifeblood.com.au/patients/blood-for-transfusion/matching-blood-groups> 
+  and look at the table in the section titled "1 Red cell compatibility".  
+  In this table, "Patients blood group" refers to the blood recipient.
 
 ## Grading Expectations
 * Correct design and usage of a custom class
