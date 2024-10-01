@@ -171,6 +171,45 @@ entirely remove, the line for the "F" issues.  In VS Code,
   will show a blue wavy line.
 
 
+## Pytest in Visual Studio Code
+You can run unit tests in Visual Studio code using `pytest`.  First, make 
+sure that you have `pytest` installed in your virtual environment and that 
+you have at least one test module in your repository.
+
+1. Open the Testing panel by clicking on the 
+   ![Testing Icon](images/vs_code_testing_icon.jpg) icon on the left-hand 
+   tool bar.
+2. In the Testing panel, click on the blue "Configure Python Tests" button.  
+3. You will be asked for the testing framework to use in the menu bar input 
+   box.  Select `pytest` as shown below:
+   ![Framework Choice](images/vs_code_framework_choice.jpg)
+4. You will then be asked the location of your testing files (see below).  
+   Select `. Root directory` if you have stored your test modules in the base 
+   directory of your repository.  If you have chosen to put them into a 
+   testing folder, select that folder.  
+   ![Test File Location Choice](images/vs_code_test_file_location.jpg)
+5. To run your tests, click on the 
+   ![Run Tests Icon](images/vs_code_run_tests_icon.jpg) found at the top of 
+   the Testing panel.
+6. Results should be summarized in the "Test Results" output on the bottom 
+   half of the screen.
+7. If you would like to run the tests in the debugger, create any 
+   appropriate breakpoints in the test module code and then click the
+   ![Debug Tests Icon](images/vs_code_debug_tests_icon.jpg) icon at the top 
+   of the Testing panel.  
+8. If you want to include `pycodestyle` testing as part of the tests:
+   1. open the Settings window by going to "File/Preferences/Settings..."
+   2. In the Setting search bar, enter `pytest`.
+   3. Look for the setting called "Python > Testing: Pytest Args".
+   4. Click on the blue "Add Item" button.
+   5. Enter "--pycodestyle" in the item entry box and click the blue "Ok" 
+      button.
+   6. You could also add the "-v" flag as a separate item if you wanted the 
+      more detailed terminal output.
+   
+   NOTE: The VS Code interface may not recognize that the `pycodestyle` 
+   failed.  You may need to look at the test results output for the `pytest` 
+   output itself.
 
 
 
@@ -183,6 +222,9 @@ https://code.visualstudio.com/docs/python/python-tutorial
 https://code.visualstudio.com/docs/sourcecontrol/overview
 
 https://code.visualstudio.com/docs/python/environments#_creating-environments
+
+https://code.visualstudio.com/docs/python/testing
+
 
 
 
