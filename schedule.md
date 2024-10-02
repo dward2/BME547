@@ -156,10 +156,11 @@ Assignment</a>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
 </td>
     <td>
-        <!---<a href="https://canvas.duke.edu/courses/26498/assignments/69063">
-            In-Class Exercise (see Canvas)</a>--->
-        <!---<a href="Assignments/CPAP Measurements">CPAP Measurements Assigned</a>--->
-        Assignment #6 Assigned
+        <li><a href="https://canvas.duke.edu/courses/38469/assignments/118984">
+            In-Class Exercise (see Canvas)</a></li>
+        <li><a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a></li>
+        <!---Assignment #6 Assigned--->
     </td>
 </tr>
 

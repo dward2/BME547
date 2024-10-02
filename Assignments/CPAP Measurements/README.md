@@ -133,8 +133,9 @@ calculated and saved as key-value pairs in a Python dictionary called
   `patient_04.txt` should be saved in a JSON file called `patient_04.json`.
 * All numeric values above should be reported as numbers (i.e., `int` or 
   `float`), not as numeric strings (i.e., not `"5.3"`)
-* When calculating the `leakage`, if the leakage value is negative, a `warning`
-  log entry should be added to the log indicating that the leakage is negative.
+* After calculating the `leakage`, if the leakage value is negative, a 
+  `warning` log entry should be added to the log indicating that the 
+  leakage is negative.
 
 A breath can be identified by a positive peak in volumetric flow (the 
 inhalation) followed by a return to zero or negative flow (the exhalation).
@@ -175,11 +176,11 @@ Hub.
 * Achieve the functional specifications with passing unit tests.  
 * All methods should have well-defined input-action-output (as the unit tests 
     will demand).
-* There should be no "hard-coded" values in your methods.
+* Your code cannot reference the input file name or any information other 
+  than the data in the file to help determine tuning factors or results.  
+  It can, of course, reference the input file name when determining the 
+  output JSON file name.  
 * Adhere to [PEP8](https://www.python.org/dev/peps/pep-0008/) style. 
-* Implement exception handling as needed: when reading in data, non-numeric
-    values could be detected using a try/except block, with the appropriate
-    exceptions being handled
 * Gracefully terminate when the input file ends
 * A logging text file should be created with the log entries contained in the
   specifications above, along with any other log entries you would like to
