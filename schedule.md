@@ -172,7 +172,7 @@ Assignment</a>
         APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
-        <a href="Lectures/name_server_project.md">Class Exercise</a>
+        <a href="Lectures/name_server_project.md">Optional Class Exercise</a>
     </td>
 </tr>
 
@@ -194,6 +194,7 @@ Assignment</a>
     <td>
         Fall Break - No Class
     </td>
+    <td></td>
 </tr>
 
 <tr>
