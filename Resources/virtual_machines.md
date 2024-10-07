@@ -45,8 +45,7 @@ using your NetID.
 * Select the type of VM you would like.
   + Look under the "Everything" heading and select the "All" tab.
   + To select the course-specific Linux option, look for an entry similar to  
-    "BME 547 - 01: Medical Software Design (Lecture)" and may also include the
-    semester (e.g., F2023).  Click on that option.
+    "BME 547 - 01: Medical Software Design (Lecture)".  Click on that option.
   + To select the Linux option from your personal allocation, click on 
     "Ubuntu Server 22.04".
   + To select the Windows option from your personal allocation, click on 
@@ -153,8 +152,8 @@ Review the information from the
 [virtual_environments.md](/Resources/virtual_environments.md).  For the Linux 
 virtual machine, you can follow the information given for macOS users.
 
-### For the course-specific Linux VMs, as of October 2023
-* The default installation has `python3` (version 3.10.9) installed.  So, you 
+### For the course-specific Linux VMs, as of October 2024
+* The default installation has `python3` (version 3.10.12) installed.  So, you 
   will need to enter `python3` and `pip3` to access version 3.  Or, you can 
   add the following aliases to your `.bashrc` (or `.bash_aliases` if
   it exists) file:
@@ -169,14 +168,16 @@ virtual machine, you can follow the information given for macOS users.
   ```bash
     sudo apt install python3-pip
   ```
-  You may be prompted to enter your password (which is your Duke NetID).
+  You may be prompted to enter your password (which is your Duke NetID 
+  password).
 * The `venv` package is not installed as part of this Python installation.
   If you attempt to install a virtual environment and get an error, install
   `venv` with the following command:
   ```bash
   sudo apt install python3.10-venv
   ```
-  You may be prompted to enter your password (which is your Duke NetID).  Once 
+  You may be prompted to enter your password (which is your Duke NetID 
+  password).  Once 
   `venv` is installed, you
   should then be able to create your virtual environment using `python3 -m 
   venv venv`.

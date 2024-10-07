@@ -123,7 +123,7 @@ __Name Server__
 
 The server has the following endpoints:
 
-* `POST http://vcm-21170.vm.duke.edu:5000/student`  
+* `POST http://vcm-43716.vm.duke.edu:5000/student`  
 allows you to add your
 student data.  The associated POST data should look like this JSON:  
     ```
@@ -137,7 +137,7 @@ student data.  The associated POST data should look like this JSON:
 "number of students" key.  If the request is unsuccessful, it will return a
 JSON with a string giving the reason.
 
-* `GET http://vcm-21170.vm.duke.edu:5000/list`  
+* `GET http://vcm-43716.vm.duke.edu:5000/list`  
 returns a list of all the student data currently available on server
 
 
@@ -170,7 +170,7 @@ Find a partner in class and write some code to:
 * Send a message to your partner
 * Receive a message from your partner
 
-URL To Server:  `http://vcm-21170.vm.duke.edu:5001`
+URL To Server:  `http://vcm-43716.vm.duke.edu:5001`
 
 ### `POST /add_message`
 Posts a message for a specific user.

@@ -128,8 +128,8 @@ Issues</a></li>--->
 <tr>
 <td>Wed Sep 25</td>
     <td>
-        <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>    
-        <li><a href="Lectures/logging.md">Logging</a></li>
+        <li>Testing of Class Methods</li>
+        <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
 </td>
     <td>
         <!---Assignment #5 Assigned-->
@@ -167,11 +167,12 @@ Assignment</a>
 <tr>
 <td>Mon Oct 7</td>
     <td>
-        <a href="Lectures/apis_webservices_requests.md">
-        APIs, Intro To Web Services, Requests</a>
+        <li><a href="Lectures/logging.md">Logging</a></li>
+        <li><a href="Lectures/apis_webservices_requests.md">
+        APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
-        <!---<a href="Lectures/name_server_project.md">Class Exercise</a>--->
+        <a href="Lectures/name_server_project.md">Class Exercise</a>
     </td>
 </tr>
 
