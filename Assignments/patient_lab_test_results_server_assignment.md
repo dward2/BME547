@@ -333,7 +333,7 @@ I have set up a server to simulate accessing a third-party webservice for
 sending e-mails.  When your program needs to send an e-mail, it should make
 a POST request to the following URL:
 ```
-http://vcm-33934.vm.duke.edu:5007/send_email
+http://vcm-43729.vm.duke.edu:5007/send_email
 ```
 **NOTE**: The port is `5007`.  
 
