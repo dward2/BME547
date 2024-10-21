@@ -14,22 +14,22 @@ The instructions here are accurate as of March 2022, but may change.  So, if
 your experience varies from below, modify as needed.
 
 1. [Sign up](https://www.mongodb.com/cloud/atlas) for a free account at 
-mongoDB.  Click on "Try Free".
+mongoDB.  Click on "Try Free" or "Get Started".
 2. Enter your e-mail, first and last names, and select a password.  Agree to 
-   the terms and conditions by selecting the check box.  Then, click "Join
-   now with no obligation".  Note:  Instead of  "Join now with no obligation",
-   this button may be named "Submit" or "Get started free". 
+   the terms and conditions by selecting the check box.  Then, click "Create
+   your Atlas account". 
 3. You will then receive an email from MongoDB to verify your e-mail.  Click
    "Verify Email" in that email.
 4. Click "Continue" on the webpage that opens.
-5. Answer the questions on the "Welcome to Atlas!" page.  I answered:
+5. Answer the questions on the "Welcome to Atlas!" page.  These questions may
+   have changed since, but here is what I answered in case they are the same:
    1. Learn MongoDB
    2. New to MongoDB
    3. Python
    4. Not sure (for what kind of data)
    5. Not sure (for application architectural models)   
 6. Click "Finish".   
-7. On the "Deploy your database" page:
+7. On the "Deploy your cluster" page:
    1. Select the "M0 FREE" button.
    2. Choose any provider under Provider (I use aws).
    3. Change the cluster name, or accept the default.
