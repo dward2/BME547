@@ -238,7 +238,6 @@ Assignment</a>
 <td>Mon Oct 28</td>
     <td>
       <li>MongoDB/PyMODM Example</li>
-      <li>Secrets and Environment variables</li>
 </td>    
     <td>
     <!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
@@ -296,6 +295,7 @@ Encoding/Decoding</a></li>
 <td>Wed Nov 13</td>
     <td>
               <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li>
+              <li>Secrets and Environment variables</li>  
     </td>
     <td>
     </td>
