@@ -250,7 +250,6 @@ Assignment</a>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
         <li><a href="Lectures/tkinter_walkthrough.md">Tkinter/GUI Walkthrough</a></li>
-        <li><a href="Resources/GUI_Projects">Suggested GUI Projects</a></li>
     </td>
     <td></td>
 </tr>
@@ -264,6 +263,7 @@ Assignment</a>
     </td>
     <td>
         Assignment #9 Assigned
+        <!---<a href="Assignments/gui_assignment.md">GUI Assignment</a>--->
     </td> 
 </tr>
 
