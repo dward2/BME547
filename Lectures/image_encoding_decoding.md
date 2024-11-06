@@ -146,7 +146,7 @@ project.
 ## Image Server API for In-Class Work
 ### Server API
 
-URL is `http://vcm-21170.vm.duke.edu`.  (Port is 80, so not needed in URL)
+URL is `http://vcm-43716.vm.duke.edu`.  (Port is 80, so not needed in URL)
 
 ### POST `/add_image`
 Add an image to the database and display on webpage.  _Please upload only JPG
@@ -154,7 +154,7 @@ files._
 
 Requires the following dictionary as JSON string
 ```python
-{"image": <base_64_string>, "net_id": <net_id>, "id_no", <int>}
+{"image": <base_64_string>, "net_id": <net_id>, "id_no": <int>}
 ```
   + `<base_64_string>` is a string containing an image encoded into base 64
   + `<net_id>` is a string containing your Duke Net Id
