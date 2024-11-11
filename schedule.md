@@ -284,18 +284,19 @@ Encoding/Decoding</a></li>
 <td>Mon Nov 11</td>
     <td>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
-        <li>Basic HTML Design with Flask</li>
+        <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
     </td>
     <td>
-        Final Project Assigned
-      <!---<li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>--->
+        <!----Final Project Assigned---->
+      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
     </td>
 </tr>
 
 <tr>
 <td>Wed Nov 13</td>
     <td>
+            <li><a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a></li>
               <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li>
               <li>Secrets and Environment variables</li>  
     </td>

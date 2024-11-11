@@ -55,15 +55,15 @@ already existing team.
 | Communication |                |                      |                      |
 | Execution     |                |                      |                      |
 * Share this with me and your teammates via e-mail
+* See the Canvas assignment for due date
   
 ##### Work Plan for Final Project
 * As a team, develop milestones and issues for completing the project.
 * Assign a team member (and optional due date) to each issue.  Remember that
   each team member should be assigned to one of the GUIs.
 * Communicate to me when your plan is complete so I may review it. 
-  
-__Please target completion of your lookback and issues/milestones, and 
-share them with me, by the end of day Wednesday, April 10.__  
 * I will be looking to see how you use Milestones/Issues for communication
 in my grading of the final project.
-  
+    
+__I strongly suggest completion of your issues/milestones, and 
+sharing them with me for review, by the end of day Wednesday, November 20.__  
