@@ -307,20 +307,19 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Mon Nov 18</td>
     <td>
-<a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a></td>
+       <a href="Resources/standards.md">Standards: </a>
+       <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
+    </td>
     <td>
+       IEC62304 Assignment (see Canvas)
     </td>
 </tr>
 
 <tr>
 <td>Wed Nov 20</td>
     <td>
-       <a href="Resources/standards.md">Standards: </a>
-      <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
-    </td>
+    <a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a></td> 
     <td>
-      IEC62304 Assignment
-      <!---<a href="https://canvas.duke.edu/courses/26498/assignments/69051">IEC 62304 Assignment</a>--->
     </td>
 </tr>
 
