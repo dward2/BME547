@@ -296,9 +296,7 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Wed Nov 13</td>
     <td>
-            <li><a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a></li>
-              <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li>
-              <li>Secrets and Environment variables</li>  
+            <a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a>
     </td>
     <td>
     </td>
@@ -318,7 +316,9 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Wed Nov 20</td>
     <td>
-    <a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a></td> 
+              <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li>
+              <li>Secrets and Environment variables</li>  
+</td> 
     <td>
     </td>
 </tr>
@@ -343,7 +343,7 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Mon Dec 2</td>
     <td>
-        <br>
+    <a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>
     </td>
     <td></td>
 </tr>

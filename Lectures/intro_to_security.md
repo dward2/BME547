@@ -42,13 +42,13 @@ You can add TLS/SSL to your server pretty easily (and for free) these days becau
   
 ## In-Class Exercise
 
-We are going to demonstrate how asymmetric and symmetric encryption can be 
+We are going to demonstrate how asymmetric encryption can be 
 used to send secret information to another person without prior agreement of 
 any encryption keys.
 
 We will be using the `pycryptodome` package.  
 
-With a partner, complete the following steps.
+Complete the following steps.
 
 ### Step 1 - Generate Public and Private Keys
 ```python
@@ -71,91 +71,80 @@ def generate_keys():
         out_file.write(public_key)
 ```
 
-### Step 2 - Share Public Key with Partner
-Exchange public key files with your partner.  When you receive your partner's
-public key file, rename it as "recipient_public_key.pem"
+### Step 2 - Obtain Public Key From Server
+`http://vcm-43716.vm.duke.edu/get_public_key`
 
-### Step 3 - Encode Your Message to Partner Using Their Public Key
+Make a request to the GET route above.  It will return a string.  You can 
+convert this string into an RsaKey variable as 
+follows:
+```python
+server_public_key = RSA.import_key(response.text)
+```
+
+### Step 3 - Encode Your Duke Net ID Using The Server Public Key
 In this step, we are first going to encrypt the data we want to send 
-secretly using symmetric AES encryption.  Then, to be able to send this 
-encrypted text and its key safely, we will encrypt the AES key using
-asymmetric encryption and the recipient's public key.
+secretly (your Duke Net ID) using asymmetric encryption.
 
 ```python
-from Crypto.PublicKey import RSA
-from Crypto.Random import get_random_bytes
-from Crypto.Cipher import AES, PKCS1_OAEP
+from Crypto.Cipher import PKCS1_OAEP
 
-def encrypt():
-    # Secret data to be sent
-    data = "Enter the secret only your partner should read".encode("utf-8")
+# Secret data to be sent, in byte string format
+data = "<Your_Duke_Net_ID>".encode("utf-8")
     
-    # Generate a random key to use for symmetric encryption with AES
-    aes_key = get_random_bytes(16)
+# Use server public key to asymmetrically encode data
+rsa_encoder = PKCS1_OAEP.new(server_public_key)
+encrypted_data = rsa_encoder.encrypt(data)
     
-    # Encrypt secret data with AES
-    aes_encoder = AES.new(aes_key, AES.MODE_EAX)
-    ciphertext, tag = aes_encoder.encrypt_and_digest(data)
-    
-    # Need to send aes_key and cipher text to recipient.
-    # But, if I send both and message intercepted, user could decrypt using
-    #   the sent aes_key.
-    # So, encrypt aes_key with asymmetric encryption that only recipient
-    #   can decrypt
-    
-    # Get recipient public key
-    recipient_public_key = RSA.import_key(
-      open("recipient_public_key.pem", 'rb').read())
-    
-    # Use recipient public key to asymmetrically encode the aes_key
-    rsa_encoder = PKCS1_OAEP.new(recipient_public_key)
-    encrypted_aes_key = rsa_encoder.encrypt(aes_key)
-    
-    # Place needed data into file to send
-    with open("encrypted_data_to_send.bin", 'wb') as out_file:
-        [out_file.write(x) for x in (encrypted_aes_key,
-                                     aes_encoder.nonce,
-                                     tag,
-                                     ciphertext)]
 ```
 
-### Step 4 - Share Your Message With Partner
-Send your partner the "encrypted_data_to_send.bin" file with your partner.
-When you receive your partner's file, rename it to 
-"received_encrypted_data.bin".
+### Step 4 - Get your public key
+You are going to send your public key to the server.  To load that in, use
+the following:
+```python
+with open("my_public.pem", 'rb') as in_file:
+    my_public_key_str = in_file.read()
 
-### Step 5 - Decrypt Data Using Private Key
-Now, only you can decode the "received_encrypted_data.bin" file as only you
-have the private key to do so.
+```
+
+
+### Step 5 - Post this encrypted data to the server
+`http://vcm-43716.vm.duke.edu/post_message`
+
+Send a json to the above POST route with the following format:
+```python
+import base64
+
+out_json = {
+            "message": str(base64.base64encode(encrypted_data), 
+                           encoding='utf=-8'),
+            "public_key": str(base64.b64encode(my_public_key_str), 
+                              encoding='utf-8') 
+           }
+```
+
+### Step 6 - Decrypt Data Using Private Key
+The request in Step 5 will return an base64 encrypted string.  Decrypt that 
+string 
+as follows:
 
 ```python
-from Crypto.PublicKey import RSA
-from Crypto.Cipher import AES, PKCS1_OAEP
+# Load in your private key
+with open("my_private.pem", 'rb') as in_file:
+    private_key = RSA.import_key(in_file.read())
 
-def decrypt():
-    # Load in your private key
-    with open("my_private.pem", 'rb') as in_file:
-        private_key = RSA.import_key(in_file.read())
+# Convert base64 string to byte string
+ciphertext = base64.b64decode(request.text)
+rsa_decoder = PKCS1_OAEP.new(private_key)
+message = rsa_decoder.decrypt(ciphertext)
+passcode = str(message, encoding='utf-8')
 
-    # Read-in data from the received file
-    with open("received_encrypted_data.bin", 'rb') as in_file:
-        encrypted_aes_key = in_file.read(private_key.size_in_bytes())
-        nonce = in_file.read(16)
-        tag = in_file.read(16)
-        ciphertext = in_file.read()
-
-    # Decrypt the AES key with the private key
-    rsa_decoder = PKCS1_OAEP.new(private_key)
-    aes_key = rsa_decoder.decrypt(encrypted_aes_key)
-
-    # Decrypt the data with the AES session key
-    aes_decoder = AES.new(aes_key, AES.MODE_EAX, nonce)
-    data = aes_decoder.decrypt_and_verify(ciphertext, tag)
-    print(data.decode("utf-8"))
 ```
 
-### Step 6 - Continued Communication
-Now, if you wanted to continue to share information, you would now only need
-to use the AES key that you now both have and no one else should have.
+### Step 7 - Check passcode
+To ensure everything worked, make a request to this GET route:
 
+`http://vcm-43716.vm.duke.edu/check/<duke_net_id>/<passcode>`
 
+where `<duke_net_id>` is your Duke Net ID and `<passcode>` is the passcode 
+you decrypted above.  This request will return a string of either Correct 
+or Incorrect.
