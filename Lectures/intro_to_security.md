@@ -115,8 +115,8 @@ Send a json to the above POST route with the following format:
 import base64
 
 out_json = {
-            "message": str(base64.base64encode(encrypted_data), 
-                           encoding='utf=-8'),
+            "message": str(base64.b64encode(encrypted_data), 
+                           encoding='utf-8'),
             "public_key": str(base64.b64encode(my_public_key_str), 
                               encoding='utf-8') 
            }
