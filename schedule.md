@@ -316,8 +316,7 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Wed Nov 20</td>
     <td>
-              <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li>
-              <li>Secrets and Environment variables</li>  
+              <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
 </td> 
     <td>
     </td>
@@ -327,7 +326,8 @@ Encoding/Decoding</a></li>
 <td>Mon Nov 25</td>
     <td>
       <li>Software Development Methodologies & Other Terminology</li>
-      <li>Office Hours</li>
+      <li><a href="Lectures/secrets_and_environment_variables.md">
+           Secrets and Environment variables</a></li>
     </td>
     <td></td>
 </tr>
@@ -343,7 +343,7 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Mon Dec 2</td>
     <td>
-    <a href="Lectures/testing_fixtures_and_other_testing.md">Unit Testing:  Testing Fixtures</a>
+        Office Hours</li>
     </td>
     <td></td>
 </tr>
@@ -351,6 +351,7 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Wed Dec 4</td>
     <td>
+        Office Hours
     </td>
     <td></td>
 </tr>
