@@ -325,9 +325,10 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Mon Nov 25</td>
     <td>
-      <li>Software Development Methodologies & Other Terminology</li>
+      <!---<li>Software Development Methodologies & Other Terminology</li>--->
       <li><a href="Lectures/secrets_and_environment_variables.md">
            Secrets and Environment variables</a></li>
+      <li><a href="Resources/coverage.md">Code Coverage</a></li>
     </td>
     <td></td>
 </tr>
