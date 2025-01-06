@@ -1,15 +1,5 @@
 # Working as a Team in GitHub
 
-<!---
-+ Introduce Teams
-
-* Identify one team member as the first to join the assignment.  Upon visiting
-the GitHub Classroom site, this team member will need to create a new team
-using the given team name.  This action will create a new team repository.      
-* Other team members can now visit the GitHub Classroom site, and join the
-already existing team.
---->
-
 * Use `.gitignore` file in your team repository.
   + Prevents you from pushing up your virtual environment or other settings 
     files which bloats 

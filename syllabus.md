@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Fall 2024  
+# BME 547 - Medical Software Design - Spring 2025  
 
 ## Instructor
 Dr. David Ward  
@@ -14,10 +14,11 @@ Office Hours: By appointment
 ## Course Delivery
 
 ### Lecture
-Monday / Wednesday 11:45 am to 1:00 pm  
-Location:  Wilkinson 130
+Wednesday / Friday  11:45 am to 1:00 pm  
+Location:  Hudson Hall 212
 
-Attendance at lectures is an expectation of the course.  
+Attendance at lectures is an expectation of the course.
+
 Bringing a laptop computer for working in class is required for completion of
 in-class assignments.  If this requirements causes any problems, please
 communicate with the instructor as soon as possible.
@@ -34,10 +35,9 @@ watched before class, with an accompanying quiz to check for understanding.
 Please see the "Attendance / Participation" section below for more information.
 
 ### Official Course Communication
-Canvas will be used for official course communication.  For some, this may be 
-the first semester using Canvas.  Close attention to Canvas will be
-required.  Ensure that you have Notifications turned on to the "Notify 
-immediately" or "Daily summary" for the following categories:
+Canvas will be used for official course communication. Close attention to
+Canvas will be required. Ensure that you have Notifications turned on to the "
+Notify immediately" or "Daily summary" for the following categories:
 * Due Date
 * Announcement
 * Grading
@@ -48,13 +48,13 @@ Help icon on the left side menu.  For more information, please visit
 on the Duke Canvas website (<https://go.canvas.duke.edu/>).
 
 ### Assignments
-A variety of projects will be assigned throughout the semester.  The 
-description of these assignments will be posted in Canvas and also in this 
-GitHub repo.  Official due dates will be found in Canvas.  While future 
-assignments are shown in Canvas with tentative due dates, these future 
-assignments and due dates are subject to change based on course progress.
-Assignments will be turned in via a GitHub Classroom repository.  Assignment 
-feedback will be delivered via Gradescope and Canvas.
+A variety of projects will be assigned throughout the semester. The description
+of these assignments will be posted in Canvas and also in this GitHub repo.
+Official due dates will be found in Canvas. While future assignments are shown
+in Canvas with tentative due dates, these future assignments and due dates are
+subject to change based on course progress. Assignments will be turned in via
+GitHub private repositories created for you. Assignment feedback will be
+delivered via Gradescope and Canvas.
 
 ## Course Overview
 Software plays a critical role in almost all medical devices, spanning device
@@ -65,10 +65,10 @@ testing and documentation.  Experience will be gained in the Python programming
 language.
 
 The course will be structured around various software projects related to
-medical devices and databases that measure and process biosignals, send 
-information to a web server, and makes those data accessible to a web client.
-The projects will be designed to develop software
-design fundamentals.   Some project-related work will be done in groups.
+medical devices and databases that measure and process biosignals, send
+information to a web server, and makes those data accessible to a client. The
+projects will be designed to develop software design fundamentals. Some
+project-related work will be done in groups.
 
 ## Prerequisites
 Basic familiarity with programming concepts (e.g., variables, loops,
@@ -128,7 +128,7 @@ Lecture attendance and participation is important as the topics and skills you
 will be learning build upon each other as the semester continues.  Also, you 
 will be working in small groups some of the semester.  The work we do together 
 during the lecture or as
-part of an "in-class" assignment that I give will be done in a GitHub Classroom
+part of an "in-class" assignment that I give will be done in a GitHub private
 repository and will be checked for timely completion and cataloged as part of
 the class participation grade.  So, it is expected that you will follow along
 and do the work to the best of your ability during class.
@@ -174,7 +174,7 @@ Project details will be discussed in lecture throughout the semester.
 ## Grading
 Official assignment posting will be done in Canvas.  The detailed assignment
 description will be done in this GitHub repository.  Assignments will generally
-be submitted in a GitHub Classroom repository.
+be submitted in a GitHub private repository.
 
 Due dates--including those that change--will be announced in lecture and by
 Canvas announcements (be sure to have your Canvas Announcement notification 
@@ -197,12 +197,11 @@ on).
 </tr>
 </table>
 
-All work is due by the date and time posted in Canvas.  No late submissions will
-be accepted without prior written approval for an excused reason.  You will
-be given the opportunity to submit *one* assignment (not including the Final
-Project) up to 48 hours late 
-for any reason without penalty if you notify me that you are utilizing that
-option before the deadline via e-mail.
+All work is due by the date and time posted in Canvas. No late submissions will
+be accepted without prior written approval for an excused reason. You will be
+given the opportunity to submit *one* assignment (not including the Final
+Project) up to 48 hours late for any reason without penalty if you notify the
+instructor that you are utilizing that option before the deadline via e-mail.
 
 Specific project feedback will be given using Gradescope and Canvas.
 
@@ -274,24 +273,29 @@ In general, if you can install it from a package manager, such as `pip` or
 seek further guidance from the instructor.
 
 For this class, the use of any tool that uses artificial intelligence, machine
-learning, large data sets, or other means to suggest code for use is strictly
-prohibited.  If, despite this stated prohibition, you submit code wholly or 
-partially based on the use of any such tool, and this
-code is similar to previously existing code that is not adequately cited
-in your documentation, or is similar to another student's code submitted for 
-this class, this will be considered a case of academic dishonesty
-similar to directly copying such code, regardless of the user intent.
+learning, large data sets, or other means to suggest code for use in your
+submissions (hereby called an AI tool) is strictly prohibited. If, despite this
+stated prohibition, you submit code wholly or partially based on the use of any
+such tool, and this code is similar to previously existing code that is not
+adequately cited in your documentation, or is similar to another student's code
+submitted for this class, this will be considered a case of academic dishonesty
+similar to directly copying such code, regardless of the user intent. In
+addition, if the instructor suspects the use of such a tool to develop the
+submitted code, the instructor reserves the right to withhold grading of the
+assignment and to meet with the student to discuss the code and check for
+understanding. If, after this meeting, the instructor believes that there was
+unauthorized use of an AI tool, the instructor will consider the submission 
+as a case of academic dishonesty.
 
 All students are expected to adhere to all principles of the [Duke Community
-Standard](https://students.duke.edu/wp-content/uploads/2024/08/DCS-Guide-2023-2024.pdf).
+Standard](https://dukecommunitystandard.students.duke.edu/).
 Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
 Conduct or the appropriate Graduate School dean.  Please do not hesitate to 
 talk with your instructor about any situations involving academic honor, 
 especially if it is ambiguous about what should
-be done.  More information on the Duke Community Standard, and its practice
-for this academic year, can be found at 
-<https://students.duke.edu/get-assistance/community-standard/>.
+be done.  More information on the Duke Community Standard can can be found at 
+<https://dukecommunitystandard.students.duke.edu/>.
 
 For undergraduates, if a student is found responsible through the Office of 
 Student Conduct for

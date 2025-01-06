@@ -1,8 +1,7 @@
 # Assignment: BMI Calculator
 In this assignment, you will be writing a program to calculate BMI (Body Mass 
-Index) from inputted weight and height measurements.  GitHub Classroom will be 
-used for assignment repositories.  Look for the announcement in Canvas with a 
-link.  
+Index) from inputted weight and height measurements.  You will receive 
+an invitation to a GitHub private repository for use with this assignment. 
 
 ### Program Specifications
 * Receives weight and height input from the user from the command/terminal 
@@ -25,7 +24,7 @@ link.
 
 
 ### Approach
-* Clone GitHub Classroom repository to your computer
+* Clone GitHub repository to your computer
 * Create feature branch from main branch for each new feature to be added 
 (e.g., data input)
 * Use meaningful commit messages and an appropriate frequency of commits while
