@@ -38,7 +38,11 @@ installed.  If not, you will need to download it from the site above.
 
 4. Set up an SSH key to allow local authentication with GitHub:
    1. Visit <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>.
+   2. When following the instructions on these webpages, make sure that you
+      select the tab in the webpage for your computer type (Mac/Windows/Linux).
    2. From the page above, follow the instructions under the links:
+      * If you think you may already have an SSH key, see [Checking for 
+        existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
       * [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
       * [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
       * [Testing your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
@@ -79,7 +83,7 @@ installed.  If not, you will need to download it from the site above.
          `/Library/Frameworks/Python.framework/Versions/3.12/bin/python3`, 
          or something similar.
        + You can modify the appropriate `rc` file determined above in one of 
-         two ways, replacing `<python_path` with the appropriate path 
+         two ways, replacing `<python_path>` with the appropriate path 
          determined from the step above:
          - Enter  `echo "alias python=<python_path>" >> ~/.bashrc` or
            `echo "alias python=<python_path>" >> ~/.zshrc`
@@ -97,11 +101,11 @@ installed.  If not, you will need to download it from the site above.
    + **Windows** users have three options:  
      1. Download and install from <https://www.python.org/>.
         * Follow additional guidelines found [here](../Resources/installations.md) for installation.
-        * **NOTE:** As of August 15, 2024, the latest version is 3.12.5.  
+        * **NOTE:** As of January 7, 2025, the latest version is 3.13.1.  
    
      2. Install Python from Anaconda.
         * You can install either the full Anaconda distribution
-          (<https://www.anaconda.com/download/success>() (which will download 
+          (<https://www.anaconda.com/download/success>) (which will download 
           many commonly used packages and set them up in a base environment)
           or you can install Miniconda 
         (<https://docs.anaconda.com/miniconda/miniconda-install/>) which 
