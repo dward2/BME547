@@ -40,7 +40,8 @@ Tools</a></li>
 <td>Fri Jan 17<br></td>
     <td>
   <li><a href="Lectures/modularity_example.md">Functional Modularity 
-Example</a> (starter code <a href="https://github.com/dward2/modularity_example">here</a>)</li>
+Example</a> <!---(starter code <a href="https://github.
+com/dward2/modularity_example">here</a>)---></li>
         <li><a href="Lectures/git_workflow.md">Git Workflow</a></li>
         <li><a href="Lectures/git_workflow_overview.md">Git Workflow Overview</a></li>    
    </td>
@@ -48,8 +49,8 @@ Example</a> (starter code <a href="https://github.com/dward2/modularity_example"
         <!---<a href="Lectures/git_workflow.md#LDL-Branch">In-class 
 Exercise</a>--->
         <br>
-        Assignment #2 Assigned
-        <!---<a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>--->
+        <!---Assignment #2 Assigned--->
+        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
     </td>
 </tr>
 
@@ -336,6 +337,7 @@ md#image-server-api-for-in-class-work">
     <td></td>
 </tr>
 
+<tr>
 <td>Fri Apr 18</td>
     <td>
         TBD

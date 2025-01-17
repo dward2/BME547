@@ -25,6 +25,8 @@ an invitation to a GitHub private repository for use with this assignment.
 
 ### Approach
 * Clone GitHub repository to your computer
+* Plan how you are going to break the assignment down into branches.  At 
+  least three branches should be used.
 * Create feature branch from main branch for each new feature to be added 
 (e.g., data input)
 * Use meaningful commit messages and an appropriate frequency of commits while
@@ -54,7 +56,7 @@ main branch before the deadline.
 * Good use of `git` workflow  
     + Meaningful commit messages and appropriate number of commits  
     + Use of feature branches, with meaningful names, when adding new 
-      functionality (must have at least two feature branches)
+      functionality (must have at least three feature branches)
     + Using Pull Requests on GitHub for merging feature branches into main 
       branch
     + All branches and final code pushed to GitHub

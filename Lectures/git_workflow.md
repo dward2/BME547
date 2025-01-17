@@ -11,11 +11,12 @@ Code development on each feature should be kept reasonably independent from
 other features and branches.
 
 ## When to Commit
-A commit should represent a discrete piece of work or code, not a hodgepodge
-of changes.  When writing new code, at a minimum each new function should be
-its own commit.  When fixing bugs, each bug fix should be one commit.  Or, if
-it is a major bug requiring lots of changes, the bug fix might be done on a
-branch with multiple commits for when each function is changed.
+A commit should represent a discrete piece of work or code, not a hodgepodge of
+changes. When writing new code, a rule of thumb would be making a commit for
+each new function written. When fixing bugs, each bug fix should be one commit.
+Or, if it is a major bug requiring lots of changes, the bug fix might be done
+on a branch with multiple commits where each commit is a step towards fixing
+the bug.
 
 Commit messages should describe what is added or changed in the program and,
 most importantly, why.  A message like "fixed bug" does not
@@ -47,7 +48,7 @@ to crash in function 'addition'" is better.
 <td>Change pt_limit from 5 to 10</td>
 <td>Extended the number of points that will be plotted by changing constant pt_limit</td>
 </tr>
-<table>
+</table>
 
 ## Example of branch/commit design
 Lets say you were working on a calculator app.  You might choose to develop
@@ -62,7 +63,8 @@ for doing the math and then the code for the interface.  Subtraction would be
 developed on a different branch.
 
 ## Exercise
-Lets write a program that will do some basic laboratory test result checks.
+Lets write a program that will analyze some basic laboratory blood test 
+results.
 
 #### Specifications
 * Allows user to select the type of test (HDL vs LDL vs Total)
@@ -72,12 +74,8 @@ Lets write a program that will do some basic laboratory test result checks.
 
 __Question__:  How might we split up this work?
 
-#### If not already done
-* Create a GitHub repository with a `README.md` file
-* Clone repository to your local computer
-
 #### Interface Branch
-* Create and checkout a branch called `interface`
+* In your classwork repository, create and checkout a branch called `interface`
 * Create a file and add the following code for the interface
 ```python
 def interface():
