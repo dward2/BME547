@@ -69,10 +69,11 @@ Exercise</a>--->
   <td>  
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
-        <li>Unit Testing: <a href="Lectures/continuous_integration_github_actions.md">Continuous 
-    Integration & GitHub Actions</a></li>
     <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></li>
-    (starter code <a href="Lectures/unit_testing_code/weight_entry_starter_code.md">here</a>)
+    (starter code <a href="Lectures/unit_testing_code/weight_entry.py">here</a>)
+        <li><a href="Lectures/continuous_integration_github_actions.md">Continuous 
+    Integration & GitHub Actions</a></li>
+
   </td>
   <td>
     Assignment #3 Assigned
