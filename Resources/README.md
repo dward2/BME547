@@ -1,3 +1,3 @@
 # Web Links
 
-[Click here to indicate you are finished.](http://vcm-43716.vm.duke.edu/done)
+[Click here to indicate you are finished.](http://67.159.72.115:5000/done)
