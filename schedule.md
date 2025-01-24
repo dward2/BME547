@@ -69,23 +69,23 @@ Exercise</a>--->
   <td>  
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
-    <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests and Approximations</a></li>
+    <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></li>
     (starter code <a href="Lectures/unit_testing_code/weight_entry.py">here</a>)
-        <li><a href="Lectures/continuous_integration_github_actions.md">Continuous 
-    Integration & GitHub Actions</a></li>
 
   </td>
   <td>
-    Assignment #3 Assigned
-      <!---<li><a href = "Lectures/unit_testing.md#exercise">In-class Exercise: TDD</a></li>
-      <li><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & CI Assigned</a></li>--->
+      <!---<li><a href = "Lectures/unit_testing.md#exercise">In-class 
+            Exercise: TDD</a></li>--->
   </td>
 </tr>
 
 <tr>
 <td>Wed Jan 29</td>
     <td>
-        <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>(starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
+    <li><a href="Lectures/robust-testing.md#approximations">Approximations with Unit Testing</a></li>    
+    <li><a href="Lectures/continuous_integration_github_actions.md">Continuous 
+    Integration & GitHub Actions</a></li>
+    <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>(starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
         <li><a href="Lectures/file_input.md">Text File Input</a> (<a href="Lectures/lecture_files/blood_test_data.txt">Sample Data</a>)</li>
@@ -93,6 +93,9 @@ Exercise</a>--->
         <li>For Loops</li>--->
     </td>
     <td>
+        Assignment #3 Assigned
+      <!---<li><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
+CI Assigned</a></li>--->
     </td>
 </tr>
 
@@ -106,8 +109,6 @@ Issues</a></li>--->
         <li>Continue work on database code</li>
     </td>
     <td>
-        Assignment #4 Assigned
-        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
     </td>
 </tr>
 
@@ -119,6 +120,8 @@ Issues</a></li>--->
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
+        Assignment #4 Assigned
+        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
     </td>
 </tr>
 
@@ -129,9 +132,6 @@ Issues</a></li>--->
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
 </td>
     <td>
-        Assignment #5 Assigned
-        <!---<a href="Assignments/custom_class_assignment.md">Custom Class 
-Assignment</a>-->
     </td>
 </tr>
 
@@ -142,6 +142,9 @@ Assignment</a>-->
         <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td>
+        Assignment #5 Assigned
+        <!---<a href="Assignments/custom_class_assignment.md">Custom Class 
+            Assignment</a>-->
     </td>
 </tr>
 
@@ -154,10 +157,7 @@ Assignment</a>-->
 </td>
     <td>
         <!---<li><a href="https://canvas.duke.edu/courses/38469/assignments/118984">
-            In-Class Exercise (see Canvas)</a></li>
-        <li><a href="Assignments/CPAP Measurements">CPAP Measurements 
-            Assigned</a></li>--->
-        Assignment #6 Assigned
+            In-Class Exercise (see Canvas)</a></li>--->
     </td>
 </tr>
 
@@ -169,6 +169,9 @@ Assignment</a>-->
         APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
+        <!---<li><a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a></li>--->
+        Assignment #6 Assigned
         <!---<a href="Lectures/name_server_project.md">Optional Class 
 Exercise</a>--->
     </td>
