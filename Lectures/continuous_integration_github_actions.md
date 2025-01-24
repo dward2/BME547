@@ -55,7 +55,7 @@ repository
     ```yaml
     name: Pytest with Pycodestyle
     
-    on: [push, pull_request]
+    on: [pull_request]
     
     jobs:
       build:
