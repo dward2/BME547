@@ -303,6 +303,17 @@ Class methods require unit testing just like a standard function.  Details and
 examples for doing so can be found at 
 [Resources/unit_testing_class_methods.md](../Resources/unit_testing_class_methods.md).
 
+### Unit testing of functions with user input/output
+In general, good modular coding will separate code for getting user input 
+and doing screen output into separate functions so that all remaining 
+functions can be easily tested with defined input parameters and returns.  
+However, there may be times where a function that gets user input or does 
+screen output may need to be tested.  See 
+[Unit Testing of User Input/Output 
+with pytest](./unit_testing_input_output.md) for information on doing 
+such testing.
+
+
 ## Exercise
 __Goal__:  Develop a Python function that:
 * receives as parameters two tuples, `(x1, y1), (x2, y2)`, that represent two
