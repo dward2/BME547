@@ -93,9 +93,9 @@ Exercise</a>--->
         <li>For Loops</li>--->
     </td>
     <td>
-        Assignment #3 Assigned
-      <!---<li><a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
-CI Assigned</a></li>--->
+        <!---Assignment #3 Assigned--->
+      <a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
+CI Assigned</a>
     </td>
 </tr>
 
