@@ -86,8 +86,7 @@ or software that analyzes RNA sequences as part of your submission.
 * Log into GitHub and visit the GitHub repository created for you.
 * Clone this repository to your local computer.
 * Set-up GitHub Actions in this repository to implement CI testing 
-  (suggested approaches for doing this can be found [here](..
-  /Lectures/continuous_integration_github_actions.md#recommended-workflows-for-setting-up-github-actions-and-other-repository-items)
+  (suggested approaches for doing this can be found [here](../Lectures/continuous_integration_github_actions.md#recommended-workflows-for-setting-up-github-actions-and-other-repository-items).
 * Develop code (including test functions) on feature branches.
 * Consider using test-driven development (TDD) and write a unit test for the
   `is_sequence` function with appropriate test cases before you start writing
