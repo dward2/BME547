@@ -82,13 +82,13 @@ Exercise</a>--->
 <tr>
 <td>Wed Jan 29</td>
     <td>
-    <li><a href="Lectures/robust-testing.md#approximations">Approximations with Unit Testing</a></li>    
+    <li><a href="Lectures/robust_testing.md#approximations">Approximations 
+with Unit Testing</a></li>    
     <li><a href="Lectures/continuous_integration_github_actions.md">Continuous 
     Integration & GitHub Actions</a></li>
     <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>(starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
-        <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
-        <li><a href="Lectures/variable_scope.md">Scope</a></li>
-        <li><a href="Lectures/file_input.md">Text File Input</a> (<a href="Lectures/lecture_files/blood_test_data.txt">Sample Data</a>)</li>
+    <li><a href="Lectures/git_workflow_more.md">Tags and 
+Issues</a></li>
         <!---<li><a href="Lectures/lists.md">Lists</a></li>
         <li>For Loops</li>--->
     </td>
@@ -102,11 +102,11 @@ CI Assigned</a>
 <tr>
 <td>Fri Jan 31</td>
     <td>
-    <!---<li><a href="Lectures/git_workflow_more.md">Tags and 
-Issues</a></li>--->
+        <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
+        <li><a href="Lectures/variable_scope.md">Scope</a></li>
+        <li><a href="Lectures/file_input.md">Text File Input</a> (<a href="Lectures/lecture_files/blood_test_data.txt">Sample Data</a>)</li>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
-        <li>Continue work on database code</li>
     </td>
     <td>
     </td>
