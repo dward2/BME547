@@ -120,8 +120,8 @@ CI Assigned</a>
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
-        Assignment #4 Assigned
-        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
+        <!---Assignment #4 Assigned--->
+        <a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>
     </td>
 </tr>
 
