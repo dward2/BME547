@@ -104,7 +104,9 @@ CI Assigned</a>
     <td>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
-        <li><a href="Lectures/file_input.md">Text File Input</a> (<a href="Lectures/lecture_files/blood_test_data.txt">Sample Data</a>)</li>
+        <li><a href="Lectures/file_input.md">Text File Input</a> (
+        <a href="Lectures/lecture_files/patient_data.txt">Patient Data</a> / 
+        <a href="Lectures/lecture_files/blood_test_data.txt">Lab Data</a>)</li>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
     </td>
