@@ -23,14 +23,14 @@ The data for a single patient is formatted as follows:
 ```
 FirstName Lastname
 DOB
-GREEN X Y
+RED X Y
 #,#,#,#,...,#
 #,#,#,#,...,#
 #,#,#,#,...,#
 #,#,#,#,...,#
 ...
 #,#,#,#,..,,#
-RED X Y
+GREEN X Y
 #,#,#,#,...,#
 #,#,#,#,...,#
 #,#,#,#,...,#
@@ -48,10 +48,10 @@ The second line will have the date of birth of the patient, formatted as
 `mm/dd/yyyy`.  
 Examples:  `09/02/1974`; `12/23/2001`
 
-The third line will have the string `GREEN X Y` where `X` and `Y` are integers
+The third line will have the string `RED X Y` where `X` and `Y` are integers
 indicating the size of the image.  `X` is the number of columns (or data points
-per row) and `Y` is the number of rows (or lines of data points).  `GREEN`
-indicates that the image data on the following lines will be for the "Green" 
+per row) and `Y` is the number of rows (or lines of data points).  `RED`
+indicates that the image data on the following lines will be for the "Red" 
 channel of the RGB image.  
 
 The image data follows and is split up into rows and columns.  Each row will 
@@ -61,23 +61,6 @@ the value of `Y`.
 
 Example:
 ```
-GREEN 6 5
-3,10,3,98,9,2
-13,15,16,2,9,16
-174,11,253,4,7,0
-2,12,5,10,0,4
-1,8,9,5,104,4
-```
-Note, there are six data points on each line and there are five row, meaning
-the image is 6x5.
-
-After the "Green" image data, the next line will have the string `RED`
-to indicate that the image data on the following lines will be for the "Red"
-channel of the RGB image.  This data will be exactly the same size as the 
-"Green" data in terms of the number of points per line and the number of lines.
-
-Example (for Red channel):
-```
 RED 6 5
 2,75,158,8,235,146
 232,7,11,11,9,177
@@ -85,8 +68,25 @@ RED 6 5
 13,240,10,238,16,91
 236,181,2,7,1,227
 ```
+Note, there are six data points on each line and there are five row, meaning
+the image is 6x5.
 
-After the "Red" image data, the next line will have the string `END` to
+After the "Red" image data, the next line will have the string `GREEN`
+to indicate that the image data on the following lines will be for the "Green"
+channel of the RGB image.  This data will be exactly the same size as the 
+"Red" data in terms of the number of points per line and the number of lines.
+
+Example (for Green channel):
+```
+GREEN 6 5
+3,10,3,98,9,2
+13,15,16,2,9,16
+174,11,253,4,7,0
+2,12,5,10,0,4
+1,8,9,5,104,4
+```
+
+After the "Green" image data, the next line will have the string `END` to
 indicate the end of data for that patient.  
 
 The input file will contain multiple patients sequentially.  So, immediately 
