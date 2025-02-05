@@ -188,7 +188,7 @@ of 17 / 30 = 0.57.
 * Conforms to PEP-8 Style Guide 
 * GitHub Actions CI integration with all branches passing unit tests and PEP-8 
   style before merge
-* Docstrings exist for all functions
+* Docstrings exist for all functions (unit test functions do NOT need docstrings)
 * Appropriate use of virtual environments as demonstrated by a
   `requirements.txt` file being present in your GitHub repository
 * Presence and content of README.md (at a minimum including author information,
