@@ -197,8 +197,8 @@ Example:
 ```python
 def test_process_patient_id_line():
     from mysandbox import process_patient_id_line
-    in_file = open("input_test_file.txt", "r")
-    answer = process_patient_id_line(in_file)
-    expected = 145
+    with open("input_test_file.txt", "r") as in_file:
+        answer = process_patient_id_line(in_file)
+        expected = 145
     assert answer == expected
 ```
