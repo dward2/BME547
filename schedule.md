@@ -142,7 +142,6 @@ CI Assigned</a>
 <td>Wed Feb 12</td>
     <td>
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
-        <li><a href="Lectures/debugging.md">Debugging</a></li> 
         <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td>
@@ -155,9 +154,9 @@ CI Assigned</a>
 <tr>
 <td>Fri Feb 14</td>
     <td>
+        <li><a href="Lectures/debugging.md">Debugging</a></li> 
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
-        <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
 </td>
     <td>
         <!---<li><a href="https://canvas.duke.edu/courses/38469/assignments/118984">
@@ -169,6 +168,7 @@ CI Assigned</a>
 <td>Wed Feb 19</td>
     <td>
         <li><a href="Lectures/logging.md">Logging</a></li>
+        <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
         <li><a href="Lectures/apis_webservices_requests.md">
         APIs, Intro To Web Services, Requests</a></li>
     </td>
