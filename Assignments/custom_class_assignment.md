@@ -130,10 +130,12 @@ blood donors for a patient or recipients of donations from a patient.
 * Conforms to PEP-8 Style Guide
 * Appropriate modularity in the methods
 * GitHub Actions CI integration with all branches passing unit tests and 
-  PEP-8 style before merging into the `main` branch.
+  PEP-8 style before merging into the `main` branch
 * Appropriate use of virtual environments as demonstrated by a 
   `requirements.txt` file being present in your GitHub repository
+* Appropriate use of `.gitignore` preventing virtual environment and other 
+  files and directories from being inadvertently commited to repository
 * README.md need only consist of your name.  No further info necessary for 
   this assignment.
-* Final submission pushed to GitHub be the deadline and tagged appropriately.
+* Final submission pushed to GitHub be the deadline and tagged appropriately
 * Plus any expectations from previous assignments
