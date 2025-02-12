@@ -25,10 +25,11 @@ blood donors for a patient or recipients of donations from a patient.
       integer, into the `mrn` attribute, the name into the `name` attribute, 
       and, if it exists, the blood_type into the `blood_type` attribute.
     * The function should convert the mrn found in the string to an integer 
-      for storage.  It should also verify that the mrn is an integer and 
-      does not contain any letters.  If it does, the method should raise a 
-      `Value Error` with an appropriate error message (it cannot be the 
-      default message raised by `ValueError` but is one you create).  
+      for storage.  If the mrn given is not an integer but contains some
+      letters, the method should raise a `ValueError` with the following
+      message:  `The medical record number received of {} is invalid.  It can 
+      only contain numbers.` with the `{}` being replaced by the incorrect mrn 
+      sent.  
     * The blood_type should be verified as discussed below.
 * __Methods__
   * The `Patient` class should have the following methods:
@@ -36,8 +37,10 @@ blood donors for a patient or recipients of donations from a patient.
       * This method will add a blood type to the patient.
       * This method should receive a single string parameter which will 
         contain a blood type.
+      * This method should verify that the parameter received is a string.  If
+        the parameter is not a string, a `TypeError` should be raised with an appropriate error message.
       * The method should verify the blood_type as discussed below.
-      * The blood_type should be stored in the `blood_type` attribute.
+      * If it is a valid blood type, it should be stored in the `blood_type` attribute.
     * `get_blood_type()`
       * This method should return the patient blood type as a string.
     * `is_donor_to_match(<recipient_Patient_variable>)`
@@ -45,6 +48,7 @@ blood donors for a patient or recipients of donations from a patient.
         blood to the recipient patient that is sent as a parameter.  
       * This method should receive a single parameter that will be another 
         instance of the `Patient` class.
+      * This method should verify that the parameter is a `Patient` instance.  If not, a `TypeError` should be raised with an appropriate error message.
       * If the current patient can donate to the recipient, this method 
         should create a tuple as `(<mrn>, <name>)` where `<mrn>` and `<name>` 
         are the mrn and name of the current patient and this tuple should be 
@@ -57,6 +61,7 @@ blood donors for a patient or recipients of donations from a patient.
         a blood donation from the donor patient sent as a parameter.
       * This method should receive a single parameter that will be another 
         instance of the `Patient` class.
+      * This method should verify that the parameter is a `Patient` instance.  If not, a `TypeError` should be raised with an appropriate error message.
       * If the donor patient sent as a parameter can donate to the current 
         patient, this method should create a tuple as `(<mrn>, <name>)` where 
         `<mrn>` and `<name>` are the mrn and name of the donor patient and this 
@@ -73,7 +78,7 @@ blood donors for a patient or recipients of donations from a patient.
         In other words, for each patient in the `can_receive_from` 
         attribute should be formatted as `"patient_mrn: name"` and then add 
         a new line character `"\n"` between each patient.
-      * If there are no patients in the list, return an blank string:  `""`
+      * If there are no patients in the list, return a blank string:  `""`
   * __Blood Type Verification__
     * Any time that the `Patient` class receives a blood type, either via 
       initialization or the `add_blood_type` method, the class must verify 
@@ -99,9 +104,7 @@ blood donors for a patient or recipients of donations from a patient.
   never be leading or trailing spaces, or spaces before/after the commas.
 * As mentioned above, you cannot assume that the medical record number 
   portion of the string will contain only numbers.
-* You can assume that the parameter sent to the `add_blood_type` method 
-  will be a string.  BUT, you can make no assumptions about the content of 
-  the string.  Hence, the need for verification.
+* You cannot make any assumptions about the content of the parameter sent to the `add_blood_type` method. It could be any variable type with any content.  Hence the need for verification.
 * Feel free to create additional methods or attributes within the class as 
   needed to perform the required tasks.
 * Feel free to write code that uses the class to test it during development 
@@ -115,7 +118,7 @@ blood donors for a patient or recipients of donations from a patient.
 * If you need a reminder about blood type compatability, you can refer to 
   the website 
   <https://www.lifeblood.com.au/patients/blood-for-transfusion/matching-blood-groups> 
-  and look at the table in the section titled "1 Red cell compatibility".  
+  and look at the table in the section titled "1 Red cell compatibility".
   In this table, "Patients blood group" refers to the blood recipient.
 
 ## Grading Expectations
