@@ -130,8 +130,9 @@ CI Assigned</a>
 <tr>
 <td>Fri Feb 7</td>
     <td>
-        <li>Testing of Class Methods</li>
-        <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
+        <li>More on Classes</li>
+        <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
+        
 </td>
     <td>
     </td>
@@ -140,13 +141,14 @@ CI Assigned</a>
 <tr>
 <td>Wed Feb 12</td>
     <td>
+        <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
         <li><a href="Lectures/debugging.md">Debugging</a></li> 
         <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td>
-        Assignment #5 Assigned
-        <!---<a href="Assignments/custom_class_assignment.md">Custom Class 
-            Assignment</a>-->
+        <!---Assignment #5 Assigned--->
+        <a href="Assignments/custom_class_assignment.md">Custom Class 
+            Assignment</a>
     </td>
 </tr>
 
