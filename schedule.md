@@ -159,8 +159,8 @@ CI Assigned</a>
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
 </td>
     <td>
-        <!---<li><a href="https://canvas.duke.edu/courses/38469/assignments/118984">
-            In-Class Exercise (see Canvas)</a></li>--->
+        <a href="https://canvas.duke.edu/courses/50399/assignments/191507">
+            In-Class Exercise (see Canvas)</a>
     </td>
 </tr>
 
@@ -169,20 +169,27 @@ CI Assigned</a>
     <td>
         <li><a href="Lectures/logging.md">Logging</a></li>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
-        <li><a href="Lectures/apis_webservices_requests.md">
-        APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
         <!---<li><a href="Assignments/CPAP Measurements">CPAP Measurements 
             Assigned</a></li>--->
         Assignment #6 Assigned
-        <!---<a href="Lectures/name_server_project.md">Optional Class 
-Exercise</a>--->
     </td>
 </tr>
 
 <tr>
 <td>Fri Feb 21</td>
+    <td>
+        <a href="Lectures/apis_webservices_requests.md">
+        APIs, Intro To Web Services, Requests</a>
+    </td>
+    <td>
+        <!---<a href="Lectures/name_server_project.md">Optional Class Exercise</a>--->
+    </td>
+</tr>
+
+<tr>
+<td>Wed Feb 26</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <a href="Lectures/flask_server_setup.md">
@@ -195,7 +202,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Wed Feb 26</td>
+<td>Fri Feb 28</td>
     <td> 
       <a href="Lectures/server_code_design.md">Server Design</a>
     </td>
@@ -204,7 +211,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Fri Feb 28</td>
+<td>Wed Mar 5</td>
     <td>
         <li>More Server Design</li>
         <li>Server Debugging</li>
@@ -219,7 +226,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Wed Mar 5</td>
+<td>Fri Mar 7</td>
 <td>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
         <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
@@ -232,7 +239,13 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Fri Mar 7</td>
+    <td></td>
+    <td align="center">SPRING BREAK</td>
+    <td></td>
+</tr>
+
+<tr>
+<td>Wed Mar 19</td>
     <td>
       <li>MongoDB/PyMODM Example</li>
 </td>    
@@ -242,13 +255,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-    <td></td>
-    <td align="center">SPRING BREAK</td>
-    <td></td>
-</tr>
-
-<tr>
-<td>Wed Mar 19</td>
+<td>Fri Mar 21</td>
     <td>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
@@ -258,7 +265,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Fri Mar 21</td>
+<td>Wed Mar 26</td>
     <td>
         <li>Connecting GUI to Client/Server</li>
         <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
@@ -270,7 +277,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Wed Mar 26</td>
+<td>Fri Mar 28</td>
     <td>
         <li><a href="Resources/tkinter_images.md">Adding Images to tkinter 
 GUI</a></li>
@@ -285,7 +292,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Fri Mar 28</td>
+<td>Wed Apr 2</td>
     <td>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
         <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
@@ -298,7 +305,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Wed Apr 2</td>
+<td>Fri Apr 4</td>
     <td>
             <a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a>
     </td>
@@ -307,7 +314,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Fri Apr 4</td>
+<td>Wed Apr 9</td>
     <td>
        <a href="Resources/standards.md">Standards: </a>
        <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
@@ -318,7 +325,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Wed Apr 9</td>
+<td>Fri Apr 11</td>
     <td>
               <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
 </td> 
@@ -327,20 +334,12 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Fri Apr 11</td>
+<td>Wed Apr 16</td>
     <td>
       <!---<li>Software Development Methodologies & Other Terminology</li>--->
       <li><a href="Lectures/secrets_and_environment_variables.md">
            Secrets and Environment variables</a></li>
       <li><a href="Resources/coverage.md">Code Coverage</a></li>
-    </td>
-    <td></td>
-</tr>
-
-<tr>
-<td>Wed Apr 16</td>
-    <td>
-        TBD
     </td>
     <td></td>
 </tr>
