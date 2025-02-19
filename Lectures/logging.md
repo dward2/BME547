@@ -40,6 +40,18 @@ See the page [testing_logging.md](../Resources/testing_logging.md) in the
 Resources folder for information on writing unit tests for functions that do
 logging.
 
+## Exercise
+The data file `signal.txt` (found [here](lecture_files/signal.txt)) 
+contains a signal in a text file.  Each character is a data point in the 
+signal and can have one of three values:  `+`, `-`, or `0`.
+
+1. Write Python code that will read in the signal one character at a time.
+2. Calculate and print out the percentage of the signal that is `+`.
+3. Add logging and log a WARNING when the signal is a `0`.
+4. Log an ERROR entry if the signal is not `+`, `-`, or `0`.  
+5. Log an INFO entry when the signal is `-`
+6. Change the logging level and observe the impact on the log.
+7. Send the log to a file.
 
 ## References
 https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
