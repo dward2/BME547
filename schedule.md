@@ -171,9 +171,9 @@ CI Assigned</a>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
     </td>
     <td>
-        <!---<li><a href="Assignments/CPAP Measurements">CPAP Measurements 
-            Assigned</a></li>--->
-        Assignment #6 Assigned
+        <a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a>
+        <!---Assignment #6 Assigned--->
     </td>
 </tr>
 
