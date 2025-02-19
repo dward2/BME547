@@ -8,29 +8,36 @@ We will demonstrate this in class by decomposing the following example.
 
 ## Example Program
 #### Overview 
-This program will read in an input file with various vital signs from a 
-patient.  It will then scan these signs to determine which are within a normal
-range and which are not.  It will then generate an output file that indicates
-the condition of the patient.
+This program will read in an input file with hourly averages of CPAP data for
+a patient.  The program will then analyze this data and output the results.
 
 #### Specifications
-* Input file will be in the following format:
+* Example input file
   ```
-  HR=60
-  BP=110/70
-  O2=75
-  Resp=15
+  Anne Ables
+  7.25  # hours of sleep
+  Seal,11.0,23.6,15.2,2.3,4.0,19.7,3.7  # Hourly leakage
+  Events,5,0,2,3,9,1,2  # Hourly apnea events
+  O2,95,93,98,97,96,97,100  # Hourly O2 saturation
   ```
-  HR = Heart Rate, BP = Blood Pressure, O2 = oxygen saturation, Resp = 
-  Respiratory rate
   
-* If all vital signs are in a normal range, output file should be:
+* Example output file
   ```
-  Normal
+  {
+    "First Name": "Anne",
+    "Last Name": "Ables",
+    "Hours": 7.25,
+    "Seal_Ave": 11.36,
+    "Events_Ave": 3.14,
+    "O2_Min": 93,
+    "Diagnosis": "normal sleep"
+  }
   ```
-* If any vital signs are not in a normal range, output file should say 
-  `WARNING` and describe condition.  Example:
-  ```
-  WARNING:  O2=75 is abnormal
-  ```
+* __Diagnosis__
+
+  |  | All O2 values 93 and above | Any O2 value below 93
+  | --- | --- | --- |
+  | __Average Events <= 5.0__ | normal sleep | hypoxia |
+  | __Average Events > 5.0__ | apnea | hypoxia apnea |
+
 
