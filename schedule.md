@@ -184,7 +184,7 @@ CI Assigned</a>
         APIs, Intro To Web Services, Requests</a>
     </td>
     <td>
-        <!---<a href="Lectures/name_server_project.md">Optional Class Exercise</a>--->
+        <a href="Lectures/name_server_project.md">In-Class Exercise:  Blood Matching</a>
     </td>
 </tr>
 
@@ -196,8 +196,8 @@ CI Assigned</a>
            Building a Web Server with Flask</a>
     </td>
     <td>
-        <!---<a href="Assignments/time_server_project.md">Time Server Assigned</a>--->
-        Assignment #7 Assigned
+        <a href="Assignments/time_server_project.md">Time Server Assigned</a>
+        <!---Assignment #7 Assigned--->
     </td>
 </tr>
 
