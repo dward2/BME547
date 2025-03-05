@@ -213,14 +213,13 @@ CI Assigned</a>
 <tr>
 <td>Wed Mar 5</td>
     <td>
-        <li>More Server Design</li>
         <li>Server Debugging</li>
         <li>Server Testing</li>
         <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
     </td>
     <td>
-        <!---<a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>--->
-        Assignment #8 Assigned
+        <a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>
+        <!---Assignment #8 Assigned--->
 
 </td>
 </tr>
