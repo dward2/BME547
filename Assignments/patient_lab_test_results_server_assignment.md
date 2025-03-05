@@ -354,7 +354,7 @@ containing the subject of the e-mail, and `<content_str>` is a string
 containing the content of the e-mail.
 
 If the request is successful, a string will be returned indicating that the
-e-mail was sent and the from and to address.  The status code will be 200.
+e-mail was sent and the from and to addresses.  The status code will be 200.
 
 If the request is bad (i.e., there is a problem with the dictionary being sent, 
 or the e-mail addresses in it), a status code of 400 will be returned along
@@ -366,6 +366,14 @@ do not need to have a unit test for that function.
 **NOTE**:  This is NOT a route that you need to add to your server.  Instead,
 when your server needs to send an e-mail, your server makes a POST request to
 a different server (yes, a server can act as a client for another server).
+
+If you would like additional verification that your e-mail was correctly sent,
+you can visit `http://vcm-43729.vm.duke.edu:5007/get_email/<to_email>` where
+`<to_email>` is replaced with an email address that received e-mail.  All 
+e-mails available on the server sent to that address will be displayed.  Once
+the e-mails are displayed, they are removed from the server.
+
+If the e-mail server is not responding for some reason, please contact Dr. Ward.
 
 ## Server Usage Workflow
 A typical order of events for using this server would be:
@@ -400,12 +408,11 @@ For evaluation of this server, you can assume the following:
     HR request after the first one is complete.
 
 ## Modular Code & Testing
-Be sure to write modular code.  This means your Flask handler functions should
-have minimal code in them.  It should be limited to getting any data sent with
-the request, calling other functions to do the work, and then returning the
-response.  All other functions that are called should be written in such a way
-that they can have comprehensive unit tests.  The Flask handler functions do
-not need unit tests if you write them as described.  
+Be sure to write modular code. This means your Flask handler functions should
+make significant use of helper functions to implement the majority of the
+calculations for the route.  These helper functions should have defined inputs
+and outputs to allow for comprehensive unit testing.  All functions, including 
+the Flask handler functions should have unit tests.  
 
 ## Working As A Team
 * Schedule a planning meeting with your team.
