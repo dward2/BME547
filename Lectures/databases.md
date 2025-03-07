@@ -56,11 +56,9 @@ runs on a computer.  This program could be running on your own computer, on a
 virtual machine, or a cloud service.  Our Python code accesses the database
 by making requests to the database API.  
 
-
 We will be accessing the MongoDB database from our Python code using a package 
-called [PyMODM](https://pymodm.readthedocs.io/en/latest/) which gives us access 
-to the MongoDB API, but also enforces type-checking which is very helpful from 
-a programming perspective.  
+called [PyMongo](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/) 
+which gives us access to the MongoDB API.  
 
 The basics of accessing a MongoDB database from Python is demonstrated in
 this [Jupyter Notebook](../Resources/Databases/mongo_example.ipynb).
@@ -76,126 +74,147 @@ virtual machine).  See the community edition [here](https://docs.mongodb.com/man
 * You can install and run MongoDB easily using Docker.  
 
 
-### PyMODM Syntax
+## PyMongo Syntax
 
-#### Import PyMODM package
-`from pymodm import connect, MongoModel, fields`
-
-#### Connect to MongoDB database
+### Install PyMongo in Virtual Environment
 ```
-connect("mongodb+srv://<username>:<password>@<yourclustername>-<server>.mongodb.net/<folder>?retryWrites=true&w=majority")
+pip install pymongo
+pip install dnspython
+```
+
+### Import MongoClient from PyMongo package
+`from mongo import MongoClient`
+
+### Connect to MongoDB database server
+```
+uri = "<connect_string>"
+client = MongoClient(uri)
 ```  
-If using MongoDB Atlas, you should obtain the string to use in the `connect`
-function from the MongoDB website.  Refer to the set-up instructions found 
-[here](../Resources/Databases/mlab.md) for how to get the connect string.  It 
-should be very similar to what is above.
-`<server>` will be provided in the string you obtain from the website.  You
-will need to replace `<username>`, `<password>`, and `<yourclustername>` with
-the appropriate information you entered doing the MongoDB set-up online.
-Finally, replace `<folder>` with any string.  This will be the "collection" 
-name in MongoDB.
+If using MongoDB Atlas, you should obtain the `<connect_string>` to use above 
+from the MongoDB website.  Refer to the set-up instructions found 
+[here](../Resources/Databases/mlab.md) for how to get the connect string.  
+Make sure to replace the `<db_username>` and `<db_password` placeholders with
+the appropriate information created during the MongoDB set-up online.
 
-__Note__: There have been instances where the MongoDB website provides a
-connect string that does not provide the `<folder>` placeholder.  For example:
-`mongodb+srv://<username>:<password>@bme547.ba348.mongodb.net/?retryWrites=true&w=majority`
-In this case, you will need to remember to insert a collection/folder name
-between `mongodb.net/` and `?retryWrites`.
-
-:eyes: If using macOS and you receive an SSL or certificate error when trying
-to use `pymodm`, visit the [installations_mac.md](../Resources/installations_mac.md#ssl-or-certificate-errors)
- page for a potential fix.
-
-:eyes: On Windows or macOS, if you get an error similar to 
-`pymongo.errors.ServerSelectionTimeoutError:...[SSL:CERTIFICATE_VERIFY_FAILED]...`,
-modify your `connect` call with the following option:
+### Connect to a Database
+You can have many different databases in your MongoDB account.  Connect to 
+a database as follows:
 ```python
-connect("<YourConnectString", tlsAllowInvalidCertificates=True)
+database = client["Class_Database"]
 ```
-Note that the earlier fix for this by using the option 
-`ssl_cert_reqs=ssl.CERT_NONE` has been deprecated.
+If the database named does not exist, MongoDB will create one when a new 
+document is added to it.
 
-
-#### Create Schema / Data structure
+### Create a Collection
+A collection is a set of documents within your database.  You would have 
+a different collection for each type of document you want to store.  For 
+example, you might have a collection of users, a collection of equipment, a 
+collection of locations, etc.
+```python
+user_collection = database["users"] 
 ```
-class User(MongoModel):
-    email = fields.EmailField(primary_key=True)
-    first_name = fields.CharField()
-    last_name = fields.CharField()
-    age = fields.IntegerField()
+
+### Create a Document
+A document in MongoDB is a set of key:value pairs.  In Python, this is a 
+standard dictionary type. The keys are the name of each item of the document 
+and the value is a Python data type.  This document dictionary is then 
+created in the database u sing the `.insert_one()` method of the collection.
+```python
+user_document = {"email": "suyash@suyashkumar.com", "first_name": "Suyash", 
+                 "last_name": "Kumar", "age": 1000}
+user_collection.insert_one(user_document)
 ```
-The class name (`User` in the above example) can be defined by the user.  It
-must include `(MongoModel)` after the name so that it inherits the `MongoModel`
-class.  The number of fields and field names are up to the user.  
+While this example only has the `int` and `str` data type as values, most 
+Python data types, including lists, dictionary, datetime, etc., can be used 
+as values.
 
-Commonly used fields are:
-* `CharField`
-* `IntegerField`
-* `BooleanField`
-* `DateTimeField`
-* `EmailField`
-* `FileField`
-* `ImageField`
-* `FloatField`
-* `DictField`
-* `ListField`
+#### Unique IDs
+Each document in MongoDB is given a unique ID that differentiates it from 
+every other document.  If one is not specified in the `insert_one` call, 
+MongoDB will assign it one.  The unique id is stored in the `_id` key of the
+document.  MongoDB enforces that no two documents can share the same `_id`.
 
-Information on these fields and other fields can be found in the PyMODM API: 
-<https://pymodm.readthedocs.io/en/latest/api/index.html#model-fields>
-
-Be aware of possible class/module conflicts as described 
-[here](../Resources/Databases/mongo_db_class_module_conflicts.md).
-
-#### Create a Database Item
-`u = User(email="suyash@suyashkumar.com", first_name="Suyash", last_name="Kumar", age="1000")`  
-`u` can be any variable name and `User` is whatever the name of the class as
-defined above.
-
-#### Save Item to Database
-`u.save()`
-
-#### Query Database:  Return all items
-`results = User.objects.raw({})`  
-`results` is any variable name and `User` is the name of the class defined as 
-above.  `results` will contain a QuerySet class, which can be iterated over to
-get the results as such:
+To specify a unique id, simply include the `_id` key in the document 
+dictionary.  The example above is rewritten below to use the email as the 
+unique id:
+```python
+user_document = {"_id": "suyash@suyashkumar.com", "first_name": "Suyash", 
+                 "last_name": "Kumar", "age": 1000}
+user_collection.insert_one(user_document)
 ```
-for item in results:
-    print(item.email)
+
+
+### Retrieve a Document
+#### All Documents
+```python
+all_users_cursor = user_collection.find()
+```
+`user_collection.find()` returns a "cursor" to the found documents in the 
+collection.  You use the cursor to move through the documents by iterating 
+over it in a `for` loop to get each document individually as such: 
+```python
+for item in all_users_cursor:
+    print("Email:  {}".format(item["_id"]))
 ``` 
+If you would prefer not to have to move through the results using a cursor, 
+you can create an actual list of results in a Python variable as follows:
+```python
+all_users = list(all_users_cursor)
+```
+But, be careful as if your search has found many records in the database, 
+it could possibly exceed memory limits for your application.  
 
-#### Query Database:  Return Items Based on Specific Search
-`results = User.objects.raw({"first_name": "Mark"})` if searching on 
-non-primary key  
-`results = User.objects.raw({"_id": "suyash@suyashkumar.com"})` if searching
-on primary key
+#### Documents Based on Specific Search
+A search query can be added to the `.find` method to return only documents 
+matching the given criteria.
+```python
+results = user_collection.find({"first_name": "Mark"})  
+```
 
 Comparison operators can be found at 
 <https://docs.mongodb.com/manual/reference/operator/query-comparison/>.  Example:  
-`results = User.objects.raw({"age": {"$gte": 1000}})`
- 
-### Checking for whether a primary key is in database
-If you do a search for a value in the primary key field that does not exist
-in the database, `pymodm` will generate an error.  So, here is some sample
-code for how you can check to see if an entry exists in the database.  
-
 ```python
-from pymodm import errors as pymodm_errors
+results = user_collection.find({"age": {"$gte": 1000}})
+``` 
 
-try:
-    db_item = User.objects.raw({"_id": <item_to_search>}).first()
-except pymodm_errors.DoesNotExist:
-    return False
-return True
-```
-This code snippet will return False if the `<item_to_search>` value is not
-found in the primary key field of the database.  It will return `True` if it
-is found.
-
-### Deleting a database entry
-If you need to delete a specific entry from your database in your Python code,
-first, query the object to find it and save it in a variable.  Then, use the
-`.delete()` method.  Example:
+#### A Single Document
+If you want to return only a single document (i.e., you know there is only 
+one document that meets your search request or your only care about the 
+first one), you can get the first document itself using the `.find_one()` 
+method as follows:
 ```python
-x = Patient.objects.raw({"_id": "999"}).first()
-x.delete()
+document = user_collection.find_one({"email": "mark@test.com"})
 ```
+This is particularly effective if you do your search on the unique id of which
+there is only one, as discussed below.
+
+### Update a Document
+The easiest way to update a document in MongoDB is to follow these steps:
+1. Retrieve the document to be updated from the collection
+2. Update the document dictionary with the desired changes
+3. Replace this document dictionary into the collection using the unique id.
+Example:
+```python
+# Retrieve document
+mark_user = user_collection.find_one({"first_name": "Mark"})
+
+# Update the contents of the document
+mark_user["age"] += 20
+
+# Replace with the updated document using its unique identifier
+user_collection.replace_one({"_id": mark_user["_id"]}, mark_user)
+```
+
+### Deleting a Document
+To delete a single document from a collection based on a query:
+```python
+user_collection.delete_one({"first_name": "Mark"})
+```
+To delete all documents in a collection:
+```python
+user_collection.delete_many({})
+```
+The empty query dictionary `{}` is required.
+
+## Documentation
+PyMongo documentation can be found at <https://www.mongodb.com/docs/languages/python/pymongo-driver/current/>

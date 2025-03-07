@@ -1,12 +1,9 @@
 # Provision Free MongoDB Database on mongoDB.com
 
 MongoDB Atlas is an online service that lets you quickly spin up a MongoDB 
-database on a virtual machine that they own. Once you've spun up a database 
+database server on a virtual machine that they own. Once you've spun up a MongoDB 
 instance on their virtual machine, you can connect to and interact with it 
-using database connection URL, as discussed in class. Remember that a database 
-is a program, just like any other program you write. By knowing the connection 
-URL, your Python Flask program knows where the database is running and can 
-communicate with the database to save entries or retrieve entries as needed. 
+from Python code and use it so save and retrieve data. 
 
 ## Setup
 Note: The MongoDB Atlas website interface for new accounts changes frequently.
@@ -60,46 +57,46 @@ mongoDB.  Click on "Try Free" or "Get Started".
    b. Click on the "Connect" button.   
    c. Click "Drivers" under the "Connect to your application" heading.  
    d. Under "1. Select your driver and version", select "Python" for the Driver 
-      and "3.11 or later" for the version.
-   e. Ignore section 2.  (The correct version of `pymongo` will be installed by
-      `pymodm`.  NOTE:  The `pymongo` version that is installed by `pymodm`
-      should be at least 3.11.0.  If it isn't, upgrade it manually.)
+      and "3.11 or later" for the version.  
+   e. Make note of the `pip` `pymongo` installation command under section "2. Install your driver"  
    f. Copy the string that is shown under "3. Add your connection string into 
    your application code" section.  Make sure the slider "view full code
-   sample" is slid to the left (off).  
-   f. Save this string for use in class and projects.  
+   sample" is slid to the left (off).  Replace the `<db_username>` and 
+  `<db_password>` placeholders with the name and password from step 9 above.    
+   g. Save this string for use in class and projects.  
 
-Cool, you're done setting up the database! Now, when you're using this in your 
-flask programs with `pymodm`, your first couple lines will look something like:
-```py
-from pymodm import connect
-connect("mongodb+srv://<username>:<password>@bme547-nlfrn.mongodb.net/<dbname>?retryWrites=true&w=majority")
-```
-The string in the `connect` command above is the one you copied in step 20e 
-above, except `<username>` should have already been replaced by the username 
-you created in step 9 above.  You will manually need to replace `<password>` 
-with the password you created in step 11c above.  `<dbname>` can be replaced
-by any name of your choosing.  (Note, the connect string you copy from the
-MongoDB website will not have `<dbname>` in it.  It will show the `/` and `?`
-adjacent.  You need to add something in that space.)
+Cool, you're done setting up the database server! 
 
-Finally, you will need to add one more package to your `requirements.txt` file:
-`dnspython` in order to access the database with the string above.
-
-Now, you can access the database use code similar to [here](mongo_db_example.py).
-
-Once you have data added to your database, you can see it through the 
+Once you have data added to your database server, you can see it through the 
 MongoDB website.  Select "Databases" from the left-hand side and click on 
 "Browse Collections" if you see that button, or select the "Collections" tab
 at the top, depending on your current screen.  You will then see a list of
-the `dbnames` that you created in your connect strings, and within each
-database, you will see any MongoModel `class` you created in your code.  
+your databases, and within each database, you will the collections you created 
+in your code.  
 
 
-### Adding another a database user.    
+### Adding another a database user
    a. Click on "Database Access" in the left-hand list.  
    b. Make sure the "Database Users" sub-tab is selected.  Then click "Add New 
    Database User" button.  
    c. Select the Password Authentication Method  
    d. Complete the username field, select a password (__remember this__), choose 
-   "Read and write to any database", and click "Add User".
+   "Read and write to any database", and click "Add User".  
+   e. Make a new copy of your connect string with this new username and password
+
+
+### Granting Another User Access to Your MongoDB Web Interface
+When working as a team, you will likely be using just a single MongoDB
+database.  As the entire team may need to see that database on the MongoDB
+website, the owner of the database in use can grant other MongoDB accounts
+access to the web interface of the database.
+
+1. Log into your MongoDB Atlas database server account.
+2. Make sure you are viewing the database you want to give access to.
+3. Click on "Access Manager" at the top of the page and select "Project Access"
+   from the dropdown.
+4. Click on the "Invite to Project" button.  
+5. Enter the e-mail address associated with the MongoDB account you wish to
+   provide access.  
+6. Select the appropriate permission level to give.
+7. Click the "Invite to Project" button.
