@@ -19,6 +19,7 @@ Develop a server with the following endpoints:
  * `GET URL/until_next_meal/<meal>`
    + where `<meal>` could be `breakfast`, `lunch`, or `dinner`.  
    + Returns the number of hours until that meal as a `float`.
+   + Must be implemented as a variable URL.
 
 Note: You can ignore leap years.
 
