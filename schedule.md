@@ -247,7 +247,8 @@ MongoDB/PyMongo</a></li>
 <tr>
 <td>Wed Mar 19</td>
     <td>
-      <li>MongoDB/PyMODM Example</li>
+      <li>MongoDB/PyMongo Example</li>
+      <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
 </td>    
     <td>
     <!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
