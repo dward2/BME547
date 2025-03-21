@@ -96,6 +96,12 @@ from the MongoDB website.  Refer to the set-up instructions found
 Make sure to replace the `<db_username>` and `<db_password` placeholders with
 the appropriate information created during the MongoDB set-up online.
 
+:eyes: If, when trying to use the connection to the MongoDB database server,
+you see an error similar to:  
+`pymongo.errors.ServerSelectionTimeoutError:...[SSL:CERTIFICATE VERIFY ERROR]...`  
+modify the `MongoClient` command as follows:  
+`client = MongoClient(uri, tls=True, tlsAllowInvalidCertificates=True)`
+
 ### Connect to a Database
 You can have many different databases in your MongoDB account.  Connect to 
 a database as follows:
