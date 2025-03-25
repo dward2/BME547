@@ -19,12 +19,13 @@ projects are:
   input their choices for text, font size/color, text location, etc.
 
 Alternatively, you are welcome to come up with a GUI project that meets your
-interest. It could be implementing some other simply game, completing some
-task, etc. At a mininum, the GUI needs the following:
+interest. It could be implementing some other game, completing some
+task, etc. At a minimum, the GUI needs the following:
 
 * At least one label
-* At least one entry box
-* At least one radio button, checkbox, or dropdown box.
+* At least one entry box (entered text must be used somehow by the code)
+* At least one radio button, checkbox, or dropdown box (the values of these
+  items must be used somehow by the code)
 * At least two buttons
     * One button needs to be connected to a function that takes the input from
       the GUI, does some task, and updates the GUI in response.
@@ -33,9 +34,12 @@ task, etc. At a mininum, the GUI needs the following:
 Of course, your GUI can have more than the minimum above as desired and needed
 by your project.
 
+If you would like to ensure that your idea meets the minimum requirements,
+please contact the instructor.
+
 ## Evaluation
 
-You will receive an invitation to a repository in the BME547-Fall2024
+You will receive an invitation to a repository in the BME547-Spring2025
 organization. Please use this repository to implement your code. If you choose
 one of the suggested projects, make sure to download the provided files and add
 them to your repository.

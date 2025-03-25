@@ -3,20 +3,40 @@ Write GUI code that allows a user to add text annotations to a medical image.
 A custom widget called `ImageLabel` is provided that has functionality to
 display an image and add text to it.
 
+### Specifications
+Design a GUI and associated program code that meets the following 
+specifications.
+* The GUI must display an image.
+* The user must have the ability to input X and Y coordinates, in the range of
+0.0 to 1.0, inclusive, indicating the fractional location from the upper left
+corner of the image.
+* The user must have the ability to enter text which is to be added to the
+image.
+* The user must have the ability to enter/select the font size of the text to
+be added to the image.
+* The user must have the ability to enter/select the color of the text to be 
+added to the image.
+* The user must have the ability to indicate that they want the entered text
+added at the given location in the given font size and color.
+* The user must have the ability to remove the most recent text added to the
+image.  
+* The user must have the ability to clear all texted added to the image.
+* The user must have the ability to enter a filename of a different image and
+load that image into the GUI for text addition.
+* The user must have the ability to click a button to exit the program.
+* The GUI must use at least:
+  * one label
+  * one entry box (entered text must be used somehow by the code)
+  * one radio button, checkbox, or dropdown box (the values of these items must
+    be used somehow by the game/code)
+  * two buttons  (must be linked to some command code)
+* More widgets than this minimum are allowed (and will likely be needed) to
+implement the needed GUI functions.  Additional GUI features can be added as
+needed to ensure the minimum number of widgets and types are used.  
+
 ### Approach
-1. Sketch out the GUI.  On the interface you will want 
-   1. a place to display the image 
-   2. the ability for the user to input X and Y coordinates, which will be
-   floats from 0.0 to 1.0, indicating the fractional location from the upper
-   left corner of the image
-   3. the ability for the user to enter text to add to the image
-   4. the ability for the user to enter/select the font size
-   5. the ability for the user to enter/select the text color
-   6. the ability for the user to indicate that they want to add the entered
-   text to the image at the entered location, font size, and color
-   6. the ability for the user to indicate they want to remove the most
-   recent text added to the image
-   7. the ability for the user to clear all text from the image
+1. Sketch out the GUI.  Include all the needed widgets to accomplish the 
+  specifications.
 2. Follow the instructions under the "Import" heading in the `ImageAnnotationInfo.md` found in
 the ImageAnnotation folder for installing and importing the needed `ImageLabel`
 widget.
@@ -39,7 +59,7 @@ to a function using the `command` option.  This function should call the
 7. Connect your widget that allows the user to clear all text to a function
 using the `command` option.  This function should call the 
 `ImageLabel.clear_all_text()` function.
-8. If you like, you could modify your code and GUI to allow for the user to
+8. Modify your code and GUI to allow for the user to
 enter a filename to change the image on display.  The 
 `tkinter.filedialog.askopenfilename` opens up a dialog box to allow the user
 to pick a filename.  The `ImageLabel.load_image()` method can change the
