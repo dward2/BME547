@@ -154,13 +154,20 @@ files._
 
 Requires the following dictionary as JSON string
 ```python
-{"image": <base_64_string>, "net_id": <net_id>, "id_no": <int>}
+{"image": <base_64_string>, "net_id": <net_id>, "id_no": <id_no_int>
+    [, "font_size": <int>, "font_color": <str>]}
 ```
   + `<base_64_string>` is a string containing an image encoded into base 64
   + `<net_id>` is a string containing your Duke Net Id
-  + `<int>` is an integer and will be used to tag the image for further retrieval
+  + `<id_no_int>` is an integer and will be used to tag the image for further retrieval
+  + OPTIONAL:  
+    + The `"font_size"` key can take an `<int>` as the font size.  Must be
+      between 6 and 64, inclusive.  (Default = 36)
+    + The `"font_color"` key can take a `<str>` to set the font color.  It
+      must be one of "white", "black", "red", "orange", "yellow", "green",
+      "blue", or "purple". (Default = "black")
 
-Returns `string` with message about the outcome of the Post.
+Returns `string` with message about the outcome of the post.
 
 ### GET `/get_image/<net_id>/<id_no>`
 

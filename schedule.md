@@ -286,9 +286,8 @@ GUI</a></li>
 Encoding/Decoding</a></li>
 </td>
     <td>
-      <!---<a href="Lectures/image_encoding_decoding.
-md#image-server-api-for-in-class-work">
-        In-class Exercise</a> --->
+      <a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
+        In-class Exercise</a>
     </td>
 </tr>
 
