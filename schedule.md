@@ -298,9 +298,9 @@ Encoding/Decoding</a></li>
         <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
     </td>
     <td>
-        Final Project Assigned
-      <!----<li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>---->
+        <!----Final Project Assigned---->
+      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
     </td>
 </tr>
 

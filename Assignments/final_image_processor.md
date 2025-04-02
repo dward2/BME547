@@ -74,7 +74,11 @@ interface with the following functionality:
   to see if a new CPAP pressure has been commanded by the monitoring station.
   If so, the value in the CPAP pressure entry should be automatically updated
   to that new value.  Any future uploads of CPAP data should use this new
-  value.
+  value until the user changes this CPAP pressure entry.  
+  *NOTE: if the
+  user changes the CPAP pressure entry, it must NOT be changed back to the
+  value commanded from the monitoring station unless a new command from the
+  monitoring station is received.*  
   + The user should have the ability to "reset" the device.  This means that
   all entries and displayed data are removed, including the patient medical 
   record number and room number.  The MRN and room number inputs should be 
@@ -142,7 +146,9 @@ user interface with the following functionality:
    choices presented should represent the 
     most recent options on the server.  In other words, the options for choices
     must dynamically update, rather than be "locked in" based on what was 
-    available when the client was started.  
+    available when the client was started.  The options should update
+    automatically without the user needing to click a button or take any
+    other action other than making a new selection.
   + In order to complete these tasks, the client GUI will need to make RESTful 
   API requests to the server to get lists of available room
   numbers, available data for the selected room, and the data/images 
