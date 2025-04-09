@@ -6,9 +6,8 @@ Standards can be accessed through the Duke library at
 The standard most relevant to this course is 
 __IEC 62304 - Medical Device Software - Software Life Cycle Processes__.  
 
-IEC standards can be found on the Techstreet Enterprise website which can be 
-accessed from the Duke Library site above.  You will need to create a free 
-account with Techstreet.
+The procedure for accessing this standard is currently changing.  Please see
+the Canvas announcement for instructions.
 
 
 # Exercise 1
