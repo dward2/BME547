@@ -20,7 +20,7 @@ Security is an especially important consideration when working with medical soft
   - Important to ensure communications between clients and servers are not observed by eavesdroppers
   - __Also__ important to ensure that the client can verify the identity of the server (ensure that no malicious party is masquerading as the server). 
   - Certificate Authorities (CAs) are responsible for "vouching" for the identity of a server.
- 
+<!--- 
 ## Add TLS/SSL to your server
 You can add TLS/SSL to your server pretty easily (and for free) these days because of certificate authorities like [Let's Encrypt](https://letsencrypt.org/) that make verification easy. Tools like [`ssl-proxy`](https://github.com/suyashkumar/ssl-proxy) (disclaimer: this was built by @suyashkumar) make negotiating and serving a LetsEncrypt certificate as easy as running a single command. You may also acquire certificates using [certbot](https://certbot.eff.org/) and incoporate them manually into [Flask](https://stackoverflow.com/questions/28579142/attributeerror-context-object-has-no-attribute-wrap-socket/28590266#28590266).
 
@@ -39,7 +39,10 @@ You can add TLS/SSL to your server pretty easily (and for free) these days becau
   This command will negotiate, fetch, and install an ssl certificate for you and serve that ssl certificate on port 443 (the default port for SSL, whenever you go to a website using `https://`). It will take all incoming web traffic served and negotiated using SSL/TLS, and then send it along to your web service listening for incoming requests at `127.0.0.1:5000`. :eyes: Notice that in this example we asked you to list the `127.0.0.1` loopback as your host because `127.0.0.1` will not allow external connections outside of your VCM to send requests to the flask server. Since the `ssl-proxy` program is running on your VM, it is allowed to send connections, but no one else can attempt to contact your flask server directly (they must all go through the `ssl-proxy` layer first).
   
 - You should now be able to visit your vcm at `https://vcm-7295.vm.duke.edu` (substitute for your vcm address) and see the little security lock in your browser. Clicking on it will let you inspect the certificate. If your server does not have a handler for a default route `/`, then be sure to navigate to your route. For example: `https://vcm-7295.vm.duke.edu/hello`
-  
+--->
+
+**Asymmetric Math Example**:  [asymmetric_math.py](lecture_code/asymmetric_math.py)
+
 ## In-Class Exercise
 
 We are going to demonstrate how asymmetric encryption can be 
