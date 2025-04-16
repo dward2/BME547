@@ -211,6 +211,15 @@ you have at least one test module in your repository.
    failed.  You may need to look at the test results output for the `pytest` 
    output itself.
 
+## Code Coverage in Visual Studio Code
+
+As discussed at [coverage.md](coverage.md), we can use the `pytest-cov` 
+package (which also loads the `coverage` package) to check for what lines of 
+code are reached during testing.  Visual Studio Code can visually display 
+the results of code coverage when `pytest` is run through VS Code.  Follow 
+the steps above for running `pytest` in VS Code.   And, when you want to 
+run tests with coverage, click on the "Run Tests with Coverage" icon ![Run 
+With Coverage Icon](images/vs_code_run_tests_icon.jpg).
 
 
 ## References
