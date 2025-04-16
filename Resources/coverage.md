@@ -6,6 +6,11 @@ Coverage refers to the amount of code that is "covered" by your test cases. If c
 
 You can generate coverage reports using the [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/readme.html) package (Note: pytest-cov is a wrapper around the more general [coverage](https://coverage.readthedocs.io/en/7.6.1/) package, but for the purposes of this class we'll just be looking at pytest-cov since we already use pytest). This can be installed in your current environment using `pip install pytest-cov` or `conda install -c conda-forge pytest-cov`.
 
+In addition to the instructions below, coverage in pytest can also be run 
+in Visual Studio Code and give visual results within its interface.  Visit 
+[visual_studio_code.md](visual_studio_code.md#code-coverage-in-visual-studio-code) 
+for details.
+
 ## Usage
 
 Pytest-cov is a plugin for pytest, just like  pytest-pycodestyle, so we use it very similarly. To run your tests with coverage, you can use the command `pytest --cov=<path_to_directory_with_tests>` in the terminal. Since our tests are usually in the main repository folder where we are running our terminal (e.g. our terminal is running out of "C:<user_path>\bme547_repos\bme-547-classwork-zspald", which is the same directory our tests are in), so the path can be omitted, shortening the command to `pytest --cov`.

@@ -61,7 +61,7 @@ location with the change then available to all of the users of the variable.
    administrator mode.  If opening from the command line, use `sudo` such 
    as `sudo nano .zshrc`. )
 5. Scroll to the end.
-6. Add this line:  `export <VAR_NAME>:<VAR_VALUE>` where you replace 
+6. Add this line:  `export <VAR_NAME>=<VAR_VALUE>` where you replace 
    `<VAR_NAME>` and `<VAR_VALUE>` with the name and value of the variable.  
    Example:  `export MONGODB=fall24`.
 7. Save the file and close it.

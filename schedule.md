@@ -216,6 +216,7 @@ CI Assigned</a>
         <li>Server Debugging</li>
         <li>Server Testing</li>
         <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
+        <li><a href="Resources/coverage.md">Code Coverage</a></li>
     </td>
     <td>
         <a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>
@@ -339,11 +340,12 @@ Encoding/Decoding</a></li>
       <!---<li>Software Development Methodologies & Other Terminology</li>--->
       <li><a href="Lectures/secrets_and_environment_variables.md">
            Secrets and Environment variables</a></li>
-      <li><a href="Resources/coverage.md">Code Coverage</a></li>
+      <li><a href="Lectures/making_and_importing_packages.md">
+           Making and Importing Packages</a></li>
     </td>
     <td></td>
 </tr>
-
+<!---
 <tr>
 <td>Fri Apr 18</td>
     <td>
@@ -359,6 +361,6 @@ Encoding/Decoding</a></li>
     </td>
     <td></td>
 </tr>
-
+--->
 
 </table>
