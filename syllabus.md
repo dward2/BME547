@@ -1,53 +1,60 @@
-# BME 547 - Medical Software Design - Spring 2025  
+# BME 547 - Medical Software Design - Spring 2025
 
 ## Instructor
+
 Dr. David Ward  
 <david.a.ward@duke.edu>  
 Office Hours: By appointment
 
 ## Teaching Assistant
+
 Zac Spalding  
 <zac.spalding@duke.edu>   
 Office Hours: By appointment
 
-
 ## Course Delivery
 
 ### Lecture
-Wednesday / Friday  11:45 am to 1:00 pm  
+
+Wednesday / Friday 11:45 am to 1:00 pm  
 Location:  Hudson Hall 212
 
 Attendance at lectures is an expectation of the course.
 
 Bringing a laptop computer for working in class is required for completion of
-in-class assignments.  If this requirements causes any problems, please
+in-class assignments. If this requirements causes any problems, please
 communicate with the instructor as soon as possible.
 
 ### Safety Protocols
+
 Following Duke-mandated safety protocols is required for this class and
-students who fail to follow these protocols will be asked to leave the 
-classroom until they can comply.  The most recent Duke protocols can be found
+students who fail to follow these protocols will be asked to leave the
+classroom until they can comply. The most recent Duke protocols can be found
 at <https://coronavirus.duke.edu/>.
 
 ### Pre-lecture Videos
+
 Some content will be delivered via pre-recorded videos that should be
 watched before class, with an accompanying quiz to check for understanding.
 Please see the "Attendance / Participation" section below for more information.
 
 ### Official Course Communication
+
 Canvas will be used for official course communication. Close attention to
 Canvas will be required. Ensure that you have Notifications turned on to the "
 Notify immediately" or "Daily summary" for the following categories:
+
 * Due Date
 * Announcement
 * Grading
 
 Assistance with using Canvas can be obtained within Canvas by clicking on the
-Help icon on the left side menu.  For more information, please visit 
+Help icon on the left side menu. For more information, please visit
 "[For Students](https://go.canvas.duke.edu/students-0/?utm_source=newsletter&utm_medium=email&utm_content=For%20Students&utm_campaign=fall-users-aug-msg)"
 on the Duke Canvas website (<https://go.canvas.duke.edu/>).
 
 ### Assignments
+
 A variety of projects will be assigned throughout the semester. The description
 of these assignments will be posted in Canvas and also in this GitHub repo.
 Official due dates will be found in Canvas. While future assignments are shown
@@ -57,11 +64,12 @@ GitHub private repositories created for you. Assignment feedback will be
 delivered via Gradescope and Canvas.
 
 ## Course Overview
+
 Software plays a critical role in almost all medical devices, spanning device
-control, feedback and algorithmic processing.  This course focuses on software
+control, feedback and algorithmic processing. This course focuses on software
 design skills that are ubiquitous in the medical device industry, including
 software version control, unit testing, fault tolerance, continuous integration
-testing and documentation.  Experience will be gained in the Python programming
+testing and documentation. Experience will be gained in the Python programming
 language.
 
 The course will be structured around various software projects related to
@@ -71,6 +79,7 @@ projects will be designed to develop software design fundamentals. Some
 project-related work will be done in groups.
 
 ## Prerequisites
+
 Basic familiarity with programming concepts (e.g., variables, loops,
 conditional statements, functions and parameters) and their implementation in
 Python.
@@ -81,104 +90,110 @@ BME 271 - Signals and Systems
 
 A computer with administrator rights and good internet connection.
 
-Complete the prerequisite assessment found 
+Complete the prerequisite assessment found
 [here](Assignments/00_programming_assessment.md).
 
 ## Course Topics
+
 * Software version control (`git`, GitHub)
 * Device programming fundamentals
-  + Review of data types, variables, loops, conditional statements
-  + Python (v3)
-  + Use of external libraries / packages
-  + Virtual environments & dependency management (`pip`, `requirements.txt`)
-  + Custom classes
-  + Use of a programming IDE
-  + Debugging
+    + Review of data types, variables, loops, conditional statements
+    + Python (v3)
+    + Use of external libraries / packages
+    + Virtual environments & dependency management (`pip`, `requirements.txt`)
+    + Custom classes
+    + Use of a programming IDE
+    + Debugging
 * Testing
-  + Unit testing
+    + Unit testing
   <!---+ Functional / System testing--->
-  + Continuous integration (GitHub Actions)
+    + Continuous integration (GitHub Actions)
 * Fault tolerance (handling and raising exceptions)
 * Logging
 * Documentation
-  + Docstrings
-  + Markdown
+    + Docstrings
+    + Markdown
   <!---+ Sphinx
   + [ReadTheDocs](https://readthedocs.org)--->
 * Working with data
-  + Data Storage (Text, Binary, MongoDB)
+    + Data Storage (Text, Binary, MongoDB)
 * Data Processing & Display
-  + Jupyter Notebooks
-  + Matplotlib
-  + Numpy
+    + Jupyter Notebooks
+    + Matplotlib
+    + Numpy
   <!---+ [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)--->
 * Servers
-  + Design & Implementation of a web service (Python Flask)
-  + HTTP & RESTful APIs
+    + Design & Implementation of a web service (Python Flask)
+    + HTTP & RESTful APIs
 * Graphical User Interfaces (GUIs)
 * Introduction to Security
 * Medical Software Development Standards
 
 ## Attendance / Participation
-Attendance and participation in class, watching pre-class videos, completing 
-pre-class quizzes on time, and completion of assigned in-class activities 
-will count for 15\% of your class grade.    
+
+Attendance and participation in class, watching pre-class videos, completing
+pre-class quizzes on time, and completion of assigned in-class activities
+will count for 15\% of your class grade.
 
 Lecture attendance and participation is important as the topics and skills you
-will be learning build upon each other as the semester continues.  Also, you 
-will be working in small groups some of the semester.  The work we do together 
+will be learning build upon each other as the semester continues. Also, you
+will be working in small groups some of the semester. The work we do together
 during the lecture or as
 part of an "in-class" assignment that I give will be done in a GitHub private
 repository and will be checked for timely completion and cataloged as part of
-the class participation grade.  So, it is expected that you will follow along
+the class participation grade. So, it is expected that you will follow along
 and do the work to the best of your ability during class.
 
 Before some lectures, a pre-recorded video may be assigned for viewing with
-an accompanying quiz.  Watching the video and completion of the quiz is 
-expected to be done before the class period begins and will be part of the 
+an accompanying quiz. Watching the video and completion of the quiz is
+expected to be done before the class period begins and will be part of the
 class participation grade.
 
-It is very understandable that students will have to miss class for job 
-interviews, personal reasons, illness, etc.  Absences from class or delayed 
+It is very understandable that students will have to miss class for job
+interviews, personal reasons, illness, etc. Absences from class or delayed
 daily work will be considered **excused** only if:
-* for an illness, the illness is communicated through submission of an 
-  [Incapacitation Form](https://class-absences.trinity.duke.edu/if)*   
-  **before** class and then the student contacts the instructor within the 
-  required 48 hours to discuss appropriate arrangements, or
-* for any other reason, the reason for the absence is communicated to and 
-  approved by the instructor at least 48 hours **in advance**.  Approval is subject 
-  to instructor discretion as to whether the type of absence should be 
-  considered an excused absence.  
-  `*` see [Pratt Policies & Procedures](https://pratt.duke.edu/life/resources/policies/)
-      for more information.
 
+* for an illness, the illness is communicated through submission of an
+  [Incapacitation Form](https://class-absences.trinity.duke.edu/if)*   
+  **before** class and then the student contacts the instructor within the
+  required 48 hours to discuss appropriate arrangements, or
+* for any other reason, the reason for the absence is communicated to and
+  approved by the instructor at least 48 hours **in advance**. Approval is
+  subject
+  to instructor discretion as to whether the type of absence should be
+  considered an excused absence.  
+  `*`
+  see [Pratt Policies & Procedures](https://pratt.duke.edu/life/resources/policies/)
+  for more information.
 
 Unexcused absences will count against the participation component of your class
 grade.
 
-For excused absences, it is still expected that the student would view the 
-lecture recording and complete any work done during the lecture and/or any given 
+For excused absences, it is still expected that the student would view the
+lecture recording and complete any work done during the lecture and/or any given
 daily assignment before the next scheduled class meeting or the end of the
 expected absence.
 
-
 ## Textbooks & Resources
-There are no required textbooks for this class.  A variety of online resources
-will be referenced throughout the semester.  
+
+There are no required textbooks for this class. A variety of online resources
+will be referenced throughout the semester.
 
 * [Python Resources](Resources/python.md)
 
 ## Project Details
+
 Project details will be discussed in lecture throughout the semester.
 
 ## Grading
-Official assignment posting will be done in Canvas.  The detailed assignment
-description will be done in this GitHub repository.  Assignments will generally
+
+Official assignment posting will be done in Canvas. The detailed assignment
+description will be done in this GitHub repository. Assignments will generally
 be submitted in a GitHub private repository.
 
 Due dates--including those that change--will be announced in lecture and by
-Canvas announcements (be sure to have your Canvas Announcement notification 
-on).  
+Canvas announcements (be sure to have your Canvas Announcement notification
+on).
 <table>
 <tr>
 <th>Grading Breakdown</th><th></th>
@@ -206,20 +221,22 @@ instructor that you are utilizing that option before the deadline via e-mail.
 Specific project feedback will be given using Gradescope and Canvas.
 
 ## Class Schedule
+
 The course schedule is likely to change depending on progress throughout
-the semester.  The [schedule](schedule.md) will always be available in
-the GitHub course repository, but is always subject to change.  Assume there 
+the semester. The [schedule](schedule.md) will always be available in
+the GitHub course repository, but is always subject to change. Assume there
 will be a lecture every class period even if no topic is shown on the schedule.
 
 ## Distributed Version Control Software (git)
+
 Software management is a ubiquitous tool in any engineering project, and this
 task becomes increasingly important during group development. Version control
 software has many benefits and uses in software development, including
 preservation of versions during the development process, the ability for
 multiple contributors and reviewers on a project, the ability to tag
 *Releases* of code, and the ability to branch code into different functional
-branches.  We will be using [GitHub](https://github.com) to centrally host our
-git repositories.  Some guidelines for using your git repositories:
+branches. We will be using [GitHub](https://github.com) to centrally host our
+git repositories. Some guidelines for using your git repositories:
 
 * *All* software additions, modifications, bug-fixes, etc. need to be done in
   your repository.
@@ -232,7 +249,7 @@ git repositories.  Some guidelines for using your git repositories:
 * Instructors and teaching assistants will only review code that is committed
   to your repository (no emailed code!).
 * All the commits associated with your repository are logged with your name
-  and a timestamp, and these cannot be modified.  Use descriptive commit
+  and a timestamp, and these cannot be modified. Use descriptive commit
   messages so that your group members, instructors, and teaching assistants can
   figure out what you have done!!  You should not need to email group members
   when you have performed a commit; your commit message(s) should speak for
@@ -245,66 +262,117 @@ git repositories.  Some guidelines for using your git repositories:
 * Document!
 * Make commits small and logical; do them often!
 
-We will review working with git repositories in lecture.  Make sure to commit
+We will review working with git repositories in lecture. Make sure to commit
 any work you do in class on your repository and push those changes to GitHub.
 This will be the mechanism that is used to ascertain your class participation.
 
 ## Academic Accommodations
+
 Students with a registered disability with the Student Disability Access Office
-may request certain accommodations.  A discussion about the general 
-implementation of these accommodations must be held between the instructor and 
-student and documented by e-mail at least 72 hours before a specific 
-accommodation may be requested. 
+may request certain accommodations. A discussion about the general
+implementation of these accommodations must be held between the instructor and
+student and documented by e-mail at least 72 hours before a specific
+accommodation may be requested.
+
+## AI Policy
+
+### Background
+
+Student use of AI for coding, beyond simple questions
+asked for understanding, is extremely detrimental to learning.
+
+1) The student learns nothing by simply copying and pasting.
+2) The student may believe that bad code generated is correct and "learn" the
+   bad method.
+3) The student, because they either learn nothing or the wrong thing, does not
+   have the ability to detect any bad code that is generated.
+
+There are great alternatives to AI:
+
+1) Documentation:  There is detailed documentation on the web.
+2) Resources like [StackExchange](https://stackexchange.com/) and
+   [W3Schools](<https://www.w3schools.com/python/default.asp>) have
+   human-validated information that is easily found with a web search.
+
+If you want to use AI to learn, ask for examples of short samples of code with
+complete explanation of how it works, with reference links so you can verify.
+Then, actually read the information generated, understand it, and then apply
+what you learned to your own code. Do not cut/paste the generated code. This
+significantly impedes learning (and can lead to academic dishonest as discussed
+below).
+
+### Policy
+
+I strongly discourage the use of any AI-generated code in your submission. If,
+despite this, you choose to do so, you must cite its use and show documentation
+as follows.
+
+1. In a docstring or comment associated with the code, include a statement that
+   AI was used to generate the specific code either in part or in full.
+2. Create a PDF of the AI Chat, including your prompts and the generated code.  
+   See this [link]() for info on how to create this PDF.
+3. Create a folder in your submission repository called "references".
+4. Save the PDF in that folder and make sure it is committed and pushed to your
+   GitHub repository very soon to the time that you included this code in your
+   project (ideally in the same commit).
+
+If the use of AI-generated code leads to a substantial similarity to other
+sources, and the documentation provided above is either missing, not complete,
+or is not compelling to show that the work was significantly and independently 
+done by the student,  the submission will be considered a case of academic 
+dishonesty. NOTE:  The best way to prevent this from happening is to not use AI
+at all or at any large scale.
 
 ## Duke Community Standard & Academic Honor
+
 Engineering is inherently a collaborative field, and in this class, you are
 encouraged to discuss what you have learned in class and share resources that
-you find.  However, your code development and final submitted code must be the 
-product of your and/or your assigned group's effort and understanding.  It is not 
-permitted to share your code with others for them to review, copy, or use.  Any 
-freely-available, external 
+you find. However, your code development and final submitted code must be the
+product of your and/or your assigned group's effort and understanding. It is not
+permitted to share your code with others, or to receive code from others, for
+review, copy, or use. Any freely-available, external
 resources developed by others, and used in your project,
 must be properly cited in the documentation (either in the README.md file or
-in a docstring or other in-code comment).  These outside resources must be clearly published
+in a docstring or other in-code comment). These outside resources must be
+clearly published
 for general use and cannot be the work of other current or former Duke students.
 
-In general, if you can install it from a package manager, such as `pip` or 
-`conda`, then you can use it as part of your work.  If you cannot, you should
+In general, if you can install it from a package manager, such as `pip` or
+`conda`, then you can use it as part of your work. If you cannot, you should
 seek further guidance from the instructor.
 
-For this class, the use of any tool that uses artificial intelligence, machine
-learning, large data sets, or other means to suggest code for use in your
-submissions (hereby called an AI tool) is strictly prohibited. If, despite this
-stated prohibition, you submit code wholly or partially based on the use of any
-such tool, and this code is similar to previously existing code that is not
-adequately cited in your documentation, or is similar to another student's code
-submitted for this class, this will be considered a case of academic dishonesty
-similar to directly copying such code, regardless of the user intent. In
-addition, if the instructor suspects the use of such a tool to develop the
-submitted code, the instructor reserves the right to withhold grading of the
-assignment and to meet with the student to discuss the code and check for
-understanding. If, after this meeting, the instructor believes that there was
-unauthorized use of an AI tool, the instructor will consider the submission 
-as a case of academic dishonesty.
+As discussed above in the section on AI Policy, the use of any AI-generated
+code needs to be documented or else the submission will be considered a case of 
+academic dishonesty.
+
+Your submissions will be examined for similarity to the code submitted by other
+students, both this term and in previous terms, as well as other code sources.
+If similarities or irregularities are found that suggest the work was not 
+independently developed
+by the student, the instructor reserves
+the right to withhold grading of the assignment and to meet with the student to
+discuss the code and check for understanding.  If, after this meeting, the
+instructor believes that the submission was not independently created, the 
+instructor will consider the submission as a case of academic dishonesty.  
 
 All students are expected to adhere to all principles of the [Duke Community
 Standard](https://dukecommunitystandard.students.duke.edu/).
 Violations of the Duke
 Community Standard will be referred immediately to the Office of Student
-Conduct or the appropriate Graduate School dean.  Please do not hesitate to 
-talk with your instructor about any situations involving academic honor, 
+Conduct or the appropriate Graduate School dean. Please do not hesitate to
+talk with your instructor about any situations involving academic honor,
 especially if it is ambiguous about what should
-be done.  More information on the Duke Community Standard can can be found at 
+be done. More information on the Duke Community Standard can can be found at
 <https://dukecommunitystandard.students.duke.edu/>.
 
-For undergraduates, if a student is found responsible through the Office of 
+For undergraduates, if a student is found responsible through the Office of
 Student Conduct for
-academic dishonesty on a graded item in this course, the student will 
+academic dishonesty on a graded item in this course, the student will
 receive a zero for that assignment, and the final grade for the course will be
-reduced by at least one full letter grade.  If a student's admitted academic
+reduced by at least one full letter grade. If a student's admitted academic
 dishonesty is resolved directly through a faculty-student resolution agreement
 approved by the Office of Student Conduct, the terms of that agreement will
 dictate the grading response to the assignment at issue.
 
-For graduate students, the appropriate policies of their graduate school will 
+For graduate students, the appropriate policies of their graduate school will
 apply.  
