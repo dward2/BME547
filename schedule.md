@@ -13,7 +13,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Jan 10</td>
+<td>Thu Jan 8</td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
     <td>
       <li><a href="Assignments/01_tool_setup_git_intro.md">Setup Course 
@@ -23,7 +23,7 @@ Tools</a></li>
 </tr>
 
 <tr>
-<td>Wed Jan 15</td>
+<td>Tue Jan 13</td>
     <td>
       <li><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
       Cloning, Add/Commit, Branching, Pushing/Pulling</a></li>     
@@ -37,7 +37,7 @@ Tools</a></li>
 </tr>
 
 <tr>
-<td>Fri Jan 17<br></td>
+<td>Thu Jan 15<br></td>
     <td>
   <li><a href="Lectures/modularity_example.md">Functional Modularity 
 Example</a> <!---(starter code <a href="https://github.
@@ -55,7 +55,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Wed Jan 22</td>
+<td>Tue Jan 20</td>
     <td>
         <li><a href="Lectures/modules.md">Modules</a></li> 
         <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li> 
@@ -65,7 +65,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Fri Jan 24</td> 
+<td>Thu Jan 22</td> 
   <td>  
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
@@ -80,7 +80,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Wed Jan 29</td>
+<td>Tue Jan 27</td>
     <td>
     <li><a href="Lectures/robust_testing.md#approximations">Approximations 
 with Unit Testing</a></li>    
@@ -100,7 +100,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Jan 31</td>
+<td>Thu Jan 29</td>
     <td>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
@@ -115,7 +115,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Feb 5</td>
+<td>Tue Feb 3</td>
     <td>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
         <li><a href="Lectures/classes.md">Classes</a></li>
@@ -128,7 +128,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Feb 7</td>
+<td>Thu Feb 5</td>
     <td>
         <li>More on Classes</li>
         <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
@@ -139,7 +139,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Feb 12</td>
+<td>Tue Feb 10</td>
     <td>
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
         <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
@@ -152,7 +152,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Feb 14</td>
+<td>Thu Feb 12</td>
     <td>
         <li><a href="Lectures/debugging.md">Debugging</a></li> 
         <li><a href="Lectures/numpy.md">NumPy</a> and 
@@ -165,7 +165,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Feb 19</td>
+<td>Tue Feb 17</td>
     <td>
         <li><a href="Lectures/logging.md">Logging</a></li>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
@@ -178,7 +178,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Feb 21</td>
+<td>Thu Feb 19</td>
     <td>
         <a href="Lectures/apis_webservices_requests.md">
         APIs, Intro To Web Services, Requests</a>
@@ -189,7 +189,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Feb 26</td>
+<td>Tue Feb 24</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <a href="Lectures/flask_server_setup.md">
@@ -202,7 +202,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Feb 28</td>
+<td>Thu Feb 26</td>
     <td> 
       <a href="Lectures/server_code_design.md">Server Design</a>
     </td>
@@ -211,7 +211,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Mar 5</td>
+<td>Tue Mar 3</td>
     <td>
         <li>More Server Design</li>
         <li>Server Debugging</li>
@@ -226,7 +226,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Mar 7</td>
+<td>Thu Mar 5</td>
 <td>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
         <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
@@ -245,7 +245,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Mar 19</td>
+<td>Tue Mar 17</td>
     <td>
       <li>MongoDB/PyMODM Example</li>
 </td>    
@@ -255,7 +255,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Mar 21</td>
+<td>Thu Mar 19</td>
     <td>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
@@ -265,7 +265,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Mar 26</td>
+<td>Tue Mar 24</td>
     <td>
         <li>Connecting GUI to Client/Server</li>
         <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
@@ -277,7 +277,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Mar 28</td>
+<td>Thu Mar 26</td>
     <td>
         <li><a href="Resources/tkinter_images.md">Adding Images to tkinter 
 GUI</a></li>
@@ -292,7 +292,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Wed Apr 2</td>
+<td>Tue Mar 31</td>
     <td>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
         <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
@@ -305,7 +305,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Fri Apr 4</td>
+<td>Thu Apr 2</td>
     <td>
             <a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a>
     </td>
@@ -314,7 +314,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Wed Apr 9</td>
+<td>Tue Apr 7</td>
     <td>
        <a href="Resources/standards.md">Standards: </a>
        <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
@@ -325,7 +325,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Fri Apr 11</td>
+<td>Thu Apr 9</td>
     <td>
               <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
 </td> 
@@ -334,7 +334,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Wed Apr 16</td>
+<td>Tue Apr 14</td>
     <td>
       <!---<li>Software Development Methodologies & Other Terminology</li>--->
       <li><a href="Lectures/secrets_and_environment_variables.md">
@@ -345,7 +345,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Fri Apr 18</td>
+<td>Thu Apr 16</td>
     <td>
         TBD
     </td>
@@ -353,7 +353,7 @@ md#image-server-api-for-in-class-work">
 </tr>
 
 <tr>
-<td>Wed Apr 23</td>
+<td>Tue Apr 21</td>
     <td>
         LDOC - Topic TBD
     </td>
