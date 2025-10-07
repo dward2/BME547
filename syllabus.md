@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Spring 2025  
+Upd# BME 547 - Medical Software Design - Spring 2026  
 
 ## Instructor
 Dr. David Ward  
@@ -6,16 +6,15 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Zac Spalding  
-<zac.spalding@duke.edu>   
+TA Name  
+<ta@duke.edu>  
 Office Hours: By appointment
-
 
 ## Course Delivery
 
 ### Lecture
-Wednesday / Friday  11:45 am to 1:00 pm  
-Location:  Hudson Hall 212
+Tuesday / Thursday  11:45 am to 1:00 pm  
+Location:  Wilkinson 126
 
 Attendance at lectures is an expectation of the course.
 
