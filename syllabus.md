@@ -297,8 +297,8 @@ There are great alternatives to AI:
 If you want to use AI to learn, ask for examples of short samples of code with
 complete explanation of how it works, with reference links so you can verify.
 Then, actually read the information generated, understand it, and then apply
-what you learned to your own code. Do not cut/paste the generated code. This
-significantly impedes learning (and can lead to academic dishonest as discussed
+what you learned to your own code. Do not copy/paste the generated code. This
+significantly impedes learning (and can lead to academic dishonesty as discussed
 below).
 
 ### Policy
@@ -309,8 +309,8 @@ as follows.
 
 1. In a docstring or comment associated with the code, include a statement that
    AI was used to generate the specific code either in part or in full.
-2. Create a PDF of the AI Chat, including your prompts and the generated code.  
-   See this [link]() for info on how to create this PDF.
+2. Create a PDF or single HTML file of the AI Chat, including your prompts and
+   the generated code.
 3. Create a folder in your submission repository called "references".
 4. Save the PDF in that folder and make sure it is committed and pushed to your
    GitHub repository very soon to the time that you included this code in your
