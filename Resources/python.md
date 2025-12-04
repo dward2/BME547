@@ -2,10 +2,15 @@
 
 ## General Python Overview
 
+* [Python for Everybody](https://www.py4e.com/)
+    * A free site that offers a full course in Python with videos, assignments,
+      and notes.  Well organized.
+* Coursera for Duke
+  * [Programming for Everybody (Getting Started with Python)](https://www.coursera.org/programs/duke-university-on-coursera-obsio/learn/python?authProvider=duke&specialization=python#modules)
+  * Seven module course on Python basics, each module about 2-3 hrs
+  * Same material as found in Python for Everybody
 * LinkedIn Learning Courses
     * Self-paced video course
-    * Duke students have free access to the LinkedIn Learning tutorials if you
-      access them through the OIT software portal.
     * Two options:
         * [Python Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/python-essential-training-18764650/getting-started-with-python?u=77842946)
         * [Learning Python (LinkedIn Learning)](https://www.linkedin.com/learning/learning-python-14393370/learning-python-22821893?u=77842946)
@@ -13,9 +18,6 @@
     * On-line book
 * [W3 Schools Python Tutorial](https://www.w3schools.com/python/)
     * Well organized tutorial and reference site for Python
-* [Python for Everybody](https://www.py4e.com/)
-    * A free site that offers a full course in Python with videos, assignments,
-      and notes.  Well organized.
 * [Intermediate Python](http://book.pythontips.com/en/latest/index.html)
     * As the name suggests, some more advanced topics in Python
 
