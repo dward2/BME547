@@ -6,8 +6,8 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-TA Name  
-<ta@duke.edu>  
+Jefferson Bercaw  
+<jefferson.bercaw@duke.edu>  
 Office Hours: By appointment
 
 
