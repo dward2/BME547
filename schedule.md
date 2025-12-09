@@ -31,8 +31,8 @@ Tools</a></li>
       <li><a href="Resources/Git/readme_files.md">README.md</a></li>
     </td>
     <td>
-        <a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>
-        <!---Assignment #1 Assigned--->
+        <!---<a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>--->
+        Assignment #1 Assigned
     </td>  
 </tr>
 
@@ -49,8 +49,8 @@ com/dward2/modularity_example">here</a>)---></li>
         <!---<a href="Lectures/git_workflow.md#LDL-Branch">In-class 
 Exercise</a>--->
         <br>
-        <!---Assignment #2 Assigned--->
-        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
+        Assignment #2 Assigned
+        <!---<a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>--->
     </td>
 </tr>
 
@@ -93,9 +93,9 @@ Issues</a></li>
         <li>For Loops</li>--->
     </td>
     <td>
-        <!---Assignment #3 Assigned--->
-      <a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
-CI Assigned</a>
+        Assignment #3 Assigned
+      <!---<a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
+CI Assigned</a>--->
     </td>
 </tr>
 
@@ -122,8 +122,8 @@ CI Assigned</a>
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
-        <!---Assignment #4 Assigned--->
-        <a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>
+        Assignment #4 Assigned
+        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
     </td>
 </tr>
 
@@ -145,9 +145,9 @@ CI Assigned</a>
         <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td>
-        <!---Assignment #5 Assigned--->
-        <a href="Assignments/custom_class_assignment.md">Custom Class 
-            Assignment</a>
+        Assignment #5 Assigned
+        <!---<a href="Assignments/custom_class_assignment.md">Custom Class 
+            Assignment</a>--->
     </td>
 </tr>
 
@@ -159,8 +159,8 @@ CI Assigned</a>
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
 </td>
     <td>
-        <a href="https://canvas.duke.edu/courses/50399/assignments/191507">
-            In-Class Exercise (see Canvas)</a>
+        <!---<a href="https://canvas.duke.edu/courses/50399/assignments/191507">
+            In-Class Exercise (see Canvas)</a>---> 
     </td>
 </tr>
 
@@ -171,9 +171,9 @@ CI Assigned</a>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
     </td>
     <td>
-        <a href="Assignments/CPAP Measurements">CPAP Measurements 
-            Assigned</a>
-        <!---Assignment #6 Assigned--->
+        <!---<a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a>--->
+        Assignment #6 Assigned
     </td>
 </tr>
 
@@ -320,7 +320,8 @@ md#image-server-api-for-in-class-work">
        <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
     </td>
     <td>
-       IEC62304 Assignment (see Canvas)
+       Assignment #10 Assigned
+       <!---IEC62304 Assignment (see Canvas)--->
     </td>
 </tr>
 
