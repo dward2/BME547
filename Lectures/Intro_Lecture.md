@@ -7,7 +7,7 @@
 
 ## Who are we?
 * Dr. David Ward
-* Zac Spalding
+* Jefferson Bercaw
 
 ## Who are you?
 * Name (how you would like to be addressed)

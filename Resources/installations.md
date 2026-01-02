@@ -7,9 +7,9 @@ exceptions:
   1. On the`Select Components` screen, I deselect `Git Bash Here` and `Git
   GUI Here` under `Windows Explorer integration` to prevent cluttering my
      right-click context menu.  But, you may leave if desired.
-  2. On the `Choosing the default editor used by Git` screen, I would select
-  a different editor rather than Vim.  I like Notepad++, but standard
-     Notepad is a good choice, also.
+  2. On the `Choosing the default editor used by Git` screen, I would select a
+     different editor rather than Vim. I like Notepad++ (if it is already
+     installed), but standard Notepad is a good choice, also.
   3. On the `Adjusting the name of the initial branch in new repositories` 
   screen, select `Override the default branch name for new repositories` and
      enter `main` as the new default name.  This will now mirror the behavior

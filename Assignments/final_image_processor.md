@@ -223,7 +223,7 @@ own `flask` based code) that makes requests to the separate cloud server as
 described above.  The cloud server should not have its own interface.
 
 ## Database
-As discussed in class, using MongoDB and PyModm will satisfy the requirements
+As discussed in class, using MongoDB and `pymongo` will satisfy the requirements
 for a persistent database.  As all team members will be working with the 
 database, the use of any other type of persistent data base (SQL instead of
 non-relational, or a non-MongoDB online option) requires approval from all

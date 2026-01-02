@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Spring 2025  
+# BME 547 - Medical Software Design - Spring 2026  
 
 ## Instructor
 Dr. David Ward  
@@ -6,27 +6,27 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Zac Spalding  
-<zac.spalding@duke.edu>   
+Jefferson Bercaw  
+<jefferson.bercaw@duke.edu>  
 Office Hours: By appointment
 
 
 ## Course Delivery
 
 ### Lecture
-Wednesday / Friday  11:45 am to 1:00 pm  
-Location:  Hudson Hall 212
+Tuesday / Thursday  11:45 am to 1:00 pm  
+Location:  Wilkinson 126
 
 Attendance at lectures is an expectation of the course.
 
 Bringing a laptop computer for working in class is required for completion of
-in-class assignments.  If this requirements causes any problems, please
+in-class assignments. If this requirements causes any problems, please
 communicate with the instructor as soon as possible.
 
 ### Safety Protocols
 Following Duke-mandated safety protocols is required for this class and
-students who fail to follow these protocols will be asked to leave the 
-classroom until they can comply.  The most recent Duke protocols can be found
+students who fail to follow these protocols will be asked to leave the
+classroom until they can comply. The most recent Duke protocols can be found
 at <https://coronavirus.duke.edu/>.
 
 ### Pre-lecture Videos
@@ -256,13 +256,62 @@ implementation of these accommodations must be held between the instructor and
 student and documented by e-mail at least 72 hours before a specific 
 accommodation may be requested. 
 
+## AI Policy
+
+### Background
+
+Student use of AI for coding, beyond simple questions
+asked for understanding, is extremely detrimental to learning.
+
+1) The student learns nothing by simply copying and pasting.
+2) The student may believe that bad code generated is correct and "learn" the
+   bad method.
+3) The student, because they either learn nothing or the wrong thing, does not
+   have the ability to detect any bad code that is generated.
+
+There are great alternatives to AI:
+
+1) Documentation:  There is detailed documentation on the web.
+2) Resources like [StackExchange](https://stackexchange.com/) and
+   [W3Schools](<https://www.w3schools.com/python/default.asp>) have
+   human-validated information that is easily found with a web search.
+
+If you want to use AI to learn, ask for examples of short samples of code with
+complete explanation of how it works, with reference links so you can verify.
+Then, actually read the information generated, understand it, and then apply
+what you learned to your own code. Do not copy/paste the generated code. This
+significantly impedes learning (and can lead to academic dishonesty as discussed
+below).
+
+### Policy
+
+I strongly discourage the use of any AI-generated code in your submission. If,
+despite this, you choose to do so, you must cite its use and show documentation
+as follows.
+
+1. In a docstring or comment associated with the code, include a statement that
+   AI was used to generate the specific code either in part or in full.
+2. Create a PDF or single HTML file of the AI Chat, including your prompts and
+   the generated code.
+3. Create a folder in your submission repository called "references".
+4. Save the PDF in that folder and make sure it is committed and pushed to your
+   GitHub repository very soon to the time that you included this code in your
+   project (ideally in the same commit).
+
+If the use of AI-generated code leads to a substantial similarity to other
+sources, and the documentation provided above is either missing, not complete,
+or is not compelling to show that the work was significantly and independently 
+done by the student,  the submission will be considered a case of academic 
+dishonesty. NOTE:  The best way to prevent this from happening is to not use AI
+at all or at any large scale.
+
 ## Duke Community Standard & Academic Honor
 Engineering is inherently a collaborative field, and in this class, you are
 encouraged to discuss what you have learned in class and share resources that
-you find.  However, your code development and final submitted code must be the 
-product of your and/or your assigned group's effort and understanding.  It is not 
-permitted to share your code with others for them to review, copy, or use.  Any 
-freely-available, external 
+you find. However, your code development and final submitted code must be the
+product of your and/or your assigned group's effort and understanding. It is not
+permitted to share your code with others, or to receive code from others, for
+review, copy, or use. Any freely-available, external
 resources developed by others, and used in your project,
 must be properly cited in the documentation (either in the README.md file or
 in a docstring or other in-code comment).  These outside resources must be clearly published
@@ -272,20 +321,19 @@ In general, if you can install it from a package manager, such as `pip` or
 `conda`, then you can use it as part of your work.  If you cannot, you should
 seek further guidance from the instructor.
 
-For this class, the use of any tool that uses artificial intelligence, machine
-learning, large data sets, or other means to suggest code for use in your
-submissions (hereby called an AI tool) is strictly prohibited. If, despite this
-stated prohibition, you submit code wholly or partially based on the use of any
-such tool, and this code is similar to previously existing code that is not
-adequately cited in your documentation, or is similar to another student's code
-submitted for this class, this will be considered a case of academic dishonesty
-similar to directly copying such code, regardless of the user intent. In
-addition, if the instructor suspects the use of such a tool to develop the
-submitted code, the instructor reserves the right to withhold grading of the
-assignment and to meet with the student to discuss the code and check for
-understanding. If, after this meeting, the instructor believes that there was
-unauthorized use of an AI tool, the instructor will consider the submission 
-as a case of academic dishonesty.
+As discussed above in the section on AI Policy, the use of any AI-generated
+code needs to be documented or else the submission will be considered a case of 
+academic dishonesty.
+
+Your submissions will be examined for similarity to the code submitted by other
+students, both this term and in previous terms, as well as other code sources.
+If similarities or irregularities are found that suggest the work was not 
+independently developed
+by the student, the instructor reserves
+the right to withhold grading of the assignment and to meet with the student to
+discuss the code and check for understanding.  If, after this meeting, the
+instructor believes that the submission was not independently created, the 
+instructor will consider the submission as a case of academic dishonesty.  
 
 All students are expected to adhere to all principles of the [Duke Community
 Standard](https://dukecommunitystandard.students.duke.edu/).

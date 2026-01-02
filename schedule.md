@@ -13,7 +13,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Fri Jan 10</td>
+<td>Thu Jan 8</td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
     <td>
       <li><a href="Assignments/01_tool_setup_git_intro.md">Setup Course 
@@ -23,7 +23,7 @@ Tools</a></li>
 </tr>
 
 <tr>
-<td>Wed Jan 15</td>
+<td>Tue Jan 13</td>
     <td>
       <li><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
       Cloning, Add/Commit, Branching, Pushing/Pulling</a></li>     
@@ -31,13 +31,13 @@ Tools</a></li>
       <li><a href="Resources/Git/readme_files.md">README.md</a></li>
     </td>
     <td>
-        <a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>
-        <!---Assignment #1 Assigned--->
+        <!---<a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>--->
+        Assignment #1 Assigned
     </td>  
 </tr>
 
 <tr>
-<td>Fri Jan 17<br></td>
+<td>Thu Jan 15<br></td>
     <td>
   <li><a href="Lectures/modularity_example.md">Functional Modularity 
 Example</a> <!---(starter code <a href="https://github.
@@ -49,13 +49,13 @@ com/dward2/modularity_example">here</a>)---></li>
         <!---<a href="Lectures/git_workflow.md#LDL-Branch">In-class 
 Exercise</a>--->
         <br>
-        <!---Assignment #2 Assigned--->
-        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
+        Assignment #2 Assigned
+        <!---<a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>--->
     </td>
 </tr>
 
 <tr>
-<td>Wed Jan 22</td>
+<td>Tue Jan 20</td>
     <td>
         <li><a href="Lectures/modules.md">Modules</a></li> 
         <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li> 
@@ -65,7 +65,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Fri Jan 24</td> 
+<td>Thu Jan 22</td> 
   <td>  
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
@@ -80,7 +80,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Wed Jan 29</td>
+<td>Tue Jan 27</td>
     <td>
     <li><a href="Lectures/robust_testing.md#approximations">Approximations 
 with Unit Testing</a></li>    
@@ -93,14 +93,14 @@ Issues</a></li>
         <li>For Loops</li>--->
     </td>
     <td>
-        <!---Assignment #3 Assigned--->
-      <a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
-CI Assigned</a>
+        Assignment #3 Assigned
+      <!---<a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
+CI Assigned</a>--->
     </td>
 </tr>
 
 <tr>
-<td>Fri Jan 31</td>
+<td>Thu Jan 29</td>
     <td>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
@@ -115,20 +115,20 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Feb 5</td>
+<td>Tue Feb 3</td>
     <td>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
         <li><a href="Lectures/classes.md">Classes</a></li>
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
-        <!---Assignment #4 Assigned--->
-        <a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>
+        Assignment #4 Assigned
+        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
     </td>
 </tr>
 
 <tr>
-<td>Fri Feb 7</td>
+<td>Thu Feb 5</td>
     <td>
         <li>More on Classes</li>
         <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
@@ -139,46 +139,46 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Feb 12</td>
+<td>Tue Feb 10</td>
     <td>
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
         <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td>
-        <!---Assignment #5 Assigned--->
-        <a href="Assignments/custom_class_assignment.md">Custom Class 
-            Assignment</a>
+        Assignment #5 Assigned
+        <!---<a href="Assignments/custom_class_assignment.md">Custom Class 
+            Assignment</a>--->
     </td>
 </tr>
 
 <tr>
-<td>Fri Feb 14</td>
+<td>Thu Feb 12</td>
     <td>
         <li><a href="Lectures/debugging.md">Debugging</a></li> 
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
 </td>
     <td>
-        <a href="https://canvas.duke.edu/courses/50399/assignments/191507">
-            In-Class Exercise (see Canvas)</a>
+        <!---<a href="https://canvas.duke.edu/courses/50399/assignments/191507">
+            In-Class Exercise (see Canvas)</a>---> 
     </td>
 </tr>
 
 <tr>
-<td>Wed Feb 19</td>
+<td>Tue Feb 17</td>
     <td>
         <li><a href="Lectures/logging.md">Logging</a></li>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
     </td>
     <td>
-        <a href="Assignments/CPAP Measurements">CPAP Measurements 
-            Assigned</a>
-        <!---Assignment #6 Assigned--->
+        <!---<a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a>--->
+        Assignment #6 Assigned
     </td>
 </tr>
 
 <tr>
-<td>Fri Feb 21</td>
+<td>Thu Feb 19</td>
     <td>
         <a href="Lectures/apis_webservices_requests.md">
         APIs, Intro To Web Services, Requests</a>
@@ -189,7 +189,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Feb 26</td>
+<td>Tue Feb 24</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <a href="Lectures/flask_server_setup.md">
@@ -202,7 +202,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Feb 28</td>
+<td>Thu Feb 26</td>
     <td> 
       <a href="Lectures/server_code_design.md">Server Design</a>
     </td>
@@ -211,7 +211,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Wed Mar 5</td>
+<td>Tue Mar 3</td>
     <td>
         <li>Server Debugging</li>
         <li>Server Testing</li>
@@ -226,7 +226,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Fri Mar 7</td>
+<td>Thu Mar 5</td>
 <td>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
         <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
@@ -246,7 +246,7 @@ MongoDB/PyMongo</a></li>
 </tr>
 
 <tr>
-<td>Wed Mar 19</td>
+<td>Tue Mar 17</td>
     <td>
       <li>MongoDB/PyMongo Example</li>
       <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
@@ -257,7 +257,7 @@ MongoDB/PyMongo</a></li>
 </tr>
 
 <tr>
-<td>Fri Mar 21</td>
+<td>Thu Mar 19</td>
     <td>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
@@ -267,7 +267,7 @@ MongoDB/PyMongo</a></li>
 </tr>
 
 <tr>
-<td>Wed Mar 26</td>
+<td>Tue Mar 24</td>
     <td>
         <li>Connecting GUI to Client/Server</li>
         <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
@@ -279,7 +279,7 @@ MongoDB/PyMongo</a></li>
 </tr>
 
 <tr>
-<td>Fri Mar 28</td>
+<td>Thu Mar 26</td>
     <td>
         <li><a href="Resources/tkinter_images.md">Adding Images to tkinter 
 GUI</a></li>
@@ -293,7 +293,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Wed Apr 2</td>
+<td>Tue Mar 31</td>
     <td>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
         <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
@@ -306,7 +306,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Fri Apr 4</td>
+<td>Thu Apr 2</td>
     <td>
             <a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a>
     </td>
@@ -315,18 +315,19 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Wed Apr 9</td>
+<td>Tue Apr 7</td>
     <td>
        <a href="Resources/standards.md">Standards: </a>
        <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
     </td>
     <td>
-       IEC62304 Assignment (see Canvas)
+       Assignment #10 Assigned
+       <!---IEC62304 Assignment (see Canvas)--->
     </td>
 </tr>
 
 <tr>
-<td>Fri Apr 11</td>
+<td>Thu Apr 9</td>
     <td>
               <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
 </td> 
@@ -335,7 +336,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Wed Apr 16</td>
+<td>Tue Apr 14</td>
     <td>
       <!---<li>Software Development Methodologies & Other Terminology</li>--->
       <li><a href="Lectures/secrets_and_environment_variables.md">
@@ -347,7 +348,7 @@ Encoding/Decoding</a></li>
 </tr>
 <!---
 <tr>
-<td>Fri Apr 18</td>
+<td>Thu Apr 16</td>
     <td>
         TBD
     </td>
@@ -355,7 +356,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Wed Apr 23</td>
+<td>Tue Apr 21</td>
     <td>
         LDOC - Topic TBD
     </td>

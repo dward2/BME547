@@ -166,7 +166,8 @@ Also, an interactive Jupyter notebook is available at
 
 ## In-Class Activity: Messaging API
 
-Find a partner in class and write some code to:
+Find a partner in class.  Each of you agree on a "user name" to use for 
+this exercise.  Then, write some code, using the server API below, to:
 * Send a message to your partner
 * Receive a message from your partner
 
@@ -175,17 +176,24 @@ URL To Server:  `http://vcm-43716.vm.duke.edu:5001`
 ### `POST /add_message`
 Posts a message for a specific user.
 
-Expects json input: `{"user": <user_name>, "message": <message_string>}`
-
+Expects json input:
+```python
+    {"from": <from_user_name>, 
+        "to":  <to_user_name>,
+        "message": <message_string>
+    }
+```
 where 
-* `<user_name>` is a string containing the name of user for whom to post
-a message
+* `<from_user_name>` is a string containing the user name of the user who is 
+  sending the message,
+* `<to_user_name>` is a string containing the user name of the user for 
+  whom the message is being sent, and
 * `<message_string>` is a string containing the message for the user.
 
 ### `GET /get_messages/<user_name>`
 
 Retrieves messages for the user indicated by `<user_name>` and then deletes 
-those messages on server.
+those messages on the server.
 
 Returns a list of messages for the user.  If the user has never had
 a message posted, a status code of 400 is returned.  If the user
