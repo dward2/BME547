@@ -4,7 +4,7 @@ In this assignment, you will use some basic `git` commands to add information
 to a repository using feature branches.
 
 This assignment will be completed using a GitHub private repository in the 
-BME547-Spring2025 GitHub organization.  Look for a GitHub invitation in 
+BME547-Spring2026 GitHub organization.  Look for a GitHub invitation in 
 your email to join this repository.
 
 You will have ongoing access to this repository through your 
@@ -13,7 +13,7 @@ icon in the upper left portion of the GitHub page that will take you to a
 dashboard page for your account.  You should be able to see your repositories
 on the left hand side.  Alternatively, you can click on your GitHub avatar
 on the upper right portion of the GitHub page.  Choose "Your Organizations"
-from the menu.  Then, pick the "BME547-Spring2025" organization on the
+from the menu.  Then, pick the "BME547-Spring2026" organization on the
 Organizations page.  You will then see your repositories within this
 organization.  
 
