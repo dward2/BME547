@@ -49,8 +49,8 @@ com/dward2/modularity_example">here</a>)---></li>
         <!---<a href="Lectures/git_workflow.md#LDL-Branch">In-class 
 Exercise</a>--->
         <br>
-        Assignment #2 Assigned
-        <!---<a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>--->
+        <!---Assignment #2 Assigned--->
+        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
     </td>
 </tr>
 

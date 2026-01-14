@@ -4,21 +4,20 @@ Index) from inputted weight and height measurements.  You will receive
 an invitation to a GitHub private repository for use with this assignment. 
 
 ### Program Specifications
-* Receives weight and height input from the user from the command/terminal 
-  window  
+* Receives weight and height input from the user from the terminal window  
    + Input can be received with code such as:   
    `x = input("Enter number: ")`  
    Note that `x` will be a string and may need to be converted to a `float` or
    `int` depending on its use.
    + User must have the option of entering data in either kilograms/meters or
-       pounds/inches.  
+       pounds/inches.  Input in either whole or decimal numbers must be allowed.
    
-* Outputs to the command/terminal window the BMI calculated from the entered
+* Outputs to the terminal window the BMI calculated from the entered
   weight and height
    + Output can be achieved by code such as:
    `print("The number entered was {}".format(x))`
    
-* Outputs to the command/terminal window whether the calculated BMI represents
+* Outputs to the terminal window whether the calculated BMI represents
   "underweight", "normal weight", "overweight", or "obese".  The output must 
   include one of these four words as written (same capitalization).
 
