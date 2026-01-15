@@ -138,7 +138,8 @@ The first check will be categorizing the results of an HDL test.
     
     </table>
     
-  * `output_LDL_result` which receives the string from above and prints it on the
+  * `output_HDL_result` which receives the string from above and prints it 
+    on the
     screen.
   * `hdl_driver` that calls the three functions above, receiving and sending 
     the needed values. 
