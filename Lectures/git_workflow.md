@@ -149,6 +149,7 @@ The first check will be categorizing the results of an HDL test.
 * On GitHub, open a Pull Request to merge `HDL` into `main`.
 * Confirm pull request.
 * Pull updated `main` branch to local repository.
+* Click on [this link](http://67.159.66.78:5000/done) when you are finished.
 
 ### LDL Branch
 
@@ -164,6 +165,7 @@ Make an `LDL` branch and do the same thing as in the HDL branch and Exercise No.
 | 160 or higher but less than 190 | "High"            |
 | 190 or greater                  | "Very High"       |
 
+* Click on [this link](http://67.159.66.78:5000/done) when you are finished.
 
 ### Total Cholesterol Branch
 
