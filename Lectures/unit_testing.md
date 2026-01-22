@@ -218,7 +218,7 @@ Many software companies have style guides for coding, mandating how code is
 formatted visually, variables are named, functions named, etc.
 [PEP-8](https://www.python.org/dev/peps/pep-0008/) is the Style Guide for 
 Python Code.  (A more friendly presentation of the PEP-8 Style guide can be
-found [here](https://pep8.org/).  We will be using this style guide in this 
+found [here](https://pep8.org/)).  We will be using this style guide in this 
 class.  `pytest` has the ability to check that code meets the PEP-8 style 
 requirements.  Run `pytest` as follows:  
 `pytest -v --pycodestyle`
@@ -307,14 +307,14 @@ examples for doing so can be found at
 In general, good modular coding will separate code for getting user input 
 and doing screen output into separate functions so that all remaining 
 functions can be easily tested with defined input parameters and returns.  
-However, there may be times where a function that gets user input or does 
+However, there may be times when a function that gets user input or does 
 screen output may need to be tested.  See 
 [Unit Testing of User Input/Output 
 with pytest](./unit_testing_input_output.md) for information on doing 
 such testing.
 
 
-## Exercise
+## Optional TDD Practice
 __Goal__:  Develop a Python function that:
 * receives as parameters two tuples, `(x1, y1), (x2, y2)`, that represent two
 (x, y) coordinates on a plane,

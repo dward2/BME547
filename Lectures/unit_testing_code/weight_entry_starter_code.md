@@ -31,6 +31,9 @@ if __name__ == "__main__":
     input_weight_entry()
 
 ```
+
+File may also be directly downloaded [here](weight_entry.py).
+
 <!---
 ## `test_weight_entry.py`
 ```python
