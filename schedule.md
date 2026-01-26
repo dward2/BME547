@@ -69,8 +69,6 @@ Exercise</a>--->
   <td>  
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
-        <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></li>
-        <li><a href="Lectures/unit_testing_code/weight_entry_starter_code.md">Robust Testing Exercise</a></li>
   </td>
   <td>
       <!---<li><a href = "Lectures/unit_testing.md#exercise">In-class 
@@ -81,26 +79,29 @@ Exercise</a>--->
 <tr>
 <td>Tue Jan 27</td>
     <td>
+        <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></li>
+        <li><a href="Lectures/unit_testing_code/weight_entry_starter_code.md">Robust Testing Exercise</a></li>
     <li><a href="Lectures/robust_testing.md#approximations">Approximations 
 with Unit Testing</a></li>    
     <li><a href="Lectures/continuous_integration_github_actions.md">Continuous 
     Integration & GitHub Actions</a></li>
-    <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>(starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
     <li><a href="Lectures/git_workflow_more.md">Tags and 
 Issues</a></li>
         <!---<li><a href="Lectures/lists.md">Lists</a></li>
         <li>For Loops</li>--->
     </td>
     <td>
-        Assignment #3 Assigned
-      <!---<a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
-CI Assigned</a>--->
+        <!---Assignment #3 Assigned--->
+      <a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
+CI Assigned</a>
     </td>
 </tr>
 
 <tr>
 <td>Thu Jan 29</td>
     <td>
+        <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>
+(starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
         <li><a href="Lectures/variable_scope.md">Scope</a></li>
         <li><a href="Lectures/file_input.md">Text File Input</a> (

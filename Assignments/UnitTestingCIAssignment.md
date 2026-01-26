@@ -43,11 +43,17 @@ codons and end with one of three "stop" codons.
   * If the string contains two or more adjacent spaces anywhere between 
     letters, it is NOT an acceptable sequence.  Single spaces between 
     letters can be ignored.
-  * It can have any number of leading or trailing spaces, which should be 
+  * The string can have any number of leading or trailing spaces, which should be 
     ignored.
   * If any two or more adjacent letters consists of letters other than U, C, A,
     G, or O, it is not a valid sequence.
+    * _NOTE: A single space is not considered a letter.  So, "AUG BUAA" should
+      be considered as "AUGUAA" because single spaces can be ignored and, as
+      stated below, a single bad letter (in this case "B") can be ignored._
+    * _Note:  If a single space is removed, and this causes two letters to be
+      adjacent that are not U, C, A, G, or O, the string is not a valid sequence._
   * Any single letter that is not a U, C, A, G, or O can be ignored.
+    * Example:  "AUGBUAA" should be considered as "AUGUAA".
   * The number of remaining letters (those that are not ignored) must be a
     multiple of three. If it is not a multiple of 3, it is not a valid sequence.
   * Starting from the beginning of the remaining letters, each group of 
@@ -76,7 +82,7 @@ codons and end with one of three "stop" codons.
 some are simplified or modified for use in this assignment.
 
 **NOTE**: You cannot assume that the string sent to your function will always
-have any content.
+have content.
 
 **NOTE**: You are NOT allowed to use any existing third-party code, package,
 or software that analyzes RNA sequences as part of your submission.
