@@ -141,15 +141,15 @@ git push
 
 ### Including CI in Git Feature Branch Workflow
 After setting up GitHub Actions as described above, GitHub Actions will run
-`pytest` upon every push of a branch and upon creating a pull request.  When
+`pytest` upon creating a pull request.  When
 you create a feature branch and develop new code on that feature branch, **you
 should also write the needed unit test functions for that new code on the same
 feature branch**.  In this 
 way, before you merge the feature branch into the `main` branch, you will have
 appropriate test coverage of the new code to ensure it is working before adding
 it to the `main` branch.  It is okay for GitHub Actions running `pytest` to 
-fail on individual commits pushed to GitHub.  But, all errors should be fixed
-and all tests pass before doing any merge to the `main` branch.
+fail during this check.  But, all errors should be fixed
+and all tests pass before actually completing the merge to the `main` branch.
 
 
 ## Recommended Workflows for Setting up GitHub Actions and other repository items
@@ -168,7 +168,7 @@ create the virtual environment.  At a minimum, include `pytest` and
 `pytest-pycodestyle`.  Add and commit that file to the repository.
 4. Create a Python code file so that `pytest` will have something to find and
 check.  If there are not any `*.py` files, `pytest` will give an error causing
-GitHub Actions to fail.  I would recommend creating the file you plan in which
+GitHub Actions to fail.  I would recommend creating the file in which
 you plan to write your code.  Then, include the single command `pass` in the
 file.  Add and commit this file to the repository.
 5. Add any other initial files you would like to include, such as `.gitignore`.
