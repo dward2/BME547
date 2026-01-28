@@ -106,8 +106,6 @@ CI Assigned</a>
         <li><a href="Lectures/file_input.md">Text File Input</a> (
         <a href="Lectures/lecture_files/patient_data.txt">Patient Data</a> / 
         <a href="Lectures/lecture_files/blood_test_data.txt">Lab Data</a>)</li>
-        <li><a href="Lectures/json.md">JSON</a></li>
-        <li><a href="Lectures/docstrings.md">Docstrings</a></li>
     <li><a href="Lectures/git_workflow_more.md">Tags and 
 Issues</a></li>
 
@@ -119,6 +117,8 @@ Issues</a></li>
 <tr>
 <td>Tue Feb 3</td>
     <td>
+        <li><a href="Lectures/json.md">JSON</a></li>
+        <li><a href="Lectures/docstrings.md">Docstrings</a></li>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
         <li><a href="Lectures/classes.md">Classes</a></li>
     </td>
