@@ -120,12 +120,13 @@ CI Assigned</a>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
+        <li><a href="Resources/testing_global_variables.md">Testing With Global Variables</a></li>
         <li><a href="Lectures/classes.md">Classes</a></li>
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
-        Assignment #4 Assigned
-        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
+        <!---Assignment #4 Assigned--->
+        <a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>
     </td>
 </tr>
 
