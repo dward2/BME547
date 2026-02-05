@@ -120,8 +120,6 @@ CI Assigned</a>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
-        <li><a href="Resources/testing_global_variables.md">Testing With Global Variables</a></li>
-        <li><a href="Lectures/classes.md">Classes</a></li>
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
@@ -133,7 +131,8 @@ CI Assigned</a>
 <tr>
 <td>Thu Feb 5</td>
     <td>
-        <li>More on Classes</li>
+        <li><a href="Resources/testing_global_variables.md">Testing With Global Variables</a></li>
+        <li><a href="Lectures/classes.md">Classes</a></li>
         <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
         
 </td>
