@@ -133,7 +133,6 @@ CI Assigned</a>
     <td>
         <li><a href="Resources/testing_global_variables.md">Testing With Global Variables</a></li>
         <li><a href="Lectures/classes.md">Classes</a></li>
-        <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
         
 </td>
     <td>
@@ -144,19 +143,21 @@ CI Assigned</a>
 <td>Tue Feb 10</td>
     <td>
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
-        <li><a href="Resources/PyCharm">PyCharm</a> / <a href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
+        <li><a href="Lectures/debugging.md">Debugging</a> With <a 
+href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td>
-        Assignment #5 Assigned
-        <!---<a href="Assignments/custom_class_assignment.md">Custom Class 
-            Assignment</a>--->
+        <!---Assignment #5 Assigned--->
+        <a href="Assignments/custom_class_assignment.md">Custom Class 
+            Assignment</a>
     </td>
 </tr>
 
 <tr>
 <td>Thu Feb 12</td>
     <td>
-        <li><a href="Lectures/debugging.md">Debugging</a></li> 
+        <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
+        <li>More on <a href="Lectures/debugging.md">Debugging</a></li>
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
 </td>
