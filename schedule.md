@@ -158,8 +158,6 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     <td>
         <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
         <li>More on <a href="Lectures/debugging.md">Debugging</a></li>
-        <li><a href="Lectures/numpy.md">NumPy</a> and 
-        <a href="Lectures/matplotlib.md">Matplotlib</a></li>
 </td>
     <td>
         <!---<a href="https://canvas.duke.edu/courses/50399/assignments/191507">
@@ -170,13 +168,15 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
 <tr>
 <td>Tue Feb 17</td>
     <td>
-        <li><a href="Lectures/logging.md">Logging</a></li>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
+        <li><a href="Lectures/logging.md">Logging</a></li>
+        <li><a href="Lectures/numpy.md">NumPy</a> and 
+        <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
     <td>
-        <!---<a href="Assignments/CPAP Measurements">CPAP Measurements 
-            Assigned</a>--->
-        Assignment #6 Assigned
+        <a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a>
+        <!---Assignment #6 Assigned--->
     </td>
 </tr>
 

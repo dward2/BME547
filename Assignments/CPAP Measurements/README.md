@@ -54,7 +54,7 @@ the volumetric flow.
 $Q$ is the volumetric flow rate ($m^3 / sec$)    
 $A_1$ is the upstream cross-sectional area ($m^2$)  
 $A_2$ is the cross-sectional area at the constriction ($m^2$)  
-$\rho$ is the density of air ($kg / m3$)  
+$\rho$ is the density of air ($kg / m^3$)  
 $p_1$ is the upstream pressure ($Pa$)  
 $p_2$ is the pressure at the constriction ($Pa$)
 
@@ -137,8 +137,9 @@ calculated and saved as key-value pairs in a Python dictionary called
   `warning` log entry should be added to the log indicating that the 
   leakage is negative.
 
-A breath can be identified by a positive peak in volumetric flow (the 
-inhalation) followed by a return to zero or negative flow (the exhalation).
+A breath can be identified by a significant positive peak in volumetric flow 
+representing an inhalation.  Exhalation (a significant negative peak) may or
+may not be recorded.
 
 An apnea event occurs when the time elapsed between breaths (the time between
 observed peaks) is more than 10 seconds.  
