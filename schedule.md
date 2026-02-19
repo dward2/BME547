@@ -169,7 +169,6 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
 <td>Tue Feb 17</td>
     <td>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
-        <li><a href="Lectures/logging.md">Logging</a></li>
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
@@ -183,11 +182,11 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
 <tr>
 <td>Thu Feb 19</td>
     <td>
-        <a href="Lectures/apis_webservices_requests.md">
-        APIs, Intro To Web Services, Requests</a>
+        <li><a href="Lectures/logging.md">Logging</a></li>
+        <li><a href="Lectures/apis_webservices_requests.md">APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
-        <a href="Lectures/name_server_project.md">In-Class Exercise:  Blood Matching</a>
+        <!---<a href="Lectures/name_server_project.md">In-Class Exercise:  Blood Matching</a>--->
     </td>
 </tr>
 
