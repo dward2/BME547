@@ -199,8 +199,8 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
            Building a Web Server with Flask</a>
     </td>
     <td>
-        <a href="Assignments/time_server_project.md">Time Server Assigned</a>
-        <!---Assignment #7 Assigned--->
+        <!---<a href="Assignments/time_server_project.md">Time Server Assigned</a>--->
+        Assignment #7 Assigned
     </td>
 </tr>
 
@@ -221,8 +221,8 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
         <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
     </td>
     <td>
-        <a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>
-        <!---Assignment #8 Assigned--->
+        <!---<a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>--->
+        Assignment #8 Assigned
 
 </td>
 </tr>
@@ -275,8 +275,8 @@ MongoDB/PyMongo</a></li>
         <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
     </td>
     <td>
-        <!---Assignment #9 Assigned--->
-        <a href="Assignments/gui_assignment.md">GUI Assignment</a>
+        Assignment #9 Assigned
+        <!---<a href="Assignments/gui_assignment.md">GUI Assignment</a>--->
     </td> 
 </tr>
 
@@ -301,9 +301,9 @@ Encoding/Decoding</a></li>
         <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
     </td>
     <td>
-        <!----Final Project Assigned---->
-      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
+        Final Project Assigned
+      <!----<li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>---->
     </td>
 </tr>
 
