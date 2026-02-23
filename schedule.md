@@ -186,7 +186,8 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
         <li><a href="Lectures/apis_webservices_requests.md">APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
-        <!---<a href="Lectures/name_server_project.md">In-Class Exercise:  Blood Matching</a>--->
+        <a href="Lectures/name_server_project.md">Optional Exercise:  Blood 
+Matching</a>
     </td>
 </tr>
 

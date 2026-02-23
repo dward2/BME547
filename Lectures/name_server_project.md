@@ -41,11 +41,11 @@ allows you to compute a standard sum based on JSON input that looks like:
   ```
 --->
 ## Blood Match
-A blood type matching server is running at URL `http://vcm-43729.vm.duke.
+A blood type matching server is running at URL `http://vcm-51187.vm.duke.
 edu:5002`.
 (Note the different port number).
 You can verify if the server is running by clicking on 
-<http://vcm-43729.vm.duke.edu:5002>.  If it is not, contact Dr. Ward.
+<http://vcm-51187.vm.duke.edu:5002>.  If it is not, contact Dr. Ward.
 
 Write a program the completes the following tasks:
 
