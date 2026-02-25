@@ -1,5 +1,6 @@
 from flask import Flask, request
 
+# SERVER LOCATION:  http://vcm-51170.vm.duke.edu:5000
 
 app = Flask(__name__)
 
