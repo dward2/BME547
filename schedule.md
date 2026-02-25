@@ -207,7 +207,8 @@ Matching</a>
 <tr>
 <td>Thu Feb 26</td>
     <td> 
-      <a href="Lectures/server_code_design.md">Server Design</a>
+      <a href="Lectures/server_code_design.md">Server Design</a><br>
+      <a href="Lectures/lecture_code/white_hat_server.py">Code for class exercise</a>
     </td>
     <td>
     </td>
