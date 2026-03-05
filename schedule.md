@@ -235,8 +235,9 @@ Matching</a>
         <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
         <li><a href="Lectures/databases.md#mongodb">Intro to 
 MongoDB/PyMongo</a></li>      
-      (<a href="https://github.com/dward2/mongo_db_jupyter_example">Class Demo  
-        Repository</a>)
+      <!---(<a href="https://github.com/dward2/mongo_db_jupyter_example">Class 
+Demo  
+        Repository</a>)--->
 
 </td>
 <td>

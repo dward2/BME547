@@ -83,7 +83,7 @@ pip install dnspython
 ```
 
 ### Import MongoClient from PyMongo package
-`from mongo import MongoClient`
+`from pymongo import MongoClient`
 
 ### Connect to MongoDB database server
 ```
@@ -93,7 +93,7 @@ client = MongoClient(uri)
 If using MongoDB Atlas, you should obtain the `<connect_string>` to use above 
 from the MongoDB website.  Refer to the set-up instructions found 
 [here](../Resources/Databases/mlab.md) for how to get the connect string.  
-Make sure to replace the `<db_username>` and `<db_password` placeholders with
+Make sure to replace the `<db_username>` and `<db_password>` placeholders with
 the appropriate information created during the MongoDB set-up online.
 
 :eyes: If, when trying to use the connection to the MongoDB database server,
