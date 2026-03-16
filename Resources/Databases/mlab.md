@@ -115,18 +115,6 @@ these steps:
   `<db_password>` placeholders with the name and password you created above.
 6. Save this string for use in class and projects.  
 
-
-
-### Adding another a database user
-1. Click on "Database Access" in the left-hand list.  
-2. Make sure the "Database Users" sub-tab is selected.  Then click "Add New 
-   Database User" button.  
-3. Select the Password Authentication Method  
-4. Complete the username field, select a password (__remember this__), choose 
-   "Read and write to any database", and click "Add User".  
-5. Make a new copy of your connect string with this new username and password
-
-
 ### Granting Another User Access to Your MongoDB Web Interface
 When working as a team, you will likely be using just a single MongoDB
 database.  As the entire team may need to see that database on the MongoDB
