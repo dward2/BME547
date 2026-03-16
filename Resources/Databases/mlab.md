@@ -6,83 +6,125 @@ instance on their virtual machine, you can connect to and interact with it
 from Python code and use it so save and retrieve data. 
 
 ## Setup
-Note: The MongoDB Atlas website interface for new accounts changes frequently.
-The instructions here are accurate as of March 2022, but may change.  So, if
+Note: The MongoDB website interface for new accounts changes frequently.
+The instructions here are accurate as of March 2026, but may change.  So, if
 your experience varies from below, modify as needed.
 
-1. [Sign up](https://www.mongodb.com/cloud/atlas) for a free account at 
-mongoDB.  Click on "Try Free" or "Get Started".
-2. Enter your e-mail, first and last names, and select a password.  Agree to 
-   the terms and conditions by selecting the check box.  Then, click "Create
-   your Atlas account". 
+1. Visit [mongodb.com](https://www.mongodb.com/). Click on "Get Started".      
+   ![Get Started](./images/get_started.jpg)
+2. On the Sign up page (shown below), enter your e-mail, first and last names, 
+   and select a 
+   password.  Agree to the terms and conditions by selecting the checkbox.   
+    ![Sign up info](./images/sign_up_info.jpg)  
+    Then, click "Create your Atlas account".  
+   (NOTE:  your e-mail and password
+   you enter here are for accessing the MongoDB website.  It is not what you
+   will use for your Python code to access the database, that information is
+   created below.)
 3. You will then receive an email from MongoDB to verify your e-mail.  Click
-   "Verify Email" in that email.
-4. Click "Continue" on the webpage that opens.
-5. Answer the questions on the "Welcome to Atlas!" page.  These questions may
-   have changed since, but here is what I answered in case they are the same:
-   1. Learn MongoDB
-   2. New to MongoDB
-   3. Python
-   4. Not sure (for what kind of data)
-   5. Not sure (for application architectural models)   
-6. Click "Finish".   
-7. On the "Deploy your cluster" page:
-   1. Select the "M0 FREE" button.
-   2. Choose any provider under Provider (I use aws).
-   3. Change the cluster name, or accept the default.
-   4. Click the green "Create" button.
-   5. You may need to complete a puzzle to prove you are not a robot.
-8. You should be taken to a "Security Quickstart" page.
-9. Under "How would you like to authenticate your connection":
-    1. Select "Username and Password"
-    2. Enter a username (this user name will be used by your Python program
-       to access the database and is different than the user name/email you
-       use to access the MongoDB website)
-    3. Select a password.  Copy this password down somewhere safe as you will
-         not see it again
-    4. Click "Create User"
-10. Under "Where would you like to connect from?"
-    1. Choose "My Local Environment"
-11. Click on "Finish and Close" to finish on the "Security Quickstart" page.
-12. Click on "Go to Database" on the pop-up window.  Note: the button might be
-    labelled "Go to Overview" instead.
-13. After some period of time, your cluster will be ready.
-14. Add IP addresses allowed to access the database on the "IP Whitelist".  
-   a. Click on "Network Access" in the left-hand list.  
-   b. Make sure the "IP Access List" tab is selected.  Click on "Add IP Address".  
-   c. Click on "Allow Access From Anywhere" in the window that pops up.  Click 
-    "Confirm".
-15. Get connection information to your database.  
-   a. Click on "Database" in the left-hand list.  
-   b. Click on the "Connect" button.   
-   c. Click "Drivers" under the "Connect to your application" heading.  
-   d. Under "1. Select your driver and version", select "Python" for the Driver 
-      and "3.11 or later" for the version.  
-   e. Make note of the `pip` `pymongo` installation command under section "2. Install your driver"  
-   f. Copy the string that is shown under "3. Add your connection string into 
-   your application code" section.  Make sure the slider "view full code
-   sample" is slid to the left (off).  Replace the `<db_username>` and 
-  `<db_password>` placeholders with the name and password from step 9 above.    
-   g. Save this string for use in class and projects.  
+   "Verify Email" in that email.  It will open up a new webpage.
+4. On the "Enable Multi-factor Authentication for your account" page (see 
+   below), set up
+   your preferred MFA method.  Then, click "Continue" once it turns green.  
+    ![MFA](./images/MFA.jpg)  
+5. Answer the questions on the "Welcome to Atlas!" page (shown below) and click 
+   "Finish", or click on the "Skip personalization" link.  
+    ![personalization](./images/personalization.jpg)
+6. On the "Deploy your cluster" page:  
+    ![deploy](./images/deploy.jpg)
+   1. Select the "FREE" option.
+   2. Change the cluster name, or accept the default.
+   3. Choose any provider under Provider (I use aws).
+   4. Make sure the "Automate security setup" checkbox is selected.
+   5. It is optional whether you preload sample data.
+   6. Click the green "Create Deployment" button.
+7. A "Connect to <cluster_name>" window will open.  <cluster_name> will either
+   be "Cluster0" or the name you entered for the cluster.  Here, you will create
+   a username and password that your Python code will use to access your
+   database.
+    ![connect](./images/connect_1.jpg)  
+   1. Under "2. Create a database user", an autogenerated username and
+      password are provided.   Modify these as desired.  Make sure to copy the
+      password into a safe place as you may not be able to see it again.  Click 
+      on the "Create Database User".  The "Choose a connection method" 
+      button will turn green.
+   2. Click on the green "Choose a connection method" button.  The following 
+      will appear:  
+        ![connect](./images/connect_2.jpg)
+   3. Under "Connect to your application", click on "Drivers".  This will 
+      appear:  
+        ![connect](./images/connect_3.jpg)
+   4. Under "1. Select your driver and version", select "Python" and "3.12 or 
+      later" from the dropdown boxes.
+   5. Under "3. Add your connection string into your application code", copy
+      the string in the box.  This is your connection string, and it contains
+      the database username and password you created above.  Save this in a 
+      safe place.
+   6. Click the green "Done" button.
+8. Next, we need to add IP addresses allowed to access the database.  
+   1. Under "Network Access" in the left-hand menu, click on "IP Access List".  
+        ![ip access list](./images/ip_access_list_menu.jpg)
+   2. On the IP Access List page, Click on the green "+ Add IP Address" 
+      button.  
+        ![add ip address](./images/add_ip_address.jpg)
+   3. In the "Add IP Access List Entry" box, in the "Access List Entry" text
+      box, enter `0.0.0.0`.  
+        ![enter ip](./images/add_ip_entry.jpg)
+   4. Click "Confirm".
 
-Cool, you're done setting up the database server! 
+Cool, you're done setting up the database server!
 
 Once you have data added to your database server, you can see it through the 
-MongoDB website.  Select "Databases" from the left-hand side and click on 
-"Browse Collections" if you see that button, or select the "Collections" tab
-at the top, depending on your current screen.  You will then see a list of
-your databases, and within each database, you will the collections you created 
-in your code.  
+MongoDB website.  Under "Database" on the left-hand side, select "Data 
+Explorer".  
+    ![data explorer menu](./images/data_explorer_menu.jpg)
+
+You can then navigate through your cluster to see your different databases 
+and collections.
+
+### Adding Database User       
+If, for some reason, the window described in Step 7 did not display, you can
+    click on the "Database & Network Access" option on the left-hand menu.  
+        ![database access](./images/database_network_menu.jpg)  
+On the "Database Users" page, you can click on the green "+ Add New Database 
+    User" button  
+         ![add_user](./images/add_database_user.jpg)  
+    Then follow these steps
+
+1. Under "Authentication Method", select "Password".
+2. Enter a username (this user name will be used by your Python program
+   to access the database and is different from the user name/email you
+   use to access the MongoDB website)
+3. Select a password.  Copy this password down somewhere safe as you will
+         not see it again.
+4. Under "Built-in Role", select "Atlas admin".
+5. Click the green "Add User" button.
+ 
+### Getting Connection String
+ 
+If you did not get the connection string in the instructions above, follow 
+these steps:
+1. Click on "Database" in the left-hand list.
+2. Click on the "Connect" button.
+3. Click "Drivers" under the "Connect to your application" heading.
+4. Under "1. Select your driver and version", select "Python" for the Driver 
+      and "3.12 or later" for the version.
+5. Copy the string that is shown under "3. Add your connection string into 
+    your application code" section.  Make sure the slider "view full code
+    sample" is slid to the left (off).  Replace the `<db_username>` and 
+  `<db_password>` placeholders with the name and password you created above.
+6. Save this string for use in class and projects.  
+
 
 
 ### Adding another a database user
-   a. Click on "Database Access" in the left-hand list.  
-   b. Make sure the "Database Users" sub-tab is selected.  Then click "Add New 
+1. Click on "Database Access" in the left-hand list.  
+2. Make sure the "Database Users" sub-tab is selected.  Then click "Add New 
    Database User" button.  
-   c. Select the Password Authentication Method  
-   d. Complete the username field, select a password (__remember this__), choose 
+3. Select the Password Authentication Method  
+4. Complete the username field, select a password (__remember this__), choose 
    "Read and write to any database", and click "Add User".  
-   e. Make a new copy of your connect string with this new username and password
+5. Make a new copy of your connect string with this new username and password
 
 
 ### Granting Another User Access to Your MongoDB Web Interface
@@ -92,11 +134,10 @@ website, the owner of the database in use can grant other MongoDB accounts
 access to the web interface of the database.
 
 1. Log into your MongoDB Atlas database server account.
-2. Make sure you are viewing the database you want to give access to.
-3. Click on "Access Manager" at the top of the page and select "Project Access"
-   from the dropdown.
-4. Click on the "Invite to Project" button.  
-5. Enter the e-mail address associated with the MongoDB account you wish to
+2. Click on "Project Identity & Access" under "Security" on the left-hand 
+   side.
+3. Click on the "Invite to Project" button.  
+4. Enter the e-mail address associated with the MongoDB account you wish to
    provide access.  
-6. Select the appropriate permission level to give.
-7. Click the "Invite to Project" button.
+5. Select the appropriate permission level to give.
+6. Click the "Invite to Project" button.
