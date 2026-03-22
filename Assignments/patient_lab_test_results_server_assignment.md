@@ -333,7 +333,7 @@ I have set up a server to simulate accessing a third-party webservice for
 sending e-mails.  When your program needs to send an e-mail, it should make
 a POST request to the following URL:
 ```
-http://vcm-43729.vm.duke.edu:5007/send_email
+http://vcm-51187.vm.duke.edu:5007/send_email
 ```
 **NOTE**: The port is `5007`.  
 
@@ -368,7 +368,7 @@ when your server needs to send an e-mail, your server makes a POST request to
 a different server (yes, a server can act as a client for another server).
 
 If you would like additional verification that your e-mail was correctly sent,
-you can visit `http://vcm-43729.vm.duke.edu:5007/get_email/<to_email>` where
+you can visit `http://vcm-51187.vm.duke.edu:5007/get_email/<to_email>` where
 `<to_email>` is replaced with an email address that received e-mail.  All 
 e-mails available on the server sent to that address will be displayed.  Once
 the e-mails are displayed, they are removed from the server.
