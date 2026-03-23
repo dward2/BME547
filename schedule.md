@@ -277,8 +277,8 @@ Demo
         <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
     </td>
     <td>
-        Assignment #9 Assigned
-        <!---<a href="Assignments/gui_assignment.md">GUI Assignment</a>--->
+        <!---Assignment #9 Assigned--->
+        <a href="Assignments/gui_assignment.md">GUI Assignment</a>
     </td> 
 </tr>
 
