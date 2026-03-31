@@ -303,9 +303,9 @@ Encoding/Decoding</a></li>
     <td>
       <li><a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
         In-class Exercise</a></li>
-        <li>Final Project Assigned</li>
-      <!----<li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>---->
+        <!----<li>Final Project Assigned</li>---->
+      <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
     </td>
 </tr>
 
