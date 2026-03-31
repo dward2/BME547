@@ -56,4 +56,4 @@
 in my grading of the final project.
     
 __I strongly suggest completion of your issues/milestones, and 
-sharing them with me for review, by the end of day Wednesday, November 20.__  
+sharing them with me for review.__  
