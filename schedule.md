@@ -325,8 +325,8 @@ Encoding/Decoding</a></li>
        <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
     </td>
     <td>
-       Assignment #10 Assigned
-       <!---IEC62304 Assignment (see Canvas)--->
+       <!---Assignment #10 Assigned--->
+       IEC62304 Assignment (see Canvas)
     </td>
 </tr>
 
@@ -334,6 +334,10 @@ Encoding/Decoding</a></li>
 <td>Thu Apr 9</td>
     <td>
               <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
+      <li><a href="Lectures/secrets_and_environment_variables.md">
+           Secrets and Environment variables</a></li>
+      <li><a href="Lectures/making_and_importing_packages.md">
+           Making and Importing Packages</a></li>
 </td> 
     <td>
     </td>
@@ -343,10 +347,7 @@ Encoding/Decoding</a></li>
 <td>Tue Apr 14</td>
     <td>
       <!---<li>Software Development Methodologies & Other Terminology</li>--->
-      <li><a href="Lectures/secrets_and_environment_variables.md">
-           Secrets and Environment variables</a></li>
-      <li><a href="Lectures/making_and_importing_packages.md">
-           Making and Importing Packages</a></li>
+      No Class
     </td>
     <td></td>
 </tr>

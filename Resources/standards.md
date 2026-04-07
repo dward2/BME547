@@ -6,8 +6,8 @@ Standards can be accessed through the Duke library at
 The standard most relevant to this course is 
 __IEC 62304 - Medical Device Software - Software Life Cycle Processes__.  
 
-The procedure for accessing this standard is currently changing.  Please see
-the Canvas announcement for instructions.
+As of April 2026, you can access a copy of this standard by clicking on the
+"IEC 62304" link in the Finding Standards box on the web page above.
 
 
 # Exercise 1
