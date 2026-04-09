@@ -333,13 +333,14 @@ Encoding/Decoding</a></li>
 <tr>
 <td>Thu Apr 9</td>
     <td>
-              <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
-      <li><a href="Lectures/secrets_and_environment_variables.md">
+              <a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
+      <!---<li><a href="Lectures/secrets_and_environment_variables.md">
            Secrets and Environment variables</a></li>
       <li><a href="Lectures/making_and_importing_packages.md">
-           Making and Importing Packages</a></li>
+           Making and Importing Packages</a></li>--->
 </td> 
     <td>
+        <a href="Lectures/intro_to_security.md#in-class-exercise">In-Class Exercise</a>
     </td>
 </tr>
 
