@@ -146,7 +146,7 @@ passcode = str(message, encoding='utf-8')
 ### Step 7 - Check passcode
 To ensure everything worked, make a request to this GET route:
 
-`http://vcm-43716.vm.duke.edu:5000/check/<duke_net_id>/<passcode>`
+`http://vcm-51170.vm.duke.edu:5000/check/<duke_net_id>/<passcode>`
 
 where `<duke_net_id>` is your Duke Net ID and `<passcode>` is the passcode 
 you decrypted above.  This request will return a string of either Correct 
