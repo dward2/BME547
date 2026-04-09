@@ -75,7 +75,7 @@ def generate_keys():
 ```
 
 ### Step 2 - Obtain Public Key From Server
-`http://vcm-43716.vm.duke.edu/get_public_key`
+`http://vcm-51170.vm.duke.edu:5000/get_public_key`
 
 Make a request to the GET route above.  It will return a string.  You can 
 convert this string into an RsaKey variable as 
@@ -111,7 +111,7 @@ with open("my_public.pem", 'rb') as in_file:
 
 
 ### Step 5 - Post this encrypted data to the server
-`http://vcm-43716.vm.duke.edu/post_message`
+`http://vcm-51170.vm.duke.edu:5000/post_message`
 
 Send a json to the above POST route with the following format:
 ```python
@@ -146,7 +146,7 @@ passcode = str(message, encoding='utf-8')
 ### Step 7 - Check passcode
 To ensure everything worked, make a request to this GET route:
 
-`http://vcm-43716.vm.duke.edu/check/<duke_net_id>/<passcode>`
+`http://vcm-43716.vm.duke.edu:5000/check/<duke_net_id>/<passcode>`
 
 where `<duke_net_id>` is your Duke Net ID and `<passcode>` is the passcode 
 you decrypted above.  This request will return a string of either Correct 
