@@ -1,4 +1,4 @@
-# Sleep Lab Monitoring Client/Server Project<br>Final Project for One Person (Spring 2023)
+# Sleep Lab Monitoring Client/Server Project
 
 ## Overview
 The final project in this class will require you to leverage the
@@ -41,8 +41,8 @@ interface with the following functionality:
   combination of breathing rate, number of apnea events, and the CPAP flow
   image will be referred to as the CPAP calculated data.
   + If the number of apnea events is two or greater, that value should be 
-  displayed in red.  If it zero or one, it should be displayed in the default color of the
-  rest of the text in the GUI.
+  displayed in red.  If the number of apnea events is zero or one, it should be 
+  displayed in the default color of the rest of the text in the GUI.
   + Upon user command, issue a RESTful API request to your server to upload
   whatever information is entered above.  The interface should only allow this
   request to be made if at least a medical record number and a room number have 
@@ -116,21 +116,33 @@ contact with the database.  All database functions should be handled from the
 server.  If the GUI needs to interact with the database, it should do it by
 making requests of the server. 
 
+### Multiple Patient-side Clients
+The system should allow for multiple patient-side GUIs to be running 
+simultaneously to simulate a sleep lab where multiple CPAPs are reporting to
+a central monitoring station.  In theory, you should not need to make any
+coding adjustments based on whether there is only a single patient-side client
+running or multiple patient-side clients running.  I will be
+testing your final submission by opening up multiple patient-side GUIs and using
+all at the same time.  You may want to test your system that way at least once.
+
 ## Choice of GUI Framework
 `tkinter` can provide all of the GUI functionality necessary to meet the
 above objectives.  However, you are also welcome to use a different GUI
 framework if you like, such as PyQT or any other choice.  You are also welcome
 to program a web/browser GUI for your clients if you prefer.  Visit
 <https://github.com/dward2/BME547/tree/main/Resources/WebInterface> for info
-and basic tutorials for using HTML/CSS/flask to create such an interface.
+and basic tutorials for using HTML/CSS/flask to create such an interface.  Note
+that this web/browser GUI should be implemented by its own server (i.e., its
+own `flask` based code) that makes requests to the separate cloud server as
+described above.  The cloud server should not have its own interface.
 
 ## Database
-As discussed in class, using MongoDB and PyModm will satisfy the requirements
-for a persistent database.  If desired, an alternative database may be used if
-permission is received from the instructor ahead of time.
+As discussed in class, using MongoDB and `pymongo` will satisfy the requirements
+for a persistent database.  If desired, an alternative database may be used 
+if permission is received from the instructor ahead of time.
 
 ## Planning
-* It is a requirement for this assignment you develop milestones and issues
+* It is a requirement for this assignment that you develop milestones and issues
   that provide a detailed plan of how you will approach and implement this
   project.
 * Add these milestones and issues to your GitHub repository.
@@ -161,22 +173,9 @@ commit your video to your GitHub repository, the "free" storage limits on
 GitHub can be reached pretty quickly with video.  So, please use this as a last
 resort.  Indicate in your `README.md` how I can access the video.
 
-<!--## Recommended Datasets
-Your project may utilize some existing databases of images (or you can choose to
-use your own images).  Here are some example datasets that you can access for
-this project:
-
-* <https://medpix.nlm.nih.gov/home>
-* http://www.vision.caltech.edu/Image_Datasets/Caltech101/
-* <https://www.cs.toronto.edu/~kriz/cifar.html>
-* https://github.com/beamandrew/medical-data
-* Over 13000 annotated skin lesion images are available from the International
-  Skin Imaging Collaboration (ISIC) project:
-  https://isic-archive.com. 
--->
 ## Grading
 
-The following is a partial list of aspects on which the project that will be 
+The following is a partial list of aspects on which the project will be 
 graded.
 
 * Git Repository
@@ -185,12 +184,12 @@ graded.
   + Feature-branch workflow
 * Software best practices
   + Modularity of software code
-  + Handling and raising exceptions
+  + Handling and raising exceptions as needed
   + Language convention and style (PEP8)
   + Docstrings for all functions
 * Testing and CI
   + Unit test coverage of all functions (except Flask handler and GUI calls)
-  + Travis CI passing build
+  + GitHub Actions (with tests and PEP8 check) passing build
 * Cloud-based Web Service
   + RESTful API Design 
   + Validation Logic 
@@ -225,4 +224,3 @@ Please, if you are having any trouble designing a unit test for any of your
 functions, please open a GitHub issue with a link to the function you are 
 trying to test and I will help you design an appropriate test.  And, if you 
 have any question about the information on this webpage, please let me know.
-
