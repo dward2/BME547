@@ -13,7 +13,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 </tr>
 
 <tr>
-<td>Thu Jan 8</td>
+<td>Tue Aug 25</td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
     <td>
       <li><a href="Assignments/01_tool_setup_git_intro.md">Setup Course 
@@ -23,7 +23,7 @@ Tools</a></li>
 </tr>
 
 <tr>
-<td>Tue Jan 13</td>
+<td>Thu Aug 27</td>
     <td>
       <li><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
       Cloning, Add/Commit, Branching, Pushing/Pulling</a></li>     
@@ -37,7 +37,7 @@ Tools</a></li>
 </tr>
 
 <tr>
-<td>Thu Jan 15<br></td>
+<td>Tue Sep 1<br></td>
     <td>
   <li><a href="Lectures/modularity_example.md">Functional Modularity 
 Example</a> <!---(starter code <a href="https://github.
@@ -55,7 +55,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Tue Jan 20</td>
+<td>Thu Sep 3</td>
     <td>
         <li><a href="Lectures/modules.md">Modules</a></li> 
         <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li> 
@@ -65,7 +65,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Thu Jan 22</td> 
+<td>Tue Sep 8</td> 
   <td>  
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
@@ -77,7 +77,7 @@ Exercise</a>--->
 </tr>
 
 <tr>
-<td>Tue Jan 27</td>
+<td>Thu Sep 10</td>
     <td>
         <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></li>
         <li><a href="Lectures/unit_testing_code/weight_entry_starter_code.md">Robust Testing Exercise</a></li>
@@ -95,7 +95,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Thu Jan 29</td>
+<td>Tue Sep 15</td>
     <td>
         <li><a href="Lectures/robust_testing.md#approximations">Approximations 
             with Unit Testing</a></li>    
@@ -115,7 +115,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Tue Feb 3</td>
+<td>Thu Sep 17</td>
     <td>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
@@ -129,7 +129,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Thu Feb 5</td>
+<td>Tue Sep 22</td>
     <td>
         <li><a href="Resources/testing_global_variables.md">Testing With Global Variables</a></li>
         <li><a href="Lectures/classes.md">Classes</a></li>
@@ -140,7 +140,7 @@ CI Assigned</a>
 </tr>
 
 <tr>
-<td>Tue Feb 10</td>
+<td>Thu Sep 24</td>
     <td>
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
         <li><a href="Lectures/debugging.md">Debugging</a> With <a 
@@ -154,7 +154,7 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
 </tr>
 
 <tr>
-<td>Thu Feb 12</td>
+<td>Tue Sep 29</td>
     <td>
         <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
         <li>More on <a href="Lectures/debugging.md">Debugging</a></li>
@@ -166,7 +166,7 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
 </tr>
 
 <tr>
-<td>Tue Feb 17</td>
+<td>Thu Oct 1</td>
     <td>
         <li>Functional Decomposition <a href="Lectures/functional_decomposition_example.md">Example</a></li>
         <li><a href="Lectures/numpy.md">NumPy</a> and 
@@ -180,7 +180,7 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
 </tr>
 
 <tr>
-<td>Thu Feb 19</td>
+<td>Tue Oct 6</td>
     <td>
         <li><a href="Lectures/logging.md">Logging</a></li>
         <li><a href="Lectures/apis_webservices_requests.md">APIs, Intro To Web Services, Requests</a></li>
@@ -192,7 +192,7 @@ Matching</a>
 </tr>
 
 <tr>
-<td>Tue Feb 24</td>
+<td>Thu Oct 8</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
         <a href="Lectures/flask_server_setup.md">
@@ -205,7 +205,12 @@ Matching</a>
 </tr>
 
 <tr>
-<td>Thu Feb 26</td>
+<td>Tue Oct 13</td>
+    <td>No Class - Fall Break</td>
+</tr>
+
+<tr>
+<td>Thu Oct 15</td>
     <td> 
       <a href="Lectures/server_code_design.md">Server Design</a><br>
       <a href="Lectures/lecture_code/white_hat_server.py">Code for class exercise</a>
@@ -215,7 +220,7 @@ Matching</a>
 </tr>
 
 <tr>
-<td>Tue Mar 3</td>
+<td>Tue Oct 20</td>
     <td>
         <li>Server Debugging</li>
         <li>Server Testing</li>
@@ -229,7 +234,7 @@ Matching</a>
 </tr>
 
 <tr>
-<td>Thu Mar 5</td>
+<td>Thu Oct 22</td>
 <td>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
         <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
@@ -244,13 +249,7 @@ Demo
 </tr>
 
 <tr>
-    <td></td>
-    <td align="center">SPRING BREAK</td>
-    <td></td>
-</tr>
-
-<tr>
-<td>Tue Mar 17</td>
+<td>Tue Oct 27</td>
     <td>
       <li>MongoDB/PyMongo Example</li>
       <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
@@ -261,7 +260,8 @@ Demo
 </tr>
 
 <tr>
-<td>Thu Mar 19</td>
+<tr>
+<td>Thu Oct 29</td>
     <td>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
@@ -271,7 +271,7 @@ Demo
 </tr>
 
 <tr>
-<td>Tue Mar 24</td>
+<td>Tue Nov 3</td>
     <td>
         <li>Connecting GUI to Client/Server</li>
         <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
@@ -283,7 +283,7 @@ Demo
 </tr>
 
 <tr>
-<td>Thu Mar 26</td>
+<td>Thu Nov 5</td>
     <td>
         <li><a href="Resources/tkinter_images.md">Adding Images to tkinter 
 GUI</a></li>
@@ -295,7 +295,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Tue Mar 31</td>
+<td>Tue Nov 10</td>
     <td>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
         <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
@@ -310,7 +310,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Thu Apr 2</td>
+<td>Thu Nov 12</td>
     <td>
             <a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a>
     </td>
@@ -319,7 +319,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Tue Apr 7</td>
+<td>Tue Nov 17</td>
     <td>
        <a href="Resources/standards.md">Standards: </a>
        <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
@@ -331,7 +331,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Thu Apr 9</td>
+<td>Thu Nov 19</td>
     <td>
               <a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
       <!---<li><a href="Lectures/secrets_and_environment_variables.md">
@@ -345,16 +345,16 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Tue Apr 14</td>
+<td>Tue Nov 24</td>
     <td>
       <!---<li>Software Development Methodologies & Other Terminology</li>--->
-      No Class
+      Last Day of Class
     </td>
     <td></td>
 </tr>
 <!---
 <tr>
-<td>Thu Apr 16</td>
+<td>Tue Nov 24</td>
     <td>
         TBD
     </td>
@@ -362,7 +362,7 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr>
-<td>Tue Apr 21</td>
+<td>Thu Nov 26</td>
     <td>
         LDOC - Topic TBD
     </td>
