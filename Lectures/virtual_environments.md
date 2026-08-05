@@ -85,26 +85,28 @@ Information about a specific package:
 
 ## Windows / Conda
 Conda is a Python Package repository for Windows.
-Enter the following commands at the Anaconda Prompt.
+Enter the following commands at the Anaconda Prompt or Anaconda PowerShell.
 
 #### To create a new virtual environment
-`conda create --name <Environment Name> python=3.11`  
+`conda create --name <Environment Name> python`  
 where `<Environment Name>` is the name of the virtual environment to be created.
-`3.11` can be replaced with the preferred version number.
+This command will create an environment with the most recent version of Anaconda
+Python installed.  If you want a specific version of Python, you can specify it
+by adding `=x.x` after the word `python`.  For example, `python=3.11`.
 
-If you don't specify a specific version of Python, none will be installed
-in the environment.  Then, when other packages are installed into this
-environment, they will load whatever version of Python they require.  But, this
-can lead to version problems if different packages require different versions
-of Python.  Therefore, it is recommended to specify a Python version when
-creating the virtual environment.
+If you don't include `python` at the end of the `conda create` command, no
+version of Python will be installed in the environment. Then, when other
+packages are installed into this environment, they will load whatever version of 
+Python they require. But, this can lead to version problems if different 
+packages require different versions of Python. Therefore, it is recommended to 
+include the `python` modifier in the command.
 
 #### To activate a virtual environment
 `conda activate <Environment Name>` or `activate <Environment Name>`  
 (For running from the Windows command prompt, the second option above is the correct one.)
 
 #### To deactivate a virtual environment
-`deactivate`
+`conda deactivate`
 
 #### To list available virtual environments
 `conda env list`
@@ -122,6 +124,12 @@ To install in a different virtual environment:
 To install a specific version of the package, include `=#.#.#` after the 
 package name.
 
+#### To install multiple packages from a file
+`requirements.txt` files which list a single package per line can be used with
+conda to install multiple packages at once.  Make sure that the desired
+conda environment is active.  Then, enter the command:  
+`conda install --file requirements.txt`
+
 #### To create a virtual environment with multiple packages (recommended workflow)
 For easy duplication of virtual environments, it is recommended to maintain a
 list of packages to be installed in a virtual environment in a file called
@@ -129,12 +137,14 @@ list of packages to be installed in a virtual environment in a file called
 ```
 name: my_venv
 dependencies:
-  - python=3.11
-  - numpy
+  - python
+  - numpy=2.2.6
   - scipy
 ```
 If specific versions of a package is required, add `=#.#.#` after the package
-name.
+name.  As discussed above, it is recommended that `python` is specifically
+added to the dependencies list to avoid version conflicts when other packages 
+are installed.
 
 A virtual environment with the name given in the `environment.yml` file can
 then be created with the following command.
