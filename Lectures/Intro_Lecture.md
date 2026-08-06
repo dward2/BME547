@@ -7,7 +7,7 @@
 
 ## Who are we?
 * Dr. David Ward
-* Jefferson Bercaw
+* Areti Majumdar
 
 ## Who are you?
 * Name (how you would like to be addressed)

@@ -16,9 +16,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <td>Tue Aug 25</td>
     <td><a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a></td>
     <td>
-      <li><a href="Assignments/01_tool_setup_git_intro.md">Setup Course 
-Tools</a></li>
-      <li><a href="Assignments/00_programming_assessment.md">Prerequisite Assessment</a></li>
+      <a href="Assignments/01_tool_setup_git_intro.md">Setup Course Tools</a>
+      
 </td>
 </tr>
 
@@ -31,8 +30,8 @@ Tools</a></li>
       <li><a href="Resources/Git/readme_files.md">README.md</a></li>
     </td>
     <td>
-        <a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>
-        <!---Assignment #1 Assigned--->
+        <!---<a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>--->
+        Assignment #1 Assigned
     </td>  
 </tr>
 
@@ -49,8 +48,8 @@ com/dward2/modularity_example">here</a>)---></li>
         <!---<a href="Lectures/git_workflow.md#LDL-Branch">In-class 
 Exercise</a>--->
         <br>
-        <!---Assignment #2 Assigned--->
-        <a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>
+        Assignment #2 Assigned
+        <!---<a href="Assignments/BMICalculatorAssignment.md">BMI Calculator Assigned</a>--->
     </td>
 </tr>
 
@@ -88,9 +87,9 @@ Exercise</a>--->
         <li>For Loops</li>--->
     </td>
     <td>
-        <!---Assignment #3 Assigned--->
-      <a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
-CI Assigned</a>
+        Assignment #3 Assigned
+      <!---<a href="Assignments/UnitTestingCIAssignment.md">Unit Testing & 
+CI Assigned</a>--->
     </td>
 </tr>
 
@@ -123,8 +122,8 @@ CI Assigned</a>
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
-        <!---Assignment #4 Assigned--->
-        <a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>
+        Assignment #4 Assigned
+        <!---<a href="Assignments/Live_Dead_Assay_Analysis">Live/Dead Assay Analysis Assigned</a>--->
     </td>
 </tr>
 
@@ -147,9 +146,9 @@ CI Assigned</a>
 href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
     <td>
-        <!---Assignment #5 Assigned--->
-        <a href="Assignments/custom_class_assignment.md">Custom Class 
-            Assignment</a>
+        Assignment #5 Assigned
+        <!---<a href="Assignments/custom_class_assignment.md">Custom Class 
+            Assignment</a>--->
     </td>
 </tr>
 
@@ -173,9 +172,9 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
     <td>
-        <a href="Assignments/CPAP Measurements">CPAP Measurements 
-            Assigned</a>
-        <!---Assignment #6 Assigned--->
+        <!---<a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a>--->
+        Assignment #6 Assigned
     </td>
 </tr>
 
@@ -186,8 +185,8 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
         <li><a href="Lectures/apis_webservices_requests.md">APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
-        <a href="Lectures/name_server_project.md">Optional Exercise:  Blood 
-Matching</a>
+        <!---<a href="Lectures/name_server_project.md">Optional Exercise:  Blood 
+Matching</a>--->
     </td>
 </tr>
 
@@ -199,8 +198,8 @@ Matching</a>
            Building a Web Server with Flask</a>
     </td>
     <td>
-        <a href="Assignments/time_server_project.md">Time Server Assigned</a>
-        <!---Assignment #7 Assigned--->
+        <!---<a href="Assignments/time_server_project.md">Time Server Assigned</a>--->
+        Assignment #7 Assigned
     </td>
 </tr>
 
@@ -227,8 +226,8 @@ Matching</a>
         <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
     </td>
     <td>
-        <a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>
-        <!---Assignment #8 Assigned--->
+        <!---<a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>--->
+        Assignment #8 Assigned
 
 </td>
 </tr>
@@ -277,8 +276,8 @@ Demo
         <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
     </td>
     <td>
-        <!---Assignment #9 Assigned--->
-        <a href="Assignments/gui_assignment.md">GUI Assignment</a>
+        Assignment #9 Assigned
+        <!---<a href="Assignments/gui_assignment.md">GUI Assignment</a>--->
     </td> 
 </tr>
 
@@ -301,11 +300,11 @@ Encoding/Decoding</a></li>
         <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
     </td>
     <td>
-      <li><a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
+        Final Project Assigned
+      <!---<li><a href="Lectures/image_encoding_decoding.md#image-server-api-for-in-class-work">
         In-class Exercise</a></li>
-        <!----<li>Final Project Assigned</li>---->
       <li><a href="Assignments/final_image_processor.md">Final Project Assigned</a></li>
-      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>
+      <li><a href="Lectures/github_teams.md#Final-Project-Planning">Planning for Final Project</a></li>--->
     </td>
 </tr>
 
@@ -325,8 +324,8 @@ Encoding/Decoding</a></li>
        <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
     </td>
     <td>
-       <!---Assignment #10 Assigned--->
-       IEC62304 Assignment (see Canvas)
+       Assignment #10 Assigned
+       <!---IEC62304 Assignment (see Canvas)--->
     </td>
 </tr>
 
@@ -340,7 +339,7 @@ Encoding/Decoding</a></li>
            Making and Importing Packages</a></li>--->
 </td> 
     <td>
-        <a href="Lectures/intro_to_security.md#in-class-exercise">In-Class Exercise</a>
+        <!---<a href="Lectures/intro_to_security.md#in-class-exercise">In-Class Exercise</a>--->
     </td>
 </tr>
 
