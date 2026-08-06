@@ -1,4 +1,4 @@
-# BME 547 - Medical Software Design - Spring 2026  
+# BME 547 - Medical Software Design - Fall 2026  
 
 ## Instructor
 Dr. David Ward  
@@ -6,16 +6,16 @@ Dr. David Ward
 Office Hours: By appointment
 
 ## Teaching Assistant
-Jefferson Bercaw  
-<jefferson.bercaw@duke.edu>  
+Areti Majumdar  
+<areti.majumdar@duke.edu>  
 Office Hours: By appointment
 
 
 ## Course Delivery
 
 ### Lecture
-Tuesday / Thursday  11:45 am to 1:00 pm  
-Location:  Wilkinson 126
+Tuesday / Thursday  8:30 am to 9:45 am  
+Location:  Hudson Hall 125
 
 Attendance at lectures is an expectation of the course.
 
@@ -81,8 +81,11 @@ BME 271 - Signals and Systems
 
 A computer with administrator rights and good internet connection.
 
-Complete the prerequisite assessment found 
-[here](Assignments/00_programming_assessment.md).
+If you are uncertain about whether you have the required pre-requisite Python
+skill for this course, please complete the prerequisite assessment found 
+[here](Assignments/00_programming_assessment.md).  Then, send your results to 
+the instructor for review and a discussion about what extra work may be required
+for you to be successful in this class.
 
 ## Course Topics
 * Software version control (`git`, GitHub)
@@ -108,7 +111,7 @@ Complete the prerequisite assessment found
 * Working with data
   + Data Storage (Text, Binary, MongoDB)
 * Data Processing & Display
-  + Jupyter Notebooks
+  <!---+ Jupyter Notebooks--->
   + Matplotlib
   + Numpy
   <!---+ [scikit-image](https://scikit-image.org/) & [scikit-learn](http://scikit-learn.org/stable/)--->
@@ -203,6 +206,10 @@ given the opportunity to submit *one* assignment (not including the Final
 Project) up to 48 hours late for any reason without penalty if you notify the
 instructor that you are utilizing that option before the deadline via e-mail.
 
+Some assignments will have an oral component that requires the student to meet
+with the instructor or teaching assistant to answer questions about their 
+submission as part of the grade.
+
 Specific project feedback will be given using Gradescope and Canvas.
 
 ## Class Schedule
@@ -246,7 +253,8 @@ git repositories.  Some guidelines for using your git repositories:
 * Make commits small and logical; do them often!
 
 We will review working with git repositories in lecture.  Make sure to commit
-any work you do in class on your repository and push those changes to GitHub.
+any work you do in class to your repository and push those changes to GitHub 
+**before** the end of the class period.
 This will be the mechanism that is used to ascertain your class participation.
 
 ## Academic Accommodations
@@ -259,6 +267,12 @@ accommodation may be requested.
 ## AI Policy
 
 ### Background
+
+BME 547 is not a course on the use of AI in software development.  The impact
+of AI on software development is rapidly changing.  But, it is clear that safe
+and effective usage of AI, especially in the highly-regulated medical device
+industry, can only be done by those with a strong understanding of code and
+software development.  This class is designed to develop that understanding.
 
 Student use of AI for coding, beyond simple questions
 asked for understanding, is extremely detrimental to learning.
@@ -276,8 +290,8 @@ There are great alternatives to AI:
    [W3Schools](<https://www.w3schools.com/python/default.asp>) have
    human-validated information that is easily found with a web search.
 
-If you want to use AI to learn, ask for examples of short samples of code with
-complete explanation of how it works, with reference links so you can verify.
+If you want to use AI to learn, ask for examples of short segements of code with
+complete explanation of how it works and with reference links so you can verify.
 Then, actually read the information generated, understand it, and then apply
 what you learned to your own code. Do not copy/paste the generated code. This
 significantly impedes learning (and can lead to academic dishonesty as discussed
@@ -299,7 +313,9 @@ as follows.
    project (ideally in the same commit).
 
 If the use of AI-generated code leads to a substantial similarity to other
-sources, and the documentation provided above is either missing, not complete,
+sources such as, but not limited to, work submitted by other students or other 
+code found on the internet, and the documentation provided above is either 
+missing, incomplete,
 or is not compelling to show that the work was significantly and independently 
 done by the student,  the submission will be considered a case of academic 
 dishonesty. NOTE:  The best way to prevent this from happening is to not use AI

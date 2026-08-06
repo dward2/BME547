@@ -3,16 +3,15 @@
 This assessment is designed to help evaluate your initial understanding of basic
 programming concepts within Python.  This assessment will not be formally
 graded as this assessment is meant as a diagnostic to understand your current
-level of knowledge.  However, the completion of this assessment will be part of
-your participation grade.
+level of knowledge.
 
 Difficulty in completing some parts of this assessment will help indicate 
 areas for additional study so that you are prepared for the
 other assignments in this course.
 
-Complete the following exercises in Python.
-Upload the source code file(s) to the appropriate Canvas assignment.  Include
-any comments you would like to share as comments within your code file.
+Complete the following exercises in Python.  If you have trouble, please include
+comments in the code indicating your uncertainties.  Then, forward your cod to
+the instructor for review.
 
 If you cannot complete any part of these exercises, it is highly recommended 
 that you review appropriate [Python Resources](Resources/python.md) to gain 
