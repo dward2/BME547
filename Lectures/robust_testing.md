@@ -55,7 +55,7 @@ might be given, we could develop the following test cases:
 
 ### Structural Testing
 
-** Structural** testing is when unit test cases are developed based on a knowledge
+**Structural** testing is when unit test cases are developed based on a knowledge
 of the structural or internal workings of the function to be tested.  We look at
 the different possible outcomes from the function and design test cases to test
 each one.
@@ -134,7 +134,14 @@ Tools exist to measure and report code coverage achieved by unit tests.  See
     with more then three.
 * For this class, **EVERY** function should have a unit test with the 
   appropriate number of test cases, UNLESS the only thing the function does is
-  input and/or output.
+  input and/or output.  
+  * **NOTE**: Even functions that only use `int()` or `float()` should have a
+    unit test.  If the `input()` command is paired with one of these functions,
+    write a unit test for it.  See [Unit Testing of User Input/Output 
+with pytest](./unit_testing_input_output.md) for how to write such a test.
+* At a minimum, the test cases for a function should provide statement and 
+  decision/branch coverage.  Additional tests may be required to test the
+  breadth of possible input and outcomes.
 * If Function A has a suite of unit tests, and Function A makes a call to 
   Function B, Function B also needs unit tests.  While its functionality is 
   indirectly tested by the Function A tests, specific tests for Function B 
@@ -145,7 +152,7 @@ Tools exist to measure and report code coverage achieved by unit tests.  See
   Function B to ensure that its responses allows testing of different 
   Function A paths.
 * It is possible to test functions that do output if desired.  One of the 
-  easiest ways is to, in addition to printing the the screen, also return what
+  easiest ways is to, in addition to printing to the screen, also return what
   is printed, as shown in the example below.  
   ```python
   def screen_output(x):
@@ -155,17 +162,19 @@ Tools exist to measure and report code coverage achieved by unit tests.  See
   ```
   In this way, you have a `return` value that could be checked by a unit 
   test.  _Note_: `pytest` also has the ability to capture screen output and 
-  check it, if you prefer that route.
+  check it, if you prefer that route:  See [Unit Testing of User Input/Output 
+with pytest](./unit_testing_input_output.md).
 
 ## Test Development in the Git Feature Branch Workflow
 In the Git Feature Branch Workflow, new code or changes to existing code are 
-always done on a feature branch.  Anytime code is merged from a feature branch
-into the main branch, that code should be validated by unit tests.  
+always done on a feature branch.  Anytime code is merged from one branch
+into another branch, that code should be validated by unit tests.  
 Therefore, when code is written on a feature branch, unit test functions for 
 that code should be written on the same feature branch.  This way, tests can 
-be run to validate code before adding to the main code base.  You can always 
+be run to validate code before adding to the code base.  You can always 
 create a new branch in the future to expand the testing.  But, there should 
-at least be some amount of testing of the code before the first merge.
+at least be some amount of testing of the code before the first merge of new 
+code.
 
 ## Testing Multiple Cases Using Parametrized Testing
 It is often helpful to run a test over many different input and expected 
