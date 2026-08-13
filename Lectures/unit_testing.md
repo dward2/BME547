@@ -1,8 +1,8 @@
 # Unit Testing
 
 ## Unit Testing Introduction
-Every step or function that has algorithmic content will be paired with a test
-to ensure that the code works as desired.
+Every unit function should be paired with a test to ensure that the function 
+works as desired.
 
 ### Test-Driven Development
 * Write your tests before you code
@@ -23,18 +23,19 @@ functional scope in mind.
   + Takes inputs
   + Does calculations on those inputs
   + Returns output
-* Any function with a user interface only sends and receives data, but does
-not do any calculation.  Any calculation should be in a separate unit function
-that can be tested.
+* Any function with a user interface should only accept input or send output. 
+  Any calculations needed should be in separate unit function that can be more
+  easily tested.
 * If you function does too much and requires a divergent set of tests, then
 that function should be broken up into smaller functions.
 
 ### Testing Frameworks
 * `unittest`
+  + Part of Python Standard Library
   + Ubiquitous, used by many languages
 * `pytest`
   + Easy to use and install with `pip` and `conda`.
-  + Has Python specific features
+  + Considered modern industry standard.
 * `nose2`
   + Extension of `unittest`
   
@@ -65,9 +66,9 @@ dependencies:
 ```
 ## Using `Pytest`
 
-Pytest automatically discovers all files in your folder that start with "test".
+Pytest automatically discovers all files in your folder that start with "test_".
 (This is a default that can be changed, but we are going to leave it as is.)
-And, `pytest` will run each test in these files that start with "test".
+And, `pytest` will run each test in these files that start with "test_".
 
 For example, take the following code to be tested.
 ```
