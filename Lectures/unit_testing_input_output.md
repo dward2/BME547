@@ -92,6 +92,8 @@ the result of the "input" function will be?  That is where we will "mock"
 the `input` function so it returns a known value, instead of waiting for 
 user input.  
 
+### monkeypatch
+
 `pytest` provides the `monkeypatch` fixture to enable this type of "mocking".
 `monkeypath` allows us to change the built-in Python function `input` to a 
 different function of our own choosing.
@@ -110,6 +112,7 @@ def test_add_input(monkeypatch):
     assert answer == expected
 ```
 
+First, the fixture `monkeypatch` is given as a parameter to the test function.
 In the "Arrange" section, the value to be sent to the function being tested as
 a parameter is defined in the `first_value_input` variable. The string that we
 want the "mock" input function to return is defined in the `user_input` 
@@ -133,8 +136,46 @@ takes two parameters:
 The "Act" and "Assert" sections then run the function to be tested and 
 assert the answer.
 
+### pytest-mock
+An alternative to `monkeypatch` is to use the `pytest-mock` package.  This
+package provides a wrapper around the Python `unittest.mock` package.  In this
+case, we use the fixture `mocker` in the parameters of the test function.
+
+```python
+def test_add_input(mocker):
+    # Arrange
+    from my_module import add_input
+    first_value_input = 1
+    user_input = "3"
+    expected = 4
+    mocker.patch("builtins.input", return_value=user_input)
+    # Act
+    answer = add_input(first_value_input)
+    # Assert
+    assert answer == expected
+```
+
+### What if there is more than one `input()` call in the function being tested?
+If the function being tested makes more than one call to the `input()` function,
+you can modify the `monkeypatch` or `mocker` call to return different values for 
+each call to `input()`.  For example, if the function being tested has two calls 
+to `input()`, you would modify the testing functions above as follows:
+
+#### `monkeypatch`
+```python
+    mock_inputs = iter(("First input", "Second Input"))
+    monkeypatch.setattr('builtins.input', lambda _: next(mock_inputs))
+```
+
+#### `pytest-mock`
+```python
+    mocker.patch("builtins.input", side_effect=["First input", "Second Input"])
+```
+
+
 ## References
 * <https://docs.pytest.org/en/stable/how-to/capture-stdout-stderr.
 html#accessing-captured-output-from-a-test-function>
 * https://docs.pytest.org/en/6.2.x/monkeypatch.html
 * https://docs.pytest.org/en/stable/reference/reference.html#monkeypatch
+* https://pytest-mock.readthedocs.io/en/latest/
