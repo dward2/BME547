@@ -14,7 +14,7 @@ comments in the code indicating your uncertainties.  Then, forward your code to
 the instructor for review.
 
 If you cannot complete any part of these exercises, it is highly recommended 
-that you review appropriate [Python Resources](Resources/python.md) to gain 
+that you review appropriate [Python Resources](../Resources/python.md) to gain 
 the required knowledge to complete the exercise.  Please feel free to contact
 the instructor for guidance.
 
