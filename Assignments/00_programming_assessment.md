@@ -10,7 +10,7 @@ areas for additional study so that you are prepared for the
 other assignments in this course.
 
 Complete the following exercises in Python.  If you have trouble, please include
-comments in the code indicating your uncertainties.  Then, forward your cod to
+comments in the code indicating your uncertainties.  Then, forward your code to
 the instructor for review.
 
 If you cannot complete any part of these exercises, it is highly recommended 
