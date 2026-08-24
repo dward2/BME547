@@ -51,7 +51,7 @@
        instructions
        at [Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
 
-5. Download and install `python`.
+5. Install `python`.
     + **Mac** users:
         * Python is likely already installed. Open a Terminal window and enter
           `python --version`. You may see an output like
@@ -101,23 +101,30 @@
               following the same approach as python, just replace `python` and
               `python3` with `pip` and `pip3`.
 
-    + **Windows** users have three options:
-        1. Download and install from <https://www.python.org/>.
-            * Follow additional guidelines
-              found [here](../Resources/installations.md) for installation.
-            * **NOTE:** As of December 4, 2025, the latest version is 3.14.0.
-
-        2. Install Python from Anaconda.
-            * You can install either the full Anaconda distribution
-              (<https://www.anaconda.com/download/success>) (which will download
+    + **Windows** users:
+        1. Check if you have a current version of Python installed.  
+           * Open a terminal window (GitBash or CMD or PowerShell) and enter
+           `python --version`.  
+           * If you have a recent version (say at least 3.13), there is no need 
+             to install a new version.  
+           * If you have a version earlier than 3.10, I would definitely 
+             recommend updating your install.
+           * If you have 3.10 to 3.12, you can continue to use that version, but
+             you may not have some of the latest features of Python.
+        2. To install a version of Python, you have three options:
+           * Download and install from <https://www.python.org/>.
+                * Follow additional guidelines found [here](../Resources/installations.md#python) for installation.
+                * **NOTE:** As of August 24, 2026, the latest version is 3.14.7.
+           * Install Python from Anaconda (<https://www.anaconda.com/download/success>).
+                * You can install either the full Anaconda distribution
+              (which will download
               many commonly used packages and set them up in a base environment)
               or you can install Miniconda
               (<https://docs.anaconda.com/miniconda/miniconda-install/>) which
               brings in the bare minimum of packages (RECOMMENDED)
-            * Using Anaconda will require you to set up virtual environments
-              somewhat differently than what will be described in class.
-        3. Installing and using
-           the [Ubuntu Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/about),
+                * Using Anaconda will require you to set up virtual environments
+                  somewhat differently than what will be described in class.
+            * Installing and using the [Ubuntu Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/about),
            and running `python` from within that environment. This approach will
            give you a legitimate Linux environment, but there is overhead to
            running GUI applications through an X-server, which adds more
@@ -125,7 +132,7 @@
 
 6. You will want a code writing environment / text editor that makes life easier
    for you as your projects get more complex. Options include:
-    + Terminal Editors
+    + Terminal Editors (not recommended unless you are experienced with terminal usage)
         + [VIM](http://www.vim.org)
         + [nano](https://www.nano-editor.org/)
     + Code / Text editors

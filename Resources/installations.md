@@ -20,13 +20,36 @@ exceptions:
 
 
 ## Python
+[python.org](https://www.python.org) is transitioning away from their
+traditional Windows installer to Python Install Manager than can be downloaded
+from either the Microsoft Store or the python.org page at 
+<https://www.python.org/downloads/>.  
+
+* Download the Python Install Manager from the Microsoft Store of from 
+<https://www.python.org/downloads/>.
+* Run the `.msix` file that is downloaded.
+* A window like this will be displayed:  
+![Python Install Manager](images/python_install_manager_launch.png)
+* Click on "Install Python".  
+* A terminal window will open and ask you a series of questions to help with 
+the configuration.  
+* If you already have a version of Python installed, it may ask some questions
+about whether to keep the older version or not.  Answer as you see fit.
+* YOu will be asked if you want to install CPython.  Enter `Y` to install.
+* You will be asked whether to view the online help.  That is up to you.
+* When finished, you can test the installation by opening a terminal window
+  and typing `python --version`.  `Python 3.14.7` should be displayed.
+
+### Traditional installer
+
+If you choose to use the traditional installer, here are comments on that
+installation:
+
 * On opening install screen, select "Add Python to Path".
 * Run default installation.
 * Choose option to "Disable path length limit" at the end of the install.
 
-+ No need to separately install pip and venv.  It is part of base package.
-
-* To enable use of `python` from the GitBash command line, do the following:
+To enable use of `python` from the GitBash command line, do the following:
   
   - Open GitBash and type `cd ~` to ensure you are in your home directory.
   - Open the `.bashrc` file by typing `nano .bashrc` (or use your editor of
