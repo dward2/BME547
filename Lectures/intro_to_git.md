@@ -430,42 +430,48 @@ sure that "Initialize this repository with a README" is selected.  Then, click
 create repository.  A new repository page will be shown.  
 
 ## Clone the GitHub Repository onto your local computer
-On the main page of your repository, you will then see a green button labeled 
-"Code".  Click on that.  A box should open with the title "Clone".  Make sure
-the SSH option is underlined.  
+On the main page of the repository you want to "clone" to your lcoal computer, 
+you will then see a green button labeled "Code".  Click on that.  A box should 
+open with the title "Clone".  Make sure the SSH option is selected.  
 ![Example](./lecture_files/code_clone_ssh.JPG)
 
 Copy the SSH URL that is shown that looks like 
 `git@github.com:user_name/repo_name.git`.
 
-On your local computer, open Git Bash.  Navigate to your `repos` directory, or 
+On your local computer, open a terminal window (on Mac) or Git Bash (on Windows).  
+Navigate to your `repos` directory, or 
 any other directory in which you want to create a subdirectory containing this 
 repository.  Then, use the following command:  `git clone <SSH_URL>`, 
 substituting `<SSH_URL>` with the SSH URL copied from GitHub.  This command 
 will now make a new subdirectory with the repository name from GitHub.
 
-As an example, let's say I have a GitHub repository called `updated_ssh`.  I 
+As an example, let's say I have a GitHub repository called `setup_verification`.  I 
 could clone repository to my computer as follows:
 ```
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
-$ git clone git@github.com:dward2/updated_ssh.git
-Cloning into 'gittest'...
+$ git clone git@github.com:dward2/setup_verification.git
+Cloning into 'setup_verification'...
 remote: Enumerating objects: 47, done.
 remote: Total 47 (delta 0), reused 0 (delta 0), pack-reused 47
 Unpacking objects: 100% (47/47), done.
 
 dwonl@DESKTOP-G8L84L6 MINGW64 ~/repos
 $ ls
-first/  updated_ssh/
+first/  setup_verification/
 ```  
-A new subdirectory is created called "updated_ssh".  If I wanted to use a different
+A new subdirectory is created called "setup_verification".  If I wanted to use a different
 name for the local folder, I could add an optional directory name after the URL.
-For example:  `git clone git@github.com:dward2/updated_ssh.git ssh_example`
+For example:  `git clone git@github.com:dward2/setup_verification.git initial_setup`
 
-You can now switch into this directory to use the repository.  You will see that
-the "README.md" file from GitHub can now be found in your local repository.
+You can now switch into this directory to use the repository.  You will see 
+whatever content exists from GitHub can now be found in your local repository.
+
+
 
 ## Push and Pull
+To practice using `git push` and `git pull`, first clone the repository you
+created in GitHub above.  Then, enter into the folder containing the repository
+you cloned.  
 
 Let's do two things:
 1.  Make an edit to the README.md file.
