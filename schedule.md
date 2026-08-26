@@ -30,8 +30,8 @@ will be a lecture every class period even if no topic is shown on the schedule.
       <li><a href="Resources/Git/readme_files.md">README.md</a></li>
     </td>
     <td>
-        <!---<a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>--->
-        Assignment #1 Assigned
+        <a href="Assignments/02_git_fundamentals_practice.md">Git Fundamentals/Practice Assigned</a>
+        <!---Assignment #1 Assigned--->
     </td>  
 </tr>
 
