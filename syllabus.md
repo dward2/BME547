@@ -144,10 +144,11 @@ class participation grade.
 It is very understandable that students will have to miss class for job 
 interviews, personal reasons, illness, etc.  Absences from class or delayed 
 daily work will be considered **excused** only if:
-* for an illness, the illness is communicated through submission of an 
-  [Incapacitation Form](https://class-absences.trinity.duke.edu/if)*   
-  **before** class and then the student contacts the instructor within the 
-  required 48 hours to discuss appropriate arrangements, or
+* for an illness, the student notifies the instructor **before** class through 
+  the submission of an [Incapacitation Form](https://class-absences.trinity.duke.edu/if)* for undergraduates or an 
+  email to the instructor for graduate students.  The student then must contact
+  the instructor within the required 48 hours to discuss appropriate 
+  arrangements, or
 * for any other reason, the reason for the absence is communicated to and 
   approved by the instructor at least 48 hours **in advance**.  Approval is subject 
   to instructor discretion as to whether the type of absence should be 
