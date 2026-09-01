@@ -73,7 +73,7 @@ main branch before the deadline.
 ### `math` Module
 For the BRI calculation, you will need to use the `math` module to complete
 the calculation.  Watch the Panopto video "Modules" or visit the BME 547
-repository [Resources/Python/modules.md](../Resources/Python/modules.md) for 
+repository [Lectures/modules.md](../Lectures/modules.md) for 
 more information on how to use the `math` module.
 
 ### Grading Criteria
