@@ -1,10 +1,31 @@
-# Function Modularity
+# Function Decomposition and Modularity
 
-When we write code, it possible that we could just write a long series of
-Python commands to do what we want to do in order. However, that is very
-inefficient. Instead, we organize our code into functions that each complete a
-specific and limited function of our overall program. We do this for three
-reasons (among others).
+When developing software, we usuually start with an idea.  It may be formalized
+in a software requirements document.  How do we go from the big idea to a 
+working program? One could just sit down and start writing code and put together
+a long series of commands to do what needs to be done.  However, that is not
+efficient and does not allow for multiple people to work together on a project.
+
+A better approach is to break the program down into smaller pieces.  This is
+known as **Functional Decomposition**.  From the software requirements document,
+we usually know what the inputs are into our program and what the outputs should
+be.  The first step is to look at the big picture of what the program should
+do and break it down into the big steps that need to get from the input to the
+output.  With each of these big blocks, define what the data looks like moving
+from one block to the next.  Then, for each big block, further break it down into
+smaller blocks, again defining the data that moves between blocks.  Keeping
+breaking down the blocks until you get to specific blocks or functions that have
+a limited and defined purpose.  
+
+These resulting functions are called "unit" functions.  A unit function has:
+* a limited and defined purpose,
+* defined inputs (if needed), and
+* defined outputs (if needed).
+
+Designing and writing software making use of unit functions is known as
+**modular programming** or **functional modularity**.
+
+Breaking down our program into unit functions has several advantages.
 
 ### Reusability
 
@@ -26,6 +47,10 @@ code is written in short, specific functions with defined inputs and outputs.
 
 When a program is split into functions with meaningful names, it is often
 easier to see how the program flows and is organized.
+
+### Teamwork
+With a well designed software structure, different team members can work on
+different functions without needing to wait for others to finish their work.
 
 ### Rules of Thumb
 
@@ -50,7 +75,8 @@ easier to see how the program flows and is organized.
 Let's look at an example of how we can improve the modularity, and therefore
 testability and readability, of a code sample.
 
-Here is some sample code:
+Here is some sample code that was simply written as a series of Python
+commands:
 
 ```python
 """dosing.py
