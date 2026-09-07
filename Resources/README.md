@@ -1,3 +1,4 @@
 # Web Links
 
-[Click here to indicate you are finished.](http://67.159.66.78:5000/done)
+Click [here (http://bme547.colab.duke.edu:5000/done)](http://bme547.colab.duke.edu:5000/done)
+to indicate you are finished.
