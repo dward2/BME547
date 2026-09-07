@@ -57,7 +57,7 @@ Exercise</a>--->
 <td>Thu Sep 3</td>
     <td>
         <li><a href="Lectures/modules.md">Modules</a></li> 
-        <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li> 
+        <li><a href="Lectures/variable_scope.md">Scope</a></li>
     </td>
     <td>
     </td>
@@ -66,6 +66,7 @@ Exercise</a>--->
 <tr>
 <td>Tue Sep 8</td> 
   <td>  
+        <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li>        
         <li><a href="Lectures/unit_testing.md">Unit Testing: (pytest)</a></li>
         <li><a href="Lectures/robust_testing.md#testing-multiple-cases-using-parametrized-testing">Parametrized Testing</a></li>
   </td>
@@ -79,7 +80,7 @@ Exercise</a>--->
 <td>Thu Sep 10</td>
     <td>
         <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></li>
-        <li><a href="Lectures/unit_testing_code/weight_entry_starter_code.md">Robust Testing Exercise</a></li>
+        <li><a href="Lectures/unit_testing_code/weight_entry_starter_code.md">Robust Testing Exercises</a></li>
         <li><a href="Resources/coverage.md">Code Coverage</a></li>    
         <li><a href="Lectures/continuous_integration_github_actions.md">Continuous 
             Integration & GitHub Actions</a></li>
@@ -103,7 +104,6 @@ CI Assigned</a>--->
         <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>
 (starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
-        <li><a href="Lectures/variable_scope.md">Scope</a></li>
         <li><a href="Lectures/file_input.md">Text File Input</a> (
         <a href="Lectures/lecture_files/patient_data.txt">Patient Data</a> / 
         <a href="Lectures/lecture_files/blood_test_data.txt">Lab Data</a>)</li>
