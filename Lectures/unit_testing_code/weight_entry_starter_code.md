@@ -53,8 +53,35 @@ def test_parse_weight_input(input, expected):
 --->
 
 ## Exercise
+* The `weight_entry` code takes an input such as "20 lb" and converts the given
+  weight into units of kg.
 * Create `test_weight_entry.py`
 * Write a unit test for `test_parse_weight_input` that tests the following 
   two inputs:
   * 20 lb
   * 50 kg
+
+
+# Structural Testing Example
+
+## `ecg.py`
+```python
+def get_tach_limit(age):
+    return 120
+
+
+def is_tachycardic(hr_bpm, age, age_units):
+    if age_units == "months":
+        age = age / 12
+    if age < 15:
+        tach_limit = get_tach_limit(age)
+    else:
+        tach_limit = 100
+    if hr_bpm > tach_limit:
+        result = True
+    else:
+        result = False
+    return result
+
+```
+Download file from [here](unit_testing_code/ecg.py).  
