@@ -39,7 +39,7 @@ codons and end with one of three "stop" codons.
   * The boolean value should be `False` if the string does not contain a 
     valid RNA sequence.
 * The following statements can be used to determine whether the input string 
-  parameter contains an valid RNA sequence.
+  parameter contains a valid RNA sequence.
   * If the string contains two or more adjacent spaces anywhere between 
     letters, it is NOT an acceptable sequence.  Single spaces between 
     letters can be ignored.
@@ -62,7 +62,7 @@ codons and end with one of three "stop" codons.
     should be treated the same as a G.  But, if a codon has two or more Os, 
     it is not considered a proper codon and the string does NOT contain a valid
     sequence.
-  * The first codon must a "start" codon.  Start codons are:
+  * The first codon must be a "start" codon.  Start codons are:
     * UUG
     * AUG
     * GUG
@@ -89,24 +89,28 @@ or software that analyzes RNA sequences as part of your submission.
 
 ### Approach
 
-* Log into GitHub and visit the GitHub repository created for you.
+* Create your assignment repository following the instructions in Canvas.
 * Clone this repository to your local computer.
 * Set-up GitHub Actions in this repository to implement CI testing 
-  (suggested approaches for doing this can be found [here](../Lectures/continuous_integration_github_actions.md#recommended-workflows-for-setting-up-github-actions-and-other-repository-items).
+  (suggested approaches for doing this can be found [here](../Lectures/continuous_integration_github_actions.md#recommended-workflows-for-setting-up-github-actions-and-other-repository-items)).
+* Perform a functional decomposition to design the flow and unit functions
+  needed for your program.
+* Design modular code. Have the `is_sequence` function call other helper 
+  functions when appropriate.
+* Document your design using a flowchart or other method (see 
+  [BMI/BRI Calculator assignment](BMICalculatorAssignment.md) for more details).
 * Develop code (including test functions) on feature branches.
 * Consider using test-driven development (TDD) and write a unit test for the
-  `is_sequence` function with appropriate test cases before you start writing
-  the `is_sequence` code. This will give you a target for correct answers for
-  your function.
-* Write modular code. So, have the `is_sequence` function call other 
-  helper functions when appropriate.
+  `is_sequence` function (and other functions is may call) with appropriate test 
+  cases before you start writing the code. This will give you a target for 
+  correct answers for your function.
 * For code written on a feature branch, develop unit tests for that code on the
   same branch before merging.  You will need to write unit tests for each 
-  helper function even though the `is_sequence` will also have unit tests.
+  helper function even though `is_sequence` will also have unit tests.
 * Ensure all functions and code, including the unit test functions, adhere to
   PEP-8 style.
 * Push code to GitHub.
-* Generate Pull Request on GitHub. Only merge your feature branches into the
+* Generate Pull Requests on GitHub. Only merge your feature branches into the
   main branch once GitHub Actions reports a passing status (for both unit tests
   and PEP-8 style) and that all functions being merged have appropriate test
   coverage.
@@ -120,7 +124,8 @@ or software that analyzes RNA sequences as part of your submission.
 * Meeting the functional specifications above.
 * Presence of comprehensive unit testing to ensure that the appropriate range
   of possible string inputs are checked and that all functional 
-  specifications are correctly met.
+  specifications are correctly met.  Statement and branch coverage must be 100%,
+  but that alone is not sufficient to ensure comprehensive testing.
 * The use of `@pytest.mark.parametrize` for at least one unit test.
 * Appropriate naming and syntax for unit tests and testing modules.
 * Implementation of GitHub Actions / CI Testing.
@@ -129,5 +134,5 @@ or software that analyzes RNA sequences as part of your submission.
 * Feature branches have passing GitHub Action tests (both unit tests and PEP-8
   style checks) before merging into main.
 * Presence and content of README.md  (for this assignment, you do not need to
-  provide user instructions. At a minimum, include author information and a
-  brief description/purpose of the code)
+  provide user instructions. At a minimum, include author information, a
+  brief description/purpose of the code, and a link to your design document.)
