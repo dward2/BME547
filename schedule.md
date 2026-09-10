@@ -84,8 +84,8 @@ Exercise</a>--->
         <li><a href="Resources/coverage.md">Code Coverage</a></li>    
         <li><a href="Lectures/continuous_integration_github_actions.md">Continuous 
             Integration & GitHub Actions</a></li>
-        <li><a href="Lectures/git_workflow_more.md">Tags and 
-            Issues</a></li>
+        <li><a href="Lectures/robust_testing.md#approximations">Approximations 
+            with Unit Testing</a></li>
         <!---<li><a href="Lectures/lists.md">Lists</a></li>
         <li>For Loops</li>--->
     </td>
@@ -99,8 +99,8 @@ CI Assigned</a>
 <tr>
 <td>Tue Sep 15</td>
     <td>
-        <li><a href="Lectures/robust_testing.md#approximations">Approximations 
-            with Unit Testing</a></li>    
+        <li><a href="Lectures/git_workflow_more.md">Tags and 
+            Issues</a></li>
         <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>
 (starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
         <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
