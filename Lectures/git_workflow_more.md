@@ -1,4 +1,4 @@
-# Git Workflow: Part 2
+# Tags and Issues
 ## Tags
 Check out details on semantic versioning here: http://semver.org
 #### Create a tag
