@@ -99,14 +99,18 @@ CI Assigned</a>
 <tr>
 <td>Tue Sep 15</td>
     <td>
-        <li><a href="Lectures/git_workflow_more.md">Tags and 
-            Issues</a></li>
         <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>
 (starter code <a href="https://github.com/dward2/modularity_example/blob/main/output_readability.py">here</a>) </li>
-        <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
+        <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
+        <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
+        <li><a href="Lectures/tkinter_walkthrough.md">Tkinter/GUI Walkthrough</a></li>
         <li><a href="Lectures/file_input.md">Text File Input</a> (
         <a href="Lectures/lecture_files/patient_data.txt">Patient Data</a> / 
         <a href="Lectures/lecture_files/blood_test_data.txt">Lab Data</a>)</li>
+        Outside of Class:
+        <li><a href="Lectures/git_workflow_more.md">Tags and 
+            Issues</a></li>
+        <li><a href="Lectures/parameters.md">Immutable vs. Mutable Parameters</a></li>
 
 </td>
     <td>
@@ -262,9 +266,6 @@ Demo
 <tr>
 <td>Thu Oct 29</td>
     <td>
-        <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
-        <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
-        <li><a href="Lectures/tkinter_walkthrough.md">Tkinter/GUI Walkthrough</a></li>
     </td>
     <td></td>
 </tr>
