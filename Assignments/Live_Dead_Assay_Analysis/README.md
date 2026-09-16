@@ -102,7 +102,7 @@ formatted correctly.  But, your code must be able to handle files with any
 number of patients and with different image sizes for each patient.
 
 ## Image Analysis
-The image is a square grid with each grid point being measured for the 
+The image is a grid with each grid point being measured for the 
 color that fluoresces there.  This color is analyzed as an RGB value.  RGB 
 stands for **R**ed, **G**reen, **B**lue, the three channels of which, when
 combined, yield a color.  Each channel is quantified as a value between 0 and 255.
@@ -110,7 +110,7 @@ combined, yield a color.  Each channel is quantified as a value between 0 and 25
 To analyze the image, look at the green and red values for each data point.  If
 the green value is **greater than or equal to 75**, then that data point
 represents a "live" cell.  If the red value is **greater than or equal to 75**,
-the that data point represents a "dead" cell.  If neither value is greater than
+then that data point represents a "dead" cell.  If neither value is greater than
 or equal to 75, there is not a cell at that data point.  It is not possible for 
 both the green and red data to be greater than or equal to 75.
 
@@ -183,8 +183,10 @@ of 17 / 30 = 0.57.
 * Good git usage and workflow
 * Meeting the above functional specifications
 * Appropriate functional modularity that will allow for appropriate unit tests
-* Unit testing exists for all functions that do any algorithmic work, excluding
-  input/output routines
+* Unit testing exists for all functions, excluding any
+  functions that solely do input/output and do not have any algorithmic content,
+  decision making, or data manipulation (You may have unit tests for I/O 
+  functions if desired)
 * Conforms to PEP-8 Style Guide 
 * GitHub Actions CI integration with all branches passing unit tests and PEP-8 
   style before merge
