@@ -104,9 +104,6 @@ CI Assigned</a>
         <li><a href="Lectures/intro_to_gui.md">Intro to GUIs</a></li>
         <li><a href="Lectures/tkinter_details.md">Tkinter Details</a></li>
         <li><a href="Lectures/tkinter_walkthrough.md">Tkinter/GUI Walkthrough</a></li>
-        <li><a href="Lectures/file_input.md">Text File Input</a> (
-        <a href="Lectures/lecture_files/patient_data.txt">Patient Data</a> / 
-        <a href="Lectures/lecture_files/blood_test_data.txt">Lab Data</a>)</li>
         Outside of Class:
         <li><a href="Lectures/git_workflow_more.md">Tags and 
             Issues</a></li>
@@ -123,6 +120,9 @@ CI Assigned</a>
         <li><a href="Lectures/json.md">JSON</a></li>
         <li><a href="Lectures/docstrings.md">Docstrings</a></li>
         <li><a href="Lectures/dictionaries.md">Dictionaries</a></li>
+        <li><a href="Lectures/file_input.md">Text File Input</a> (
+        <a href="Lectures/lecture_files/patient_data.txt">Patient Data</a> / 
+        <a href="Lectures/lecture_files/blood_test_data.txt">Lab Data</a>)</li>
     </td>
     <td>
         <!---<a href="Lectures/dictionary_class_in_class_exercise.md">In Class Exercise</a>--->
