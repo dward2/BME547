@@ -13,7 +13,7 @@ projects are:
   code is provided to implement the game in terms of cards, dealing cars,
   calculating score, etc. You need to implement the basic game play through the
   GUI.
-* **Medial Image Annotation**:  Create a GUI to display and add text to medical
+* **Medical Image Annotation**:  Create a GUI to display and add text to medical
   images. Helper code is provided for displaying images on a GUI and adding
   text to the image. You need to implement the GUI to allow for the user to
   input their choices for text, font size/color, text location, etc.
@@ -39,10 +39,9 @@ please contact the instructor.
 
 ## Evaluation
 
-You will receive an invitation to a repository in the BME547-Spring2025
-organization. Please use this repository to implement your code. If you choose
-one of the suggested projects, make sure to download the provided files and add
-them to your repository.
+See Canvas for instructions on setting up your repository for this assignment.
+If you choose one of the suggested projects, make sure to download the provided 
+files and add/commit them to your repository.
 
 This assignment will be evaluated on the following criteria:
 
@@ -55,12 +54,13 @@ This assignment will be evaluated on the following criteria:
     * the name of your project
     * a user's guide with detailed instructions on how to use the GUI. This
       user's guide should include visuals/pictures of your interface
-* Presence of a license
+    * a software license with your project (<http://choosealicense.com/>)
 
 For this assignment alone, you are not required to:
 
 * Create docstrings
 * Create unit tests
 * Integrate GitHub Actions
+* Create a design document
 
 Feel free to include these non-required items if it helps in your development.
