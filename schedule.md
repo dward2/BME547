@@ -12,7 +12,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <th>Assignment</th>
 </tr>
 
-<tr>
+<tr><!---01--->
     <td>Tue Aug 25</td>
     <td>
         <a href="Lectures/Intro_Lecture.md">Class Introduction, Objectives, and Logistics</a>
@@ -22,7 +22,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---02--->
     <td>Thu Aug 27</td>
     <td>
         <li><a href="Lectures/intro_to_git.md">Introduction to Git:  Repo Setup, 
@@ -36,7 +36,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>  
 </tr>
 
-<tr>
+<tr><!---03--->
     <td>Tue Sep 1<br></td>
     <td>
         <li><a href="Lectures/modularity_example.md">Functional Modularity 
@@ -52,7 +52,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---04--->
     <td>Thu Sep 3</td>
     <td>
         <li><a href="Lectures/modules.md">Modules</a></li> 
@@ -62,7 +62,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---05--->
 <td>Tue Sep 8</td> 
     <td>  
         <li><a href="Lectures/virtual_environments.md">Virtual Environments</a></li>        
@@ -75,7 +75,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---06--->
     <td>Thu Sep 10</td>
     <td>
         <li><a href="Lectures/robust_testing.md">Comprehensive and Robust Unit Tests</a></li>
@@ -95,7 +95,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---07--->
     <td>Tue Sep 15</td>
     <td>
         <li><a href="Resources/Git/MergeConflicts.md">Merge Conflicts</a>
@@ -112,7 +112,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---08--->
     <td>Thu Sep 17</td>
     <td>
         <li><a href="Lectures/json.md">JSON</a></li>
@@ -129,7 +129,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---09--->
     <td>Tue Sep 22</td>
     <td>
         Adding Database Functions to Patient Monitoring GUI
@@ -138,7 +138,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---10--->
     <td>Thu Sep 24</td>
     <td>
         <li><a href="Resources/testing_global_variables.md">Testing With Global Variables</a></li>
@@ -150,7 +150,7 @@ will be a lecture every class period even if no topic is shown on the schedule.
     </td>
 </tr>
 
-<tr>
+<tr><!---11--->
     <td>Tue Sep 29</td>
     <td>
         <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
@@ -163,7 +163,7 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
 </tr>
 
-<tr>
+<tr><!---12--->
     <td>Thu Oct 1</td>
     <td>
         <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
@@ -178,7 +178,7 @@ href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
     </td>
 </tr>
 
-<tr>
+<tr><!---13--->
     <td>Tue Oct 6</td>
     <td>
         <li><a href="Lectures/logging.md">Logging</a></li>
@@ -190,7 +190,7 @@ Matching</a>--->
     </td>
 </tr>
 
-<tr>
+<tr><!---14--->
     <td>Thu Oct 8</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
@@ -204,7 +204,7 @@ Matching</a>--->
     </td>
 </tr>
 
-<tr>
+<tr><!---15--->
     <td>Tue Oct 13</td>
     <td>No Class - Fall Break</td>
 </tr>
@@ -219,7 +219,7 @@ Matching</a>--->
     </td>
 </tr>
 
-<tr>
+<tr><!---16--->
     <td>Tue Oct 20</td>
     <td>
         <li>Server Debugging</li>
@@ -232,7 +232,7 @@ Matching</a>--->
     </td>
 </tr>
 
-<tr>
+<tr><!---17--->
     <td>Thu Oct 22</td>
     <td>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
@@ -246,7 +246,7 @@ Demo
     <td>
     </tr>
 
-<tr>
+<tr><!---18--->
     <td>Tue Oct 27</td>
     <td>
         <li>MongoDB/PyMongo Example</li>
@@ -257,7 +257,7 @@ Demo
     </td>
 </tr>
 
-<tr>
+<tr><!---19--->
     <td>Thu Oct 29</td>
     <td>
     </td>
@@ -269,7 +269,7 @@ Demo
     </td>
 </tr>
 
-<tr>
+<tr><!---20--->
     <td>Tue Nov 3</td>
     <td>
         <li>Connecting GUI to Client/Server</li>
@@ -279,7 +279,7 @@ Demo
     </td> 
 </tr>
 
-<tr>
+<tr><!---21--->
     <td>Thu Nov 5</td>
     <td>
         <li><a href="Resources/tkinter_images.md">Adding Images to tkinter 
@@ -291,7 +291,7 @@ Encoding/Decoding</a></li>
     </td>
 </tr>
 
-<tr>
+<tr><!---22--->
     <td>Tue Nov 10</td>
     <td>
         <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
@@ -306,7 +306,7 @@ Encoding/Decoding</a></li>
     </td>
 </tr>
 
-<tr>
+<tr><!---23--->
     <td>Thu Nov 12</td>
     <td>
         <a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a>
@@ -315,7 +315,7 @@ Encoding/Decoding</a></li>
     </td>
 </tr>
 
-<tr>
+<tr><!---24--->
     <td>Tue Nov 17</td>
     <td>
         <a href="Resources/standards.md">Standards: </a>
@@ -327,7 +327,7 @@ Encoding/Decoding</a></li>
     </td>
 </tr>
 
-<tr>
+<tr><!---25--->
     <td>Thu Nov 19</td>
     <td>
               <a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
@@ -341,7 +341,7 @@ Encoding/Decoding</a></li>
     </td>
 </tr>
 
-<tr>
+<tr><!---26--->
     <td>Tue Nov 24</td>
     <td>
         <!---<li>Software Development Methodologies & Other Terminology</li>--->
