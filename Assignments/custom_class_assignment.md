@@ -7,7 +7,7 @@ blood donors for a patient or recipients of donations from a patient.
 ## Specifications
 
 * Write your code in a module called `patient_data.py`.
-* In that module, crease a custom class called `Patient`.
+* In that module, create a custom class called `Patient`.
 * __Attributes__
   * The `Patient` class should have the following attributes:
     * `mrn`: an integer to contain the patient medical record number
@@ -136,6 +136,7 @@ blood donors for a patient or recipients of donations from a patient.
 * Appropriate use of `.gitignore` preventing virtual environment and other 
   files and directories from being inadvertently commited to repository
 * README.md need only consist of your name.  No further info necessary for 
-  this assignment.
-* Final submission pushed to GitHub be the deadline and tagged appropriately
+  this assignment.  A design document or flowsheet is also not required.
+* Final submission should be pushed to GitHub before the deadline and tagged 
+  appropriately
 * Plus any expectations from previous assignments

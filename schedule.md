@@ -154,27 +154,26 @@ will be a lecture every class period even if no topic is shown on the schedule.
     <td>Tue Sep 29</td>
     <td>
         <li><a href="Resources/unit_testing_class_methods.md">Testing of Class Methods</a></li>
-        <li><a href="Lectures/debugging.md">Debugging</a> With <a 
-href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
+        <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
 </td>
     <td>
-        <!---<a href="https://canvas.duke.edu/courses/50399/assignments/191507">
-            In-Class Exercise (see Canvas)</a>---> 
+        <a href="Assignments/custom_class_assignment.md">Custom Class 
+            Assignment</a>
+        <!---Assignment #6 Assigned--->
     </td>
 </tr>
 
 <tr><!---12--->
     <td>Thu Oct 1</td>
     <td>
-        <li><a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
+        <li><a href="Lectures/debugging.md">Debugging</a> With <a 
+            href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
     <td>
-        <!---
-        <a href="Assignments/custom_class_assignment.md">Custom Class 
-            Assignment</a>--->
-        Assignment #6 Assigned
+        <!---<a href="https://canvas.duke.edu/courses/50399/assignments/191507">
+            In-Class Exercise (see Canvas)</a>--->
     </td>
 </tr>
 
