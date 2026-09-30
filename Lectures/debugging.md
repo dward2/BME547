@@ -1,7 +1,8 @@
 # Debugging
 ## For in-class demo code,  
 <!--- click [here](./debugging_code/debug_demo.py).--->  
-Clone repository at <https://github.com/dward2/debug_class>
+Download this file <https://canvas.duke.edu/courses/83491/files?preview=5528279> 
+and follow in-class instructions.
 
 <!---
 **Summer 2020**
