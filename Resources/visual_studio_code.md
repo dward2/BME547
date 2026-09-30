@@ -221,6 +221,19 @@ the steps above for running `pytest` in VS Code.   And, when you want to
 run tests with coverage, click on the "Run Tests with Coverage" icon ![Run 
 With Coverage Icon](images/vs_code_run_tests_icon.jpg).
 
+## Settings for Running Code in Subfolders
+If you create subdirectoreis within your project folder, you need to make sure 
+that VS Code and Python will look in the appropriate subdirectory when running
+code found in those subdirectories.  To do this, modify the VS Code settings as
+follows:
+1. From the "File" menu, select "Preferences/Settings" which will open a 
+   Settings tab.
+2. In the Search settings bar, enter `python.terminal.executeInFileDir`.
+3. Check the checkbox that is dsplayed as shown below.
+   ![VS Code Settings for Running In Subdirectories](images/subfolders_settings.jpeg)
+4. Close the Settings tab by clicking on the "X" next to Settings in the tab
+   title bar.
+
 
 ## References
 
