@@ -166,37 +166,35 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr><!---12--->
     <td>Thu Oct 1</td>
     <td>
-        <li><a href="Lectures/debugging.md">Debugging</a> With <a 
-            href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
-        <li><a href="Lectures/numpy.md">NumPy</a> and 
-        <a href="Lectures/matplotlib.md">Matplotlib</a></li>
+        <li>More <a href="Lectures/exceptions_active_lecture.md">Exceptions</a></li>
+        <li><a href="Lectures/logging.md">Logging</a></li>
     </td>
     <td>
-        <!---<a href="https://canvas.duke.edu/courses/50399/assignments/191507">
-            In-Class Exercise (see Canvas)</a>--->
     </td>
 </tr>
 
 <tr><!---13--->
     <td>Tue Oct 6</td>
     <td>
-        <li><a href="Lectures/logging.md">Logging</a></li>
-        <li><a href="Lectures/apis_webservices_requests.md">APIs, Intro To Web Services, Requests</a></li>
+        <li><a href="Lectures/debugging.md">Debugging</a> With <a 
+            href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
+        <li><a href="Lectures/numpy.md">NumPy</a> and 
+        <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
     <td>
-        <!---<a href="Lectures/name_server_project.md">Optional Exercise:  Blood 
-Matching</a>--->
+        <a href="https://canvas.duke.edu/courses/83491/assignments/379730">
+            In-Class Exercise (see Canvas)</a>
     </td>
 </tr>
 
 <tr><!---14--->
     <td>Thu Oct 8</td>
     <td> 
-        <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
-        <a href="Lectures/flask_server_setup.md">
-           Building a Web Server with Flask</a>
+        <li><a href="Lectures/apis_webservices_requests.md">APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
+        <!---<a href="Lectures/name_server_project.md">Optional Exercise:  Blood 
+Matching</a>--->
         <!---<a href="Assignments/CPAP Measurements">CPAP Measurements 
             Assigned</a>--->
         Assignment #7 Assigned
@@ -211,8 +209,9 @@ Matching</a>--->
 <tr>
     <td>Thu Oct 15</td>
     <td> 
-        <a href="Lectures/server_code_design.md">Server Design</a><br>
-        <a href="Lectures/lecture_code/white_hat_server.py">Code for class exercise</a>
+        <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
+        <a href="Lectures/flask_server_setup.md">
+           Building a Web Server with Flask</a>
     </td>
     <td>
     </td>
@@ -221,9 +220,8 @@ Matching</a>--->
 <tr><!---16--->
     <td>Tue Oct 20</td>
     <td>
-        <li>Server Debugging</li>
-        <li>Server Testing</li>
-        <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
+        <a href="Lectures/server_code_design.md">Server Design</a><br>
+        <a href="Lectures/lecture_code/white_hat_server.py">Code for class exercise</a>
     </td>
     <td>
         Assignment #8 Assigned
@@ -234,13 +232,9 @@ Matching</a>--->
 <tr><!---17--->
     <td>Thu Oct 22</td>
     <td>
-        <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
-        <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
-        <li><a href="Lectures/databases.md#mongodb">Intro to 
-MongoDB/PyMongo</a></li>      
-      <!---(<a href="https://github.com/dward2/mongo_db_jupyter_example">Class 
-Demo  
-        Repository</a>)--->
+        <li>Server Debugging</li>
+        <li>Server Testing</li>
+        <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
     </td>
     <td>
     </tr>
@@ -248,8 +242,13 @@ Demo
 <tr><!---18--->
     <td>Tue Oct 27</td>
     <td>
-        <li>MongoDB/PyMongo Example</li>
-        <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
+        <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
+        <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
+        <li><a href="Lectures/databases.md#mongodb">Intro to 
+MongoDB/PyMongo</a></li>      
+      <!---(<a href="https://github.com/dward2/mongo_db_jupyter_example">Class 
+Demo  
+        Repository</a>)--->
     </td>    
     <td>
         <!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
@@ -259,6 +258,8 @@ Demo
 <tr><!---19--->
     <td>Thu Oct 29</td>
     <td>
+        <li>MongoDB/PyMongo Example</li>
+        <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
     </td>
     <td>
         Assignment #9 Assigned
