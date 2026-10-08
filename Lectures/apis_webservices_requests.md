@@ -164,40 +164,43 @@ For additional information on the above, see
 Also, an interactive Jupyter notebook is available at
  <a href="../Resources/WebServices/requests.ipynb">Resources/WebServices/requests.ipynb</a>
 
-## In-Class Activity: Messaging API
+## In-Class Activity: Getting Patient Data from Web for Monitor
 
-Find a partner in class.  Each of you agree on a "user name" to use for 
-this exercise.  Then, write some code, using the server API below, to:
-* Send a message to your partner
-* Receive a message from your partner
+### API
+URL To Server:  `http://vcm-51170.vm.duke.edu:5000`
 
-URL To Server:  `http://vcm-51170.vm.duke.edu:5001`
+#### `GET /get_patient_info/<Duke NetID>`
+Purpose:  
+Obtain information about a patient to enter into the patient monitor and for 
+starting the `MockPatient` module.
 
-### `POST /add_message`
-Posts a message for a specific user.
+Usage:  
+Replace `<Duke NetID>` with your net id.  Example:  `/get_patient_info/abc123`
 
-Expects json input:
-```python
+Returns:  
+A json-encoded string containing a dictionary as follows:
+```
     {
-        "from": <from_user_name>, 
-        "to":  <to_user_name>,
-        "message": <message_string>
+        "name": <str with patient name>,
+        "mrn": <int of patient medical record number>,
+        "dob": <str with patient date of birth>,
+        "settings": <dict with settings to use for MockPatient>
     }
 ```
-where 
-* `<from_user_name>` is a string containing the user name of the user who is 
-  sending the message,
-* `<to_user_name>` is a string containing the user name of the user for 
-  whom the message is being sent, and
-* `<message_string>` is a string containing the message for the user.
+If the provided Duke NetID does not match, a 400 status code is returned.
 
-### `GET /get_messages/<user_name>`
+### Task
+Add a button to your patient monitoring GUI.  When clicking this new button,
+your code should make a request to the server route above to receive information
+about a new patient.  The patient name, mrn, and date of birth should be
+displayed in the GUI.  A `MockPatient` instance should be started and the
+ECG signal from this mock patient should be displayed in the GUI.
 
-Retrieves messages for the user indicated by `<user_name>` and then deletes 
-those messages on the server.
-
-Returns a list of messages for the user.  If the user has never had
-a message posted, a status code of 400 is returned.  If the user
-exists, but has no active messages, an empty list is returned.
-
-## <a href="name_server_project.md">**Class Exercise Link**</a>
+### Notes
+* The `mockpatient.py` file in the `mockpatient` folder needs to be updated with
+  the most recent version found in Canvas.
+* The `settings` dictionary returned from the get request above should be
+  sent as a parameter to the `MockPatient` creation.  Example:  
+  ```python
+      patient_monitor = MockPatient(settings)
+  ```
