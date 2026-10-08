@@ -164,6 +164,8 @@ Hub.
   * instructions on how to run your program
   * how you identified the breaths
   * a software license with your project (<http://choosealicense.com/>)
+  * detailed software design or a link to a design document with reasonable
+    detail
   * anything else you think the graders should know to understand the operation
     and function of your code
 
