@@ -176,8 +176,6 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr><!---13--->
     <td>Tue Oct 6</td>
     <td>
-        <li><a href="Lectures/debugging.md">Debugging</a> With <a 
-            href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
         <li><a href="Lectures/numpy.md">NumPy</a> and 
         <a href="Lectures/matplotlib.md">Matplotlib</a></li>
     </td>
@@ -190,14 +188,16 @@ will be a lecture every class period even if no topic is shown on the schedule.
 <tr><!---14--->
     <td>Thu Oct 8</td>
     <td> 
+        <li><a href="Lectures/debugging.md">Debugging</a> With <a 
+            href="Resources/visual_studio_code.md">Visual Studio Code</a></li>
         <li><a href="Lectures/apis_webservices_requests.md">APIs, Intro To Web Services, Requests</a></li>
     </td>
     <td>
         <!---<a href="Lectures/name_server_project.md">Optional Exercise:  Blood 
 Matching</a>--->
-        <!---<a href="Assignments/CPAP Measurements">CPAP Measurements 
-            Assigned</a>--->
-        Assignment #7 Assigned
+        <a href="Assignments/CPAP Measurements">CPAP Measurements 
+            Assigned</a>
+        <!---Assignment #7 Assigned--->
     </td>
 </tr>
 
