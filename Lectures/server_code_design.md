@@ -20,24 +20,22 @@ from an init() function called from `if __name__ == "__main__":`.
   
 ## In-Class Project
 
-Develop a health database server
+Develop a server for storing data from the Patient Monitor
 
 ### Routes
-` POST /new_patient`
+` POST /add_patient`
 
 ```python
-{"name": str, "id": int, "blood_type": str}
+{"name": <str>, "mrn": <int>, "dob": str}
 ```
-where blood type is one of O+, O-, A+, A-, B+, B-, AB+, AB-.
-
 
 `POST /add_test`
 
 ```python
-{"id": int, "test_name": str, "test_result": int}
+{"mrn": <int>, "test_name": <str>, "test_result": <int>}
 ``` 
 
-`GET /get_results/<patient_id>`
+`GET /get_patient/<mrn>`
 
 
 ### Event-Driven Code
