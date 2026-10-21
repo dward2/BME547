@@ -201,7 +201,7 @@ Matching</a>--->
     </td>
 </tr>
 
-<tr><!---15--->
+<tr><!---##--->
     <td>Tue Oct 13</td>
     <td>No Class - Fall Break</td>
 </tr>
@@ -210,6 +210,16 @@ Matching</a>--->
     <td>Thu Oct 15</td>
     <td> 
         <!---<a href="Lectures/sphinx.md">Sphinx</a>--->
+        <a href="Lectures/apis_webservices_requests.md#post-example">Post Requests</a>
+        and <a href="Lectures/apis_webservices_requests.md#in-class-activity-getting-patient-data-from-web-for-monitor">Requests from Patient Monitor</a>
+    </td>
+    <td>
+    </td>
+</tr>
+
+<tr><!---15--->
+    <td>Tue Oct 20</td>
+    <td>
         <a href="Lectures/flask_server_setup.md">
            Building a Web Server with Flask</a>
     </td>
@@ -218,29 +228,30 @@ Matching</a>--->
 </tr>
 
 <tr><!---16--->
-    <td>Tue Oct 20</td>
+    <td>Thu Oct 22</td>
     <td>
         <a href="Lectures/server_code_design.md">Server Design</a><br>
         <a href="Lectures/lecture_code/white_hat_server.py">Code for class exercise</a>
     </td>
     <td>
-        Assignment #8 Assigned
-       <!---<a href="Assignments/time_server_project.md">Time Server Assigned</a>--->
+        <!---Assignment #8 Assigned--->
+        <a href="Assignments/time_server_project.md">Time Server Assigned</a>
     </td>
 </tr>
 
 <tr><!---17--->
-    <td>Thu Oct 22</td>
+    <td>Tue Oct 27</td>
     <td>
         <li>Server Debugging</li>
         <li>Server Testing</li>
         <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
-    </td>
+    </td>    
     <td>
-    </tr>
+    </td>
+</tr>
 
 <tr><!---18--->
-    <td>Tue Oct 27</td>
+    <td>Thu Oct 29</td>
     <td>
         <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
         <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
@@ -249,19 +260,9 @@ MongoDB/PyMongo</a></li>
       <!---(<a href="https://github.com/dward2/mongo_db_jupyter_example">Class 
 Demo  
         Repository</a>)--->
-    </td>    
+    </td>
     <td>
         <!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
-    </td>
-</tr>
-
-<tr><!---19--->
-    <td>Thu Oct 29</td>
-    <td>
-        <li>MongoDB/PyMongo Example</li>
-        <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
-    </td>
-    <td>
         Assignment #9 Assigned
         <!---
       <a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>
@@ -269,33 +270,33 @@ Demo
     </td>
 </tr>
 
-<tr><!---20--->
+<tr><!---19--->
     <td>Tue Nov 3</td>
     <td>
-        <li>Connecting GUI to Client/Server</li>
-        <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
+        <li>MongoDB/PyMongo Example</li>
+        <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
     </td>
     <td>
     </td> 
 </tr>
 
-<tr><!---21--->
+<tr><!---20--->
     <td>Thu Nov 5</td>
     <td>
-        <li><a href="Resources/tkinter_images.md">Adding Images to tkinter 
-GUI</a></li>
-        <li><a href="Lectures/image_encoding_decoding.md">Image 
-Encoding/Decoding</a></li>
+        <li>Connecting GUI to Client/Server</li>
+        <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
     </td>
     <td>
     </td>
 </tr>
 
-<tr><!---22--->
+<tr><!---21--->
     <td>Tue Nov 10</td>
     <td>
-        <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
-        <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
+        <li><a href="Resources/tkinter_images.md">Adding Images to tkinter 
+GUI</a></li>
+        <li><a href="Lectures/image_encoding_decoding.md">Image 
+Encoding/Decoding</a></li>
     </td>
     <td>
         Final Project Assigned
@@ -306,8 +307,18 @@ Encoding/Decoding</a></li>
     </td>
 </tr>
 
-<tr><!---23--->
+<tr><!---22--->
     <td>Thu Nov 12</td>
+    <td>
+        <li><a href="Lectures/github_teams.md">Milestones/Projects</a></li>
+        <li><a href="Resources/WebInterface">Introduction to HTML</a></li>
+    </td>
+    <td>
+    </td>
+</tr>
+
+<tr><!---23--->
+    <td>Tue Nov 17</td>
     <td>
         <a href="Resources/WebInterface/web_interface_with_flask.md">Deploying HTML with Flask</a>
     </td>
@@ -316,36 +327,28 @@ Encoding/Decoding</a></li>
 </tr>
 
 <tr><!---24--->
-    <td>Tue Nov 17</td>
+    <td>Thu Nov 19</td>
     <td>
         <a href="Resources/standards.md">Standards: </a>
         <a href="https://en.wikipedia.org/wiki/IEC_62304">IEC 62304</a>
-    </td>
+    </td> 
     <td>
+        <!---<a href="Lectures/intro_to_security.md#in-class-exercise">In-Class Exercise</a>--->
         Assignment #10 Assigned
         <!---IEC62304 Assignment (see Canvas)--->
     </td>
 </tr>
 
 <tr><!---25--->
-    <td>Thu Nov 19</td>
-    <td>
-              <a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
-      <!---<li><a href="Lectures/secrets_and_environment_variables.md">
-           Secrets and Environment variables</a></li>
-      <li><a href="Lectures/making_and_importing_packages.md">
-           Making and Importing Packages</a></li>--->
-    </td> 
-    <td>
-        <!---<a href="Lectures/intro_to_security.md#in-class-exercise">In-Class Exercise</a>--->
-    </td>
-</tr>
-
-<tr><!---26--->
     <td>Tue Nov 24</td>
     <td>
         <!---<li>Software Development Methodologies & Other Terminology</li>--->
         Last Day of Class
+        <li><a href="Lectures/intro_to_security.md">Introduction to Security</a></li> 
+        <!---<li><a href="Lectures/secrets_and_environment_variables.md">
+           Secrets and Environment variables</a></li>
+        <li><a href="Lectures/making_and_importing_packages.md">
+           Making and Importing Packages</a></li>--->
     </td>
     <td>
     </td>
