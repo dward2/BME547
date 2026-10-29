@@ -253,13 +253,7 @@ Matching</a>--->
 <tr><!---18--->
     <td>Thu Oct 29</td>
     <td>
-        <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
-        <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
-        <li><a href="Lectures/databases.md#mongodb">Intro to 
-MongoDB/PyMongo</a></li>      
-      <!---(<a href="https://github.com/dward2/mongo_db_jupyter_example">Class 
-Demo  
-        Repository</a>)--->
+        <li>Connecting GUI/Controller to Database Server</li>
     </td>
     <td>
         <!---Assignment #9 Assigned--->
@@ -271,8 +265,13 @@ Demo
 <tr><!---19--->
     <td>Tue Nov 3</td>
     <td>
-        <li>MongoDB/PyMongo Example</li>
-        <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
+        <li><a href="Resources/WebServices/screen.md">Screen on VMs</a></li>
+        <li><a href="Lectures/databases.md">Introduction to Databases</a></li>
+        <li><a href="Lectures/databases.md#mongodb">Intro to 
+MongoDB/PyMongo</a></li>      
+      <!---(<a href="https://github.com/dward2/mongo_db_jupyter_example">Class 
+Demo  
+        Repository</a>)--->
     </td>
     <td>
     </td> 
@@ -281,8 +280,8 @@ Demo
 <tr><!---20--->
     <td>Thu Nov 5</td>
     <td>
-        <li>Connecting GUI to Client/Server</li>
-        <li><a href="Lectures/tkinter_walkthrough.md#gui-functionality">GUI Functionality</a></li>
+        <li>MongoDB/PyMongo Example</li>
+        <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
     </td>
     <td>
     </td>
