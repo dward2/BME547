@@ -247,8 +247,6 @@ Matching</a>--->
         <li><a href="Resources/virtual_machines.md">Virtual machines</a></li>
     </td>    
     <td>
-        Assignment #9 Assigned
-        <!---<a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>--->
     </td>
 </tr>
 
@@ -264,6 +262,8 @@ Demo
         Repository</a>)--->
     </td>
     <td>
+        <!---Assignment #9 Assigned--->
+        <a href="Assignments/patient_lab_test_results_server_assignment.md">Patient Lab Test Results Server Assigned</a>
         <!---<a href="Lectures/database_class_work.md">In-Class Project</a>--->
     </td>
 </tr>
