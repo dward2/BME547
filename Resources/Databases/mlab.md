@@ -7,7 +7,7 @@ from Python code and use it so save and retrieve data.
 
 ## Setup
 Note: The MongoDB website interface for new accounts changes frequently.
-The instructions here are accurate as of March 2026, but may change.  So, if
+The instructions here are accurate as of November 2026, but may change.  So, if
 your experience varies from below, modify as needed.
 
 1. Visit [mongodb.com](https://www.mongodb.com/). Click on "Get Started".      
