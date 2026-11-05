@@ -7,8 +7,9 @@ about a patient.  Each instance of this class is then stored in a `db` list.
 database instead of a local list.
 
 * Add a class method called `make_connection` that establishes the connection
-  to MongoDB.  Make sure that there is a class attribute called `collection` as
-  that is needed by the test module.
+  to MongoDB.  Make sure that there is a class attribute called `collection` and
+  `client` as
+  they are needed by the test module.
 * Add a method called `save` that saves the patient information to MongoDB.
 * Add a class method called `find_by_mrn` that receives an integer mrn as an
   argument.  This method should return an instance of `Patient` with the 
