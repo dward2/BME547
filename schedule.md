@@ -280,7 +280,7 @@ Demo
 <tr><!---20--->
     <td>Thu Nov 5</td>
     <td>
-        <li>MongoDB/PyMongo Example</li>
+        <li><a href="Lectures/class_using_pymongo_exercise.md">Using MongoDB/PyMongo With Server Database Exercise</a></li>
         <li><a href="Lectures/class_attributes_and_methods.ipynb">Class Attributes and Class Methods</a></li>
     </td>
     <td>
