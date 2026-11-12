@@ -146,7 +146,7 @@ project.
 ## Image Server API for In-Class Work
 ### Server API
 
-URL is `http://vcm-51187.vm.duke.edu:5001`.
+URL is `http://vcm-51170.vm.duke.edu:5000`.
 
 ### POST `/add_image`
 Add an image to the database and display on webpage.  _Please upload only JPG
