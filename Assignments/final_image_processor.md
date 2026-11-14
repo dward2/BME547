@@ -103,7 +103,7 @@ interface with the following functionality:
   for any impact on patient breathing.    
   *NOTE: after this monitoring-station commanded CPAP pressure change, if the 
   user on the patient-side changes the CPAP pressure entry to a different value, 
-  the CPAP pressure  
+  the CPAP pressure
   must NOT be changed back to the value commanded from the monitoring station 
   unless a new command from the monitoring station is received.*
 + The GUI should provide appropriate user feedback to indicate the success or
@@ -356,7 +356,7 @@ trying to test and I will help you design an appropriate test.  And, if you
 have any question about the information on this webpage, please let me know.
 
 
-**Patients and Room**
+**Patients and Rooms**
 
 Initially, each room and patient that is created will be new. When a patient
 is done in a room, it is possible that the room number will be reused.  And, it
